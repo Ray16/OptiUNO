@@ -1,0 +1,14 @@
+# Crucible: external sources (copyrighted, not shareable)
+.crucible/sources/external/
+
+# Crucible: database (regenerable from wiki via auto-rebuild)
+.crucible/crucible.db
+.crucible/crucible.db-wal
+.crucible/crucible.db-shm
+
+# Crucible: publish output
+.crucible/wiki/_build/
+
+# Claude Code: local settings (machine-specific, not shareable)
+.claude/settings.json
+.claude/settings.local.json
