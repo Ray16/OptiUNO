@@ -1,0 +1,62 @@
+{
+  "name": "himmelbe",
+  "number": 2300,
+  "classification": "NQR2-AY",
+  "N": 3,
+  "M": 3,
+  "Nnl": 0,
+  "Mnl": 0,
+  "Nz": 0,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "himmelbe.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelbe.dag",
+      "bytes": 379
+    },
+    "gms": {
+      "filename": "himmelbe.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelbe.gms",
+      "bytes": 488
+    },
+    "mod": {
+      "filename": "himmelbe.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelbe.mod",
+      "bytes": 919
+    },
+    "res": {
+      "filename": "himmelbe.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/himmelbe.res",
+      "bytes": 54
+    },
+    "nl": {
+      "filename": "himmelbe.nl",
+      "bytes": 631
+    },
+    "nl_presolve": {
+      "filename": "himmelbe_presolve.nl",
+      "bytes": 631
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelbe.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

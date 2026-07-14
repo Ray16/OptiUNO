@@ -1,0 +1,62 @@
+{
+  "name": "eigmaxc",
+  "number": 2213,
+  "classification": "LQR2-AN",
+  "N": 22,
+  "M": 22,
+  "Nnl": 22,
+  "Mnl": 22,
+  "Nz": 104,
+  "Fbest_raw": "-10.7462000",
+  "Fbest": -10.7462,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "eigmaxc.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigmaxc.dag",
+      "bytes": 5493
+    },
+    "gms": {
+      "filename": "eigmaxc.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigmaxc.gms",
+      "bytes": 2931
+    },
+    "mod": {
+      "filename": "eigmaxc.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigmaxc.mod",
+      "bytes": 13170
+    },
+    "res": {
+      "filename": "eigmaxc.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/eigmaxc.res",
+      "bytes": 635
+    },
+    "nl": {
+      "filename": "eigmaxc.nl",
+      "bytes": 2424
+    },
+    "nl_presolve": {
+      "filename": "eigmaxc_presolve.nl",
+      "bytes": 2424
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigmaxc.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

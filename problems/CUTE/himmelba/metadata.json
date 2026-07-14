@@ -1,0 +1,62 @@
+{
+  "name": "himmelba",
+  "number": 2296,
+  "classification": "NLR2-AN",
+  "N": 2,
+  "M": 2,
+  "Nnl": 0,
+  "Mnl": 0,
+  "Nz": 0,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "himmelba.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelba.dag",
+      "bytes": 188
+    },
+    "gms": {
+      "filename": "himmelba.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelba.gms",
+      "bytes": 411
+    },
+    "mod": {
+      "filename": "himmelba.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelba.mod",
+      "bytes": 860
+    },
+    "res": {
+      "filename": "himmelba.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/himmelba.res",
+      "bytes": 44
+    },
+    "nl": {
+      "filename": "himmelba.nl",
+      "bytes": 568
+    },
+    "nl_presolve": {
+      "filename": "himmelba_presolve.nl",
+      "bytes": 568
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelba.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

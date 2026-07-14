@@ -1,0 +1,62 @@
+{
+  "name": "powellsq",
+  "number": 2617,
+  "classification": "NOR2-AN",
+  "N": 2,
+  "M": 2,
+  "Nnl": 2,
+  "Mnl": 2,
+  "Nz": 3,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "powellsq.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/powellsq.dag",
+      "bytes": 388
+    },
+    "gms": {
+      "filename": "powellsq.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/powellsq.gms",
+      "bytes": 501
+    },
+    "mod": {
+      "filename": "powellsq.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/powellsq.mod",
+      "bytes": 895
+    },
+    "res": {
+      "filename": "powellsq.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/powellsq.res",
+      "bytes": 142
+    },
+    "nl": {
+      "filename": "powellsq.nl",
+      "bytes": 616
+    },
+    "nl_presolve": {
+      "filename": "powellsq_presolve.nl",
+      "bytes": 616
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/powellsq.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

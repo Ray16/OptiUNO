@@ -1,0 +1,62 @@
+{
+  "name": "portfl6",
+  "number": 2614,
+  "classification": "SLR2-MN",
+  "N": 12,
+  "M": 1,
+  "Nnl": 12,
+  "Mnl": 0,
+  "Nz": 24,
+  "Fbest_raw": "0.0258000",
+  "Fbest": 0.0258,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "portfl6.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/portfl6.dag",
+      "bytes": 77270
+    },
+    "gms": {
+      "filename": "portfl6.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/portfl6.gms",
+      "bytes": 25691
+    },
+    "mod": {
+      "filename": "portfl6.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/portfl6.mod",
+      "bytes": 25797
+    },
+    "res": {
+      "filename": "portfl6.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/portfl6.res",
+      "bytes": 258
+    },
+    "nl": {
+      "filename": "portfl6.nl",
+      "bytes": 16128
+    },
+    "nl_presolve": {
+      "filename": "portfl6_presolve.nl",
+      "bytes": 16128
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/portfl6.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,51 @@
+2026-07-14 13:51:14,810 - openevolve.controller - INFO - Logging to /home/sdinh/sandbox/OptiUNO/quickRun/results/openevolve_output/logs/openevolve_20260714_135114.log
+2026-07-14 13:51:14,810 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-07-14 13:51:14,810 - openevolve.llm.claude_code - INFO - Initialized ClaudeCodeLLM with model: claude-sonnet-4-5
+2026-07-14 13:51:14,810 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: claude-sonnet-4-5 (weight: 1.00)
+2026-07-14 13:51:14,810 - openevolve.llm.claude_code - INFO - Initialized ClaudeCodeLLM with model: claude-sonnet-4-5
+2026-07-14 13:51:14,810 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-07-14 13:51:14,811 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-07-14 13:51:14,811 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-07-14 13:51:14,812 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/sdinh/sandbox/OptiUNO/quickRun/evolve/evaluator.py
+2026-07-14 13:51:14,812 - openevolve.evaluator - INFO - Initialized evaluator with /home/sdinh/sandbox/OptiUNO/quickRun/evolve/evaluator.py
+2026-07-14 13:51:14,812 - openevolve.controller - INFO - Initialized OpenEvolve with /home/sdinh/sandbox/OptiUNO/quickRun/evolve/initial_program.py
+2026-07-14 13:51:14,812 - openevolve.controller - INFO - Adding initial program to database
+2026-07-14 13:51:14,814 - openevolve.evaluator - INFO - Evaluated program 5ec07cb3-8db9-46e2-bbad-c2f3676d02ab in 0.00s: combined_score=1.0600, reliability=0.9669, cum_cpu_time=4.1372
+2026-07-14 13:51:14,814 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'reliability': 6, 'cum_cpu_time': 6}
+2026-07-14 13:51:14,814 - openevolve.controller - INFO - Stored artifacts for initial program
+2026-07-14 13:51:14,815 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2026-07-14 13:51:14,815 - openevolve.process_parallel - INFO - Set max None tasks per child
+2026-07-14 13:51:14,815 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-07-14 13:51:14,815 - openevolve.controller - INFO - Using island-based evolution with 3 islands
+2026-07-14 13:51:14,815 - openevolve.database - INFO - Island Status:
+2026-07-14 13:51:14,815 - openevolve.database - INFO -  * Island 0: 1 programs, best=1.0600, avg=1.0600, diversity=0.00, gen=0 (best: 5ec07cb3-8db9-46e2-bbad-c2f3676d02ab)
+2026-07-14 13:51:14,815 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-07-14 13:51:14,815 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-07-14 13:51:14,815 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 150 iterations (total: 151)
+2026-07-14 13:51:14,818 - openevolve.process_parallel - INFO - Early stopping disabled
+2026-07-14 13:51:14,819 - openevolve.llm.claude_code - INFO - Initialized ClaudeCodeLLM with model: claude-sonnet-4-5
+2026-07-14 13:51:14,820 - openevolve.llm.claude_code - INFO - Initialized ClaudeCodeLLM with model: claude-sonnet-4-5
+2026-07-14 13:51:14,820 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-07-14 13:51:14,821 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/sdinh/sandbox/OptiUNO/quickRun/evolve/evaluator.py
+2026-07-14 13:51:14,821 - openevolve.evaluator - INFO - Initialized evaluator with /home/sdinh/sandbox/OptiUNO/quickRun/evolve/evaluator.py
+2026-07-14 13:51:14,822 - openevolve.llm.ensemble - INFO - Sampled model: claude-sonnet-4-5
+2026-07-14 13:51:56,065 - openevolve.evaluator - INFO - Evaluated program 2aeebb02-941c-4457-9894-7baa254ee41a in 0.00s: combined_score=0.9937, reliability=0.9421, cum_cpu_time=29.0549
+2026-07-14 13:51:56,066 - openevolve.llm.ensemble - INFO - Sampled model: claude-sonnet-4-5
+2026-07-14 13:51:56,069 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'reliability': 0, 'cum_cpu_time': 11}
+2026-07-14 13:51:56,069 - openevolve.process_parallel - INFO - Iteration 1: Program 2aeebb02-941c-4457-9894-7baa254ee41a (parent: 5ec07cb3-8db9-46e2-bbad-c2f3676d02ab) completed in 41.24s
+2026-07-14 13:51:56,069 - openevolve.process_parallel - INFO - Metrics: combined_score=0.9937, reliability=0.9421, cum_cpu_time=29.0549
+2026-07-14 13:52:34,580 - openevolve.evaluator - INFO - Evaluated program 2c5a3c39-b16f-4fe1-9ad4-5dce27899103 in 0.00s: combined_score=0.9937, reliability=0.9421, cum_cpu_time=29.0549
+2026-07-14 13:52:34,585 - openevolve.llm.ensemble - INFO - Sampled model: claude-sonnet-4-5
+2026-07-14 13:52:34,595 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'reliability': 0, 'cum_cpu_time': 11}
+2026-07-14 13:52:34,595 - openevolve.process_parallel - INFO - Iteration 2: Program 2c5a3c39-b16f-4fe1-9ad4-5dce27899103 (parent: 5ec07cb3-8db9-46e2-bbad-c2f3676d02ab) completed in 38.52s
+2026-07-14 13:52:34,595 - openevolve.process_parallel - INFO - Metrics: combined_score=0.9937, reliability=0.9421, cum_cpu_time=29.0549
+2026-07-14 13:53:25,712 - openevolve.evaluator - INFO - Evaluated program 3aa51a02-6add-4912-9833-a113e3299112 in 0.04s: combined_score=0.9937, reliability=0.9421, cum_cpu_time=29.0549
+2026-07-14 13:53:25,713 - openevolve.llm.ensemble - INFO - Sampled model: claude-sonnet-4-5
+2026-07-14 13:53:25,717 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'reliability': 0, 'cum_cpu_time': 11}
+2026-07-14 13:53:25,717 - openevolve.process_parallel - INFO - Iteration 3: Program 3aa51a02-6add-4912-9833-a113e3299112 (parent: 5ec07cb3-8db9-46e2-bbad-c2f3676d02ab) completed in 51.13s
+2026-07-14 13:53:25,717 - openevolve.process_parallel - INFO - Metrics: combined_score=0.9937, reliability=0.9421, cum_cpu_time=29.0549
+2026-07-14 13:54:03,935 - openevolve.evaluator - INFO - Evaluated program 82cd2c57-9b9e-4bec-a746-6e884a7e2986 in 0.40s: combined_score=1.0539, reliability=0.9587, cum_cpu_time=2.8624
+2026-07-14 13:54:03,936 - openevolve.llm.ensemble - INFO - Sampled model: claude-sonnet-4-5
+2026-07-14 13:54:03,946 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'reliability': 8, 'cum_cpu_time': 0}
+2026-07-14 13:54:03,946 - openevolve.process_parallel - INFO - Iteration 4: Program 82cd2c57-9b9e-4bec-a746-6e884a7e2986 (parent: 5ec07cb3-8db9-46e2-bbad-c2f3676d02ab) completed in 38.22s
+2026-07-14 13:54:03,946 - openevolve.process_parallel - INFO - Metrics: combined_score=1.0539, reliability=0.9587, cum_cpu_time=2.8624

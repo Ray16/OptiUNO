@@ -1,0 +1,47 @@
+{
+  "name": "artif",
+  "number": 2015,
+  "classification": "NOR2-AN",
+  "N": 5002,
+  "M": 5000,
+  "Nnl": 4950,
+  "Mnl": 4950,
+  "Nz": 14998,
+  "Fbest_raw": "",
+  "Fbest": null,
+  "feasible": null,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": false,
+  "dag_file_available": false,
+  "res_file_available": false,
+  "other_files": [],
+  "files": {
+    "mod": {
+      "filename": "artif.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/artif.mod",
+      "bytes": 942
+    },
+    "nl": {
+      "filename": "artif.nl",
+      "bytes": 422390
+    },
+    "nl_presolve": {
+      "filename": "artif_presolve.nl",
+      "bytes": 422390
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/artif.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

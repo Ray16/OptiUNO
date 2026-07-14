@@ -1,0 +1,62 @@
+{
+  "name": "penalty2",
+  "number": 2591,
+  "classification": "SUR2-AN",
+  "N": 100,
+  "M": 0,
+  "Nnl": 100,
+  "Mnl": 0,
+  "Nz": 100,
+  "Fbest_raw": "97096.0800000",
+  "Fbest": 97096.08,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "penalty2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/penalty2.dag",
+      "bytes": 79563
+    },
+    "gms": {
+      "filename": "penalty2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/penalty2.gms",
+      "bytes": 25730
+    },
+    "mod": {
+      "filename": "penalty2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/penalty2.mod",
+      "bytes": 1068
+    },
+    "res": {
+      "filename": "penalty2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/penalty2.res",
+      "bytes": 2379
+    },
+    "nl": {
+      "filename": "penalty2.nl",
+      "bytes": 16208
+    },
+    "nl_presolve": {
+      "filename": "penalty2_presolve.nl",
+      "bytes": 16208
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/penalty2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,72 @@
+$ /home/sdinh/sandbox/OptiUNO/quickRun/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs088.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=interior_point hessian_model=exact inertia_correction_strategy=primal_dual globalization_mechanism=LS globalization_strategy=waechter_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs088.nl
+2 variables, 1 constraints (0 equality, 1 inequality)
+Problem type: NLP
+Reformulated model /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs088.nl -> no fixed bounds -> equality constrained -> bounds relaxed
+3 variables, 1 constraints (1 equality, 0 inequality)
+
+Non-default options:
+linear_solver = MUMPS
+libhsl_path = 
+
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Steplength Phase Regulariz Regulariz ||Step||  Objective  Infeas    Statio    Compl     Status        
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         -         -         -          OPT   -         -         -         5.000e-01  1.52e-01  1.73e+00  1.00e-02  initial point 
+ 1      1      -         1.00e-01  -         1.00e+00   OPT   0.00e+00  -         7.06e-01  6.387e-02  2.40e-01  5.67e-01  7.84e-02  ✔ (h-type)    
+ 2      1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         2.25e-01  2.065e-02  1.33e-01  6.25e-01  1.86e-03  ✔ (h-type)    
+ 3      1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         1.94e+00  4.650e-02  1.25e-01  5.21e+01  5.74e-04  ✔ (h-type)    
+ 4      1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         1.18e+00  2.121e+00  2.11e-02  8.08e+00  2.06e-04  ✔ (h-type)    
+ 5      1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         8.59e-01  3.793e-01  1.12e-01  1.17e+01  2.42e-04  ✔ (h-type)    
+ 6      1      -         2.00e-02  -         1.00e+00   OPT   1.00e+02  -         9.73e-02  3.790e-01  6.34e-02  2.54e+00  2.05e-04  ✔ (h-type)    
+ 7      1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         3.63e+00  1.296e+01  1.86e+00  -         -         ✘ (filter)    
+ -      2      -         -         -         5.00e-01   -     -         -         1.81e+00  2.445e+00  1.30e+00  -         -         ✘ (filter)    
+ -      3      -         -         -         2.50e-01   -     -         -         9.06e-01  3.556e-01  3.46e-01  -         -         ✘ (filter)    
+ -      4      -         -         -         1.25e-01   -     -         -         4.53e-01  1.032e-01  1.19e-01  3.55e+00  3.56e-05  ✔ (h-type)    
+ 8      1      -         2.00e-02  -         1.00e+00   OPT   3.33e+01  -         1.16e-01  1.037e-01  1.11e-01  5.56e+00  2.06e-04  ✔ (h-type)    
+ 9      1      -         2.00e-02  -         1.00e+00   OPT   1.11e+01  -         6.57e-01  9.058e-01  5.73e-02  1.89e+01  3.27e-01  ✔ (h-type)    
+ 10     1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         1.05e+00  5.156e+00  3.11e-01  -         -         ✘ (filter)    
+ -      2      -         -         -         5.00e-01   -     -         -         5.25e-01  2.516e+00  1.96e-02  9.28e+01  1.03e-02  ✔ (h-type)    
+ 11     1      -         2.00e-02  -         1.00e+00   OPT   1.90e+03  -         1.94e-02  2.511e+00  1.22e-03  2.90e+01  3.09e-04  ✔ (h-type)    
+ 12     1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         5.02e+00  1.317e+01  6.14e-03  -         -         ✘ (h-type)    
+ -      2      -         -         -         5.00e-01   -     -         -         2.51e+00  1.087e+00  7.69e-02  -         -         ✘ (filter)    
+ -      3      -         -         -         2.50e-01   -     -         -         1.25e+00  1.103e-01  1.36e-01  -         -         ✘ (filter)    
+ -      4      -         -         -         1.25e-01   -     -         -         6.27e-01  8.886e-01  1.43e-02  5.19e+01  4.05e-02  ✔ (h-type)    
+ 13     1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         9.55e-02  7.964e-01  6.69e-03  1.45e+00  1.58e-02  ✔ (h-type)    
+ 14     1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         8.37e-02  9.464e-01  2.81e-03  1.96e+00  1.55e-02  ✔ (h-type)    
+ 15     1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         5.86e-02  1.050e+00  1.41e-03  3.28e+00  9.82e-03  ✔ (h-type)    
+ 16     1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         4.05e-02  1.125e+00  8.44e-04  4.15e+00  2.23e-02  ✔ (h-type)    
+ 17     1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         3.45e-02  1.194e+00  4.02e-04  4.32e+00  1.02e-02  ✔ (h-type)    
+ 18     1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         3.31e-02  1.269e+00  1.99e-04  4.90e+00  2.20e-02  ✔ (h-type)    
+ 19     1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         1.91e-02  1.322e+00  7.13e-05  4.05e+00  1.35e-02  ✔ (h-type)    
+ 20     1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         1.62e-02  1.361e+00  2.18e-05  2.51e+00  2.02e-02  ✔ (h-type)    
+ 21     1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         5.33e-03  1.377e+00  2.66e-06  5.67e-01  1.93e-02  ✔ (h-type)    
+ 22     1      -         2.83e-03  -         1.00e+00   OPT   0.00e+00  -         4.45e-03  1.365e+00  5.23e-07  6.46e-02  4.00e-03  ✔ (f-type)    
+ 23     1      -         1.50e-04  -         1.00e+00   OPT   0.00e+00  -         1.19e-03  1.362e+00  3.62e-08  2.80e-03  2.26e-04  ✔ (f-type)    
+ 24     1      -         1.84e-06  -         1.00e+00   OPT   0.00e+00  -         6.84e-05  1.362e+00  1.21e-10  8.22e-06  2.10e-06  ✔ (f-type)    
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Steplength Phase Regulariz Regulariz ||Step||  Objective  Infeas    Statio    Compl     Status        
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (LS Waechter-filter restoration primal-dual interior-point method with exact Hessian and primal-dual inertia correction)
+Tue Jul 14 11:39:24 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			1.361603
+Primal feasibility:			1.205896e-10
+┌ Stationarity residual:		8.216454e-06
+│ Primal feasibility:			1.205896e-10
+└ Complementarity residual:		2.100211e-06
+CPU time:				0.202224s
+Iterations:				24
+Objective evaluations:			32
+Constraints evaluations:		33
+Objective gradient evaluations:		32
+Jacobian evaluations:			32
+Hessian evaluations:			24
+Number of subproblems solved:		24

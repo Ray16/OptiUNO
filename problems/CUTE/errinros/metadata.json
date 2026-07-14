@@ -1,0 +1,62 @@
+{
+  "name": "errinros",
+  "number": 2219,
+  "classification": "SUR2-AN",
+  "N": 50,
+  "M": 0,
+  "Nnl": 50,
+  "Mnl": 0,
+  "Nz": 50,
+  "Fbest_raw": "39.9042000",
+  "Fbest": 39.9042,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "errinros.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/errinros.dag",
+      "bytes": 13323
+    },
+    "gms": {
+      "filename": "errinros.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/errinros.gms",
+      "bytes": 4275
+    },
+    "mod": {
+      "filename": "errinros.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/errinros.mod",
+      "bytes": 1142
+    },
+    "res": {
+      "filename": "errinros.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/errinros.res",
+      "bytes": 1335
+    },
+    "nl": {
+      "filename": "errinros.nl",
+      "bytes": 3741
+    },
+    "nl_presolve": {
+      "filename": "errinros_presolve.nl",
+      "bytes": 3790
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/errinros.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

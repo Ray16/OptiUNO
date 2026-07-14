@@ -1,0 +1,62 @@
+{
+  "name": "matrix2",
+  "number": 2484,
+  "classification": "QOR2-AY",
+  "N": 6,
+  "M": 2,
+  "Nnl": 6,
+  "Mnl": 2,
+  "Nz": 12,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "matrix2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/matrix2.dag",
+      "bytes": 747
+    },
+    "gms": {
+      "filename": "matrix2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/matrix2.gms",
+      "bytes": 621
+    },
+    "mod": {
+      "filename": "matrix2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/matrix2.mod",
+      "bytes": 753
+    },
+    "res": {
+      "filename": "matrix2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/matrix2.res",
+      "bytes": 148
+    },
+    "nl": {
+      "filename": "matrix2.nl",
+      "bytes": 741
+    },
+    "nl_presolve": {
+      "filename": "matrix2_presolve.nl",
+      "bytes": 741
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/matrix2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

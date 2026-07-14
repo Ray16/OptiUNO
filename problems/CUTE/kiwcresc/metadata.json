@@ -1,0 +1,62 @@
+{
+  "name": "kiwcresc",
+  "number": 2445,
+  "classification": "LQR2-AN",
+  "N": 3,
+  "M": 2,
+  "Nnl": 2,
+  "Mnl": 2,
+  "Nz": 7,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "kiwcresc.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/kiwcresc.dag",
+      "bytes": 528
+    },
+    "gms": {
+      "filename": "kiwcresc.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/kiwcresc.gms",
+      "bytes": 540
+    },
+    "mod": {
+      "filename": "kiwcresc.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/kiwcresc.mod",
+      "bytes": 893
+    },
+    "res": {
+      "filename": "kiwcresc.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/kiwcresc.res",
+      "bytes": 95
+    },
+    "nl": {
+      "filename": "kiwcresc.nl",
+      "bytes": 654
+    },
+    "nl_presolve": {
+      "filename": "kiwcresc_presolve.nl",
+      "bytes": 654
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/kiwcresc.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

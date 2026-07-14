@@ -1,0 +1,77 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs089.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=exact inertia_correction_strategy=primal globalization_mechanism=TR globalization_strategy=fletcher_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs089.nl
+3 variables, 1 constraints (0 equality, 1 inequality)
+Problem type: NLP
+
+Non-default options:
+QP_solver = BQPD
+linear_solver = MUMPS
+libhsl_path = 
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase Regulariz Regulariz ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         1.00e+01  OPT   -         -         -         7.500e-01  8.84e-02  1.73e+00  0.00e+00  initial point 
+ 1      1      -         1.00e+01  OPT   0.00e+00  -         7.92e-01  1.905e-01  1.34e-01  1.13e+00  3.27e-01  ✔ (f-type)    
+ 2      1      -         1.00e+01  OPT   1.02e-01  -         2.55e+00  1.081e+01  4.66e-01  -         -         ✘ (current)   
+ -      2      -         1.28e+00  OPT   -         -         1.28e+00  3.268e+00  3.60e-01  -         -         ✘ (current)   
+ -      3      -         6.38e-01  OPT   -         -         6.38e-01  7.952e-01  5.38e-02  -         -         ✘ (f-type)    
+ -      4      -         3.19e-01  OPT   -         -         3.19e-01  4.281e-01  5.72e-02  3.17e-01  5.33e-01  ✔ (h-type)    
+ 3      1      -         6.38e-01  OPT   1.02e-01  -         6.38e-01  1.767e+00  4.17e-02  1.48e+01  2.64e+00  ✔ (h-type)    
+ 4      1      -         1.28e+00  OPT   2.62e+01  -         3.11e-01  1.402e+00  5.77e-03  2.83e+00  4.35e-02  ✔ (f-type)    
+ 5      1      -         1.28e+00  OPT   0.00e+00  -         1.23e+00  1.127e-01  1.66e-01  2.67e+00  1.02e+00  ✔ (f-type)    
+ 6      1      -         1.28e+00  OPT   6.55e+00  -         5.85e-01  4.935e-01  5.28e-02  -         -         ✘ (f-type)    
+ -      2      -         2.92e-01  OPT   -         -         -         -          -         -         -         infeasible    
+ -      2      0.00e+00  2.92e-01  FEAS  1.00e-04  -         2.92e-01  2.889e-01  7.45e-02  1.81e-01  5.01e-02  ✔ (Armijo)    
+ 7      1      0.00e+00  5.85e-01  FEAS  4.10e-01  -         1.72e-01  5.839e-01  5.12e-02  1.78e-03  1.78e-02  ✔ (Armijo)    
+ 8      1      0.00e+00  5.85e-01  FEAS  2.05e-01  -         2.05e-02  5.848e-01  5.11e-02  4.20e-03  2.55e-05  ✔ (Armijo)    
+ 9      1      0.00e+00  5.85e-01  FEAS  2.05e-01  -         5.00e-02  5.938e-01  5.08e-02  1.06e-02  1.64e-04  ✔ (Armijo)    
+ 10     1      0.00e+00  5.85e-01  FEAS  2.05e-01  -         1.38e-01  6.650e-01  4.66e-02  4.47e-02  2.37e-03  ✔ (Armijo)    
+ 11     1      0.00e+00  5.85e-01  FEAS  4.10e-01  -         5.85e-01  1.332e+00  7.84e-03  1.10e-01  6.55e-03  ✔ (Armijo)    
+ 12     1      0.00e+00  1.17e+00  FEAS  0.00e+00  -         7.05e-02  1.404e+00  1.95e-03  2.37e+00  8.74e-04  ✔ (Armijo)    
+ 13     1      -         1.17e+00  OPT   0.00e+00  -         1.05e+00  3.251e-03  1.33e-01  1.11e-01  2.07e-01  ✔ (f-type)    
+ 14     1      -         1.17e+00  OPT   0.00e+00  -         -         -          -         -         -         infeasible    
+ 14     1      0.00e+00  1.17e+00  FEAS  4.10e-01  -         4.83e-02  9.508e-03  1.32e-01  2.37e-02  3.69e-04  ✔ (Armijo)    
+ 15     1      0.00e+00  1.17e+00  FEAS  8.19e-01  -         6.34e-02  2.620e-02  1.30e-01  6.12e-02  1.18e-03  ✔ (Armijo)    
+ 16     1      0.00e+00  1.17e+00  FEAS  8.19e-01  -         3.49e-01  2.798e-01  6.38e-02  2.42e-01  4.33e-02  ✔ (Armijo)    
+ 17     1      0.00e+00  1.17e+00  FEAS  0.00e+00  -         2.54e-01  6.244e-01  1.44e-02  1.69e-02  2.16e-03  ✔ (Armijo)    
+ 18     1      0.00e+00  1.17e+00  FEAS  0.00e+00  -         1.12e-01  8.388e-01  4.45e-03  1.83e+00  4.49e-04  ✔ (Armijo)    
+ 19     1      -         1.17e+00  OPT   0.00e+00  -         2.76e-01  9.066e-01  9.67e-02  -         -         ✘ (filter)    
+ -      2      -         1.38e-01  OPT   -         -         1.38e-01  9.504e-01  1.52e-02  -         -         ✘ (filter)    
+ -      3      -         6.89e-02  OPT   -         -         6.89e-02  9.966e-01  1.99e-03  2.05e+00  9.91e-02  ✔ (h-type)    
+ 20     1      -         1.38e-01  OPT   0.00e+00  -         3.32e-02  1.027e+00  1.67e-03  4.17e+00  1.67e-01  ✔ (h-type)    
+ 21     1      -         1.38e-01  OPT   0.00e+00  -         4.09e-02  1.084e+00  9.00e-04  2.66e+00  1.30e-01  ✔ (h-type)    
+ 22     1      -         1.38e-01  OPT   0.00e+00  -         4.58e-02  1.185e+00  3.81e-04  3.30e+00  9.31e-02  ✔ (h-type)    
+ 23     1      -         1.38e-01  OPT   0.00e+00  -         2.85e-02  1.261e+00  1.66e-04  4.27e+00  6.94e-02  ✔ (h-type)    
+ 24     1      -         1.38e-01  OPT   0.00e+00  -         2.09e-02  1.309e+00  6.93e-05  3.75e+00  4.52e-02  ✔ (h-type)    
+ 25     1      -         1.38e-01  OPT   0.00e+00  -         1.23e-02  1.345e+00  1.86e-05  1.90e+00  1.62e-02  ✔ (h-type)    
+ 26     1      -         1.38e-01  OPT   0.00e+00  -         6.02e-03  1.360e+00  2.26e-06  4.01e-01  2.33e-03  ✔ (h-type)    
+ 27     1      -         1.38e-01  OPT   0.00e+00  -         7.85e-04  1.363e+00  5.10e-08  1.26e-02  5.40e-05  ✔ (h-type)    
+ 28     1      -         1.38e-01  OPT   0.00e+00  -         2.20e-05  1.363e+00  3.99e-11  1.10e-05  4.23e-08  ✔ (h-type)    
+ 29     1      -         1.38e-01  OPT   0.00e+00  -         1.40e-08  1.363e+00  5.55e-17  6.46e-12  5.88e-14  ✔ (h-type)    
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase Regulariz Regulariz ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR Fletcher-filter restoration inequality-constrained SQP method with exact Hessian and primal inertia correction)
+Tue Jul 14 13:50:59 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			1.362657
+Primal feasibility:			5.551115e-17
+┌ Stationarity residual:		6.46213e-12
+│ Primal feasibility:			5.551115e-17
+└ Complementarity residual:		5.882888e-14
+CPU time:				0.053862s
+Iterations:				29
+Objective evaluations:			36
+Constraints evaluations:		36
+Objective gradient evaluations:		36
+Jacobian evaluations:			36
+Hessian evaluations:			31
+Number of subproblems solved:		37

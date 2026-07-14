@@ -1,0 +1,62 @@
+{
+  "name": "madsen",
+  "number": 2474,
+  "classification": "LOR2-AN",
+  "N": 3,
+  "M": 6,
+  "Nnl": 2,
+  "Mnl": 6,
+  "Nz": 15,
+  "Fbest_raw": "0.6164000",
+  "Fbest": 0.6164,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "madsen.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/madsen.dag",
+      "bytes": 942
+    },
+    "gms": {
+      "filename": "madsen.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/madsen.gms",
+      "bytes": 705
+    },
+    "mod": {
+      "filename": "madsen.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/madsen.mod",
+      "bytes": 971
+    },
+    "res": {
+      "filename": "madsen.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/madsen.res",
+      "bytes": 83
+    },
+    "nl": {
+      "filename": "madsen.nl",
+      "bytes": 779
+    },
+    "nl_presolve": {
+      "filename": "madsen_presolve.nl",
+      "bytes": 779
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/madsen.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

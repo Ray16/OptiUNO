@@ -1,0 +1,62 @@
+{
+  "name": "bt11",
+  "number": 2079,
+  "classification": "OOR2-AY",
+  "N": 5,
+  "M": 3,
+  "Nnl": 5,
+  "Mnl": 2,
+  "Nz": 13,
+  "Fbest_raw": "0.8249000",
+  "Fbest": 0.8249,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "bt11.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt11.dag",
+      "bytes": 998
+    },
+    "gms": {
+      "filename": "bt11.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt11.gms",
+      "bytes": 702
+    },
+    "mod": {
+      "filename": "bt11.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt11.mod",
+      "bytes": 1002
+    },
+    "res": {
+      "filename": "bt11.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/bt11.res",
+      "bytes": 118
+    },
+    "nl": {
+      "filename": "bt11.nl",
+      "bytes": 792
+    },
+    "nl_presolve": {
+      "filename": "bt11_presolve.nl",
+      "bytes": 793
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt11.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "chaconn2",
+  "number": 2100,
+  "classification": "LOR2-AY",
+  "N": 3,
+  "M": 3,
+  "Nnl": 2,
+  "Mnl": 3,
+  "Nz": 10,
+  "Fbest_raw": "2.0000000",
+  "Fbest": 2.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "chaconn2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/chaconn2.dag",
+      "bytes": 695
+    },
+    "gms": {
+      "filename": "chaconn2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/chaconn2.gms",
+      "bytes": 584
+    },
+    "mod": {
+      "filename": "chaconn2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/chaconn2.mod",
+      "bytes": 917
+    },
+    "res": {
+      "filename": "chaconn2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/chaconn2.res",
+      "bytes": 54
+    },
+    "nl": {
+      "filename": "chaconn2.nl",
+      "bytes": 693
+    },
+    "nl_presolve": {
+      "filename": "chaconn2_presolve.nl",
+      "bytes": 693
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/chaconn2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

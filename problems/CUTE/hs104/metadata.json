@@ -1,0 +1,62 @@
+{
+  "name": "hs104",
+  "number": 2413,
+  "classification": "OOR2-AN",
+  "N": 8,
+  "M": 6,
+  "Nnl": 8,
+  "Mnl": 6,
+  "Nz": 25,
+  "Fbest_raw": "3.9511000",
+  "Fbest": 3.9511,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hs104.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs104.dag",
+      "bytes": 3505
+    },
+    "gms": {
+      "filename": "hs104.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs104.gms",
+      "bytes": 1944
+    },
+    "mod": {
+      "filename": "hs104.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs104.mod",
+      "bytes": 695
+    },
+    "res": {
+      "filename": "hs104.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hs104.res",
+      "bytes": 286
+    },
+    "nl": {
+      "filename": "hs104.nl",
+      "bytes": 1275
+    },
+    "nl_presolve": {
+      "filename": "hs104_presolve.nl",
+      "bytes": 1275
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs104.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "brownbs",
+  "number": 2071,
+  "classification": "SUR2-AN",
+  "N": 2,
+  "M": 0,
+  "Nnl": 2,
+  "Mnl": 0,
+  "Nz": 2,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "brownbs.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/brownbs.dag",
+      "bytes": 349
+    },
+    "gms": {
+      "filename": "brownbs.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/brownbs.gms",
+      "bytes": 467
+    },
+    "mod": {
+      "filename": "brownbs.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/brownbs.mod",
+      "bytes": 923
+    },
+    "res": {
+      "filename": "brownbs.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/brownbs.res",
+      "bytes": 142
+    },
+    "nl": {
+      "filename": "brownbs.nl",
+      "bytes": 601
+    },
+    "nl_presolve": {
+      "filename": "brownbs_presolve.nl",
+      "bytes": 604
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/brownbs.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

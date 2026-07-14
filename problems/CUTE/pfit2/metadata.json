@@ -1,0 +1,62 @@
+{
+  "name": "pfit2",
+  "number": 2596,
+  "classification": "NOR2-AN",
+  "N": 3,
+  "M": 0,
+  "Nnl": 3,
+  "Mnl": 0,
+  "Nz": 3,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "pfit2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pfit2.dag",
+      "bytes": 1498
+    },
+    "gms": {
+      "filename": "pfit2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pfit2.gms",
+      "bytes": 826
+    },
+    "mod": {
+      "filename": "pfit2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pfit2.mod",
+      "bytes": 755
+    },
+    "res": {
+      "filename": "pfit2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/pfit2.res",
+      "bytes": 166
+    },
+    "nl": {
+      "filename": "pfit2.nl",
+      "bytes": 894
+    },
+    "nl_presolve": {
+      "filename": "pfit2_presolve.nl",
+      "bytes": 894
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pfit2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

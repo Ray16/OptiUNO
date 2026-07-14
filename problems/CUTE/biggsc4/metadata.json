@@ -1,0 +1,62 @@
+{
+  "name": "biggsc4",
+  "number": 2039,
+  "classification": "QLR2-AN",
+  "N": 4,
+  "M": 7,
+  "Nnl": 4,
+  "Mnl": 0,
+  "Nz": 20,
+  "Fbest_raw": "-24.5000000",
+  "Fbest": -24.5,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "biggsc4.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/biggsc4.dag",
+      "bytes": 925
+    },
+    "gms": {
+      "filename": "biggsc4.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/biggsc4.gms",
+      "bytes": 1011
+    },
+    "mod": {
+      "filename": "biggsc4.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/biggsc4.mod",
+      "bytes": 1126
+    },
+    "res": {
+      "filename": "biggsc4.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/biggsc4.res",
+      "bytes": 72
+    },
+    "nl": {
+      "filename": "biggsc4.nl",
+      "bytes": 802
+    },
+    "nl_presolve": {
+      "filename": "biggsc4_presolve.nl",
+      "bytes": 802
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/biggsc4.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

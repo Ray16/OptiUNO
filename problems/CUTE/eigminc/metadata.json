@@ -1,0 +1,62 @@
+{
+  "name": "eigminc",
+  "number": 2216,
+  "classification": "LQR2-AN",
+  "N": 22,
+  "M": 22,
+  "Nnl": 22,
+  "Mnl": 22,
+  "Nz": 104,
+  "Fbest_raw": "-1.0000000",
+  "Fbest": -1.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "eigminc.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigminc.dag",
+      "bytes": 5513
+    },
+    "gms": {
+      "filename": "eigminc.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigminc.gms",
+      "bytes": 2955
+    },
+    "mod": {
+      "filename": "eigminc.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigminc.mod",
+      "bytes": 13186
+    },
+    "res": {
+      "filename": "eigminc.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/eigminc.res",
+      "bytes": 635
+    },
+    "nl": {
+      "filename": "eigminc.nl",
+      "bytes": 2428
+    },
+    "nl_presolve": {
+      "filename": "eigminc_presolve.nl",
+      "bytes": 2428
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigminc.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

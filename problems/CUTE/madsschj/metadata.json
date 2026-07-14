@@ -1,0 +1,62 @@
+{
+  "name": "madsschj",
+  "number": 2475,
+  "classification": "LQR2-AN",
+  "N": 81,
+  "M": 158,
+  "Nnl": 80,
+  "Mnl": 158,
+  "Nz": 12798,
+  "Fbest_raw": "-797.2837000",
+  "Fbest": -797.2837,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "madsschj.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/madsschj.dag",
+      "bytes": 393783
+    },
+    "gms": {
+      "filename": "madsschj.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/madsschj.gms",
+      "bytes": 144730
+    },
+    "mod": {
+      "filename": "madsschj.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/madsschj.mod",
+      "bytes": 1257
+    },
+    "res": {
+      "filename": "madsschj.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/madsschj.res",
+      "bytes": 2110
+    },
+    "nl": {
+      "filename": "madsschj.nl",
+      "bytes": 81524
+    },
+    "nl_presolve": {
+      "filename": "madsschj_presolve.nl",
+      "bytes": 81524
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/madsschj.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

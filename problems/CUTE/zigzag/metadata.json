@@ -1,0 +1,62 @@
+{
+  "name": "zigzag",
+  "number": 2726,
+  "classification": "SOR2-AN",
+  "N": 64,
+  "M": 50,
+  "Nnl": 10,
+  "Mnl": 10,
+  "Nz": 142,
+  "Fbest_raw": "1.8000000",
+  "Fbest": 1.8,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "zigzag.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zigzag.dag",
+      "bytes": 10118
+    },
+    "gms": {
+      "filename": "zigzag.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zigzag.gms",
+      "bytes": 5537
+    },
+    "mod": {
+      "filename": "zigzag.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zigzag.mod",
+      "bytes": 7144
+    },
+    "res": {
+      "filename": "zigzag.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/zigzag.res",
+      "bytes": 1685
+    },
+    "nl": {
+      "filename": "zigzag.nl",
+      "bytes": 3449
+    },
+    "nl_presolve": {
+      "filename": "zigzag_presolve.nl",
+      "bytes": 3449
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zigzag.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

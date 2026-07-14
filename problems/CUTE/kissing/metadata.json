@@ -1,0 +1,62 @@
+{
+  "name": "kissing",
+  "number": 2444,
+  "classification": "LQR2-RN",
+  "N": 127,
+  "M": 903,
+  "Nnl": 126,
+  "Mnl": 903,
+  "Nz": 6154,
+  "Fbest_raw": "0.8445000",
+  "Fbest": 0.8445,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "kissing.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/kissing.dag",
+      "bytes": 317486
+    },
+    "gms": {
+      "filename": "kissing.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/kissing.gms",
+      "bytes": 86203
+    },
+    "mod": {
+      "filename": "kissing.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/kissing.mod",
+      "bytes": 3670
+    },
+    "res": {
+      "filename": "kissing.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/kissing.res",
+      "bytes": 3288
+    },
+    "nl": {
+      "filename": "kissing.nl",
+      "bytes": 85528
+    },
+    "nl_presolve": {
+      "filename": "kissing_presolve.nl",
+      "bytes": 85528
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/kissing.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

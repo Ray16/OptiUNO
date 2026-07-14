@@ -1,0 +1,62 @@
+{
+  "name": "hilberta",
+  "number": 2294,
+  "classification": "QUR2-AN",
+  "N": 10,
+  "M": 0,
+  "Nnl": 10,
+  "Mnl": 0,
+  "Nz": 10,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hilberta.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hilberta.dag",
+      "bytes": 9122
+    },
+    "gms": {
+      "filename": "hilberta.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hilberta.gms",
+      "bytes": 3430
+    },
+    "mod": {
+      "filename": "hilberta.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hilberta.mod",
+      "bytes": 852
+    },
+    "res": {
+      "filename": "hilberta.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hilberta.res",
+      "bytes": 240
+    },
+    "nl": {
+      "filename": "hilberta.nl",
+      "bytes": 2915
+    },
+    "nl_presolve": {
+      "filename": "hilberta_presolve.nl",
+      "bytes": 2915
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hilberta.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

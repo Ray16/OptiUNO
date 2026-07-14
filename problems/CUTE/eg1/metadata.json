@@ -1,0 +1,62 @@
+{
+  "name": "eg1",
+  "number": 2198,
+  "classification": "OBR2-AY",
+  "N": 3,
+  "M": 0,
+  "Nnl": 3,
+  "Mnl": 0,
+  "Nz": 3,
+  "Fbest_raw": "-1.4293000",
+  "Fbest": -1.4293,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "eg1.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eg1.dag",
+      "bytes": 453
+    },
+    "gms": {
+      "filename": "eg1.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eg1.gms",
+      "bytes": 514
+    },
+    "mod": {
+      "filename": "eg1.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eg1.mod",
+      "bytes": 864
+    },
+    "res": {
+      "filename": "eg1.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/eg1.res",
+      "bytes": 166
+    },
+    "nl": {
+      "filename": "eg1.nl",
+      "bytes": 596
+    },
+    "nl_presolve": {
+      "filename": "eg1_presolve.nl",
+      "bytes": 596
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eg1.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

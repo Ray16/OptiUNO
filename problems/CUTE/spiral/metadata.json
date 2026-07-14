@@ -1,0 +1,62 @@
+{
+  "name": "spiral",
+  "number": 2678,
+  "classification": "LOR2-AN",
+  "N": 3,
+  "M": 2,
+  "Nnl": 2,
+  "Mnl": 2,
+  "Nz": 7,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "spiral.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/spiral.dag",
+      "bytes": 1962
+    },
+    "gms": {
+      "filename": "spiral.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/spiral.gms",
+      "bytes": 1055
+    },
+    "mod": {
+      "filename": "spiral.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/spiral.mod",
+      "bytes": 889
+    },
+    "res": {
+      "filename": "spiral.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/spiral.res",
+      "bytes": 166
+    },
+    "nl": {
+      "filename": "spiral.nl",
+      "bytes": 953
+    },
+    "nl_presolve": {
+      "filename": "spiral_presolve.nl",
+      "bytes": 953
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/spiral.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

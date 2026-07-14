@@ -1,0 +1,62 @@
+{
+  "name": "deconvu",
+  "number": 2140,
+  "classification": "SUR2-MN",
+  "N": 491,
+  "M": 440,
+  "Nnl": 51,
+  "Mnl": 0,
+  "Nz": 51,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "deconvu.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/deconvu.dag",
+      "bytes": 72692
+    },
+    "gms": {
+      "filename": "deconvu.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/deconvu.gms",
+      "bytes": 28838
+    },
+    "mod": {
+      "filename": "deconvu.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/deconvu.mod",
+      "bytes": 1735
+    },
+    "res": {
+      "filename": "deconvu.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/deconvu.res",
+      "bytes": 12752
+    },
+    "nl": {
+      "filename": "deconvu.nl",
+      "bytes": 12495
+    },
+    "nl_presolve": {
+      "filename": "deconvu_presolve.nl",
+      "bytes": 11601
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/deconvu.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

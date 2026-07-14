@@ -1,0 +1,101 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs021.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=interior_point hessian_model=exact inertia_correction_strategy=none globalization_mechanism=TR globalization_strategy=fletcher_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs021.nl
+2 variables, 3 constraints (0 equality, 3 inequality)
+Problem type: NLP
+Reformulated model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs021.nl -> no fixed bounds -> equality constrained -> bounds relaxed
+5 variables, 3 constraints (3 equality, 0 inequality)
+
+Non-default options:
+QP_solver = BQPD
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         -         -         1.00e+01  OPT   -         -9.899e+01 2.21e+01  2.24e+00  4.90e+01  initial point 
+ 1      1      -         1.00e-01  -         1.00e+01  OPT   3.07e+00  -9.572e+01 7.31e-01  4.28e+01  1.73e-11  ✔ (h-type)    
+ 2      1      -         1.00e-01  -         1.00e+01  OPT   1.00e+01  -3.704e+01 1.73e+00  nan       1.41e-11  ✔ (h-type)    
+ 3      1      -         1.00e-01  -         2.00e+01  OPT   2.00e+01  -3.701e+01 2.31e+01  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         1.00e+01  OPT   1.00e+01  -3.704e+01 1.21e+01  nan       1.41e-11  ✔ (h-type)    
+ 4      1      -         1.00e-01  -         2.00e+01  OPT   2.00e+01  6.804e+02  3.79e+00  nan       1.41e-11  ✔ (h-type)    
+ 5      1      -         1.00e-01  -         4.00e+01  OPT   4.00e+01  6.807e+02  4.78e+01  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         2.00e+01  OPT   2.00e+01  6.805e+02  2.58e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         1.00e+01  OPT   1.00e+01  6.804e+02  1.48e+01  nan       1.41e-11  ✔ (h-type)    
+ 6      1      -         1.00e-01  -         2.00e+01  OPT   2.00e+01  2.198e+03  5.79e+00  nan       1.41e-11  ✔ (h-type)    
+ 7      1      -         1.00e-01  -         4.00e+01  OPT   4.00e+01  2.198e+03  4.98e+01  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         2.00e+01  OPT   2.00e+01  2.198e+03  2.78e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         1.00e+01  OPT   1.00e+01  2.198e+03  1.68e+01  nan       1.41e-11  ✔ (h-type)    
+ 8      1      -         1.00e-01  -         2.00e+01  OPT   2.00e+01  4.515e+03  2.57e+01  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         1.00e+01  OPT   1.00e+01  3.257e+03  1.47e+01  nan       1.41e-11  ✔ (h-type)    
+ 9      1      -         1.00e-01  -         2.00e+01  OPT   2.00e+01  3.257e+03  3.67e+01  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         1.00e+01  OPT   1.00e+01  3.257e+03  2.57e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         5.00e+00  OPT   -         -          -         -         -         infeasible    
+ -      3      0.00e+00  1.00e-01  -         5.00e+00  FEAS  5.00e+00  3.861e+03  1.97e+01  -         -         ✘ (Armijo)    
+ -      4      0.00e+00  1.00e-01  -         2.50e+00  FEAS  2.50e+00  3.257e+03  1.72e+01  -         -         ✘ (Armijo)    
+ -      5      0.00e+00  1.00e-01  -         1.25e+00  FEAS  1.25e+00  3.257e+03  1.60e+01  -         -         ✘ (Armijo)    
+ -      6      0.00e+00  1.00e-01  -         6.25e-01  FEAS  6.25e-01  3.257e+03  1.54e+01  -         -         ✘ (Armijo)    
+ -      7      0.00e+00  1.00e-01  -         3.12e-01  FEAS  3.12e-01  3.257e+03  1.50e+01  -         -         ✘ (Armijo)    
+ -      8      0.00e+00  1.00e-01  -         1.56e-01  FEAS  1.56e-01  3.257e+03  1.49e+01  -         -         ✘ (Armijo)    
+ -      9      0.00e+00  1.00e-01  -         7.81e-02  FEAS  7.81e-02  3.257e+03  1.48e+01  -         -         ✘ (Armijo)    
+ -      10     0.00e+00  1.00e-01  -         3.91e-02  FEAS  3.91e-02  3.257e+03  1.48e+01  -         -         ✘ (Armijo)    
+ -      11     0.00e+00  1.00e-01  -         1.95e-02  FEAS  1.95e-02  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      12     0.00e+00  1.00e-01  -         9.77e-03  FEAS  9.77e-03  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      13     0.00e+00  1.00e-01  -         4.88e-03  FEAS  4.88e-03  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      14     0.00e+00  1.00e-01  -         2.44e-03  FEAS  2.44e-03  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      15     0.00e+00  1.00e-01  -         1.22e-03  FEAS  1.22e-03  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      16     0.00e+00  1.00e-01  -         6.10e-04  FEAS  6.10e-04  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      17     0.00e+00  1.00e-01  -         3.05e-04  FEAS  3.05e-04  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      18     0.00e+00  1.00e-01  -         1.53e-04  FEAS  1.53e-04  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      19     0.00e+00  1.00e-01  -         7.63e-05  FEAS  7.63e-05  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      20     0.00e+00  1.00e-01  -         3.81e-05  FEAS  3.81e-05  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      21     0.00e+00  1.00e-01  -         1.91e-05  FEAS  1.91e-05  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      22     0.00e+00  1.00e-01  -         9.54e-06  FEAS  9.54e-06  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      23     0.00e+00  1.00e-01  -         4.77e-06  FEAS  4.77e-06  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      24     0.00e+00  1.00e-01  -         2.38e-06  FEAS  2.38e-06  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      25     0.00e+00  1.00e-01  -         1.19e-06  FEAS  1.19e-06  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      26     0.00e+00  1.00e-01  -         5.96e-07  FEAS  5.96e-07  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      27     0.00e+00  1.00e-01  -         2.98e-07  FEAS  2.98e-07  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      28     0.00e+00  1.00e-01  -         1.49e-07  FEAS  1.49e-07  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      29     0.00e+00  1.00e-01  -         7.45e-08  FEAS  7.45e-08  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      30     0.00e+00  1.00e-01  -         3.73e-08  FEAS  3.73e-08  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      31     0.00e+00  1.00e-01  -         1.86e-08  FEAS  1.86e-08  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      32     0.00e+00  1.00e-01  -         9.31e-09  FEAS  9.31e-09  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      33     0.00e+00  1.00e-01  -         4.66e-09  FEAS  4.66e-09  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      34     0.00e+00  1.00e-01  -         2.33e-09  FEAS  2.33e-09  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      35     0.00e+00  1.00e-01  -         1.16e-09  FEAS  1.16e-09  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      36     0.00e+00  1.00e-01  -         5.82e-10  FEAS  5.82e-10  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      37     0.00e+00  1.00e-01  -         2.91e-10  FEAS  2.91e-10  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      38     0.00e+00  1.00e-01  -         1.46e-10  FEAS  1.46e-10  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      39     0.00e+00  1.00e-01  -         7.28e-11  FEAS  7.28e-11  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      40     0.00e+00  1.00e-01  -         3.64e-11  FEAS  3.64e-11  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      41     0.00e+00  1.00e-01  -         1.82e-11  FEAS  1.82e-11  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      42     0.00e+00  1.00e-01  -         9.09e-12  FEAS  9.09e-12  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      43     0.00e+00  1.00e-01  -         4.55e-12  FEAS  4.55e-12  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      44     0.00e+00  1.00e-01  -         2.27e-12  FEAS  2.27e-12  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      45     0.00e+00  1.00e-01  -         1.14e-12  FEAS  1.14e-12  3.257e+03  1.47e+01  -         -         ✘ (Armijo)    
+ -      -      -         -         -         -         -     -         -          -         -         -         Small radius  
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR Fletcher-filter restoration primal-dual interior-point method with exact Hessian and no inertia correction)
+Tue Jul 14 13:52:33 2026
+────────────────────────────────────────
+Optimization status:			Algorithmic error
+Solution status:			Suboptimal point
+Objective value:			3256.645
+Primal feasibility:			14.72798
+┌ Stationarity residual:		nan
+│ Primal feasibility:			14.72798
+└ Complementarity residual:		1.414214e-11
+CPU time:				0.028862s
+Iterations:				9
+Objective evaluations:			60
+Constraints evaluations:		61
+Objective gradient evaluations:		17
+Jacobian evaluations:			60
+Hessian evaluations:			10
+Number of subproblems solved:		60

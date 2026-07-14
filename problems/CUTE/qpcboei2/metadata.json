@@ -1,0 +1,62 @@
+{
+  "name": "qpcboei2",
+  "number": 2625,
+  "classification": "QLR2-MN",
+  "N": 143,
+  "M": 140,
+  "Nnl": 143,
+  "Mnl": 0,
+  "Nz": 944,
+  "Fbest_raw": "8293665.5077000",
+  "Fbest": 8293665.5077,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "qpcboei2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qpcboei2.dag",
+      "bytes": 80321
+    },
+    "gms": {
+      "filename": "qpcboei2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qpcboei2.gms",
+      "bytes": 41755
+    },
+    "mod": {
+      "filename": "qpcboei2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qpcboei2.mod",
+      "bytes": 39336
+    },
+    "res": {
+      "filename": "qpcboei2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/qpcboei2.res",
+      "bytes": 3704
+    },
+    "nl": {
+      "filename": "qpcboei2.nl",
+      "bytes": 21224
+    },
+    "nl_presolve": {
+      "filename": "qpcboei2_presolve.nl",
+      "bytes": 21224
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qpcboei2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

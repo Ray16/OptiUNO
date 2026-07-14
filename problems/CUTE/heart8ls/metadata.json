@@ -1,0 +1,62 @@
+{
+  "name": "heart8ls",
+  "number": 2292,
+  "classification": "SUR2-MN",
+  "N": 8,
+  "M": 0,
+  "Nnl": 8,
+  "Mnl": 0,
+  "Nz": 8,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "heart8ls.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/heart8ls.dag",
+      "bytes": 8223
+    },
+    "gms": {
+      "filename": "heart8ls.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/heart8ls.gms",
+      "bytes": 2781
+    },
+    "mod": {
+      "filename": "heart8ls.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/heart8ls.mod",
+      "bytes": 2985
+    },
+    "res": {
+      "filename": "heart8ls.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/heart8ls.res",
+      "bytes": 286
+    },
+    "nl": {
+      "filename": "heart8ls.nl",
+      "bytes": 2053
+    },
+    "nl_presolve": {
+      "filename": "heart8ls_presolve.nl",
+      "bytes": 2078
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/heart8ls.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

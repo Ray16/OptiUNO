@@ -1,0 +1,62 @@
+{
+  "name": "pentagon",
+  "number": 2592,
+  "classification": "OLR2-AY",
+  "N": 6,
+  "M": 15,
+  "Nnl": 6,
+  "Mnl": 0,
+  "Nz": 30,
+  "Fbest_raw": "0.0001000",
+  "Fbest": 0.0001,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "pentagon.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pentagon.dag",
+      "bytes": 2640
+    },
+    "gms": {
+      "filename": "pentagon.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pentagon.gms",
+      "bytes": 1596
+    },
+    "mod": {
+      "filename": "pentagon.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pentagon.mod",
+      "bytes": 1086
+    },
+    "res": {
+      "filename": "pentagon.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/pentagon.res",
+      "bytes": 238
+    },
+    "nl": {
+      "filename": "pentagon.nl",
+      "bytes": 1502
+    },
+    "nl_presolve": {
+      "filename": "pentagon_presolve.nl",
+      "bytes": 1502
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pentagon.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

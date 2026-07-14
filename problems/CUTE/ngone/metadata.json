@@ -1,0 +1,62 @@
+{
+  "name": "ngone",
+  "number": 2521,
+  "classification": "QQR2-AY",
+  "N": 100,
+  "M": 1273,
+  "Nnl": 97,
+  "Mnl": 1225,
+  "Nz": 4946,
+  "Fbest_raw": "-0.6420000",
+  "Fbest": -0.642,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "ngone.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/ngone.dag",
+      "bytes": 576485
+    },
+    "gms": {
+      "filename": "ngone.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/ngone.gms",
+      "bytes": 169271
+    },
+    "mod": {
+      "filename": "ngone.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/ngone.mod",
+      "bytes": 100996
+    },
+    "res": {
+      "filename": "ngone.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/ngone.res",
+      "bytes": 2586
+    },
+    "nl": {
+      "filename": "ngone.nl",
+      "bytes": 118960
+    },
+    "nl_presolve": {
+      "filename": "ngone_presolve.nl",
+      "bytes": 118960
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/ngone.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

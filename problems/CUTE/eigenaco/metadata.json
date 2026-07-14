@@ -1,0 +1,62 @@
+{
+  "name": "eigenaco",
+  "number": 2203,
+  "classification": "SQR2-AN",
+  "N": 110,
+  "M": 55,
+  "Nnl": 110,
+  "Mnl": 55,
+  "Nz": 1110,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "eigenaco.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigenaco.dag",
+      "bytes": 106216
+    },
+    "gms": {
+      "filename": "eigenaco.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigenaco.gms",
+      "bytes": 30933
+    },
+    "mod": {
+      "filename": "eigenaco.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigenaco.mod",
+      "bytes": 1003
+    },
+    "res": {
+      "filename": "eigenaco.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/eigenaco.res",
+      "bytes": 2195
+    },
+    "nl": {
+      "filename": "eigenaco.nl",
+      "bytes": 25449
+    },
+    "nl_presolve": {
+      "filename": "eigenaco_presolve.nl",
+      "bytes": 25459
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigenaco.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

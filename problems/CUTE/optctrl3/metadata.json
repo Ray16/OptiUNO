@@ -1,0 +1,62 @@
+{
+  "name": "optctrl3",
+  "number": 2539,
+  "classification": "QQR2-AN",
+  "N": 122,
+  "M": 81,
+  "Nnl": 117,
+  "Mnl": 40,
+  "Nz": 428,
+  "Fbest_raw": "2048.0165000",
+  "Fbest": 2048.0165,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "optctrl3.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/optctrl3.dag",
+      "bytes": 47375
+    },
+    "gms": {
+      "filename": "optctrl3.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/optctrl3.gms",
+      "bytes": 16415
+    },
+    "mod": {
+      "filename": "optctrl3.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/optctrl3.mod",
+      "bytes": 13007
+    },
+    "res": {
+      "filename": "optctrl3.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/optctrl3.res",
+      "bytes": 3158
+    },
+    "nl": {
+      "filename": "optctrl3.nl",
+      "bytes": 10685
+    },
+    "nl_presolve": {
+      "filename": "optctrl3_presolve.nl",
+      "bytes": 10685
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/optctrl3.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

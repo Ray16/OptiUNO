@@ -1,0 +1,62 @@
+{
+  "name": "himmelp3",
+  "number": 2309,
+  "classification": "OQR2-AN",
+  "N": 2,
+  "M": 4,
+  "Nnl": 2,
+  "Mnl": 2,
+  "Nz": 6,
+  "Fbest_raw": "-59.0131000",
+  "Fbest": -59.0131,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "himmelp3.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelp3.dag",
+      "bytes": 2724
+    },
+    "gms": {
+      "filename": "himmelp3.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelp3.gms",
+      "bytes": 1369
+    },
+    "mod": {
+      "filename": "himmelp3.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelp3.mod",
+      "bytes": 1569
+    },
+    "res": {
+      "filename": "himmelp3.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/himmelp3.res",
+      "bytes": 142
+    },
+    "nl": {
+      "filename": "himmelp3.nl",
+      "bytes": 1188
+    },
+    "nl_presolve": {
+      "filename": "himmelp3_presolve.nl",
+      "bytes": 1188
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelp3.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

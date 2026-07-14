@@ -1,0 +1,62 @@
+{
+  "name": "hs99exp",
+  "number": 2434,
+  "classification": "OOR2-AN",
+  "N": 31,
+  "M": 21,
+  "Nnl": 8,
+  "Mnl": 21,
+  "Nz": 67,
+  "Fbest_raw": "-1008062500.0000000",
+  "Fbest": -1008062500.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hs99exp.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs99exp.dag",
+      "bytes": 4892
+    },
+    "gms": {
+      "filename": "hs99exp.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs99exp.gms",
+      "bytes": 2226
+    },
+    "mod": {
+      "filename": "hs99exp.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs99exp.mod",
+      "bytes": 3967
+    },
+    "res": {
+      "filename": "hs99exp.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hs99exp.res",
+      "bytes": 860
+    },
+    "nl": {
+      "filename": "hs99exp.nl",
+      "bytes": 1806
+    },
+    "nl_presolve": {
+      "filename": "hs99exp_presolve.nl",
+      "bytes": 1806
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs99exp.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

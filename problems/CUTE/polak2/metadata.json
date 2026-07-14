@@ -1,0 +1,62 @@
+{
+  "name": "polak2",
+  "number": 2603,
+  "classification": "LOR2-AN",
+  "N": 11,
+  "M": 2,
+  "Nnl": 10,
+  "Mnl": 2,
+  "Nz": 23,
+  "Fbest_raw": "54.5981000",
+  "Fbest": 54.5981,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "polak2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/polak2.dag",
+      "bytes": 1488
+    },
+    "gms": {
+      "filename": "polak2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/polak2.gms",
+      "bytes": 877
+    },
+    "mod": {
+      "filename": "polak2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/polak2.mod",
+      "bytes": 954
+    },
+    "res": {
+      "filename": "polak2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/polak2.res",
+      "bytes": 360
+    },
+    "nl": {
+      "filename": "polak2.nl",
+      "bytes": 1010
+    },
+    "nl_presolve": {
+      "filename": "polak2_presolve.nl",
+      "bytes": 1010
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/polak2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

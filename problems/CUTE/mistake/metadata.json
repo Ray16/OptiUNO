@@ -1,0 +1,62 @@
+{
+  "name": "mistake",
+  "number": 2498,
+  "classification": "QQR2-AY",
+  "N": 9,
+  "M": 13,
+  "Nnl": 9,
+  "Mnl": 13,
+  "Nz": 48,
+  "Fbest_raw": "-1.0000000",
+  "Fbest": -1.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "mistake.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mistake.dag",
+      "bytes": 3242
+    },
+    "gms": {
+      "filename": "mistake.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mistake.gms",
+      "bytes": 1422
+    },
+    "mod": {
+      "filename": "mistake.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mistake.mod",
+      "bytes": 1420
+    },
+    "res": {
+      "filename": "mistake.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/mistake.res",
+      "bytes": 177
+    },
+    "nl": {
+      "filename": "mistake.nl",
+      "bytes": 1462
+    },
+    "nl_presolve": {
+      "filename": "mistake_presolve.nl",
+      "bytes": 1462
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mistake.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

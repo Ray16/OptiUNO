@@ -1,0 +1,62 @@
+{
+  "name": "integreq",
+  "number": 2442,
+  "classification": "NOR2-AN",
+  "N": 102,
+  "M": 100,
+  "Nnl": 100,
+  "Mnl": 100,
+  "Nz": 10000,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "integreq.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/integreq.dag",
+      "bytes": 2425783
+    },
+    "gms": {
+      "filename": "integreq.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/integreq.gms",
+      "bytes": 679845
+    },
+    "mod": {
+      "filename": "integreq.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/integreq.mod",
+      "bytes": 1045
+    },
+    "res": {
+      "filename": "integreq.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/integreq.res",
+      "bytes": 2586
+    },
+    "nl": {
+      "filename": "integreq.nl",
+      "bytes": 643636
+    },
+    "nl_presolve": {
+      "filename": "integreq_presolve.nl",
+      "bytes": 643636
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/integreq.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

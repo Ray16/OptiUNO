@@ -1,0 +1,62 @@
+{
+  "name": "airport",
+  "number": 2004,
+  "classification": "SQR2-MN",
+  "N": 84,
+  "M": 42,
+  "Nnl": 84,
+  "Mnl": 42,
+  "Nz": 168,
+  "Fbest_raw": "47952.6996000",
+  "Fbest": 47952.6996,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "airport.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/airport.dag",
+      "bytes": 193844
+    },
+    "gms": {
+      "filename": "airport.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/airport.gms",
+      "bytes": 62152
+    },
+    "mod": {
+      "filename": "airport.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/airport.mod",
+      "bytes": 3932
+    },
+    "res": {
+      "filename": "airport.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/airport.res",
+      "bytes": 2185
+    },
+    "nl": {
+      "filename": "airport.nl",
+      "bytes": 33515
+    },
+    "nl_presolve": {
+      "filename": "airport_presolve.nl",
+      "bytes": 33515
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/airport.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "ssebnln",
+  "number": 2682,
+  "classification": "LQR2-RN",
+  "N": 194,
+  "M": 96,
+  "Nnl": 48,
+  "Mnl": 24,
+  "Nz": 502,
+  "Fbest_raw": "16170600.0000000",
+  "Fbest": 16170600.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "ssebnln.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/ssebnln.dag",
+      "bytes": 27874
+    },
+    "gms": {
+      "filename": "ssebnln.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/ssebnln.gms",
+      "bytes": 15723
+    },
+    "mod": {
+      "filename": "ssebnln.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/ssebnln.mod",
+      "bytes": 24233
+    },
+    "res": {
+      "filename": "ssebnln.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/ssebnln.res",
+      "bytes": 5030
+    },
+    "nl": {
+      "filename": "ssebnln.nl",
+      "bytes": 9502
+    },
+    "nl_presolve": {
+      "filename": "ssebnln_presolve.nl",
+      "bytes": 9502
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/ssebnln.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

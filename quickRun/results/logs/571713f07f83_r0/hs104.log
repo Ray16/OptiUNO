@@ -1,0 +1,68 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs104.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=LBFGS inertia_correction_strategy=primal globalization_mechanism=LS globalization_strategy=waechter_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs104.nl
+8 variables, 6 constraints (0 equality, 6 inequality)
+Problem type: NLP
+
+Non-default options:
+QP_solver = BQPD
+linear_solver = MUMPS
+libhsl_path = 
+
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Steplength Phase Regulariz Regulariz |BFGS|  |BFGS|  ||Step||  Objective  Infeas    Statio    Compl     Status        
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         -          OPT   -         -         0       -       -         3.657e+00  5.92e-01  2.28e+00  0.00e+00  initial point 
+ 1      1      -         1.00e+00   OPT   -         -         1       -       2.58e-01  4.258e+00  2.35e-01  4.17e+00  1.57e-02  ✔ (h-type)    
+ 2      1      -         1.00e+00   OPT   -         -         2       -       1.37e-01  4.100e+00  4.95e-02  1.47e+00  3.15e-02  ✔ (h-type)    
+ 3      1      -         1.00e+00   OPT   -         -         3       -       1.43e-01  4.028e+00  7.15e-03  5.85e-01  1.35e-03  ✔ (h-type)    
+ 4      1      -         1.00e+00   OPT   -         -         4       -       1.07e-01  3.998e+00  5.18e-03  3.03e-01  1.27e-03  ✔ (h-type)    
+ 5      1      -         1.00e+00   OPT   -         -         5       -       7.25e-01  3.887e+00  1.37e-01  3.35e-01  3.38e-02  ✔ (h-type)    
+ 6      1      -         1.00e+00   OPT   -         -         -       -       5.87e-01  3.893e+00  1.65e+00  -         -         ✘ (filter)    
+ -      2      -         5.00e-01   -     -         -         -       -       2.94e-01  3.890e+00  1.86e-01  -         -         ✘ (h-type)    
+ -      3      -         2.50e-01   -     -         -         6       -       1.47e-01  3.888e+00  1.25e-01  3.25e-01  3.61e-02  ✔ (h-type)    
+ 7      1      -         1.00e+00   OPT   -         -         6       -       3.31e-01  3.929e+00  6.84e-02  2.43e-01  5.32e-02  ✔ (h-type)    
+ 8      1      -         1.00e+00   OPT   -         -         6       -       1.49e-01  3.946e+00  1.72e-02  4.43e-02  1.38e-02  ✔ (h-type)    
+ 9      1      -         1.00e+00   OPT   -         -         6       -       7.65e-02  3.959e+00  1.43e-03  6.04e-02  1.41e-03  ✔ (h-type)    
+ 10     1      -         1.00e+00   OPT   -         -         6       -       5.49e-02  3.958e+00  3.52e-05  4.59e-02  2.23e-05  ✔ (h-type)    
+ 11     1      -         1.00e+00   OPT   -         -         -       -       3.38e+00  5.359e+00  1.54e+00  -         -         ✘ (filter)    
+ -      2      -         5.00e-01   -     -         -         -       -       1.69e+00  4.091e+00  1.12e-01  -         -         ✘ (filter)    
+ -      3      -         2.50e-01   -     -         -         -       -       8.46e-01  3.970e+00  3.13e-02  -         -         ✘ (filter)    
+ -      4      -         1.25e-01   -     -         -         6       -       4.23e-01  3.954e+00  8.35e-03  4.02e-01  1.87e-02  ✔ (f-type)    
+ 12     1      -         1.00e+00   OPT   -         -         6       -       2.66e-01  3.958e+00  3.06e-03  3.29e-01  2.14e-03  ✔ (h-type)    
+ 13     1      -         1.00e+00   OPT   -         -         6       -       1.63e-01  3.945e+00  7.11e-03  5.19e-02  5.07e-03  ✔ (h-type)    
+ 14     1      -         1.00e+00   OPT   -         -         6       -       3.30e-02  3.951e+00  6.37e-04  3.06e-02  6.13e-04  ✔ (h-type)    
+ 15     1      -         1.00e+00   OPT   -         -         6       -       1.59e-02  3.951e+00  1.13e-04  9.22e-03  9.28e-05  ✔ (h-type)    
+ 16     1      -         1.00e+00   OPT   -         -         6       -       1.82e-02  3.951e+00  7.72e-06  3.85e-03  5.72e-06  ✔ (h-type)    
+ 17     1      -         1.00e+00   OPT   -         -         -       -       2.12e-02  3.951e+00  2.02e-04  -         -         ✘ (filter)    
+ -      2      -         5.00e-01   -     -         -         6       -       1.06e-02  3.951e+00  5.39e-05  1.50e-02  4.03e-05  ✔ (f-type)    
+ 18     1      -         1.00e+00   OPT   -         -         6       -       1.30e-02  3.951e+00  3.44e-05  3.58e-04  2.79e-05  ✔ (f-type)    
+ 19     1      -         1.00e+00   OPT   -         -         6       -       2.61e-04  3.951e+00  1.24e-08  9.83e-04  1.21e-08  ✔ (h-type)    
+ 20     1      -         1.00e+00   OPT   -         -         6       -       1.30e-04  3.951e+00  2.40e-09  8.23e-05  1.90e-09  ✔ (f-type)    
+ 21     1      -         1.00e+00   OPT   -         -         6       -       3.72e-05  3.951e+00  5.85e-11  2.14e-06  3.79e-11  ✔ (h-type)    
+ 22     1      -         1.00e+00   OPT   -         -         6       -       3.56e-07  3.951e+00  1.25e-13  4.81e-07  1.06e-13  ✔ (h-type)    
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Steplength Phase Regulariz Regulariz |BFGS|  |BFGS|  ||Step||  Objective  Infeas    Statio    Compl     Status        
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (LS Waechter-filter restoration inequality-constrained SQP method with L-BFGS Hessian and primal inertia correction)
+Tue Jul 14 13:55:02 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			3.951163
+Primal feasibility:			1.247891e-13
+┌ Stationarity residual:		4.814281e-07
+│ Primal feasibility:			1.247891e-13
+└ Complementarity residual:		1.06432e-13
+CPU time:				0.014246s
+Iterations:				22
+Objective evaluations:			29
+Constraints evaluations:		29
+Objective gradient evaluations:		29
+Jacobian evaluations:			29
+Hessian evaluations:			0
+Number of subproblems solved:		22

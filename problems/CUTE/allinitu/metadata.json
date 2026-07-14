@@ -1,0 +1,62 @@
+{
+  "name": "allinitu",
+  "number": 2008,
+  "classification": "OUR2-AY",
+  "N": 4,
+  "M": 0,
+  "Nnl": 4,
+  "Mnl": 0,
+  "Nz": 4,
+  "Fbest_raw": "5.7444000",
+  "Fbest": 5.7444,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "allinitu.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/allinitu.dag",
+      "bytes": 1128
+    },
+    "gms": {
+      "filename": "allinitu.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/allinitu.gms",
+      "bytes": 746
+    },
+    "mod": {
+      "filename": "allinitu.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/allinitu.mod",
+      "bytes": 818
+    },
+    "res": {
+      "filename": "allinitu.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/allinitu.res",
+      "bytes": 190
+    },
+    "nl": {
+      "filename": "allinitu.nl",
+      "bytes": 764
+    },
+    "nl_presolve": {
+      "filename": "allinitu_presolve.nl",
+      "bytes": 784
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/allinitu.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

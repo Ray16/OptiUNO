@@ -1,0 +1,62 @@
+{
+  "name": "degenlpb",
+  "number": 2142,
+  "classification": "LLR2-AN",
+  "N": 20,
+  "M": 15,
+  "Nnl": 0,
+  "Mnl": 0,
+  "Nz": 91,
+  "Fbest_raw": "-30.7315000",
+  "Fbest": -30.7315,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "degenlpb.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/degenlpb.dag",
+      "bytes": 4757
+    },
+    "gms": {
+      "filename": "degenlpb.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/degenlpb.gms",
+      "bytes": 3349
+    },
+    "mod": {
+      "filename": "degenlpb.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/degenlpb.mod",
+      "bytes": 2175
+    },
+    "res": {
+      "filename": "degenlpb.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/degenlpb.res",
+      "bytes": 585
+    },
+    "nl": {
+      "filename": "degenlpb.nl",
+      "bytes": 1764
+    },
+    "nl_presolve": {
+      "filename": "degenlpb_presolve.nl",
+      "bytes": 1764
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/degenlpb.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

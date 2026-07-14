@@ -1,0 +1,62 @@
+{
+  "name": "denschnc",
+  "number": 2146,
+  "classification": "SUR2-AN",
+  "N": 2,
+  "M": 0,
+  "Nnl": 2,
+  "Mnl": 0,
+  "Nz": 2,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "denschnc.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/denschnc.dag",
+      "bytes": 380
+    },
+    "gms": {
+      "filename": "denschnc.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/denschnc.gms",
+      "bytes": 463
+    },
+    "mod": {
+      "filename": "denschnc.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/denschnc.mod",
+      "bytes": 873
+    },
+    "res": {
+      "filename": "denschnc.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/denschnc.res",
+      "bytes": 61
+    },
+    "nl": {
+      "filename": "denschnc.nl",
+      "bytes": 612
+    },
+    "nl_presolve": {
+      "filename": "denschnc_presolve.nl",
+      "bytes": 634
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/denschnc.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

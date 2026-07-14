@@ -1,0 +1,57 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs039.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=exact inertia_correction_strategy=none globalization_mechanism=TR globalization_strategy=funnel_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs039.nl
+4 variables, 2 constraints (2 equality, 0 inequality)
+Problem type: NLP
+
+Non-default options:
+QP_solver = BQPD
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase Funnel    ||Step||  Objective  Infeas    Statio    Compl     Status        
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         1.00e+01  OPT   1.80e+01  -         -2.000e+00 1.20e+01  1.00e+00  0.00e+00  initial point 
+ 1      1      -         1.00e+01  OPT   1.80e+01  1.00e+01  -5.333e+00 2.15e+02  -         -         ✘ (funnel)    
+ -      2      -         5.00e+00  OPT   1.80e+01  5.00e+00  -3.250e+00 3.76e+01  -         -         ✘ (funnel)    
+ -      3      -         2.50e+00  OPT   1.80e+01  2.50e+00  -2.208e+00 7.32e+00  2.49e-01  0.00e+00  ✔ (h-type)    
+ 2      1      -         5.00e+00  OPT   1.80e+01  5.00e+00  -2.135e+00 8.21e+00  7.51e-02  0.00e+00  ✔ (h-type)    
+ 3      1      -         1.00e+01  OPT   1.80e+01  1.00e+01  -2.849e+00 2.15e+01  -         -         ✘ (funnel)    
+ -      2      -         5.00e+00  OPT   1.80e+01  5.00e+00  -2.484e+00 1.16e+01  1.06e-01  0.00e+00  ✔ (h-type)    
+ 4      1      -         1.00e+01  OPT   1.80e+01  1.00e+01  -2.980e+00 3.63e+01  -         -         ✘ (funnel)    
+ -      2      -         5.00e+00  OPT   1.80e+01  5.00e+00  -2.709e+00 2.25e+01  -         -         ✘ (funnel)    
+ -      3      -         2.50e+00  OPT   -         -         -          -         -         -         infeasible    
+ -      3      0.00e+00  2.50e+00  FEAS  -         2.50e+00  -2.309e+00 1.40e+01  -         -         ✘ (Armijo)    
+ -      4      0.00e+00  1.25e+00  FEAS  -         1.25e+00  -2.374e+00 9.36e+00  1.18e+00  0.00e+00  ✔ (Armijo)    
+ 5      1      0.00e+00  2.50e+00  FEAS  -         2.50e+00  -2.320e+00 7.11e+00  7.15e-01  0.00e+00  ✔ (Armijo)    
+ 6      1      0.00e+00  5.00e+00  FEAS  -         5.00e+00  -1.903e+00 3.27e+00  6.73e-01  0.00e+00  ✔ (Armijo)    
+ 7      1      0.00e+00  1.00e+01  FEAS  -         3.89e+00  -1.440e+00 1.34e+00  5.90e-01  0.00e+00  ✔ (Armijo)    
+ 8      1      -         1.00e+01  OPT   1.06e+01  5.71e-01  -1.167e+00 3.77e-01  3.59e-01  0.00e+00  ✔ (h-type)    
+ 9      1      -         1.00e+01  OPT   1.06e+01  2.27e-01  -1.038e+00 7.44e-02  1.86e-01  0.00e+00  ✔ (h-type)    
+ 10     1      -         1.00e+01  OPT   1.06e+01  5.54e-02  -1.003e+00 5.50e-03  3.53e-02  0.00e+00  ✔ (h-type)    
+ 11     1      -         1.00e+01  OPT   1.06e+01  6.60e-03  -1.000e+00 7.89e-05  7.66e-04  0.00e+00  ✔ (h-type)    
+ 12     1      -         1.00e+01  OPT   1.06e+01  2.91e-04  -1.000e+00 9.95e-08  4.65e-07  0.00e+00  ✔ (h-type)    
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase Funnel    ||Step||  Objective  Infeas    Statio    Compl     Status        
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR funnel restoration inequality-constrained SQP method with exact Hessian and no inertia correction)
+Tue Jul 14 13:54:03 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			-1
+Primal feasibility:			9.950076e-08
+┌ Stationarity residual:		4.64618e-07
+│ Primal feasibility:			9.950076e-08
+└ Complementarity residual:		0
+CPU time:				0.000305s
+Iterations:				12
+Objective evaluations:			19
+Constraints evaluations:		19
+Objective gradient evaluations:		18
+Jacobian evaluations:			19
+Hessian evaluations:			13
+Number of subproblems solved:		19

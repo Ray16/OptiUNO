@@ -1,0 +1,62 @@
+{
+  "name": "hs098",
+  "number": 2405,
+  "classification": "LQR2-AN",
+  "N": 6,
+  "M": 4,
+  "Nnl": 5,
+  "Mnl": 4,
+  "Nz": 26,
+  "Fbest_raw": "3.1358000",
+  "Fbest": 3.1358,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hs098.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs098.dag",
+      "bytes": 2447
+    },
+    "gms": {
+      "filename": "hs098.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs098.gms",
+      "bytes": 1677
+    },
+    "mod": {
+      "filename": "hs098.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs098.mod",
+      "bytes": 1149
+    },
+    "res": {
+      "filename": "hs098.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hs098.res",
+      "bytes": 126
+    },
+    "nl": {
+      "filename": "hs098.nl",
+      "bytes": 1096
+    },
+    "nl_presolve": {
+      "filename": "hs098_presolve.nl",
+      "bytes": 1096
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs098.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

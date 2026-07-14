@@ -1,0 +1,62 @@
+{
+  "name": "flosp2th",
+  "number": 2238,
+  "classification": "NQR2-MY",
+  "N": 691,
+  "M": 0,
+  "Nnl": 650,
+  "Mnl": 0,
+  "Nz": 650,
+  "Fbest_raw": "19.4931000",
+  "Fbest": 19.4931,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "flosp2th.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/flosp2th.dag",
+      "bytes": 982391
+    },
+    "gms": {
+      "filename": "flosp2th.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/flosp2th.gms",
+      "bytes": 188477
+    },
+    "mod": {
+      "filename": "flosp2th.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/flosp2th.mod",
+      "bytes": 219410
+    },
+    "res": {
+      "filename": "flosp2th.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/flosp2th.res",
+      "bytes": 17952
+    },
+    "nl": {
+      "filename": "flosp2th.nl",
+      "bytes": 177649
+    },
+    "nl_presolve": {
+      "filename": "flosp2th_presolve.nl",
+      "bytes": 175539
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/flosp2th.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

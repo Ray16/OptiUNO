@@ -1,0 +1,62 @@
+{
+  "name": "meyer3",
+  "number": 2490,
+  "classification": "SUR2-RN",
+  "N": 3,
+  "M": 0,
+  "Nnl": 3,
+  "Mnl": 0,
+  "Nz": 3,
+  "Fbest_raw": "87.9459000",
+  "Fbest": 87.9459,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "meyer3.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/meyer3.dag",
+      "bytes": 3890
+    },
+    "gms": {
+      "filename": "meyer3.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/meyer3.gms",
+      "bytes": 1325
+    },
+    "mod": {
+      "filename": "meyer3.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/meyer3.mod",
+      "bytes": 1133
+    },
+    "res": {
+      "filename": "meyer3.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/meyer3.res",
+      "bytes": 166
+    },
+    "nl": {
+      "filename": "meyer3.nl",
+      "bytes": 1231
+    },
+    "nl_presolve": {
+      "filename": "meyer3_presolve.nl",
+      "bytes": 1231
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/meyer3.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

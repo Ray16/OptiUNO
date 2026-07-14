@@ -1,0 +1,62 @@
+{
+  "name": "box3",
+  "number": 2050,
+  "classification": "SUR2-AN",
+  "N": 3,
+  "M": 0,
+  "Nnl": 3,
+  "Mnl": 0,
+  "Nz": 3,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "box3.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/box3.dag",
+      "bytes": 3202
+    },
+    "gms": {
+      "filename": "box3.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/box3.gms",
+      "bytes": 1492
+    },
+    "mod": {
+      "filename": "box3.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/box3.mod",
+      "bytes": 990
+    },
+    "res": {
+      "filename": "box3.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/box3.res",
+      "bytes": 88
+    },
+    "nl": {
+      "filename": "box3.nl",
+      "bytes": 1716
+    },
+    "nl_presolve": {
+      "filename": "box3_presolve.nl",
+      "bytes": 1716
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/box3.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

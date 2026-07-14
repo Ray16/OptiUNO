@@ -1,0 +1,62 @@
+{
+  "name": "eigmina",
+  "number": 2214,
+  "classification": "LQR2-AN",
+  "N": 101,
+  "M": 101,
+  "Nnl": 101,
+  "Mnl": 101,
+  "Nz": 301,
+  "Fbest_raw": "1.0000000",
+  "Fbest": 1.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "eigmina.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigmina.dag",
+      "bytes": 22551
+    },
+    "gms": {
+      "filename": "eigmina.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigmina.gms",
+      "bytes": 11065
+    },
+    "mod": {
+      "filename": "eigmina.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigmina.mod",
+      "bytes": 219459
+    },
+    "res": {
+      "filename": "eigmina.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/eigmina.res",
+      "bytes": 2006
+    },
+    "nl": {
+      "filename": "eigmina.nl",
+      "bytes": 7400
+    },
+    "nl_presolve": {
+      "filename": "eigmina_presolve.nl",
+      "bytes": 7400
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigmina.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,30020 @@
+* GAMS-model sipow1m.dag.gms written by dag2gams Converter at 29/03/2004 16:56:56
+* University of Vienna
+$offdigit;
+ Set i/1*10000/;
+ Set j/1*2/;
+ Equations objcon
+con1
+con2
+con3
+con4
+con5
+con6
+con7
+con8
+con9
+con10
+con11
+con12
+con13
+con14
+con15
+con16
+con17
+con18
+con19
+con20
+con21
+con22
+con23
+con24
+con25
+con26
+con27
+con28
+con29
+con30
+con31
+con32
+con33
+con34
+con35
+con36
+con37
+con38
+con39
+con40
+con41
+con42
+con43
+con44
+con45
+con46
+con47
+con48
+con49
+con50
+con51
+con52
+con53
+con54
+con55
+con56
+con57
+con58
+con59
+con60
+con61
+con62
+con63
+con64
+con65
+con66
+con67
+con68
+con69
+con70
+con71
+con72
+con73
+con74
+con75
+con76
+con77
+con78
+con79
+con80
+con81
+con82
+con83
+con84
+con85
+con86
+con87
+con88
+con89
+con90
+con91
+con92
+con93
+con94
+con95
+con96
+con97
+con98
+con99
+con100
+con101
+con102
+con103
+con104
+con105
+con106
+con107
+con108
+con109
+con110
+con111
+con112
+con113
+con114
+con115
+con116
+con117
+con118
+con119
+con120
+con121
+con122
+con123
+con124
+con125
+con126
+con127
+con128
+con129
+con130
+con131
+con132
+con133
+con134
+con135
+con136
+con137
+con138
+con139
+con140
+con141
+con142
+con143
+con144
+con145
+con146
+con147
+con148
+con149
+con150
+con151
+con152
+con153
+con154
+con155
+con156
+con157
+con158
+con159
+con160
+con161
+con162
+con163
+con164
+con165
+con166
+con167
+con168
+con169
+con170
+con171
+con172
+con173
+con174
+con175
+con176
+con177
+con178
+con179
+con180
+con181
+con182
+con183
+con184
+con185
+con186
+con187
+con188
+con189
+con190
+con191
+con192
+con193
+con194
+con195
+con196
+con197
+con198
+con199
+con200
+con201
+con202
+con203
+con204
+con205
+con206
+con207
+con208
+con209
+con210
+con211
+con212
+con213
+con214
+con215
+con216
+con217
+con218
+con219
+con220
+con221
+con222
+con223
+con224
+con225
+con226
+con227
+con228
+con229
+con230
+con231
+con232
+con233
+con234
+con235
+con236
+con237
+con238
+con239
+con240
+con241
+con242
+con243
+con244
+con245
+con246
+con247
+con248
+con249
+con250
+con251
+con252
+con253
+con254
+con255
+con256
+con257
+con258
+con259
+con260
+con261
+con262
+con263
+con264
+con265
+con266
+con267
+con268
+con269
+con270
+con271
+con272
+con273
+con274
+con275
+con276
+con277
+con278
+con279
+con280
+con281
+con282
+con283
+con284
+con285
+con286
+con287
+con288
+con289
+con290
+con291
+con292
+con293
+con294
+con295
+con296
+con297
+con298
+con299
+con300
+con301
+con302
+con303
+con304
+con305
+con306
+con307
+con308
+con309
+con310
+con311
+con312
+con313
+con314
+con315
+con316
+con317
+con318
+con319
+con320
+con321
+con322
+con323
+con324
+con325
+con326
+con327
+con328
+con329
+con330
+con331
+con332
+con333
+con334
+con335
+con336
+con337
+con338
+con339
+con340
+con341
+con342
+con343
+con344
+con345
+con346
+con347
+con348
+con349
+con350
+con351
+con352
+con353
+con354
+con355
+con356
+con357
+con358
+con359
+con360
+con361
+con362
+con363
+con364
+con365
+con366
+con367
+con368
+con369
+con370
+con371
+con372
+con373
+con374
+con375
+con376
+con377
+con378
+con379
+con380
+con381
+con382
+con383
+con384
+con385
+con386
+con387
+con388
+con389
+con390
+con391
+con392
+con393
+con394
+con395
+con396
+con397
+con398
+con399
+con400
+con401
+con402
+con403
+con404
+con405
+con406
+con407
+con408
+con409
+con410
+con411
+con412
+con413
+con414
+con415
+con416
+con417
+con418
+con419
+con420
+con421
+con422
+con423
+con424
+con425
+con426
+con427
+con428
+con429
+con430
+con431
+con432
+con433
+con434
+con435
+con436
+con437
+con438
+con439
+con440
+con441
+con442
+con443
+con444
+con445
+con446
+con447
+con448
+con449
+con450
+con451
+con452
+con453
+con454
+con455
+con456
+con457
+con458
+con459
+con460
+con461
+con462
+con463
+con464
+con465
+con466
+con467
+con468
+con469
+con470
+con471
+con472
+con473
+con474
+con475
+con476
+con477
+con478
+con479
+con480
+con481
+con482
+con483
+con484
+con485
+con486
+con487
+con488
+con489
+con490
+con491
+con492
+con493
+con494
+con495
+con496
+con497
+con498
+con499
+con500
+con501
+con502
+con503
+con504
+con505
+con506
+con507
+con508
+con509
+con510
+con511
+con512
+con513
+con514
+con515
+con516
+con517
+con518
+con519
+con520
+con521
+con522
+con523
+con524
+con525
+con526
+con527
+con528
+con529
+con530
+con531
+con532
+con533
+con534
+con535
+con536
+con537
+con538
+con539
+con540
+con541
+con542
+con543
+con544
+con545
+con546
+con547
+con548
+con549
+con550
+con551
+con552
+con553
+con554
+con555
+con556
+con557
+con558
+con559
+con560
+con561
+con562
+con563
+con564
+con565
+con566
+con567
+con568
+con569
+con570
+con571
+con572
+con573
+con574
+con575
+con576
+con577
+con578
+con579
+con580
+con581
+con582
+con583
+con584
+con585
+con586
+con587
+con588
+con589
+con590
+con591
+con592
+con593
+con594
+con595
+con596
+con597
+con598
+con599
+con600
+con601
+con602
+con603
+con604
+con605
+con606
+con607
+con608
+con609
+con610
+con611
+con612
+con613
+con614
+con615
+con616
+con617
+con618
+con619
+con620
+con621
+con622
+con623
+con624
+con625
+con626
+con627
+con628
+con629
+con630
+con631
+con632
+con633
+con634
+con635
+con636
+con637
+con638
+con639
+con640
+con641
+con642
+con643
+con644
+con645
+con646
+con647
+con648
+con649
+con650
+con651
+con652
+con653
+con654
+con655
+con656
+con657
+con658
+con659
+con660
+con661
+con662
+con663
+con664
+con665
+con666
+con667
+con668
+con669
+con670
+con671
+con672
+con673
+con674
+con675
+con676
+con677
+con678
+con679
+con680
+con681
+con682
+con683
+con684
+con685
+con686
+con687
+con688
+con689
+con690
+con691
+con692
+con693
+con694
+con695
+con696
+con697
+con698
+con699
+con700
+con701
+con702
+con703
+con704
+con705
+con706
+con707
+con708
+con709
+con710
+con711
+con712
+con713
+con714
+con715
+con716
+con717
+con718
+con719
+con720
+con721
+con722
+con723
+con724
+con725
+con726
+con727
+con728
+con729
+con730
+con731
+con732
+con733
+con734
+con735
+con736
+con737
+con738
+con739
+con740
+con741
+con742
+con743
+con744
+con745
+con746
+con747
+con748
+con749
+con750
+con751
+con752
+con753
+con754
+con755
+con756
+con757
+con758
+con759
+con760
+con761
+con762
+con763
+con764
+con765
+con766
+con767
+con768
+con769
+con770
+con771
+con772
+con773
+con774
+con775
+con776
+con777
+con778
+con779
+con780
+con781
+con782
+con783
+con784
+con785
+con786
+con787
+con788
+con789
+con790
+con791
+con792
+con793
+con794
+con795
+con796
+con797
+con798
+con799
+con800
+con801
+con802
+con803
+con804
+con805
+con806
+con807
+con808
+con809
+con810
+con811
+con812
+con813
+con814
+con815
+con816
+con817
+con818
+con819
+con820
+con821
+con822
+con823
+con824
+con825
+con826
+con827
+con828
+con829
+con830
+con831
+con832
+con833
+con834
+con835
+con836
+con837
+con838
+con839
+con840
+con841
+con842
+con843
+con844
+con845
+con846
+con847
+con848
+con849
+con850
+con851
+con852
+con853
+con854
+con855
+con856
+con857
+con858
+con859
+con860
+con861
+con862
+con863
+con864
+con865
+con866
+con867
+con868
+con869
+con870
+con871
+con872
+con873
+con874
+con875
+con876
+con877
+con878
+con879
+con880
+con881
+con882
+con883
+con884
+con885
+con886
+con887
+con888
+con889
+con890
+con891
+con892
+con893
+con894
+con895
+con896
+con897
+con898
+con899
+con900
+con901
+con902
+con903
+con904
+con905
+con906
+con907
+con908
+con909
+con910
+con911
+con912
+con913
+con914
+con915
+con916
+con917
+con918
+con919
+con920
+con921
+con922
+con923
+con924
+con925
+con926
+con927
+con928
+con929
+con930
+con931
+con932
+con933
+con934
+con935
+con936
+con937
+con938
+con939
+con940
+con941
+con942
+con943
+con944
+con945
+con946
+con947
+con948
+con949
+con950
+con951
+con952
+con953
+con954
+con955
+con956
+con957
+con958
+con959
+con960
+con961
+con962
+con963
+con964
+con965
+con966
+con967
+con968
+con969
+con970
+con971
+con972
+con973
+con974
+con975
+con976
+con977
+con978
+con979
+con980
+con981
+con982
+con983
+con984
+con985
+con986
+con987
+con988
+con989
+con990
+con991
+con992
+con993
+con994
+con995
+con996
+con997
+con998
+con999
+con1000
+con1001
+con1002
+con1003
+con1004
+con1005
+con1006
+con1007
+con1008
+con1009
+con1010
+con1011
+con1012
+con1013
+con1014
+con1015
+con1016
+con1017
+con1018
+con1019
+con1020
+con1021
+con1022
+con1023
+con1024
+con1025
+con1026
+con1027
+con1028
+con1029
+con1030
+con1031
+con1032
+con1033
+con1034
+con1035
+con1036
+con1037
+con1038
+con1039
+con1040
+con1041
+con1042
+con1043
+con1044
+con1045
+con1046
+con1047
+con1048
+con1049
+con1050
+con1051
+con1052
+con1053
+con1054
+con1055
+con1056
+con1057
+con1058
+con1059
+con1060
+con1061
+con1062
+con1063
+con1064
+con1065
+con1066
+con1067
+con1068
+con1069
+con1070
+con1071
+con1072
+con1073
+con1074
+con1075
+con1076
+con1077
+con1078
+con1079
+con1080
+con1081
+con1082
+con1083
+con1084
+con1085
+con1086
+con1087
+con1088
+con1089
+con1090
+con1091
+con1092
+con1093
+con1094
+con1095
+con1096
+con1097
+con1098
+con1099
+con1100
+con1101
+con1102
+con1103
+con1104
+con1105
+con1106
+con1107
+con1108
+con1109
+con1110
+con1111
+con1112
+con1113
+con1114
+con1115
+con1116
+con1117
+con1118
+con1119
+con1120
+con1121
+con1122
+con1123
+con1124
+con1125
+con1126
+con1127
+con1128
+con1129
+con1130
+con1131
+con1132
+con1133
+con1134
+con1135
+con1136
+con1137
+con1138
+con1139
+con1140
+con1141
+con1142
+con1143
+con1144
+con1145
+con1146
+con1147
+con1148
+con1149
+con1150
+con1151
+con1152
+con1153
+con1154
+con1155
+con1156
+con1157
+con1158
+con1159
+con1160
+con1161
+con1162
+con1163
+con1164
+con1165
+con1166
+con1167
+con1168
+con1169
+con1170
+con1171
+con1172
+con1173
+con1174
+con1175
+con1176
+con1177
+con1178
+con1179
+con1180
+con1181
+con1182
+con1183
+con1184
+con1185
+con1186
+con1187
+con1188
+con1189
+con1190
+con1191
+con1192
+con1193
+con1194
+con1195
+con1196
+con1197
+con1198
+con1199
+con1200
+con1201
+con1202
+con1203
+con1204
+con1205
+con1206
+con1207
+con1208
+con1209
+con1210
+con1211
+con1212
+con1213
+con1214
+con1215
+con1216
+con1217
+con1218
+con1219
+con1220
+con1221
+con1222
+con1223
+con1224
+con1225
+con1226
+con1227
+con1228
+con1229
+con1230
+con1231
+con1232
+con1233
+con1234
+con1235
+con1236
+con1237
+con1238
+con1239
+con1240
+con1241
+con1242
+con1243
+con1244
+con1245
+con1246
+con1247
+con1248
+con1249
+con1250
+con1251
+con1252
+con1253
+con1254
+con1255
+con1256
+con1257
+con1258
+con1259
+con1260
+con1261
+con1262
+con1263
+con1264
+con1265
+con1266
+con1267
+con1268
+con1269
+con1270
+con1271
+con1272
+con1273
+con1274
+con1275
+con1276
+con1277
+con1278
+con1279
+con1280
+con1281
+con1282
+con1283
+con1284
+con1285
+con1286
+con1287
+con1288
+con1289
+con1290
+con1291
+con1292
+con1293
+con1294
+con1295
+con1296
+con1297
+con1298
+con1299
+con1300
+con1301
+con1302
+con1303
+con1304
+con1305
+con1306
+con1307
+con1308
+con1309
+con1310
+con1311
+con1312
+con1313
+con1314
+con1315
+con1316
+con1317
+con1318
+con1319
+con1320
+con1321
+con1322
+con1323
+con1324
+con1325
+con1326
+con1327
+con1328
+con1329
+con1330
+con1331
+con1332
+con1333
+con1334
+con1335
+con1336
+con1337
+con1338
+con1339
+con1340
+con1341
+con1342
+con1343
+con1344
+con1345
+con1346
+con1347
+con1348
+con1349
+con1350
+con1351
+con1352
+con1353
+con1354
+con1355
+con1356
+con1357
+con1358
+con1359
+con1360
+con1361
+con1362
+con1363
+con1364
+con1365
+con1366
+con1367
+con1368
+con1369
+con1370
+con1371
+con1372
+con1373
+con1374
+con1375
+con1376
+con1377
+con1378
+con1379
+con1380
+con1381
+con1382
+con1383
+con1384
+con1385
+con1386
+con1387
+con1388
+con1389
+con1390
+con1391
+con1392
+con1393
+con1394
+con1395
+con1396
+con1397
+con1398
+con1399
+con1400
+con1401
+con1402
+con1403
+con1404
+con1405
+con1406
+con1407
+con1408
+con1409
+con1410
+con1411
+con1412
+con1413
+con1414
+con1415
+con1416
+con1417
+con1418
+con1419
+con1420
+con1421
+con1422
+con1423
+con1424
+con1425
+con1426
+con1427
+con1428
+con1429
+con1430
+con1431
+con1432
+con1433
+con1434
+con1435
+con1436
+con1437
+con1438
+con1439
+con1440
+con1441
+con1442
+con1443
+con1444
+con1445
+con1446
+con1447
+con1448
+con1449
+con1450
+con1451
+con1452
+con1453
+con1454
+con1455
+con1456
+con1457
+con1458
+con1459
+con1460
+con1461
+con1462
+con1463
+con1464
+con1465
+con1466
+con1467
+con1468
+con1469
+con1470
+con1471
+con1472
+con1473
+con1474
+con1475
+con1476
+con1477
+con1478
+con1479
+con1480
+con1481
+con1482
+con1483
+con1484
+con1485
+con1486
+con1487
+con1488
+con1489
+con1490
+con1491
+con1492
+con1493
+con1494
+con1495
+con1496
+con1497
+con1498
+con1499
+con1500
+con1501
+con1502
+con1503
+con1504
+con1505
+con1506
+con1507
+con1508
+con1509
+con1510
+con1511
+con1512
+con1513
+con1514
+con1515
+con1516
+con1517
+con1518
+con1519
+con1520
+con1521
+con1522
+con1523
+con1524
+con1525
+con1526
+con1527
+con1528
+con1529
+con1530
+con1531
+con1532
+con1533
+con1534
+con1535
+con1536
+con1537
+con1538
+con1539
+con1540
+con1541
+con1542
+con1543
+con1544
+con1545
+con1546
+con1547
+con1548
+con1549
+con1550
+con1551
+con1552
+con1553
+con1554
+con1555
+con1556
+con1557
+con1558
+con1559
+con1560
+con1561
+con1562
+con1563
+con1564
+con1565
+con1566
+con1567
+con1568
+con1569
+con1570
+con1571
+con1572
+con1573
+con1574
+con1575
+con1576
+con1577
+con1578
+con1579
+con1580
+con1581
+con1582
+con1583
+con1584
+con1585
+con1586
+con1587
+con1588
+con1589
+con1590
+con1591
+con1592
+con1593
+con1594
+con1595
+con1596
+con1597
+con1598
+con1599
+con1600
+con1601
+con1602
+con1603
+con1604
+con1605
+con1606
+con1607
+con1608
+con1609
+con1610
+con1611
+con1612
+con1613
+con1614
+con1615
+con1616
+con1617
+con1618
+con1619
+con1620
+con1621
+con1622
+con1623
+con1624
+con1625
+con1626
+con1627
+con1628
+con1629
+con1630
+con1631
+con1632
+con1633
+con1634
+con1635
+con1636
+con1637
+con1638
+con1639
+con1640
+con1641
+con1642
+con1643
+con1644
+con1645
+con1646
+con1647
+con1648
+con1649
+con1650
+con1651
+con1652
+con1653
+con1654
+con1655
+con1656
+con1657
+con1658
+con1659
+con1660
+con1661
+con1662
+con1663
+con1664
+con1665
+con1666
+con1667
+con1668
+con1669
+con1670
+con1671
+con1672
+con1673
+con1674
+con1675
+con1676
+con1677
+con1678
+con1679
+con1680
+con1681
+con1682
+con1683
+con1684
+con1685
+con1686
+con1687
+con1688
+con1689
+con1690
+con1691
+con1692
+con1693
+con1694
+con1695
+con1696
+con1697
+con1698
+con1699
+con1700
+con1701
+con1702
+con1703
+con1704
+con1705
+con1706
+con1707
+con1708
+con1709
+con1710
+con1711
+con1712
+con1713
+con1714
+con1715
+con1716
+con1717
+con1718
+con1719
+con1720
+con1721
+con1722
+con1723
+con1724
+con1725
+con1726
+con1727
+con1728
+con1729
+con1730
+con1731
+con1732
+con1733
+con1734
+con1735
+con1736
+con1737
+con1738
+con1739
+con1740
+con1741
+con1742
+con1743
+con1744
+con1745
+con1746
+con1747
+con1748
+con1749
+con1750
+con1751
+con1752
+con1753
+con1754
+con1755
+con1756
+con1757
+con1758
+con1759
+con1760
+con1761
+con1762
+con1763
+con1764
+con1765
+con1766
+con1767
+con1768
+con1769
+con1770
+con1771
+con1772
+con1773
+con1774
+con1775
+con1776
+con1777
+con1778
+con1779
+con1780
+con1781
+con1782
+con1783
+con1784
+con1785
+con1786
+con1787
+con1788
+con1789
+con1790
+con1791
+con1792
+con1793
+con1794
+con1795
+con1796
+con1797
+con1798
+con1799
+con1800
+con1801
+con1802
+con1803
+con1804
+con1805
+con1806
+con1807
+con1808
+con1809
+con1810
+con1811
+con1812
+con1813
+con1814
+con1815
+con1816
+con1817
+con1818
+con1819
+con1820
+con1821
+con1822
+con1823
+con1824
+con1825
+con1826
+con1827
+con1828
+con1829
+con1830
+con1831
+con1832
+con1833
+con1834
+con1835
+con1836
+con1837
+con1838
+con1839
+con1840
+con1841
+con1842
+con1843
+con1844
+con1845
+con1846
+con1847
+con1848
+con1849
+con1850
+con1851
+con1852
+con1853
+con1854
+con1855
+con1856
+con1857
+con1858
+con1859
+con1860
+con1861
+con1862
+con1863
+con1864
+con1865
+con1866
+con1867
+con1868
+con1869
+con1870
+con1871
+con1872
+con1873
+con1874
+con1875
+con1876
+con1877
+con1878
+con1879
+con1880
+con1881
+con1882
+con1883
+con1884
+con1885
+con1886
+con1887
+con1888
+con1889
+con1890
+con1891
+con1892
+con1893
+con1894
+con1895
+con1896
+con1897
+con1898
+con1899
+con1900
+con1901
+con1902
+con1903
+con1904
+con1905
+con1906
+con1907
+con1908
+con1909
+con1910
+con1911
+con1912
+con1913
+con1914
+con1915
+con1916
+con1917
+con1918
+con1919
+con1920
+con1921
+con1922
+con1923
+con1924
+con1925
+con1926
+con1927
+con1928
+con1929
+con1930
+con1931
+con1932
+con1933
+con1934
+con1935
+con1936
+con1937
+con1938
+con1939
+con1940
+con1941
+con1942
+con1943
+con1944
+con1945
+con1946
+con1947
+con1948
+con1949
+con1950
+con1951
+con1952
+con1953
+con1954
+con1955
+con1956
+con1957
+con1958
+con1959
+con1960
+con1961
+con1962
+con1963
+con1964
+con1965
+con1966
+con1967
+con1968
+con1969
+con1970
+con1971
+con1972
+con1973
+con1974
+con1975
+con1976
+con1977
+con1978
+con1979
+con1980
+con1981
+con1982
+con1983
+con1984
+con1985
+con1986
+con1987
+con1988
+con1989
+con1990
+con1991
+con1992
+con1993
+con1994
+con1995
+con1996
+con1997
+con1998
+con1999
+con2000
+con2001
+con2002
+con2003
+con2004
+con2005
+con2006
+con2007
+con2008
+con2009
+con2010
+con2011
+con2012
+con2013
+con2014
+con2015
+con2016
+con2017
+con2018
+con2019
+con2020
+con2021
+con2022
+con2023
+con2024
+con2025
+con2026
+con2027
+con2028
+con2029
+con2030
+con2031
+con2032
+con2033
+con2034
+con2035
+con2036
+con2037
+con2038
+con2039
+con2040
+con2041
+con2042
+con2043
+con2044
+con2045
+con2046
+con2047
+con2048
+con2049
+con2050
+con2051
+con2052
+con2053
+con2054
+con2055
+con2056
+con2057
+con2058
+con2059
+con2060
+con2061
+con2062
+con2063
+con2064
+con2065
+con2066
+con2067
+con2068
+con2069
+con2070
+con2071
+con2072
+con2073
+con2074
+con2075
+con2076
+con2077
+con2078
+con2079
+con2080
+con2081
+con2082
+con2083
+con2084
+con2085
+con2086
+con2087
+con2088
+con2089
+con2090
+con2091
+con2092
+con2093
+con2094
+con2095
+con2096
+con2097
+con2098
+con2099
+con2100
+con2101
+con2102
+con2103
+con2104
+con2105
+con2106
+con2107
+con2108
+con2109
+con2110
+con2111
+con2112
+con2113
+con2114
+con2115
+con2116
+con2117
+con2118
+con2119
+con2120
+con2121
+con2122
+con2123
+con2124
+con2125
+con2126
+con2127
+con2128
+con2129
+con2130
+con2131
+con2132
+con2133
+con2134
+con2135
+con2136
+con2137
+con2138
+con2139
+con2140
+con2141
+con2142
+con2143
+con2144
+con2145
+con2146
+con2147
+con2148
+con2149
+con2150
+con2151
+con2152
+con2153
+con2154
+con2155
+con2156
+con2157
+con2158
+con2159
+con2160
+con2161
+con2162
+con2163
+con2164
+con2165
+con2166
+con2167
+con2168
+con2169
+con2170
+con2171
+con2172
+con2173
+con2174
+con2175
+con2176
+con2177
+con2178
+con2179
+con2180
+con2181
+con2182
+con2183
+con2184
+con2185
+con2186
+con2187
+con2188
+con2189
+con2190
+con2191
+con2192
+con2193
+con2194
+con2195
+con2196
+con2197
+con2198
+con2199
+con2200
+con2201
+con2202
+con2203
+con2204
+con2205
+con2206
+con2207
+con2208
+con2209
+con2210
+con2211
+con2212
+con2213
+con2214
+con2215
+con2216
+con2217
+con2218
+con2219
+con2220
+con2221
+con2222
+con2223
+con2224
+con2225
+con2226
+con2227
+con2228
+con2229
+con2230
+con2231
+con2232
+con2233
+con2234
+con2235
+con2236
+con2237
+con2238
+con2239
+con2240
+con2241
+con2242
+con2243
+con2244
+con2245
+con2246
+con2247
+con2248
+con2249
+con2250
+con2251
+con2252
+con2253
+con2254
+con2255
+con2256
+con2257
+con2258
+con2259
+con2260
+con2261
+con2262
+con2263
+con2264
+con2265
+con2266
+con2267
+con2268
+con2269
+con2270
+con2271
+con2272
+con2273
+con2274
+con2275
+con2276
+con2277
+con2278
+con2279
+con2280
+con2281
+con2282
+con2283
+con2284
+con2285
+con2286
+con2287
+con2288
+con2289
+con2290
+con2291
+con2292
+con2293
+con2294
+con2295
+con2296
+con2297
+con2298
+con2299
+con2300
+con2301
+con2302
+con2303
+con2304
+con2305
+con2306
+con2307
+con2308
+con2309
+con2310
+con2311
+con2312
+con2313
+con2314
+con2315
+con2316
+con2317
+con2318
+con2319
+con2320
+con2321
+con2322
+con2323
+con2324
+con2325
+con2326
+con2327
+con2328
+con2329
+con2330
+con2331
+con2332
+con2333
+con2334
+con2335
+con2336
+con2337
+con2338
+con2339
+con2340
+con2341
+con2342
+con2343
+con2344
+con2345
+con2346
+con2347
+con2348
+con2349
+con2350
+con2351
+con2352
+con2353
+con2354
+con2355
+con2356
+con2357
+con2358
+con2359
+con2360
+con2361
+con2362
+con2363
+con2364
+con2365
+con2366
+con2367
+con2368
+con2369
+con2370
+con2371
+con2372
+con2373
+con2374
+con2375
+con2376
+con2377
+con2378
+con2379
+con2380
+con2381
+con2382
+con2383
+con2384
+con2385
+con2386
+con2387
+con2388
+con2389
+con2390
+con2391
+con2392
+con2393
+con2394
+con2395
+con2396
+con2397
+con2398
+con2399
+con2400
+con2401
+con2402
+con2403
+con2404
+con2405
+con2406
+con2407
+con2408
+con2409
+con2410
+con2411
+con2412
+con2413
+con2414
+con2415
+con2416
+con2417
+con2418
+con2419
+con2420
+con2421
+con2422
+con2423
+con2424
+con2425
+con2426
+con2427
+con2428
+con2429
+con2430
+con2431
+con2432
+con2433
+con2434
+con2435
+con2436
+con2437
+con2438
+con2439
+con2440
+con2441
+con2442
+con2443
+con2444
+con2445
+con2446
+con2447
+con2448
+con2449
+con2450
+con2451
+con2452
+con2453
+con2454
+con2455
+con2456
+con2457
+con2458
+con2459
+con2460
+con2461
+con2462
+con2463
+con2464
+con2465
+con2466
+con2467
+con2468
+con2469
+con2470
+con2471
+con2472
+con2473
+con2474
+con2475
+con2476
+con2477
+con2478
+con2479
+con2480
+con2481
+con2482
+con2483
+con2484
+con2485
+con2486
+con2487
+con2488
+con2489
+con2490
+con2491
+con2492
+con2493
+con2494
+con2495
+con2496
+con2497
+con2498
+con2499
+con2500
+con2501
+con2502
+con2503
+con2504
+con2505
+con2506
+con2507
+con2508
+con2509
+con2510
+con2511
+con2512
+con2513
+con2514
+con2515
+con2516
+con2517
+con2518
+con2519
+con2520
+con2521
+con2522
+con2523
+con2524
+con2525
+con2526
+con2527
+con2528
+con2529
+con2530
+con2531
+con2532
+con2533
+con2534
+con2535
+con2536
+con2537
+con2538
+con2539
+con2540
+con2541
+con2542
+con2543
+con2544
+con2545
+con2546
+con2547
+con2548
+con2549
+con2550
+con2551
+con2552
+con2553
+con2554
+con2555
+con2556
+con2557
+con2558
+con2559
+con2560
+con2561
+con2562
+con2563
+con2564
+con2565
+con2566
+con2567
+con2568
+con2569
+con2570
+con2571
+con2572
+con2573
+con2574
+con2575
+con2576
+con2577
+con2578
+con2579
+con2580
+con2581
+con2582
+con2583
+con2584
+con2585
+con2586
+con2587
+con2588
+con2589
+con2590
+con2591
+con2592
+con2593
+con2594
+con2595
+con2596
+con2597
+con2598
+con2599
+con2600
+con2601
+con2602
+con2603
+con2604
+con2605
+con2606
+con2607
+con2608
+con2609
+con2610
+con2611
+con2612
+con2613
+con2614
+con2615
+con2616
+con2617
+con2618
+con2619
+con2620
+con2621
+con2622
+con2623
+con2624
+con2625
+con2626
+con2627
+con2628
+con2629
+con2630
+con2631
+con2632
+con2633
+con2634
+con2635
+con2636
+con2637
+con2638
+con2639
+con2640
+con2641
+con2642
+con2643
+con2644
+con2645
+con2646
+con2647
+con2648
+con2649
+con2650
+con2651
+con2652
+con2653
+con2654
+con2655
+con2656
+con2657
+con2658
+con2659
+con2660
+con2661
+con2662
+con2663
+con2664
+con2665
+con2666
+con2667
+con2668
+con2669
+con2670
+con2671
+con2672
+con2673
+con2674
+con2675
+con2676
+con2677
+con2678
+con2679
+con2680
+con2681
+con2682
+con2683
+con2684
+con2685
+con2686
+con2687
+con2688
+con2689
+con2690
+con2691
+con2692
+con2693
+con2694
+con2695
+con2696
+con2697
+con2698
+con2699
+con2700
+con2701
+con2702
+con2703
+con2704
+con2705
+con2706
+con2707
+con2708
+con2709
+con2710
+con2711
+con2712
+con2713
+con2714
+con2715
+con2716
+con2717
+con2718
+con2719
+con2720
+con2721
+con2722
+con2723
+con2724
+con2725
+con2726
+con2727
+con2728
+con2729
+con2730
+con2731
+con2732
+con2733
+con2734
+con2735
+con2736
+con2737
+con2738
+con2739
+con2740
+con2741
+con2742
+con2743
+con2744
+con2745
+con2746
+con2747
+con2748
+con2749
+con2750
+con2751
+con2752
+con2753
+con2754
+con2755
+con2756
+con2757
+con2758
+con2759
+con2760
+con2761
+con2762
+con2763
+con2764
+con2765
+con2766
+con2767
+con2768
+con2769
+con2770
+con2771
+con2772
+con2773
+con2774
+con2775
+con2776
+con2777
+con2778
+con2779
+con2780
+con2781
+con2782
+con2783
+con2784
+con2785
+con2786
+con2787
+con2788
+con2789
+con2790
+con2791
+con2792
+con2793
+con2794
+con2795
+con2796
+con2797
+con2798
+con2799
+con2800
+con2801
+con2802
+con2803
+con2804
+con2805
+con2806
+con2807
+con2808
+con2809
+con2810
+con2811
+con2812
+con2813
+con2814
+con2815
+con2816
+con2817
+con2818
+con2819
+con2820
+con2821
+con2822
+con2823
+con2824
+con2825
+con2826
+con2827
+con2828
+con2829
+con2830
+con2831
+con2832
+con2833
+con2834
+con2835
+con2836
+con2837
+con2838
+con2839
+con2840
+con2841
+con2842
+con2843
+con2844
+con2845
+con2846
+con2847
+con2848
+con2849
+con2850
+con2851
+con2852
+con2853
+con2854
+con2855
+con2856
+con2857
+con2858
+con2859
+con2860
+con2861
+con2862
+con2863
+con2864
+con2865
+con2866
+con2867
+con2868
+con2869
+con2870
+con2871
+con2872
+con2873
+con2874
+con2875
+con2876
+con2877
+con2878
+con2879
+con2880
+con2881
+con2882
+con2883
+con2884
+con2885
+con2886
+con2887
+con2888
+con2889
+con2890
+con2891
+con2892
+con2893
+con2894
+con2895
+con2896
+con2897
+con2898
+con2899
+con2900
+con2901
+con2902
+con2903
+con2904
+con2905
+con2906
+con2907
+con2908
+con2909
+con2910
+con2911
+con2912
+con2913
+con2914
+con2915
+con2916
+con2917
+con2918
+con2919
+con2920
+con2921
+con2922
+con2923
+con2924
+con2925
+con2926
+con2927
+con2928
+con2929
+con2930
+con2931
+con2932
+con2933
+con2934
+con2935
+con2936
+con2937
+con2938
+con2939
+con2940
+con2941
+con2942
+con2943
+con2944
+con2945
+con2946
+con2947
+con2948
+con2949
+con2950
+con2951
+con2952
+con2953
+con2954
+con2955
+con2956
+con2957
+con2958
+con2959
+con2960
+con2961
+con2962
+con2963
+con2964
+con2965
+con2966
+con2967
+con2968
+con2969
+con2970
+con2971
+con2972
+con2973
+con2974
+con2975
+con2976
+con2977
+con2978
+con2979
+con2980
+con2981
+con2982
+con2983
+con2984
+con2985
+con2986
+con2987
+con2988
+con2989
+con2990
+con2991
+con2992
+con2993
+con2994
+con2995
+con2996
+con2997
+con2998
+con2999
+con3000
+con3001
+con3002
+con3003
+con3004
+con3005
+con3006
+con3007
+con3008
+con3009
+con3010
+con3011
+con3012
+con3013
+con3014
+con3015
+con3016
+con3017
+con3018
+con3019
+con3020
+con3021
+con3022
+con3023
+con3024
+con3025
+con3026
+con3027
+con3028
+con3029
+con3030
+con3031
+con3032
+con3033
+con3034
+con3035
+con3036
+con3037
+con3038
+con3039
+con3040
+con3041
+con3042
+con3043
+con3044
+con3045
+con3046
+con3047
+con3048
+con3049
+con3050
+con3051
+con3052
+con3053
+con3054
+con3055
+con3056
+con3057
+con3058
+con3059
+con3060
+con3061
+con3062
+con3063
+con3064
+con3065
+con3066
+con3067
+con3068
+con3069
+con3070
+con3071
+con3072
+con3073
+con3074
+con3075
+con3076
+con3077
+con3078
+con3079
+con3080
+con3081
+con3082
+con3083
+con3084
+con3085
+con3086
+con3087
+con3088
+con3089
+con3090
+con3091
+con3092
+con3093
+con3094
+con3095
+con3096
+con3097
+con3098
+con3099
+con3100
+con3101
+con3102
+con3103
+con3104
+con3105
+con3106
+con3107
+con3108
+con3109
+con3110
+con3111
+con3112
+con3113
+con3114
+con3115
+con3116
+con3117
+con3118
+con3119
+con3120
+con3121
+con3122
+con3123
+con3124
+con3125
+con3126
+con3127
+con3128
+con3129
+con3130
+con3131
+con3132
+con3133
+con3134
+con3135
+con3136
+con3137
+con3138
+con3139
+con3140
+con3141
+con3142
+con3143
+con3144
+con3145
+con3146
+con3147
+con3148
+con3149
+con3150
+con3151
+con3152
+con3153
+con3154
+con3155
+con3156
+con3157
+con3158
+con3159
+con3160
+con3161
+con3162
+con3163
+con3164
+con3165
+con3166
+con3167
+con3168
+con3169
+con3170
+con3171
+con3172
+con3173
+con3174
+con3175
+con3176
+con3177
+con3178
+con3179
+con3180
+con3181
+con3182
+con3183
+con3184
+con3185
+con3186
+con3187
+con3188
+con3189
+con3190
+con3191
+con3192
+con3193
+con3194
+con3195
+con3196
+con3197
+con3198
+con3199
+con3200
+con3201
+con3202
+con3203
+con3204
+con3205
+con3206
+con3207
+con3208
+con3209
+con3210
+con3211
+con3212
+con3213
+con3214
+con3215
+con3216
+con3217
+con3218
+con3219
+con3220
+con3221
+con3222
+con3223
+con3224
+con3225
+con3226
+con3227
+con3228
+con3229
+con3230
+con3231
+con3232
+con3233
+con3234
+con3235
+con3236
+con3237
+con3238
+con3239
+con3240
+con3241
+con3242
+con3243
+con3244
+con3245
+con3246
+con3247
+con3248
+con3249
+con3250
+con3251
+con3252
+con3253
+con3254
+con3255
+con3256
+con3257
+con3258
+con3259
+con3260
+con3261
+con3262
+con3263
+con3264
+con3265
+con3266
+con3267
+con3268
+con3269
+con3270
+con3271
+con3272
+con3273
+con3274
+con3275
+con3276
+con3277
+con3278
+con3279
+con3280
+con3281
+con3282
+con3283
+con3284
+con3285
+con3286
+con3287
+con3288
+con3289
+con3290
+con3291
+con3292
+con3293
+con3294
+con3295
+con3296
+con3297
+con3298
+con3299
+con3300
+con3301
+con3302
+con3303
+con3304
+con3305
+con3306
+con3307
+con3308
+con3309
+con3310
+con3311
+con3312
+con3313
+con3314
+con3315
+con3316
+con3317
+con3318
+con3319
+con3320
+con3321
+con3322
+con3323
+con3324
+con3325
+con3326
+con3327
+con3328
+con3329
+con3330
+con3331
+con3332
+con3333
+con3334
+con3335
+con3336
+con3337
+con3338
+con3339
+con3340
+con3341
+con3342
+con3343
+con3344
+con3345
+con3346
+con3347
+con3348
+con3349
+con3350
+con3351
+con3352
+con3353
+con3354
+con3355
+con3356
+con3357
+con3358
+con3359
+con3360
+con3361
+con3362
+con3363
+con3364
+con3365
+con3366
+con3367
+con3368
+con3369
+con3370
+con3371
+con3372
+con3373
+con3374
+con3375
+con3376
+con3377
+con3378
+con3379
+con3380
+con3381
+con3382
+con3383
+con3384
+con3385
+con3386
+con3387
+con3388
+con3389
+con3390
+con3391
+con3392
+con3393
+con3394
+con3395
+con3396
+con3397
+con3398
+con3399
+con3400
+con3401
+con3402
+con3403
+con3404
+con3405
+con3406
+con3407
+con3408
+con3409
+con3410
+con3411
+con3412
+con3413
+con3414
+con3415
+con3416
+con3417
+con3418
+con3419
+con3420
+con3421
+con3422
+con3423
+con3424
+con3425
+con3426
+con3427
+con3428
+con3429
+con3430
+con3431
+con3432
+con3433
+con3434
+con3435
+con3436
+con3437
+con3438
+con3439
+con3440
+con3441
+con3442
+con3443
+con3444
+con3445
+con3446
+con3447
+con3448
+con3449
+con3450
+con3451
+con3452
+con3453
+con3454
+con3455
+con3456
+con3457
+con3458
+con3459
+con3460
+con3461
+con3462
+con3463
+con3464
+con3465
+con3466
+con3467
+con3468
+con3469
+con3470
+con3471
+con3472
+con3473
+con3474
+con3475
+con3476
+con3477
+con3478
+con3479
+con3480
+con3481
+con3482
+con3483
+con3484
+con3485
+con3486
+con3487
+con3488
+con3489
+con3490
+con3491
+con3492
+con3493
+con3494
+con3495
+con3496
+con3497
+con3498
+con3499
+con3500
+con3501
+con3502
+con3503
+con3504
+con3505
+con3506
+con3507
+con3508
+con3509
+con3510
+con3511
+con3512
+con3513
+con3514
+con3515
+con3516
+con3517
+con3518
+con3519
+con3520
+con3521
+con3522
+con3523
+con3524
+con3525
+con3526
+con3527
+con3528
+con3529
+con3530
+con3531
+con3532
+con3533
+con3534
+con3535
+con3536
+con3537
+con3538
+con3539
+con3540
+con3541
+con3542
+con3543
+con3544
+con3545
+con3546
+con3547
+con3548
+con3549
+con3550
+con3551
+con3552
+con3553
+con3554
+con3555
+con3556
+con3557
+con3558
+con3559
+con3560
+con3561
+con3562
+con3563
+con3564
+con3565
+con3566
+con3567
+con3568
+con3569
+con3570
+con3571
+con3572
+con3573
+con3574
+con3575
+con3576
+con3577
+con3578
+con3579
+con3580
+con3581
+con3582
+con3583
+con3584
+con3585
+con3586
+con3587
+con3588
+con3589
+con3590
+con3591
+con3592
+con3593
+con3594
+con3595
+con3596
+con3597
+con3598
+con3599
+con3600
+con3601
+con3602
+con3603
+con3604
+con3605
+con3606
+con3607
+con3608
+con3609
+con3610
+con3611
+con3612
+con3613
+con3614
+con3615
+con3616
+con3617
+con3618
+con3619
+con3620
+con3621
+con3622
+con3623
+con3624
+con3625
+con3626
+con3627
+con3628
+con3629
+con3630
+con3631
+con3632
+con3633
+con3634
+con3635
+con3636
+con3637
+con3638
+con3639
+con3640
+con3641
+con3642
+con3643
+con3644
+con3645
+con3646
+con3647
+con3648
+con3649
+con3650
+con3651
+con3652
+con3653
+con3654
+con3655
+con3656
+con3657
+con3658
+con3659
+con3660
+con3661
+con3662
+con3663
+con3664
+con3665
+con3666
+con3667
+con3668
+con3669
+con3670
+con3671
+con3672
+con3673
+con3674
+con3675
+con3676
+con3677
+con3678
+con3679
+con3680
+con3681
+con3682
+con3683
+con3684
+con3685
+con3686
+con3687
+con3688
+con3689
+con3690
+con3691
+con3692
+con3693
+con3694
+con3695
+con3696
+con3697
+con3698
+con3699
+con3700
+con3701
+con3702
+con3703
+con3704
+con3705
+con3706
+con3707
+con3708
+con3709
+con3710
+con3711
+con3712
+con3713
+con3714
+con3715
+con3716
+con3717
+con3718
+con3719
+con3720
+con3721
+con3722
+con3723
+con3724
+con3725
+con3726
+con3727
+con3728
+con3729
+con3730
+con3731
+con3732
+con3733
+con3734
+con3735
+con3736
+con3737
+con3738
+con3739
+con3740
+con3741
+con3742
+con3743
+con3744
+con3745
+con3746
+con3747
+con3748
+con3749
+con3750
+con3751
+con3752
+con3753
+con3754
+con3755
+con3756
+con3757
+con3758
+con3759
+con3760
+con3761
+con3762
+con3763
+con3764
+con3765
+con3766
+con3767
+con3768
+con3769
+con3770
+con3771
+con3772
+con3773
+con3774
+con3775
+con3776
+con3777
+con3778
+con3779
+con3780
+con3781
+con3782
+con3783
+con3784
+con3785
+con3786
+con3787
+con3788
+con3789
+con3790
+con3791
+con3792
+con3793
+con3794
+con3795
+con3796
+con3797
+con3798
+con3799
+con3800
+con3801
+con3802
+con3803
+con3804
+con3805
+con3806
+con3807
+con3808
+con3809
+con3810
+con3811
+con3812
+con3813
+con3814
+con3815
+con3816
+con3817
+con3818
+con3819
+con3820
+con3821
+con3822
+con3823
+con3824
+con3825
+con3826
+con3827
+con3828
+con3829
+con3830
+con3831
+con3832
+con3833
+con3834
+con3835
+con3836
+con3837
+con3838
+con3839
+con3840
+con3841
+con3842
+con3843
+con3844
+con3845
+con3846
+con3847
+con3848
+con3849
+con3850
+con3851
+con3852
+con3853
+con3854
+con3855
+con3856
+con3857
+con3858
+con3859
+con3860
+con3861
+con3862
+con3863
+con3864
+con3865
+con3866
+con3867
+con3868
+con3869
+con3870
+con3871
+con3872
+con3873
+con3874
+con3875
+con3876
+con3877
+con3878
+con3879
+con3880
+con3881
+con3882
+con3883
+con3884
+con3885
+con3886
+con3887
+con3888
+con3889
+con3890
+con3891
+con3892
+con3893
+con3894
+con3895
+con3896
+con3897
+con3898
+con3899
+con3900
+con3901
+con3902
+con3903
+con3904
+con3905
+con3906
+con3907
+con3908
+con3909
+con3910
+con3911
+con3912
+con3913
+con3914
+con3915
+con3916
+con3917
+con3918
+con3919
+con3920
+con3921
+con3922
+con3923
+con3924
+con3925
+con3926
+con3927
+con3928
+con3929
+con3930
+con3931
+con3932
+con3933
+con3934
+con3935
+con3936
+con3937
+con3938
+con3939
+con3940
+con3941
+con3942
+con3943
+con3944
+con3945
+con3946
+con3947
+con3948
+con3949
+con3950
+con3951
+con3952
+con3953
+con3954
+con3955
+con3956
+con3957
+con3958
+con3959
+con3960
+con3961
+con3962
+con3963
+con3964
+con3965
+con3966
+con3967
+con3968
+con3969
+con3970
+con3971
+con3972
+con3973
+con3974
+con3975
+con3976
+con3977
+con3978
+con3979
+con3980
+con3981
+con3982
+con3983
+con3984
+con3985
+con3986
+con3987
+con3988
+con3989
+con3990
+con3991
+con3992
+con3993
+con3994
+con3995
+con3996
+con3997
+con3998
+con3999
+con4000
+con4001
+con4002
+con4003
+con4004
+con4005
+con4006
+con4007
+con4008
+con4009
+con4010
+con4011
+con4012
+con4013
+con4014
+con4015
+con4016
+con4017
+con4018
+con4019
+con4020
+con4021
+con4022
+con4023
+con4024
+con4025
+con4026
+con4027
+con4028
+con4029
+con4030
+con4031
+con4032
+con4033
+con4034
+con4035
+con4036
+con4037
+con4038
+con4039
+con4040
+con4041
+con4042
+con4043
+con4044
+con4045
+con4046
+con4047
+con4048
+con4049
+con4050
+con4051
+con4052
+con4053
+con4054
+con4055
+con4056
+con4057
+con4058
+con4059
+con4060
+con4061
+con4062
+con4063
+con4064
+con4065
+con4066
+con4067
+con4068
+con4069
+con4070
+con4071
+con4072
+con4073
+con4074
+con4075
+con4076
+con4077
+con4078
+con4079
+con4080
+con4081
+con4082
+con4083
+con4084
+con4085
+con4086
+con4087
+con4088
+con4089
+con4090
+con4091
+con4092
+con4093
+con4094
+con4095
+con4096
+con4097
+con4098
+con4099
+con4100
+con4101
+con4102
+con4103
+con4104
+con4105
+con4106
+con4107
+con4108
+con4109
+con4110
+con4111
+con4112
+con4113
+con4114
+con4115
+con4116
+con4117
+con4118
+con4119
+con4120
+con4121
+con4122
+con4123
+con4124
+con4125
+con4126
+con4127
+con4128
+con4129
+con4130
+con4131
+con4132
+con4133
+con4134
+con4135
+con4136
+con4137
+con4138
+con4139
+con4140
+con4141
+con4142
+con4143
+con4144
+con4145
+con4146
+con4147
+con4148
+con4149
+con4150
+con4151
+con4152
+con4153
+con4154
+con4155
+con4156
+con4157
+con4158
+con4159
+con4160
+con4161
+con4162
+con4163
+con4164
+con4165
+con4166
+con4167
+con4168
+con4169
+con4170
+con4171
+con4172
+con4173
+con4174
+con4175
+con4176
+con4177
+con4178
+con4179
+con4180
+con4181
+con4182
+con4183
+con4184
+con4185
+con4186
+con4187
+con4188
+con4189
+con4190
+con4191
+con4192
+con4193
+con4194
+con4195
+con4196
+con4197
+con4198
+con4199
+con4200
+con4201
+con4202
+con4203
+con4204
+con4205
+con4206
+con4207
+con4208
+con4209
+con4210
+con4211
+con4212
+con4213
+con4214
+con4215
+con4216
+con4217
+con4218
+con4219
+con4220
+con4221
+con4222
+con4223
+con4224
+con4225
+con4226
+con4227
+con4228
+con4229
+con4230
+con4231
+con4232
+con4233
+con4234
+con4235
+con4236
+con4237
+con4238
+con4239
+con4240
+con4241
+con4242
+con4243
+con4244
+con4245
+con4246
+con4247
+con4248
+con4249
+con4250
+con4251
+con4252
+con4253
+con4254
+con4255
+con4256
+con4257
+con4258
+con4259
+con4260
+con4261
+con4262
+con4263
+con4264
+con4265
+con4266
+con4267
+con4268
+con4269
+con4270
+con4271
+con4272
+con4273
+con4274
+con4275
+con4276
+con4277
+con4278
+con4279
+con4280
+con4281
+con4282
+con4283
+con4284
+con4285
+con4286
+con4287
+con4288
+con4289
+con4290
+con4291
+con4292
+con4293
+con4294
+con4295
+con4296
+con4297
+con4298
+con4299
+con4300
+con4301
+con4302
+con4303
+con4304
+con4305
+con4306
+con4307
+con4308
+con4309
+con4310
+con4311
+con4312
+con4313
+con4314
+con4315
+con4316
+con4317
+con4318
+con4319
+con4320
+con4321
+con4322
+con4323
+con4324
+con4325
+con4326
+con4327
+con4328
+con4329
+con4330
+con4331
+con4332
+con4333
+con4334
+con4335
+con4336
+con4337
+con4338
+con4339
+con4340
+con4341
+con4342
+con4343
+con4344
+con4345
+con4346
+con4347
+con4348
+con4349
+con4350
+con4351
+con4352
+con4353
+con4354
+con4355
+con4356
+con4357
+con4358
+con4359
+con4360
+con4361
+con4362
+con4363
+con4364
+con4365
+con4366
+con4367
+con4368
+con4369
+con4370
+con4371
+con4372
+con4373
+con4374
+con4375
+con4376
+con4377
+con4378
+con4379
+con4380
+con4381
+con4382
+con4383
+con4384
+con4385
+con4386
+con4387
+con4388
+con4389
+con4390
+con4391
+con4392
+con4393
+con4394
+con4395
+con4396
+con4397
+con4398
+con4399
+con4400
+con4401
+con4402
+con4403
+con4404
+con4405
+con4406
+con4407
+con4408
+con4409
+con4410
+con4411
+con4412
+con4413
+con4414
+con4415
+con4416
+con4417
+con4418
+con4419
+con4420
+con4421
+con4422
+con4423
+con4424
+con4425
+con4426
+con4427
+con4428
+con4429
+con4430
+con4431
+con4432
+con4433
+con4434
+con4435
+con4436
+con4437
+con4438
+con4439
+con4440
+con4441
+con4442
+con4443
+con4444
+con4445
+con4446
+con4447
+con4448
+con4449
+con4450
+con4451
+con4452
+con4453
+con4454
+con4455
+con4456
+con4457
+con4458
+con4459
+con4460
+con4461
+con4462
+con4463
+con4464
+con4465
+con4466
+con4467
+con4468
+con4469
+con4470
+con4471
+con4472
+con4473
+con4474
+con4475
+con4476
+con4477
+con4478
+con4479
+con4480
+con4481
+con4482
+con4483
+con4484
+con4485
+con4486
+con4487
+con4488
+con4489
+con4490
+con4491
+con4492
+con4493
+con4494
+con4495
+con4496
+con4497
+con4498
+con4499
+con4500
+con4501
+con4502
+con4503
+con4504
+con4505
+con4506
+con4507
+con4508
+con4509
+con4510
+con4511
+con4512
+con4513
+con4514
+con4515
+con4516
+con4517
+con4518
+con4519
+con4520
+con4521
+con4522
+con4523
+con4524
+con4525
+con4526
+con4527
+con4528
+con4529
+con4530
+con4531
+con4532
+con4533
+con4534
+con4535
+con4536
+con4537
+con4538
+con4539
+con4540
+con4541
+con4542
+con4543
+con4544
+con4545
+con4546
+con4547
+con4548
+con4549
+con4550
+con4551
+con4552
+con4553
+con4554
+con4555
+con4556
+con4557
+con4558
+con4559
+con4560
+con4561
+con4562
+con4563
+con4564
+con4565
+con4566
+con4567
+con4568
+con4569
+con4570
+con4571
+con4572
+con4573
+con4574
+con4575
+con4576
+con4577
+con4578
+con4579
+con4580
+con4581
+con4582
+con4583
+con4584
+con4585
+con4586
+con4587
+con4588
+con4589
+con4590
+con4591
+con4592
+con4593
+con4594
+con4595
+con4596
+con4597
+con4598
+con4599
+con4600
+con4601
+con4602
+con4603
+con4604
+con4605
+con4606
+con4607
+con4608
+con4609
+con4610
+con4611
+con4612
+con4613
+con4614
+con4615
+con4616
+con4617
+con4618
+con4619
+con4620
+con4621
+con4622
+con4623
+con4624
+con4625
+con4626
+con4627
+con4628
+con4629
+con4630
+con4631
+con4632
+con4633
+con4634
+con4635
+con4636
+con4637
+con4638
+con4639
+con4640
+con4641
+con4642
+con4643
+con4644
+con4645
+con4646
+con4647
+con4648
+con4649
+con4650
+con4651
+con4652
+con4653
+con4654
+con4655
+con4656
+con4657
+con4658
+con4659
+con4660
+con4661
+con4662
+con4663
+con4664
+con4665
+con4666
+con4667
+con4668
+con4669
+con4670
+con4671
+con4672
+con4673
+con4674
+con4675
+con4676
+con4677
+con4678
+con4679
+con4680
+con4681
+con4682
+con4683
+con4684
+con4685
+con4686
+con4687
+con4688
+con4689
+con4690
+con4691
+con4692
+con4693
+con4694
+con4695
+con4696
+con4697
+con4698
+con4699
+con4700
+con4701
+con4702
+con4703
+con4704
+con4705
+con4706
+con4707
+con4708
+con4709
+con4710
+con4711
+con4712
+con4713
+con4714
+con4715
+con4716
+con4717
+con4718
+con4719
+con4720
+con4721
+con4722
+con4723
+con4724
+con4725
+con4726
+con4727
+con4728
+con4729
+con4730
+con4731
+con4732
+con4733
+con4734
+con4735
+con4736
+con4737
+con4738
+con4739
+con4740
+con4741
+con4742
+con4743
+con4744
+con4745
+con4746
+con4747
+con4748
+con4749
+con4750
+con4751
+con4752
+con4753
+con4754
+con4755
+con4756
+con4757
+con4758
+con4759
+con4760
+con4761
+con4762
+con4763
+con4764
+con4765
+con4766
+con4767
+con4768
+con4769
+con4770
+con4771
+con4772
+con4773
+con4774
+con4775
+con4776
+con4777
+con4778
+con4779
+con4780
+con4781
+con4782
+con4783
+con4784
+con4785
+con4786
+con4787
+con4788
+con4789
+con4790
+con4791
+con4792
+con4793
+con4794
+con4795
+con4796
+con4797
+con4798
+con4799
+con4800
+con4801
+con4802
+con4803
+con4804
+con4805
+con4806
+con4807
+con4808
+con4809
+con4810
+con4811
+con4812
+con4813
+con4814
+con4815
+con4816
+con4817
+con4818
+con4819
+con4820
+con4821
+con4822
+con4823
+con4824
+con4825
+con4826
+con4827
+con4828
+con4829
+con4830
+con4831
+con4832
+con4833
+con4834
+con4835
+con4836
+con4837
+con4838
+con4839
+con4840
+con4841
+con4842
+con4843
+con4844
+con4845
+con4846
+con4847
+con4848
+con4849
+con4850
+con4851
+con4852
+con4853
+con4854
+con4855
+con4856
+con4857
+con4858
+con4859
+con4860
+con4861
+con4862
+con4863
+con4864
+con4865
+con4866
+con4867
+con4868
+con4869
+con4870
+con4871
+con4872
+con4873
+con4874
+con4875
+con4876
+con4877
+con4878
+con4879
+con4880
+con4881
+con4882
+con4883
+con4884
+con4885
+con4886
+con4887
+con4888
+con4889
+con4890
+con4891
+con4892
+con4893
+con4894
+con4895
+con4896
+con4897
+con4898
+con4899
+con4900
+con4901
+con4902
+con4903
+con4904
+con4905
+con4906
+con4907
+con4908
+con4909
+con4910
+con4911
+con4912
+con4913
+con4914
+con4915
+con4916
+con4917
+con4918
+con4919
+con4920
+con4921
+con4922
+con4923
+con4924
+con4925
+con4926
+con4927
+con4928
+con4929
+con4930
+con4931
+con4932
+con4933
+con4934
+con4935
+con4936
+con4937
+con4938
+con4939
+con4940
+con4941
+con4942
+con4943
+con4944
+con4945
+con4946
+con4947
+con4948
+con4949
+con4950
+con4951
+con4952
+con4953
+con4954
+con4955
+con4956
+con4957
+con4958
+con4959
+con4960
+con4961
+con4962
+con4963
+con4964
+con4965
+con4966
+con4967
+con4968
+con4969
+con4970
+con4971
+con4972
+con4973
+con4974
+con4975
+con4976
+con4977
+con4978
+con4979
+con4980
+con4981
+con4982
+con4983
+con4984
+con4985
+con4986
+con4987
+con4988
+con4989
+con4990
+con4991
+con4992
+con4993
+con4994
+con4995
+con4996
+con4997
+con4998
+con4999
+con5000
+con5001
+con5002
+con5003
+con5004
+con5005
+con5006
+con5007
+con5008
+con5009
+con5010
+con5011
+con5012
+con5013
+con5014
+con5015
+con5016
+con5017
+con5018
+con5019
+con5020
+con5021
+con5022
+con5023
+con5024
+con5025
+con5026
+con5027
+con5028
+con5029
+con5030
+con5031
+con5032
+con5033
+con5034
+con5035
+con5036
+con5037
+con5038
+con5039
+con5040
+con5041
+con5042
+con5043
+con5044
+con5045
+con5046
+con5047
+con5048
+con5049
+con5050
+con5051
+con5052
+con5053
+con5054
+con5055
+con5056
+con5057
+con5058
+con5059
+con5060
+con5061
+con5062
+con5063
+con5064
+con5065
+con5066
+con5067
+con5068
+con5069
+con5070
+con5071
+con5072
+con5073
+con5074
+con5075
+con5076
+con5077
+con5078
+con5079
+con5080
+con5081
+con5082
+con5083
+con5084
+con5085
+con5086
+con5087
+con5088
+con5089
+con5090
+con5091
+con5092
+con5093
+con5094
+con5095
+con5096
+con5097
+con5098
+con5099
+con5100
+con5101
+con5102
+con5103
+con5104
+con5105
+con5106
+con5107
+con5108
+con5109
+con5110
+con5111
+con5112
+con5113
+con5114
+con5115
+con5116
+con5117
+con5118
+con5119
+con5120
+con5121
+con5122
+con5123
+con5124
+con5125
+con5126
+con5127
+con5128
+con5129
+con5130
+con5131
+con5132
+con5133
+con5134
+con5135
+con5136
+con5137
+con5138
+con5139
+con5140
+con5141
+con5142
+con5143
+con5144
+con5145
+con5146
+con5147
+con5148
+con5149
+con5150
+con5151
+con5152
+con5153
+con5154
+con5155
+con5156
+con5157
+con5158
+con5159
+con5160
+con5161
+con5162
+con5163
+con5164
+con5165
+con5166
+con5167
+con5168
+con5169
+con5170
+con5171
+con5172
+con5173
+con5174
+con5175
+con5176
+con5177
+con5178
+con5179
+con5180
+con5181
+con5182
+con5183
+con5184
+con5185
+con5186
+con5187
+con5188
+con5189
+con5190
+con5191
+con5192
+con5193
+con5194
+con5195
+con5196
+con5197
+con5198
+con5199
+con5200
+con5201
+con5202
+con5203
+con5204
+con5205
+con5206
+con5207
+con5208
+con5209
+con5210
+con5211
+con5212
+con5213
+con5214
+con5215
+con5216
+con5217
+con5218
+con5219
+con5220
+con5221
+con5222
+con5223
+con5224
+con5225
+con5226
+con5227
+con5228
+con5229
+con5230
+con5231
+con5232
+con5233
+con5234
+con5235
+con5236
+con5237
+con5238
+con5239
+con5240
+con5241
+con5242
+con5243
+con5244
+con5245
+con5246
+con5247
+con5248
+con5249
+con5250
+con5251
+con5252
+con5253
+con5254
+con5255
+con5256
+con5257
+con5258
+con5259
+con5260
+con5261
+con5262
+con5263
+con5264
+con5265
+con5266
+con5267
+con5268
+con5269
+con5270
+con5271
+con5272
+con5273
+con5274
+con5275
+con5276
+con5277
+con5278
+con5279
+con5280
+con5281
+con5282
+con5283
+con5284
+con5285
+con5286
+con5287
+con5288
+con5289
+con5290
+con5291
+con5292
+con5293
+con5294
+con5295
+con5296
+con5297
+con5298
+con5299
+con5300
+con5301
+con5302
+con5303
+con5304
+con5305
+con5306
+con5307
+con5308
+con5309
+con5310
+con5311
+con5312
+con5313
+con5314
+con5315
+con5316
+con5317
+con5318
+con5319
+con5320
+con5321
+con5322
+con5323
+con5324
+con5325
+con5326
+con5327
+con5328
+con5329
+con5330
+con5331
+con5332
+con5333
+con5334
+con5335
+con5336
+con5337
+con5338
+con5339
+con5340
+con5341
+con5342
+con5343
+con5344
+con5345
+con5346
+con5347
+con5348
+con5349
+con5350
+con5351
+con5352
+con5353
+con5354
+con5355
+con5356
+con5357
+con5358
+con5359
+con5360
+con5361
+con5362
+con5363
+con5364
+con5365
+con5366
+con5367
+con5368
+con5369
+con5370
+con5371
+con5372
+con5373
+con5374
+con5375
+con5376
+con5377
+con5378
+con5379
+con5380
+con5381
+con5382
+con5383
+con5384
+con5385
+con5386
+con5387
+con5388
+con5389
+con5390
+con5391
+con5392
+con5393
+con5394
+con5395
+con5396
+con5397
+con5398
+con5399
+con5400
+con5401
+con5402
+con5403
+con5404
+con5405
+con5406
+con5407
+con5408
+con5409
+con5410
+con5411
+con5412
+con5413
+con5414
+con5415
+con5416
+con5417
+con5418
+con5419
+con5420
+con5421
+con5422
+con5423
+con5424
+con5425
+con5426
+con5427
+con5428
+con5429
+con5430
+con5431
+con5432
+con5433
+con5434
+con5435
+con5436
+con5437
+con5438
+con5439
+con5440
+con5441
+con5442
+con5443
+con5444
+con5445
+con5446
+con5447
+con5448
+con5449
+con5450
+con5451
+con5452
+con5453
+con5454
+con5455
+con5456
+con5457
+con5458
+con5459
+con5460
+con5461
+con5462
+con5463
+con5464
+con5465
+con5466
+con5467
+con5468
+con5469
+con5470
+con5471
+con5472
+con5473
+con5474
+con5475
+con5476
+con5477
+con5478
+con5479
+con5480
+con5481
+con5482
+con5483
+con5484
+con5485
+con5486
+con5487
+con5488
+con5489
+con5490
+con5491
+con5492
+con5493
+con5494
+con5495
+con5496
+con5497
+con5498
+con5499
+con5500
+con5501
+con5502
+con5503
+con5504
+con5505
+con5506
+con5507
+con5508
+con5509
+con5510
+con5511
+con5512
+con5513
+con5514
+con5515
+con5516
+con5517
+con5518
+con5519
+con5520
+con5521
+con5522
+con5523
+con5524
+con5525
+con5526
+con5527
+con5528
+con5529
+con5530
+con5531
+con5532
+con5533
+con5534
+con5535
+con5536
+con5537
+con5538
+con5539
+con5540
+con5541
+con5542
+con5543
+con5544
+con5545
+con5546
+con5547
+con5548
+con5549
+con5550
+con5551
+con5552
+con5553
+con5554
+con5555
+con5556
+con5557
+con5558
+con5559
+con5560
+con5561
+con5562
+con5563
+con5564
+con5565
+con5566
+con5567
+con5568
+con5569
+con5570
+con5571
+con5572
+con5573
+con5574
+con5575
+con5576
+con5577
+con5578
+con5579
+con5580
+con5581
+con5582
+con5583
+con5584
+con5585
+con5586
+con5587
+con5588
+con5589
+con5590
+con5591
+con5592
+con5593
+con5594
+con5595
+con5596
+con5597
+con5598
+con5599
+con5600
+con5601
+con5602
+con5603
+con5604
+con5605
+con5606
+con5607
+con5608
+con5609
+con5610
+con5611
+con5612
+con5613
+con5614
+con5615
+con5616
+con5617
+con5618
+con5619
+con5620
+con5621
+con5622
+con5623
+con5624
+con5625
+con5626
+con5627
+con5628
+con5629
+con5630
+con5631
+con5632
+con5633
+con5634
+con5635
+con5636
+con5637
+con5638
+con5639
+con5640
+con5641
+con5642
+con5643
+con5644
+con5645
+con5646
+con5647
+con5648
+con5649
+con5650
+con5651
+con5652
+con5653
+con5654
+con5655
+con5656
+con5657
+con5658
+con5659
+con5660
+con5661
+con5662
+con5663
+con5664
+con5665
+con5666
+con5667
+con5668
+con5669
+con5670
+con5671
+con5672
+con5673
+con5674
+con5675
+con5676
+con5677
+con5678
+con5679
+con5680
+con5681
+con5682
+con5683
+con5684
+con5685
+con5686
+con5687
+con5688
+con5689
+con5690
+con5691
+con5692
+con5693
+con5694
+con5695
+con5696
+con5697
+con5698
+con5699
+con5700
+con5701
+con5702
+con5703
+con5704
+con5705
+con5706
+con5707
+con5708
+con5709
+con5710
+con5711
+con5712
+con5713
+con5714
+con5715
+con5716
+con5717
+con5718
+con5719
+con5720
+con5721
+con5722
+con5723
+con5724
+con5725
+con5726
+con5727
+con5728
+con5729
+con5730
+con5731
+con5732
+con5733
+con5734
+con5735
+con5736
+con5737
+con5738
+con5739
+con5740
+con5741
+con5742
+con5743
+con5744
+con5745
+con5746
+con5747
+con5748
+con5749
+con5750
+con5751
+con5752
+con5753
+con5754
+con5755
+con5756
+con5757
+con5758
+con5759
+con5760
+con5761
+con5762
+con5763
+con5764
+con5765
+con5766
+con5767
+con5768
+con5769
+con5770
+con5771
+con5772
+con5773
+con5774
+con5775
+con5776
+con5777
+con5778
+con5779
+con5780
+con5781
+con5782
+con5783
+con5784
+con5785
+con5786
+con5787
+con5788
+con5789
+con5790
+con5791
+con5792
+con5793
+con5794
+con5795
+con5796
+con5797
+con5798
+con5799
+con5800
+con5801
+con5802
+con5803
+con5804
+con5805
+con5806
+con5807
+con5808
+con5809
+con5810
+con5811
+con5812
+con5813
+con5814
+con5815
+con5816
+con5817
+con5818
+con5819
+con5820
+con5821
+con5822
+con5823
+con5824
+con5825
+con5826
+con5827
+con5828
+con5829
+con5830
+con5831
+con5832
+con5833
+con5834
+con5835
+con5836
+con5837
+con5838
+con5839
+con5840
+con5841
+con5842
+con5843
+con5844
+con5845
+con5846
+con5847
+con5848
+con5849
+con5850
+con5851
+con5852
+con5853
+con5854
+con5855
+con5856
+con5857
+con5858
+con5859
+con5860
+con5861
+con5862
+con5863
+con5864
+con5865
+con5866
+con5867
+con5868
+con5869
+con5870
+con5871
+con5872
+con5873
+con5874
+con5875
+con5876
+con5877
+con5878
+con5879
+con5880
+con5881
+con5882
+con5883
+con5884
+con5885
+con5886
+con5887
+con5888
+con5889
+con5890
+con5891
+con5892
+con5893
+con5894
+con5895
+con5896
+con5897
+con5898
+con5899
+con5900
+con5901
+con5902
+con5903
+con5904
+con5905
+con5906
+con5907
+con5908
+con5909
+con5910
+con5911
+con5912
+con5913
+con5914
+con5915
+con5916
+con5917
+con5918
+con5919
+con5920
+con5921
+con5922
+con5923
+con5924
+con5925
+con5926
+con5927
+con5928
+con5929
+con5930
+con5931
+con5932
+con5933
+con5934
+con5935
+con5936
+con5937
+con5938
+con5939
+con5940
+con5941
+con5942
+con5943
+con5944
+con5945
+con5946
+con5947
+con5948
+con5949
+con5950
+con5951
+con5952
+con5953
+con5954
+con5955
+con5956
+con5957
+con5958
+con5959
+con5960
+con5961
+con5962
+con5963
+con5964
+con5965
+con5966
+con5967
+con5968
+con5969
+con5970
+con5971
+con5972
+con5973
+con5974
+con5975
+con5976
+con5977
+con5978
+con5979
+con5980
+con5981
+con5982
+con5983
+con5984
+con5985
+con5986
+con5987
+con5988
+con5989
+con5990
+con5991
+con5992
+con5993
+con5994
+con5995
+con5996
+con5997
+con5998
+con5999
+con6000
+con6001
+con6002
+con6003
+con6004
+con6005
+con6006
+con6007
+con6008
+con6009
+con6010
+con6011
+con6012
+con6013
+con6014
+con6015
+con6016
+con6017
+con6018
+con6019
+con6020
+con6021
+con6022
+con6023
+con6024
+con6025
+con6026
+con6027
+con6028
+con6029
+con6030
+con6031
+con6032
+con6033
+con6034
+con6035
+con6036
+con6037
+con6038
+con6039
+con6040
+con6041
+con6042
+con6043
+con6044
+con6045
+con6046
+con6047
+con6048
+con6049
+con6050
+con6051
+con6052
+con6053
+con6054
+con6055
+con6056
+con6057
+con6058
+con6059
+con6060
+con6061
+con6062
+con6063
+con6064
+con6065
+con6066
+con6067
+con6068
+con6069
+con6070
+con6071
+con6072
+con6073
+con6074
+con6075
+con6076
+con6077
+con6078
+con6079
+con6080
+con6081
+con6082
+con6083
+con6084
+con6085
+con6086
+con6087
+con6088
+con6089
+con6090
+con6091
+con6092
+con6093
+con6094
+con6095
+con6096
+con6097
+con6098
+con6099
+con6100
+con6101
+con6102
+con6103
+con6104
+con6105
+con6106
+con6107
+con6108
+con6109
+con6110
+con6111
+con6112
+con6113
+con6114
+con6115
+con6116
+con6117
+con6118
+con6119
+con6120
+con6121
+con6122
+con6123
+con6124
+con6125
+con6126
+con6127
+con6128
+con6129
+con6130
+con6131
+con6132
+con6133
+con6134
+con6135
+con6136
+con6137
+con6138
+con6139
+con6140
+con6141
+con6142
+con6143
+con6144
+con6145
+con6146
+con6147
+con6148
+con6149
+con6150
+con6151
+con6152
+con6153
+con6154
+con6155
+con6156
+con6157
+con6158
+con6159
+con6160
+con6161
+con6162
+con6163
+con6164
+con6165
+con6166
+con6167
+con6168
+con6169
+con6170
+con6171
+con6172
+con6173
+con6174
+con6175
+con6176
+con6177
+con6178
+con6179
+con6180
+con6181
+con6182
+con6183
+con6184
+con6185
+con6186
+con6187
+con6188
+con6189
+con6190
+con6191
+con6192
+con6193
+con6194
+con6195
+con6196
+con6197
+con6198
+con6199
+con6200
+con6201
+con6202
+con6203
+con6204
+con6205
+con6206
+con6207
+con6208
+con6209
+con6210
+con6211
+con6212
+con6213
+con6214
+con6215
+con6216
+con6217
+con6218
+con6219
+con6220
+con6221
+con6222
+con6223
+con6224
+con6225
+con6226
+con6227
+con6228
+con6229
+con6230
+con6231
+con6232
+con6233
+con6234
+con6235
+con6236
+con6237
+con6238
+con6239
+con6240
+con6241
+con6242
+con6243
+con6244
+con6245
+con6246
+con6247
+con6248
+con6249
+con6250
+con6251
+con6252
+con6253
+con6254
+con6255
+con6256
+con6257
+con6258
+con6259
+con6260
+con6261
+con6262
+con6263
+con6264
+con6265
+con6266
+con6267
+con6268
+con6269
+con6270
+con6271
+con6272
+con6273
+con6274
+con6275
+con6276
+con6277
+con6278
+con6279
+con6280
+con6281
+con6282
+con6283
+con6284
+con6285
+con6286
+con6287
+con6288
+con6289
+con6290
+con6291
+con6292
+con6293
+con6294
+con6295
+con6296
+con6297
+con6298
+con6299
+con6300
+con6301
+con6302
+con6303
+con6304
+con6305
+con6306
+con6307
+con6308
+con6309
+con6310
+con6311
+con6312
+con6313
+con6314
+con6315
+con6316
+con6317
+con6318
+con6319
+con6320
+con6321
+con6322
+con6323
+con6324
+con6325
+con6326
+con6327
+con6328
+con6329
+con6330
+con6331
+con6332
+con6333
+con6334
+con6335
+con6336
+con6337
+con6338
+con6339
+con6340
+con6341
+con6342
+con6343
+con6344
+con6345
+con6346
+con6347
+con6348
+con6349
+con6350
+con6351
+con6352
+con6353
+con6354
+con6355
+con6356
+con6357
+con6358
+con6359
+con6360
+con6361
+con6362
+con6363
+con6364
+con6365
+con6366
+con6367
+con6368
+con6369
+con6370
+con6371
+con6372
+con6373
+con6374
+con6375
+con6376
+con6377
+con6378
+con6379
+con6380
+con6381
+con6382
+con6383
+con6384
+con6385
+con6386
+con6387
+con6388
+con6389
+con6390
+con6391
+con6392
+con6393
+con6394
+con6395
+con6396
+con6397
+con6398
+con6399
+con6400
+con6401
+con6402
+con6403
+con6404
+con6405
+con6406
+con6407
+con6408
+con6409
+con6410
+con6411
+con6412
+con6413
+con6414
+con6415
+con6416
+con6417
+con6418
+con6419
+con6420
+con6421
+con6422
+con6423
+con6424
+con6425
+con6426
+con6427
+con6428
+con6429
+con6430
+con6431
+con6432
+con6433
+con6434
+con6435
+con6436
+con6437
+con6438
+con6439
+con6440
+con6441
+con6442
+con6443
+con6444
+con6445
+con6446
+con6447
+con6448
+con6449
+con6450
+con6451
+con6452
+con6453
+con6454
+con6455
+con6456
+con6457
+con6458
+con6459
+con6460
+con6461
+con6462
+con6463
+con6464
+con6465
+con6466
+con6467
+con6468
+con6469
+con6470
+con6471
+con6472
+con6473
+con6474
+con6475
+con6476
+con6477
+con6478
+con6479
+con6480
+con6481
+con6482
+con6483
+con6484
+con6485
+con6486
+con6487
+con6488
+con6489
+con6490
+con6491
+con6492
+con6493
+con6494
+con6495
+con6496
+con6497
+con6498
+con6499
+con6500
+con6501
+con6502
+con6503
+con6504
+con6505
+con6506
+con6507
+con6508
+con6509
+con6510
+con6511
+con6512
+con6513
+con6514
+con6515
+con6516
+con6517
+con6518
+con6519
+con6520
+con6521
+con6522
+con6523
+con6524
+con6525
+con6526
+con6527
+con6528
+con6529
+con6530
+con6531
+con6532
+con6533
+con6534
+con6535
+con6536
+con6537
+con6538
+con6539
+con6540
+con6541
+con6542
+con6543
+con6544
+con6545
+con6546
+con6547
+con6548
+con6549
+con6550
+con6551
+con6552
+con6553
+con6554
+con6555
+con6556
+con6557
+con6558
+con6559
+con6560
+con6561
+con6562
+con6563
+con6564
+con6565
+con6566
+con6567
+con6568
+con6569
+con6570
+con6571
+con6572
+con6573
+con6574
+con6575
+con6576
+con6577
+con6578
+con6579
+con6580
+con6581
+con6582
+con6583
+con6584
+con6585
+con6586
+con6587
+con6588
+con6589
+con6590
+con6591
+con6592
+con6593
+con6594
+con6595
+con6596
+con6597
+con6598
+con6599
+con6600
+con6601
+con6602
+con6603
+con6604
+con6605
+con6606
+con6607
+con6608
+con6609
+con6610
+con6611
+con6612
+con6613
+con6614
+con6615
+con6616
+con6617
+con6618
+con6619
+con6620
+con6621
+con6622
+con6623
+con6624
+con6625
+con6626
+con6627
+con6628
+con6629
+con6630
+con6631
+con6632
+con6633
+con6634
+con6635
+con6636
+con6637
+con6638
+con6639
+con6640
+con6641
+con6642
+con6643
+con6644
+con6645
+con6646
+con6647
+con6648
+con6649
+con6650
+con6651
+con6652
+con6653
+con6654
+con6655
+con6656
+con6657
+con6658
+con6659
+con6660
+con6661
+con6662
+con6663
+con6664
+con6665
+con6666
+con6667
+con6668
+con6669
+con6670
+con6671
+con6672
+con6673
+con6674
+con6675
+con6676
+con6677
+con6678
+con6679
+con6680
+con6681
+con6682
+con6683
+con6684
+con6685
+con6686
+con6687
+con6688
+con6689
+con6690
+con6691
+con6692
+con6693
+con6694
+con6695
+con6696
+con6697
+con6698
+con6699
+con6700
+con6701
+con6702
+con6703
+con6704
+con6705
+con6706
+con6707
+con6708
+con6709
+con6710
+con6711
+con6712
+con6713
+con6714
+con6715
+con6716
+con6717
+con6718
+con6719
+con6720
+con6721
+con6722
+con6723
+con6724
+con6725
+con6726
+con6727
+con6728
+con6729
+con6730
+con6731
+con6732
+con6733
+con6734
+con6735
+con6736
+con6737
+con6738
+con6739
+con6740
+con6741
+con6742
+con6743
+con6744
+con6745
+con6746
+con6747
+con6748
+con6749
+con6750
+con6751
+con6752
+con6753
+con6754
+con6755
+con6756
+con6757
+con6758
+con6759
+con6760
+con6761
+con6762
+con6763
+con6764
+con6765
+con6766
+con6767
+con6768
+con6769
+con6770
+con6771
+con6772
+con6773
+con6774
+con6775
+con6776
+con6777
+con6778
+con6779
+con6780
+con6781
+con6782
+con6783
+con6784
+con6785
+con6786
+con6787
+con6788
+con6789
+con6790
+con6791
+con6792
+con6793
+con6794
+con6795
+con6796
+con6797
+con6798
+con6799
+con6800
+con6801
+con6802
+con6803
+con6804
+con6805
+con6806
+con6807
+con6808
+con6809
+con6810
+con6811
+con6812
+con6813
+con6814
+con6815
+con6816
+con6817
+con6818
+con6819
+con6820
+con6821
+con6822
+con6823
+con6824
+con6825
+con6826
+con6827
+con6828
+con6829
+con6830
+con6831
+con6832
+con6833
+con6834
+con6835
+con6836
+con6837
+con6838
+con6839
+con6840
+con6841
+con6842
+con6843
+con6844
+con6845
+con6846
+con6847
+con6848
+con6849
+con6850
+con6851
+con6852
+con6853
+con6854
+con6855
+con6856
+con6857
+con6858
+con6859
+con6860
+con6861
+con6862
+con6863
+con6864
+con6865
+con6866
+con6867
+con6868
+con6869
+con6870
+con6871
+con6872
+con6873
+con6874
+con6875
+con6876
+con6877
+con6878
+con6879
+con6880
+con6881
+con6882
+con6883
+con6884
+con6885
+con6886
+con6887
+con6888
+con6889
+con6890
+con6891
+con6892
+con6893
+con6894
+con6895
+con6896
+con6897
+con6898
+con6899
+con6900
+con6901
+con6902
+con6903
+con6904
+con6905
+con6906
+con6907
+con6908
+con6909
+con6910
+con6911
+con6912
+con6913
+con6914
+con6915
+con6916
+con6917
+con6918
+con6919
+con6920
+con6921
+con6922
+con6923
+con6924
+con6925
+con6926
+con6927
+con6928
+con6929
+con6930
+con6931
+con6932
+con6933
+con6934
+con6935
+con6936
+con6937
+con6938
+con6939
+con6940
+con6941
+con6942
+con6943
+con6944
+con6945
+con6946
+con6947
+con6948
+con6949
+con6950
+con6951
+con6952
+con6953
+con6954
+con6955
+con6956
+con6957
+con6958
+con6959
+con6960
+con6961
+con6962
+con6963
+con6964
+con6965
+con6966
+con6967
+con6968
+con6969
+con6970
+con6971
+con6972
+con6973
+con6974
+con6975
+con6976
+con6977
+con6978
+con6979
+con6980
+con6981
+con6982
+con6983
+con6984
+con6985
+con6986
+con6987
+con6988
+con6989
+con6990
+con6991
+con6992
+con6993
+con6994
+con6995
+con6996
+con6997
+con6998
+con6999
+con7000
+con7001
+con7002
+con7003
+con7004
+con7005
+con7006
+con7007
+con7008
+con7009
+con7010
+con7011
+con7012
+con7013
+con7014
+con7015
+con7016
+con7017
+con7018
+con7019
+con7020
+con7021
+con7022
+con7023
+con7024
+con7025
+con7026
+con7027
+con7028
+con7029
+con7030
+con7031
+con7032
+con7033
+con7034
+con7035
+con7036
+con7037
+con7038
+con7039
+con7040
+con7041
+con7042
+con7043
+con7044
+con7045
+con7046
+con7047
+con7048
+con7049
+con7050
+con7051
+con7052
+con7053
+con7054
+con7055
+con7056
+con7057
+con7058
+con7059
+con7060
+con7061
+con7062
+con7063
+con7064
+con7065
+con7066
+con7067
+con7068
+con7069
+con7070
+con7071
+con7072
+con7073
+con7074
+con7075
+con7076
+con7077
+con7078
+con7079
+con7080
+con7081
+con7082
+con7083
+con7084
+con7085
+con7086
+con7087
+con7088
+con7089
+con7090
+con7091
+con7092
+con7093
+con7094
+con7095
+con7096
+con7097
+con7098
+con7099
+con7100
+con7101
+con7102
+con7103
+con7104
+con7105
+con7106
+con7107
+con7108
+con7109
+con7110
+con7111
+con7112
+con7113
+con7114
+con7115
+con7116
+con7117
+con7118
+con7119
+con7120
+con7121
+con7122
+con7123
+con7124
+con7125
+con7126
+con7127
+con7128
+con7129
+con7130
+con7131
+con7132
+con7133
+con7134
+con7135
+con7136
+con7137
+con7138
+con7139
+con7140
+con7141
+con7142
+con7143
+con7144
+con7145
+con7146
+con7147
+con7148
+con7149
+con7150
+con7151
+con7152
+con7153
+con7154
+con7155
+con7156
+con7157
+con7158
+con7159
+con7160
+con7161
+con7162
+con7163
+con7164
+con7165
+con7166
+con7167
+con7168
+con7169
+con7170
+con7171
+con7172
+con7173
+con7174
+con7175
+con7176
+con7177
+con7178
+con7179
+con7180
+con7181
+con7182
+con7183
+con7184
+con7185
+con7186
+con7187
+con7188
+con7189
+con7190
+con7191
+con7192
+con7193
+con7194
+con7195
+con7196
+con7197
+con7198
+con7199
+con7200
+con7201
+con7202
+con7203
+con7204
+con7205
+con7206
+con7207
+con7208
+con7209
+con7210
+con7211
+con7212
+con7213
+con7214
+con7215
+con7216
+con7217
+con7218
+con7219
+con7220
+con7221
+con7222
+con7223
+con7224
+con7225
+con7226
+con7227
+con7228
+con7229
+con7230
+con7231
+con7232
+con7233
+con7234
+con7235
+con7236
+con7237
+con7238
+con7239
+con7240
+con7241
+con7242
+con7243
+con7244
+con7245
+con7246
+con7247
+con7248
+con7249
+con7250
+con7251
+con7252
+con7253
+con7254
+con7255
+con7256
+con7257
+con7258
+con7259
+con7260
+con7261
+con7262
+con7263
+con7264
+con7265
+con7266
+con7267
+con7268
+con7269
+con7270
+con7271
+con7272
+con7273
+con7274
+con7275
+con7276
+con7277
+con7278
+con7279
+con7280
+con7281
+con7282
+con7283
+con7284
+con7285
+con7286
+con7287
+con7288
+con7289
+con7290
+con7291
+con7292
+con7293
+con7294
+con7295
+con7296
+con7297
+con7298
+con7299
+con7300
+con7301
+con7302
+con7303
+con7304
+con7305
+con7306
+con7307
+con7308
+con7309
+con7310
+con7311
+con7312
+con7313
+con7314
+con7315
+con7316
+con7317
+con7318
+con7319
+con7320
+con7321
+con7322
+con7323
+con7324
+con7325
+con7326
+con7327
+con7328
+con7329
+con7330
+con7331
+con7332
+con7333
+con7334
+con7335
+con7336
+con7337
+con7338
+con7339
+con7340
+con7341
+con7342
+con7343
+con7344
+con7345
+con7346
+con7347
+con7348
+con7349
+con7350
+con7351
+con7352
+con7353
+con7354
+con7355
+con7356
+con7357
+con7358
+con7359
+con7360
+con7361
+con7362
+con7363
+con7364
+con7365
+con7366
+con7367
+con7368
+con7369
+con7370
+con7371
+con7372
+con7373
+con7374
+con7375
+con7376
+con7377
+con7378
+con7379
+con7380
+con7381
+con7382
+con7383
+con7384
+con7385
+con7386
+con7387
+con7388
+con7389
+con7390
+con7391
+con7392
+con7393
+con7394
+con7395
+con7396
+con7397
+con7398
+con7399
+con7400
+con7401
+con7402
+con7403
+con7404
+con7405
+con7406
+con7407
+con7408
+con7409
+con7410
+con7411
+con7412
+con7413
+con7414
+con7415
+con7416
+con7417
+con7418
+con7419
+con7420
+con7421
+con7422
+con7423
+con7424
+con7425
+con7426
+con7427
+con7428
+con7429
+con7430
+con7431
+con7432
+con7433
+con7434
+con7435
+con7436
+con7437
+con7438
+con7439
+con7440
+con7441
+con7442
+con7443
+con7444
+con7445
+con7446
+con7447
+con7448
+con7449
+con7450
+con7451
+con7452
+con7453
+con7454
+con7455
+con7456
+con7457
+con7458
+con7459
+con7460
+con7461
+con7462
+con7463
+con7464
+con7465
+con7466
+con7467
+con7468
+con7469
+con7470
+con7471
+con7472
+con7473
+con7474
+con7475
+con7476
+con7477
+con7478
+con7479
+con7480
+con7481
+con7482
+con7483
+con7484
+con7485
+con7486
+con7487
+con7488
+con7489
+con7490
+con7491
+con7492
+con7493
+con7494
+con7495
+con7496
+con7497
+con7498
+con7499
+con7500
+con7501
+con7502
+con7503
+con7504
+con7505
+con7506
+con7507
+con7508
+con7509
+con7510
+con7511
+con7512
+con7513
+con7514
+con7515
+con7516
+con7517
+con7518
+con7519
+con7520
+con7521
+con7522
+con7523
+con7524
+con7525
+con7526
+con7527
+con7528
+con7529
+con7530
+con7531
+con7532
+con7533
+con7534
+con7535
+con7536
+con7537
+con7538
+con7539
+con7540
+con7541
+con7542
+con7543
+con7544
+con7545
+con7546
+con7547
+con7548
+con7549
+con7550
+con7551
+con7552
+con7553
+con7554
+con7555
+con7556
+con7557
+con7558
+con7559
+con7560
+con7561
+con7562
+con7563
+con7564
+con7565
+con7566
+con7567
+con7568
+con7569
+con7570
+con7571
+con7572
+con7573
+con7574
+con7575
+con7576
+con7577
+con7578
+con7579
+con7580
+con7581
+con7582
+con7583
+con7584
+con7585
+con7586
+con7587
+con7588
+con7589
+con7590
+con7591
+con7592
+con7593
+con7594
+con7595
+con7596
+con7597
+con7598
+con7599
+con7600
+con7601
+con7602
+con7603
+con7604
+con7605
+con7606
+con7607
+con7608
+con7609
+con7610
+con7611
+con7612
+con7613
+con7614
+con7615
+con7616
+con7617
+con7618
+con7619
+con7620
+con7621
+con7622
+con7623
+con7624
+con7625
+con7626
+con7627
+con7628
+con7629
+con7630
+con7631
+con7632
+con7633
+con7634
+con7635
+con7636
+con7637
+con7638
+con7639
+con7640
+con7641
+con7642
+con7643
+con7644
+con7645
+con7646
+con7647
+con7648
+con7649
+con7650
+con7651
+con7652
+con7653
+con7654
+con7655
+con7656
+con7657
+con7658
+con7659
+con7660
+con7661
+con7662
+con7663
+con7664
+con7665
+con7666
+con7667
+con7668
+con7669
+con7670
+con7671
+con7672
+con7673
+con7674
+con7675
+con7676
+con7677
+con7678
+con7679
+con7680
+con7681
+con7682
+con7683
+con7684
+con7685
+con7686
+con7687
+con7688
+con7689
+con7690
+con7691
+con7692
+con7693
+con7694
+con7695
+con7696
+con7697
+con7698
+con7699
+con7700
+con7701
+con7702
+con7703
+con7704
+con7705
+con7706
+con7707
+con7708
+con7709
+con7710
+con7711
+con7712
+con7713
+con7714
+con7715
+con7716
+con7717
+con7718
+con7719
+con7720
+con7721
+con7722
+con7723
+con7724
+con7725
+con7726
+con7727
+con7728
+con7729
+con7730
+con7731
+con7732
+con7733
+con7734
+con7735
+con7736
+con7737
+con7738
+con7739
+con7740
+con7741
+con7742
+con7743
+con7744
+con7745
+con7746
+con7747
+con7748
+con7749
+con7750
+con7751
+con7752
+con7753
+con7754
+con7755
+con7756
+con7757
+con7758
+con7759
+con7760
+con7761
+con7762
+con7763
+con7764
+con7765
+con7766
+con7767
+con7768
+con7769
+con7770
+con7771
+con7772
+con7773
+con7774
+con7775
+con7776
+con7777
+con7778
+con7779
+con7780
+con7781
+con7782
+con7783
+con7784
+con7785
+con7786
+con7787
+con7788
+con7789
+con7790
+con7791
+con7792
+con7793
+con7794
+con7795
+con7796
+con7797
+con7798
+con7799
+con7800
+con7801
+con7802
+con7803
+con7804
+con7805
+con7806
+con7807
+con7808
+con7809
+con7810
+con7811
+con7812
+con7813
+con7814
+con7815
+con7816
+con7817
+con7818
+con7819
+con7820
+con7821
+con7822
+con7823
+con7824
+con7825
+con7826
+con7827
+con7828
+con7829
+con7830
+con7831
+con7832
+con7833
+con7834
+con7835
+con7836
+con7837
+con7838
+con7839
+con7840
+con7841
+con7842
+con7843
+con7844
+con7845
+con7846
+con7847
+con7848
+con7849
+con7850
+con7851
+con7852
+con7853
+con7854
+con7855
+con7856
+con7857
+con7858
+con7859
+con7860
+con7861
+con7862
+con7863
+con7864
+con7865
+con7866
+con7867
+con7868
+con7869
+con7870
+con7871
+con7872
+con7873
+con7874
+con7875
+con7876
+con7877
+con7878
+con7879
+con7880
+con7881
+con7882
+con7883
+con7884
+con7885
+con7886
+con7887
+con7888
+con7889
+con7890
+con7891
+con7892
+con7893
+con7894
+con7895
+con7896
+con7897
+con7898
+con7899
+con7900
+con7901
+con7902
+con7903
+con7904
+con7905
+con7906
+con7907
+con7908
+con7909
+con7910
+con7911
+con7912
+con7913
+con7914
+con7915
+con7916
+con7917
+con7918
+con7919
+con7920
+con7921
+con7922
+con7923
+con7924
+con7925
+con7926
+con7927
+con7928
+con7929
+con7930
+con7931
+con7932
+con7933
+con7934
+con7935
+con7936
+con7937
+con7938
+con7939
+con7940
+con7941
+con7942
+con7943
+con7944
+con7945
+con7946
+con7947
+con7948
+con7949
+con7950
+con7951
+con7952
+con7953
+con7954
+con7955
+con7956
+con7957
+con7958
+con7959
+con7960
+con7961
+con7962
+con7963
+con7964
+con7965
+con7966
+con7967
+con7968
+con7969
+con7970
+con7971
+con7972
+con7973
+con7974
+con7975
+con7976
+con7977
+con7978
+con7979
+con7980
+con7981
+con7982
+con7983
+con7984
+con7985
+con7986
+con7987
+con7988
+con7989
+con7990
+con7991
+con7992
+con7993
+con7994
+con7995
+con7996
+con7997
+con7998
+con7999
+con8000
+con8001
+con8002
+con8003
+con8004
+con8005
+con8006
+con8007
+con8008
+con8009
+con8010
+con8011
+con8012
+con8013
+con8014
+con8015
+con8016
+con8017
+con8018
+con8019
+con8020
+con8021
+con8022
+con8023
+con8024
+con8025
+con8026
+con8027
+con8028
+con8029
+con8030
+con8031
+con8032
+con8033
+con8034
+con8035
+con8036
+con8037
+con8038
+con8039
+con8040
+con8041
+con8042
+con8043
+con8044
+con8045
+con8046
+con8047
+con8048
+con8049
+con8050
+con8051
+con8052
+con8053
+con8054
+con8055
+con8056
+con8057
+con8058
+con8059
+con8060
+con8061
+con8062
+con8063
+con8064
+con8065
+con8066
+con8067
+con8068
+con8069
+con8070
+con8071
+con8072
+con8073
+con8074
+con8075
+con8076
+con8077
+con8078
+con8079
+con8080
+con8081
+con8082
+con8083
+con8084
+con8085
+con8086
+con8087
+con8088
+con8089
+con8090
+con8091
+con8092
+con8093
+con8094
+con8095
+con8096
+con8097
+con8098
+con8099
+con8100
+con8101
+con8102
+con8103
+con8104
+con8105
+con8106
+con8107
+con8108
+con8109
+con8110
+con8111
+con8112
+con8113
+con8114
+con8115
+con8116
+con8117
+con8118
+con8119
+con8120
+con8121
+con8122
+con8123
+con8124
+con8125
+con8126
+con8127
+con8128
+con8129
+con8130
+con8131
+con8132
+con8133
+con8134
+con8135
+con8136
+con8137
+con8138
+con8139
+con8140
+con8141
+con8142
+con8143
+con8144
+con8145
+con8146
+con8147
+con8148
+con8149
+con8150
+con8151
+con8152
+con8153
+con8154
+con8155
+con8156
+con8157
+con8158
+con8159
+con8160
+con8161
+con8162
+con8163
+con8164
+con8165
+con8166
+con8167
+con8168
+con8169
+con8170
+con8171
+con8172
+con8173
+con8174
+con8175
+con8176
+con8177
+con8178
+con8179
+con8180
+con8181
+con8182
+con8183
+con8184
+con8185
+con8186
+con8187
+con8188
+con8189
+con8190
+con8191
+con8192
+con8193
+con8194
+con8195
+con8196
+con8197
+con8198
+con8199
+con8200
+con8201
+con8202
+con8203
+con8204
+con8205
+con8206
+con8207
+con8208
+con8209
+con8210
+con8211
+con8212
+con8213
+con8214
+con8215
+con8216
+con8217
+con8218
+con8219
+con8220
+con8221
+con8222
+con8223
+con8224
+con8225
+con8226
+con8227
+con8228
+con8229
+con8230
+con8231
+con8232
+con8233
+con8234
+con8235
+con8236
+con8237
+con8238
+con8239
+con8240
+con8241
+con8242
+con8243
+con8244
+con8245
+con8246
+con8247
+con8248
+con8249
+con8250
+con8251
+con8252
+con8253
+con8254
+con8255
+con8256
+con8257
+con8258
+con8259
+con8260
+con8261
+con8262
+con8263
+con8264
+con8265
+con8266
+con8267
+con8268
+con8269
+con8270
+con8271
+con8272
+con8273
+con8274
+con8275
+con8276
+con8277
+con8278
+con8279
+con8280
+con8281
+con8282
+con8283
+con8284
+con8285
+con8286
+con8287
+con8288
+con8289
+con8290
+con8291
+con8292
+con8293
+con8294
+con8295
+con8296
+con8297
+con8298
+con8299
+con8300
+con8301
+con8302
+con8303
+con8304
+con8305
+con8306
+con8307
+con8308
+con8309
+con8310
+con8311
+con8312
+con8313
+con8314
+con8315
+con8316
+con8317
+con8318
+con8319
+con8320
+con8321
+con8322
+con8323
+con8324
+con8325
+con8326
+con8327
+con8328
+con8329
+con8330
+con8331
+con8332
+con8333
+con8334
+con8335
+con8336
+con8337
+con8338
+con8339
+con8340
+con8341
+con8342
+con8343
+con8344
+con8345
+con8346
+con8347
+con8348
+con8349
+con8350
+con8351
+con8352
+con8353
+con8354
+con8355
+con8356
+con8357
+con8358
+con8359
+con8360
+con8361
+con8362
+con8363
+con8364
+con8365
+con8366
+con8367
+con8368
+con8369
+con8370
+con8371
+con8372
+con8373
+con8374
+con8375
+con8376
+con8377
+con8378
+con8379
+con8380
+con8381
+con8382
+con8383
+con8384
+con8385
+con8386
+con8387
+con8388
+con8389
+con8390
+con8391
+con8392
+con8393
+con8394
+con8395
+con8396
+con8397
+con8398
+con8399
+con8400
+con8401
+con8402
+con8403
+con8404
+con8405
+con8406
+con8407
+con8408
+con8409
+con8410
+con8411
+con8412
+con8413
+con8414
+con8415
+con8416
+con8417
+con8418
+con8419
+con8420
+con8421
+con8422
+con8423
+con8424
+con8425
+con8426
+con8427
+con8428
+con8429
+con8430
+con8431
+con8432
+con8433
+con8434
+con8435
+con8436
+con8437
+con8438
+con8439
+con8440
+con8441
+con8442
+con8443
+con8444
+con8445
+con8446
+con8447
+con8448
+con8449
+con8450
+con8451
+con8452
+con8453
+con8454
+con8455
+con8456
+con8457
+con8458
+con8459
+con8460
+con8461
+con8462
+con8463
+con8464
+con8465
+con8466
+con8467
+con8468
+con8469
+con8470
+con8471
+con8472
+con8473
+con8474
+con8475
+con8476
+con8477
+con8478
+con8479
+con8480
+con8481
+con8482
+con8483
+con8484
+con8485
+con8486
+con8487
+con8488
+con8489
+con8490
+con8491
+con8492
+con8493
+con8494
+con8495
+con8496
+con8497
+con8498
+con8499
+con8500
+con8501
+con8502
+con8503
+con8504
+con8505
+con8506
+con8507
+con8508
+con8509
+con8510
+con8511
+con8512
+con8513
+con8514
+con8515
+con8516
+con8517
+con8518
+con8519
+con8520
+con8521
+con8522
+con8523
+con8524
+con8525
+con8526
+con8527
+con8528
+con8529
+con8530
+con8531
+con8532
+con8533
+con8534
+con8535
+con8536
+con8537
+con8538
+con8539
+con8540
+con8541
+con8542
+con8543
+con8544
+con8545
+con8546
+con8547
+con8548
+con8549
+con8550
+con8551
+con8552
+con8553
+con8554
+con8555
+con8556
+con8557
+con8558
+con8559
+con8560
+con8561
+con8562
+con8563
+con8564
+con8565
+con8566
+con8567
+con8568
+con8569
+con8570
+con8571
+con8572
+con8573
+con8574
+con8575
+con8576
+con8577
+con8578
+con8579
+con8580
+con8581
+con8582
+con8583
+con8584
+con8585
+con8586
+con8587
+con8588
+con8589
+con8590
+con8591
+con8592
+con8593
+con8594
+con8595
+con8596
+con8597
+con8598
+con8599
+con8600
+con8601
+con8602
+con8603
+con8604
+con8605
+con8606
+con8607
+con8608
+con8609
+con8610
+con8611
+con8612
+con8613
+con8614
+con8615
+con8616
+con8617
+con8618
+con8619
+con8620
+con8621
+con8622
+con8623
+con8624
+con8625
+con8626
+con8627
+con8628
+con8629
+con8630
+con8631
+con8632
+con8633
+con8634
+con8635
+con8636
+con8637
+con8638
+con8639
+con8640
+con8641
+con8642
+con8643
+con8644
+con8645
+con8646
+con8647
+con8648
+con8649
+con8650
+con8651
+con8652
+con8653
+con8654
+con8655
+con8656
+con8657
+con8658
+con8659
+con8660
+con8661
+con8662
+con8663
+con8664
+con8665
+con8666
+con8667
+con8668
+con8669
+con8670
+con8671
+con8672
+con8673
+con8674
+con8675
+con8676
+con8677
+con8678
+con8679
+con8680
+con8681
+con8682
+con8683
+con8684
+con8685
+con8686
+con8687
+con8688
+con8689
+con8690
+con8691
+con8692
+con8693
+con8694
+con8695
+con8696
+con8697
+con8698
+con8699
+con8700
+con8701
+con8702
+con8703
+con8704
+con8705
+con8706
+con8707
+con8708
+con8709
+con8710
+con8711
+con8712
+con8713
+con8714
+con8715
+con8716
+con8717
+con8718
+con8719
+con8720
+con8721
+con8722
+con8723
+con8724
+con8725
+con8726
+con8727
+con8728
+con8729
+con8730
+con8731
+con8732
+con8733
+con8734
+con8735
+con8736
+con8737
+con8738
+con8739
+con8740
+con8741
+con8742
+con8743
+con8744
+con8745
+con8746
+con8747
+con8748
+con8749
+con8750
+con8751
+con8752
+con8753
+con8754
+con8755
+con8756
+con8757
+con8758
+con8759
+con8760
+con8761
+con8762
+con8763
+con8764
+con8765
+con8766
+con8767
+con8768
+con8769
+con8770
+con8771
+con8772
+con8773
+con8774
+con8775
+con8776
+con8777
+con8778
+con8779
+con8780
+con8781
+con8782
+con8783
+con8784
+con8785
+con8786
+con8787
+con8788
+con8789
+con8790
+con8791
+con8792
+con8793
+con8794
+con8795
+con8796
+con8797
+con8798
+con8799
+con8800
+con8801
+con8802
+con8803
+con8804
+con8805
+con8806
+con8807
+con8808
+con8809
+con8810
+con8811
+con8812
+con8813
+con8814
+con8815
+con8816
+con8817
+con8818
+con8819
+con8820
+con8821
+con8822
+con8823
+con8824
+con8825
+con8826
+con8827
+con8828
+con8829
+con8830
+con8831
+con8832
+con8833
+con8834
+con8835
+con8836
+con8837
+con8838
+con8839
+con8840
+con8841
+con8842
+con8843
+con8844
+con8845
+con8846
+con8847
+con8848
+con8849
+con8850
+con8851
+con8852
+con8853
+con8854
+con8855
+con8856
+con8857
+con8858
+con8859
+con8860
+con8861
+con8862
+con8863
+con8864
+con8865
+con8866
+con8867
+con8868
+con8869
+con8870
+con8871
+con8872
+con8873
+con8874
+con8875
+con8876
+con8877
+con8878
+con8879
+con8880
+con8881
+con8882
+con8883
+con8884
+con8885
+con8886
+con8887
+con8888
+con8889
+con8890
+con8891
+con8892
+con8893
+con8894
+con8895
+con8896
+con8897
+con8898
+con8899
+con8900
+con8901
+con8902
+con8903
+con8904
+con8905
+con8906
+con8907
+con8908
+con8909
+con8910
+con8911
+con8912
+con8913
+con8914
+con8915
+con8916
+con8917
+con8918
+con8919
+con8920
+con8921
+con8922
+con8923
+con8924
+con8925
+con8926
+con8927
+con8928
+con8929
+con8930
+con8931
+con8932
+con8933
+con8934
+con8935
+con8936
+con8937
+con8938
+con8939
+con8940
+con8941
+con8942
+con8943
+con8944
+con8945
+con8946
+con8947
+con8948
+con8949
+con8950
+con8951
+con8952
+con8953
+con8954
+con8955
+con8956
+con8957
+con8958
+con8959
+con8960
+con8961
+con8962
+con8963
+con8964
+con8965
+con8966
+con8967
+con8968
+con8969
+con8970
+con8971
+con8972
+con8973
+con8974
+con8975
+con8976
+con8977
+con8978
+con8979
+con8980
+con8981
+con8982
+con8983
+con8984
+con8985
+con8986
+con8987
+con8988
+con8989
+con8990
+con8991
+con8992
+con8993
+con8994
+con8995
+con8996
+con8997
+con8998
+con8999
+con9000
+con9001
+con9002
+con9003
+con9004
+con9005
+con9006
+con9007
+con9008
+con9009
+con9010
+con9011
+con9012
+con9013
+con9014
+con9015
+con9016
+con9017
+con9018
+con9019
+con9020
+con9021
+con9022
+con9023
+con9024
+con9025
+con9026
+con9027
+con9028
+con9029
+con9030
+con9031
+con9032
+con9033
+con9034
+con9035
+con9036
+con9037
+con9038
+con9039
+con9040
+con9041
+con9042
+con9043
+con9044
+con9045
+con9046
+con9047
+con9048
+con9049
+con9050
+con9051
+con9052
+con9053
+con9054
+con9055
+con9056
+con9057
+con9058
+con9059
+con9060
+con9061
+con9062
+con9063
+con9064
+con9065
+con9066
+con9067
+con9068
+con9069
+con9070
+con9071
+con9072
+con9073
+con9074
+con9075
+con9076
+con9077
+con9078
+con9079
+con9080
+con9081
+con9082
+con9083
+con9084
+con9085
+con9086
+con9087
+con9088
+con9089
+con9090
+con9091
+con9092
+con9093
+con9094
+con9095
+con9096
+con9097
+con9098
+con9099
+con9100
+con9101
+con9102
+con9103
+con9104
+con9105
+con9106
+con9107
+con9108
+con9109
+con9110
+con9111
+con9112
+con9113
+con9114
+con9115
+con9116
+con9117
+con9118
+con9119
+con9120
+con9121
+con9122
+con9123
+con9124
+con9125
+con9126
+con9127
+con9128
+con9129
+con9130
+con9131
+con9132
+con9133
+con9134
+con9135
+con9136
+con9137
+con9138
+con9139
+con9140
+con9141
+con9142
+con9143
+con9144
+con9145
+con9146
+con9147
+con9148
+con9149
+con9150
+con9151
+con9152
+con9153
+con9154
+con9155
+con9156
+con9157
+con9158
+con9159
+con9160
+con9161
+con9162
+con9163
+con9164
+con9165
+con9166
+con9167
+con9168
+con9169
+con9170
+con9171
+con9172
+con9173
+con9174
+con9175
+con9176
+con9177
+con9178
+con9179
+con9180
+con9181
+con9182
+con9183
+con9184
+con9185
+con9186
+con9187
+con9188
+con9189
+con9190
+con9191
+con9192
+con9193
+con9194
+con9195
+con9196
+con9197
+con9198
+con9199
+con9200
+con9201
+con9202
+con9203
+con9204
+con9205
+con9206
+con9207
+con9208
+con9209
+con9210
+con9211
+con9212
+con9213
+con9214
+con9215
+con9216
+con9217
+con9218
+con9219
+con9220
+con9221
+con9222
+con9223
+con9224
+con9225
+con9226
+con9227
+con9228
+con9229
+con9230
+con9231
+con9232
+con9233
+con9234
+con9235
+con9236
+con9237
+con9238
+con9239
+con9240
+con9241
+con9242
+con9243
+con9244
+con9245
+con9246
+con9247
+con9248
+con9249
+con9250
+con9251
+con9252
+con9253
+con9254
+con9255
+con9256
+con9257
+con9258
+con9259
+con9260
+con9261
+con9262
+con9263
+con9264
+con9265
+con9266
+con9267
+con9268
+con9269
+con9270
+con9271
+con9272
+con9273
+con9274
+con9275
+con9276
+con9277
+con9278
+con9279
+con9280
+con9281
+con9282
+con9283
+con9284
+con9285
+con9286
+con9287
+con9288
+con9289
+con9290
+con9291
+con9292
+con9293
+con9294
+con9295
+con9296
+con9297
+con9298
+con9299
+con9300
+con9301
+con9302
+con9303
+con9304
+con9305
+con9306
+con9307
+con9308
+con9309
+con9310
+con9311
+con9312
+con9313
+con9314
+con9315
+con9316
+con9317
+con9318
+con9319
+con9320
+con9321
+con9322
+con9323
+con9324
+con9325
+con9326
+con9327
+con9328
+con9329
+con9330
+con9331
+con9332
+con9333
+con9334
+con9335
+con9336
+con9337
+con9338
+con9339
+con9340
+con9341
+con9342
+con9343
+con9344
+con9345
+con9346
+con9347
+con9348
+con9349
+con9350
+con9351
+con9352
+con9353
+con9354
+con9355
+con9356
+con9357
+con9358
+con9359
+con9360
+con9361
+con9362
+con9363
+con9364
+con9365
+con9366
+con9367
+con9368
+con9369
+con9370
+con9371
+con9372
+con9373
+con9374
+con9375
+con9376
+con9377
+con9378
+con9379
+con9380
+con9381
+con9382
+con9383
+con9384
+con9385
+con9386
+con9387
+con9388
+con9389
+con9390
+con9391
+con9392
+con9393
+con9394
+con9395
+con9396
+con9397
+con9398
+con9399
+con9400
+con9401
+con9402
+con9403
+con9404
+con9405
+con9406
+con9407
+con9408
+con9409
+con9410
+con9411
+con9412
+con9413
+con9414
+con9415
+con9416
+con9417
+con9418
+con9419
+con9420
+con9421
+con9422
+con9423
+con9424
+con9425
+con9426
+con9427
+con9428
+con9429
+con9430
+con9431
+con9432
+con9433
+con9434
+con9435
+con9436
+con9437
+con9438
+con9439
+con9440
+con9441
+con9442
+con9443
+con9444
+con9445
+con9446
+con9447
+con9448
+con9449
+con9450
+con9451
+con9452
+con9453
+con9454
+con9455
+con9456
+con9457
+con9458
+con9459
+con9460
+con9461
+con9462
+con9463
+con9464
+con9465
+con9466
+con9467
+con9468
+con9469
+con9470
+con9471
+con9472
+con9473
+con9474
+con9475
+con9476
+con9477
+con9478
+con9479
+con9480
+con9481
+con9482
+con9483
+con9484
+con9485
+con9486
+con9487
+con9488
+con9489
+con9490
+con9491
+con9492
+con9493
+con9494
+con9495
+con9496
+con9497
+con9498
+con9499
+con9500
+con9501
+con9502
+con9503
+con9504
+con9505
+con9506
+con9507
+con9508
+con9509
+con9510
+con9511
+con9512
+con9513
+con9514
+con9515
+con9516
+con9517
+con9518
+con9519
+con9520
+con9521
+con9522
+con9523
+con9524
+con9525
+con9526
+con9527
+con9528
+con9529
+con9530
+con9531
+con9532
+con9533
+con9534
+con9535
+con9536
+con9537
+con9538
+con9539
+con9540
+con9541
+con9542
+con9543
+con9544
+con9545
+con9546
+con9547
+con9548
+con9549
+con9550
+con9551
+con9552
+con9553
+con9554
+con9555
+con9556
+con9557
+con9558
+con9559
+con9560
+con9561
+con9562
+con9563
+con9564
+con9565
+con9566
+con9567
+con9568
+con9569
+con9570
+con9571
+con9572
+con9573
+con9574
+con9575
+con9576
+con9577
+con9578
+con9579
+con9580
+con9581
+con9582
+con9583
+con9584
+con9585
+con9586
+con9587
+con9588
+con9589
+con9590
+con9591
+con9592
+con9593
+con9594
+con9595
+con9596
+con9597
+con9598
+con9599
+con9600
+con9601
+con9602
+con9603
+con9604
+con9605
+con9606
+con9607
+con9608
+con9609
+con9610
+con9611
+con9612
+con9613
+con9614
+con9615
+con9616
+con9617
+con9618
+con9619
+con9620
+con9621
+con9622
+con9623
+con9624
+con9625
+con9626
+con9627
+con9628
+con9629
+con9630
+con9631
+con9632
+con9633
+con9634
+con9635
+con9636
+con9637
+con9638
+con9639
+con9640
+con9641
+con9642
+con9643
+con9644
+con9645
+con9646
+con9647
+con9648
+con9649
+con9650
+con9651
+con9652
+con9653
+con9654
+con9655
+con9656
+con9657
+con9658
+con9659
+con9660
+con9661
+con9662
+con9663
+con9664
+con9665
+con9666
+con9667
+con9668
+con9669
+con9670
+con9671
+con9672
+con9673
+con9674
+con9675
+con9676
+con9677
+con9678
+con9679
+con9680
+con9681
+con9682
+con9683
+con9684
+con9685
+con9686
+con9687
+con9688
+con9689
+con9690
+con9691
+con9692
+con9693
+con9694
+con9695
+con9696
+con9697
+con9698
+con9699
+con9700
+con9701
+con9702
+con9703
+con9704
+con9705
+con9706
+con9707
+con9708
+con9709
+con9710
+con9711
+con9712
+con9713
+con9714
+con9715
+con9716
+con9717
+con9718
+con9719
+con9720
+con9721
+con9722
+con9723
+con9724
+con9725
+con9726
+con9727
+con9728
+con9729
+con9730
+con9731
+con9732
+con9733
+con9734
+con9735
+con9736
+con9737
+con9738
+con9739
+con9740
+con9741
+con9742
+con9743
+con9744
+con9745
+con9746
+con9747
+con9748
+con9749
+con9750
+con9751
+con9752
+con9753
+con9754
+con9755
+con9756
+con9757
+con9758
+con9759
+con9760
+con9761
+con9762
+con9763
+con9764
+con9765
+con9766
+con9767
+con9768
+con9769
+con9770
+con9771
+con9772
+con9773
+con9774
+con9775
+con9776
+con9777
+con9778
+con9779
+con9780
+con9781
+con9782
+con9783
+con9784
+con9785
+con9786
+con9787
+con9788
+con9789
+con9790
+con9791
+con9792
+con9793
+con9794
+con9795
+con9796
+con9797
+con9798
+con9799
+con9800
+con9801
+con9802
+con9803
+con9804
+con9805
+con9806
+con9807
+con9808
+con9809
+con9810
+con9811
+con9812
+con9813
+con9814
+con9815
+con9816
+con9817
+con9818
+con9819
+con9820
+con9821
+con9822
+con9823
+con9824
+con9825
+con9826
+con9827
+con9828
+con9829
+con9830
+con9831
+con9832
+con9833
+con9834
+con9835
+con9836
+con9837
+con9838
+con9839
+con9840
+con9841
+con9842
+con9843
+con9844
+con9845
+con9846
+con9847
+con9848
+con9849
+con9850
+con9851
+con9852
+con9853
+con9854
+con9855
+con9856
+con9857
+con9858
+con9859
+con9860
+con9861
+con9862
+con9863
+con9864
+con9865
+con9866
+con9867
+con9868
+con9869
+con9870
+con9871
+con9872
+con9873
+con9874
+con9875
+con9876
+con9877
+con9878
+con9879
+con9880
+con9881
+con9882
+con9883
+con9884
+con9885
+con9886
+con9887
+con9888
+con9889
+con9890
+con9891
+con9892
+con9893
+con9894
+con9895
+con9896
+con9897
+con9898
+con9899
+con9900
+con9901
+con9902
+con9903
+con9904
+con9905
+con9906
+con9907
+con9908
+con9909
+con9910
+con9911
+con9912
+con9913
+con9914
+con9915
+con9916
+con9917
+con9918
+con9919
+con9920
+con9921
+con9922
+con9923
+con9924
+con9925
+con9926
+con9927
+con9928
+con9929
+con9930
+con9931
+con9932
+con9933
+con9934
+con9935
+con9936
+con9937
+con9938
+con9939
+con9940
+con9941
+con9942
+con9943
+con9944
+con9945
+con9946
+con9947
+con9948
+con9949
+con9950
+con9951
+con9952
+con9953
+con9954
+con9955
+con9956
+con9957
+con9958
+con9959
+con9960
+con9961
+con9962
+con9963
+con9964
+con9965
+con9966
+con9967
+con9968
+con9969
+con9970
+con9971
+con9972
+con9973
+con9974
+con9975
+con9976
+con9977
+con9978
+con9979
+con9980
+con9981
+con9982
+con9983
+con9984
+con9985
+con9986
+con9987
+con9988
+con9989
+con9990
+con9991
+con9992
+con9993
+con9994
+con9995
+con9996
+con9997
+con9998
+con9999
+con10000
+;
+Variables x(j), obj;
+* Objective function (to be minimized) 
+objcon.. obj =e= x('2');
+
+
+con1..0.99999999169976383 * x('1') + 
+0.00012884282005775626 * x('2') =g= -1;
+con2..0.99999955589403167 * x('1') + 
+0.000942449860484106 * x('2') =g= -1;
+con3..0.99999987527126544 * x('1') - 
+0.00049945715882090643 * x('2') =g= -1;
+con4..0.99999876637247243 * x('1') + 
+0.0015707493540931339 * x('2') =g= -1;
+con5..0.99999936408193935 * x('1') - 
+0.001127756940532535 * x('2') =g= -1;
+con6..0.99999845813198729 * x('1') - 
+0.0017560562770498446 * x('2') =g= -1;
+con7..0.99999758209052314 * x('1') + 
+0.0021990482276317692 * x('2') =g= -1;
+con8..0.99999715742176676 * x('1') - 
+0.0023843549203457263 * x('2') =g= -1;
+con9..0.99999546195179145 * x('1') - 
+0.0030126526223897923 * x('2') =g= -1;
+con10..0.99999600304865133 * x('1') + 
+0.0028273462330721979 * x('2') =g= -1;
+con11..0.99999337172273062 * x('1') - 
+0.0036409491351582432 * x('2') =g= -1;
+con12..0.99999088673540926 * x('1') - 
+0.0042692442106215325 * x('2') =g= -1;
+con13..0.99999402924748038 * x('1') + 
+0.0034556431223869474 * x('2') =g= -1;
+con14..0.99998800699080848 * x('1') - 
+0.0048975376007542324 * x('2') =g= -1;
+con15..0.99998473249006503 * x('1') - 
+0.0055258290575306941 * x('2') =g= -1;
+con16..0.99999166068778944 * x('1') + 
+0.004083938647548988 * x('2') =g= -1;
+con17..0.99998106323447167 * x('1') - 
+0.0061541183329269196 * x('2') =g= -1;
+con18..0.99997699922547667 * x('1') - 
+0.006782405178917106 * x('2') =g= -1;
+con19..0.99998889737051355 * x('1') + 
+0.004712232560531826 * x('2') =g= -1;
+con20..0.99997254046468453 * x('1') - 
+0.0074106893474790757 * x('2') =g= -1;
+con21..0.99996768695385529 * x('1') - 
+0.0080389705905917069 * x('2') =g= -1;
+con22..0.9999857392967435 * x('1') + 
+0.0053405246133096064 * x('2') =g= -1;
+con23..0.99996243869490509 * x('1') - 
+0.008667248660231483 * x('2') =g= -1;
+con24..0.99995679568990548 * x('1') - 
+0.0092955233083823509 * x('2') =g= -1;
+con25..0.99998218646772596 * x('1') + 
+0.005968814557857206 * x('2') =g= -1;
+con26..0.99995075794108423 * x('1') - 
+0.0099237942870233978 * x('2') =g= -1;
+con27..0.9999443254508249 * x('1') - 
+0.010552061348138709 * x('2') =g= -1;
+con28..0.99997823888486359 * x('1') + 
+0.0065971021461503354 * x('2') =g= -1;
+con29..0.99993749822166655 * x('1') - 
+0.011180324243713917 * x('2') =g= -1;
+con30..0.9999302762563046 * x('1') - 
+0.011808582725732744 * x('2') =g= -1;
+con31..0.99997389654971458 * x('1') + 
+0.0072253871301656367 * x('2') =g= -1;
+con32..0.99992265955758974 * x('1') - 
+0.012436836546186873 * x('2') =g= -1;
+con33..0.99991464812852882 * x('1') - 
+0.013065085457063613 * x('2') =g= -1;
+con34..0.99996915946399312 * x('1') + 
+0.0078536692618807781 * x('2') =g= -1;
+con35..0.9999062419722845 * x('1') - 
+0.013693329210355761 * x('2') =g= -1;
+con36..0.99989744109217527 * x('1') - 
+0.014321567558057259 * x('2') =g= -1;
+con37..0.99996402762956937 * x('1') + 
+0.0084819482932745535 * x('2') =g= -1;
+con38..0.9998882454916751 * x('1') - 
+0.014949800252165076 * x('2') =g= -1;
+con39..0.99987865517441432 * x('1') - 
+0.015578027044675745 * x('2') =g= -1;
+con40..0.99995850104846906 * x('1') + 
+0.0091102239763269817 * x('2') =g= -1;
+con41..0.99986867014417868 * x('1') - 
+0.016206247687590797 * x('2') =g= -1;
+con42..0.99985829040490992 * x('1') - 
+0.016834461932914189 * x('2') =g= -1;
+con43..0.99995257972287399 * x('1') + 
+0.0097384960630194032 * x('2') =g= -1;
+con44..0.99984751596070565 * x('1') - 
+0.017462669532648845 * x('2') =g= -1;
+con45..0.99983634681581901 * x('1') - 
+0.018090870238806539 * x('2') =g= -1;
+con46..0.9999462636551214 * x('1') + 
+0.010366764305334578 * x('2') =g= -1;
+con47..0.99982478297465927 * x('1') - 
+0.018719063803395542 * x('2') =g= -1;
+con48..0.99981282444179131 * x('1') - 
+0.0193472499784305 * x('2') =g= -1;
+con49..0.99993955284770497 * x('1') + 
+0.010995028455256782 * x('2') =g= -1;
+con50..0.99980047122193583 * x('1') - 
+0.01997542851592898 * x('2') =g= -1;
+con51..0.99978772331996968 * x('1') - 
+0.020603599167908004 * x('2') =g= -1;
+con52..0.99993244730327357 * x('1') + 
+0.011623288264771913 * x('2') =g= -1;
+con53..0.99977458074092496 * x('1') - 
+0.021231761686393926 * x('2') =g= -1;
+con54..0.99976104348998984 * x('1') - 
+0.021859915823410094 * x('2') =g= -1;
+con55..0.99992494702463242 * x('1') + 
+0.012251543485867574 * x('2') =g= -1;
+con56..0.99974711157250851 * x('1') - 
+0.022488061330986721 * x('2') =g= -1;
+con57..0.99973278499398055 * x('1') - 
+0.023116197961157426 * x('2') =g= -1;
+con58..0.99991705201474212 * x('1') + 
+0.012879793870533184 * x('2') =g= -1;
+con59..0.99971806376006167 * x('1') - 
+0.023744325465956659 * x('2') =g= -1;
+con60..0.99970294787656311 * x('1') - 
+0.024372443597425148 * x('2') =g= -1;
+con61..0.99990876227671954 * x('1') + 
+0.013508039170760072 * x('2') =g= -1;
+con62..0.9996874373494522 * x('1') - 
+0.02500055210760643 * x('2') =g= -1;
+con63..0.99967153218485161 * x('1') - 
+0.025628650748548719 * x('2') =g= -1;
+con64..0.99990007781383694 * x('1') + 
+0.014136279138541565 * x('2') =g= -1;
+con65..0.99965523238904042 * x('1') - 
+0.026256739272300589 * x('2') =g= -1;
+con66..0.99963853796845292 * x('1') - 
+0.026884817430920815 * x('2') =g= -1;
+con67..0.9998909986295228 * x('1') + 
+0.014764513525873112 * x('2') =g= -1;
+con68..0.99962144892967941 * x('1') - 
+0.027512884976466041 * x('2') =g= -1;
+con69..0.99960396527946616 * x('1') - 
+0.028140941661000667 * x('2') =g= -1;
+con70..0.99988152472736103 * x('1') + 
+0.015392742084752348 * x('2') =g= -1;
+con71..0.99958608702471485 * x('1') - 
+0.028768987236593369 * x('2') =g= -1;
+con72..0.99956781417248308 * x('1') - 
+0.029397021455314552 * x('2') =g= -1;
+con73..0.99987165611109163 * x('1') + 
+0.016020964567179219 * x('2') =g= -1;
+con74..0.99954914672998452 * x('1') - 
+0.030025044069241762 * x('2') =g= -1;
+con75..0.99953008470458804 * x('1') - 
+0.030653054830456248 * x('2') =g= -1;
+con76..0.9998613927846105 * x('1') + 
+0.01664918072515607 * x('2') =g= -1;
+con77..0.99951062810381885 * x('1') - 
+0.031281053491043924 * x('2') =g= -1;
+con78..0.99949077693535737 * x('1') - 
+0.031909039803096374 * x('2') =g= -1;
+con79..0.99985073475196895 * x('1') + 
+0.017277390310687733 * x('2') =g= -1;
+con80..0.99947053120704032 * x('1') - 
+0.0325370135187074 * x('2') =g= -1;
+con81..0.99944989092685987 * x('1') - 
+0.033164974389978438 * x('2') =g= -1;
+con82..0.9998396820173745 * x('1') + 
+0.017905593075781649 * x('2') =g= -1;
+con83..0.99942885610296384 * x('1') - 
+0.033792922169015097 * x('2') =g= -1;
+con84..0.99940742674365612 * x('1') - 
+0.034420856607929047 * x('2') =g= -1;
+con85..0.99982823458519032 * x('1') + 
+0.018533788772447931 * x('2') =g= -1;
+con86..0.99938560285739619 * x('1') - 
+0.035048777458833683 * x('2') =g= -1;
+con87..0.99936338445279904 * x('1') - 
+0.03567668447385397 * x('2') =g= -1;
+con88..0.99981639245993537 * x('1') + 
+0.019161977152699509 * x('2') =g= -1;
+con89..0.99934077153863587 * x('1') - 
+0.036304577405114113 * x('2') =g= -1;
+con90..0.99931776412383333 * x('1') - 
+0.036932456004747441 * x('2') =g= -1;
+con91..0.99980415564628444 * x('1') + 
+0.019790157968552182 * x('2') =g= -1;
+con92..0.9992943622174737 * x('1') - 
+0.037560320024892936 * x('2') =g= -1;
+con93..0.99927056582879537 * x('1') - 
+0.03818816921769267 * x('2') =g= -1;
+con94..0.99979152414906824 * x('1') + 
+0.020418330972024737 * x('2') =g= -1;
+con95..0.99924637496719204 * x('1') - 
+0.038816003335297229 * x('2') =g= -1;
+con96..0.99922178964221342 * x('1') - 
+0.039443822129863158 * x('2') =g= -1;
+con97..0.99977849797327312 * x('1') + 
+0.02104649591513905 * x('2') =g= -1;
+con98..0.99919680986356474 * x('1') - 
+0.040071625353549495 * x('2') =g= -1;
+con99..0.99917143564110711 * x('1') - 
+0.040699412758527634 * x('2') =g= -1;
+con100..0.99976507712404128 * x('1') + 
+0.021674652549920178 * x('2') =g= -1;
+con101..0.99914566698485718 * x('1') - 
+0.041327184096969019 * x('2') =g= -1;
+con102..0.9991195039049876 * x('1') - 
+0.041954939121054961 * x('2') =g= -1;
+con103..0.99975126160667083 * x('1') + 
+0.022302800628396457 * x('2') =g= -1;
+con104..0.99909294641182644 * x('1') - 
+0.042582677582972343 * x('2') =g= -1;
+con105..0.99906599451585743 * x('1') - 
+0.043210399234915466 * x('2') =g= -1;
+con106..0.99973705142661551 * x('1') + 
+0.0229309399025996 * x('2') =g= -1;
+con107..0.99903864822772026 * x('1') - 
+0.043838103829082598 * x('2') =g= -1;
+con108..0.9990109075582102 * x('1') - 
+0.044465791117681418 * x('2') =g= -1;
+con109..0.99972244658948506 * x('1') + 
+0.023559070124564794 * x('2') =g= -1;
+con110..0.99898277251827805 * x('1') - 
+0.045093460852926426 * x('2') =g= -1;
+con111..0.99895424311903058 * x('1') - 
+0.045721112787035507 * x('2') =g= -1;
+con112..0.99970744710104475 * x('1') + 
+0.024187191046330807 * x('2') =g= -1;
+con113..0.9989253193717299 * x('1') - 
+0.046348746672239781 * x('2') =g= -1;
+con114..0.9988960012877941 * x('1') - 
+0.04697636226077128 * x('2') =g= -1;
+con115..0.99969205296721597 * x('1') + 
+0.024815302419940066 * x('2') =g= -1;
+con116..0.9988662888787968 * x('1') - 
+0.047603959304872816 * x('2') =g= -1;
+con117..0.9988361821564673 * x('1') - 
+0.048231537556794518 * x('2') =g= -1;
+con118..0.99967626419407551 * x('1') + 
+0.025443403997438781 * x('2') =g= -1;
+con119..0.99880568113269064 * x('1') - 
+0.048859096768790376 * x('2') =g= -1;
+con120..0.99877478581950718 * x('1') - 
+0.049486636693128118 * x('2') =g= -1;
+con121..0.99966008078785629 * x('1') + 
+0.02607149553087702 * x('2') =g= -1;
+con122..0.99874349622911329 * x('1') - 
+0.050114157082076873 * x('2') =g= -1;
+con123..0.99871181237386109 * x('1') - 
+0.050741657687917024 * x('2') =g= -1;
+con124..0.99964350275494696 * x('1') + 
+0.02669957677230882 * x('2') =g= -1;
+con125..0.99867973426625789 * x('1') - 
+0.05136913826293589 * x('2') =g= -1;
+con126..0.9986472619189668 * x('1') - 
+0.05199659855942957 * x('2') =g= -1;
+con127..0.99962653010189162 * x('1') + 
+0.027327647473792269 * x('2') =g= -1;
+con128..0.99861439534480689 * x('1') - 
+0.052624038329699509 * x('2') =g= -1;
+con129..0.99858113455675246 * x('1') - 
+0.053251457326057933 * x('2') =g= -1;
+con130..0.9996091628353907 * x('1') + 
+0.027955707387389641 * x('2') =g= -1;
+con131..0.99854747956793355 * x('1') - 
+0.053878855300825243 * x('2') =g= -1;
+con132..0.99851343039163598 * x('1') - 
+0.054506232006326608 * x('2') =g= -1;
+con133..0.99959140096229993 * x('1') + 
+0.028583756265167449 * x('2') =g= -1;
+con134..0.99847898704130078 * x('1') - 
+0.055133587194901794 * x('2') =g= -1;
+con135..0.99844414953052507 * x('1') - 
+0.055760920618892866 * x('2') =g= -1;
+con136..0.99957324448963114 * x('1') + 
+0.029211793859196564 * x('2') =g= -1;
+con137..0.99840891787306119 * x('1') - 
+0.056388232030654004 * x('2') =g= -1;
+con138..0.99837329208281733 * x('1') - 
+0.057015521182548108 * x('2') =g= -1;
+con139..0.99955469342455161 * x('1') + 
+0.029839819921552314 * x('2') =g= -1;
+con140..0.99833727217385704 * x('1') - 
+0.057642787826944174 * x('2') =g= -1;
+con141..0.99830085816039971 * x('1') - 
+0.058270031716222762 * x('2') =g= -1;
+con142..0.9995357477743847 * x('1') + 
+0.030467834204314582 * x('2') =g= -1;
+con143..0.99826405005681995 * x('1') - 
+0.05889725260277253 * x('2') =g= -1;
+con144..0.99822684787764848 * x('1') - 
+0.059524450238991208 * x('2') =g= -1;
+con145..0.99951640754660942 * x('1') + 
+0.031095836459567903 * x('2') =g= -1;
+con146..0.99818925163757088 * x('1') - 
+0.060151624377286592 * x('2') =g= -1;
+con147..0.99815126135142895 * x('1') - 
+0.060778774770073089 * x('2') =g= -1;
+con148..0.99949667274886045 * x('1') + 
+0.031723826439401553 * x('2') =g= -1;
+con149..0.9981128770342198 * x('1') - 
+0.061405901169777163 * x('2') =g= -1;
+con150..0.99807409870109587 * x('1') - 
+0.062033003328833831 * x('2') =g= -1;
+con151..0.99947654338892844 * x('1') + 
+0.032351803895909644 * x('2') =g= -1;
+con152..0.99803492636736535 * x('1') - 
+0.062660080999688589 * x('2') =g= -1;
+con153..0.99799536004849221 * x('1') - 
+0.063287133934793044 * x('2') =g= -1;
+con154..0.99945601947475959 * x('1') + 
+0.032979768581191261 * x('2') =g= -1;
+con155..0.99795539976009529 * x('1') - 
+0.063914161886614779 * x('2') =g= -1;
+con156..0.99791504551794963 * x('1') - 
+0.064541164607625032 * x('2') =g= -1;
+con157..0.99943510101445598 * x('1') + 
+0.033607720247350523 * x('2') =g= -1;
+con158..0.99787429733798538 * x('1') - 
+0.065168141850308545 * x('2') =g= -1;
+con159..0.99783315523628835 * x('1') - 
+0.065795093367160093 * x('2') =g= -1;
+con160..0.99941378801627534 * x('1') + 
+0.03423565864649665 * x('2') =g= -1;
+con161..0.99779161922909987 * x('1') - 
+0.066422018910682015 * x('2') =g= -1;
+con162..0.99774968933281671 * x('1') - 
+0.067048918233389487 * x('2') =g= -1;
+con163..0.99939208048863126 * x('1') + 
+0.034863583530744147 * x('2') =g= -1;
+con164..0.9977073655639912 * x('1') - 
+0.067675791087807191 * x('2') =g= -1;
+con165..0.99766464793933096 * x('1') - 
+0.068302637226470272 * x('2') =g= -1;
+con166..0.99936997844009301 * x('1') + 
+0.035491494652212831 * x('2') =g= -1;
+con167..0.99762153647569929 * x('1') - 
+0.068929456401925243 * x('2') =g= -1;
+con168..0.99757803119011512 * x('1') - 
+0.069556248366726678 * x('2') =g= -1;
+con169..0.9993474818793856 * x('1') + 
+0.036119391763027968 * x('2') =g= -1;
+con170..0.99753413209975239 * x('1') - 
+0.070183012873442502 * x('2') =g= -1;
+con171..0.99748983922194079 * x('1') - 
+0.070809749674650618 * x('2') =g= -1;
+con172..0.99932459081538982 * x('1') + 
+0.036747274615320326 * x('2') =g= -1;
+con173..0.99744515257416544 * x('1') - 
+0.071436458522940741 * x('2') =g= -1;
+con174..0.99740007217406701 * x('1') - 
+0.072063139170910062 * x('2') =g= -1;
+con175..0.99930130525714211 * x('1') + 
+0.037375142961226342 * x('2') =g= -1;
+con176..0.99735459803944115 * x('1') - 
+0.072689791371173137 * x('2') =g= -1;
+con177..0.99730873018823962 * x('1') - 
+0.073316414876350433 * x('2') =g= -1;
+con178..0.99927762521383479 * x('1') + 
+0.038002996552888135 * x('2') =g= -1;
+con179..0.99726246863856916 * x('1') - 
+0.073943009439073712 * x('2') =g= -1;
+con180..0.99721581340869181 * x('1') - 
+0.074569574811991501 * x('2') =g= -1;
+con181..0.9992535506948157 * x('1') + 
+0.038630835142453683 * x('2') =g= -1;
+con182..0.99716876451702541 * x('1') - 
+0.075196110747757658 * x('2') =g= -1;
+con183..0.99712132198214309 * x('1') - 
+0.075822616999041192 * x('2') =g= -1;
+con184..0.99922908170958857 * x('1') + 
+0.039258658482076859 * x('2') =g= -1;
+con185..0.99707348582277322 * x('1') - 
+0.076449093318521941 * x('2') =g= -1;
+con186..0.99702525605779957 * x('1') - 
+0.077075539458891562 * x('2') =g= -1;
+con187..0.9992042182678128 * x('1') + 
+0.039886466323917596 * x('2') =g= -1;
+con188..0.99697663270626147 * x('1') - 
+0.077701955172854525 * x('2') =g= -1;
+con189..0.99692761578735345 * x('1') - 
+0.078328340213124625 * x('2') =g= -1;
+con190..0.99917896037930365 * x('1') + 
+0.040514258420141905 * x('2') =g= -1;
+con191..0.99687820532042548 * x('1') - 
+0.07895469433243045 * x('2') =g= -1;
+con192..0.99682840132498296 * x('1') - 
+0.079581017283511885 * x('2') =g= -1;
+con193..0.99915330805403169 * x('1') + 
+0.041142034522922026 * x('2') =g= -1;
+con194..0.99677820382068649 * x('1') - 
+0.080207308819122039 * x('2') =g= -1;
+con195..0.99672761282735212 * x('1') - 
+0.080833568692023738 * x('2') =g= -1;
+con196..0.99912726130212359 * x('1') + 
+0.041769794384436509 * x('2') =g= -1;
+con197..0.99667662836495108 * x('1') - 
+0.081459796654994962 * x('2') =g= -1;
+con198..0.99662525045361017 * x('1') - 
+0.082085992460826304 * x('2') =g= -1;
+con199..0.99910082013386159 * x('1') + 
+0.042397537756870336 * x('2') =g= -1;
+con200..0.99657347911361138 * x('1') - 
+0.082712155862317505 * x('2') =g= -1;
+con201..0.99652131436539193 * x('1') - 
+0.083338286612287274 * x('2') =g= -1;
+con202..0.99907398455968355 * x('1') + 
+0.043025264392414976 * x('2') =g= -1;
+con203..0.99646875622954445 * x('1') - 
+0.083964384463561068 * x('2') =g= -1;
+con204..0.9964158047268169 * x('1') - 
+0.0845904491689808 * x('2') =g= -1;
+con205..0.99904675459018322 * x('1') + 
+0.043652974043268511 * x('2') =g= -1;
+con206..0.99636245987811234 * x('1') - 
+0.085216480481401513 * x('2') =g= -1;
+con207..0.99630872170448925 * x('1') - 
+0.085842478153688784 * x('2') =g= -1;
+con208..0.99901913023610978 * x('1') + 
+0.044280666461635719 * x('2') =g= -1;
+con209..0.99625459022716156 * x('1') - 
+0.086468441938724078 * x('2') =g= -1;
+con210..0.99620006546749795 * x('1') - 
+0.087094371589401406 * x('2') =g= -1;
+con211..0.9989911115083685 * x('1') + 
+0.044908341399728213 * x('2') =g= -1;
+con212..0.99614514744702298 * x('1') - 
+0.087720266858628229 * x('2') =g= -1;
+con213..0.99608983618741587 * x('1') - 
+0.088346127499325564 * x('2') =g= -1;
+con214..0.99896269841801977 * x('1') + 
+0.045535998609764462 * x('2') =g= -1;
+con215..0.99603413171051136 * x('1') - 
+0.088971953264429013 * x('2') =g= -1;
+con216..0.99597803403829954 * x('1') - 
+0.089597743906885283 * x('2') =g= -1;
+con217..0.99893389097628016 * x('1') + 
+0.046163637843969964 * x('2') =g= -1;
+con218..0.99592154319292558 * x('1') - 
+0.090223499179657579 * x('2') =g= -1;
+con219..0.99586465919668965 * x('1') - 
+0.090849218835723111 * x('2') =g= -1;
+con220..0.99890468919452169 * x('1') + 
+0.046791258854577307 * x('2') =g= -1;
+con221..0.99580738207204766 * x('1') - 
+0.091474902628069565 * x('2') =g= -1;
+con222..0.9957497118416101 * x('1') - 
+0.092100550309705001 * x('2') =g= -1;
+con223..0.99887509308427203 * x('1') + 
+0.047418861393826277 * x('2') =g= -1;
+con224..0.99569164852814296 * x('1') - 
+0.092726161633645526 * x('2') =g= -1;
+con225..0.99563319215456747 * x('1') - 
+0.09335173635292518 * x('2') =g= -1;
+con226..0.9988451026572146 * x('1') + 
+0.048046445213963923 * x('2') =g= -1;
+con227..0.99557434274395984 * x('1') - 
+0.093977274220592391 * x('2') =g= -1;
+con228..0.99551510031955159 * x('1') - 
+0.094602774989707539 * x('2') =g= -1;
+con229..0.9988147179251885 * x('1') + 
+0.04867401006724472 * x('2') =g= -1;
+con230..0.99545546490472914 * x('1') - 
+0.095228238413348265 * x('2') =g= -1;
+con231..0.99539543652303442 * x('1') - 
+0.095853664244606077 * x('2') =g= -1;
+con232..0.99878393890018824 * x('1') + 
+0.049301555705930616 * x('2') =g= -1;
+con233..0.99533501519816425 * x('1') - 
+0.096479052236587315 * x('2') =g= -1;
+con234..0.99527420095397046 * x('1') - 
+0.09710440214241417 * x('2') =g= -1;
+con235..0.99875276559436443 * x('1') + 
+0.04992908188229115 * x('2') =g= -1;
+con236..0.99521299381446027 * x('1') - 
+0.097729713715221198 * x('2') =g= -1;
+con237..0.9951513938037958 * x('1') - 
+0.098354986708160716 * x('2') =g= -1;
+con238..0.9987211980200229 * x('1') + 
+0.050556588348603528 * x('2') =g= -1;
+con239..0.99508940094629439 * x('1') - 
+0.098980220874399436 * x('2') =g= -1;
+con240..0.99502701526642834 * x('1') - 
+0.09960541596712022 * x('2') =g= -1;
+con241..0.99868923618962535 * x('1') + 
+0.051184074857152755 * x('2') =g= -1;
+con242..0.99496423678882517 * x('1') - 
+0.1002305717395179 * x('2') =g= -1;
+con243..0.99490106553826718 * x('1') - 
+0.10085568794480892 * x('2') =g= -1;
+con244..0.99865688011578913 * x('1') + 
+0.051811541160231699 * x('2') =g= -1;
+con245..0.99483750153969197 * x('1') - 
+0.10148076433622014 * x('2') =g= -1;
+con246..0.99477354481819236 * x('1') - 
+0.10210580066699404 * x('2') =g= -1;
+con247..0.99862412981128701 * x('1') + 
+0.0524389870101412 * x('2') =g= -1;
+con248..0.99470919539901559 * x('1') - 
+0.1027307966903943 * x('2') =g= -1;
+con249..0.99464445330756446 * x('1') - 
+0.10335575215969427 * x('2') =g= -1;
+con250..0.99859098528904766 * x('1') + 
+0.053066412159190224 * x('2') =g= -1;
+con251..0.99457931856939674 * x('1') - 
+0.10398066682818688 * x('2') =g= -1;
+con252..0.99451379121022498 * x('1') - 
+0.10460554044918026 * x('2') =g= -1;
+con253..0.99855744656215506 * x('1') + 
+0.053693816359695827 * x('2') =g= -1;
+con254..0.99444787125591672 * x('1') - 
+0.10523037277599875 * x('2') =g= -1;
+con255..0.99438155873249456 * x('1') - 
+0.10585516356198388 * x('2') =g= -1;
+con256..0.99852351364384928 * x('1') + 
+0.054321199363983406 * x('2') =g= -1;
+con257..0.99431485366613637 * x('1') - 
+0.10647991256049091 * x('2') =g= -1;
+con258..0.99424775608317451 * x('1') - 
+0.10710461952489429 * x('2') =g= -1;
+con259..0.99848918654752539 * x('1') + 
+0.054948560924386672 * x('2') =g= -1;
+con260..0.99418026601009646 * x('1') - 
+0.10772928420858413 * x('2') =g= -1;
+con261..0.99411238347354458 * x('1') - 
+0.10835390636496814 * x('2') =g= -1;
+con262..0.99845446528673454 * x('1') + 
+0.055575900793247847 * x('2') =g= -1;
+con263..0.99404410850031655 * x('1') - 
+0.10897848574746728 * x('2') =g= -1;
+con264..0.99397544111736424 * x('1') - 
+0.10960302210952556 * x('2') =g= -1;
+con265..0.99841934987518344 * x('1') + 
+0.056203218722917683 * x('2') =g= -1;
+con266..0.9939063813517951 * x('1') - 
+0.11022751520459872 * x('2') =g= -1;
+con267..0.99383692923087141 * x('1') - 
+0.11085196478615955 * x('2') =g= -1;
+con268..0.998383840326734 * x('1') + 
+0.056830514465755592 * x('2') =g= -1;
+con269..0.9937670847820097 * x('1') - 
+0.11147637060770331 * x('2') =g= -1;
+con270..0.99369684803278213 * x('1') - 
+0.11210073242273634 * x('2') =g= -1;
+con271..0.99834793665540422 * x('1') + 
+0.057457787774129777 * x('2') =g= -1;
+con272..0.9936262190109153 * x('1') - 
+0.11272504998478594 * x('2') =g= -1;
+con273..0.99355519774429091 * x('1') - 
+0.11334932304739595 * x('2') =g= -1;
+con274..0.99831163887536745 * x('1') + 
+0.058085038400417274 * x('2') =g= -1;
+con275..0.99348378426094519 * x('1') - 
+0.11397355136412865 * x('2') =g= -1;
+con276..0.9934119785890696 * x('1') - 
+0.1145977346885614 * x('2') =g= -1;
+con277..0.99827494700095254 * x('1') + 
+0.058712266097004064 * x('2') =g= -1;
+con278..0.99333978075701013 * x('1') - 
+0.11522187277429187 * x('2') =g= -1;
+con279..0.99326719079326753 * x('1') - 
+0.11584596537493481 * x('2') =g= -1;
+con280..0.99823786104664403 * x('1') + 
+0.059339470616285209 * x('2') =g= -1;
+con281..0.99319420872649766 * x('1') - 
+0.11647001224412286 * x('2') =g= -1;
+con282..0.99312083458551081 * x('1') - 
+0.11709401313550762 * x('2') =g= -1;
+con283..0.99820038102708208 * x('1') + 
+0.059966651710664877 * x('2') =g= -1;
+con284..0.99304706839927248 * x('1') - 
+0.11771796780275616 * x('2') =g= -1;
+con285..0.99297291019690237 * x('1') - 
+0.11834187599955651 * x('2') =g= -1;
+con286..0.99816250695706221 * x('1') + 
+0.060593809132556541 * x('2') =g= -1;
+con287..0.9928983600076754 * x('1') - 
+0.11896573747961496 * x('2') =g= -1;
+con288..0.99282341786102113 * x('1') - 
+0.1195895519966528 * x('2') =g= -1;
+con289..0.99812423885153578 * x('1') + 
+0.061220942634382956 * x('2') =g= -1;
+con290..0.99274808378652357 * x('1') - 
+0.12021331930441598 * x('2') =g= -1;
+con291..0.99267235781392194 * x('1') - 
+0.12083703915666291 * x('2') =g= -1;
+con292..0.99808557672560938 * x('1') + 
+0.061848051968576359 * x('2') =g= -1;
+con293..0.99259623997310975 * x('1') - 
+0.1214607113071743 * x('2') =g= -1;
+con294..0.99251973029413521 * x('1') - 
+0.12208433550974965 * x('2') =g= -1;
+con295..0.99804652059454535 * x('1') + 
+0.062475136887578539 * x('2') =g= -1;
+con296..0.99244282880720158 * x('1') - 
+0.12270791151820476 * x('2') =g= -1;
+con297..0.99236553554266649 * x('1') - 
+0.1233314390863771 * x('2') =g= -1;
+con298..0.99800707047376169 * x('1') + 
+0.063102197143840882 * x('2') =g= -1;
+con299..0.99228785053104229 * x('1') - 
+0.12395491796812239 * x('2') =g= -1;
+con300..0.99220977380299591 * x('1') - 
+0.12457834791731554 * x('2') =g= -1;
+con301..0.99796722637883151 * x('1') + 
+0.063729232489824553 * x('2') =g= -1;
+con302..0.99213130538934902 * x('1') - 
+0.12520172868785082 * x('2') =g= -1;
+con303..0.99205244532107784 * x('1') - 
+0.12582506003364274 * x('2') =g= -1;
+con304..0.99792698832548377 * x('1') + 
+0.064356242678000511 * x('2') =g= -1;
+con305..0.99197319362931347 * x('1') - 
+0.12644834170862276 * x('2') =g= -1;
+con306..0.9918935503453411 * x('1') - 
+0.1270715734667445 * x('2') =g= -1;
+con307..0.99788635632960299 * x('1') + 
+0.064983227460849655 * x('2') =g= -1;
+con308..0.99181351550060082 * x('1') - 
+0.12769475506198133 * x('2') =g= -1;
+con309..0.99173308912668756 * x('1') - 
+0.12831788624832291 * x('2') =g= -1;
+con310..0.99784533040722911 * x('1') + 
+0.065610186590862943 * x('2') =g= -1;
+con311..0.99165227125535005 * x('1') - 
+0.12894096677978492 * x('2') =g= -1;
+con312..0.99157106191849242 * x('1') - 
+0.12956399641039693 * x('2') =g= -1;
+con313..0.99780391057455731 * x('1') + 
+0.066237119820541437 * x('2') =g= -1;
+con314..0.99148946114817271 * x('1') - 
+0.1301869748942121 * x('2') =g= -1;
+con315..0.99140746897660359 * x('1') - 
+0.13080990198530376 * x('2') =g= -1;
+con316..0.99776209684793882 * x('1') + 
+0.066864026902396401 * x('2') =g= -1;
+con317..0.99132508543615272 * x('1') - 
+0.13143277743776291 * x('2') =g= -1;
+con318..0.99124231055934175 * x('1') - 
+0.13205560100570354 * x('2') =g= -1;
+con319..0.99771988924387989 * x('1') + 
+0.067490907588949475 * x('2') =g= -1;
+con320..0.99115914437884689 * x('1') - 
+0.13267837244325933 * x('2') =g= -1;
+con321..0.99107558692749886 * x('1') - 
+0.13330109150458447 * x('2') =g= -1;
+con322..0.99767728777904241 * x('1') + 
+0.068117761632732685 * x('2') =g= -1;
+con323..0.99099163823828307 * x('1') - 
+0.13392375794385381 * x('2') =g= -1;
+con324..0.99090729834433888 * x('1') - 
+0.13454637151526386 * x('2') =g= -1;
+con325..0.99763429247024382 * x('1') + 
+0.068744588786288585 * x('2') =g= -1;
+con326..0.99082256727896068 * x('1') - 
+0.13516893197302945 * x('2') =g= -1;
+con327..0.9907374450755968 * x('1') - 
+0.13579143907138888 * x('2') =g= -1;
+con328..0.9975909033344571 * x('1') + 
+0.069371388802170308 * x('2') =g= -1;
+con329..0.99065193176785016 * x('1') - 
+0.13641389256460162 * x('2') =g= -1;
+con330..0.99056602738947841 * x('1') - 
+0.13703629220694477 * x('2') =g= -1;
+con331..0.99754712038881044 * x('1') + 
+0.069998161432941741 * x('2') =g= -1;
+con332..0.99047973197439265 * x('1') - 
+0.13765863775272275 * x('2') =g= -1;
+con333..0.99039304555665919 * x('1') - 
+0.13828092895625615 * x('2') =g= -1;
+con334..0.99750294365058767 * x('1') + 
+0.070624906431177581 * x('2') =g= -1;
+con335..0.99030596817049876 * x('1') - 
+0.13890316557188703 * x('2') =g= -1;
+con336..0.99021849985028565 * x('1') - 
+0.1395253473539842 * x('2') =g= -1;
+con337..0.99745837313722796 * x('1') + 
+0.071251623549463433 * x('2') =g= -1;
+con338..0.99013064063054912 * x('1') - 
+0.14014747405693201 * x('2') =g= -1;
+con339..0.99004239054597254 * x('1') - 
+0.14076954543514003 * x('2') =g= -1;
+con340..0.99741340886632623 * x('1') + 
+0.071878312540395867 * x('2') =g= -1;
+con341..0.9899537496313936 * x('1') - 
+0.14139156124303884 * x('2') =g= -1;
+con342..0.98986471792180419 * x('1') - 
+0.14201352123508182 * x('2') =g= -1;
+con343..0.99736805085563229 * x('1') + 
+0.072504973156582608 * x('2') =g= -1;
+con344..0.98977529545235066 * x('1') - 
+0.14263542516574174 * x('2') =g= -1;
+con345..0.98968548225833353 * x('1') - 
+0.14325727278951611 * x('2') =g= -1;
+con346..0.99732229912305204 * x('1') + 
+0.073131605150642584 * x('2') =g= -1;
+con347..0.98959527837520733 * x('1') - 
+0.14387906386092386 * x('2') =g= -1;
+con348..0.98950468383858126 * x('1') - 
+0.14450079813450614 * x('2') =g= -1;
+con349..0.99727615368664624 * x('1') + 
+0.073758208275205947 * x('2') =g= -1;
+con350..0.98941369868421825 * x('1') - 
+0.14512247536482753 * x('2') =g= -1;
+con351..0.98932232294803601 * x('1') - 
+0.14574409530647151 * x('2') =g= -1;
+con352..0.99722961456463144 * x('1') + 
+0.074384782282914327 * x('2') =g= -1;
+con353..0.98923055666610571 * x('1') - 
+0.14636565771405033 * x('2') =g= -1;
+con354..0.98913839987465335 * x('1') - 
+0.14698716234219378 * x('2') =g= -1;
+con355..0.99718268177537939 * x('1') + 
+0.075011326926420818 * x('2') =g= -1;
+con356..0.98904585261005895 * x('1') - 
+0.14760860894555436 * x('2') =g= -1;
+con357..0.98895291490885606 * x('1') - 
+0.14822999727881275 * x('2') =g= -1;
+con358..0.99713535533741737 * x('1') + 
+0.075637841958390101 * x('2') =g= -1;
+con359..0.98885958680773334 * x('1') - 
+0.14885132709666654 * x('2') =g= -1;
+con360..0.98876586834353297 * x('1') - 
+0.14947259815383993 * x('2') =g= -1;
+con361..0.9970876352694279 * x('1') + 
+0.076264327131498555 * x('2') =g= -1;
+con362..0.98867175955325115 * x('1') - 
+0.15009381020507936 * x('2') =g= -1;
+con363..0.98857726047403827 * x('1') - 
+0.15071496300515552 * x('2') =g= -1;
+con364..0.99703952159024911 * x('1') + 
+0.076890782198434357 * x('2') =g= -1;
+con365..0.98848237114319926 * x('1') - 
+0.15133605630885982 * x('2') =g= -1;
+con366..0.98838709159819249 * x('1') - 
+0.15195708987100981 * x('2') =g= -1;
+con367..0.99699101431887438 * x('1') + 
+0.077517206911897535 * x('2') =g= -1;
+con368..0.98829142187663066 * x('1') - 
+0.15257806344644576 * x('2') =g= -1;
+con369..0.98819536201628033 * x('1') - 
+0.15319897679003153 * x('2') =g= -1;
+con370..0.9969421134744525 * x('1') + 
+0.078143601024600148 * x('2') =g= -1;
+con371..0.98809891205506217 * x('1') - 
+0.15381982965665578 * x('2') =g= -1;
+con372..0.98800207203105106 * x('1') - 
+0.15444062180122739 * x('2') =g= -1;
+con373..0.99689281907628746 * x('1') + 
+0.078769964289266275 * x('2') =g= -1;
+con374..0.9879048419824753 * x('1') - 
+0.15506135297868545 * x('2') =g= -1;
+con375..0.98780722194771775 * x('1') - 
+0.15568202294398784 * x('2') =g= -1;
+con376..0.99684313114383905 * x('1') + 
+0.079396296458632207 * x('2') =g= -1;
+con377..0.98770921196531514 * x('1') - 
+0.15630263145211654 * x('2') =g= -1;
+con378..0.98761081207395751 * x('1') - 
+0.15692317825808311 * x('2') =g= -1;
+con379..0.99679304969672178 * x('1') + 
+0.080022597285446528 * x('2') =g= -1;
+con380..0.9875120223124898 * x('1') - 
+0.15754366311691737 * x('2') =g= -1;
+con381..0.98741284271990992 * x('1') - 
+0.15816408578367697 * x('2') =g= -1;
+con382..0.99674257475470607 * x('1') + 
+0.08064886652247015 * x('2') =g= -1;
+con383..0.98731327333537033 * x('1') - 
+0.15878444601344427 * x('2') =g= -1;
+con384..0.98721331419817704 * x('1') - 
+0.1594047435613235 * x('2') =g= -1;
+con385..0.99669170633771742 * x('1') + 
+0.081275103922476513 * x('2') =g= -1;
+con386..0.98711296534779014 * x('1') - 
+0.16002497818244638 * x('2') =g= -1;
+con387..0.98701222682382328 * x('1') - 
+0.16064514963196849 * x('2') =g= -1;
+con388..0.99664044446583655 * x('1') + 
+0.081901309238251563 * x('2') =g= -1;
+con389..0.98691109866604421 * x('1') - 
+0.16126525766507049 * x('2') =g= -1;
+con390..0.98680958091437421 * x('1') - 
+0.16188530203695792 * x('2') =g= -1;
+con391..0.99658878915929983 * x('1') + 
+0.082527482222593943 * x('2') =g= -1;
+con392..0.98670767360888856 * x('1') - 
+0.16250528250286242 * x('2') =g= -1;
+con393..0.98660537678981641 * x('1') - 
+0.16312519881803822 * x('2') =g= -1;
+con394..0.99653674043849871 * x('1') + 
+0.083153622628315077 * x('2') =g= -1;
+con395..0.98650269049754036 * x('1') - 
+0.16374505073776743 * x('2') =g= -1;
+con396..0.98639961477259697 * x('1') - 
+0.16436483801735771 * x('2') =g= -1;
+con397..0.99648429832397989 * x('1') + 
+0.083779730208239214 * x('2') =g= -1;
+con398..0.98629614965567691 * x('1') - 
+0.16498456041213863 * x('2') =g= -1;
+con399..0.98619229518762341 * x('1') - 
+0.16560421767747155 * x('2') =g= -1;
+con400..0.99643146283644568 * x('1') + 
+0.084405804715203564 * x('2') =g= -1;
+con401..0.98608805140943478 * x('1') - 
+0.16622380956873739 * x('2') =g= -1;
+con402..0.98598341836226222 * x('1') - 
+0.16684333584134636 * x('2') =g= -1;
+con403..0.99637823399675318 * x('1') + 
+0.085031845902058437 * x('2') =g= -1;
+con404..0.98587839608741046 * x('1') - 
+0.16746279625073462 * x('2') =g= -1;
+con405..0.98577298462633856 * x('1') - 
+0.16808219055236173 * x('2') =g= -1;
+con406..0.99632461182591525 * x('1') + 
+0.085657853521667229 * x('2') =g= -1;
+con407..0.98566718402065878 * x('1') - 
+0.16870151850171586 * x('2') =g= -1;
+con408..0.98556099431213695 * x('1') - 
+0.1693207798543106 * x('2') =g= -1;
+con409..0.99627059634509973 * x('1') + 
+0.086283827326906648 * x('2') =g= -1;
+con410..0.98545441554269253 * x('1') - 
+0.16993997436568664 * x('2') =g= -1;
+con411..0.98534744775439909 * x('1') - 
+0.17055910179140762 * x('2') =g= -1;
+con412..0.9962161875756298 * x('1') + 
+0.086909767070666721 * x('2') =g= -1;
+con413..0.98524009098948273 * x('1') - 
+0.17117816188706977 * x('2') =g= -1;
+con414..0.98513234529032401 * x('1') - 
+0.17179715440828972 * x('2') =g= -1;
+con415..0.99616138553898403 * x('1') + 
+0.087535672505850926 * x('2') =g= -1;
+con416..0.98502421069945678 * x('1') - 
+0.17241607911071433 * x('2') =g= -1;
+con417..0.98491568725956813 * x('1') - 
+0.17303493575001719 * x('2') =g= -1;
+con418..0.99610619025679603 * x('1') + 
+0.088161543385376295 * x('2') =g= -1;
+con419..0.98480677501349922 * x('1') - 
+0.17365372408189533 * x('2') =g= -1;
+con420..0.9846974740042439 * x('1') - 
+0.1742724438620788 * x('2') =g= -1;
+con421..0.9960506017508548 * x('1') + 
+0.088787379462173466 * x('2') =g= -1;
+con422..0.98458778427495008 * x('1') - 
+0.17489109484631948 * x('2') =g= -1;
+con423..0.98447770586891936 * x('1') - 
+0.17550967679039645 * x('2') =g= -1;
+con424..0.99599462004310446 * x('1') + 
+0.089413180489186853 * x('2') =g= -1;
+con425..0.98436723882960586 * x('1') - 
+0.17612818945012121 * x('2') =g= -1;
+con426..0.98425638320061792 * x('1') - 
+0.17674663258132658 * x('2') =g= -1;
+con427..0.99593824515564444 * x('1') + 
+0.090038946219374694 * x('2') =g= -1;
+con428..0.98414513902571688 * x('1') - 
+0.17736500593987625 * x('2') =g= -1;
+con429..0.9840335063488177 * x('1') - 
+0.17798330928166065 * x('2') =g= -1;
+con430..0.99588147711072927 * x('1') + 
+0.09066467640570916 * x('2') =g= -1;
+con431..0.98392148521398848 * x('1') - 
+0.17860154236259865 * x('2') =g= -1;
+con432..0.98380907566545084 * x('1') - 
+0.17921970493863426 * x('2') =g= -1;
+con433..0.99582431593076881 * x('1') + 
+0.09129037080117644 * x('2') =g= -1;
+con434..0.98369627774757984 * x('1') - 
+0.17983779676574196 * x('2') =g= -1;
+con435..0.98358309150490342 * x('1') - 
+0.18045581759992332 * x('2') =g= -1;
+con436..0.99576676163832811 * x('1') + 
+0.091916029158776891 * x('2') =g= -1;
+con437..0.98346951698210316 * x('1') - 
+0.18107376719720786 * x('2') =g= -1;
+con438..0.98335555422401377 * x('1') - 
+0.18169164531365412 * x('2') =g= -1;
+con439..0.99570881425612723 * x('1') + 
+0.092541651231525066 * x('2') =g= -1;
+con440..0.9832412032756237 * x('1') - 
+0.18230945170534538 * x('2') =g= -1;
+con441..0.9831264641820735 * x('1') - 
+0.18292718612839934 * x('2') =g= -1;
+con442..0.99565047380704153 * x('1') + 
+0.093167236772449855 * x('2') =g= -1;
+con443..0.98301133698865817 * x('1') - 
+0.18354484833895687 * x('2') =g= -1;
+con444..0.98289582174082568 * x('1') - 
+0.18416243809318736 * x('2') =g= -1;
+con445..0.99559174031410158 * x('1') + 
+0.093792785534594525 * x('2') =g= -1;
+con446..0.98277991848417623 * x('1') - 
+0.18477995514729403 * x('2') =g= -1;
+con447..0.98266362726446432 * x('1') - 
+0.18539739925750268 * x('2') =g= -1;
+con448..0.99553261380049318 * x('1') + 
+0.094418297271016915 * x('2') =g= -1;
+con449..0.98254694812759724 * x('1') - 
+0.1860147701800714 * x('2') =g= -1;
+con450..0.98242988111963514 * x('1') - 
+0.18663206767128629 * x('2') =g= -1;
+con451..0.99547309428955699 * x('1') + 
+0.095043771734789478 * x('2') =g= -1;
+con452..0.98231242628679138 * x('1') - 
+0.18724929148746336 * x('2') =g= -1;
+con453..0.98219458367543289 * x('1') - 
+0.18786644138494502 * x('2') =g= -1;
+con454..0.9954131818047891 * x('1') + 
+0.095669208678999348 * x('2') =g= -1;
+con455..0.98207635333207921 * x('1') - 
+0.1884835171201055 * x('2') =g= -1;
+con456..0.98195773530340291 * x('1') - 
+0.18910051844934747 * x('2') =g= -1;
+con457..0.99535287636984049 * x('1') + 
+0.096294607856748496 * x('2') =g= -1;
+con458..0.98183872963622998 * x('1') - 
+0.18971744512910296 * x('2') =g= -1;
+con459..0.98171933637753872 * x('1') - 
+0.19033429691583428 * x('2') =g= -1;
+con460..0.99529217800851755 * x('1') + 
+0.09691996902115381 * x('2') =g= -1;
+con461..0.98159955557446155 * x('1') - 
+0.19095107356603075 * x('2') =g= -1;
+con462..0.98147938727428286 * x('1') - 
+0.19156777483621396 * x('2') =g= -1;
+con463..0.99523108674478156 * x('1') + 
+0.097545291925347152 * x('2') =g= -1;
+con464..0.98135883152444026 * x('1') - 
+0.19218440048293522 * x('2') =g= -1;
+con465..0.98123788837252512 * x('1') - 
+0.19280095026277227 * x('2') =g= -1;
+con466..0.99516960260274878 * x('1') + 
+0.0981705763224755 * x('2') =g= -1;
+con467..0.98111655786628016 * x('1') - 
+0.19341742393233885 * x('2') =g= -1;
+con468..0.9809948400536026 * x('1') - 
+0.19403382124827265 * x('2') =g= -1;
+con469..0.99510772560669103 * x('1') + 
+0.098795821965701039 * x('2') =g= -1;
+con470..0.98087273498254168 * x('1') - 
+0.19465014196724501 * x('2') =g= -1;
+con471..0.9807502427012994 * x('1') - 
+0.19526638584595746 * x('2') =g= -1;
+con472..0.99504545578103476 * x('1') + 
+0.099421028608201234 * x('2') =g= -1;
+con473..0.98062736325823141 * x('1') - 
+0.19588255264113935 * x('2') =g= -1;
+con474..0.98050409670184546 * x('1') - 
+0.19649864210955295 * x('2') =g= -1;
+con475..0.99498279315036176 * x('1') + 
+0.10004619600316901 * x('2') =g= -1;
+con476..0.9803804430808023 * x('1') - 
+0.19711465400799025 * x('2') =g= -1;
+con477..0.98025640244391576 * x('1') - 
+0.19773058809327387 * x('2') =g= -1;
+con478..0.99491973773940867 * x('1') + 
+0.1006713239038127 * x('2') =g= -1;
+con479..0.98013197484015202 * x('1') - 
+0.19834644412225713 * x('2') =g= -1;
+con480..0.98000716031863011 * x('1') - 
+0.19896222185182502 * x('2') =g= -1;
+con481..0.99485628957306727 * x('1') + 
+0.10129641206335628 * x('2') =g= -1;
+con482..0.97988195892862229 * x('1') - 
+0.19957792103889085 * x('2') =g= -1;
+con483..0.97975637071955302 * x('1') - 
+0.20019354144040155 * x('2') =g= -1;
+con484..0.99479244867638461 * x('1') + 
+0.1019214602350394 * x('2') =g= -1;
+con485..0.97963039574099942 * x('1') - 
+0.20080908281333509 * x('2') =g= -1;
+con486..0.97950403404269193 * x('1') - 
+0.20142454491469727 * x('2') =g= -1;
+con487..0.99472821507456244 * x('1') + 
+0.10254646817211749 * x('2') =g= -1;
+con488..0.97937728567451265 * x('1') - 
+0.20203992750153121 * x('2') =g= -1;
+con489..0.97925015068649734 * x('1') - 
+0.20265523033090529 * x('2') =g= -1;
+con490..0.99466358879295769 * x('1') + 
+0.10317143562786185 * x('2') =g= -1;
+con491..0.97912262912883363 * x('1') - 
+0.2032704531599229 * x('2') =g= -1;
+con492..0.97899472105186203 * x('1') - 
+0.20388559574571904 * x('2') =g= -1;
+con493..0.99459856985708228 * x('1') + 
+0.10379636235555982 * x('2') =g= -1;
+con494..0.97886642650607603 * x('1') - 
+0.20450065784545771 * x('2') =g= -1;
+con495..0.9787377455421209 * x('1') - 
+0.20511563921633733 * x('2') =g= -1;
+con496..0.99453315829260314 * x('1') + 
+0.10442124810851473 * x('2') =g= -1;
+con497..0.978608678210795 * x('1') - 
+0.20573053961558735 * x('2') =g= -1;
+con498..0.97847922456304881 * x('1') - 
+0.20634535880046997 * x('2') =g= -1;
+con499..0.99446735412534226 * x('1') + 
+0.1050460926400462 * x('2') =g= -1;
+con500..0.97834938464998622 * x('1') - 
+0.20696009652827604 * x('2') =g= -1;
+con501..0.97821915852286212 * x('1') - 
+0.20757475255633467 * x('2') =g= -1;
+con502..0.99440115738127643 * x('1') + 
+0.10567089570348998 * x('2') =g= -1;
+con503..0.97808854623308528 * x('1') - 
+0.20818932664200104 * x('2') =g= -1;
+con504..0.97795754783221611 * x('1') - 
+0.20880381854266625 * x('2') =g= -1;
+con505..0.99433456808653764 * x('1') + 
+0.10629565705219829 * x('2') =g= -1;
+con506..0.97782616337196759 * x('1') - 
+0.20941822801575377 * x('2') =g= -1;
+con507..0.97769439290420546 * x('1') - 
+0.21003255481871622 * x('2') =g= -1;
+con508..0.99426758626741274 * x('1') + 
+0.10692037643953983 * x('2') =g= -1;
+con509..0.97756223648094709 * x('1') - 
+0.21064679870904487 * x('2') =g= -1;
+con510..0.97742969415436309 * x('1') - 
+0.21126095944425766 * x('2') =g= -1;
+con511..0.99420021195034347 * x('1') + 
+0.10754505361889978 * x('2') =g= -1;
+con512..0.97729676597677573 * x('1') - 
+0.2118750367819088 * x('2') =g= -1;
+con513..0.97716345200065979 * x('1') - 
+0.21248903047958548 * x('2') =g= -1;
+con514..0.99413244516192667 * x('1') + 
+0.10816968834368006 * x('2') =g= -1;
+con515..0.97702975227864275 * x('1') - 
+0.21310294029490526 * x('2') =g= -1;
+con516..0.97689566686350382 * x('1') - 
+0.21371676598552145 * x('2') =g= -1;
+con517..0.99406428592891394 * x('1') + 
+0.10879428036729927 * x('2') =g= -1;
+con518..0.97676119580817466 * x('1') - 
+0.21433050730911965 * x('2') =g= -1;
+con519..0.97662633916573904 * x('1') - 
+0.21494416402341968 * x('2') =g= -1;
+con520..0.99399573427821175 * x('1') + 
+0.10941882944319298 * x('2') =g= -1;
+con521..0.97649109698943348 * x('1') - 
+0.21555773588617216 * x('2') =g= -1;
+con522..0.97635546933264605 * x('1') - 
+0.21617122265516375 * x('2') =g= -1;
+con523..0.99392679023688191 * x('1') + 
+0.1100433353248136 * x('2') =g= -1;
+con524..0.97621945624891726 * x('1') - 
+0.21678462408821392 * x('2') =g= -1;
+con525..0.97608305779193982 * x('1') - 
+0.21739793994317577 * x('2') =g= -1;
+con526..0.99385745383214064 * x('1') + 
+0.11066779776563068 * x('2') =g= -1;
+con527..0.97594627401555822 * x('1') - 
+0.21801116997793704 * x('2') =g= -1;
+con528..0.97580910497376971 * x('1') - 
+0.21862431395041679 * x('2') =g= -1;
+con529..0.99378772509135915 * x('1') + 
+0.11129221651913082 * x('2') =g= -1;
+con530..0.9756715507207232 * x('1') - 
+0.2192373716185706 * x('2') =g= -1;
+con531..0.97553361131071947 * x('1') - 
+0.21985034274038823 * x('2') =g= -1;
+con532..0.99371760404206388 * x('1') + 
+0.11191659133881798 * x('2') =g= -1;
+con533..0.97539528679821208 * x('1') - 
+0.22046322707388999 * x('2') =g= -1;
+con534..0.97525657723780546 * x('1') - 
+0.22107602437713661 * x('2') =g= -1;
+con535..0.99364709071193569 * x('1') + 
+0.1125409219782134 * x('2') =g= -1;
+con536..0.97511748268425735 * x('1') - 
+0.2216887344082171 * x('2') =g= -1;
+con537..0.97497800319247663 * x('1') - 
+0.22230135692525835 * x('2') =g= -1;
+con538..0.99357618512881052 * x('1') + 
+0.11316520819085574 * x('2') =g= -1;
+con539..0.97483813881752424 * x('1') - 
+0.22291389168642101 * x('2') =g= -1;
+con540..0.97469788961461301 * x('1') - 
+0.22352633844990114 * x('2') =g= -1;
+con541..0.9935048873206791 * x('1') + 
+0.11378944973030128 * x('2') =g= -1;
+con542..0.97455725563910822 * x('1') - 
+0.22413869697392699 * x('2') =g= -1;
+con543..0.97441623694652657 * x('1') - 
+0.22475096701676428 * x('2') =g= -1;
+con544..0.99343319731568702 * x('1') + 
+0.11441364635012383 * x('2') =g= -1;
+con545..0.97427483359253653 * x('1') - 
+0.2253631483367127 * x('2') =g= -1;
+con546..0.97413304563295888 * x('1') - 
+0.22597524069210706 * x('2') =g= -1;
+con547..0.99336111514213477 * x('1') + 
+0.115037797803915 * x('2') =g= -1;
+con548..0.97399087312376553 * x('1') - 
+0.22658724384131806 * x('2') =g= -1;
+con549..0.97384831612108114 * x('1') - 
+0.22719915754274911 * x('2') =g= -1;
+con550..0.99328864082847756 * x('1') + 
+0.11566190384528421 * x('2') =g= -1;
+con551..0.97370537468118135 * x('1') - 
+0.22781098155484145 * x('2') =g= -1;
+con552..0.97356204886049369 * x('1') - 
+0.2284227156360718 * x('2') =g= -1;
+con553..0.99321577440332531 * x('1') + 
+0.11628596422785882 * x('2') =g= -1;
+con554..0.97341833871559824 * x('1') - 
+0.22903435954494886 * x('2') =g= -1;
+con555..0.97327424430322529 * x('1') - 
+0.22964591304002302 * x('2') =g= -1;
+con556..0.99314251589544289 * x('1') + 
+0.11690997870528423 * x('2') =g= -1;
+con557..0.97312976568025822 * x('1') - 
+0.23025737587987427 * x('2') =g= -1;
+con558..0.97298490290373152 * x('1') - 
+0.23086874782312189 * x('2') =g= -1;
+con559..0.99306886533374983 * x('1') + 
+0.11753394703122391 * x('2') =g= -1;
+con560..0.97283965603083089 * x('1') - 
+0.23148002862842101 * x('2') =g= -1;
+con561..0.97269402511889469 * x('1') - 
+0.23209121805446015 * x('2') =g= -1;
+con562..0.99299482274732065 * x('1') + 
+0.11815786895935959 * x('2') =g= -1;
+con563..0.97254801022541215 * x('1') - 
+0.23270231585996648 * x('2') =g= -1;
+con564..0.97240161140802417 * x('1') - 
+0.23331332180370254 * x('2') =g= -1;
+con565..0.99292038816538442 * x('1') + 
+0.11878174424339126 * x('2') =g= -1;
+con566..0.97225482872452296 * x('1') - 
+0.23392423564446793 * x('2') =g= -1;
+con567..0.97210766223285328 * x('1') - 
+0.23453505714109518 * x('2') =g= -1;
+con568..0.99284556161732485 * x('1') + 
+0.11940557263703744 * x('2') =g= -1;
+con569..0.97196011199110999 * x('1') - 
+0.23514578605245931 * x('2') =g= -1;
+con570..0.97181217805754061 * x('1') - 
+0.23575642213746584 * x('2') =g= -1;
+con571..0.99277034313268064 * x('1') + 
+0.12002935389403502 * x('2') =g= -1;
+con572..0.97166386049054354 * x('1') - 
+0.23636696515506039 * x('2') =g= -1;
+con573..0.9715151593486685 * x('1') - 
+0.23697741486422536 * x('2') =g= -1;
+con574..0.99269473274114517 * x('1') + 
+0.12065308776813957 * x('2') =g= -1;
+con575..0.97136607469061764 * x('1') - 
+0.23758777102397649 * x('2') =g= -1;
+con576..0.97121660657524278 * x('1') - 
+0.23819803339337248 * x('2') =g= -1;
+con577..0.99261873047256632 * x('1') + 
+0.12127677401312542 * x('2') =g= -1;
+con578..0.97106675506154871 * x('1') - 
+0.23880820173150302 * x('2') =g= -1;
+con579..0.97091652020869079 * x('1') - 
+0.23941827579749841 * x('2') =g= -1;
+con580..0.992542336356947 * x('1') + 
+0.12190041238278558 * x('2') =g= -1;
+con581..0.97076590207597557 * x('1') - 
+0.24002825535052616 * x('2') =g= -1;
+con582..0.97061490072286172 * x('1') - 
+0.24063814014978846 * x('2') =g= -1;
+con583..0.9924655504244444 * x('1') + 
+0.12252400263093205 * x('2') =g= -1;
+con584..0.97046351620895843 * x('1') - 
+0.24124792995452748 * x('2') =g= -1;
+con585..0.97031174859402647 * x('1') - 
+0.24185762452402212 * x('2') =g= -1;
+con586..0.99238837270537072 * x('1') + 
+0.12314754451139577 * x('2') =g= -1;
+con587..0.97015959793797735 * x('1') - 
+0.24246722361758966 * x('2') =g= -1;
+con588..0.97000706430087491 * x('1') - 
+0.2430767269945816 * x('2') =g= -1;
+con589..0.99231080323019272 * x('1') + 
+0.12377103777802684 * x('2') =g= -1;
+con590..0.96985414774293266 * x('1') - 
+0.24368613441439335 * x('2') =g= -1;
+con591..0.96970084832451664 * x('1') - 
+0.24429544563645211 * x('2') =g= -1;
+con592..0.99223284202953177 * x('1') + 
+0.12439448218469445 * x('2') =g= -1;
+con593..0.96954716610614333 * x('1') - 
+0.24490466042022649 * x('2') =g= -1;
+con594..0.96939310114848021 * x('1') - 
+0.24551377852522321 * x('2') =g= -1;
+con595..0.99215448913416393 * x('1') + 
+0.1250178774852872 * x('2') =g= -1;
+con596..0.96923865351234662 * x('1') - 
+0.24612279971098452 * x('2') =g= -1;
+con597..0.96908382325871201 * x('1') - 
+0.24673172373709359 * x('2') =g= -1;
+con598..0.99207574457501979 * x('1') + 
+0.12564122343371301 * x('2') =g= -1;
+con599..0.96892861044869749 * x('1') - 
+0.24734055036317099 * x('2') =g= -1;
+con600..0.96877301514357483 * x('1') - 
+0.24794927934887581 * x('2') =g= -1;
+con601..0.9919966083831846 * x('1') + 
+0.12626451978389924 * x('2') =g= -1;
+con602..0.96861703740476701 * x('1') - 
+0.24855791045390652 * x('2') =g= -1;
+con603..0.96846067729384822 * x('1') - 
+0.24916644343799765 * x('2') =g= -1;
+con604..0.99191708058989836 * x('1') + 
+0.1268877662897929 * x('2') =g= -1;
+con605..0.96830393487254296 * x('1') - 
+0.24977487806092505 * x('2') =g= -1;
+con606..0.9681468102027273 * x('1') - 
+0.25038321408250253 * x('2') =g= -1;
+con607..0.99183716122655541 * x('1') + 
+0.12751096270536066 * x('2') =g= -1;
+con608..0.96798930334642752 * x('1') - 
+0.25099145126258371 * x('2') =g= -1;
+con609..0.96783141436582165 * x('1') - 
+0.25159958936105858 * x('2') =g= -1;
+con610..0.99175685032470484 * x('1') + 
+0.128134108784589 * x('2') =g= -1;
+con611..0.96767314332323773 * x('1') - 
+0.25220762813785891 * x('2') =g= -1;
+con612..0.96751449028115522 * x('1') - 
+0.25281556735295474 * x('2') =g= -1;
+con613..0.9916761479160503 * x('1') + 
+0.12875720428148413 * x('2') =g= -1;
+con614..0.96735545530220401 * x('1') - 
+0.2534234067663555 * x('2') =g= -1;
+con615..0.96719603844916457 * x('1') - 
+0.25403114613811079 * x('2') =g= -1;
+con616..0.99159505403244996 * x('1') + 
+0.12938024895007241 * x('2') =g= -1;
+con617..0.967036239784969 * x('1') - 
+0.25463878522830719 * x('2') =g= -1;
+con618..0.96687605937269927 * x('1') - 
+0.25524632379707346 * x('2') =g= -1;
+con619..0.99151356870591634 * x('1') + 
+0.1300032425444001 * x('2') =g= -1;
+con620..0.96671549727558825 * x('1') - 
+0.2558537616045779 * x('2') =g= -1;
+con621..0.96655455355702002 * x('1') - 
+0.25646109841102532 * x('2') =g= -1;
+con622..0.9914316919686168 * x('1') + 
+0.13062618481853377 * x('2') =g= -1;
+con623..0.9663932282805282 * x('1') - 
+0.25706833397666634 * x('2') =g= -1;
+con624..0.9662315215097983 * x('1') - 
+0.25767546806178548 * x('2') =g= -1;
+con625..0.99134942385287306 * x('1') + 
+0.13124907552656018 * x('2') =g= -1;
+con626..0.96606943330866546 * x('1') - 
+0.25828250042671091 * x('2') =g= -1;
+con627..0.96590696374111595 * x('1') - 
+0.25888943083180993 * x('2') =g= -1;
+con628..0.99126676439116124 * x('1') + 
+0.13187191442258639 * x('2') =g= -1;
+con629..0.96574411287128603 * x('1') - 
+0.25949625903749107 * x('2') =g= -1;
+con630..0.96558088076346349 * x('1') - 
+0.26010298480420052 * x('2') =g= -1;
+con631..0.99118371361611224 * x('1') + 
+0.13249470126074006 * x('2') =g= -1;
+con632..0.96541726748208556 * x('1') - 
+0.26070960789242759 * x('2') =g= -1;
+con633..0.96525327309174014 * x('1') - 
+0.2613161280627021 * x('2') =g= -1;
+con634..0.99110027156051117 * x('1') + 
+0.13311743579516924 * x('2') =g= -1;
+con635..0.96508889765716666 * x('1') - 
+0.26192254507559093 * x('2') =g= -1;
+con636..0.96492414124325299 * x('1') - 
+0.26252885869170794 * x('2') =g= -1;
+con637..0.99101643825729768 * x('1') + 
+0.13374011778004269 * x('2') =g= -1;
+con638..0.96475900391503933 * x('1') - 
+0.26313506867170156 * x('2') =g= -1;
+con639..0.96459348573771519 * x('1') - 
+0.26374117477626469 * x('2') =g= -1;
+con640..0.99093221373956586 * x('1') + 
+0.13436274696954997 * x('2') =g= -1;
+con641..0.96442758677662044 * x('1') - 
+0.26434717676613123 * x('2') =g= -1;
+con642..0.96426130709724622 * x('1') - 
+0.26495307440207272 * x('2') =g= -1;
+con643..0.99084759804056433 * x('1') + 
+0.13498532311790143 * x('2') =g= -1;
+con644..0.96409464676523215 * x('1') - 
+0.26555886744490786 * x('2') =g= -1;
+con645..0.96392760584637016 * x('1') - 
+0.2661645556554908 * x('2') =g= -1;
+con646..0.99076259119369603 * x('1') + 
+0.13560784597932835 * x('2') =g= -1;
+con647..0.96376018440660105 * x('1') - 
+0.26677013879472028 * x('2') =g= -1;
+con648..0.96359238251201629 * x('1') - 
+0.26737561662353582 * x('2') =g= -1;
+con649..0.99067719323251824 * x('1') + 
+0.13623031530808305 * x('2') =g= -1;
+con650..0.96342420022885733 * x('1') - 
+0.26798098890291933 * x('2') =g= -1;
+con651..0.9632556376235164 * x('1') - 
+0.26858625539389175 * x('2') =g= -1;
+con652..0.99059140419074287 * x('1') + 
+0.13685273085843902 * x('2') =g= -1;
+con653..0.96308669476253517 * x('1') - 
+0.26919141585751843 * x('2') =g= -1;
+con654..0.96291737171260539 * x('1') - 
+0.26979647005490659 * x('2') =g= -1;
+con655..0.99050522410223596 * x('1') + 
+0.13747509238469091 * x('2') =g= -1;
+con656..0.96274766854057003 * x('1') - 
+0.27040141774720189 * x('2') =g= -1;
+con657..0.96257758531342008 * x('1') - 
+0.27100625869559808 * x('2') =g= -1;
+con658..0.99041865300101817 * x('1') + 
+0.13809739964115481 * x('2') =g= -1;
+con659..0.96240712209829871 * x('1') - 
+0.27161099266132505 * x('2') =g= -1;
+con660..0.96223627896249775 * x('1') - 
+0.27221561940565836 * x('2') =g= -1;
+con661..0.99033169092126427 * x('1') + 
+0.13871965238216805 * x('2') =g= -1;
+con662..0.96206505597345915 * x('1') - 
+0.27282013868991589 * x('2') =g= -1;
+con663..0.96189345319877551 * x('1') - 
+0.27342455027545531 * x('2') =g= -1;
+con664..0.99024433789730348 * x('1') + 
+0.13934185036208968 * x('2') =g= -1;
+con665..0.96172147070618874 * x('1') - 
+0.27402885392367948 * x('2') =g= -1;
+con666..0.96154910856359077 * x('1') - 
+0.274633049396033 * x('2') =g= -1;
+con667..0.99015659396361944 * x('1') + 
+0.1399639933353003 * x('2') =g= -1;
+con668..0.96137636683902339 * x('1') - 
+0.275237136454003 * x('2') =g= -1;
+con669..0.96120324560067805 * x('1') - 
+0.27584111485912055 * x('2') =g= -1;
+con670..0.99006845915485009 * x('1') + 
+0.1405860810562021 * x('2') =g= -1;
+con671..0.96102974491689674 * x('1') - 
+0.27644498437295678 * x('2') =g= -1;
+con672..0.96085586485617047 * x('1') - 
+0.27704874475712854 * x('2') =g= -1;
+con673..0.98997993350578739 * x('1') + 
+0.14120811327921931 * x('2') =g= -1;
+con674..0.96068160548714043 * x('1') - 
+0.27765239577329487 * x('2') =g= -1;
+con675..0.96050696687859682 * x('1') - 
+0.27825593718315877 * x('2') =g= -1;
+con676..0.98989101705137794 * x('1') + 
+0.14183008975879779 * x('2') =g= -1;
+con677..0.96033194909948127 * x('1') - 
+0.27885936874846318 * x('2') =g= -1;
+con678..0.96015655221888263 * x('1') - 
+0.27946269023100034 * x('2') =g= -1;
+con679..0.98980170982672244 * x('1') + 
+0.14245201024940574 * x('2') =g= -1;
+con680..0.95998077630604173 * x('1') - 
+0.2800659013925999 * x('2') =g= -1;
+con681..0.95980462143034762 * x('1') - 
+0.28066900199513867 * x('2') =g= -1;
+con682..0.98971201186707591 * x('1') + 
+0.14307387450553316 * x('2') =g= -1;
+con683..0.95962808766133911 * x('1') - 
+0.28127199180053686 * x('2') =g= -1;
+con684..0.95945117506870536 * x('1') - 
+0.28187487057075605 * x('2') =g= -1;
+con685..0.98962192320784759 * x('1') + 
+0.14369568228169238 * x('2') =g= -1;
+con686..0.95927388372228428 * x('1') - 
+0.28247763806780418 * x('2') =g= -1;
+con687..0.95909621369206366 * x('1') - 
+0.28308029405373208 * x('2') =g= -1;
+con688..0.9895314438846009 * x('1') + 
+0.14431743333241806 * x('2') =g= -1;
+con689..0.9589181650481805 * x('1') - 
+0.2836828382906349 * x('2') =g= -1;
+con690..0.95873973786092126 * x('1') - 
+0.2842852705406525 * x('2') =g= -1;
+con691..0.98944057393305362 * x('1') + 
+0.14493912741226719 * x('2') =g= -1;
+con692..0.95856093220072258 * x('1') - 
+0.28488759056596658 * x('2') =g= -1;
+con693..0.95838174813816956 * x('1') - 
+0.28548979812880554 * x('2') =g= -1;
+con694..0.98934931338907761 * x('1') + 
+0.14556076427581927 * x('2') =g= -1;
+con695..0.95820218574399718 * x('1') - 
+0.28609189299144139 * x('2') =g= -1;
+con696..0.95802224508908929 * x('1') - 
+0.28669387491619147 * x('2') =g= -1;
+con697..0.98925766228869905 * x('1') + 
+0.14618234367767638 * x('2') =g= -1;
+con698..0.95784192624448006 * x('1') - 
+0.28729574366541527 * x('2') =g= -1;
+con699..0.957661229281352 * x('1') - 
+0.28789749900151929 * x('2') =g= -1;
+con700..0.9891656206680981 * x('1') + 
+0.14680386537246329 * x('2') =g= -1;
+con701..0.95748015427103683 * x('1') - 
+0.28849914068695498 * x('2') =g= -1;
+con702..0.95729870128501682 * x('1') - 
+0.28910066848421517 * x('2') =g= -1;
+con703..0.98907318856360915 * x('1') + 
+0.14742532911482756 * x('2') =g= -1;
+con704..0.95711687039492144 * x('1') - 
+0.28970208215584364 * x('2') =g= -1;
+con705..0.95693466167253105 * x('1') - 
+0.29030338146442325 * x('2') =g= -1;
+con706..0.9889803660117209 * x('1') + 
+0.14804673465943963 * x('2') =g= -1;
+con707..0.95675207518977445 * x('1') - 
+0.29090456617258537 * x('2') =g= -1;
+con708..0.95656911101872932 * x('1') - 
+0.29150563604300667 * x('2') =g= -1;
+con709..0.98888715304907604 * x('1') + 
+0.14866808176099286 * x('2') =g= -1;
+con710..0.95638576923162355 * x('1') - 
+0.29210659083840573 * x('2') =g= -1;
+con711..0.95620204990083213 * x('1') - 
+0.29270743032155255 * x('2') =g= -1;
+con712..0.98879354971247135 * x('1') + 
+0.14928937017420377 * x('2') =g= -1;
+con713..0.95601795309888116 * x('1') - 
+0.29330815425525658 * x('2') =g= -1;
+con714..0.95583347889844461 * x('1') - 
+0.2939087624023764 * x('2') =g= -1;
+con715..0.98869955603885784 * x('1') + 
+0.14991059965381198 * x('2') =g= -1;
+con716..0.95564862737234568 * x('1') - 
+0.29450925452581539 * x('2') =g= -1;
+con717..0.95546339859355622 * x('1') - 
+0.29510963038852367 * x('2') =g= -1;
+con718..0.98860517206534038 * x('1') + 
+0.15053176995458037 * x('2') =g= -1;
+con719..0.95527779263519785 * x('1') - 
+0.29570988975349455 * x('2') =g= -1;
+con720..0.9550918095705403 * x('1') - 
+0.29631003238377007 * x('2') =g= -1;
+con721..0.98851039782917827 * x('1') + 
+0.15115288083129527 * x('2') =g= -1;
+con722..0.95490544947300204 * x('1') - 
+0.29691005804243814 * x('2') =g= -1;
+con723..0.95471871241615158 * x('1') - 
+0.29750996649262962 * x('2') =g= -1;
+con724..0.98841523336778447 * x('1') + 
+0.15177393203876638 * x('2') =g= -1;
+con725..0.9545315984737045 * x('1') - 
+0.29810975749752749 * x('2') =g= -1;
+con726..0.9543441077195266 * x('1') - 
+0.29870943082035517 * x('2') =g= -1;
+con727..0.98831967871872639 * x('1') + 
+0.15239492333182694 * x('2') =g= -1;
+con728..0.9541562402276319 * x('1') - 
+0.29930898622438601 * x('2') =g= -1;
+con729..0.95396799607218263 * x('1') - 
+0.29990842347293978 * x('2') =g= -1;
+con730..0.98822373391972518 * x('1') + 
+0.15301585446533392 * x('2') =g= -1;
+con731..0.95377937532749091 * x('1') - 
+0.30050774232938049 * x('2') =g= -1;
+con732..0.95359037806801639 * x('1') - 
+0.30110694255712123 * x('2') =g= -1;
+con733..0.98812739900865598 * x('1') + 
+0.15363672519416796 * x('2') =g= -1;
+con734..0.95340100436836805 * x('1') - 
+0.30170602391962126 * x('2') =g= -1;
+con735..0.953211254303303 * x('1') - 
+0.30230498618038665 * x('2') =g= -1;
+con736..0.98803067402354827 * x('1') + 
+0.15425753527323369 * x('2') =g= -1;
+con737..0.95302112794772731 * x('1') - 
+0.30290382910297059 * x('2') =g= -1;
+con738..0.95283062537669494 * x('1') - 
+0.30350255245097418 * x('2') =g= -1;
+con739..0.98793355900258506 * x('1') + 
+0.15487828445745946 * x('2') =g= -1;
+con740..0.95263974666540963 * x('1') - 
+0.30410115598804316 * x('2') =g= -1;
+con741..0.95244849188922243 * x('1') - 
+0.30469963947787304 * x('2') =g= -1;
+con742..0.98783605398410379 * x('1') + 
+0.15549897250179784 * x('2') =g= -1;
+con743..0.95225686112363295 * x('1') - 
+0.30529800268420687 * x('2') =g= -1;
+con744..0.95206485444429045 * x('1') - 
+0.30589624537083177 * x('2') =g= -1;
+con745..0.98773815900659534 * x('1') + 
+0.15611959916122548 * x('2') =g= -1;
+con746..0.95187247192699043 * x('1') - 
+0.30649436730158819 * x('2') =g= -1;
+con747..0.95167971364767889 * x('1') - 
+0.30709236824035857 * x('2') =g= -1;
+con748..0.98763987410870513 * x('1') + 
+0.15674016419074319 * x('2') =g= -1;
+con749..0.95148657968244887 * x('1') - 
+0.30769024795107636 * x('2') =g= -1;
+con750..0.95129307010754194 * x('1') - 
+0.30828800619772284 * x('2') =g= -1;
+con751..0.9875411993292319 * x('1') + 
+0.15736066734537626 * x('2') =g= -1;
+con752..0.95109918499934876 * x('1') - 
+0.30888564274432478 * x('2') =g= -1;
+con753..0.950904924434407 * x('1') - 
+0.30948315735495951 * x('2') =g= -1;
+con754..0.98744213470712883 * x('1') + 
+0.15798110838017426 * x('2') =g= -1;
+con755..0.95071028848940342 * x('1') - 
+0.3100805497937516 * x('2') =g= -1;
+con756..0.95051527724117257 * x('1') - 
+0.31067781982487391 * x('2') =g= -1;
+con757..0.98734268028150274 * x('1') + 
+0.15860148705021138 * x('2') =g= -1;
+con758..0.95031989076669698 * x('1') - 
+0.31127496721254844 * x('2') =g= -1;
+con759..0.95012412914310818 * x('1') - 
+0.31187199172104307 * x('2') =g= -1;
+con760..0.98724283609161412 * x('1') + 
+0.15922180311058637 * x('2') =g= -1;
+con761..0.94992799244768478 * x('1') - 
+0.31246889311467674 * x('2') =g= -1;
+con762..0.94973148075785407 * x('1') - 
+0.31306567115781614 * x('2') =g= -1;
+con763..0.98714260217687777 * x('1') + 
+0.15984205631642276 * x('2') =g= -1;
+con764..0.94953459415119079 * x('1') - 
+0.31366232561487745 * x('2') =g= -1;
+con765..0.94933733270541887 * x('1') - 
+0.31425885625032235 * x('2') =g= -1;
+con766..0.98704197857686204 * x('1') + 
+0.16046224642286874 * x('2') =g= -1;
+con767..0.94913969649840846 * x('1') - 
+0.31485526282866722 * x('2') =g= -1;
+con768..0.94894168560817893 * x('1') - 
+0.31545154511447238 * x('2') =g= -1;
+con769..0.98694096533128917 * x('1') + 
+0.16108237318509766 * x('2') =g= -1;
+con770..0.94874330011289798 * x('1') - 
+0.31604770287234729 * x('2') =g= -1;
+con771..0.9485445400908793 * x('1') - 
+0.31664373586695549 * x('2') =g= -1;
+con772..0.98683956248003524 * x('1') + 
+0.16170243635830764 * x('2') =g= -1;
+con773..0.94834540562058633 * x('1') - 
+0.31723964386300402 * x('2') =g= -1;
+con774..0.94814589678062933 * x('1') - 
+0.31783542662525249 * x('2') =g= -1;
+con775..0.98673777006313024 * x('1') + 
+0.16232243569772203 * x('2') =g= -1;
+con776..0.94794601364976649 * x('1') - 
+0.31843108391850916 * x('2') =g= -1;
+con777..0.94774575630690405 * x('1') - 
+0.31902661550763195 * x('2') =g= -1;
+con778..0.98663558812075769 * x('1') + 
+0.16294237095858935 * x('2') =g= -1;
+con779..0.94754512483109532 * x('1') - 
+0.31962202115752902 * x('2') =g= -1;
+con780..0.9473441193015425 * x('1') - 
+0.32021730063315584 * x('2') =g= -1;
+con781..0.9865330166932551 * x('1') + 
+0.1635622418961834 * x('2') =g= -1;
+con782..0.94714273979759422 * x('1') - 
+0.32081245369952022 * x('2') =g= -1;
+con783..0.94694098639874724 * x('1') - 
+0.32140748012167908 * x('2') =g= -1;
+con784..0.98643005582111365 * x('1') + 
+0.1641820482658034 * x('2') =g= -1;
+con785..0.94673885918464584 * x('1') - 
+0.32200237966473999 * x('2') =g= -1;
+con786..0.94653635823508264 * x('1') - 
+0.32259715209385748 * x('2') =g= -1;
+con787..0.98632670554497825 * x('1') + 
+0.16480178982277405 * x('2') =g= -1;
+con788..0.94633348362999592 * x('1') - 
+0.3231917971742419 * x('2') =g= -1;
+con789..0.94613023544947328 * x('1') - 
+0.32378631467114904 * x('2') =g= -1;
+con790..0.98622296590564751 * x('1') + 
+0.16542146632244559 * x('2') =g= -1;
+con791..0.94592661377374965 * x('1') - 
+0.32438070434988497 * x('2') =g= -1;
+con792..0.94572261868320584 * x('1') - 
+0.32497496597581127 * x('2') =g= -1;
+con793..0.98611883694407387 * x('1') + 
+0.16604107752019401 * x('2') =g= -1;
+con794..0.94551825025837188 * x('1') - 
+0.32556909931433414 * x('2') =g= -1;
+con795..0.94531350857992436 * x('1') - 
+0.32616310413091382 * x('2') =g= -1;
+con796..0.98601431870136325 * x('1') + 
+0.16666062317142105 * x('2') =g= -1;
+con797..0.94510839372868671 * x('1') - 
+0.32675698019106131 * x('2') =g= -1;
+con798..0.94490290578563108 * x('1') - 
+0.32735072726033593 * x('2') =g= -1;
+con799..0.98590941121877551 * x('1') + 
+0.16728010303155433 * x('2') =g= -1;
+con800..0.94469704483187555 * x('1') - 
+0.32794434510435028 * x('2') =g= -1;
+con801..0.94449081094868625 * x('1') - 
+0.32853783348876742 * x('2') =g= -1;
+con802..0.98580411453772387 * x('1') + 
+0.16789951685604743 * x('2') =g= -1;
+con803..0.94428420421747594 * x('1') - 
+0.32913119217930126 * x('2') =g= -1;
+con804..0.94407722471980515 * x('1') - 
+0.329724420941717 * x('2') =g= -1;
+con805..0.98569842869977542 * x('1') + 
+0.16851886440038003 * x('2') =g= -1;
+con806..0.94386987253738075 * x('1') - 
+0.33031751954183203 * x('2') =g= -1;
+con807..0.94366214775205803 * x('1') - 
+0.33091048774551246 * x('2') =g= -1;
+con808..0.98559235374665088 * x('1') + 
+0.16913814542005789 * x('2') =g= -1;
+con809..0.9434540504458383 * x('1') - 
+0.3315033253186786 * x('2') =g= -1;
+con810..0.94324558070086983 * x('1') - 
+0.33209603202730209 * x('2') =g= -1;
+con811..0.98548588972022433 * x('1') + 
+0.16975735967061317 * x('2') =g= -1;
+con812..0.94303673859944925 * x('1') - 
+0.33268860763740304 * x('2') =g= -1;
+con813..0.94282752422401817 * x('1') - 
+0.33328105191505919 * x('2') =g= -1;
+con814..0.98537903666252369 * x('1') + 
+0.1703765069076042 * x('2') =g= -1;
+con815..0.94261793765716706 * x('1') - 
+0.33387336462639416 * x('2') =g= -1;
+con816..0.94240797898163209 * x('1') - 
+0.33446554553758684 * x('2') =g= -1;
+con817..0.98527179461573022 * x('1') + 
+0.17099558688661601 * x('2') =g= -1;
+con818..0.94219764828029662 * x('1') - 
+0.33505759441486832 * x('2') =g= -1;
+con819..0.94198694563619145 * x('1') - 
+0.33564951102451912 * x('2') =g= -1;
+con820..0.98516416362217918 * x('1') + 
+0.17161459936325993 * x('2') =g= -1;
+con821..0.94177587113249361 * x('1') - 
+0.3362412951328746 * x('2') =g= -1;
+con822..0.94156442485252678 * x('1') - 
+0.33683294650632151 * x('2') =g= -1;
+con823..0.98505614372435879 * x('1') + 
+0.17223354409317407 * x('2') =g= -1;
+con824..0.94135260687976186 * x('1') - 
+0.33742446491129907 * x('2') =g= -1;
+con825..0.94114041729781628 * x('1') - 
+0.33801585011429891 * x('2') =g= -1;
+con826..0.98494773496491128 * x('1') + 
+0.17285242083202337 * x('2') =g= -1;
+con827..0.94092785619045394 * x('1') - 
+0.33860710188186616 * x('2') =g= -1;
+con828..0.94071492364158604 * x('1') - 
+0.33919821998059607 * x('2') =g= -1;
+con829..0.98483893738663209 * x('1') + 
+0.17347122933549938 * x('2') =g= -1;
+con830..0.94050161973527002 * x('1') - 
+0.33978920417713915 * x('2') =g= -1;
+con831..0.94028794455570941 * x('1') - 
+0.34038005423819889 * x('2') =g= -1;
+con832..0.98472975103247018 * x('1') + 
+0.17408996935932078 * x('2') =g= -1;
+con833..0.94007389818725573 * x('1') - 
+0.34097076993052816 * x('2') =g= -1;
+con834..0.93985948071440495 * x('1') - 
+0.34156135102093899 * x('2') =g= -1;
+con835..0.9846201759455282 * x('1') + 
+0.17470864065923319 * x('2') =g= -1;
+con836..0.93964469222180158 * x('1') - 
+0.34215179727629047 * x('2') =g= -1;
+con837..0.93942953279423547 * x('1') - 
+0.3427421084634984 * x('2') =g= -1;
+con838..0.98451021216906209 * x('1') + 
+0.17532724299100938 * x('2') =g= -1;
+con839..0.93921400251664278 * x('1') - 
+0.34333228434953178 * x('2') =g= -1;
+con840..0.93899810147410701 * x('1') - 
+0.34392232470141071 * x('2') =g= -1;
+con841..0.98439985974648103 * x('1') + 
+0.17594577611044937 * x('2') =g= -1;
+con842..0.93878182975185731 * x('1') - 
+0.34451222928621111 * x('2') =g= -1;
+con843..0.93856518743526907 * x('1') - 
+0.34510199787106172 * x('2') =g= -1;
+con844..0.98428911872134817 * x('1') + 
+0.17656423977338048 * x('2') =g= -1;
+con845..0.93834817460986431 * x('1') - 
+0.34569163022314503 * x('2') =g= -1;
+con846..0.93813079136131095 * x('1') - 
+0.34628112610969797 * x('2') =g= -1;
+con847..0.98417798913737953 * x('1') + 
+0.17718263373565743 * x('2') =g= -1;
+con848..0.9379130377754239 * x('1') - 
+0.34687048529800912 * x('2') =g= -1;
+con849..0.9376949139381634 * x('1') - 
+0.34745970755542327 * x('2') =g= -1;
+con850..0.98406647103844469 * x('1') + 
+0.17780095775316251 * x('2') =g= -1;
+con851..0.93747641993563646 * x('1') - 
+0.34804879264933847 * x('2') =g= -1;
+con852..0.93725755585409543 * x('1') - 
+0.34863774034720796 * x('2') =g= -1;
+con853..0.98395456446856677 * x('1') + 
+0.17841921158180557 * x('2') =g= -1;
+con854..0.93703832177994029 * x('1') - 
+0.34922655041653561 * x('2') =g= -1;
+con855..0.93681871779971482 * x('1') - 
+0.34981522262488557 * x('2') =g= -1;
+con856..0.98384226947192199 * x('1') + 
+0.17903739497752422 * x('2') =g= -1;
+con857..0.93659874400011078 * x('1') - 
+0.35040375673987151 * x('2') =g= -1;
+con858..0.93637840046796561 * x('1') - 
+0.35099215252916144 * x('2') =g= -1;
+con859..0.98372958609284011 * x('1') + 
+0.1796555076962838 * x('2') =g= -1;
+con860..0.93615768729026139 * x('1') - 
+0.3515804097604831 * x('2') =g= -1;
+con861..0.93593660455412775 * x('1') - 
+0.35216852820161298 * x('2') =g= -1;
+con862..0.98361651437580411 * x('1') + 
+0.18027354949407756 * x('2') =g= -1;
+con863..0.93571515234683933 * x('1') - 
+0.35275650762038585 * x('2') =g= -1;
+con864..0.93549333075581664 * x('1') - 
+0.35334434778469037 * x('2') =g= -1;
+con865..0.98350305436545016 * x('1') + 
+0.18089152012692686 * x('2') =g= -1;
+con866..0.93527113986862631 * x('1') - 
+0.35393204846247034 * x('2') =g= -1;
+con867..0.93504857977298028 * x('1') - 
+0.35451960942172522 * x('2') =g= -1;
+con868..0.98338920610656799 * x('1') + 
+0.18150941935088102 * x('2') =g= -1;
+con869..0.93482565055673705 * x('1') - 
+0.35510703043050734 * x('2') =g= -1;
+con870..0.93460235230790023 * x('1') - 
+0.35569431125692674 * x('2') =g= -1;
+con871..0.98327496964410033 * x('1') + 
+0.18212724692201757 * x('2') =g= -1;
+con872..0.93437868511461919 * x('1') - 
+0.35628145166914782 * x('2') =g= -1;
+con873..0.93415464906518864 * x('1') - 
+0.35686845143539142 * x('2') =g= -1;
+con874..0.98316034502314331 * x('1') + 
+0.18274500259644247 * x('2') =g= -1;
+con875..0.93393024424805016 * x('1') - 
+0.35745531032393052 * x('2') =g= -1;
+con876..0.93370547075178867 * x('1') - 
+0.35804202810309949 * x('2') =g= -1;
+con877..0.98304533228894631 * x('1') + 
+0.18336268613028983 * x('2') =g= -1;
+con878..0.93348032866513675 * x('1') - 
+0.35862860454128342 * x('2') =g= -1;
+con879..0.9332548180769723 * x('1') - 
+0.35921503940692323 * x('2') =g= -1;
+con880..0.98292993148691177 * x('1') + 
+0.1839802972797224 * x('2') =g= -1;
+con881..0.93302893907631668 * x('1') - 
+0.3598013324685207 * x('2') =g= -1;
+con882..0.9328026917523391 * x('1') - 
+0.36038748349462779 * x('2') =g= -1;
+con883..0.98281414266259537 * x('1') + 
+0.18459783580093148 * x('2') =g= -1;
+con884..0.9325760761943529 * x('1') - 
+0.36097349225385583 * x('2') =g= -1;
+con885..0.93234909249181663 * x('1') - 
+0.36155935851487236 * x('2') =g= -1;
+con886..0.9826979658617061 * x('1') + 
+0.18521530145013698 * x('2') =g= -1;
+con887..0.93212174073433518 * x('1') - 
+0.36214508204639856 * x('2') =g= -1;
+con888..0.93189402101165797 * x('1') - 
+0.36273066261721459 * x('2') =g= -1;
+con889..0.98258140113010595 * x('1') + 
+0.18583269398358768 * x('2') =g= -1;
+con890..0.93166593341367976 * x('1') - 
+0.36331609999615611 * x('2') =g= -1;
+con891..0.93143747803044052 * x('1') - 
+0.36390139395211535 * x('2') =g= -1;
+con892..0.98246444851381021 * x('1') + 
+0.1864500131575611 * x('2') =g= -1;
+con893..0.93120865495212557 * x('1') - 
+0.36448654425404114 * x('2') =g= -1;
+con894..0.93097946426906497 * x('1') - 
+0.36507155067093994 * x('2') =g= -1;
+con895..0.98234710805898717 * x('1') + 
+0.1870672587283638 * x('2') =g= -1;
+con896..0.93074990607173502 * x('1') - 
+0.3656564129718724 * x('2') =g= -1;
+con897..0.93051998045075579 * x('1') - 
+0.36624113092595856 * x('2') =g= -1;
+con898..0.98222937981195813 * x('1') + 
+0.18768443045233141 * x('2') =g= -1;
+con899..0.93028968749689267 * x('1') - 
+0.36682570430237554 * x('2') =g= -1;
+con900..0.93005902730105727 * x('1') - 
+0.36741013287035407 * x('2') =g= -1;
+con901..0.98211126381919778 * x('1') + 
+0.18830152808582865 * x('2') =g= -1;
+con902..0.92982799995430387 * x('1') - 
+0.36799441639918801 * x('2') =g= -1;
+con903..0.92959660554783419 * x('1') - 
+0.36857855465822259 * x('2') =g= -1;
+con904..0.9819927601273335 * x('1') + 
+0.18891855138524949 * x('2') =g= -1;
+con905..0.92936484417299314 * x('1') - 
+0.36916254741686366 * x('2') =g= -1;
+con906..0.92913271592127089 * x('1') - 
+0.36974639444457458 * x('2') =g= -1;
+con907..0.98187386878314609 * x('1') + 
+0.18953550010701734 * x('2') =g= -1;
+con908..0.92890022088430313 * x('1') - 
+0.37033009551087376 * x('2') =g= -1;
+con909..0.92866735915386955 * x('1') - 
+0.37091365038533958 * x('2') =g= -1;
+con910..0.98175458983356911 * x('1') + 
+0.19015237400758489 * x('2') =g= -1;
+con911..0.92843413082189474 * x('1') - 
+0.37149705883760753 * x('2') =g= -1;
+con912..0.92820053598044827 * x('1') - 
+0.37208032063737073 * x('2') =g= -1;
+con913..0.98163492332568925 * x('1') + 
+0.19076917284343453 * x('2') =g= -1;
+con914..0.92796657472174415 * x('1') - 
+0.3726634355543802 * x('2') =g= -1;
+con915..0.92773224713814073 * x('1') - 
+0.37324640335844589 * x('2') =g= -1;
+con916..0.98151486930674614 * x('1') + 
+0.19138589637107825 * x('2') =g= -1;
+con917..0.92749755332214223 * x('1') - 
+0.37382922381943318 * x('2') =g= -1;
+con918..0.92726249336639621 * x('1') - 
+0.37441189670726827 * x('2') =g= -1;
+con919..0.98139442782413233 * x('1') + 
+0.19200254434705757 * x('2') =g= -1;
+con920..0.92702706736369467 * x('1') - 
+0.37499442179193543 * x('2') =g= -1;
+con921..0.92679127540697559 * x('1') - 
+0.37557679884347417 * x('2') =g= -1;
+con922..0.98127359892539356 * x('1') + 
+0.1926191165279442 * x('2') =g= -1;
+con923..0.9265551175893193 * x('1') - 
+0.376159027631988 * x('2') =g= -1;
+con924..0.92631859400395244 * x('1') - 
+0.37674110792763338 * x('2') =g= -1;
+con925..0.98115238265822835 * x('1') + 
+0.1932356126703394 * x('2') =g= -1;
+con926..0.926081704744245 * x('1') - 
+0.37732303950062862 * x('2') =g= -1;
+con927..0.9258444499037114 * x('1') - 
+0.37790482212125065 * x('2') =g= -1;
+con928..0.98103077907048808 * x('1') + 
+0.19385203253087469 * x('2') =g= -1;
+con929..0.92560682957601104 * x('1') - 
+0.37848645555983285 * x('2') =g= -1;
+con930..0.92536884385494678 * x('1') - 
+0.37906793958676993 * x('2') =g= -1;
+con931..0.98090878821017702 * x('1') + 
+0.19446837586621157 * x('2') =g= -1;
+con932..0.92513049283446624 * x('1') - 
+0.37964927397251474 * x('2') =g= -1;
+con933..0.92489177660866106 * x('1') - 
+0.38023045848757919 * x('2') =g= -1;
+con934..0.98078641012545242 * x('1') + 
+0.19508464243304188 * x('2') =g= -1;
+con935..0.92465269527176652 * x('1') - 
+0.38081149290253524 * x('2') =g= -1;
+con936..0.92441324891816345 * x('1') - 
+0.38139237698801148 * x('2') =g= -1;
+con937..0.98066364486462443 * x('1') + 
+0.19570083198808763 * x('2') =g= -1;
+con938..0.92417343764237558 * x('1') - 
+0.38197311051469857 * x('2') =g= -1;
+con939..0.92393326153907096 * x('1') - 
+0.38255369325334548 * x('2') =g= -1;
+con940..0.98054049247615593 * x('1') + 
+0.19631694428810134 * x('2') =g= -1;
+con941..0.9236927207030613 * x('1') - 
+0.38313412497476185 * x('2') =g= -1;
+con942..0.92345181522930386 * x('1') - 
+0.38371440544981333 * x('2') =g= -1;
+con943..0.98041695300866272 * x('1') + 
+0.19693297908986593 * x('2') =g= -1;
+con944..0.92321054521289725 * x('1') - 
+0.38429453444943124 * x('2') =g= -1;
+con945..0.92296891074908605 * x('1') - 
+0.38487451174460169 * x('2') =g= -1;
+con946..0.98029302651091332 * x('1') + 
+0.19754893615019498 * x('2') =g= -1;
+con947..0.92272691193325906 * x('1') - 
+0.38545433710637073 * x('2') =g= -1;
+con948..0.92248454886094622 * x('1') - 
+0.38603401030584922 * x('2') =g= -1;
+con949..0.98016871303182895 * x('1') + 
+0.19816481522593277 * x('2') =g= -1;
+con950..0.92224182162782431 * x('1') - 
+0.38661353111420244 * x('2') =g= -1;
+con951..0.92199873032971202 * x('1') - 
+0.38719289930265904 * x('2') =g= -1;
+con952..0.98004401262048391 * x('1') + 
+0.19878061607395425 * x('2') =g= -1;
+con953..0.92175527506257227 * x('1') - 
+0.3877721146425071 * x('2') =g= -1;
+con954..0.92151145592251149 * x('1') - 
+0.38835117690509596 * x('2') =g= -1;
+con955..0.97991892532610481 * x('1') + 
+0.19939633845116547 * x('2') =g= -1;
+con956..0.92126727300578048 * x('1') - 
+0.38893008586183286 * x('2') =g= -1;
+con957..0.92102272640877292 * x('1') - 
+0.38950884128418789 * x('2') =g= -1;
+con958..0.97979345119807149 * x('1') + 
+0.20001198211450319 * x('2') =g= -1;
+con959..0.92077781622802601 * x('1') - 
+0.39008744294369119 * x('2') =g= -1;
+con960..0.92053254256022088 * x('1') - 
+0.39066589061193341 * x('2') =g= -1;
+con961..0.97966759028591599 * x('1') + 
+0.20062754682093545 * x('2') =g= -1;
+con962..0.92028690550218162 * x('1') - 
+0.39124418406056677 * x('2') =g= -1;
+con963..0.92004090515087711 * x('1') - 
+0.39182232306130133 * x('2') =g= -1;
+con964..0.97954134263932335 * x('1') + 
+0.20124303232746138 * x('2') =g= -1;
+con965..0.91979454160341723 * x('1') - 
+0.39240030738591364 * x('2') =g= -1;
+con966..0.91954781495705751 * x('1') - 
+0.39297813680623644 * x('2') =g= -1;
+con967..0.97941470830813127 * x('1') + 
+0.20185843839111137 * x('2') =g= -1;
+con968..0.9193007253091966 * x('1') - 
+0.39355581109416371 * x('2') =g= -1;
+con969..0.91905327275737436 * x('1') - 
+0.39413333002165546 * x('2') =g= -1;
+con970..0.97928768734232996 * x('1') + 
+0.20247376476894721 * x('2') =g= -1;
+con971..0.91880545739927655 * x('1') - 
+0.39471069336072734 * x('2') =g= -1;
+con972..0.91855727933273057 * x('1') - 
+0.39528790088345978 * x('2') =g= -1;
+con973..0.97916027979206233 * x('1') + 
+0.20308901121806208 * x('2') =g= -1;
+con974..0.91830873865570739 * x('1') - 
+0.39586495236199376 * x('2') =g= -1;
+con975..0.91805983546632086 * x('1') - 
+0.39644184756853285 * x('2') =g= -1;
+con976..0.97903248570762402 * x('1') + 
+0.20370417749558076 * x('2') =g= -1;
+con977..0.91781056986282894 * x('1') - 
+0.39701858627533959 * x('2') =g= -1;
+con978..0.91756094194363136 * x('1') - 
+0.39759516825474112 * x('2') =g= -1;
+con979..0.97890430513946292 * x('1') + 
+0.20431926335865974 * x('2') =g= -1;
+con980..0.91731095180727173 * x('1') - 
+0.39817159327912527 * x('2') =g= -1;
+con981..0.91706059955243624 * x('1') - 
+0.39874786112094207 * x('2') =g= -1;
+con982..0.97877573813817975 * x('1') + 
+0.20493426856448704 * x('2') =g= -1;
+con983..0.91680988527795393 * x('1') - 
+0.39932397155270433 * x('2') =g= -1;
+con984..0.91655880908279752 * x('1') - 
+0.39989992434698457 * x('2') =g= -1;
+con985..0.97864678475452793 * x('1') + 
+0.20554919287028278 * x('2') =g= -1;
+con986..0.91630737106608173 * x('1') - 
+0.40047571927641995 * x('2') =g= -1;
+con987..0.91605557132706428 * x('1') - 
+0.40105135611370996 * x('2') =g= -1;
+con988..0.97851744503941296 * x('1') + 
+0.20616403603329889 * x('2') =g= -1;
+con989..0.91580340996514686 * x('1') - 
+0.40162683463161325 * x('2') =g= -1;
+con990..0.91555088707987131 * x('1') - 
+0.40220215460295677 * x('2') =g= -1;
+con991..0.97838771904389332 * x('1') + 
+0.20677879781081931 * x('2') =g= -1;
+con992..0.91529800277092499 * x('1') - 
+0.40277731580062415 * x('2') =g= -1;
+con993..0.91504475713813649 * x('1') - 
+0.4033523179975651 * x('2') =g= -1;
+con994..0.97825760681917961 * x('1') + 
+0.20739347796016019 * x('2') =g= -1;
+con995..0.91479115028147673 * x('1') - 
+0.40392716096679204 * x('2') =g= -1;
+con996..0.91453718230106051 * x('1') - 
+0.40450184448137788 * x('2') =g= -1;
+con997..0.97812710841663508 * x('1') + 
+0.20800807623866982 * x('2') =g= -1;
+con998..0.9142828532971442 * x('1') - 
+0.40507636831446087 * x('2') =g= -1;
+con999..0.91402816337012682 * x('1') - 
+0.40565073223924136 * x('2') =g= -1;
+con1000..0.97799622388777541 * x('1') + 
+0.2086225924037288 * x('2') =g= -1;
+con1001..0.91377311262055017 * x('1') - 
+0.40622493602898313 * x('2') =g= -1;
+con1002..0.91351770114909803 * x('1') - 
+0.40679897945701282 * x('2') =g= -1;
+con1003..0.97786495328426859 * x('1') + 
+0.20923702621275025 * x('2') =g= -1;
+con1004..0.91326192905659676 * x('1') - 
+0.40737286229672143 * x('2') =g= -1;
+con1005..0.9130057964440158 * x('1') - 
+0.40794658432156089 * x('2') =g= -1;
+con1006..0.97773329665793529 * x('1') + 
+0.20985137742317975 * x('2') =g= -1;
+con1007..0.91274930341246585 * x('1') - 
+0.40852014530504888 * x('2') =g= -1;
+con1008..0.91249245006320012 * x('1') - 
+0.40909354502076689 * x('2') =g= -1;
+con1009..0.97760125406074838 * x('1') + 
+0.21046564579249549 * x('2') =g= -1;
+con1010..0.91223523649761518 * x('1') - 
+0.40966678324235667 * x('2') =g= -1;
+con1011..0.91197766281724757 * x('1') - 
+0.41023985974352939 * x('2') =g= -1;
+con1012..0.97746882554483294 * x('1') + 
+0.21107983107820827 * x('2') =g= -1;
+con1013..0.9117197291237783 * x('1') - 
+0.41081277429805452 * x('2') =g= -1;
+con1014..0.91146143551902925 * x('1') - 
+0.41138552667976858 * x('2') =g= -1;
+con1015..0.97733601116246671 * x('1') + 
+0.21169393303786183 * x('2') =g= -1;
+con1016..0.91120278210496408 * x('1') - 
+0.41195811666257209 * x('2') =g= -1;
+con1017..0.91094376898368989 * x('1') - 
+0.41253054402042744 * x('2') =g= -1;
+con1018..0.97720281096607964 * x('1') + 
+0.21230795142903267 * x('2') =g= -1;
+con1019..0.91068439625745456 * x('1') - 
+0.41310280852736336 * x('2') =g= -1;
+con1020..0.9104246640286483 * x('1') - 
+0.41367490995747236 * x('2') =g= -1;
+con1021..0.97706922500825377 * x('1') + 
+0.21292188600933051 * x('2') =g= -1;
+con1022..0.91016457239980286 * x('1') - 
+0.41424684808491191 * x('2') =g= -1;
+con1023..0.9099041214735929 * x('1') - 
+0.41481862268390157 * x('2') =g= -1;
+con1024..0.97693525334172382 * x('1') + 
+0.21353573653639782 * x('2') =g= -1;
+con1025..0.90964331135283394 * x('1') - 
+0.41539023352872795 * x('2') =g= -1;
+con1026..0.90938214214048374 * x('1') - 
+0.41596168039374143 * x('2') =g= -1;
+con1027..0.97680089601937647 * x('1') + 
+0.2141495027679105 * x('2') =g= -1;
+con1028..0.9091206139396415 * x('1') - 
+0.41653296305335713 * x('2') =g= -1;
+con1029..0.90885872685354796 * x('1') - 
+0.41710408128205589 * x('2') =g= -1;
+con1030..0.97666615309425076 * x('1') + 
+0.21476318446157769 * x('2') =g= -1;
+con1031..0.9085964809855871 * x('1') - 
+0.41767503485438007 * x('2') =g= -1;
+con1032..0.90833387643928187 * x('1') - 
+0.41824582354494283 * x('2') =g= -1;
+con1033..0.97653102461953778 * x('1') + 
+0.21537678137514177 * x('2') =g= -1;
+con1034..0.90807091331829892 * x('1') - 
+0.41881644712841748 * x('2') =g= -1;
+con1035..0.90780759172644654 * x('1') - 
+0.41938690537954249 * x('2') =g= -1;
+con1036..0.97639551064858121 * x('1') + 
+0.21599029326637884 * x('2') =g= -1;
+con1037..0.90754391176767235 * x('1') - 
+0.41995719807312659 * x('2') =g= -1;
+con1038..0.90727987354606809 * x('1') - 
+0.420527324984038 * x('2') =g= -1;
+con1039..0.97625961123487648 * x('1') + 
+0.21660371989309823 * x('2') =g= -1;
+con1040..0.90701547716586517 * x('1') - 
+0.42109728588721385 * x('2') =g= -1;
+con1041..0.90675072273143709 * x('1') - 
+0.42166708055765578 * x('2') =g= -1;
+con1042..0.97612332643207145 * x('1') + 
+0.21721706101314323 * x('2') =g= -1;
+con1043..0.90648561034729802 * x('1') - 
+0.42223670877043201 * x('2') =g= -1;
+con1044..0.90622014011810481 * x('1') - 
+0.42280617030067397 * x('2') =g= -1;
+con1045..0.97598665629396608 * x('1') + 
+0.21783031638439074 * x('2') =g= -1;
+con1046..0.90595431214865429 * x('1') - 
+0.42337546492358136 * x('2') =g= -1;
+con1047..0.90568812654388497 * x('1') - 
+0.4239445924144189 * x('2') =g= -1;
+con1048..0.97584960087451222 * x('1') + 
+0.21844348576475148 * x('2') =g= -1;
+con1049..0.90542158340887657 * x('1') - 
+0.4245135525485173 * x('2') =g= -1;
+con1050..0.90515468284884948 * x('1') - 
+0.42508234510127418 * x('2') =g= -1;
+con1051..0.97571216022781415 * x('1') + 
+0.21905656891217024 * x('2') =g= -1;
+con1052..0.9048874249691663 * x('1') - 
+0.42565096984815093 * x('2') =g= -1;
+con1053..0.90461980987532964 * x('1') - 
+0.42621942656467754 * x('2') =g= -1;
+con1054..0.97557433440812791 * x('1') + 
+0.21966956558462572 * x('2') =g= -1;
+con1055..0.90435183767298299 * x('1') - 
+0.4267877150264503 * x('2') =g= -1;
+con1056..0.90408350846791263 * x('1') - 
+0.42735583500912877 * x('2') =g= -1;
+con1057..0.97543612346986186 * x('1') + 
+0.22028247554013078 * x('2') =g= -1;
+con1058..0.90381482236604282 * x('1') - 
+0.42792378628844463 * x('2') =g= -1;
+con1059..0.9035457794734415 * x('1') - 
+0.42849156864019056 * x('2') =g= -1;
+con1060..0.97529752746757625 * x('1') + 
+0.22089529853673265 * x('2') =g= -1;
+con1061..0.90327637989631571 * x('1') - 
+0.42905918184022901 * x('2') =g= -1;
+con1062..0.90300662374101415 * x('1') - 
+0.42962662566448856 * x('2') =g= -1;
+con1063..0.97515854645598343 * x('1') + 
+0.22150803433251279 * x('2') =g= -1;
+con1064..0.90273651111402542 * x('1') - 
+0.43019389988896534 * x('2') =g= -1;
+con1065..0.90246604212198023 * x('1') - 
+0.43076100428972014 * x('2') =g= -1;
+con1066..0.97501918048994751 * x('1') + 
+0.22212068268558699 * x('2') =g= -1;
+con1067..0.90219521687164872 * x('1') - 
+0.4313279386428831 * x('2') =g= -1;
+con1068..0.90192403546994215 * x('1') - 
+0.43189470272465075 * x('2') =g= -1;
+con1069..0.97487942962448482 * x('1') + 
+0.22273324335410569 * x('2') =g= -1;
+con1070..0.90165249802391245 * x('1') - 
+0.43246129631128671 * x('2') =g= -1;
+con1071..0.90138060464075143 * x('1') - 
+0.43302771917912292 * x('2') =g= -1;
+con1072..0.97473929391476344 * x('1') + 
+0.22334571609625389 * x('2') =g= -1;
+con1073..0.90110835542779277 * x('1') - 
+0.43359397110455611 * x('2') =g= -1;
+con1074..0.90083575049250952 * x('1') - 
+0.43416005186405304 * x('2') =g= -1;
+con1075..0.97459877341610357 * x('1') + 
+0.22395810067025132 * x('2') =g= -1;
+con1076..0.90056278994251482 * x('1') - 
+0.43472596123414786 * x('2') =g= -1;
+con1077..0.90028947388556424 * x('1') - 
+0.43529169899143944 * x('2') =g= -1;
+con1078..0.97445786818397717 * x('1') + 
+0.22457039683435256 * x('2') =g= -1;
+con1079..0.90001580242955059 * x('1') - 
+0.43585726491259974 * x('2') =g= -1;
+con1080..0.89974177568250979 * x('1') - 
+0.43642265877436309 * x('2') =g= -1;
+con1081..0.97431657827400808 * x('1') + 
+0.22518260434684695 * x('2') =g= -1;
+con1082..0.89946739375261664 * x('1') - 
+0.43698788035353486 * x('2') =g= -1;
+con1083..0.89919265674818583 * x('1') - 
+0.43755292942698859 * x('2') =g= -1;
+con1084..0.97417490374197213 * x('1') + 
+0.22579472296605899 * x('2') =g= -1;
+con1085..0.89891756477767359 * x('1') - 
+0.43811780577166337 * x('2') =g= -1;
+con1086..0.89864211794967519 * x('1') - 
+0.43868250916456891 * x('2') =g= -1;
+con1087..0.9740328446437968 * x('1') + 
+0.22640675245034814 * x('2') =g= -1;
+con1088..0.89836631637292619 * x('1') - 
+0.43924703938278237 * x('2') =g= -1;
+con1089..0.89809016015630183 * x('1') - 
+0.43981139620345017 * x('2') =g= -1;
+con1090..0.97389040103556146 * x('1') + 
+0.22701869255810916 * x('2') =g= -1;
+con1091..0.89781364940881891 * x('1') - 
+0.44037557940378386 * x('2') =g= -1;
+con1092..0.89753678423963168 * x('1') - 
+0.4409395887610692 * x('2') =g= -1;
+con1093..0.97374757297349723 * x('1') + 
+0.227630543047772 * x('2') =g= -1;
+con1094..0.8972595647580367 * x('1') - 
+0.44150342405265497 * x('2') =g= -1;
+con1095..0.8969819910734691 * x('1') - 
+0.44206708505596187 * x('2') =g= -1;
+con1096..0.97360436051398724 * x('1') + 
+0.22824230367780199 * x('2') =g= -1;
+con1097..0.89670406329550356 * x('1') - 
+0.4426305715484794 * x('2') =g= -1;
+con1098..0.89642578153385644 * x('1') - 
+0.44319388330776266 * x('2') =g= -1;
+con1099..0.97346076371356594 * x('1') + 
+0.22885397420670006 * x('2') =g= -1;
+con1100..0.89614714589838074 * x('1') - 
+0.44375702011144152 * x('2') =g= -1;
+con1101..0.89586815649907225 * x('1') - 
+0.4443199817372091 * x('2') =g= -1;
+con1102..0.97331678262891985 * x('1') + 
+0.22946555439300254 * x('2') =g= -1;
+con1103..0.89558881344606456 * x('1') - 
+0.44488276796283099 * x('2') =g= -1;
+con1104..0.8953091168496311 * x('1') - 
+0.44544537856614208 * x('2') =g= -1;
+con1105..0.97317241731688697 * x('1') + 
+0.23007704399528156 * x('2') =g= -1;
+con1106..0.89502906682018579 * x('1') - 
+0.44600781332504402 * x('2') =g= -1;
+con1107..0.89474866346828119 * x('1') - 
+0.44657007201751048 * x('2') =g= -1;
+con1108..0.97302766783445727 * x('1') + 
+0.23068844277214487 * x('2') =g= -1;
+con1109..0.89446790690460942 * x('1') - 
+0.44713215442158361 * x('2') =g= -1;
+con1110..0.89418679724000194 * x('1') - 
+0.44769406031537612 * x('2') =g= -1;
+con1111..0.97288253423877191 * x('1') + 
+0.23129975048223622 * x('2') =g= -1;
+con1112..0.89390533458543098 * x('1') - 
+0.44825578947706718 * x('2') =g= -1;
+con1113..0.89362351905200532 * x('1') - 
+0.44881734168491122 * x('2') =g= -1;
+con1114..0.97273701658712419 * x('1') + 
+0.23191096688423515 * x('2') =g= -1;
+con1115..0.89334135075097587 * x('1') - 
+0.44937871671722707 * x('2') =g= -1;
+con1116..0.89305882979373141 * x('1') - 
+0.4499399143524066 * x('2') =g= -1;
+con1117..0.97259111493695871 * x('1') + 
+0.23252209173685748 * x('2') =g= -1;
+con1118..0.89277595629179973 * x('1') - 
+0.4505009343689117 * x('2') =g= -1;
+con1119..0.89249273035684895 * x('1') - 
+0.45106177654527208 * x('2') =g= -1;
+con1120..0.97244482934587173 * x('1') + 
+0.23313312479885495 * x('2') =g= -1;
+con1121..0.89220915210068519 * x('1') - 
+0.45162244066009 * x('2') =g= -1;
+con1122..0.89192522163525356 * x('1') - 
+0.4521829264920379 * x('2') =g= -1;
+con1123..0.97229815987161106 * x('1') + 
+0.23374406582901558 * x('2') =g= -1;
+con1124..0.89164093907264008 * x('1') - 
+0.4527432338198556 * x('2') =g= -1;
+con1125..0.89135630452506676 * x('1') - 
+0.45330336242235886 * x('2') =g= -1;
+con1126..0.97215110657207604 * x('1') + 
+0.23435491458616381 * x('2') =g= -1;
+con1127..0.89107131810489737 * x('1') - 
+0.45386331207842839 * x('2') =g= -1;
+con1128..0.89078597992463282 * x('1') - 
+0.4544230825670188 * x('2') =g= -1;
+con1129..0.97200366950531758 * x('1') + 
+0.23496567082916037 * x('2') =g= -1;
+con1130..0.89050029009691367 * x('1') - 
+0.45498267366715461 * x('2') =g= -1;
+con1131..0.89021424873451871 * x('1') - 
+0.45554208515793199 * x('2') =g= -1;
+con1132..0.97185584872953812 * x('1') + 
+0.23557633431690275 * x('2') =g= -1;
+con1133..0.8899278559503665 * x('1') - 
+0.45610131681851546 * x('2') =g= -1;
+con1134..0.88964111185751338 * x('1') - 
+0.45666036842814312 * x('2') =g= -1;
+con1135..0.97170764430309153 * x('1') + 
+0.23618690480832472 * x('2') =g= -1;
+con1136..0.88935401656915469 * x('1') - 
+0.45721923976612322 * x('2') =g= -1;
+con1137..0.88906657019862456 * x('1') - 
+0.45777793061183525 * x('2') =g= -1;
+con1138..0.97155905628448302 * x('1') + 
+0.23679738206239698 * x('2') =g= -1;
+con1139..0.88877877285939499 * x('1') - 
+0.45833644074473068 * x('2') =g= -1;
+con1140..0.88849062466507789 * x('1') - 
+0.45889476994433004 * x('2') =g= -1;
+con1141..0.97141008473236934 * x('1') + 
+0.23740776583812706 * x('2') =g= -1;
+con1142..0.8882021257294227 * x('1') - 
+0.45945291799022753 * x('2') =g= -1;
+con1143..0.88791327616631699 * x('1') - 
+0.460010884662089 * x('2') =g= -1;
+con1144..0.97126072970555877 * x('1') + 
+0.23801805589455929 * x('2') =g= -1;
+con1145..0.88762407608978844 * x('1') - 
+0.46056866973964861 * x('2') =g= -1;
+con1146..0.88733452561400028 * x('1') - 
+0.4611262730027178 * x('2') =g= -1;
+con1147..0.9711109912630107 * x('1') + 
+0.23862825199077506 * x('2') =g= -1;
+con1148..0.88704462485325708 * x('1') - 
+0.46168369423117422 * x('2') =g= -1;
+con1149..0.88675437392199985 * x('1') - 
+0.46224093320497067 * x('2') =g= -1;
+con1150..0.97096086946383597 * x('1') + 
+0.23923835388589276 * x('2') =g= -1;
+con1151..0.88646377293480816 * x('1') - 
+0.46279798970413089 * x('2') =g= -1;
+con1152..0.88617282200639969 * x('1') - 
+0.4633548635087516 * x('2') =g= -1;
+con1153..0.97081036436729695 * x('1') + 
+0.23984836133906803 * x('2') =g= -1;
+con1154..0.88588152125163122 * x('1') - 
+0.46391155439899928 * x('2') =g= -1;
+con1155..0.88558987078549645 * x('1') - 
+0.46446806215511488 * x('2') =g= -1;
+con1156..0.970659476032807 * x('1') + 
+0.24045827410949389 * x('2') =g= -1;
+con1157..0.88529787072312727 * x('1') - 
+0.46502438655741168 * x('2') =g= -1;
+con1158..0.88500552117979503 * x('1') - 
+0.46558052738627226 * x('2') =g= -1;
+con1159..0.97050820451993114 * x('1') + 
+0.24106809195640055 * x('2') =g= -1;
+con1160..0.8847128222709062 * x('1') - 
+0.46613648442215705 * x('2') =g= -1;
+con1161..0.88441977411200823 * x('1') - 
+0.46669225744559367 * x('2') =g= -1;
+con1162..0.97035654988838516 * x('1') + 
+0.24167781463905583 * x('2') =g= -1;
+con1163..0.88412637681878459 * x('1') - 
+0.46724784623718552 * x('2') =g= -1;
+con1164..0.88383263050705663 * x('1') - 
+0.46780325057760852 * x('2') =g= -1;
+con1165..0.97020451219803661 * x('1') + 
+0.24228744191676502 * x('2') =g= -1;
+con1166..0.88353853529278503 * x('1') - 
+0.46835847024760852 * x('2') =g= -1;
+con1167..0.88324409129206571 * x('1') - 
+0.46891350502800955 * x('2') =g= -1;
+con1168..0.97005209150890392 * x('1') + 
+0.24289697354887116 * x('2') =g= -1;
+con1169..0.88294929862113458 * x('1') - 
+0.46946835469970338 * x('2') =g= -1;
+con1170..0.88265415739636399 * x('1') - 
+0.47002301904365773 * x('2') =g= -1;
+con1171..0.96989928788115687 * x('1') + 
+0.24350640929475498 * x('2') =g= -1;
+con1172..0.88235866773426375 * x('1') - 
+0.47057749784091368 * x('2') =g= -1;
+con1173..0.88206282975148242 * x('1') - 
+0.47113179087258311 * x('2') =g= -1;
+con1174..0.9697461013751163 * x('1') + 
+0.24411574891383517 * x('2') =g= -1;
+con1175..0.88176664356480483 * x('1') - 
+0.47168589791985355 * x('2') =g= -1;
+con1176..0.88147010929115366 * x('1') - 
+0.4722398187639853 * x('2') =g= -1;
+con1177..0.96959253205125429 * x('1') + 
+0.24472499216556814 * x('2') =g= -1;
+con1178..0.88117322704758871 * x('1') - 
+0.47279355318631278 * x('2') =g= -1;
+con1179..0.88087599695130858 * x('1') - 
+0.47334710096824095 * x('2') =g= -1;
+con1180..0.969438579970194 * x('1') + 
+0.24533413880944863 * x('2') =g= -1;
+con1181..0.88057841911964663 * x('1') - 
+0.47390046189125407 * x('2') =g= -1;
+con1182..0.8802804936700761 * x('1') - 
+0.47445363573690436 * x('2') =g= -1;
+con1183..0.96928424519270961 * x('1') + 
+0.2459431886050093 * x('2') =g= -1;
+con1184..0.87998222072020582 * x('1') - 
+0.47500662228682139 * x('2') =g= -1;
+con1185..0.87968360038778193 * x('1') - 
+0.47555942132270834 * x('2') =g= -1;
+con1186..0.96912952777972661 * x('1') + 
+0.24655214131182113 * x('2') =g= -1;
+con1187..0.8793846327906889 * x('1') - 
+0.47611203262634028 * x('2') =g= -1;
+con1188..0.8790853180469469 * x('1') - 
+0.47666445597956869 * x('2') =g= -1;
+con1189..0.96897442779232112 * x('1') + 
+0.24716099668949348 * x('2') =g= -1;
+con1190..0.87878565627471383 * x('1') - 
+0.47721669116431842 * x('2') =g= -1;
+con1191..0.87848564759228442 * x('1') - 
+0.47776873796258862 * x('2') =g= -1;
+con1192..0.96881894529172086 * x('1') + 
+0.24776975449767397 * x('2') =g= -1;
+con1193..0.87818529211808993 * x('1') - 
+0.47832059615645356 * x('2') =g= -1;
+con1194..0.87788458997069962 * x('1') - 
+0.47887226552805967 * x('2') =g= -1;
+con1195..0.96866308033930404 * x('1') + 
+0.24837841449604892 * x('2') =g= -1;
+con1196..0.87758354126881877 * x('1') - 
+0.47942374585963032 * x('2') =g= -1;
+con1197..0.87728214613128952 * x('1') - 
+0.47997503693346255 * x('2') =g= -1;
+con1198..0.96850683299660001 * x('1') + 
+0.24898697644434306 * x('2') =g= -1;
+con1199..0.87698040467709049 * x('1') - 
+0.4805261385319291 * x('2') =g= -1;
+con1200..0.87667831702533849 * x('1') - 
+0.48107705043747417 * x('2') =g= -1;
+con1201..0.96835020332528932 * x('1') + 
+0.24959544010232007 * x('2') =g= -1;
+con1202..0.87637588329528449 * x('1') - 
+0.48162777243262245 * x('2') =g= -1;
+con1203..0.87607310360631852 * x('1') - 
+0.48217830429996811 * x('2') =g= -1;
+con1204..0.96819319138720306 * x('1') + 
+0.25020380522978225 * x('2') =g= -1;
+con1205..0.87576997807796597 * x('1') - 
+0.4827286458221835 * x('2') =g= -1;
+con1206..0.87546650682988825 * x('1') - 
+0.48327879678201607 * x('2') =g= -1;
+con1207..0.96803579724432343 * x('1') + 
+0.25081207158657082 * x('2') =g= -1;
+con1208..0.87516268998188496 * x('1') - 
+0.48382875696228622 * x('2') =g= -1;
+con1209..0.87485852765389072 * x('1') - 
+0.48437852614589194 * x('2') =g= -1;
+con1210..0.9678780209587835 * x('1') + 
+0.25142023893256599 * x('2') =g= -1;
+con1211..0.87455401996597637 * x('1') - 
+0.48492810411580667 * x('2') =g= -1;
+con1212..0.87424916703835098 * x('1') - 
+0.48547749065507617 * x('2') =g= -1;
+con1213..0.96771986259286724 * x('1') + 
+0.25202830702768725 * x('2') =g= -1;
+con1214..0.87394396899135673 * x('1') - 
+0.48602668554682721 * x('2') =g= -1;
+con1215..0.87363842594547536 * x('1') - 
+0.48657568857425687 * x('2') =g= -1;
+con1216..0.96756132220900926 * x('1') + 
+0.25263627563189295 * x('2') =g= -1;
+con1217..0.87333253802132271 * x('1') - 
+0.48712449952064096 * x('2') =g= -1;
+con1218..0.87302630533965142 * x('1') - 
+0.4876731181693304 * x('2') =g= -1;
+con1219..0.96740239986979515 * x('1') + 
+0.2532441445051809 * x('2') =g= -1;
+con1220..0.87271972802134978 * x('1') - 
+0.48822154430375281 * x('2') =g= -1;
+con1221..0.87241280618744332 * x('1') - 
+0.48876977770740943 * x('2') =g= -1;
+con1222..0.96724309563796129 * x('1') + 
+0.25385191340758823 * x('2') =g= -1;
+con1223..0.87210553995909246 * x('1') - 
+0.48931781816387993 * x('2') =g= -1;
+con1224..0.87179792945759327 * x('1') - 
+0.48986566545682014 * x('2') =g= -1;
+con1225..0.96708340957639471 * x('1') + 
+0.25445958209919167 * x('2') =g= -1;
+con1226..0.87148997480437973 * x('1') - 
+0.49041331936995913 * x('2') =g= -1;
+con1227..0.8711816761210186 * x('1') - 
+0.49096077968710761 * x('2') =g= -1;
+con1228..0.96692334174813321 * x('1') + 
+0.25506715034010724 * x('2') =g= -1;
+con1229..0.87087303352921541 * x('1') - 
+0.49150804619214733 * x('2') =g= -1;
+con1230..0.87056404715080971 * x('1') - 
+0.49205511866903973 * x('2') =g= -1;
+con1231..0.96676289221636524 * x('1') + 
+0.25567461789049095 * x('2') =g= -1;
+con1232..0.8702547171077768 * x('1') - 
+0.49260199690182266 * x('2') =g= -1;
+con1233..0.86994504352222946 * x('1') - 
+0.49314868067460776 * x('2') =g= -1;
+con1234..0.96660206104443014 * x('1') + 
+0.25628198451053824 * x('2') =g= -1;
+con1235..0.86963502651641289 * x('1') - 
+0.49369516977158873 * x('2') =g= -1;
+con1236..0.86932466621271109 * x('1') - 
+0.49424146397703067 * x('2') =g= -1;
+con1237..0.96644084829581767 * x('1') + 
+0.25688924996048451 * x('2') =g= -1;
+con1238..0.86901396273364151 * x('1') - 
+0.49478756307527888 * x('2') =g= -1;
+con1239..0.86870291620185791 * x('1') - 
+0.49533346685075474 * x('2') =g= -1;
+con1240..0.96627925403416837 * x('1') + 
+0.25749641400060513 * x('2') =g= -1;
+con1241..0.86839152674014886 * x('1') - 
+0.49587917508795765 * x('2') =g= -1;
+con1242..0.86807979447143957 * x('1') - 
+0.49642468757146163 * x('2') =g= -1;
+con1243..0.96611727832327332 * x('1') + 
+0.25810347639121567 * x('2') =g= -1;
+con1244..0.86776771951878917 * x('1') - 
+0.49697000408592062 * x('2') =g= -1;
+con1245..0.86745530200539245 * x('1') - 
+0.49751512441606577 * x('2') =g= -1;
+con1246..0.96595492122707416 * x('1') + 
+0.25871043689267142 * x('2') =g= -1;
+con1247..0.86714254205458074 * x('1') - 
+0.49806004834670248 * x('2') =g= -1;
+con1248..0.86682943978981786 * x('1') - 
+0.49860477566271927 * x('2') =g= -1;
+con1249..0.96579218280966317 * x('1') + 
+0.25931729526536823 * x('2') =g= -1;
+con1250..0.86651599533470547 * x('1') - 
+0.49914930614907671 * x('2') =g= -1;
+con1251..0.86620220881297882 * x('1') - 
+0.49969363959081636 * x('2') =g= -1;
+con1252..0.96562906313528307 * x('1') + 
+0.25992405126974211 * x('2') =g= -1;
+con1253..0.86588808034850806 * x('1') - 
+0.50023777577305728 * x('2') =g= -1;
+con1254..0.86557361006530031 * x('1') - 
+0.50078171448099373 * x('2') =g= -1;
+con1255..0.96546556226832714 * x('1') + 
+0.26053070466626954 * x('2') =g= -1;
+con1256..0.86525879808749417 * x('1') - 
+0.50132545549990282 * x('2') =g= -1;
+con1257..0.86494364453936645 * x('1') - 
+0.50186899861513468 * x('2') =g= -1;
+con1258..0.96530168027333907 * x('1') + 
+0.2611372552154676 * x('2') =g= -1;
+con1259..0.86462814954532718 * x('1') - 
+0.5024123436121205 * x('2') =g= -1;
+con1260..0.86431231322992075 * x('1') - 
+0.50295549027636965 * x('2') =g= -1;
+con1261..0.96513741721501312 * x('1') + 
+0.26174370267789365 * x('2') =g= -1;
+con1262..0.86399613571782796 * x('1') - 
+0.50349843839346764 * x('2') =g= -1;
+con1263..0.86367961713386299 * x('1') - 
+0.50404118774908058 * x('2') =g= -1;
+con1264..0.96497277315819396 * x('1') + 
+0.2623500468141462 * x('2') =g= -1;
+con1265..0.86336275760297487 * x('1') - 
+0.50458373812895208 * x('2') =g= -1;
+con1266..0.8630455572502469 * x('1') - 
+0.50512608931890546 * x('2') =g= -1;
+con1267..0.96480774816787662 * x('1') + 
+0.2629562873848641 * x('2') =g= -1;
+con1268..0.86272801620089878 * x('1') - 
+0.50566824110483921 * x('2') =g= -1;
+con1269..0.86241013458028137 * x('1') - 
+0.5062101932727362 * x('2') =g= -1;
+con1270..0.96464234230920631 * x('1') + 
+0.26356242415072739 * x('2') =g= -1;
+con1271..0.86209191251388351 * x('1') - 
+0.50675194560865244 * x('2') =g= -1;
+con1272..0.86177335012732603 * x('1') - 
+0.50729349789872635 * x('2') =g= -1;
+con1273..0.96447655564747903 * x('1') + 
+0.26416845687245705 * x('2') =g= -1;
+con1274..0.86145444754636469 * x('1') - 
+0.50783484992917483 * x('2') =g= -1;
+con1275..0.86113520489689055 * x('1') - 
+0.50837600148629192 * x('2') =g= -1;
+con1276..0.96431038824814086 * x('1') + 
+0.26477438531081487 * x('2') =g= -1;
+con1277..0.86081562230492781 * x('1') - 
+0.50891695235645273 * x('2') =g= -1;
+con1278..0.86049569989663499 * x('1') - 
+0.50945770232611109 * x('2') =g= -1;
+con1279..0.964143840176788 * x('1') + 
+0.26538020922660416 * x('2') =g= -1;
+con1280..0.86017543779830496 * x('1') - 
+0.50999825118180009 * x('2') =g= -1;
+con1281..0.85985483613636426 * x('1') - 
+0.51053859871013285 * x('2') =g= -1;
+con1282..0.96397691149916731 * x('1') + 
+0.26598592838066937 * x('2') =g= -1;
+con1283..0.85953389503737487 * x('1') - 
+0.51107874469780001 * x('2') =g= -1;
+con1284..0.85921261462803122 * x('1') - 
+0.51161868893157358 * x('2') =g= -1;
+con1285..0.96380960228117551 * x('1') + 
+0.26659154253389622 * x('2') =g= -1;
+con1286..0.85889099503516231 * x('1') - 
+0.51215843119830484 * x('2') =g= -1;
+con1287..0.85856903638573046 * x('1') - 
+0.51269797128492545 * x('2') =g= -1;
+con1288..0.96364191258885989 * x('1') + 
+0.2671970514472119 * x('2') =g= -1;
+con1289..0.85824673880683378 * x('1') - 
+0.51323730897844377 * x('2') =g= -1;
+con1290..0.85792410242570083 * x('1') - 
+0.51377644406595335 * x('2') =g= -1;
+con1291..0.96347384248841783 * x('1') + 
+0.26780245488158527 * x('2') =g= -1;
+con1292..0.85760112736969674 * x('1') - 
+0.51431537633462321 * x('2') =g= -1;
+con1293..0.85727781376632051 * x('1') - 
+0.51485410557170264 * x('2') =g= -1;
+con1294..0.96330539204619658 * x('1') + 
+0.26840775259802657 * x('2') =g= -1;
+con1295..0.85695416174320171 * x('1') - 
+0.51539263156452531 * x('2') =g= -1;
+con1296..0.85663017142810693 * x('1') - 
+0.51593095410049994 * x('2') =g= -1;
+con1297..0.96313656132869407 * x('1') + 
+0.2690129443575881 * x('2') =g= -1;
+con1298..0.8563058429489343 * x('1') - 
+0.51646907296711875 * x('2') =g= -1;
+con1299..0.8559811764337163 * x('1') - 
+0.51700698795195321 * x('2') =g= -1;
+con1300..0.96296735040255776 * x('1') + 
+0.26961802992136391 * x('2') =g= -1;
+con1301..0.85565617201061828 * x('1') - 
+0.51754469884265575 * x('2') =g= -1;
+con1302..0.85533082980793884 * x('1') - 
+0.51808220542695993 * x('2') =g= -1;
+con1303..0.96279775933458578 * x('1') + 
+0.27022300905048968 * x('2') =g= -1;
+con1304..0.85500514995411148 * x('1') - 
+0.51861950749267749 * x('2') =g= -1;
+con1305..0.85467913257770123 * x('1') - 
+0.51915660482770343 * x('2') =g= -1;
+con1306..0.9626277881917259 * x('1') + 
+0.27082788150614334 * x('2') =g= -1;
+con1307..0.85435277780740704 * x('1') - 
+0.51969349722001279 * x('2') =g= -1;
+con1308..0.85402608577206052 * x('1') - 
+0.52023018445766211 * x('2') =g= -1;
+con1309..0.96245743704107611 * x('1') + 
+0.27143264704954506 * x('2') =g= -1;
+con1310..0.85369905660062784 * x('1') - 
+0.52076666632878676 * x('2') =g= -1;
+con1311..0.85337169042220695 * x('1') - 
+0.52130294262160559 * x('2') =g= -1;
+con1312..0.96228670594988441 * x('1') + 
+0.27203730544195698 * x('2') =g= -1;
+con1313..0.8530439873660286 * x('1') - 
+0.52183901312441838 * x('2') =g= -1;
+con1314..0.85271594756145863 * x('1') - 
+0.52237487762560308 * x('2') =g= -1;
+con1315..0.96211559498554877 * x('1') + 
+0.27264185644468358 * x('2') =g= -1;
+con1316..0.85238757113799235 * x('1') - 
+0.52291053591362446 * x('2') =g= -1;
+con1317..0.85205885822526151 * x('1') - 
+0.52344598777702345 * x('2') =g= -1;
+con1318..0.96194410421561705 * x('1') + 
+0.27324629981907184 * x('2') =g= -1;
+con1319..0.85172980895302841 * x('1') - 
+0.52398123300442512 * x('2') =g= -1;
+con1320..0.8514004234511886 * x('1') - 
+0.52451627138453649 * x('2') =g= -1;
+con1321..0.96177223370778708 * x('1') + 
+0.27385063532651116 * x('2') =g= -1;
+con1322..0.85107070184977174 * x('1') - 
+0.52505110270614308 * x('2') =g= -1;
+con1323..0.85074064427893736 * x('1') - 
+0.52558572675811743 * x('2') =g= -1;
+con1324..0.96159998352990661 * x('1') + 
+0.27445486272843345 * x('2') =g= -1;
+con1325..0.8504102508689807 * x('1') - 
+0.5261201433294086 * x('2') =g= -1;
+con1326..0.85007952175032742 * x('1') - 
+0.52665435220905044 * x('2') =g= -1;
+con1327..0.96142735374997335 * x('1') + 
+0.27505898178631349 * x('2') =g= -1;
+con1328..0.84974845705353663 * x('1') - 
+0.52718835318615842 * x('2') =g= -1;
+con1329..0.84941705690929936 * x('1') - 
+0.52772214604993051 * x('2') =g= -1;
+con1330..0.96125434443613478 * x('1') + 
+0.27566299226166868 * x('2') =g= -1;
+con1331..0.84908532144844007 * x('1') - 
+0.52825573058964459 * x('2') =g= -1;
+con1332..0.84875325080191466 * x('1') - 
+0.52878910659466327 * x('2') =g= -1;
+con1333..0.96108095565668805 * x('1') + 
+0.27626689391605924 * x('2') =g= -1;
+con1334..0.84842084510081117 * x('1') - 
+0.52932227385443109 * x('2') =g= -1;
+con1335..0.84808810447635175 * x('1') - 
+0.52985523215847241 * x('2') =g= -1;
+con1336..0.96090718748008053 * x('1') + 
+0.27687068651108843 * x('2') =g= -1;
+con1337..0.84775502905988742 * x('1') - 
+0.53038798129639919 * x('2') =g= -1;
+con1338..0.8474216189829048 * x('1') - 
+0.53092052105790044 * x('2') =g= -1;
+con1339..0.96073303997490889 * x('1') + 
+0.27747436980840268 * x('2') =g= -1;
+con1340..0.84708787437702071 * x('1') - 
+0.53145285123275121 * x('2') =g= -1;
+con1341..0.84675379537398388 * x('1') - 
+0.53198497161080915 * x('2') =g= -1;
+con1342..0.96055851320991981 * x('1') + 
+0.27807794356969129 * x('2') =g= -1;
+con1343..0.84641938210567669 * x('1') - 
+0.5325168819820123 * x('2') =g= -1;
+con1344..0.84608463470411188 * x('1') - 
+0.53304858213638417 * x('2') =g= -1;
+con1345..0.96038360725400962 * x('1') + 
+0.27868140755668702 * x('2') =g= -1;
+con1346..0.84574955330143475 * x('1') - 
+0.53358007186403023 * x('2') =g= -1;
+con1347..0.84541413802992216 * x('1') - 
+0.53411135095513917 * x('2') =g= -1;
+con1348..0.96020832217622432 * x('1') + 
+0.27928476153116588 * x('2') =g= -1;
+con1349..0.84507838902198251 * x('1') - 
+0.53464241919998345 * x('2') =g= -1;
+con1350..0.84474230641015724 * x('1') - 
+0.53517327638891676 * x('2') =g= -1;
+con1351..0.96003265804575966 * x('1') + 
+0.27988800525494739 * x('2') =g= -1;
+con1352..0.84440589032711844 * x('1') - 
+0.53570392231237818 * x('2') =g= -1;
+con1353..0.84406914090566965 * x('1') - 
+0.53623435676088937 * x('2') =g= -1;
+con1354..0.95985661493196095 * x('1') + 
+0.28049113848989449 * x('2') =g= -1;
+con1355..0.8437320582787462 * x('1') - 
+0.5367645795250563 * x('2') =g= -1;
+con1356..0.84339464257941632 * x('1') - 
+0.5372945903955656 * x('2') =g= -1;
+con1357..0.95968019290432316 * x('1') + 
+0.28109416099791373 * x('2') =g= -1;
+con1358..0.84305689394087668 * x('1') - 
+0.53782438916319275 * x('2') =g= -1;
+con1359..0.8427188124964583 * x('1') - 
+0.53835397561879228 * x('2') =g= -1;
+con1360..0.9595033920324908 * x('1') + 
+0.28169707254095544 * x('2') =g= -1;
+con1361..0.84238039837962331 * x('1') - 
+0.53888334955330275 * x('2') =g= -1;
+con1362..0.84204165172396261 * x('1') - 
+0.5394125107577511 * x('2') =g= -1;
+con1363..0.95932621238625782 * x('1') + 
+0.28229987288101371 * x('2') =g= -1;
+con1364..0.84170257266320136 * x('1') - 
+0.53994145902324275 * x('2') =g= -1;
+con1365..0.84136316133119449 * x('1') - 
+0.54047019414097064 * x('2') =g= -1;
+con1366..0.95914865403556793 * x('1') + 
+0.28290256178012668 * x('2') =g= -1;
+con1367..0.84102341786192802 * x('1') - 
+0.5409987159022106 * x('2') =g= -1;
+con1368..0.84068334238951958 * x('1') - 
+0.5415270240983231 * x('2') =g= -1;
+con1369..0.95897071705051418 * x('1') + 
+0.28350513900037622 * x('2') =g= -1;
+con1370..0.84034293504821711 * x('1') - 
+0.54205511852075328 * x('2') =g= -1;
+con1371..0.84000219597240111 * x('1') - 
+0.5425829989610288 * x('2') =g= -1;
+con1372..0.95879240150133915 * x('1') + 
+0.28410760430388837 * x('2') =g= -1;
+con1373..0.83966112529658155 * x('1') - 
+0.54311066521076379 * x('2') =g= -1;
+con1374..0.83931972315539982 * x('1') - 
+0.54363811706165621 * x('2') =g= -1;
+con1375..0.95861370745843488 * x('1') + 
+0.28470995745283351 * x('2') =g= -1;
+con1376..0.83897798968362747 * x('1') - 
+0.54416535430548962 * x('2') =g= -1;
+con1377..0.83863592501616913 * x('1') - 
+0.54469237673412896 * x('2') =g= -1;
+con1378..0.9584346349923426 * x('1') + 
+0.28531219820942622 * x('2') =g= -1;
+con1379..0.83829352928805667 * x('1') - 
+0.54521918413952941 * x('2') =g= -1;
+con1380..0.83795080263445532 * x('1') - 
+0.54574577631372667 * x('2') =g= -1;
+con1381..0.95825518417375333 * x('1') + 
+0.28591432633592534 * x('2') =g= -1;
+con1382..0.83760774519066117 * x('1') - 
+0.54627215304884114 * x('2') =g= -1;
+con1383..0.83726435709209801 * x('1') - 
+0.5467983141370828 * x('2') =g= -1;
+con1384..0.95807535507350716 * x('1') + 
+0.28651634159463418 * x('2') =g= -1;
+con1385..0.83692063847432341 * x('1') - 
+0.54732425937074169 * x('2') =g= -1;
+con1386..0.83657658947302349 * x('1') - 
+0.54784998854219602 * x('2') =g= -1;
+con1387..0.95789514776259366 * x('1') + 
+0.28711824374790079 * x('2') =g= -1;
+con1388..0.8362322102240155 * x('1') - 
+0.54837550144390834 * x('2') =g= -1;
+con1389..0.83588750086324692 * x('1') - 
+0.54890079786842672 * x('2') =g= -1;
+con1390..0.95771456231215135 * x('1') + 
+0.28772003255811762 * x('2') =g= -1;
+con1391..0.83554246152679479 * x('1') - 
+0.54942587760838557 * x('2') =g= -1;
+con1392..0.83519709235086825 * x('1') - 
+0.54995074045650238 * x('2') =g= -1;
+con1393..0.95753359879346867 * x('1') + 
+0.28832170778772209 * x('2') =g= -1;
+con1394..0.83485139347180515 * x('1') - 
+0.55047538620558245 * x('2') =g= -1;
+con1395..0.83450536502607375 * x('1') - 
+0.55099981464851644 * x('2') =g= -1;
+con1396..0.95735225727798268 * x('1') + 
+0.28892326919919642 * x('2') =g= -1;
+con1397..0.83415900715027202 * x('1') - 
+0.55152402557828106 * x('2') =g= -1;
+con1398..0.83381231998112959 * x('1') - 
+0.55204801878793686 * x('2') =g= -1;
+con1399..0.95717053783728001 * x('1') + 
+0.28952471655506751 * x('2') =g= -1;
+con1400..0.83346530365550453 * x('1') - 
+0.55257179407063262 * x('2') =g= -1;
+con1401..0.83311795831038471 * x('1') - 
+0.55309535121960318 * x('2') =g= -1;
+con1402..0.95698844054309629 * x('1') + 
+0.29012604961790756 * x('2') =g= -1;
+con1403..0.83277028408288989 * x('1') - 
+0.55361869002816622 * x('2') =g= -1;
+con1404..0.8324222811102665 * x('1') - 
+0.5541418102897312 * x('2') =g= -1;
+con1405..0.95680596546731655 * x('1') + 
+0.2907272681503339 * x('2') =g= -1;
+con1406..0.83207394952989389 * x('1') - 
+0.55466471179778842 * x('2') =g= -1;
+con1407..0.83172528947927915 * x('1') - 
+0.55518739434591746 * x('2') =g= -1;
+con1408..0.95662311268197486 * x('1') + 
+0.29132837191500888 * x('2') =g= -1;
+con1409..0.8313763010960592 * x('1') - 
+0.5557098577277847 * x('2') =g= -1;
+con1410..0.83102698451800205 * x('1') - 
+0.55623210173714033 * x('2') =g= -1;
+con1411..0.95643988225925414 * x('1') + 
+0.2919293606746402 * x('2') =g= -1;
+con1412..0.83067733988300363 * x('1') - 
+0.5567541261678236 * x('2') =g= -1;
+con1413..0.83032736732909007 * x('1') - 
+0.55727593081375981 * x('2') =g= -1;
+con1414..0.95625627427148663 * x('1') + 
+0.29253023419198115 * x('2') =g= -1;
+con1415..0.82997706699441665 * x('1') - 
+0.55779751546896084 * x('2') =g= -1;
+con1416..0.82962643901726851 * x('1') - 
+0.55831887992752538 * x('2') =g= -1;
+con1417..0.95607228879115369 * x('1') + 
+0.29313099222983019 * x('2') =g= -1;
+con1418..0.82927548353605907 * x('1') - 
+0.55884002398364008 * x('2') =g= -1;
+con1419..0.82892420068933304 * x('1') - 
+0.55936094743157594 * x('2') =g= -1;
+con1420..0.95588792589088556 * x('1') + 
+0.29373163455103174 * x('2') =g= -1;
+con1421..0.82857259061576261 * x('1') - 
+0.55988165006569368 * x('2') =g= -1;
+con1422..0.82822065345414908 * x('1') - 
+0.56040213168044106 * x('2') =g= -1;
+con1423..0.95570318564346146 * x('1') + 
+0.29433216091847564 * x('2') =g= -1;
+con1424..0.82786838934342499 * x('1') - 
+0.56092239207034988 * x('2') =g= -1;
+con1425..0.82751579842264855 * x('1') - 
+0.56144243103004476 * x('2') =g= -1;
+con1426..0.95551806812180962 * x('1') + 
+0.29493257109509757 * x('2') =g= -1;
+con1427..0.82716288083101019 * x('1') - 
+0.56196224835423236 * x('2') =g= -1;
+con1428..0.8268096367078277 * x('1') - 
+0.56248184383771005 * x('2') =g= -1;
+con1429..0.95533257339900723 * x('1') + 
+0.29553286484387897 * x('2') =g= -1;
+con1430..0.8264560661925473 * x('1') - 
+0.56300121727536245 * x('2') =g= -1;
+con1431..0.8261021694247459 * x('1') - 
+0.5635203684621598 * x('2') =g= -1;
+con1432..0.9551467015482803 * x('1') + 
+0.29613304192784751 * x('2') =g= -1;
+con1433..0.82574794654412764 * x('1') - 
+0.56403929719316237 * x('2') =g= -1;
+con1434..0.82539339769052578 * x('1') - 
+0.56455800326351724 * x('2') =g= -1;
+con1435..0.95496045264300378 * x('1') + 
+0.29673310211007675 * x('2') =g= -1;
+con1436..0.82503852300390235 * x('1') - 
+0.56507648646845965 * x('2') =g= -1;
+con1437..0.82468332262434807 * x('1') - 
+0.56559474660331266 * x('2') =g= -1;
+con1438..0.95477382675670153 * x('1') + 
+0.29733304515368636 * x('2') =g= -1;
+con1439..0.82432779669208156 * x('1') - 
+0.56611278346348826 * x('2') =g= -1;
+con1440..0.82397194534745155 * x('1') - 
+0.56663059684448414 * x('2') =g= -1;
+con1441..0.95458682396304606 * x('1') + 
+0.29793287082184228 * x('2') =g= -1;
+con1442..0.82361576873093378 * x('1') - 
+0.56714818654188881 * x('2') =g= -1;
+con1443..0.82325926698313234 * x('1') - 
+0.5676655523513785 * x('2') =g= -1;
+con1444..0.95439944433585877 * x('1') + 
+0.29853257887775686 * x('2') =g= -1;
+con1445..0.82290244024478165 * x('1') - 
+0.56818269406871558 * x('2') =g= -1;
+con1446..0.82254528865674092 * x('1') - 
+0.56869961148975545 * x('2') =g= -1;
+con1447..0.95421168794910971 * x('1') + 
+0.2991321690846887 * x('2') =g= -1;
+con1448..0.8221878123600006 * x('1') - 
+0.56921630441043791 * x('2') =g= -1;
+con1449..0.82183001149567958 * x('1') - 
+0.56973277262679145 * x('2') =g= -1;
+con1450..0.95402355487691803 * x('1') + 
+0.2997316412059432 * x('2') =g= -1;
+con1451..0.82147188620502132 * x('1') - 
+0.57024901593493738 * x('2') =g= -1;
+con1452..0.82111343662940139 * x('1') - 
+0.57076503413108104 * x('2') =g= -1;
+con1453..0.953835045193551 * x('1') + 
+0.30033099500487215 * x('2') =g= -1;
+con1454..0.82075466291032106 * x('1') - 
+0.57128082701151917 * x('2') =g= -1;
+con1455..0.82039556518941015 * x('1') - 
+0.57179639437263696 * x('2') =g= -1;
+con1456..0.95364615897342508 * x('1') + 
+0.30093023024487409 * x('2') =g= -1;
+con1457..0.82003614360842647 * x('1') - 
+0.57231173601090879 * x('2') =g= -1;
+con1458..0.81967639830925509 * x('1') - 
+0.57282685172289838 * x('2') =g= -1;
+con1459..0.95345689629110508 * x('1') + 
+0.30152934668939435 * x('2') =g= -1;
+con1460..0.81931632943391031 * x('1') - 
+0.57334174130525695 * x('2') =g= -1;
+con1461..0.81895593712453274 * x('1') - 
+0.57385640455472686 * x('2') =g= -1;
+con1462..0.95326725722130445 * x('1') + 
+0.30212834410192535 * x('2') =g= -1;
+con1463..0.81859522152339126 * x('1') - 
+0.5743708412681392 * x('2') =g= -1;
+con1464..0.81823418277288162 * x('1') - 
+0.57488505124241529 * x('2') =g= -1;
+con1465..0.95307724183888531 * x('1') + 
+0.30272722224600629 * x('2') =g= -1;
+con1466..0.81787282101552949 * x('1') - 
+0.57539903427456296 * x('2') =g= -1;
+con1467..0.81751113639398421 * x('1') - 
+0.57591279016168462 * x('2') =g= -1;
+con1468..0.95288685021885844 * x('1') + 
+0.30332598088522339 * x('2') =g= -1;
+con1469..0.81714912905102577 * x('1') - 
+0.57642631870096805 * x('2') =g= -1;
+con1470..0.81678679912956154 * x('1') - 
+0.5769396196896911 * x('2') =g= -1;
+con1471..0.95269608243638282 * x('1') + 
+0.30392461978321034 * x('2') =g= -1;
+con1472..0.81642414677262298 * x('1') - 
+0.57745269292522527 * x('2') =g= -1;
+con1473..0.81606117212337292 * x('1') - 
+0.57796553820502716 * x('2') =g= -1;
+con1474..0.9525049385667661 * x('1') + 
+0.30452313870364778 * x('2') =g= -1;
+con1475..0.81569787532509874 * x('1') - 
+0.57847815532664637 * x('2') =g= -1;
+con1476..0.81533425652121594 * x('1') - 
+0.57899054408772166 * x('2') =g= -1;
+con1477..0.9523134186854646 * x('1') + 
+0.30512153741026393 * x('2') =g= -1;
+con1478..0.81497031585526647 * x('1') - 
+0.57950270428598272 * x('2') =g= -1;
+con1479..0.81460605347092097 * x('1') - 
+0.58001463571924727 * x('2') =g= -1;
+con1480..0.9521215228680826 * x('1') + 
+0.30571981566683437 * x('2') =g= -1;
+con1481..0.81424146951197529 * x('1') - 
+0.58052633818542554 * x('2') =g= -1;
+con1482..0.81387656412235299 * x('1') - 
+0.58103781148251743 * x('2') =g= -1;
+con1483..0.9519292511903733 * x('1') + 
+0.30631797323718229 * x('2') =g= -1;
+con1484..0.81351133744610449 * x('1') - 
+0.58154905540861324 * x('2') =g= -1;
+con1485..0.81314578962740647 * x('1') - 
+0.58206006976189462 * x('2') =g= -1;
+con1486..0.95173660372823798 * x('1') + 
+0.30691600988517842 * x('2') =g= -1;
+con1487..0.81277992081056383 * x('1') - 
+0.58257085434063172 * x('2') =g= -1;
+con1488..0.81241373114000692 * x('1') - 
+0.58308140894318738 * x('2') =g= -1;
+con1489..0.95154358055772625 * x('1') + 
+0.30751392537474131 * x('2') =g= -1;
+con1490..0.81204722076029245 * x('1') - 
+0.58359173336801551 * x('2') =g= -1;
+con1491..0.81168038981610602 * x('1') - 
+0.58410182741365757 * x('2') =g= -1;
+con1492..0.95135018175503605 * x('1') + 
+0.3081117194698374 * x('2') =g= -1;
+con1493..0.81131323845225589 * x('1') - 
+0.58461169087875153 * x('2') =g= -1;
+con1494..0.81094576681368091 * x('1') - 
+0.58512132356202085 * x('2') =g= -1;
+con1495..0.95115640739651386 * x('1') + 
+0.30870939193448083 * x('2') =g= -1;
+con1496..0.81057797504544371 * x('1') - 
+0.58563072526228344 * x('2') =g= -1;
+con1497..0.81020986329273359 * x('1') - 
+0.58613989577844794 * x('2') =g= -1;
+con1498..0.95096225755865416 * x('1') + 
+0.30930694253273394 * x('2') =g= -1;
+con1499..0.80984143170086798 * x('1') - 
+0.58664883490951247 * x('2') =g= -1;
+con1500..0.80947268041528841 * x('1') - 
+0.58715754245456842 * x('2') =g= -1;
+con1501..0.95076773231809952 * x('1') + 
+0.30990437102870716 * x('2') =g= -1;
+con1502..0.80910360958156369 * x('1') - 
+0.58766601821279796 * x('2') =g= -1;
+con1503..0.80873421934538836 * x('1') - 
+0.58817426198347478 * x('2') =g= -1;
+con1504..0.95057283175164109 * x('1') + 
+0.31050167718655908 * x('2') =g= -1;
+con1505..0.80836450985258335 * x('1') - 
+0.58868227356596414 * x('2') =g= -1;
+con1506..0.80799448124909501 * x('1') - 
+0.58919005275972358 * x('2') =g= -1;
+con1507..0.95037755593621798 * x('1') + 
+0.31109886077049664 * x('2') =g= -1;
+con1508..0.80762413368099717 * x('1') - 
+0.58969759936430033 * x('2') =g= -1;
+con1509..0.80725346729448799 * x('1') - 
+0.59020491317933554 * x('2') =g= -1;
+con1510..0.9501819049489173 * x('1') + 
+0.3116959215447751 * x('2') =g= -1;
+con1511..0.80688248223589154 * x('1') - 
+0.59071199400456242 * x('2') =g= -1;
+con1512..0.80651117865165978 * x('1') - 
+0.59121884163980298 * x('2') =g= -1;
+con1513..0.94998587886697461 * x('1') + 
+0.31229285927369815 * x('2') =g= -1;
+con1514..0.8061395566883669 * x('1') - 
+0.5917254558849766 * x('2') =g= -1;
+con1515..0.805767616492716 * x('1') - 
+0.59223183654008948 * x('2') =g= -1;
+con1516..0.94978947776777323 * x('1') + 
+0.31288967372161819 * x('2') =g= -1;
+con1517..0.80539535821153418 * x('1') - 
+0.59273798340524331 * x('2') =g= -1;
+con1518..0.80502278199177391 * x('1') - 
+0.59324389628063157 * x('2') =g= -1;
+con1519..0.94959270172884458 * x('1') + 
+0.31348636465293622 * x('2') =g= -1;
+con1520..0.80464988798051473 * x('1') - 
+0.59374957496653846 * x('2') =g= -1;
+con1521..0.80427667632496014 * x('1') - 
+0.59425501926334234 * x('2') =g= -1;
+con1522..0.94939555082786808 * x('1') + 
+0.31408293183210206 * x('2') =g= -1;
+con1523..0.80390314717243938 * x('1') - 
+0.59476022897151359 * x('2') =g= -1;
+con1524..0.80352930067040718 * x('1') - 
+0.5952652038916153 * x('2') =g= -1;
+con1525..0.94919802514267149 * x('1') + 
+0.31467937502361421 * x('2') =g= -1;
+con1526..0.80315513696644358 * x('1') - 
+0.59576994382430304 * x('2') =g= -1;
+con1527..0.80278065620825323 * x('1') - 
+0.59627444857032597 * x('2') =g= -1;
+con1528..0.94900012475122986 * x('1') + 
+0.31527569399202038 * x('2') =g= -1;
+con1529..0.80240585854366742 * x('1') - 
+0.59677871793052395 * x('2') =g= -1;
+con1530..0.80203074412064124 * x('1') - 
+0.59728275170583189 * x('2') =g= -1;
+con1531..0.94880184973166681 * x('1') + 
+0.315871888501917 * x('2') =g= -1;
+con1532..0.80165531308725457 * x('1') - 
+0.59778654969727762 * x('2') =g= -1;
+con1533..0.80127956559171454 * x('1') - 
+0.59829011170597934 * x('2') =g= -1;
+con1534..0.94860320016225341 * x('1') + 
+0.31646795831794994 * x('2') =g= -1;
+con1535..0.80090350178234937 * x('1') - 
+0.59879343753315317 * x('2') =g= -1;
+con1536..0.80052712180761543 * x('1') - 
+0.59929652698010449 * x('2') =g= -1;
+con1537..0.94840417612140882 * x('1') + 
+0.31706390320481409 * x('2') =g= -1;
+con1538..0.80015042581609397 * x('1') - 
+0.59979937984823184 * x('2') =g= -1;
+con1539..0.79977341395648749 * x('1') - 
+0.60030199593903144 * x('2') =g= -1;
+con1540..0.94820477768769984 * x('1') + 
+0.31765972292725375 * x('2') =g= -1;
+con1541..0.79939608637762727 * x('1') - 
+0.6008043750540879 * x('2') =g= -1;
+con1542..0.79901844322846693 * x('1') - 
+0.60130651699508231 * x('2') =g= -1;
+con1543..0.9480050049398413 * x('1') + 
+0.31825541725006257 * x('2') =g= -1;
+con1544..0.79864048465808513 * x('1') - 
+0.60180842156378878 * x('2') =g= -1;
+con1545..0.79826221081568471 * x('1') - 
+0.60231008856207557 * x('2') =g= -1;
+con1546..0.94780485795669556 * x('1') + 
+0.31885098593808375 * x('2') =g= -1;
+con1547..0.79788362185059436 * x('1') - 
+0.6028115177919029 * x('2') =g= -1;
+con1548..0.79750471791226574 * x('1') - 
+0.60331270905532686 * x('2') =g= -1;
+con1549..0.94760433681727285 * x('1') + 
+0.31944642875621021 * x('2') =g= -1;
+con1550..0.7971254991502752 * x('1') - 
+0.60381366215449661 * x('2') =g= -1;
+con1551..0.79674596571432355 * x('1') - 
+0.60431437689165557 * x('2') =g= -1;
+con1552..0.94740344160073109 * x('1') + 
+0.32004174546938419 * x('2') =g= -1;
+con1553..0.79636611775423527 * x('1') - 
+0.60481485306914173 * x('2') =g= -1;
+con1554..0.79598595541996087 * x('1') - 
+0.6053150904893847 * x('2') =g= -1;
+con1555..0.94720217238637583 * x('1') + 
+0.320636935842598 * x('2') =g= -1;
+con1556..0.79560547886157162 * x('1') - 
+0.60581508895491321 * x('2') =g= -1;
+con1557..0.79522468822926573 * x('1') - 
+0.60631484826834581 * x('2') =g= -1;
+con1558..0.94700052925366029 * x('1') + 
+0.32123199964089394 * x('2') =g= -1;
+con1559..0.79484358367336561 * x('1') - 
+0.60681436823239565 * x('2') =g= -1;
+con1560..0.79446216534431413 * x('1') - 
+0.6073136486498748 * x('2') =g= -1;
+con1561..0.94679851228218526 * x('1') + 
+0.32182693662936396 * x('2') =g= -1;
+con1562..0.79408043339268219 * x('1') - 
+0.60781268932368471 * x('2') =g= -1;
+con1563..0.79369838796916181 * x('1') - 
+0.60831149005682428 * x('2') =g= -1;
+con1564..0.94659612155169925 * x('1') + 
+0.32242174657315015 * x('2') =g= -1;
+con1565..0.79331602922456979 * x('1') - 
+0.60881005065238658 * x('2') =g= -1;
+con1566..0.79293335730984582 * x('1') - 
+0.60930837091356005 * x('2') =g= -1;
+con1567..0.94639335714209805 * x('1') + 
+0.32301642923744495 * x('2') =g= -1;
+con1568..0.79255037237605475 * x('1') - 
+0.60980645064362593 * x('2') =g= -1;
+con1569..0.79216707457438362 * x('1') - 
+0.61030428964596251 * x('2') =g= -1;
+con1570..0.94619021913342516 * x('1') + 
+0.32361098438749081 * x('2') =g= -1;
+con1571..0.79178346405614342 * x('1') - 
+0.61080188772404254 * x('2') =g= -1;
+con1572..0.79139954097276854 * x('1') - 
+0.6112992446814336 * x('2') =g= -1;
+con1573..0.94598670760587167 * x('1') + 
+0.32420541178858064 * x('2') =g= -1;
+con1574..0.79101530547581633 * x('1') - 
+0.6117963603217994 * x('2') =g= -1;
+con1575..0.79063075771696878 * x('1') - 
+0.61229323444889683 * x('2') =g= -1;
+con1576..0.94578282263977576 * x('1') + 
+0.32479971120605783 * x('2') =g= -1;
+con1577..0.79024589784803001 * x('1') - 
+0.61278986686657999 * x('2') =g= -1;
+con1578..0.78986072602092705 * x('1') - 
+0.6132862573787986 * x('2') =g= -1;
+con1579..0.94557856431562326 * x('1') + 
+0.32539388240531619 * x('2') =g= -1;
+con1580..0.78947524238771216 * x('1') - 
+0.61378240578959498 * x('2') =g= -1;
+con1581..0.78908944710055717 * x('1') - 
+0.614278311903112 * x('2') =g= -1;
+con1582..0.94537393271404746 * x('1') + 
+0.32598792515180008 * x('2') =g= -1;
+con1583..0.78870334031176059 * x('1') - 
+0.61477397552358315 * x('2') =g= -1;
+con1584..0.78831692217374161 * x('1') - 
+0.61526939645534051 * x('2') =g= -1;
+con1585..0.94516892791582885 * x('1') + 
+0.32658183921100487 * x('2') =g= -1;
+con1586..0.78793019283904253 * x('1') - 
+0.61576457450281208 * x('2') =g= -1;
+con1587..0.78754315246033013 * x('1') - 
+0.61625950947051944 * x('2') =g= -1;
+con1588..0.94496355000189547 * x('1') + 
+0.3271756243484763 * x('2') =g= -1;
+con1589..0.78715580119039208 * x('1') - 
+0.61675420116308244 * x('2') =g= -1;
+con1590..0.78676813918213961 * x('1') - 
+0.61724864938521606 * x('2') =g= -1;
+con1591..0.94475779905332224 * x('1') + 
+0.32776928032981134 * x('2') =g= -1;
+con1592..0.78638016658860654 * x('1') - 
+0.61774285394173145 * x('2') =g= -1;
+con1593..0.78599188356294925 * x('1') - 
+0.6182368146375361 * x('2') =g= -1;
+con1594..0.94455167515133165 * x('1') + 
+0.32836280692065778 * x('2') =g= -1;
+con1595..0.78560329025844611 * x('1') - 
+0.61873053127763433 * x('2') =g= -1;
+con1596..0.78521438682849964 * x('1') - 
+0.61922400366712471 * x('2') =g= -1;
+con1597..0.94434517837729348 * x('1') + 
+0.32895620388671465 * x('2') =g= -1;
+con1598..0.78482517342663327 * x('1') - 
+0.61971723161120429 * x('2') =g= -1;
+con1599..0.78443565020649253 * x('1') - 
+0.6202102149151667 * x('2') =g= -1;
+con1600..0.94413830881272442 * x('1') + 
+0.32954947099373194 * x('2') =g= -1;
+con1601..0.78404581732184764 * x('1') - 
+0.6207029533843994 * x('2') =g= -1;
+con1602..0.78365567492658728 * x('1') - 
+0.62119544682439121 * x('2') =g= -1;
+con1603..0.9439310665392886 * x('1') + 
+0.33014260800751105 * x('2') =g= -1;
+con1604..0.7832652231747258 * x('1') - 
+0.62168769504072297 * x('2') =g= -1;
+con1605..0.78287446222039803 * x('1') - 
+0.62217969783907501 * x('2') =g= -1;
+con1606..0.94372345163879712 * x('1') + 
+0.33073561469390472 * x('2') =g= -1;
+con1607..0.78248339221786034 * x('1') - 
+0.62267145502522447 * x('2') =g= -1;
+con1608..0.78209201332149303 * x('1') - 
+0.62316296640504365 * x('2') =g= -1;
+con1609..0.9435154641932082 * x('1') + 
+0.33132849081881699 * x('2') =g= -1;
+con1610..0.78170032568579662 * x('1') - 
+0.62365423178450363 * x('2') =g= -1;
+con1611..0.78130832946539419 * x('1') - 
+0.62414525096967222 * x('2') =g= -1;
+con1612..0.94330710428462716 * x('1') + 
+0.33192123614820368 * x('2') =g= -1;
+con1613..0.78091602481502975 * x('1') - 
+0.62463602376671479 * x('2') =g= -1;
+con1614..0.78052341188957164 * x('1') - 
+0.62512654998189132 * x('2') =g= -1;
+con1615..0.94309837199530633 * x('1') + 
+0.33251385044807213 * x('2') =g= -1;
+con1616..0.78013049084400576 * x('1') - 
+0.62561682942156427 * x('2') =g= -1;
+con1617..0.77973726183344372 * x('1') - 
+0.62610686189218823 * x('2') =g= -1;
+con1618..0.942889267407645 * x('1') + 
+0.33310633348448138 * x('2') =g= -1;
+con1619..0.77934372501311633 * x('1') - 
+0.62659664720031827 * x('2') =g= -1;
+con1620..0.7789498805383761 * x('1') - 
+0.62708618515260695 * x('2') =g= -1;
+con1621..0.9426797906041896 * x('1') + 
+0.33369868502354216 * x('2') =g= -1;
+con1622..0.7785557285646989 * x('1') - 
+0.62757547555580195 * x('2') =g= -1;
+con1623..0.77816126924767837 * x('1') - 
+0.62806451821675313 * x('2') =g= -1;
+con1624..0.94246994166763332 * x('1') + 
+0.33429090483141749 * x('2') =g= -1;
+con1625..0.77776650274303327 * x('1') - 
+0.62855331294240357 * x('2') =g= -1;
+con1626..0.77737142920660152 * x('1') - 
+0.62904185953979708 * x('2') =g= -1;
+con1627..0.94225972068081632 * x('1') + 
+0.33488299267432198 * x('2') =g= -1;
+con1628..0.77697604879434201 * x('1') - 
+0.62953015781607502 * x('2') =g= -1;
+con1629..0.77658036166233657 * x('1') - 
+0.63001820757847504 * x('2') =g= -1;
+con1630..0.94204912772672555 * x('1') + 
+0.33547494831852265 * x('2') =g= -1;
+con1631..0.77618436796678658 * x('1') - 
+0.63050600863433492 * x('2') =g= -1;
+con1632..0.77578806786401477 * x('1') - 
+0.63099356079108992 * x('2') =g= -1;
+con1633..0.94183816288849498 * x('1') + 
+0.33606677153033848 * x('2') =g= -1;
+con1634..0.77539146151046423 * x('1') - 
+0.63148086385627411 * x('2') =g= -1;
+con1635..0.77499454906270093 * x('1') - 
+0.63196791763751803 * x('2') =g= -1;
+con1636..0.9416268262494053 * x('1') + 
+0.33665846207614086 * x('2') =g= -1;
+con1637..0.77459733067740988 * x('1') - 
+0.63245472194255248 * x('2') =g= -1;
+con1638..0.77419980651139708 * x('1') - 
+0.63294127657920629 * x('2') =g= -1;
+con1639..0.94141511789288379 * x('1') + 
+0.33725001972235347 * x('2') =g= -1;
+con1640..0.77380197672158979 * x('1') - 
+0.63342758135540655 * x('2') =g= -1;
+con1641..0.77340384146503494 * x('1') - 
+0.63391363607918005 * x('2') =g= -1;
+con1642..0.9412030379025047 * x('1') + 
+0.33784144423545254 * x('2') =g= -1;
+con1643..0.77300540089890246 * x('1') - 
+0.63439944055864927 * x('2') =g= -1;
+con1644..0.77260665518047877 * x('1') - 
+0.63488499460204029 * x('2') =g= -1;
+con1645..0.94099058636198885 * x('1') + 
+0.33843273538196678 * x('2') =g= -1;
+con1646..0.7722076044671744 * x('1') - 
+0.63537029801767397 * x('2') =g= -1;
+con1647..0.77180824891652 * x('1') - 
+0.63585535061397036 * x('2') =g= -1;
+con1648..0.94077776335520402 * x('1') + 
+0.33902389292847757 * x('2') =g= -1;
+con1649..0.77140858868616313 * x('1') - 
+0.63634015219945217 * x('2') =g= -1;
+con1650..0.77100862393387593 * x('1') - 
+0.63682470258273671 * x('2') =g= -1;
+con1651..0.94056456896616414 * x('1') + 
+0.33961491664161908 * x('2') =g= -1;
+con1652..0.77060835481754819 * x('1') - 
+0.63730900157254322 * x('2') =g= -1;
+con1653..0.77020778149519031 * x('1') - 
+0.63779304897768929 * x('2') =g= -1;
+con1654..0.9403510032790301 * x('1') + 
+0.34020580628807828 * x('2') =g= -1;
+con1655..0.76980690412493269 * x('1') - 
+0.63827684460709266 * x('2') =g= -1;
+con1656..0.76940572286502695 * x('1') - 
+0.63876038826976844 * x('2') =g= -1;
+con1657..0.94013706637810945 * x('1') + 
+0.34079656163459493 * x('2') =g= -1;
+con1658..0.76900423787384331 * x('1') - 
+0.6392436797748331 * x('2') =g= -1;
+con1659..0.76860244930987232 * x('1') - 
+0.63972671893150213 * x('2') =g= -1;
+con1660..0.93992275834785588 * x('1') + 
+0.34138718244796212 * x('2') =g= -1;
+con1661..0.76820035733172443 * x('1') - 
+0.64020950554909051 * x('2') =g= -1;
+con1662..0.76779796209812912 * x('1') - 
+0.64069203943701369 * x('2') =g= -1;
+con1663..0.93970807927286981 * x('1') + 
+0.34197766849502576 * x('2') =g= -1;
+con1664..0.76739526376793743 * x('1') - 
+0.64117432040478484 * x('2') =g= -1;
+con1665..0.76699226250011843 * x('1') - 
+0.64165634826201901 * x('2') =g= -1;
+con1666..0.93949302923789835 * x('1') + 
+0.34256801954268501 * x('2') =g= -1;
+con1667..0.76658895845376074 * x('1') - 
+0.64213812281843097 * x('2') =g= -1;
+con1668..0.76618535178807456 * x('1') - 
+0.64261964388383308 * x('2') =g= -1;
+con1669..0.93927760832783469 * x('1') + 
+0.34315823535789247 * x('2') =g= -1;
+con1670..0.76578144266238579 * x('1') - 
+0.64310091126814239 * x('2') =g= -1;
+con1671..0.76537723123614376 * x('1') - 
+0.64358192478137122 * x('2') =g= -1;
+con1672..0.93906181662771859 * x('1') + 
+0.34374831570765402 * x('2') =g= -1;
+con1673..0.76497271766891461 * x('1') - 
+0.644062684233635 * x('2') =g= -1;
+con1674..0.76456790212038406 * x('1') - 
+0.64454318943514943 * x('2') =g= -1;
+con1675..0.93884565422273625 * x('1') + 
+0.34433826035902892 * x('2') =g= -1;
+con1676..0.76416278475035837 * x('1') - 
+0.64502344019622837 * x('2') =g= -1;
+con1677..0.76375736571876174 * x('1') - 
+0.64550343632728846 * x('2') =g= -1;
+con1678..0.93862912119822006 * x('1') + 
+0.34492806907913021 * x('2') =g= -1;
+con1679..0.76335164518563747 * x('1') - 
+0.64598317763884583 * x('2') =g= -1;
+con1680..0.76294562331114779 * x('1') - 
+0.64646266394151819 * x('2') =g= -1;
+con1681..0.93841221763964866 * x('1') + 
+0.34551774163512444 * x('2') =g= -1;
+con1682..0.76253930025557581 * x('1') - 
+0.64694189504602095 * x('2') =g= -1;
+con1683..0.76213267617931979 * x('1') - 
+0.64742087076317523 * x('2') =g= -1;
+con1684..0.93819494363264733 * x('1') + 
+0.34610727779423189 * x('2') =g= -1;
+con1685..0.76172575124290076 * x('1') - 
+0.64789959090389815 * x('2') =g= -1;
+con1686..0.76131852560695601 * x('1') - 
+0.64837805527921022 * x('2') =g= -1;
+con1687..0.93797729926298723 * x('1') + 
+0.34669667732372694 * x('2') =g= -1;
+con1688..0.76091099943224194 * x('1') - 
+0.6488562637002333 * x('2') =g= -1;
+con1689..0.76050317287963543 * x('1') - 
+0.64933421597818741 * x('2') =g= -1;
+con1690..0.93775928461658586 * x('1') + 
+0.34728593999093749 * x('2') =g= -1;
+con1691..0.76009504611012835 * x('1') - 
+0.64981191192439813 * x('2') =g= -1;
+con1692..0.75968661928483483 * x('1') - 
+0.65028935135028809 * x('2') =g= -1;
+con1693..0.93754089977950694 * x('1') + 
+0.34787506556324588 * x('2') =g= -1;
+con1694..0.75927789256498524 * x('1') - 
+0.65076653406738327 * x('2') =g= -1;
+con1695..0.75886886611192828 * x('1') - 
+0.65124345988731147 * x('2') =g= -1;
+con1696..0.93732214483796006 * x('1') + 
+0.3484640538080882 * x('2') =g= -1;
+con1697..0.75845954008713279 * x('1') - 
+0.65172012862179962 * x('2') =g= -1;
+con1698..0.75804991465218408 * x('1') - 
+0.65219654008267824 * x('2') =g= -1;
+con1699..0.93710301987830125 * x('1') + 
+0.34905290449295512 * x('2') =g= -1;
+con1700..0.75763998996878623 * x('1') - 
+0.65267269408187867 * x('2') =g= -1;
+con1701..0.75722976619876092 * x('1') - 
+0.65314859043143458 * x('2') =g= -1;
+con1702..0.93688352498703253 * x('1') + 
+0.34964161738539129 * x('2') =g= -1;
+con1703..0.75681924350405005 * x('1') - 
+0.65362422894347894 * x('2') =g= -1;
+con1704..0.75640842204670988 * x('1') - 
+0.65409960943025069 * x('2') =g= -1;
+con1705..0.93666366025080183 * x('1') + 
+0.35023019225299595 * x('2') =g= -1;
+con1706..0.75599730198891812 * x('1') - 
+0.65457473170408631 * x('2') =g= -1;
+con1707..0.7555858834929684 * x('1') - 
+0.6550495955774267 * x('2') =g= -1;
+con1708..0.93644342575640316 * x('1') + 
+0.35081862886342274 * x('2') =g= -1;
+con1709..0.75517416672127213 * x('1') - 
+0.65552420086281504 * x('2') =g= -1;
+con1710..0.75476215183636064 * x('1') - 
+0.65599854737289354 * x('2') =g= -1;
+con1711..0.9362228215907763 * x('1') + 
+0.35140692698437997 * x('2') =g= -1;
+con1712..0.75434983900087904 * x('1') - 
+0.65647263492041152 * x('2') =g= -1;
+con1713..0.75393722837759392 * x('1') - 
+0.65694646331821571 * x('2') =g= -1;
+con1714..0.93600184784100748 * x('1') + 
+0.35199508638363053 * x('2') =g= -1;
+con1715..0.7535243201293873 * x('1') - 
+0.65742003237925795 * x('2') =g= -1;
+con1716..0.75311111441925871 * x('1') - 
+0.65789334191659221 * x('2') =g= -1;
+con1717..0.93578050459432827 * x('1') + 
+0.35258310682899202 * x('2') =g= -1;
+con1718..0.75269761141032665 * x('1') - 
+0.6583663917433733 * x('2') =g= -1;
+con1719..0.75228381126582544 * x('1') - 
+0.65883918167286004 * x('2') =g= -1;
+con1720..0.93555879193811631 * x('1') + 
+0.35317098808833708 * x('2') =g= -1;
+con1721..0.75186971414910708 * x('1') - 
+0.65931171151841372 * x('2') =g= -1;
+con1722..0.75145532022364037 * x('1') - 
+0.65978398109349856 * x('2') =g= -1;
+con1723..0.93533670995989526 * x('1') + 
+0.35375872992959306 * x('2') =g= -1;
+con1724..0.75104062965301299 * x('1') - 
+0.6602559902116798 * x('2') =g= -1;
+con1725..0.75062564260092801 * x('1') - 
+0.66072773868662715 * x('2') =g= -1;
+con1726..0.93511425874733423 * x('1') + 
+0.35434633212074262 * x('2') =g= -1;
+con1727..0.75021035923120605 * x('1') - 
+0.66119922633211303 * x('2') =g= -1;
+con1728..0.74979477970778474 * x('1') - 
+0.66167045296201232 * x('2') =g= -1;
+con1729..0.93489143838824829 * x('1') + 
+0.35493379442982342 * x('2') =g= -1;
+con1730..0.74937890419471798 * x('1') - 
+0.66214141839030405 * x('2') =g= -1;
+con1731..0.74896273285617843 * x('1') - 
+0.66261212243106804 * x('2') =g= -1;
+con1732..0.93466824897059819 * x('1') + 
+0.35552111662492819 * x('2') =g= -1;
+con1733..0.74854626585645356 * x('1') - 
+0.66308256489848949 * x('2') =g= -1;
+con1734..0.74812950335994766 * x('1') - 
+0.66355274560685684 * x('2') =g= -1;
+con1735..0.93444469058249047 * x('1') + 
+0.35610829847420511 * x('2') =g= -1;
+con1736..0.74771244553118421 * x('1') - 
+0.6640226643705589 * x('2') =g= -1;
+con1737..0.74729509253479864 * x('1') - 
+0.66449232100409306 * x('2') =g= -1;
+con1738..0.93422076331217718 * x('1') + 
+0.35669533974585793 * x('2') =g= -1;
+con1739..0.74687744453554772 * x('1') - 
+0.66496171532205506 * x('2') =g= -1;
+con1740..0.74645950169830166 * x('1') - 
+0.66543084713914724 * x('2') =g= -1;
+con1741..0.93399646724805607 * x('1') + 
+0.35728224020814553 * x('2') =g= -1;
+con1742..0.74604126418804817 * x('1') - 
+0.66589971627017452 * x('2') =g= -1;
+con1743..0.74562273216989028 * x('1') - 
+0.66636832253004652 * x('2') =g= -1;
+con1744..0.93377180247867031 * x('1') + 
+0.35786899962938262 * x('2') =g= -1;
+con1745..0.74520390580904927 * x('1') - 
+0.66683666573377443 * x('2') =g= -1;
+con1746..0.74478478527086089 * x('1') - 
+0.66730474569647535 * x('2') =g= -1;
+con1747..0.93354676909270895 * x('1') + 
+0.35845561777793961 * x('2') =g= -1;
+con1748..0.74436537072077691 * x('1') - 
+0.66777256223337023 * x('2') =g= -1;
+con1749..0.74394566232436754 * x('1') - 
+0.66824011515978154 * x('2') =g= -1;
+con1750..0.93332136717900627 * x('1') + 
+0.35904209442224255 * x('2') =g= -1;
+con1751..0.74352566024731481 * x('1') - 
+0.66870740429114028 * x('2') =g= -1;
+con1752..0.7431053646554211 * x('1') - 
+0.66917442944297689 * x('2') =g= -1;
+con1753..0.9330955968265422 * x('1') + 
+0.35962842933077338 * x('2') =g= -1;
+con1754..0.74268477571460179 * x('1') - 
+0.66964119043092896 * x('2') =g= -1;
+con1755..0.74226389359088851 * x('1') - 
+0.67010768707073798 * x('2') =g= -1;
+con1756..0.93286945812444189 * x('1') + 
+0.36021462227207007 * x('2') =g= -1;
+con1757..0.74184271845043082 * x('1') - 
+0.67057391917824749 * x('2') =g= -1;
+con1758..0.74142125045948981 * x('1') - 
+0.67103988656940983 * x('2') =g= -1;
+con1759..0.93264295116197626 * x('1') + 
+0.36080067301472657 * x('2') =g= -1;
+con1760..0.74099948978444641 * x('1') - 
+0.67150558906027746 * x('2') =g= -1;
+con1761..0.74057743659179442 * x('1') - 
+0.67197102646700979 * x('2') =g= -1;
+con1762..0.93241607602856114 * x('1') + 
+0.36138658132739293 * x('2') =g= -1;
+con1763..0.74015509104814414 * x('1') - 
+0.67243619860587034 * x('2') =g= -1;
+con1764..0.73973245332022031 * x('1') - 
+0.67290110529322811 * x('2') =g= -1;
+con1765..0.93218883281375831 * x('1') + 
+0.36197234697877551 * x('2') =g= -1;
+con1766..0.73930952357486512 * x('1') - 
+0.67336574634555468 * x('2') =g= -1;
+con1767..0.73888630197903404 * x('1') - 
+0.67383012157942879 * x('2') =g= -1;
+con1768..0.93196122160727413 * x('1') + 
+0.36255796973763704 * x('2') =g= -1;
+con1769..0.73846278869979776 * x('1') - 
+0.67429423081153372 * x('2') =g= -1;
+con1770..0.73803898390434453 * x('1') - 
+0.67475807385865538 * x('2') =g= -1;
+con1771..0.93173324249896083 * x('1') + 
+0.36314344937279636 * x('2') =g= -1;
+con1772..0.73761488775997353 * x('1') - 
+0.67522165053768946 * x('2') =g= -1;
+con1773..0.73719050043410317 * x('1') - 
+0.67568496066563188 * x('2') =g= -1;
+con1774..0.93150489557881555 * x('1') + 
+0.36372878565312911 * x('2') =g= -1;
+con1775..0.73676582209426433 * x('1') - 
+0.67614800405958664 * x('2') =g= -1;
+con1776..0.73634085290810292 * x('1') - 
+0.67661078053676293 * x('2') =g= -1;
+con1777..0.93127618093698072 * x('1') + 
+0.36431397834756751 * x('2') =g= -1;
+con1778..0.73591559304338172 * x('1') - 
+0.67707328991447291 * x('2') =g= -1;
+con1779..0.73549004266797435 * x('1') - 
+0.67753553201013839 * x('2') =g= -1;
+con1780..0.93104709866374402 * x('1') + 
+0.36489902722510026 * x('2') =g= -1;
+con1781..0.73506420194987343 * x('1') - 
+0.67799750664128233 * x('2') =g= -1;
+con1782..0.73463807105718337 * x('1') - 
+0.67845921362553607 * x('2') =g= -1;
+con1783..0.9308176488495381 * x('1') + 
+0.36548393205477303 * x('2') =g= -1;
+con1784..0.73421165015812362 * x('1') - 
+0.67892065278063618 * x('2') =g= -1;
+con1785..0.7337849394210294 * x('1') - 
+0.67938182392442337 * x('2') =g= -1;
+con1786..0.93058783158494074 * x('1') + 
+0.36606869260568825 * x('2') =g= -1;
+con1787..0.73335793901434898 * x('1') - 
+0.67984272687484593 * x('2') =g= -1;
+con1788..0.73293064910664552 * x('1') - 
+0.6803033614499574 * x('2') =g= -1;
+con1789..0.93035764696067491 * x('1') + 
+0.36665330864700529 * x('2') =g= -1;
+con1790..0.73250306986659552 * x('1') - 
+0.6807637274679178 * x('2') =g= -1;
+con1791..0.73207520146299243 * x('1') - 
+0.68122382474699095 * x('2') =g= -1;
+con1792..0.93012709506760849 * x('1') + 
+0.36723777994794066 * x('2') =g= -1;
+con1793..0.73164704406473957 * x('1') - 
+0.68168365310555079 * x('2') =g= -1;
+con1794..0.73121859784085863 * x('1') - 
+0.68214321236207331 * x('2') =g= -1;
+con1795..0.92989617599675412 * x('1') + 
+0.36782210627776801 * x('2') =g= -1;
+con1796..0.73078986296048265 * x('1') - 
+0.68260250233514308 * x('2') =g= -1;
+con1797..0.7303608395928588 * x('1') - 
+0.68306152284345101 * x('2') =g= -1;
+con1798..0.92966488983926987 * x('1') + 
+0.36840628740581804 * x('2') =g= -1;
+con1799..0.72993152790735005 * x('1') - 
+0.68352027370579249 * x('2') =g= -1;
+con1800..0.72950192807343117 * x('1') - 
+0.68397875474107117 * x('2') =g= -1;
+con1801..0.92943323668645839 * x('1') + 
+0.36899032310147895 * x('2') =g= -1;
+con1802..0.72907204026069139 * x('1') - 
+0.68443696576829682 * x('2') =g= -1;
+con1803..0.72864186463883363 * x('1') - 
+0.6848949066065857 * x('2') =g= -1;
+con1804..0.92920121662976729 * x('1') + 
+0.36957421313419631 * x('2') =g= -1;
+con1805..0.7282114013776736 * x('1') - 
+0.68535257707516117 * x('2') =g= -1;
+con1806..0.72778065064714281 * x('1') - 
+0.68580997699335156 * x('2') =g= -1;
+con1807..0.92896882976078887 * x('1') + 
+0.37015795727347323 * x('2') =g= -1;
+con1808..0.72734961261728415 * x('1') - 
+0.68626710618059394 * x('2') =g= -1;
+con1809..0.72691828745825449 * x('1') - 
+0.68672396445643169 * x('2') =g= -1;
+con1810..0.92873607617126064 * x('1') + 
+0.37074155528887026 * x('2') =g= -1;
+con1811..0.72648667534032352 * x('1') - 
+0.68718055164051561 * x('2') =g= -1;
+con1812..0.72605477643387606 * x('1') - 
+0.68763686755260167 * x('2') =g= -1;
+con1813..0.92850295595306431 * x('1') + 
+0.37132500695000575 * x('2') =g= -1;
+con1814..0.72562259090940828 * x('1') - 
+0.68809291201255474 * x('2') =g= -1;
+con1815..0.72519011893753016 * x('1') - 
+0.68854868484034648 * x('2') =g= -1;
+con1816..0.92826946919822695 * x('1') + 
+0.37190831202655589 * x('2') =g= -1;
+con1817..0.72475736068896468 * x('1') - 
+0.6890041858560555 * x('2') =g= -1;
+con1818..0.7243243163345473 * x('1') - 
+0.6894594148798685 * x('2') =g= -1;
+con1819..0.92803561599891971 * x('1') + 
+0.37249147028825452 * x('2') =g= -1;
+con1820..0.72389098604522817 * x('1') - 
+0.68991437173207759 * x('2') =g= -1;
+con1821..0.72345736999206844 * x('1') - 
+0.6903690562330842 * x('2') =g= -1;
+con1822..0.92780139644745885 * x('1') + 
+0.3730744815048937 * x('2') =g= -1;
+con1823..0.72302346834624232 * x('1') - 
+0.69082346820339735 * x('2') =g= -1;
+con1824..0.72258928127903888 * x('1') - 
+0.69127760746363109 * x('2') =g= -1;
+con1825..0.92756681063630497 * x('1') + 
+0.37365734544632351 * x('2') =g= -1;
+con1826..0.72215480896185591 * x('1') - 
+0.6917314738345115 * x('2') =g= -1;
+con1827..0.72172005156620778 * x('1') - 
+0.69218506713686789 * x('2') =g= -1;
+con1828..0.92733185865806356 * x('1') + 
+0.37424006188245174 * x('2') =g= -1;
+con1829..0.72128500926371919 * x('1') - 
+0.69263838719164028 * x('2') =g= -1;
+con1830..0.72084968222612766 * x('1') - 
+0.69309143381987537 * x('2') =g= -1;
+con1831..0.92709654060548419 * x('1') + 
+0.374822630583245 * x('2') =g= -1;
+con1832..0.72041407062528284 * x('1') - 
+0.69354420684272899 * x('2') =g= -1;
+con1833..0.71997817463314828 * x('1') - 
+0.69399670608146247 * x('2') =g= -1;
+con1834..0.92686085657146144 * x('1') + 
+0.37540505131872787 * x('2') =g= -1;
+con1835..0.71954199442179811 * x('1') - 
+0.69444893135744767 * x('2') =g= -1;
+con1836..0.71910553016341849 * x('1') - 
+0.69490088249216442 * x('2') =g= -1;
+con1837..0.92662480664903413 * x('1') + 
+0.37598732385898348 * x('2') =g= -1;
+con1838..0.71866878203031037 * x('1') - 
+0.69535255930719797 * x('2') =g= -1;
+con1839..0.71823175019488239 * x('1') - 
+0.69580396162424663 * x('2') =g= -1;
+con1840..0.92638839093138547 * x('1') + 
+0.37656944797415337 * x('2') =g= -1;
+con1841..0.71779443482965932 * x('1') - 
+0.69625508926511259 * x('2') =g= -1;
+con1842..0.71735683610727574 * x('1') - 
+0.69670594205170888 * x('2') =g= -1;
+con1843..0.92615160951184305 * x('1') + 
+0.37715142343443769 * x('2') =g= -1;
+con1844..0.7169189542004778 * x('1') - 
+0.69715651980605708 * x('2') =g= -1;
+con1845..0.71648078928212589 * x('1') - 
+0.69760682235028482 * x('2') =g= -1;
+con1846..0.9259144624838791 * x('1') + 
+0.37773325001009533 * x('2') =g= -1;
+con1847..0.71604234152518809 * x('1') - 
+0.69805684950663294 * x('2') =g= -1;
+con1848..0.71560361110274817 * x('1') - 
+0.69850660109744622 * x('2') =g= -1;
+con1849..0.92567694994110994 * x('1') + 
+0.37831492747144391 * x('2') =g= -1;
+con1850..0.71516459818799905 * x('1') - 
+0.69895607694518103 * x('2') =g= -1;
+con1851..0.71472530295424608 * x('1') - 
+0.69940527687240195 * x('2') =g= -1;
+con1852..0.92543907197729613 * x('1') + 
+0.37889645558885998 * x('2') =g= -1;
+con1853..0.71428572557490499 * x('1') - 
+0.69985420070178295 * x('2') =g= -1;
+con1854..0.71384586622350499 * x('1') - 
+0.70030284825610534 * x('2') =g= -1;
+con1855..0.92520082868634257 * x('1') + 
+0.37947783413277897 * x('2') =g= -1;
+con1856..0.71340572507368494 * x('1') - 
+0.70075121935826123 * x('2') =g= -1;
+con1857..0.71296530229919441 * x('1') - 
+0.70119931383125178 * x('2') =g= -1;
+con1858..0.92496222016229857 * x('1') + 
+0.38005906287369523 * x('2') =g= -1;
+con1859..0.71252459807389723 * x('1') - 
+0.70164713149818492 * x('2') =g= -1;
+con1860..0.71208361257176356 * x('1') - 
+0.70209467218228239 * x('2') =g= -1;
+con1861..0.92472324649935733 * x('1') + 
+0.38064014158216258 * x('2') =g= -1;
+con1862..0.71164234596687914 * x('1') - 
+0.70254193570687062 * x('2') =g= -1;
+con1863..0.71120079843343798 * x('1') - 
+0.70298892189538831 * x('2') =g= -1;
+con1864..0.9244839077918563 * x('1') + 
+0.38122107002879385 * x('2') =g= -1;
+con1865..0.71075897014574541 * x('1') - 
+0.70343563057138314 * x('2') =g= -1;
+con1866..0.71031686127821891 * x('1') - 
+0.70388206155851096 * x('2') =g= -1;
+con1867..0.92424420413427699 * x('1') + 
+0.38180184798426114 * x('2') =g= -1;
+con1868..0.70987447200538545 * x('1') - 
+0.70432821468053886 * x('2') =g= -1;
+con1869..0.70943180250188276 * x('1') - 
+0.70477408976134304 * x('2') =g= -1;
+con1870..0.92400413562124517 * x('1') + 
+0.38238247521929608 * x('2') =g= -1;
+con1871..0.70898885294245961 * x('1') - 
+0.70521968662490941 * x('2') =g= -1;
+con1872..0.70854562350197436 * x('1') - 
+0.70566500509533447 * x('2') =g= -1;
+con1873..0.92376370234753036 * x('1') + 
+0.38296295150468979 * x('2') =g= -1;
+con1874..0.70810211435539805 * x('1') - 
+0.70611004499682262 * x('2') =g= -1;
+con1875..0.70765832567781006 * x('1') - 
+0.70655480615369004 * x('2') =g= -1;
+con1876..0.9235229044080463 * x('1') + 
+0.38354327661129278 * x('2') =g= -1;
+con1877..0.70721425764440082 * x('1') - 
+0.70699928839036263 * x('2') =g= -1;
+con1878..0.70676991043047033 * x('1') - 
+0.70744349153137664 * x('2') =g= -1;
+con1879..0.92328174189785051 * x('1') + 
+0.38412345031001566 * x('2') =g= -1;
+con1880..0.70632528421143137 * x('1') - 
+0.70788741540137623 * x('2') =g= -1;
+con1881..0.70588037916280255 * x('1') - 
+0.70833105982512024 * x('2') =g= -1;
+con1882..0.9230402149121445 * x('1') + 
+0.38470347237182839 * x('2') =g= -1;
+con1883..0.70543519546021682 * x('1') - 
+0.7087744246274732 * x('2') =g= -1;
+con1884..0.70498973327941461 * x('1') - 
+0.70921750963341268 * x('2') =g= -1;
+con1885..0.92279832354627378 * x('1') + 
+0.38528334256776092 * x('2') =g= -1;
+con1886..0.70454399279624647 * x('1') - 
+0.7096603146680267 * x('2') =g= -1;
+con1887..0.70409797418667441 * x('1') - 
+0.71010283955651188 * x('2') =g= -1;
+con1888..0.92255606789572753 * x('1') + 
+0.38586306066890319 * x('2') =g= -1;
+con1889..0.70365167762676861 * x('1') - 
+0.71054508412417727 * x('2') =g= -1;
+con1890..0.70320510329270935 * x('1') - 
+0.71098704819644221 * x('2') =g= -1;
+con1891..0.92231344805613891 * x('1') + 
+0.38644262644640531 * x('2') =g= -1;
+con1892..0.70275825136078685 * x('1') - 
+0.71142873159883635 * x('2') =g= -1;
+con1893..0.70231112200739998 * x('1') - 
+0.71187013415700118 * x('2') =g= -1;
+con1894..0.92207046412328453 * x('1') + 
+0.38702203967147736 * x('2') =g= -1;
+con1895..0.70186371540905945 * x('1') - 
+0.71231125569668685 * x('2') =g= -1;
+con1896..0.70141603174238298 * x('1') - 
+0.71275209604375656 * x('2') =g= -1;
+con1897..0.92182711619308522 * x('1') + 
+0.38760130011538946 * x('2') =g= -1;
+con1898..0.70096807118409865 * x('1') - 
+0.71319265502418372 * x('2') =g= -1;
+con1899..0.70051983391104322 * x('1') - 
+0.71363293246405357 * x('2') =g= -1;
+con1900..0.92158340436160491 * x('1') + 
+0.38818040754947247 * x('2') =g= -1;
+con1901..0.70007132010016504 * x('1') - 
+0.71407292818955992 * x('2') =g= -1;
+con1902..0.69962252992851726 * x('1') - 
+0.71451264202701203 * x('2') =g= -1;
+con1903..0.92133932872505175 * x('1') + 
+0.38875936174511738 * x('2') =g= -1;
+con1904..0.69917346357326593 * x('1') - 
+0.71495207380282699 * x('2') =g= -1;
+con1905..0.69872412121168637 * x('1') - 
+0.715391223343533 * x('2') =g= -1;
+con1906..0.92109488937977713 * x('1') + 
+0.38933816247377562 * x('2') =g= -1;
+con1907..0.69827450302115857 * x('1') - 
+0.71583009047577351 * x('2') =g= -1;
+con1908..0.6978246091791761 * x('1') - 
+0.7162686750262991 * x('2') =g= -1;
+con1909..0.92085008642227617 * x('1') + 
+0.38991680950695945 * x('2') =g= -1;
+con1910..0.69737443986333902 * x('1') - 
+0.71670697682197437 * x('2') =g= -1;
+con1911..0.69692399525135584 * x('1') - 
+0.71714499568977552 * x('2') =g= -1;
+con1912..0.92060491994918747 * x('1') + 
+0.3904953026162416 * x('2') =g= -1;
+con1913..0.69647327552104632 * x('1') - 
+0.71758273145678797 * x('2') =g= -1;
+con1914..0.69602228085033446 * x('1') - 
+0.71802018395021328 * x('2') =g= -1;
+con1915..0.92035939005729317 * x('1') + 
+0.39107364157325558 * x('2') =g= -1;
+con1916..0.69557101141725719 * x('1') - 
+0.71845735299736047 * x('2') =g= -1;
+con1917..0.69511946739995745 * x('1') - 
+0.71889423842565292 * x('2') =g= -1;
+con1918..0.92011349684351895 * x('1') + 
+0.39165182614969585 * x('2') =g= -1;
+con1919..0.6946676489766872 * x('1') - 
+0.71933084006262527 * x('2') =g= -1;
+con1920..0.69421555632580589 * x('1') - 
+0.71976715773592492 * x('2') =g= -1;
+con1921..0.91986724040493373 * x('1') + 
+0.39222985611731781 * x('2') =g= -1;
+con1922..0.69376318962578343 * x('1') - 
+0.72020319127330956 * x('2') =g= -1;
+con1923..0.69331054905519574 * x('1') - 
+0.72063894050265076 * x('2') =g= -1;
+con1924..0.91962062083874996 * x('1') + 
+0.39280773124793772 * x('2') =g= -1;
+con1925..0.692857634792727 * x('1') - 
+0.72107440525193245 * x('2') =g= -1;
+con1926..0.69240444701717196 * x('1') - 
+0.72150958534924836 * x('2') =g= -1;
+con1927..0.91937363824232343 * x('1') + 
+0.39338545131343311 * x('2') =g= -1;
+con1928..0.69195098590742898 * x('1') - 
+0.72194448062280869 * x('2') =g= -1;
+con1929..0.69149725164250853 * x('1') - 
+0.72237909090093211 * x('2') =g= -1;
+con1930..0.91912629271315305 * x('1') + 
+0.3939630160857428 * x('2') =g= -1;
+con1931..0.69104324440152665 * x('1') - 
+0.72281341601205207 * x('2') =g= -1;
+con1932..0.69058896436370687 * x('1') - 
+0.72324745578471472 * x('2') =g= -1;
+con1933..0.91887858434888137 * x('1') + 
+0.39454042533686667 * x('2') =g= -1;
+con1934..0.69013441170838252 * x('1') - 
+0.72368121004757668 * x('2') =g= -1;
+con1935..0.68967958661499251 * x('1') - 
+0.72411467862940959 * x('2') =g= -1;
+con1936..0.91863051324729383 * x('1') + 
+0.39511767883886628 * x('2') =g= -1;
+con1937..0.68922448926308399 * x('1') - 
+0.72454786135909677 * x('2') =g= -1;
+con1938..0.6887691198323117 * x('1') - 
+0.72498075806563489 * x('2') =g= -1;
+con1939..0.91838207950631923 * x('1') + 
+0.39569477636386452 * x('2') =g= -1;
+con1940..0.68831347850243763 * x('1') - 
+0.7254133685781331 * x('2') =g= -1;
+con1941..0.68785756545333043 * x('1') - 
+0.72584569272581434 * x('2') =g= -1;
+con1942..0.91813328322402954 * x('1') + 
+0.39627171768404573 * x('2') =g= -1;
+con1943..0.68740138086496805 * x('1') - 
+0.72627773033801268 * x('2') =g= -1;
+con1944..0.68694492491743375 * x('1') - 
+0.72670948124417734 * x('2') =g= -1;
+con1945..0.91788412449863965 * x('1') + 
+0.3968485025716561 * x('2') =g= -1;
+con1946..0.68648819779091774 * x('1') - 
+0.72714094527387041 * x('2') =g= -1;
+con1947..0.68603119966572002 * x('1') - 
+0.72757212225676493 * x('2') =g= -1;
+con1948..0.91763460342850789 * x('1') + 
+0.3974251307990036 * x('2') =g= -1;
+con1949..0.68557393072224304 * x('1') - 
+0.72800301202265172 * x('2') =g= -1;
+con1950..0.68511639114100042 * x('1') - 
+0.72843361440143028 * x('2') =g= -1;
+con1951..0.91738472011213523 * x('1') + 
+0.39800160213845798 * x('2') =g= -1;
+con1952..0.68465858110261046 * x('1') - 
+0.72886392922311649 * x('2') =g= -1;
+con1953..0.68420050078779793 * x('1') - 
+0.72929395631783933 * x('2') =g= -1;
+con1954..0.91713447464816589 * x('1') + 
+0.39857791636245077 * x('2') =g= -1;
+con1955..0.68374215037739627 * x('1') - 
+0.72972369551583971 * x('2') =g= -1;
+con1956..0.68328353005234377 * x('1') - 
+0.73015314664747411 * x('2') =g= -1;
+con1957..0.91688386713538694 * x('1') + 
+0.39915407324347579 * x('2') =g= -1;
+con1958..0.68282463999368559 * x('1') - 
+0.73058230954321202 * x('2') =g= -1;
+con1959..0.68236548038257372 * x('1') - 
+0.73101118403363663 * x('2') =g= -1;
+con1960..0.9166328976727286 * x('1') + 
+0.39973007255408871 * x('2') =g= -1;
+con1961..0.68190605140026572 * x('1') - 
+0.73143976994944582 * x('2') =g= -1;
+con1962..0.68144635322812741 * x('1') - 
+0.73186806712144925 * x('2') =g= -1;
+con1963..0.9163815663592636 * x('1') + 
+0.40030591406690769 * x('2') =g= -1;
+con1964..0.68098638604762918 * x('1') - 
+0.73229607538057262 * x('2') =g= -1;
+con1965..0.68052615004034789 * x('1') - 
+0.73272379455785519 * x('2') =g= -1;
+con1966..0.91612987329420792 * x('1') + 
+0.40088159755461289 * x('2') =g= -1;
+con1967..0.6800656453879661 * x('1') - 
+0.73315122448445047 * x('2') =g= -1;
+con1968..0.67960487227227506 * x('1') - 
+0.73357836499162421 * x('2') =g= -1;
+con1969..0.91587781857691986 * x('1') + 
+0.40145712278994716 * x('2') =g= -1;
+con1970..0.67914383087516739 * x('1') - 
+0.73400521591076051 * x('2') =g= -1;
+con1971..0.67868252137864526 * x('1') - 
+0.73443177707335394 * x('2') =g= -1;
+con1972..0.91562540230690093 * x('1') + 
+0.40203248954571552 * x('2') =g= -1;
+con1973..0.67822094396481725 * x('1') - 
+0.73485804831101376 * x('2') =g= -1;
+con1974..0.67775909881589314 * x('1') - 
+0.73528402945546723 * x('2') =g= -1;
+con1975..0.9153726245837952 * x('1') + 
+0.40260769759478565 * x('2') =g= -1;
+con1976..0.67729698611419353 * x('1') - 
+0.73570972033855175 * x('2') =g= -1;
+con1977..0.67683460604214163 * x('1') - 
+0.73613512079222176 * x('2') =g= -1;
+con1978..0.91511948550738931 * x('1') + 
+0.40318274671008808 * x('2') =g= -1;
+con1979..0.67637195878226708 * x('1') - 
+0.73656023064854592 * x('2') =g= -1;
+con1980..0.6759090445172049 * x('1') - 
+0.73698504973970758 * x('2') =g= -1;
+con1981..0.91486598517761286 * x('1') + 
+0.40375763666461573 * x('2') =g= -1;
+con1982..0.67544586342969481 * x('1') - 
+0.7374095778980051 * x('2') =g= -1;
+con1983..0.67498241570258399 * x('1') - 
+0.73783381495585043 * x('2') =g= -1;
+con1984..0.9146121236945377 * x('1') + 
+0.40433236723142468 * x('2') =g= -1;
+con1985..0.67451870151882276 * x('1') - 
+0.73825776074577176 * x('2') =g= -1;
+con1986..0.67405472106146747 * x('1') - 
+0.73868141510041208 * x('2') =g= -1;
+con1987..0.91435790115837845 * x('1') + 
+0.40490693818363377 * x('2') =g= -1;
+con1988..0.67359047451367859 * x('1') - 
+0.73910477785252982 * x('2') =g= -1;
+con1989..0.67312596205872455 * x('1') - 
+0.73952784883499589 * x('2') =g= -1;
+con1990..0.91410331766949227 * x('1') + 
+0.40548134929442475 * x('2') =g= -1;
+con1991..0.67266118387997409 * x('1') - 
+0.73995062788080113 * x('2') =g= -1;
+con1992..0.67219614016090468 * x('1') - 
+0.74037311482304746 * x('2') =g= -1;
+con1993..0.91384837332837865 * x('1') + 
+0.40605560033704274 * x('2') =g= -1;
+con1994..0.6717308310850989 * x('1') - 
+0.74079530949495243 * x('2') =g= -1;
+con1995..0.67126525683623972 * x('1') - 
+0.74121721172985267 * x('2') =g= -1;
+con1996..0.91359306823567987 * x('1') + 
+0.4066296910847958 * x('2') =g= -1;
+con1997..0.67079941759811967 * x('1') - 
+0.74163882136119563 * x('2') =g= -1;
+con1998..0.67033331355463333 * x('1') - 
+0.74206013822254713 * x('2') =g= -1;
+con1999..0.91333740249218009 * x('1') + 
+0.40720362131105542 * x('2') =g= -1;
+con2000..0.66986694488977949 * x('1') - 
+0.74248116214758819 * x('2') =g= -1;
+con2001..0.66940031178766368 * x('1') - 
+0.74290189297011389 * x('2') =g= -1;
+con2002..0.91308137619880636 * x('1') + 
+0.40777739078925634 * x('2') =g= -1;
+con2003..0.66893341443249377 * x('1') - 
+0.74332233052403685 * x('2') =g= -1;
+con2004..0.66846625300858242 * x('1') - 
+0.74374247464338472 * x('2') =g= -1;
+con2005..0.91282498945662771 * x('1') + 
+0.40835099929289681 * x('2') =g= -1;
+con2006..0.66799882770034691 * x('1') - 
+0.74416232516230107 * x('2') =g= -1;
+con2007..0.66753113869230829 * x('1') - 
+0.74458188191504526 * x('2') =g= -1;
+con2008..0.91256824236685574 * x('1') + 
+0.40892444659553873 * x('2') =g= -1;
+con2009..0.66706318616909122 * x('1') - 
+0.74500114473599321 * x('2') =g= -1;
+con2010..0.66659497031542636 * x('1') - 
+0.74542011345963544 * x('2') =g= -1;
+con2011..0.91231113503084404 * x('1') + 
+0.40949773247080751 * x('2') =g= -1;
+con2012..0.66612649131614654 * x('1') - 
+0.74583878792057989 * x('2') =g= -1;
+con2013..0.66565774935618804 * x('1') - 
+0.7462571679535509 * x('2') =g= -1;
+con2014..0.91205366755008865 * x('1') + 
+0.41007085669239213 * x('2') =g= -1;
+con2015..0.66518874462059396 * x('1') - 
+0.7466752533933867 * x('2') =g= -1;
+con2016..0.66471947729450642 * x('1') - 
+0.74709304407504573 * x('2') =g= -1;
+con2017..0.91179584002622749 * x('1') + 
+0.4106438190340459 * x('2') =g= -1;
+con2018..0.66424994756317568 * x('1') - 
+0.74751053983359883 * x('2') =g= -1;
+con2019..0.66378015561195303 * x('1') - 
+0.74792774050423572 * x('2') =g= -1;
+con2020..0.91153765256104091 * x('1') + 
+0.41121661926958536 * x('2') =g= -1;
+con2021..0.66331010162629345 * x('1') - 
+0.74834464592226246 * x('2') =g= -1;
+con2022..0.66283978579175695 * x('1') - 
+0.74876125592309972 * x('2') =g= -1;
+con2023..0.91127910525645106 * x('1') + 
+0.41178925717289167 * x('2') =g= -1;
+con2024..0.66236920829400536 * x('1') - 
+0.74917757034228705 * x('2') =g= -1;
+con2025..0.66189836931880419 * x('1') - 
+0.74959358901547968 * x('2') =g= -1;
+con2026..0.91102019821452251 * x('1') + 
+0.41236173251790975 * x('2') =g= -1;
+con2027..0.66142726905202232 * x('1') - 
+0.75000931177844965 * x('2') =g= -1;
+con2028..0.66095590767963153 * x('1') - 
+0.75042473846708602 * x('2') =g= -1;
+con2029..0.91076093153746152 * x('1') + 
+0.41293404507864845 * x('2') =g= -1;
+con2030..0.66048428538770632 * x('1') - 
+0.75083986891739496 * x('2') =g= -1;
+con2031..0.66001240236242609 * x('1') - 
+0.75125470296549823 * x('2') =g= -1;
+con2032..0.91050130532761642 * x('1') + 
+0.41350619462918153 * x('2') =g= -1;
+con2033..0.65954025879007105 * x('1') - 
+0.75166924044763606 * x('2') =g= -1;
+con2034..0.65906785485702424 * x('1') - 
+0.75208348120016599 * x('2') =g= -1;
+con2035..0.91024131968747757 * x('1') + 
+0.41407818094364646 * x('2') =g= -1;
+con2036..0.65859519074977446 * x('1') - 
+0.75249742505955997 * x('2') =g= -1;
+con2037..0.65812226665490825 * x('1') - 
+0.7529110718624118 * x('2') =g= -1;
+con2038..0.90998097471967709 * x('1') + 
+0.41465000379624561 * x('2') =g= -1;
+con2039..0.6576490827591196 * x('1') - 
+0.75332442144542788 * x('2') =g= -1;
+con2040..0.65717563924920219 * x('1') - 
+0.75373747364543475 * x('2') =g= -1;
+con2041..0.90972027052698889 * x('1') + 
+0.41522166296124557 * x('2') =g= -1;
+con2042..0.65670193631205243 * x('1') - 
+0.75415022829937606 * x('2') =g= -1;
+con2043..0.65622797413467104 * x('1') - 
+0.75456268524431125 * x('2') =g= -1;
+con2044..0.90945920721232887 * x('1') + 
+0.41579315821297769 * x('2') =g= -1;
+con2045..0.65575375290415894 * x('1') - 
+0.75497484431741912 * x('2') =g= -1;
+con2046..0.65527927280772036 * x('1') - 
+0.75538670535599528 * x('2') =g= -1;
+con2047..0.90919778487875458 * x('1') + 
+0.41636448932583808 * x('2') =g= -1;
+con2048..0.65480453403266137 * x('1') - 
+0.7557982681974531 * x('2') =g= -1;
+con2049..0.6543295367663895 * x('1') - 
+0.75620953267932434 * x('2') =g= -1;
+con2050..0.90893600362946536 * x('1') + 
+0.4169356560742874 * x('2') =g= -1;
+con2051..0.65385428119641664 * x('1') - 
+0.75662049863925662 * x('2') =g= -1;
+con2052..0.65337876751035417 * x('1') - 
+0.7570311659150174 * x('2') =g= -1;
+con2053..0.90867386356780222 * x('1') + 
+0.4175066582328516 * x('2') =g= -1;
+con2054..0.65290299589591649 * x('1') - 
+0.75744153434449113 * x('2') =g= -1;
+con2055..0.65242696654091881 * x('1') - 
+0.75785160376568106 * x('2') =g= -1;
+con2056..0.90841136479724782 * x('1') + 
+0.41807749557612117 * x('2') =g= -1;
+con2057..0.65195067963328102 * x('1') - 
+0.75826137401670601 * x('2') =g= -1;
+con2058..0.65147413536101983 * x('1') - 
+0.75867084493580728 * x('2') =g= -1;
+con2059..0.90814850742142628 * x('1') + 
+0.41864816787875186 * x('2') =g= -1;
+con2060..0.65099733391225756 * x('1') - 
+0.75908001636134026 * x('2') =g= -1;
+con2061..0.65052027547521818 * x('1') - 
+0.75948888813177917 * x('2') =g= -1;
+con2062..0.90788529154410358 * x('1') + 
+0.41921867491546472 * x('2') =g= -1;
+con2063..0.65004296023822306 * x('1') - 
+0.75989746008571968 * x('2') =g= -1;
+con2064..0.64956538838969946 * x('1') - 
+0.76030573206187191 * x('2') =g= -1;
+con2065..0.90762171726918695 * x('1') + 
+0.41978901646104577 * x('2') =g= -1;
+con2066..0.64908756011817348 * x('1') - 
+0.76071370389906645 * x('2') =g= -1;
+con2067..0.648609475612273 * x('1') - 
+0.76112137543625213 * x('2') =g= -1;
+con2068..0.90735778470072515 * x('1') + 
+0.42035919229034657 * x('2') =g= -1;
+con2069..0.64813113506072639 * x('1') - 
+0.76152874651249669 * x('2') =g= -1;
+con2070..0.64765253865236527 * x('1') - 
+0.76193581696698476 * x('2') =g= -1;
+con2071..0.9070934939429085 * x('1') + 
+0.42092920217828395 * x('2') =g= -1;
+con2072..0.64717368657611984 * x('1') - 
+0.76234258663902155 * x('2') =g= -1;
+con2073..0.64669457902102245 * x('1') - 
+0.76274905536803028 * x('2') =g= -1;
+con2074..0.90682884510006867 * x('1') + 
+0.42149904589984027 * x('2') =g= -1;
+con2075..0.64621521617620581 * x('1') - 
+0.76315522299355298 * x('2') =g= -1;
+con2076..0.6457355982309031 * x('1') - 
+0.76356108935525113 * x('2') =g= -1;
+con2077..0.90656383827667864 * x('1') + 
+0.42206872323006361 * x('2') =g= -1;
+con2078..0.64525572537445053 * x('1') - 
+0.76396665429290278 * x('2') =g= -1;
+con2079..0.64477559779628069 * x('1') - 
+0.7643719176464091 * x('2') =g= -1;
+con2080..0.90629847357735271 * x('1') + 
+0.42263823394406763 * x('2') =g= -1;
+con2081..0.64429521568593029 * x('1') - 
+0.76477687925578697 * x('2') =g= -1;
+con2082..0.64381457923303687 * x('1') - 
+0.76518153896117203 * x('2') =g= -1;
+con2083..0.90603275110684656 * x('1') + 
+0.42320757781703172 * x('2') =g= -1;
+con2084..0.6433336886273342 * x('1') - 
+0.76558589660282284 * x('2') =g= -1;
+con2085..0.6428525440586611 * x('1') - 
+0.7659899520211132 * x('2') =g= -1;
+con2086..0.90576667097005703 * x('1') + 
+0.42377675462420128 * x('2') =g= -1;
+con2087..0.64237114571695386 * x('1') - 
+0.76639370505653814 * x('2') =g= -1;
+con2088..0.6418894937922498 * x('1') - 
+0.76679715554971206 * x('2') =g= -1;
+con2089..0.905500233272022 * x('1') + 
+0.42434576414088743 * x('2') =g= -1;
+con2090..0.64140758847468549 * x('1') - 
+0.76720030334136891 * x('2') =g= -1;
+con2091..0.64092542995449975 * x('1') - 
+0.76760314827236065 * x('2') =g= -1;
+con2092..0.90523343811792079 * x('1') + 
+0.42491460614246768 * x('2') =g= -1;
+con2093..0.64044301842202911 * x('1') - 
+0.76800569018366027 * x('2') =g= -1;
+con2094..0.6399603540677109 * x('1') - 
+0.76840792891636023 * x('2') =g= -1;
+con2095..0.90496628561307368 * x('1') + 
+0.42548328040438532 * x('2') =g= -1;
+con2096..0.63947743708208216 * x('1') - 
+0.76880986431167209 * x('2') =g= -1;
+con2097..0.63899426765577871 * x('1') - 
+0.76921149621092832 * x('2') =g= -1;
+con2098..0.90469877586294201 * x('1') + 
+0.42605178670214994 * x('2') =g= -1;
+con2099..0.63851084597953844 * x('1') - 
+0.7696128244555791 * x('2') =g= -1;
+con2100..0.63802717224419669 * x('1') - 
+0.77001384888719637 * x('2') =g= -1;
+con2101..0.90443090897312806 * x('1') + 
+0.42662012481133771 * x('2') =g= -1;
+con2102..0.63754324664068818 * x('1') - 
+0.77041456934747188 * x('2') =g= -1;
+con2103..0.63705906936004986 * x('1') - 
+0.77081498567821527 * x('2') =g= -1;
+con2104..0.90416268504937536 * x('1') + 
+0.42718829450759077 * x('2') =g= -1;
+con2105..0.63657464059341318 * x('1') - 
+0.77121509772135999 * x('2') =g= -1;
+con2106..0.63608996053201383 * x('1') - 
+0.77161490531895571 * x('2') =g= -1;
+con2107..0.9038941041975681 * x('1') + 
+0.42775629556661809 * x('2') =g= -1;
+con2108..0.63560502936718377 * x('1') - 
+0.7720144083131748 * x('2') =g= -1;
+con2109..0.63511984729035431 * x('1') - 
+0.77241360654630953 * x('2') =g= -1;
+con2110..0.90362516652373148 * x('1') + 
+0.42832412776419504 * x('2') =g= -1;
+con2111..0.63463441449305746 * x('1') - 
+0.77281249986077094 * x('2') =g= -1;
+con2112..0.63414873116692261 * x('1') - 
+0.77321108809909223 * x('2') =g= -1;
+con2113..0.90335587213403179 * x('1') + 
+0.42889179087616364 * x('2') =g= -1;
+con2114..0.63366279750367849 * x('1') - 
+0.77360937110392614 * x('2') =g= -1;
+con2115..0.63317661369515277 * x('1') - 
+0.77400734871804633 * x('2') =g= -1;
+con2116..0.90308622113477566 * x('1') + 
+0.42945928467843275 * x('2') =g= -1;
+con2117..0.63269017993327159 * x('1') - 
+0.7744050207843467 * x('2') =g= -1;
+con2118..0.63220349641005957 * x('1') - 
+0.77480238714584238 * x('2') =g= -1;
+con2119..0.90281621363241082 * x('1') + 
+0.43002660894697792 * x('2') =g= -1;
+con2120..0.63171656331764137 * x('1') - 
+0.77519944764566773 * x('2') =g= -1;
+con2121..0.63122938084823876 * x('1') - 
+0.77559620212707925 * x('2') =g= -1;
+con2122..0.90254584973352581 * x('1') + 
+0.43059376345784189 * x('2') =g= -1;
+con2123..0.63074194919417137 * x('1') - 
+0.77599265043345433 * x('2') =g= -1;
+con2124..0.63025426854786037 * x('1') - 
+0.77638879240828917 * x('2') =g= -1;
+con2125..0.90227512954484956 * x('1') + 
+0.43116074798713416 * x('2') =g= -1;
+con2126..0.62976633910182023 * x('1') - 
+0.77678462789520442 * x('2') =g= -1;
+con2127..0.62927816104866841 * x('1') - 
+0.77718015673793817 * x('2') =g= -1;
+con2128..0.90200405317325183 * x('1') + 
+0.43172756231103132 * x('2') =g= -1;
+con2129..0.62878973458111787 * x('1') - 
+0.77757537878035166 * x('2') =g= -1;
+con2130..0.62830105989197949 * x('1') - 
+0.77797029386642724 * x('2') =g= -1;
+con2131..0.90173262072574301 * x('1') + 
+0.43229420620577752 * x('2') =g= -1;
+con2132..0.62781213717416451 * x('1') - 
+0.77836490184026674 * x('2') =g= -1;
+con2133..0.62732296662067955 * x('1') - 
+0.77875920254609499 * x('2') =g= -1;
+con2134..0.90146083230947405 * x('1') + 
+0.43286067944768358 * x('2') =g= -1;
+con2135..0.62683354842463013 * x('1') - 
+0.77915319582825748 * x('2') =g= -1;
+con2136..0.62634388277921871 * x('1') - 
+0.77954688153122154 * x('2') =g= -1;
+con2137..0.90118868803173635 * x('1') + 
+0.43342698181312828 * x('2') =g= -1;
+con2138..0.62585396987774744 * x('1') - 
+0.77994025949957446 * x('2') =g= -1;
+con2139..0.62536380991361418 * x('1') - 
+0.78033332957802648 * x('2') =g= -1;
+con2140..0.90091618799996165 * x('1') + 
+0.43399311307855759 * x('2') =g= -1;
+con2141..0.62487340308031492 * x('1') - 
+0.78072609161140905 * x('2') =g= -1;
+con2142..0.62438274957144302 * x('1') - 
+0.78111854544467496 * x('2') =g= -1;
+con2143..0.90064333232172267 * x('1') + 
+0.4345590730204848 * x('2') =g= -1;
+con2144..0.62389184958068855 * x('1') - 
+0.78151069092289926 * x('2') =g= -1;
+con2145..0.62340070330184183 * x('1') - 
+0.78190252789127679 * x('2') =g= -1;
+con2146..0.9003701211047318 * x('1') + 
+0.43512486141549134 * x('2') =g= -1;
+con2147..0.62290931092878532 * x('1') - 
+0.78229405619512782 * x('2') =g= -1;
+con2148..0.62241767265550296 * x('1') - 
+0.7826852756798911 * x('2') =g= -1;
+con2149..0.90009655445684233 * x('1') + 
+0.43569047804022598 * x('2') =g= -1;
+con2150..0.62192578867607573 * x('1') - 
+0.7830761861911274 * x('2') =g= -1;
+con2151..0.62143365918467719 * x('1') - 
+0.78346678757452282 * x('2') =g= -1;
+con2152..0.89982263248604766 * x('1') + 
+0.43625592267140534 * x('2') =g= -1;
+con2153..0.62094128437558316 * x('1') - 
+0.78385707967588147 * x('2') =g= -1;
+con2154..0.62044866444316304 * x('1') - 
+0.78424706234113195 * x('2') =g= -1;
+con2155..0.89954835530048138 * x('1') + 
+0.43682119508581413 * x('2') =g= -1;
+con2156..0.61995579958188407 * x('1') - 
+0.78463673541632428 * x('2') =g= -1;
+con2157..0.61946268998630916 * x('1') - 
+0.7850260987476313 * x('2') =g= -1;
+con2158..0.89927372300841746 * x('1') + 
+0.4373862950603048 * x('2') =g= -1;
+con2159..0.61896933585110026 * x('1') - 
+0.78541515218134661 * x('2') =g= -1;
+con2160..0.61847573737101347 * x('1') - 
+0.78580389556388763 * x('2') =g= -1;
+con2161..0.89899873571827005 * x('1') + 
+0.43795122237179807 * x('2') =g= -1;
+con2162..0.61798189474090215 * x('1') - 
+0.78619232874179368 * x('2') =g= -1;
+con2163..0.61748780815571613 * x('1') - 
+0.78658045156172651 * x('2') =g= -1;
+con2164..0.89872339353859321 * x('1') + 
+0.43851597679728271 * x('2') =g= -1;
+con2165..0.61699347781050073 * x('1') - 
+0.78696826387047092 * x('2') =g= -1;
+con2166..0.6164989039004003 * x('1') - 
+0.78735576551493225 * x('2') =g= -1;
+con2167..0.89844769657808132 * x('1') + 
+0.43908055811381574 * x('2') =g= -1;
+con2168..0.61600408662065043 * x('1') - 
+0.7877429563421422 * x('2') =g= -1;
+con2169..0.6155090261665872 * x('1') - 
+0.78812983619925181 * x('2') =g= -1;
+con2170..0.89817164494556878 * x('1') + 
+0.4396449660985226 * x('2') =g= -1;
+con2171..0.6150137227336423 * x('1') - 
+0.78851640493353503 * x('2') =g= -1;
+con2172..0.61451817651733942 * x('1') - 
+0.78890266239239182 * x('2') =g= -1;
+con2173..0.89789523875003008 * x('1') + 
+0.44020920052859697 * x('2') =g= -1;
+con2174..0.61402238771330298 * x('1') - 
+0.78928860842334103 * x('2') =g= -1;
+con2175..0.61352635651725029 * x('1') - 
+0.7896742428740271 * x('2') =g= -1;
+con2176..0.89761847810057938 * x('1') + 
+0.44077326118130139 * x('2') =g= -1;
+con2177..0.61303008312499496 * x('1') - 
+0.79005956559221646 * x('2') =g= -1;
+con2178..0.61253356773244572 * x('1') - 
+0.79044457642579935 * x('2') =g= -1;
+con2179..0.89734136310647106 * x('1') + 
+0.44133714783396666 * x('2') =g= -1;
+con2180..0.61203681053560877 * x('1') - 
+0.79082927522278745 * x('2') =g= -1;
+con2181..0.6115398117305838 * x('1') - 
+0.79121366183131736 * x('2') =g= -1;
+con2182..0.89706389387709928 * x('1') + 
+0.44190086026399228 * x('2') =g= -1;
+con2183..0.61104257151356633 * x('1') - 
+0.79159773609964812 * x('2') =g= -1;
+con2184..0.61054509008084745 * x('1') - 
+0.79198149787616245 * x('2') =g= -1;
+con2185..0.89678607052199799 * x('1') + 
+0.44246439824884687 * x('2') =g= -1;
+con2186..0.61004736762881262 * x('1') - 
+0.79236494700936655 * x('2') =g= -1;
+con2187..0.60954940435394467 * x('1') - 
+0.79274808334788882 * x('2') =g= -1;
+con2188..0.89650789315084101 * x('1') + 
+0.44302776156606744 * x('2') =g= -1;
+con2189..0.60905120045281935 * x('1') - 
+0.79313090674048237 * x('2') =g= -1;
+con2190..0.60855275612210724 * x('1') - 
+0.79351341703602407 * x('2') =g= -1;
+con2191..0.89622936187344182 * x('1') + 
+0.44359094999326043 * x('2') =g= -1;
+con2192..0.60805407155857671 * x('1') - 
+0.79389561408351239 * x('2') =g= -1;
+con2193..0.6075551469590863 * x('1') - 
+0.7942774977320729 * x('2') =g= -1;
+con2194..0.89595047679975381 * x('1') + 
+0.44415396330810092 * x('2') =g= -1;
+con2195..0.60705598252059401 * x('1') - 
+0.79465906783095119 * x('2') =g= -1;
+con2196..0.60655657844014954 * x('1') - 
+0.79504032422951898 * x('2') =g= -1;
+con2197..0.89567123803986981 * x('1') + 
+0.4447168012883333 * x('2') =g= -1;
+con2198..0.60605693491489765 * x('1') - 
+0.79542126677727165 * x('2') =g= -1;
+con2199..0.60555705214207922 * x('1') - 
+0.79580189532382695 * x('2') =g= -1;
+con2200..0.8953916457040223 * x('1') + 
+0.44527946371177124 * x('2') =g= -1;
+con2201..0.60505693031902774 * x('1') - 
+0.79618220971892806 * x('2') =g= -1;
+con2202..0.60455656964317195 * x('1') - 
+0.79656220981244186 * x('2') =g= -1;
+con2203..0.89511169990258355 * x('1') + 
+0.44584195035629748 * x('2') =g= -1;
+con2204..0.6040559703120344 * x('1') - 
+0.79694189545435912 * x('2') =g= -1;
+con2205..0.60355513252323234 * x('1') - 
+0.79732126649479473 * x('2') =g= -1;
+con2206..0.89483140074606504 * x('1') + 
+0.44640426099986447 * x('2') =g= -1;
+con2207..0.60305405647447607 * x('1') - 
+0.7977003227839885 * x('2') =g= -1;
+con2208..0.60255274236357237 * x('1') - 
+0.79807906417230268 * x('2') =g= -1;
+con2209..0.89455074834511805 * x('1') + 
+0.44696639542049388 * x('2') =g= -1;
+con2210..0.60205119038841948 * x('1') - 
+0.79845749051022563 * x('2') =g= -1;
+con2211..0.60154940074701013 * x('1') - 
+0.79883560164836986 * x('2') =g= -1;
+con2212..0.89426974281053306 * x('1') + 
+0.44752835339627695 * x('2') =g= -1;
+con2213..0.6010473736374331 * x('1') - 
+0.79921339743747033 * x('2') =g= -1;
+con2214..0.60054510925786631 * x('1') - 
+0.79959087772839021 * x('2') =g= -1;
+con2215..0.89398838425324023 * x('1') + 
+0.44809013470537484 * x('2') =g= -1;
+con2216..0.60004260780658625 * x('1') - 
+0.79996804237211327 * x('2') =g= -1;
+con2217..0.59953986948196003 * x('1') - 
+0.8003448912197505 * x('2') =g= -1;
+con2218..0.8937066727843086 * x('1') + 
+0.44865173912601819 * x('2') =g= -1;
+con2219..0.59903689448244846 * x('1') - 
+0.800721424122537 * x('2') =g= -1;
+con2220..0.59853368300660781 * x('1') - 
+0.80109764093183145 * x('2') =g= -1;
+con2221..0.8934246085149472 * x('1') + 
+0.44921316643650744 * x('2') =g= -1;
+con2222..0.59803023525308552 * x('1') - 
+0.80147354149911854 * x('2') =g= -1;
+con2223..0.59752655142062305 * x('1') - 
+0.80184912567600741 * x('2') =g= -1;
+con2224..0.89314219155650376 * x('1') + 
+0.44977441641521321 * x('2') =g= -1;
+con2225..0.59702263170805436 * x('1') - 
+0.80222439331423279 * x('2') =g= -1;
+con2226..0.59651847631430943 * x('1') - 
+0.80259934426565205 * x('2') =g= -1;
+con2227..0.89285942202046542 * x('1') + 
+0.45033548884057584 * x('2') =g= -1;
+con2228..0.59601408543840628 * x('1') - 
+0.80297397838225126 * x('2') =g= -1;
+con2229..0.59550945927946064 * x('1') - 
+0.80334829551613807 * x('2') =g= -1;
+con2230..0.89257630001845867 * x('1') + 
+0.450896383491106 * x('2') =g= -1;
+con2231..0.59500459803667871 * x('1') - 
+0.80372229551954721 * x('2') =g= -1;
+con2232..0.59449950190935907 * x('1') - 
+0.80409597824483869 * x('2') =g= -1;
+con2233..0.89229282566224888 * x('1') + 
+0.45145710014538437 * x('2') =g= -1;
+con2234..0.59399417109689601 * x('1') - 
+0.8044693435444954 * x('2') =g= -1;
+con2235..0.59348860579877172 * x('1') - 
+0.80484239127112966 * x('2') =g= -1;
+con2236..0.89200899906374065 * x('1') + 
+0.4520176385820619 * x('2') =g= -1;
+con2237..0.59298280621456489 * x('1') - 
+0.80521512127747563 * x('2') =g= -1;
+con2238..0.59247677254394682 * x('1') - 
+0.80558753341639311 * x('2') =g= -1;
+con2239..0.89172482033497769 * x('1') + 
+0.45257799857986003 * x('2') =g= -1;
+con2240..0.59197050498667692 * x('1') - 
+0.80595962754087047 * x('2') =g= -1;
+con2241..0.5914640037426121 * x('1') - 
+0.80633140350401789 * x('2') =g= -1;
+con2242..0.89144028958814259 * x('1') + 
+0.45313817991757044 * x('2') =g= -1;
+con2243..0.59095726901169843 * x('1') - 
+0.8067028611590733 * x('2') =g= -1;
+con2244..0.590450300993975 * x('1') - 
+0.80707400035939969 * x('2') =g= -1;
+con2245..0.89115540693555695 * x('1') + 
+0.45369818237405568 * x('2') =g= -1;
+con2246..0.58994309988957216 * x('1') - 
+0.80744482095848646 * x('2') =g= -1;
+con2247..0.58943566589871454 * x('1') - 
+0.80781532280994706 * x('2') =g= -1;
+con2248..0.89087017248968137 * x('1') + 
+0.45425800572824854 * x('2') =g= -1;
+con2249..0.58892799922171646 * x('1') - 
+0.80818550576752235 * x('2') =g= -1;
+con2250..0.58842010005898493 * x('1') - 
+0.80855536968507857 * x('2') =g= -1;
+con2251..0.8905845863631151 * x('1') + 
+0.45481764975915251 * x('2') =g= -1;
+con2252..0.58791196861101869 * x('1') - 
+0.80892491441660797 * x('2') =g= -1;
+con2253..0.58740360507840739 * x('1') - 
+0.80929413981622922 * x('2') =g= -1;
+con2254..0.89029864866859654 * x('1') + 
+0.45537711424584237 * x('2') =g= -1;
+con2255..0.5868950096618345 * x('1') - 
+0.80966304573818559 * x('2') =g= -1;
+con2256..0.58638618256207287 * x('1') - 
+0.81003163203684792 * x('2') =g= -1;
+con2257..0.89001235951900259 * x('1') + 
+0.45593639896746307 * x('2') =g= -1;
+con2258..0.58587712397998681 * x('1') - 
+0.81039989856671324 * x('2') =g= -1;
+con2259..0.58536783411653504 * x('1') - 
+0.81076784518240286 * x('2') =g= -1;
+con2260..0.88972571902734909 * x('1') + 
+0.45649550370323116 * x('2') =g= -1;
+con2261..0.58485831317276205 * x('1') - 
+0.81113547173866796 * x('2') =g= -1;
+con2262..0.58434856134980928 * x('1') - 
+0.81150277809038229 * x('2') =g= -1;
+con2263..0.88943872730679041 * x('1') + 
+0.45705442823243381 * x('2') =g= -1;
+con2264..0.58383857884890589 * x('1') - 
+0.81186976409254819 * x('2') =g= -1;
+con2265..0.58332836587137316 * x('1') - 
+0.81223642960029407 * x('2') =g= -1;
+con2266..0.8891513844706197 * x('1') + 
+0.45761317233442955 * x('2') =g= -1;
+con2267..0.58281792261862231 * x('1') - 
+0.81260277446887519 * x('2') =g= -1;
+con2268..0.58230724929215794 * x('1') - 
+0.81296879855367177 * x('2') =g= -1;
+con2269..0.88886369063226855 * x('1') + 
+0.45817173578864806 * x('2') =g= -1;
+con2270..0.58179634609357311 * x('1') - 
+0.81333450171019261 * x('2') =g= -1;
+con2271..0.58128521322455251 * x('1') - 
+0.8136998837940721 * x('2') =g= -1;
+con2272..0.88857564590530747 * x('1') + 
+0.45873011837459027 * x('2') =g= -1;
+con2273..0.58077385088687139 * x('1') - 
+0.81406494466107193 * x('2') =g= -1;
+con2274..0.58026225928239472 * x('1') - 
+0.81442968416708073 * x('2') =g= -1;
+con2275..0.88828725040344514 * x('1') + 
+0.45928831987182872 * x('2') =g= -1;
+con2276..0.57975043861308051 * x('1') - 
+0.81479410216811265 * x('2') =g= -1;
+con2277..0.57923838908097458 * x('1') - 
+0.81515819852031024 * x('2') =g= -1;
+con2278..0.88799850424052873 * x('1') + 
+0.45984634006000719 * x('2') =g= -1;
+con2279..0.57872611088821357 * x('1') - 
+0.8155219730799429 * x('2') =g= -1;
+con2280..0.57821360423702683 * x('1') - 
+0.81588542570340528 * x('2') =g= -1;
+con2281..0.88770940753054395 * x('1') + 
+0.4604041787188411 * x('2') =g= -1;
+con2282..0.57770086932972919 * x('1') - 
+0.81624855624722248 * x('2') =g= -1;
+con2283..0.57718790636873041 * x('1') - 
+0.81661136456804329 * x('2') =g= -1;
+con2284..0.88741996038761506 * x('1') + 
+0.46096183562811771 * x('2') =g= -1;
+con2285..0.5766747155565275 * x('1') - 
+0.81697385052264559 * x('2') =g= -1;
+con2286..0.5761612970957074 * x('1') - 
+0.81733601396793465 * x('2') =g= -1;
+con2287..0.88713016292600422 * x('1') + 
+0.4615193105676958 * x('2') =g= -1;
+con2288..0.57564765118894912 * x('1') - 
+0.81769785476094159 * x('2') =g= -1;
+con2289..0.57513377803901922 * x('1') - 
+0.81805937275882623 * x('2') =g= -1;
+con2290..0.88684001526011225 * x('1') + 
+0.46207660331750605 * x('2') =g= -1;
+con2291..0.57461967784877466 * x('1') - 
+0.8184205678188754 * x('2') =g= -1;
+con2292..0.57410535082116143 * x('1') - 
+0.81878143979850393 * x('2') =g= -1;
+con2293..0.88654951750447808 * x('1') + 
+0.46263371365755118 * x('2') =g= -1;
+con2294..0.57359079715921779 * x('1') - 
+0.81914198855525222 * x('2') =g= -1;
+con2295..0.5730760170660667 * x('1') - 
+0.81950221394679179 * x('2') =g= -1;
+con2296..0.88625866977377898 * x('1') + 
+0.46319064136790572 * x('2') =g= -1;
+con2297..0.57256101074492516 * x('1') - 
+0.81986211583091806 * x('2') =g= -1;
+con2298..0.57204577839909687 * x('1') - 
+0.82022169406555656 * x('2') =g= -1;
+con2299..0.88596747218283001 * x('1') + 
+0.46374738622871647 * x('2') =g= -1;
+con2300..0.5715303202319747 * x('1') - 
+0.82058094850876018 * x('2') =g= -1;
+con2301..0.57101463644704353 * x('1') - 
+0.82093987901870791 * x('2') =g= -1;
+con2302..0.88567592484658475 * x('1') + 
+0.46430394802020236 * x('2') =g= -1;
+con2303..0.57049872724787221 * x('1') - 
+0.82129848545370998 * x('2') =g= -1;
+con2304..0.56998259283812369 * x('1') - 
+0.8216567676722013 * x('2') =g= -1;
+con2305..0.88538402788013471 * x('1') + 
+0.46486032652265447 * x('2') =g= -1;
+con2306..0.56946623342154701 * x('1') - 
+0.82201472553274624 * x('2') =g= -1;
+con2307..0.56894964920197977 * x('1') - 
+0.82237235889403781 * x('2') =g= -1;
+con2308..0.88509178139870925 * x('1') + 
+0.46541652151643648 * x('2') =g= -1;
+con2309..0.56843284038335085 * x('1') - 
+0.82272966761489519 * x('2') =g= -1;
+con2310..0.56791580716967527 * x('1') - 
+0.82308665155426752 * x('2') =g= -1;
+con2311..0.88479918551767589 * x('1') + 
+0.46597253278198419 * x('2') =g= -1;
+con2312..0.56739854976505766 * x('1') - 
+0.82344331057123132 * x('2') =g= -1;
+con2313..0.56688106837369012 * x('1') - 
+0.82379964452499221 * x('2') =g= -1;
+con2314..0.88450624035254011 * x('1') + 
+0.46652836009980625 * x('2') =g= -1;
+con2315..0.56636336319985647 * x('1') - 
+0.82415565327488205 * x('2') =g= -1;
+con2316..0.56584543444792323 * x('1') - 
+0.82451133668036425 * x('2') =g= -1;
+con2317..0.88421294601894518 * x('1') + 
+0.46708400325048371 * x('2') =g= -1;
+con2318..0.56532728232235085 * x('1') - 
+0.82486669460102768 * x('2') =g= -1;
+con2319..0.56480890702768471 * x('1') - 
+0.82522172689659123 * x('2') =g= -1;
+con2320..0.88391930263267227 * x('1') + 
+0.46763946201467038 * x('2') =g= -1;
+con2321..0.56429030876855824 * x('1') - 
+0.82557643342690279 * x('2') =g= -1;
+con2322..0.56377148774969543 * x('1') - 
+0.8259308140519368 * x('2') =g= -1;
+con2323..0.8836253103096402 * x('1') + 
+0.46819473617309293 * x('2') =g= -1;
+con2324..0.5632524441759057 * x('1') - 
+0.8262848686317984 * x('2') =g= -1;
+con2325..0.56273317825208635 * x('1') - 
+0.82663859702672104 * x('2') =g= -1;
+con2326..0.8833309691659057 * x('1') + 
+0.4687498255065507 * x('2') =g= -1;
+con2327..0.56221369018322542 * x('1') - 
+0.82699199909706511 * x('2') =g= -1;
+con2328..0.56169398017439376 * x('1') - 
+0.82734507470332341 * x('2') =g= -1;
+con2329..0.88303627931766304 * x('1') + 
+0.46930472979591642 * x('2') =g= -1;
+con2330..0.56117404843075447 * x('1') - 
+0.82769782370611389 * x('2') =g= -1;
+con2331..0.56065389515755581 * x('1') - 
+0.82805024596618559 * x('2') =g= -1;
+con2332..0.88274124088124439 * x('1') + 
+0.46985944882213543 * x('2') =g= -1;
+con2333..0.56013352056013366 * x('1') - 
+0.82840234134441604 * x('2') =g= -1;
+con2334..0.55961292484391101 * x('1') - 
+0.82875410970181207 * x('2') =g= -1;
+con2335..0.88244585397311937 * x('1') + 
+0.47041398236622617 * x('2') =g= -1;
+con2336..0.55909210821440014 * x('1') - 
+0.82910555089950855 * x('2') =g= -1;
+con2337..0.55857107087719826 * x('1') - 
+0.82945666479877056 * x('2') =g= -1;
+con2338..0.88215011870989501 * x('1') + 
+0.47096833020928081 * x('2') =g= -1;
+con2339..0.55804981303799051 * x('1') - 
+0.82980745126099209 * x('2') =g= -1;
+con2340..0.55752833490254927 * x('1') - 
+0.83015791014769647 * x('2') =g= -1;
+con2341..0.88185403520831618 * x('1') + 
+0.47152249213246433 * x('2') =g= -1;
+con2342..0.55700663667673278 * x('1') - 
+0.83050804132053668 * x('2') =g= -1;
+con2343..0.55648471856648862 * x('1') - 
+0.83085784464129364 * x('2') =g= -1;
+con2344..0.88155760358526503 * x('1') + 
+0.47207646791701535 * x('2') =g= -1;
+con2345..0.55596258077784888 * x('1') - 
+0.83120731997187913 * x('2') =g= -1;
+con2346..0.55544022351693245 * x('1') - 
+0.83155646717433451 * x('2') =g= -1;
+con2347..0.88126082395776106 * x('1') + 
+0.47263025734424585 * x('2') =g= -1;
+con2348..0.55491764698994783 * x('1') - 
+0.8319052861108287 * x('2') =g= -1;
+con2349..0.55439485140318456 * x('1') - 
+0.8322537766436634 * x('2') =g= -1;
+con2350..0.88096369644296146 * x('1') + 
+0.47318386019554148 * x('2') =g= -1;
+con2351..0.55387183696302444 * x('1') - 
+0.83260193863526699 * x('2') =g= -1;
+con2352..0.5533486038759321 * x('1') - 
+0.83294977194819897 * x('2') =g= -1;
+con2353..0.88066622115816029 * x('1') + 
+0.47373727625236145 * x('2') =g= -1;
+con2354..0.55282515234845964 * x('1') - 
+0.83329727644514862 * x('2') =g= -1;
+con2355..0.55230148258724454 * x('1') - 
+0.833644451988935 * x('2') =g= -1;
+con2356..0.88036839822078938 * x('1') + 
+0.47429050529623878 * x('2') =g= -1;
+con2357..0.55177759479901245 * x('1') - 
+0.83399129844250586 * x('2') =g= -1;
+con2358..0.55125348919057315 * x('1') - 
+0.83433781566894039 * x('2') =g= -1;
+con2359..0.88007022774841759 * x('1') + 
+0.4748435471087803 * x('2') =g= -1;
+con2360..0.55072916596882215 * x('1') - 
+0.83468400353144756 * x('2') =g= -1;
+con2361..0.55020462534074421 * x('1') - 
+0.83502986189336448 * x('2') =g= -1;
+con2362..0.87977170985875075 * x('1') + 
+0.47539640147166673 * x('2') =g= -1;
+con2363..0.54967986751340436 * x('1') - 
+0.83537539061816168 * x('2') =g= -1;
+con2364..0.54915489269395856 * x('1') - 
+0.83572058956943662 * x('2') =g= -1;
+con2365..0.87947284466963216 * x('1') + 
+0.47594906816665267 * x('2') =g= -1;
+con2366..0.54862970108964582 * x('1') - 
+0.83606545861091874 * x('2') =g= -1;
+con2367..0.54810429290779028 * x('1') - 
+0.83640999760646761 * x('2') =g= -1;
+con2368..0.87917363229904211 * x('1') + 
+0.47650154697556718 * x('2') =g= -1;
+con2369..0.54757866835580493 * x('1') - 
+0.83675420642007137 * x('2') =g= -1;
+con2370..0.54705282764118279 * x('1') - 
+0.83709808491585169 * x('2') =g= -1;
+con2371..0.87887407286509789 * x('1') + 
+0.47705383768031306 * x('2') =g= -1;
+con2372..0.54652677097150726 * x('1') - 
+0.83744163295805729 * x('2') =g= -1;
+con2373..0.54600049855444444 * x('1') - 
+0.83778485041106954 * x('2') =g= -1;
+con2374..0.87857416648605402 * x('1') + 
+0.47760594006286755 * x('2') =g= -1;
+con2375..0.54547401059774514 * x('1') - 
+0.83812773713939992 * x('2') =g= -1;
+con2376..0.54494730730924767 * x('1') - 
+0.83847029300768927 * x('2') =g= -1;
+con2377..0.87827391328030158 * x('1') + 
+0.47815785390528232 * x('2') =g= -1;
+con2378..0.54442038889687339 * x('1') - 
+0.83881251788071043 * x('2') =g= -1;
+con2379..0.54389325556862889 * x('1') - 
+0.83915441162336635 * x('2') =g= -1;
+con2380..0.87797331336636886 * x('1') + 
+0.4787095789896833 * x('2') =g= -1;
+con2381..0.54336590753260505 * x('1') - 
+0.83949597410069121 * x('2') =g= -1;
+con2382..0.54283834499698058 * x('1') - 
+0.83983720517784821 * x('2') =g= -1;
+con2383..0.87767236686292094 * x('1') + 
+0.47926111509827113 * x('2') =g= -1;
+con2384..0.54231056817001333 * x('1') - 
+0.84017810472013454 * x('2') =g= -1;
+con2385..0.54178257726005141 * x('1') - 
+0.84051867259297486 * x('2') =g= -1;
+con2386..0.87737107388875979 * x('1') + 
+0.47981246201332084 * x('2') =g= -1;
+con2387..0.5412543724755241 * x('1') - 
+0.84085890866192681 * x('2') =g= -1;
+con2388..0.54072595402494539 * x('1') - 
+0.84119881279267905 * x('2') =g= -1;
+con2389..0.87706943456282405 * x('1') + 
+0.48036361951718215 * x('2') =g= -1;
+con2390..0.54019732211691551 * x('1') - 
+0.8415383848510497 * x('2') =g= -1;
+con2391..0.53966847696011699 * x('1') - 
+0.84187762470298955 * x('2') =g= -1;
+con2392..0.87676744900418913 * x('1') + 
+0.48091458739227977 * x('2') =g= -1;
+con2393..0.53913941876331717 * x('1') - 
+0.84221653221457993 * x('2') =g= -1;
+con2394..0.53861014773536764 * x('1') - 
+0.84255510725203342 * x('2') =g= -1;
+con2395..0.87646511733206711 * x('1') + 
+0.48146536542111301 * x('2') =g= -1;
+con2396..0.53808066408520305 * x('1') - 
+0.84289334968169427 * x('2') =g= -1;
+con2397..0.53755096802184432 * x('1') - 
+0.84323125937003673 * x('2') =g= -1;
+con2398..0.87616243966580665 * x('1') + 
+0.48201595338625647 * x('2') =g= -1;
+con2399..0.53702105975439407 * x('1') - 
+0.84356883618366774 * x('2') =g= -1;
+con2400..0.53649093949203919 * x('1') - 
+0.8439060799893251 * x('2') =g= -1;
+con2401..0.87585941612489304 * x('1') + 
+0.48256635107035944 * x('2') =g= -1;
+con2402..0.53596060744404983 * x('1') - 
+0.84424299065387864 * x('2') =g= -1;
+con2403..0.53543006381978264 * x('1') - 
+0.84457956804432788 * x('2') =g= -1;
+con2404..0.87555604682894828 * x('1') + 
+0.48311655825614647 * x('2') =g= -1;
+con2405..0.5348993088286722 * x('1') - 
+0.84491581202780719 * x('2') =g= -1;
+con2406..0.53436834268024236 * x('1') - 
+0.84525172247157887 * x('2') =g= -1;
+con2407..0.87525233189773055 * x('1') + 
+0.48366657472641722 * x('2') =g= -1;
+con2408..0.53383716558409688 * x('1') - 
+0.84558729924303944 * x('2') =g= -1;
+con2409..0.53330577774992294 * x('1') - 
+0.84592254220971663 * x('2') =g= -1;
+con2410..0.87494827145113474 * x('1') + 
+0.48421640026404666 * x('2') =g= -1;
+con2411..0.53277417938749327 * x('1') - 
+0.84625745123926865 * x('2') =g= -1;
+con2412..0.53224237070666136 * x('1') - 
+0.84659202619948704 * x('2') =g= -1;
+con2413..0.87464386560919194 * x('1') + 
+0.48476603465198537 * x('2') =g= -1;
+con2414..0.53171035191736349 * x('1') - 
+0.8469262669582952 * x('2') =g= -1;
+con2415..0.53117812322962243 * x('1') - 
+0.84726017338374648 * x('2') =g= -1;
+con2416..0.87433911449206958 * x('1') + 
+0.48531547767325905 * x('2') =g= -1;
+con2417..0.53064568485353802 * x('1') - 
+0.84759374534402954 * x('2') =g= -1;
+con2418..0.53011303699929846 * x('1') - 
+0.84792698270746192 * x('2') =g= -1;
+con2419..0.87403401822007165 * x('1') + 
+0.48586472911096912 * x('2') =g= -1;
+con2420..0.52958017987717143 * x('1') - 
+0.84825988534249497 * x('2') =g= -1;
+con2421..0.52904711369750812 * x('1') - 
+0.84859245311771181 * x('2') =g= -1;
+con2422..0.87372857691363814 * x('1') + 
+0.48641378874829272 * x('2') =g= -1;
+con2423..0.52851383867074153 * x('1') - 
+0.84892468590182801 * x('2') =g= -1;
+con2424..0.52798035500738927 * x('1') - 
+0.84925658356369027 * x('2') =g= -1;
+con2425..0.87342279069334539 * x('1') + 
+0.48696265636848235 * x('2') =g= -1;
+con2426..0.52744666291804898 * x('1') - 
+0.84958814597227872 * x('2') =g= -1;
+con2427..0.5269127626134007 * x('1') - 
+0.84991937299670606 * x('2') =g= -1;
+con2428..0.8731166596799057 * x('1') + 
+0.48751133175486677 * x('2') =g= -1;
+con2429..0.52637865430420971 * x('1') - 
+0.85025026450621544 * x('2') =g= -1;
+con2430..0.52584433820131793 * x('1') - 
+0.85058082037018568 * x('2') =g= -1;
+con2431..0.87281018399416765 * x('1') + 
+0.4880598146908503 * x('2') =g= -1;
+con2432..0.52530981451565473 * x('1') - 
+0.85091104045812471 * x('2') =g= -1;
+con2433..0.52477508345822854 * x('1') - 
+0.85124092463967527 * x('2') =g= -1;
+con2434..0.87250336375711601 * x('1') + 
+0.48860810495991325 * x('2') =g= -1;
+con2435..0.52424014524012941 * x('1') - 
+0.85157047278461229 * x('2') =g= -1;
+con2436..0.52370500007253229 * x('1') - 
+0.85189968476284161 * x('2') =g= -1;
+con2437..0.87219619908987134 * x('1') + 
+0.4891562023456123 * x('2') =g= -1;
+con2438..0.52316964816668843 * x('1') - 
+0.85222856044440531 * x('2') =g= -1;
+con2439..0.52263408973393632 * x('1') - 
+0.85255709969947457 * x('2') =g= -1;
+con2440..0.87188869011369008 * x('1') + 
+0.48970410663157987 * x('2') =g= -1;
+con2441..0.52209832498569253 * x('1') - 
+0.85288530239835547 * x('2') =g= -1;
+con2442..0.52156235413345609 * x('1') - 
+0.85321316841148631 * x('2') =g= -1;
+con2443..0.8715808369499648 * x('1') + 
+0.49025181760152486 * x('2') =g= -1;
+con2444..0.52102617738880652 * x('1') - 
+0.85354069760943907 * x('2') =g= -1;
+con2445..0.52048979496340708 * x('1') - 
+0.85386788986291695 * x('2') =g= -1;
+con2446..0.87127263972022406 * x('1') + 
+0.49079933503923234 * x('2') =g= -1;
+con2447..0.51995320706899961 * x('1') - 
+0.85419474504275783 * x('2') =g= -1;
+con2448..0.51941641391740734 * x('1') - 
+0.85452126301993236 * x('2') =g= -1;
+con2449..0.87096409854613199 * x('1') + 
+0.49134665872856381 * x('2') =g= -1;
+con2450..0.51887941572053753 * x('1') - 
+0.85484744366554288 * x('2') =g= -1;
+con2451..0.51834221269037306 * x('1') - 
+0.85517328685082772 * x('2') =g= -1;
+con2452..0.87065521354948838 * x('1') + 
+0.49189378845345744 * x('2') =g= -1;
+con2453..0.51780480503898274 * x('1') - 
+0.85549879244715532 * x('2') =g= -1;
+con2454..0.51726719297851353 * x('1') - 
+0.85582396032602948 * x('2') =g= -1;
+con2455..0.87034598485222914 * x('1') + 
+0.49244072399792777 * x('2') =g= -1;
+con2456..0.5167293767211929 * x('1') - 
+0.85614879035908675 * x('2') =g= -1;
+con2457..0.51619135647933101 * x('1') - 
+0.85647328241809639 * x('2') =g= -1;
+con2458..0.87003641257642561 * x('1') + 
+0.49298746514606601 * x('2') =g= -1;
+con2459..0.51565313246531652 * x('1') - 
+0.85679743637496186 * x('2') =g= -1;
+con2460..0.51511470489161915 * x('1') - 
+0.85712125210171985 * x('2') =g= -1;
+con2461..0.86972649684428482 * x('1') + 
+0.49353401168204014 * x('2') =g= -1;
+con2462..0.51457607397078919 * x('1') - 
+0.85744472947054073 * x('2') =g= -1;
+con2463..0.51403723991545625 * x('1') - 
+0.85776786835372876 * x('2') =g= -1;
+con2464..0.86941623777814947 * x('1') + 
+0.49408036339009492 * x('2') =g= -1;
+con2465..0.51349820293833237 * x('1') - 
+0.85809066862372019 * x('2') =g= -1;
+con2466..0.51295896325220758 * x('1') - 
+0.85841313015308685 * x('2') =g= -1;
+con2467..0.86910563550049758 * x('1') + 
+0.49462652005455221 * x('2') =g= -1;
+con2468..0.51241952106995259 * x('1') - 
+0.85873525281453333 * x('2') =g= -1;
+con2469..0.51187987660451728 * x('1') - 
+0.85905703648089871 * x('2') =g= -1;
+con2470..0.86879469013394273 * x('1') + 
+0.49517248145981063 * x('2') =g= -1;
+con2471..0.51134003006893447 * x('1') - 
+0.85937848102515413 * x('2') =g= -1;
+con2472..0.51079998167631147 * x('1') - 
+0.85969958632040755 * x('2') =g= -1;
+con2473..0.86848340180123407 * x('1') + 
+0.49571824739034592 * x('2') =g= -1;
+con2474..0.51025973163984051 * x('1') - 
+0.86002035223989792 * x('2') =g= -1;
+con2475..0.50971928017279022 * x('1') - 
+0.86034077865699965 * x('2') =g= -1;
+con2476..0.86817177062525608 * x('1') + 
+0.4962638176307112 * x('2') =g= -1;
+con2477..0.50917862748850928 * x('1') - 
+0.86066086544522169 * x('2') =g= -1;
+con2478..0.50863777380042741 * x('1') - 
+0.86098061247820512 * x('2') =g= -1;
+con2479..0.86785979672902847 * x('1') + 
+0.49680919196553658 * x('2') =g= -1;
+con2480..0.50809671932205203 * x('1') - 
+0.86130001962972691 * x('2') =g= -1;
+con2481..0.50755546426696996 * x('1') - 
+0.86161908677369758 * x('2') =g= -1;
+con2482..0.86754748023570638 * x('1') + 
+0.49735437017952966 * x('2') =g= -1;
+con2483..0.50701400884884784 * x('1') - 
+0.8619378137841619 * x('2') =g= -1;
+con2484..0.50647235328143003 * x('1') - 
+0.86225620053529928 * x('2') =g= -1;
+con2485..0.8672348212685802 * x('1') + 
+0.49789935205747543 * x('2') =g= -1;
+con2486..0.50593049777854271 * x('1') - 
+0.86257424690142237 * x('2') =g= -1;
+con2487..0.50538844255408832 * x('1') - 
+0.86289195275697927 * x('2') =g= -1;
+con2488..0.86692181995107531 * x('1') + 
+0.49844413738423615 * x('2') =g= -1;
+con2489..0.50484618782204915 * x('1') - 
+0.86320931797655209 * x('2') =g= -1;
+con2490..0.5043037337964853 * x('1') - 
+0.86352634243485804 * x('2') =g= -1;
+con2491..0.86660847640675254 * x('1') + 
+0.49898872594475219 * x('2') =g= -1;
+con2492..0.5037610806915388 * x('1') - 
+0.86384302600674678 * x('2') =g= -1;
+con2493..0.50321822872142474 * x('1') - 
+0.86415936856720577 * x('2') =g= -1;
+con2494..0.8662947907593076 * x('1') + 
+0.499533117524041 * x('2') =g= -1;
+con2495..0.50267517810044138 * x('1') - 
+0.86447536999135466 * x('2') =g= -1;
+con2496..0.50213192904296533 * x('1') - 
+0.86479103015444747 * x('2') =g= -1;
+con2497..0.86598076313257122 * x('1') + 
+0.50007731190719851 * x('2') =g= -1;
+con2498..0.50158848176344717 * x('1') - 
+0.86510634893187555 * x('2') =g= -1;
+con2499..0.50104483647642073 * x('1') - 
+0.86542132619916223 * x('2') =g= -1;
+con2500..0.86566639365050946 * x('1') + 
+0.50062130887939771 * x('2') =g= -1;
+con2501..0.50050099339649523 * x('1') - 
+0.86573596183196722 * x('2') =g= -1;
+con2502..0.49995695273835872 * x('1') - 
+0.86605025570608463 * x('2') =g= -1;
+con2503..0.86535168243722282 * x('1') + 
+0.50116510822588978 * x('2') =g= -1;
+con2504..0.49941271471677701 * x('1') - 
+0.8663642076974436 * x('2') =g= -1;
+con2505..0.4988682795465933 * x('1') - 
+0.8666778176821085 * x('2') =g= -1;
+con2506..0.86503662961694716 * x('1') + 
+0.50170870973200432 * x('2') =g= -1;
+con2507..0.49832364744273078 * x('1') - 
+0.86699108553627757 * x('2') =g= -1;
+con2508..0.49777881862018813 * x('1') - 
+0.86730401113628541 * x('2') =g= -1;
+con2509..0.86472123531405287 * x('1') + 
+0.50225211318314866 * x('2') =g= -1;
+con2510..0.49723379329404255 * x('1') - 
+0.86761659435860106 * x('2') =g= -1;
+con2511..0.49668857167944785 * x('1') - 
+0.86792883507982954 * x('2') =g= -1;
+con2512..0.86440549965304547 * x('1') + 
+0.50279531836480817 * x('2') =g= -1;
+con2513..0.49614315399163778 * x('1') - 
+0.86824073317670947 * x('2') =g= -1;
+con2514..0.49559754044592108 * x('1') - 
+0.8685522885261161 * x('2') =g= -1;
+con2515..0.86408942275856482 * x('1') + 
+0.50333832506254694 * x('2') =g= -1;
+con2516..0.49505173125768392 * x('1') - 
+0.86886350100506005 * x('2') =g= -1;
+con2517..0.49450572664239273 * x('1') - 
+0.86917437049068536 * x('2') =g= -1;
+con2518..0.86377300475538588 * x('1') + 
+0.5038811330620071 * x('2') =g= -1;
+con2519..0.49395952681558558 * x('1') - 
+0.86948489686027486 * x('2') =g= -1;
+con2520..0.49341313199288328 * x('1') - 
+0.86979507999124339 * x('2') =g= -1;
+con2521..0.86345624576841806 * x('1') + 
+0.50442374214890917 * x('2') =g= -1;
+con2522..0.49286654238998023 * x('1') - 
+0.87010491976114346 * x('2') =g= -1;
+con2523..0.49231975822264784 * x('1') - 
+0.87041441604766268 * x('2') =g= -1;
+con2524..0.86313914592270535 * x('1') + 
+0.50496615210905249 * x('2') =g= -1;
+con2525..0.49177277970673672 * x('1') - 
+0.87072356872862322 * x('2') =g= -1;
+con2526..0.49122560705817181 * x('1') - 
+0.87103237768198405 * x('2') =g= -1;
+con2527..0.8628217053434265 * x('1') + 
+0.50550836272831468 * x('2') =g= -1;
+con2528..0.49067824049295544 * x('1') - 
+0.87134084278583968 * x('2') =g= -1;
+con2529..0.49013068022716655 * x('1') - 
+0.87164896391841995 * x('2') =g= -1;
+con2530..0.86250392415589439 * x('1') + 
+0.50605037379265227 * x('2') =g= -1;
+con2531..0.48958292647696044 * x('1') - 
+0.87195674095809084 * x('2') =g= -1;
+con2532..0.48903497945856811 * x('1') - 
+0.87226417378335441 * x('2') =g= -1;
+con2533..0.86218580248555687 * x('1') + 
+0.50659218508810044 * x('2') =g= -1;
+con2534..0.48848683938829923 * x('1') - 
+0.8725712622728472 * x('2') =g= -1;
+con2535..0.48793850648253717 * x('1') - 
+0.87287800630534329 * x('2') =g= -1;
+con2536..0.86186734045799573 * x('1') + 
+0.5071337964007735 * x('2') =g= -1;
+con2537..0.48738998095774161 * x('1') - 
+0.87318440575975254 * x('2') =g= -1;
+con2538..0.48684126303045128 * x('1') - 
+0.87349046051511914 * x('2') =g= -1;
+con2539..0.8615485381989274 * x('1') + 
+0.50767520751686435 * x('2') =g= -1;
+con2540..0.48629235291727546 * x('1') - 
+0.8737961704506263 * x('2') =g= -1;
+con2541..0.48574325083490466 * x('1') - 
+0.87410153544559055 * x('2') =g= -1;
+con2542..0.86122939583420266 * x('1') + 
+0.50821641822264485 * x('2') =g= -1;
+con2543..0.48519395700010215 * x('1') - 
+0.87440655537946588 * x('2') =g= -1;
+con2544..0.48464447162970692 * x('1') - 
+0.87471123013184315 * x('2') =g= -1;
+con2545..0.86090991348980628 * x('1') + 
+0.50875742830446646 * x('2') =g= -1;
+con2546..0.48409479494063573 * x('1') - 
+0.87501555958244759 * x('2') =g= -1;
+con2547..0.48354492714987879 * x('1') - 
+0.87531954361114228 * x('2') =g= -1;
+con2548..0.86059009129185737 * x('1') + 
+0.50929823754875936 * x('2') =g= -1;
+con2549..0.48299486847450235 * x('1') - 
+0.87562318209792633 * x('2') =g= -1;
+con2550..0.48244461913164799 * x('1') - 
+0.87592647492293507 * x('2') =g= -1;
+con2551..0.86026992936660929 * x('1') + 
+0.50983884574203353 * x('2') =g= -1;
+con2552..0.48189417933853268 * x('1') - 
+0.87622942196644027 * x('2') =g= -1;
+con2553..0.48134354931244777 * x('1') - 
+0.87653202310885092 * x('2') =g= -1;
+con2554..0.85994942784044937 * x('1') + 
+0.5103792526708778 * x('2') =g= -1;
+con2555..0.48079272927076189 * x('1') - 
+0.87683427823071092 * x('2') =g= -1;
+con2556..0.48024171943091659 * x('1') - 
+0.87713618721270237 * x('2') =g= -1;
+con2557..0.85962858683989918 * x('1') + 
+0.5109194581219606 * x('2') =g= -1;
+con2558..0.47969052001042817 * x('1') - 
+0.87743774993564361 * x('2') =g= -1;
+con2559..0.47913913122689095 * x('1') - 
+0.87773896628048831 * x('2') =g= -1;
+con2560..0.85930740649161419 * x('1') + 
+0.51145946188203006 * x('2') =g= -1;
+con2561..0.47858755329796848 * x('1') - 
+0.87803983612832981 * x('2') =g= -1;
+con2562..0.47803578644140376 * x('1') - 
+0.87834035936039545 * x('2') =g= -1;
+con2563..0.85898588692238376 * x('1') + 
+0.51199926373791371 * x('2') =g= -1;
+con2564..0.47748383087501428 * x('1') - 
+0.87864053585804969 * x('2') =g= -1;
+con2565..0.47693168681668746 * x('1') - 
+0.87894036550279631 * x('2') =g= -1;
+con2566..0.85866402825913124 * x('1') + 
+0.51253886347651911 * x('2') =g= -1;
+con2567..0.47637935448439039 * x('1') - 
+0.87923984817627299 * x('2') =g= -1;
+con2568..0.47582683409616161 * x('1') - 
+0.87953898376025608 * x('2') =g= -1;
+con2569..0.85834183062891378 * x('1') + 
+0.51307826088483321 * x('2') =g= -1;
+con2570..0.47527412587011447 * x('1') - 
+0.87983777213665848 * x('2') =g= -1;
+con2571..0.47472123002443656 * x('1') - 
+0.88013621318753044 * x('2') =g= -1;
+con2572..0.85801929415892264 * x('1') + 
+0.51361745574992312 * x('2') =g= -1;
+con2573..0.47416814677738878 * x('1') - 
+0.8804343067950593 * x('2') =g= -1;
+con2574..0.47361487634730831 * x('1') - 
+0.88073205284156875 * x('2') =g= -1;
+con2575..0.8576964189764823 * x('1') + 
+0.51415644785893566 * x('2') =g= -1;
+con2576..0.4730614189526039 * x('1') - 
+0.88102945120952059 * x('2') =g= -1;
+con2577..0.47250777481175882 * x('1') - 
+0.8813265017815135 * x('2') =g= -1;
+con2578..0.85737320520905147 * x('1') + 
+0.51469523699909803 * x('2') =g= -1;
+con2579..0.47195394414332942 * x('1') - 
+0.88162320444028419 * x('2') =g= -1;
+con2580..0.4713999271659487 * x('1') - 
+0.88191955906870456 * x('2') =g= -1;
+con2581..0.85704965298422231 * x('1') + 
+0.51523382295771714 * x('2') =g= -1;
+con2582..0.47084572409831771 * x('1') - 
+0.8822155655497872 * x('2') =g= -1;
+con2583..0.47029133515921573 * x('1') - 
+0.88251122376667945 * x('2') =g= -1;
+con2584..0.85672576242972043 * x('1') + 
+0.51577220552218039 * x('2') =g= -1;
+con2585..0.46973676056749541 * x('1') - 
+0.88280653360266625 * x('2') =g= -1;
+con2586..0.46918200054207798 * x('1') - 
+0.8831014949411724 * x('2') =g= -1;
+con2587..0.85640153367340521 * x('1') + 
+0.51631038447995548 * x('2') =g= -1;
+con2588..0.4686270553019633 * x('1') - 
+0.88339610766575749 * x('2') =g= -1;
+con2589..0.46807192506622125 * x('1') - 
+0.88369037166012043 * x('2') =g= -1;
+con2590..0.85607696684326939 * x('1') + 
+0.51684835961859044 * x('2') =g= -1;
+con2591..0.46751661005399558 * x('1') - 
+0.88398428680809715 * x('2') =g= -1;
+con2592..0.46696111048450289 * x('1') - 
+0.88427785299366168 * x('2') =g= -1;
+con2593..0.85575206206743948 * x('1') + 
+0.51738613072571371 * x('2') =g= -1;
+con2594..0.46640542657703193 * x('1') - 
+0.88457107010092573 * x('2') =g= -1;
+con2595..0.46584955855094651 * x('1') - 
+0.88486393801413799 * x('2') =g= -1;
+con2596..0.85542681947417487 * x('1') + 
+0.51792369758903423 * x('2') =g= -1;
+con2597..0.46529350662568081 * x('1') - 
+0.88515645661768605 * x('2') =g= -1;
+con2598..0.46473727102074236 * x('1') - 
+0.88544862579609496 * x('2') =g= -1;
+con2599..0.85510123919186898 * x('1') + 
+0.51846105999634162 * x('2') =g= -1;
+con2600..0.46418085195571041 * x('1') - 
+0.8857404454340283 * x('2') =g= -1;
+con2601..0.46362424965023907 * x('1') - 
+0.88603191541628612 * x('2') =g= -1;
+con2602..0.85477532134904788 * x('1') + 
+0.51899821773550625 * x('2') =g= -1;
+con2603..0.46306746432405232 * x('1') - 
+0.88632303562780801 * x('2') =g= -1;
+con2604..0.46251049619694645 * x('1') - 
+0.88661380595367134 * x('2') =g= -1;
+con2605..0.85444906607437121 * x('1') + 
+0.51953517059447929 * x('2') =g= -1;
+con2606..0.46195334548879302 * x('1') - 
+0.88690422627909027 * x('2') =g= -1;
+con2607..0.46139601241953027 * x('1') - 
+0.88719429648941994 * x('2') =g= -1;
+con2608..0.85412247349663195 * x('1') + 
+0.52007191836129285 * x('2') =g= -1;
+con2609..0.46083849720917375 * x('1') - 
+0.88748401647015052 * x('2') =g= -1;
+con2610..0.46028080007780792 * x('1') - 
+0.88777338610691248 * x('2') =g= -1;
+con2611..0.85379554374475597 * x('1') + 
+0.52060846082405976 * x('2') =g= -1;
+con2612..0.459722921245589 * x('1') - 
+0.88806240528547431 * x('2') =g= -1;
+con2613..0.45916486093274728 * x('1') - 
+0.88835107389174173 * x('2') =g= -1;
+con2614..0.85346827694780225 * x('1') + 
+0.52114479777097411 * x('2') =g= -1;
+con2615..0.45860661935958236 * x('1') - 
+0.88863939181176022 * x('2') =g= -1;
+con2616..0.45804819674646619 * x('1') - 
+0.88892735893171304 * x('2') =g= -1;
+con2617..0.85314067323496323 * x('1') + 
+0.52168092899031082 * x('2') =g= -1;
+con2618..0.45748959331384215 * x('1') - 
+0.88921497513792203 * x('2') =g= -1;
+con2619..0.45693080928222507 * x('1') - 
+0.88950224031684755 * x('2') =g= -1;
+con2620..0.85281273273556368 * x('1') + 
+0.52221685427042674 * x('2') =g= -1;
+con2621..0.45637184487220012 * x('1') - 
+0.8897891543550891 * x('2') =g= -1;
+con2622..0.45581270030442628 * x('1') - 
+0.89007571713938316 * x('2') =g= -1;
+con2623..0.85248445557906183 * x('1') + 
+0.52275257339975922 * x('2') =g= -1;
+con2624..0.4552533757996311 * x('1') - 
+0.89036192855660656 * x('2') =g= -1;
+con2625..0.45469387157861324 * x('1') - 
+0.89064778849377468 * x('2') =g= -1;
+con2626..0.85215584189504867 * x('1') + 
+0.5232880861668272 * x('2') =g= -1;
+con2627..0.45413418786224546 * x('1') - 
+0.89093329683803979 * x('2') =g= -1;
+con2628..0.45357432487146582 * x('1') - 
+0.89121845347669615 * x('2') =g= -1;
+con2629..0.851826891813248 * x('1') + 
+0.52382339236023157 * x('2') =g= -1;
+con2630..0.45301428282728867 * x('1') - 
+0.89150325829717381 * x('2') =g= -1;
+con2631..0.4524540619507959 * x('1') - 
+0.89178771118704325 * x('2') =g= -1;
+con2632..0.85149760546351649 * x('1') + 
+0.52435849176865412 * x('2') =g= -1;
+con2633..0.45189366246314011 * x('1') - 
+0.8920718120340142 * x('2') =g= -1;
+con2634..0.45133308458554655 * x('1') - 
+0.89235556072593392 * x('2') =g= -1;
+con2635..0.8511679829758434 * x('1') + 
+0.52489338418085862 * x('2') =g= -1;
+con2636..0.45077232853930871 * x('1') - 
+0.89263895715078978 * x('2') =g= -1;
+con2637..0.45021139454579112 * x('1') - 
+0.89292200119670817 * x('2') =g= -1;
+con2638..0.85083802448035084 * x('1') + 
+0.52542806938569031 * x('2') =g= -1;
+con2639..0.44965028282642855 * x('1') - 
+0.89320469275195413 * x('2') =g= -1;
+con2640..0.44908899360272603 * x('1') - 
+0.89348703170493227 * x('2') =g= -1;
+con2641..0.85050773010729364 * x('1') + 
+0.52596254717207658 * x('2') =g= -1;
+con2642..0.44852752709625771 * x('1') - 
+0.89376901794418662 * x('2') =g= -1;
+con2643..0.44796588352867023 * x('1') - 
+0.89405065135839923 * x('2') =g= -1;
+con2644..0.85017709998705904 * x('1') + 
+0.52649681732902653 * x('2') =g= -1;
+con2645..0.44740406312167769 * x('1') - 
+0.89433193183639248 * x('2') =g= -1;
+con2646..0.44684206609706406 * x('1') - 
+0.89461285926712852 * x('2') =g= -1;
+con2647..0.84984613425016675 * x('1') + 
+0.527030879645631 * x('2') =g= -1;
+con2648..0.44627989267668605 * x('1') - 
+0.89489343353970674 * x('2') =g= -1;
+con2649..0.4457175430824647 * x('1') - 
+0.89517365454336917 * x('2') =g= -1;
+con2650..0.84951483302726916 * x('1') + 
+0.52756473391106329 * x('2') =g= -1;
+con2651..0.44515501753639508 * x('1') - 
+0.89545352216749463 * x('2') =g= -1;
+con2652..0.44459231626054196 * x('1') - 
+0.8957330363016015 * x('2') =g= -1;
+con2653..0.84918319644915108 * x('1') + 
+0.52809837991457864 * x('2') =g= -1;
+con2654..0.44402943947703455 * x('1') - 
+0.89601219683535027 * x('2') =g= -1;
+con2655..0.44346638740807698 * x('1') - 
+0.89629100365853798 * x('2') =g= -1;
+con2656..0.84885122464672957 * x('1') + 
+0.52863181744551413 * x('2') =g= -1;
+con2657..0.4429031602759394 * x('1') - 
+0.89656945666110299 * x('2') =g= -1;
+con2658..0.44233975830296185 * x('1') - 
+0.89684755573312303 * x('2') =g= -1;
+con2659..0.84851891775105426 * x('1') + 
+0.52916504629328986 * x('2') =g= -1;
+con2660..0.44177618171155336 * x('1') - 
+0.89712530076481545 * x('2') =g= -1;
+con2661..0.44121243072419114 * x('1') - 
+0.89740269164653774 * x('2') =g= -1;
+con2662..0.84818627589330675 * x('1') + 
+0.52969806624740789 * x('2') =g= -1;
+con2663..0.44064850556342366 * x('1') - 
+0.89767972826878595 * x('2') =g= -1;
+con2664..0.44008440645186558 * x('1') - 
+0.89795641052219743 * x('2') =g= -1;
+con2665..0.84785329920480113 * x('1') + 
+0.53023087709745265 * x('2') =g= -1;
+con2666..0.43952013361220132 * x('1') - 
+0.89823273829754879 * x('2') =g= -1;
+con2667..0.43895568726718281 * x('1') - 
+0.89850871148575695 * x('2') =g= -1;
+con2668..0.84751998781698357 * x('1') + 
+0.53076347863309148 * x('2') =g= -1;
+con2669..0.43839106763963387 * x('1') - 
+0.89878432997787738 * x('2') =g= -1;
+con2670..0.43782627495244097 * x('1') - 
+0.89905959366510824 * x('2') =g= -1;
+con2671..0.84718634186143216 * x('1') + 
+0.53129587064407391 * x('2') =g= -1;
+con2672..0.43726130942856378 * x('1') - 
+0.89933450243878543 * x('2') =g= -1;
+con2673..0.43669617129103017 * x('1') - 
+0.899609056190385 * x('2') =g= -1;
+con2674..0.84685236146985765 * x('1') + 
+0.5318280529202325 * x('2') =g= -1;
+con2675..0.43613086076293145 * x('1') - 
+0.89988325481152531 * x('2') =g= -1;
+con2676..0.4355653780674324 * x('1') - 
+0.90015709819396228 * x('2') =g= -1;
+con2677..0.84651804677410203 * x('1') + 
+0.53236002525148252 * x('2') =g= -1;
+con2678..0.43499972342776272 * x('1') - 
+0.90043058622959382 * x('2') =g= -1;
+con2679..0.43443389706722074 * x('1') - 
+0.90070371881045741 * x('2') =g= -1;
+con2680..0.84618339790614006 * x('1') + 
+0.53289178742782195 * x('2') =g= -1;
+con2681..0.43386789920917174 * x('1') - 
+0.90097649582873141 * x('2') =g= -1;
+con2682..0.43330173007705108 * x('1') - 
+0.90124891717673339 * x('2') =g= -1;
+con2683..0.84584841499807772 * x('1') + 
+0.53342333923933216 * x('2') =g= -1;
+con2684..0.4327353898943595 * x('1') - 
+0.90152098274692238 * x('2') =g= -1;
+con2685..0.43216887888466593 * x('1') - 
+0.90179269243189752 * x('2') =g= -1;
+con2686..0.84551309818215326 * x('1') + 
+0.53395468047617722 * x('2') =g= -1;
+con2687..0.43160219727160665 * x('1') - 
+0.90206404612439861 * x('2') =g= -1;
+con2688..0.43103534527888465 * x('1') - 
+0.90233504371730611 * x('2') =g= -1;
+con2689..0.84517744759073665 * x('1') + 
+0.53448581092860425 * x('2') =g= -1;
+con2690..0.43046832313027333 * x('1') - 
+0.90260568510363959 * x('2') =g= -1;
+con2691..0.4299011310496077 * x('1') - 
+0.90287597017656196 * x('2') =g= -1;
+con2692..0.84484146335632948 * x('1') + 
+0.53501673038694375 * x('2') =g= -1;
+con2693..0.42933376926079447 * x('1') - 
+0.90314589882937457 * x('2') =g= -1;
+con2694..0.42876623798780761 * x('1') - 
+0.90341547095551933 * x('2') =g= -1;
+con2695..0.84450514561156553 * x('1') + 
+0.53554743864160959 * x('2') =g= -1;
+con2696..0.428198537454683 * x('1') - 
+0.90368468644858113 * x('2') =g= -1;
+con2697..0.427630667885529 * x('1') - 
+0.90395354520228333 * x('2') =g= -1;
+con2698..0.8441684944892095 * x('1') + 
+0.5360779354830989 * x('2') =g= -1;
+con2699..0.42706262950451751 * x('1') - 
+0.90422204711049115 * x('2') =g= -1;
+con2700..0.42649442253588704 * x('1') - 
+0.90449019206721104 * x('2') =g= -1;
+con2701..0.84383151012215829 * x('1') + 
+0.5366082207019921 * x('2') =g= -1;
+con2702..0.42592604720394511 * x('1') - 
+0.90475797996658902 * x('2') =g= -1;
+con2703..0.42535750373306325 * x('1') - 
+0.90502541070291342 * x('2') =g= -1;
+con2704..0.84349419264344005 * x('1') + 
+0.53713829408895364 * x('2') =g= -1;
+con2705..0.42478879234768013 * x('1') - 
+0.90529248417061292 * x('2') =g= -1;
+con2706..0.42421991327230085 * x('1') - 
+0.90555920026425751 * x('2') =g= -1;
+con2707..0.84315654218621461 * x('1') + 
+0.53766815543473112 * x('2') =g= -1;
+con2708..0.42365086673149654 * x('1') - 
+0.90582555887855787 * x('2') =g= -1;
+con2709..0.42308165294990369 * x('1') - 
+0.90609155990836665 * x('2') =g= -1;
+con2710..0.84281855888377299 * x('1') + 
+0.53819780453015598 * x('2') =g= -1;
+con2711..0.42251227215222731 * x('1') - 
+0.90635720324867619 * x('2') =g= -1;
+con2712..0.42194272456323584 * x('1') - 
+0.90662248879462137 * x('2') =g= -1;
+con2713..0.84248024286953804 * x('1') + 
+0.53872724116614357 * x('2') =g= -1;
+con2714..0.42137301040776354 * x('1') - 
+0.90688741644147808 * x('2') =g= -1;
+con2715..0.42080312991071372 * x('1') - 
+0.90715198608466208 * x('2') =g= -1;
+con2716..0.84214159427706348 * x('1') + 
+0.53925646513369296 * x('2') =g= -1;
+con2717..0.42023308329704973 * x('1') - 
+0.90741619761973336 * x('2') =g= -1;
+con2718..0.41966287079180598 * x('1') - 
+0.90768005094239013 * x('2') =g= -1;
+con2719..0.84180261324003469 * x('1') + 
+0.53978547622388706 * x('2') =g= -1;
+con2720..0.4190924926200793 * x('1') - 
+0.90794354594847404 * x('2') =g= -1;
+con2721..0.41852194900703188 * x('1') - 
+0.90820668253396786 * x('2') =g= -1;
+con2722..0.84146329989226798 * x('1') + 
+0.54031427422789335 * x('2') =g= -1;
+con2723..0.41795124017789365 * x('1') - 
+0.90846946059499467 * x('2') =g= -1;
+con2724..0.41738036635795728 * x('1') - 
+0.90873188002782057 * x('2') =g= -1;
+con2725..0.84112365436771097 * x('1') + 
+0.54084285893696282 * x('2') =g= -1;
+con2726..0.41680932777258139 * x('1') - 
+0.90899394072885265 * x('2') =g= -1;
+con2727..0.41623812464718979 * x('1') - 
+0.90925564259463931 * x('2') =g= -1;
+con2728..0.84078367680044253 * x('1') + 
+0.54137123014243105 * x('2') =g= -1;
+con2729..0.41566675720727103 * x('1') - 
+0.9095169855218711 * x('2') =g= -1;
+con2730..0.41509522567837787 * x('1') - 
+0.90977796940738054 * x('2') =g= -1;
+con2731..0.8404433673246724 * x('1') + 
+0.54189938763571766 * x('2') =g= -1;
+con2732..0.41452353028613015 * x('1') - 
+0.91003859414814037 * x('2') =g= -1;
+con2733..0.41395167125621013 * x('1') - 
+0.91029885964126667 * x('2') =g= -1;
+con2734..0.84010272607474157 * x('1') + 
+0.54242733120832665 * x('2') =g= -1;
+con2735..0.41337964881436445 * x('1') - 
+0.91055876578401718 * x('2') =g= -1;
+con2736..0.41280746318640771 * x('1') - 
+0.91081831247379008 * x('2') =g= -1;
+con2737..0.83976175318512181 * x('1') + 
+0.54295506065184673 * x('2') =g= -1;
+con2738..0.41223511459821316 * x('1') - 
+0.91107749960812778 * x('2') =g= -1;
+con2739..0.41166260327572318 * x('1') - 
+0.91133632708471279 * x('2') =g= -1;
+con2740..0.83942044879041589 * x('1') + 
+0.54348257575795078 * x('2') =g= -1;
+con2741..0.41108992944494455 * x('1') - 
+0.91159479480136929 * x('2') =g= -1;
+con2742..0.41051709333194325 * x('1') - 
+0.91185290265606578 * x('2') =g= -1;
+con2743..0.83907881302535747 * x('1') + 
+0.5440098763183967 * x('2') =g= -1;
+con2744..0.4099440951628549 * x('1') - 
+0.91211065054691043 * x('2') =g= -1;
+con2745..0.40937093516387607 * x('1') - 
+0.91236803837215474 * x('2') =g= -1;
+con2746..0.8387368460248108 * x('1') + 
+0.54453696212502678 * x('2') =g= -1;
+con2747..0.40879761356126787 * x('1') - 
+0.912625066030192 * x('2') =g= -1;
+con2748..0.40822413058135437 * x('1') - 
+0.91288173341955825 * x('2') =g= -1;
+con2749..0.83839454792377133 * x('1') + 
+0.54506383296976801 * x('2') =g= -1;
+con2750..0.40765048645052587 * x('1') - 
+0.91313804043893032 * x('2') =g= -1;
+con2751..0.40707668139523384 * x('1') - 
+0.91339398698712881 * x('2') =g= -1;
+con2752..0.83805191885736474 * x('1') + 
+0.54559048864463255 * x('2') =g= -1;
+con2753..0.40650271564199403 * x('1') - 
+0.913649572963116 * x('2') =g= -1;
+con2754..0.40592858941738574 * x('1') - 
+0.91390479826599635 * x('2') =g= -1;
+con2755..0.83770895896084774 * x('1') + 
+0.54611692894171726 * x('2') =g= -1;
+con2756..0.40535430294805064 * x('1') - 
+0.91415966279501748 * x('2') =g= -1;
+con2757..0.40477985646069703 * x('1') - 
+0.91441416644956763 * x('2') =g= -1;
+con2758..0.83736566836960746 * x('1') + 
+0.54664315365320426 * x('2') =g= -1;
+con2759..0.40420525018209064 * x('1') - 
+0.91466830912918018 * x('2') =g= -1;
+con2760..0.40363048433906523 * x('1') - 
+0.91492209073352881 * x('2') =g= -1;
+con2761..0.8370220472191614 * x('1') + 
+0.5471691625713605 * x('2') =g= -1;
+con2762..0.40305555915851743 * x('1') - 
+0.9151755111624299 * x('2') =g= -1;
+con2763..0.40248047486740202 * x('1') - 
+0.91542857031584424 * x('2') =g= -1;
+con2764..0.83667809564515805 * x('1') + 
+0.54769495548853819 * x('2') =g= -1;
+con2765..0.40190523169274212 * x('1') - 
+0.91568126809387296 * x('2') =g= -1;
+con2766..0.40132982986162052 * x('1') - 
+0.91593360439676119 * x('2') =g= -1;
+con2767..0.83633381378337579 * x('1') + 
+0.54822053219717493 * x('2') =g= -1;
+con2768..0.40075426960118332 * x('1') - 
+0.91618557912489651 * x('2') =g= -1;
+con2769..0.40017855113863837 * x('1') - 
+0.91643719217880948 * x('2') =g= -1;
+con2770..0.8359892017697238 * x('1') + 
+0.54874589248979355 * x('2') =g= -1;
+con2771..0.39960267470125843 * x('1') - 
+0.91668844345917233 * x('2') =g= -1;
+con2772..0.39902664051637615 * x('1') - 
+0.91693933286680129 * x('2') =g= -1;
+con2773..0.83564425974024126 * x('1') + 
+0.54927103615900241 * x('2') =g= -1;
+con2774..0.3984504488113873 * x('1') - 
+0.91718986030265515 * x('2') =g= -1;
+con2775..0.39787409981374988 * x('1') - 
+0.91744002566783522 * x('2') =g= -1;
+con2776..0.83529898783109791 * x('1') + 
+0.54979596299749534 * x('2') =g= -1;
+con2777..0.397297593750983 * x('1') - 
+0.91768982886358663 * x('2') =g= -1;
+con2778..0.39672093085067045 * x('1') - 
+0.91793926979129592 * x('2') =g= -1;
+con2779..0.83495338617859371 * x('1') + 
+0.55032067279805164 * x('2') =g= -1;
+con2780..0.39614411134045524 * x('1') - 
+0.91818834835249408 * x('2') =g= -1;
+con2781..0.39556713544804245 * x('1') - 
+0.91843706444885487 * x('2') =g= -1;
+con2782..0.83460745491915833 * x('1') + 
+0.55084516535353667 * x('2') =g= -1;
+con2783..0.39499000340120199 * x('1') - 
+0.91868541798219394 * x('2') =g= -1;
+con2784..0.39441271542775969 * x('1') - 
+0.9189334088544725 * x('2') =g= -1;
+con2785..0.83426119418935207 * x('1') + 
+0.55136944045690117 * x('2') =g= -1;
+con2786..0.39383527175560878 * x('1') - 
+0.91918103696779219 * x('2') =g= -1;
+con2787..0.39325767261270062 * x('1') - 
+0.91942830222439964 * x('2') =g= -1;
+con2788..0.83391460412586527 * x('1') + 
+0.55189349790118158 * x('2') =g= -1;
+con2789..0.3926799182270479 * x('1') - 
+0.9196752045266845 * x('2') =g= -1;
+con2790..0.39210200882672708 * x('1') - 
+0.91992174377717872 * x('2') =g= -1;
+con2791..0.8335676848655178 * x('1') + 
+0.55241733747950084 * x('2') =g= -1;
+con2792..0.39152394463987339 * x('1') - 
+0.9201679198785585 * x('2') =g= -1;
+con2793..0.3909457258946839 * x('1') - 
+0.92041373273364335 * x('2') =g= -1;
+con2794..0.83322043654526023 * x('1') + 
+0.55294095898506745 * x('2') =g= -1;
+con2795..0.39036735281941687 * x('1') - 
+0.92065918224539578 * x('2') =g= -1;
+con2796..0.3897888256423912 * x('1') - 
+0.92090426831692207 * x('2') =g= -1;
+con2797..0.83287285930217225 * x('1') + 
+0.55346436221117612 * x('2') =g= -1;
+con2798..0.38921014459198611 * x('1') - 
+0.92114899085147206 * x('2') =g= -1;
+con2799..0.3886313098966438 * x('1') - 
+0.92139334975243814 * x('2') =g= -1;
+con2800..0.83252495327346387 * x('1') + 
+0.55398754695120789 * x('2') =g= -1;
+con2801..0.38805232178486476 * x('1') - 
+0.92163734492335747 * x('2') =g= -1;
+con2802..0.38747318048521001 * x('1') - 
+0.92188097626791055 * x('2') =g= -1;
+con2803..0.8321767185964748 * x('1') + 
+0.55451051299862975 * x('2') =g= -1;
+con2804..0.38689388622630438 * x('1') - 
+0.9221242436899203 * x('2') =g= -1;
+con2805..0.38631443923682723 * x('1') - 
+0.92236714709335554 * x('2') =g= -1;
+con2806..0.8318281554086745 * x('1') + 
+0.55503326014699517 * x('2') =g= -1;
+con2807..0.38573483974552414 * x('1') - 
+0.92260968638232643 * x('2') =g= -1;
+con2808..0.38515508798119735 * x('1') - 
+0.92285186146108855 * x('2') =g= -1;
+con2809..0.83147926384766213 * x('1') + 
+0.55555578818994389 * x('2') =g= -1;
+con2810..0.38457518417270942 * x('1') - 
+0.92309367223404071 * x('2') =g= -1;
+con2811..0.38399512854898538 * x('1') - 
+0.92333511860572492 * x('2') =g= -1;
+con2812..0.83113004405116631 * x('1') + 
+0.55607809692120258 * x('2') =g= -1;
+con2813..0.38341492133900756 * x('1') - 
+0.923576200480828 * x('2') =g= -1;
+con2814..0.38283456277181921 * x('1') - 
+0.92381691776418018 * x('2') =g= -1;
+con2815..0.8307804961570453 * x('1') + 
+0.55660018613458406 * x('2') =g= -1;
+con2816..0.38225405307652222 * x('1') - 
+0.92405727036075602 * x('2') =g= -1;
+con2817..0.38167339248228166 * x('1') - 
+0.92429725817567276 * x('2') =g= -1;
+con2818..0.83043062030328707 * x('1') + 
+0.55712205562398787 * x('2') =g= -1;
+con2819..0.3810925812183163 * x('1') - 
+0.92453688111419385 * x('2') =g= -1;
+con2820..0.38051161951391022 * x('1') - 
+0.92477613908172462 * x('2') =g= -1;
+con2821..0.83008041662800891 * x('1') + 
+0.55764370518340045 * x('2') =g= -1;
+con2822..0.37993050759840347 * x('1') - 
+0.92501503198381563 * x('2') =g= -1;
+con2823..0.37934924570119549 * x('1') - 
+0.92525355972616175 * x('2') =g= -1;
+con2824..0.82972988526945746 * x('1') + 
+0.55816513460689487 * x('2') =g= -1;
+con2825..0.37876783405174824 * x('1') - 
+0.92549172221460052 * x('2') =g= -1;
+con2826..0.37818627287957701 * x('1') - 
+0.92572951935511605 * x('2') =g= -1;
+con2827..0.8293790263660088 * x('1') + 
+0.55868634368863124 * x('2') =g= -1;
+con2828..0.37760456241426188 * x('1') - 
+0.9259669510538342 * x('2') =g= -1;
+con2829..0.37702270288543849 * x('1') - 
+0.92620401721702672 * x('2') =g= -1;
+con2830..0.82902784005616825 * x('1') + 
+0.55920733222285657 * x('2') =g= -1;
+con2831..0.37644069452280143 * x('1') - 
+0.92644071775110948 * x('2') =g= -1;
+con2832..0.37585853755610649 * x('1') - 
+0.92667705256264166 * x('2') =g= -1;
+con2833..0.82867632647857059 * x('1') + 
+0.55972810000390494 * x('2') =g= -1;
+con2834..0.37527623221516559 * x('1') - 
+0.92691302155832778 * x('2') =g= -1;
+con2835..0.37469377872985016 * x('1') - 
+0.92714862464501668 * x('2') =g= -1;
+con2836..0.82832448577197948 * x('1') + 
+0.56024864682619779 * x('2') =g= -1;
+con2837..0.37411117733008925 * x('1') - 
+0.92738386172970178 * x('2') =g= -1;
+con2838..0.37352842824587262 * x('1') - 
+0.92761873271951978 * x('2') =g= -1;
+con2839..0.82797231807528793 * x('1') + 
+0.56076897248424351 * x('2') =g= -1;
+con2840..0.37294553170724615 * x('1') - 
+0.92785323752175353 * x('2') =g= -1;
+con2841..0.37236248794431442 * x('1') - 
+0.92808737604382929 * x('2') =g= -1;
+con2842..0.82761982352751795 * x('1') + 
+0.56128907677263773 * x('2') =g= -1;
+con2843..0.37177929718724045 * x('1') - 
+0.92832114819331868 * x('2') =g= -1;
+con2844..0.37119595966624419 * x('1') - 
+0.92855455387793773 * x('2') =g= -1;
+con2845..0.82726700226782057 * x('1') + 
+0.5618089594860638 * x('2') =g= -1;
+con2846..0.37061247561160621 * x('1') - 
+0.92878759300554647 * x('2') =g= -1;
+con2847..0.37002884525366236 * x('1') - 
+0.9290202654841504 * x('2') =g= -1;
+con2848..0.82691385443547594 * x('1') + 
+0.56232862041929221 * x('2') =g= -1;
+con2849..0.36944506882280614 * x('1') - 
+0.92925257122189986 * x('2') =g= -1;
+con2850..0.3688611465494922 * x('1') - 
+0.92948451012708866 * x('2') =g= -1;
+con2851..0.82656038016989286 * x('1') + 
+0.56284805936718141 * x('2') =g= -1;
+con2852..0.36827707866422693 * x('1') - 
+0.92971608210815782 * x('2') =g= -1;
+con2853..0.36769286539757995 * x('1') - 
+0.92994728707369068 * x('2') =g= -1;
+con2854..0.82620657961060928 * x('1') + 
+0.56336727612467685 * x('2') =g= -1;
+con2855..0.36710850698017494 * x('1') - 
+0.93017812493241681 * x('2') =g= -1;
+con2856..0.36652400364269372 * x('1') - 
+0.93040859559321065 * x('2') =g= -1;
+con2857..0.8258524528972917 * x('1') + 
+0.5638862704868125 * x('2') =g= -1;
+con2858..0.3659393556158746 * x('1') - 
+0.93063869896509166 * x('2') =g= -1;
+con2859..0.36535456313051529 * x('1') - 
+0.93086843495722338 * x('2') =g= -1;
+con2860..0.8254980001697354 * x('1') + 
+0.56440504224870947 * x('2') =g= -1;
+con2861..0.36476962641746824 * x('1') - 
+0.93109780347891524 * x('2') =g= -1;
+con2862..0.36418454570764358 * x('1') - 
+0.93132680443962168 * x('2') =g= -1;
+con2863..0.82514322156786468 * x('1') + 
+0.56492359120557689 * x('2') =g= -1;
+con2864..0.36359932123200822 * x('1') - 
+0.93155543774894201 * x('2') =g= -1;
+con2865..0.36301395322158514 * x('1') - 
+0.93178370331662097 * x('2') =g= -1;
+con2866..0.82478811723173218 * x('1') + 
+0.56544191715271208 * x('2') =g= -1;
+con2867..0.36242844190745632 * x('1') - 
+0.93201160105254777 * x('2') =g= -1;
+con2868..0.36184278752075794 * x('1') - 
+0.93223913086675758 * x('2') =g= -1;
+con2869..0.82443268730151908 * x('1') + 
+0.56596001988550004 * x('2') =g= -1;
+con2870..0.3612569902926826 * x('1') - 
+0.93246629266943082 * x('2') =g= -1;
+con2871..0.36067105045448256 * x('1') - 
+0.93269308637089199 * x('2') =g= -1;
+con2872..0.82407693191753539 * x('1') + 
+0.56647789919941416 * x('2') =g= -1;
+con2873..0.36008496823746072 * x('1') - 
+0.93291951188161293 * x('2') =g= -1;
+con2874..0.35949874387298181 * x('1') - 
+0.93314556911220892 * x('2') =g= -1;
+con2875..0.82372085122021932 * x('1') + 
+0.56699555489001618 * x('2') =g= -1;
+con2876..0.35891237759246353 * x('1') - 
+0.93337125797344167 * x('2') =g= -1;
+con2877..0.35832586962737939 * x('1') - 
+0.93359657837621823 * x('2') =g= -1;
+con2878..0.82336444535013753 * x('1') + 
+0.56751298675295558 * x('2') =g= -1;
+con2879..0.35773922020926158 * x('1') - 
+0.93382153023159054 * x('2') =g= -1;
+con2880..0.35715242956969545 * x('1') - 
+0.93404611345075661 * x('2') =g= -1;
+con2881..0.82300771444798526 * x('1') + 
+0.56803019458397064 * x('2') =g= -1;
+con2882..0.35656549794032305 * x('1') - 
+0.93427032794505971 * x('2') =g= -1;
+con2883..0.35597842555284104 * x('1') - 
+0.93449417362598919 * x('2') =g= -1;
+con2884..0.82265065865458586 * x('1') + 
+0.56854717817888789 * x('2') =g= -1;
+con2885..0.35539121263900531 * x('1') - 
+0.9347176504051784 * x('2') =g= -1;
+con2886..0.35480385943062109 * x('1') - 
+0.93494075819440881 * x('2') =g= -1;
+con2887..0.82229327811089103 * x('1') + 
+0.56906393733362237 * x('2') =g= -1;
+con2888..0.35421636615955499 * x('1') - 
+0.9351634969056053 * x('2') =g= -1;
+con2889..0.35362873305772552 * x('1') - 
+0.93538586645083954 * x('2') =g= -1;
+con2890..0.82193557295798048 * x('1') + 
+0.56958047184417804 * x('2') =g= -1;
+con2891..0.35304096035710641 * x('1') - 
+0.93560786674232921 * x('2') =g= -1;
+con2892..0.3524530482897299 * x('1') - 
+0.93582949769243617 * x('2') =g= -1;
+con2893..0.82157754333706234 * x('1') + 
+0.57009678150664689 * x('2') =g= -1;
+con2894..0.35186499708767721 * x('1') - 
+0.93605075921367042 * x('2') =g= -1;
+con2895..0.35127680698309055 * x('1') - 
+0.93627165121868583 * x('2') =g= -1;
+con2896..0.82121918938947258 * x('1') + 
+0.57061286611721052 * x('2') =g= -1;
+con2897..0.35068847820816346 * x('1') - 
+0.93649217362028314 * x('2') =g= -1;
+con2898..0.35010001099514432 * x('1') - 
+0.93671232633140888 * x('2') =g= -1;
+con2899..0.82086051125667536 * x('1') + 
+0.57112872547213867 * x('2') =g= -1;
+con2900..0.34951140557633864 * x('1') - 
+0.93693210926515491 * x('2') =g= -1;
+con2901..0.348922662184104 * x('1') - 
+0.93715152233475973 * x('2') =g= -1;
+con2902..0.82050150908026298 * x('1') + 
+0.57164435936779012 * x('2') =g= -1;
+con2903..0.34833378105085316 * x('1') - 
+0.93737056545360775 * x('2') =g= -1;
+con2904..0.34774476240905267 * x('1') - 
+0.93758923853522957 * x('2') =g= -1;
+con2905..0.82014218300195518 * x('1') + 
+0.57215976760061305 * x('2') =g= -1;
+con2906..0.3471556064912264 * x('1') - 
+0.93780754149330059 * x('2') =g= -1;
+con2907..0.34656631352994677 * x('1') - 
+0.93802547424164484 * x('2') =g= -1;
+con2908..0.81978253316359995 * x('1') + 
+0.57267494996714419 * x('2') =g= -1;
+con2909..0.34597688375784613 * x('1') - 
+0.93824303669422981 * x('2') =g= -1;
+con2910..0.34538731740760742 * x('1') - 
+0.93846022876517077 * x('2') =g= -1;
+con2911..0.81942255970717304 * x('1') + 
+0.5731899062640099 * x('2') =g= -1;
+con2912..0.34479761471196757 * x('1') - 
+0.93867705036872906 * x('2') =g= -1;
+con2913..0.34420777590371976 * x('1') - 
+0.93889350141931149 * x('2') =g= -1;
+con2914..0.81906226277477767 * x('1') + 
+0.57370463628792556 * x('2') =g= -1;
+con2915..0.34361780121570851 * x('1') - 
+0.93910958183147186 * x('2') =g= -1;
+con2916..0.34302769088083263 * x('1') - 
+0.93932529151991007 * x('2') =g= -1;
+con2917..0.81870164250864519 * x('1') + 
+0.57421913983569595 * x('2') =g= -1;
+con2918..0.34243744513204466 * x('1') - 
+0.93954063039947233 * x('2') =g= -1;
+con2919..0.34184706420234973 * x('1') - 
+0.93975559838515177 * x('2') =g= -1;
+con2920..0.81834069905113427 * x('1') + 
+0.57473341670421496 * x('2') =g= -1;
+con2921..0.34125654832480873 * x('1') - 
+0.93997019539208659 * x('2') =g= -1;
+con2922..0.34066589773253347 * x('1') - 
+0.94018442133556279 * x('2') =g= -1;
+con2923..0.81797943254473149 * x('1') + 
+0.57524746669046634 * x('2') =g= -1;
+con2924..0.34007511265868962 * x('1') - 
+0.94039827613101223 * x('2') =g= -1;
+con2925..0.33948419333649521 * x('1') - 
+0.94061175969401378 * x('2') =g= -1;
+con2926..0.81761784313205033 * x('1') + 
+0.57576128959152328 * x('2') =g= -1;
+con2927..0.33889313999922377 * x('1') - 
+0.94082487194029185 * x('2') =g= -1;
+con2928..0.33830195288019915 * x('1') - 
+0.94103761278571829 * x('2') =g= -1;
+con2929..0.81725593095583238 * x('1') + 
+0.57627488520454861 * x('2') =g= -1;
+con2930..0.3377106322127989 * x('1') - 
+0.9412499821463115 * x('2') =g= -1;
+con2931..0.33711917823045329 * x('1') - 
+0.94146197993823622 * x('2') =g= -1;
+con2932..0.81689369615894647 * x('1') + 
+0.57678825332679484 * x('2') =g= -1;
+con2933..0.33652759116664444 * x('1') - 
+0.94167360607780437 * x('2') =g= -1;
+con2934..0.33593587125490937 * x('1') - 
+0.94188486048147357 * x('2') =g= -1;
+con2935..0.81653113888438855 * x('1') + 
+0.5773013937556043 * x('2') =g= -1;
+con2936..0.33534401872883512 * x('1') - 
+0.94209574306584931 * x('2') =g= -1;
+con2937..0.33475203382206115 * x('1') - 
+0.94230625374768351 * x('2') =g= -1;
+con2938..0.81616825927528214 * x('1') + 
+0.57781430628840946 * x('2') =g= -1;
+con2939..0.33415991676828238 * x('1') - 
+0.94251639244387397 * x('2') =g= -1;
+con2940..0.33356766780124009 * x('1') - 
+0.94272615907146728 * x('2') =g= -1;
+con2941..0.81580505747487797 * x('1') + 
+0.57832699072273208 * x('2') =g= -1;
+con2942..0.33297528715473362 * x('1') - 
+0.94293555354765513 * x('2') =g= -1;
+con2943..0.33238277506261071 * x('1') - 
+0.94314457578977673 * x('2') =g= -1;
+con2944..0.81544153362655381 * x('1') + 
+0.57883944685618482 * x('2') =g= -1;
+con2945..0.33179013175877203 * x('1') - 
+0.94335322571531854 * x('2') =g= -1;
+con2946..0.33119735747716911 * x('1') - 
+0.9435615032419139 * x('2') =g= -1;
+con2947..0.81507768787381474 * x('1') + 
+0.57935167448646963 * x('2') =g= -1;
+con2948..0.33060445245180775 * x('1') - 
+0.94376940828734235 * x('2') =g= -1;
+con2949..0.33001141691674279 * x('1') - 
+0.94397694076953165 * x('2') =g= -1;
+con2950..0.81471352036029265 * x('1') + 
+0.57986367341137957 * x('2') =g= -1;
+con2951..0.32941825110608064 * x('1') - 
+0.94418410060655611 * x('2') =g= -1;
+con2952..0.32882495525398242 * x('1') - 
+0.94439088771663637 * x('2') =g= -1;
+con2953..0.81434903122974678 * x('1') + 
+0.5803754434287971 * x('2') =g= -1;
+con2954..0.32823152959465479 * x('1') - 
+0.94459730201814218 * x('2') =g= -1;
+con2955..0.32763797436236153 * x('1') - 
+0.94480334342958827 * x('2') =g= -1;
+con2956..0.81398422062606313 * x('1') + 
+0.58088698433669572 * x('2') =g= -1;
+con2957..0.3270442897914142 * x('1') - 
+0.94500901186963793 * x('2') =g= -1;
+con2958..0.32645047611617534 * x('1') - 
+0.94521430725710154 * x('2') =g= -1;
+con2959..0.81361908869325472 * x('1') + 
+0.58139829593313885 * x('2') =g= -1;
+con2960..0.32585653357106192 * x('1') - 
+0.94541922951093571 * x('2') =g= -1;
+con2961..0.32526246239053586 * x('1') - 
+0.94562377855024626 * x('2') =g= -1;
+con2962..0.81325363557546138 * x('1') + 
+0.58190937801628073 * x('2') =g= -1;
+con2963..0.3246682628091157 * x('1') - 
+0.94582795429428446 * x('2') =g= -1;
+con2964..0.32407393506136734 * x('1') - 
+0.94603175666244976 * x('2') =g= -1;
+con2965..0.81288786141694946 * x('1') + 
+0.5824202303843663 * x('2') =g= -1;
+con2966..0.32347947938190824 * x('1') - 
+0.94623518557428921 * x('2') =g= -1;
+con2967..0.32288489600540526 * x('1') - 
+0.94643824094949724 * x('2') =g= -1;
+con2968..0.8125217663621126 * x('1') + 
+0.58293085283573098 * x('2') =g= -1;
+con2969..0.32229018516657842 * x('1') - 
+0.94664092270791489 * x('2') =g= -1;
+con2970..0.32169534710019543 * x('1') - 
+0.94684323076953181 * x('2') =g= -1;
+con2971..0.81215535055547061 * x('1') + 
+0.5834412451688008 * x('2') =g= -1;
+con2972..0.32110038204107427 * x('1') - 
+0.94704516505448466 * x('2') =g= -1;
+con2973..0.3205052902240863 * x('1') - 
+0.94724672548305711 * x('2') =g= -1;
+con2974..0.81178861414167014 * x('1') + 
+0.58395140718209304 * x('2') =g= -1;
+con2975..0.31991007188414727 * x('1') - 
+0.94744791197568201 * x('2') =g= -1;
+con2976..0.3193147272562285 * x('1') - 
+0.94764872445293802 * x('2') =g= -1;
+con2977..0.81142155726548437 * x('1') + 
+0.58446133867421568 * x('2') =g= -1;
+con2978..0.31871925657534794 * x('1') - 
+0.94784916283555243 * x('2') =g= -1;
+con2979..0.31812366007657333 * x('1') - 
+0.94804922704440031 * x('2') =g= -1;
+con2980..0.81105418007181307 * x('1') + 
+0.58497103944386775 * x('2') =g= -1;
+con2981..0.31752793799502532 * x('1') - 
+0.94824891700050329 * x('2') =g= -1;
+con2982..0.31693209056586841 * x('1') - 
+0.94844823262503275 * x('2') =g= -1;
+con2983..0.81068648270568222 * x('1') + 
+0.58548050928983919 * x('2') =g= -1;
+con2984..0.31633611802432227 * x('1') - 
+0.94864717383930575 * x('2') =g= -1;
+con2985..0.3157400206056527 * x('1') - 
+0.94884574056478854 * x('2') =g= -1;
+con2986..0.81031846531224472 * x('1') + 
+0.58598974801101134 * x('2') =g= -1;
+con2987..0.31514379854517494 * x('1') - 
+0.94904393272309484 * x('2') =g= -1;
+con2988..0.31454745207825563 * x('1') - 
+0.94924175023598567 * x('2') =g= -1;
+con2989..0.80995012803677902 * x('1') + 
+0.58649875540635654 * x('2') =g= -1;
+con2990..0.31395098144030836 * x('1') - 
+0.94943919302537072 * x('2') =g= -1;
+con2991..0.31335438686679629 * x('1') - 
+0.94963626101330723 * x('2') =g= -1;
+con2992..0.80958147102469047 * x('1') + 
+0.58700753127493888 * x('2') =g= -1;
+con2993..0.31275766859323073 * x('1') - 
+0.94983295412200075 * x('2') =g= -1;
+con2994..0.31216082685517538 * x('1') - 
+0.95002927227380374 * x('2') =g= -1;
+con2995..0.80921249442151033 * x('1') + 
+0.58751607541591322 * x('2') =g= -1;
+con2996..0.31156386188823659 * x('1') - 
+0.95022521539121862 * x('2') =g= -1;
+con2997..0.3109667739280752 * x('1') - 
+0.95042078339689384 * x('2') =g= -1;
+con2998..0.80884319837289631 * x('1') + 
+0.58802438762852638 * x('2') =g= -1;
+con2999..0.31036956321039749 * x('1') - 
+0.95061597621362703 * x('2') =g= -1;
+con3000..0.30977222997095794 * x('1') - 
+0.95081079376436406 * x('2') =g= -1;
+con3001..0.80847358302463201 * x('1') + 
+0.58853246771211654 * x('2') =g= -1;
+con3002..0.30917477444556202 * x('1') - 
+0.95100523597219788 * x('2') =g= -1;
+con3003..0.30857719687006102 * x('1') - 
+0.95119930276037079 * x('2') =g= -1;
+con3004..0.80810364852262684 * x('1') + 
+0.58904031546611368 * x('2') =g= -1;
+con3005..0.30797949748035514 * x('1') - 
+0.95139299405227273 * x('2') =g= -1;
+con3006..0.30738167651239273 * x('1') - 
+0.95158630977144198 * x('2') =g= -1;
+con3007..0.80773339501291674 * x('1') + 
+0.5895479306900393 * x('2') =g= -1;
+con3008..0.30678373420216931 * x('1') - 
+0.95177924984156526 * x('2') =g= -1;
+con3009..0.30618567078573078 * x('1') - 
+0.95197181418647692 * x('2') =g= -1;
+con3010..0.80736282264166337 * x('1') + 
+0.59005531318350668 * x('2') =g= -1;
+con3011..0.30558748649916828 * x('1') - 
+0.95216400273016022 * x('2') =g= -1;
+con3012..0.30498918157862159 * x('1') - 
+0.95235581539674685 * x('2') =g= -1;
+con3013..0.80699193155515381 * x('1') + 
+0.59056246274622126 * x('2') =g= -1;
+con3014..0.30439075626027728 * x('1') - 
+0.95254725211051683 * x('2') =g= -1;
+con3015..0.30379221078037277 * x('1') - 
+0.9527383127958976 * x('2') =g= -1;
+con3016..0.80662072189980183 * x('1') + 
+0.59106937917797997 * x('2') =g= -1;
+con3017..0.303193545375187 * x('1') - 
+0.95292899737746695 * x('2') =g= -1;
+con3018..0.30259476028105137 * x('1') - 
+0.95311930577994963 * x('2') =g= -1;
+con3019..0.8062491938221461 * x('1') + 
+0.59157606227867221 * x('2') =g= -1;
+con3020..0.30199585573434451 * x('1') - 
+0.95330923792821864 * x('2') =g= -1;
+con3021..0.30139683197148703 * x('1') - 
+0.9534987937472974 * x('2') =g= -1;
+con3022..0.80587734746885153 * x('1') + 
+0.59208251184827942 * x('2') =g= -1;
+con3023..0.30079768922895272 * x('1') - 
+0.95368797316235587 * x('2') =g= -1;
+con3024..0.30019842774325878 * x('1') - 
+0.95387677609871357 * x('2') =g= -1;
+con3025..0.80550518298670859 * x('1') + 
+0.59258872768687476 * x('2') =g= -1;
+con3026..0.2995990477509694 * x('1') - 
+0.9540652024818389 * x('2') =g= -1;
+con3027..0.29899954948869883 * x('1') - 
+0.95425325223734769 * x('2') =g= -1;
+con3028..0.80513270052263319 * x('1') + 
+0.5930947095946244 * x('2') =g= -1;
+con3029..0.29839993319310226 * x('1') - 
+0.95444092529100621 * x('2') =g= -1;
+con3030..0.29780019910088712 * x('1') - 
+0.95462822156872773 * x('2') =g= -1;
+con3031..0.80475990022366672 * x('1') + 
+0.59360045737178635 * x('2') =g= -1;
+con3032..0.2972003474488043 * x('1') - 
+0.95481514099657527 * x('2') =g= -1;
+con3033..0.29660037847365162 * x('1') - 
+0.95500168350076042 * x('2') =g= -1;
+con3034..0.80438678223697635 * x('1') + 
+0.59410597081871108 * x('2') =g= -1;
+con3035..0.29600029241227255 * x('1') - 
+0.95518784900764375 * x('2') =g= -1;
+con3036..0.29540008950155933 * x('1') - 
+0.95537363744373371 * x('2') =g= -1;
+con3037..0.80401334670985425 * x('1') + 
+0.59461124973584178 * x('2') =g= -1;
+con3038..0.2947997699784477 * x('1') - 
+0.95555904873568875 * x('2') =g= -1;
+con3039..0.29419933407991944 * x('1') - 
+0.95574408281031586 * x('2') =g= -1;
+con3040..0.80363959378971839 * x('1') + 
+0.59511629392371401 * x('2') =g= -1;
+con3041..0.29359878204300582 * x('1') - 
+0.95592873959457014 * x('2') =g= -1;
+con3042..0.29299811410477772 * x('1') - 
+0.95611301901555745 * x('2') =g= -1;
+con3043..0.80326552362411163 * x('1') + 
+0.59562110318295614 * x('2') =g= -1;
+con3044..0.29239733050235805 * x('1') - 
+0.95629692100053043 * x('2') =g= -1;
+con3045..0.29179643147291173 * x('1') - 
+0.95648044547689226 * x('2') =g= -1;
+con3046..0.80289113636070242 * x('1') + 
+0.59612567731428912 * x('2') =g= -1;
+con3047..0.29119541725364939 * x('1') - 
+0.95666359237219489 * x('2') =g= -1;
+con3048..0.29059428808183041 * x('1') - 
+0.95684636161413816 * x('2') =g= -1;
+con3049..0.80251643214728396 * x('1') + 
+0.59663001611852706 * x('2') =g= -1;
+con3050..0.28999304419475375 * x('1') - 
+0.95702875313057323 * x('2') =g= -1;
+con3051..0.28939168582976948 * x('1') - 
+0.95721076684949802 * x('2') =g= -1;
+con3052..0.80214141113177484 * x('1') + 
+0.59713411939657668 * x('2') =g= -1;
+con3053..0.28879021322426945 * x('1') - 
+0.95739240269906101 * x('2') =g= -1;
+con3054..0.28818862661569167 * x('1') - 
+0.95757366060755944 * x('2') =g= -1;
+con3055..0.80176607346221884 * x('1') + 
+0.59763798694943737 * x('2') =g= -1;
+con3056..0.28758692624151799 * x('1') - 
+0.95775454050344011 * x('2') =g= -1;
+con3057..0.28698511233927793 * x('1') - 
+0.95793504231529814 * x('2') =g= -1;
+con3058..0.80139041928678456 * x('1') + 
+0.59814161857820236 * x('2') =g= -1;
+con3059..0.28638318514654326 * x('1') - 
+0.95811516597187874 * x('2') =g= -1;
+con3060..0.28578114490093043 * x('1') - 
+0.95829491140207634 * x('2') =g= -1;
+con3061..0.80101444875376548 * x('1') + 
+0.59864501408405724 * x('2') =g= -1;
+con3062..0.28517899184010387 * x('1') - 
+0.95847427853493383 * x('2') =g= -1;
+con3063..0.28457672620176672 * x('1') - 
+0.95865326729964506 * x('2') =g= -1;
+con3064..0.80063816201158022 * x('1') + 
+0.59914817326828151 * x('2') =g= -1;
+con3065..0.28397434822367235 * x('1') - 
+0.95883187762555144 * x('2') =g= -1;
+con3066..0.28337185814361526 * x('1') - 
+0.95901010944214493 * x('2') =g= -1;
+con3067..0.80026155920877184 * x('1') + 
+0.59965109593224741 * x('2') =g= -1;
+con3068..0.2827692561994341 * x('1') - 
+0.95918796267906681 * x('2') =g= -1;
+con3069..0.28216654262901419 * x('1') - 
+0.95936543726610701 * x('2') =g= -1;
+con3070..0.79988464049400854 * x('1') + 
+0.60015378187742086 * x('2') =g= -1;
+con3071..0.28156371767028249 * x('1') - 
+0.95954253313320581 * x('2') =g= -1;
+con3072..0.28096078156121063 * x('1') - 
+0.95971925021045279 * x('2') =g= -1;
+con3073..0.79950740601608294 * x('1') + 
+0.60065623090536091 * x('2') =g= -1;
+con3074..0.28035773453981422 * x('1') - 
+0.95989558842808687 * x('2') =g= -1;
+con3075..0.27975457684415184 * x('1') - 
+0.96007154771649683 * x('2') =g= -1;
+con3076..0.79912985592391272 * x('1') + 
+0.60115844281772057 * x('2') =g= -1;
+con3077..0.27915130871232813 * x('1') - 
+0.96024712800622036 * x('2') =g= -1;
+con3078..0.27854793038248904 * x('1') - 
+0.96042232922794546 * x('2') =g= -1;
+con3079..0.79875199036653965 * x('1') + 
+0.60166041741624599 * x('2') =g= -1;
+con3080..0.27794444209282465 * x('1') - 
+0.96059715131250956 * x('2') =g= -1;
+con3081..0.27734084408156767 * x('1') - 
+0.96077159419090008 * x('2') =g= -1;
+con3082..0.79837380949313042 * x('1') + 
+0.60216215450277744 * x('2') =g= -1;
+con3083..0.27673713658699756 * x('1') - 
+0.96094565779425289 * x('2') =g= -1;
+con3084..0.27613331984743106 * x('1') - 
+0.96111934205385563 * x('2') =g= -1;
+con3085..0.79799531345297592 * x('1') + 
+0.60266365387924858 * x('2') =g= -1;
+con3086..0.27552939410123384 * x('1') - 
+0.96129264690114369 * x('2') =g= -1;
+con3087..0.27492535958681136 * x('1') - 
+0.96146557226770346 * x('2') =g= -1;
+con3088..0.79761650239549164 * x('1') + 
+0.60316491534768724 * x('2') =g= -1;
+con3089..0.27432121654261193 * x('1') - 
+0.96163811808527089 * x('2') =g= -1;
+con3090..0.2737169652071294 * x('1') - 
+0.96181028428573123 * x('2') =g= -1;
+con3091..0.79723737647021731 * x('1') + 
+0.60366593871021501 * x('2') =g= -1;
+con3092..0.27311260581889757 * x('1') - 
+0.96198207080112019 * x('2') =g= -1;
+con3093..0.27250813861649398 * x('1') - 
+0.96215347756362324 * x('2') =g= -1;
+con3094..0.79685793582681708 * x('1') + 
+0.60416672376904723 * x('2') =g= -1;
+con3095..0.27190356383853859 * x('1') - 
+0.96232450450557572 * x('2') =g= -1;
+con3096..0.27129888172369304 * x('1') - 
+0.96249515155946297 * x('2') =g= -1;
+con3097..0.79647818061507925 * x('1') + 
+0.60466727032649381 * x('2') =g= -1;
+con3098..0.27069409251066384 * x('1') - 
+0.96266541865791988 * x('2') =g= -1;
+con3099..0.27008919643819729 * x('1') - 
+0.96283530573373188 * x('2') =g= -1;
+con3100..0.79609811098491634 * x('1') + 
+0.60516757818495848 * x('2') =g= -1;
+con3101..0.26948419374508265 * x('1') - 
+0.96300481271983407 * x('2') =g= -1;
+con3102..0.26887908467015054 * x('1') - 
+0.96317393954931219 * x('2') =g= -1;
+con3103..0.7957177270863649 * x('1') + 
+0.60566764714693921 * x('2') =g= -1;
+con3104..0.26827386945227683 * x('1') - 
+0.96334268615540064 * x('2') =g= -1;
+con3105..0.26766854833037346 * x('1') - 
+0.96351105247148594 * x('2') =g= -1;
+con3106..0.7953370290695857 * x('1') + 
+0.60616747701502838 * x('2') =g= -1;
+con3107..0.26706312154339917 * x('1') - 
+0.96367903843110314 * x('2') =g= -1;
+con3108..0.26645758933035452 * x('1') - 
+0.96384664396793751 * x('2') =g= -1;
+con3109..0.79495601708486341 * x('1') + 
+0.60666706759191269 * x('2') =g= -1;
+con3110..0.2658519519302765 * x('1') - 
+0.96401386901582586 * x('2') =g= -1;
+con3111..0.26524620958224965 * x('1') - 
+0.96418071350875367 * x('2') =g= -1;
+con3112..0.7945746912826066 * x('1') + 
+0.60716641868037335 * x('2') =g= -1;
+con3113..0.26464036252539647 * x('1') - 
+0.96434717738085729 * x('2') =g= -1;
+con3114..0.26403441099888081 * x('1') - 
+0.96451326056642372 * x('2') =g= -1;
+con3115..0.79419305181334776 * x('1') + 
+0.60766553008328605 * x('2') =g= -1;
+con3116..0.26342835524191127 * x('1') - 
+0.96467896299988909 * x('2') =g= -1;
+con3117..0.26282219549373143 * x('1') - 
+0.96484428461584137 * x('2') =g= -1;
+con3118..0.79381109882774337 * x('1') + 
+0.60816440160362117 * x('2') =g= -1;
+con3119..0.26221593199363208 * x('1') - 
+0.96500922534901756 * x('2') =g= -1;
+con3120..0.2616095649809414 * x('1') - 
+0.96517378513430552 * x('2') =g= -1;
+con3121..0.79342883247657336 * x('1') + 
+0.6086630330444438 * x('2') =g= -1;
+con3122..0.26100309469502947 * x('1') - 
+0.96533796390674365 * x('2') =g= -1;
+con3123..0.26039652137530611 * x('1') - 
+0.96550176160152068 * x('2') =g= -1;
+con3124..0.7930462529107416 * x('1') + 
+0.60916142420891362 * x('2') =g= -1;
+con3125..0.25978984526122439 * x('1') - 
+0.96566517815397546 * x('2') =g= -1;
+con3126..0.25918306659227558 * x('1') - 
+0.96582821349959747 * x('2') =g= -1;
+con3127..0.79266336028127549 * x('1') + 
+0.60965957490028555 * x('2') =g= -1;
+con3128..0.25857618560799123 * x('1') - 
+0.96599086757402719 * x('2') =g= -1;
+con3129..0.25796920254794681 * x('1') - 
+0.96615314031305433 * x('2') =g= -1;
+con3130..0.79228015473932611 * x('1') + 
+0.6101574849219088 * x('2') =g= -1;
+con3131..0.25736211765175199 * x('1') - 
+0.96631503165262089 * x('2') =g= -1;
+con3132..0.25675493115906278 * x('1') - 
+0.9664765415288179 * x('2') =g= -1;
+con3133..0.79189663643616803 * x('1') + 
+0.61065515407722837 * x('2') =g= -1;
+con3134..0.25614764330957174 * x('1') - 
+0.9666376698778878 * x('2') =g= -1;
+con3135..0.25554025434301159 * x('1') - 
+0.96679841663622357 * x('2') =g= -1;
+con3136..0.79151280552319925 * x('1') + 
+0.61115258216978363 * x('2') =g= -1;
+con3137..0.2549327644991573 * x('1') - 
+0.96695878174036831 * x('2') =g= -1;
+con3138..0.25432517401782134 * x('1') - 
+0.96711876512701633 * x('2') =g= -1;
+con3139..0.79112866215194122 * x('1') + 
+0.61164976900320955 * x('2') =g= -1;
+con3140..0.25371748313885667 * x('1') - 
+0.96727836673301237 * x('2') =g= -1;
+con3141..0.25310969210215584 * x('1') - 
+0.96743758649535205 * x('2') =g= -1;
+con3142..0.79074420647403865 * x('1') + 
+0.61214671438123636 * x('2') =g= -1;
+con3143..0.25250180114765097 * x('1') - 
+0.96759642435118176 * x('2') =g= -1;
+con3144..0.25189381051531273 * x('1') - 
+0.96775488023779854 * x('2') =g= -1;
+con3145..0.79035943864125968 * x('1') + 
+0.61264341810768919 * x('2') =g= -1;
+con3146..0.25128572044515385 * x('1') - 
+0.96791295409264977 * x('2') =g= -1;
+con3147..0.25067753117722358 * x('1') - 
+0.96807064585333447 * x('2') =g= -1;
+con3148..0.78997435880549549 * x('1') + 
+0.61313987998648911 * x('2') =g= -1;
+con3149..0.25006924295161037 * x('1') - 
+0.96822795545760221 * x('2') =g= -1;
+con3150..0.24946085600844523 * x('1') - 
+0.96838488284335256 * x('2') =g= -1;
+con3151..0.78958896711876059 * x('1') + 
+0.61363609982165224 * x('2') =g= -1;
+con3152..0.24885237058789206 * x('1') - 
+0.96854142794863785 * x('2') =g= -1;
+con3153..0.24824378693015969 * x('1') - 
+0.9686975907116594 * x('2') =g= -1;
+con3154..0.78920326373319261 * x('1') + 
+0.61413207741729037 * x('2') =g= -1;
+con3155..0.24763510527549229 * x('1') - 
+0.96885337107077041 * x('2') =g= -1;
+con3156..0.2470263258641727 * x('1') - 
+0.96900876896447519 * x('2') =g= -1;
+con3157..0.78881724880105208 * x('1') + 
+0.61462781257761112 * x('2') =g= -1;
+con3158..0.2464174489365249 * x('1') - 
+0.96916378433142825 * x('2') =g= -1;
+con3159..0.24580847473290887 * x('1') - 
+0.96931841711043587 * x('2') =g= -1;
+con3160..0.78843092247472257 * x('1') + 
+0.61512330510691748 * x('2') =g= -1;
+con3161..0.24519940349372377 * x('1') - 
+0.969472667240455 * x('2') =g= -1;
+con3162..0.24459023545940708 * x('1') - 
+0.9696265346605939 * x('2') =g= -1;
+con3163..0.78804428490671075 * x('1') + 
+0.61561855480960848 * x('2') =g= -1;
+con3164..0.24398097087043372 * x('1') - 
+0.96978001931011171 * x('2') =g= -1;
+con3165..0.24337160996731916 * x('1') - 
+0.96993312112841834 * x('2') =g= -1;
+con3166..0.78765733624964573 * x('1') + 
+0.61611356149017893 * x('2') =g= -1;
+con3167..0.2427621529906144 * x('1') - 
+0.97008584005507548 * x('2') =g= -1;
+con3168..0.24215260018090923 * x('1') - 
+0.97023817602979567 * x('2') =g= -1;
+con3169..0.78727007665628002 * x('1') + 
+0.61660832495321938 * x('2') =g= -1;
+con3170..0.24154295177883037 * x('1') - 
+0.9703901289924427 * x('2') =g= -1;
+con3171..0.24093320802504575 * x('1') - 
+0.97054169888303099 * x('2') =g= -1;
+con3172..0.7868825062794883 * x('1') + 
+0.61710284500341672 * x('2') =g= -1;
+con3173..0.24032336916025493 * x('1') - 
+0.97069288564172751 * x('2') =g= -1;
+con3174..0.2397134354252001 * x('1') - 
+0.97084368920884911 * x('2') =g= -1;
+con3175..0.78649462527226832 * x('1') + 
+0.61759712144555379 * x('2') =g= -1;
+con3176..0.23910340706066102 * x('1') - 
+0.97099410952486409 * x('2') =g= -1;
+con3177..0.23849328430744954 * x('1') - 
+0.97114414653039327 * x('2') =g= -1;
+con3178..0.78610643378774037 * x('1') + 
+0.61809115408450954 * x('2') =g= -1;
+con3179..0.23788306740642085 * x('1') - 
+0.97129380016620726 * x('2') =g= -1;
+con3180..0.23727275659846384 * x('1') - 
+0.97144307037322886 * x('2') =g= -1;
+con3181..0.78571793197914719 * x('1') + 
+0.61858494272525921 * x('2') =g= -1;
+con3182..0.23666235212450534 * x('1') - 
+0.9715919570925321 * x('2') =g= -1;
+con3183..0.23605185422550917 * x('1') - 
+0.97174046026534211 * x('2') =g= -1;
+con3184..0.785329119999854 * x('1') + 
+0.6190784871728745 * x('2') =g= -1;
+con3185..0.23544126314247513 * x('1') - 
+0.97188857983303611 * x('2') =g= -1;
+con3186..0.23483057911644242 * x('1') - 
+0.97203631573714178 * x('2') =g= -1;
+con3187..0.78493999800334868 * x('1') + 
+0.61957178723252315 * x('2') =g= -1;
+con3188..0.23421980238848436 * x('1') - 
+0.97218366791933886 * x('2') =g= -1;
+con3189..0.23360893319971171 * x('1') - 
+0.97233063632145866 * x('2') =g= -1;
+con3190..0.78455056614324137 * x('1') + 
+0.62006484270946971 * x('2') =g= -1;
+con3191..0.23299797179127082 * x('1') - 
+0.97247722088548383 * x('2') =g= -1;
+con3192..0.232386918404348 * x('1') - 
+0.97262342155354808 * x('2') =g= -1;
+con3193..0.78416082457326453 * x('1') + 
+0.62055765340907509 * x('2') =g= -1;
+con3194..0.23177577328015972 * x('1') - 
+0.97276923826793782 * x('2') =g= -1;
+con3195..0.23116453665996392 * x('1') - 
+0.97291467097108997 * x('2') =g= -1;
+con3196..0.78377077344727286 * x('1') + 
+0.62105021913679714 * x('2') =g= -1;
+con3197..0.23055320878505461 * x('1') - 
+0.9730597196055929 * x('2') =g= -1;
+con3198..0.22994178989675668 * x('1') - 
+0.97320438411418786 * x('2') =g= -1;
+con3199..0.78338041291924332 * x('1') + 
+0.62154253969818984 * x('2') =g= -1;
+con3200..0.22933028023643698 * x('1') - 
+0.97334866443976653 * x('2') =g= -1;
+con3201..0.22871868004549473 * x('1') - 
+0.97349256052537281 * x('2') =g= -1;
+con3202..0.78298974314327485 * x('1') + 
+0.62203461489890455 * x('2') =g= -1;
+con3203..0.22810698956536488 * x('1') - 
+0.97363607231420224 * x('2') =g= -1;
+con3204..0.22749520903752063 * x('1') - 
+0.97377919974960181 * x('2') =g= -1;
+con3205..0.78259876427358865 * x('1') + 
+0.62252644454468931 * x('2') =g= -1;
+con3206..0.22688333870346816 * x('1') - 
+0.97392194277507027 * x('2') =g= -1;
+con3207..0.2262713788047499 * x('1') - 
+0.97406430133425859 * x('2') =g= -1;
+con3208..0.78220747646452804 * x('1') + 
+0.62301802844138865 * x('2') =g= -1;
+con3209..0.22565932958294374 * x('1') - 
+0.97420627537096904 * x('2') =g= -1;
+con3210..0.22504719127966269 * x('1') - 
+0.97434786482915581 * x('2') =g= -1;
+con3211..0.78181587987055789 * x('1') + 
+0.6235093663949447 * x('2') =g= -1;
+con3212..0.2244349641365542 * x('1') - 
+0.97448906965292514 * x('2') =g= -1;
+con3213..0.2238226483953033 * x('1') - 
+0.97462988978653453 * x('2') =g= -1;
+con3214..0.78142397464626534 * x('1') + 
+0.62400045821139649 * x('2') =g= -1;
+con3215..0.2232102442976274 * x('1') - 
+0.97477032517439388 * x('2') =g= -1;
+con3216..0.22259775208527885 * x('1') - 
+0.97491037576106487 * x('2') =g= -1;
+con3217..0.7810317609463594 * x('1') + 
+0.62449130369688011 * x('2') =g= -1;
+con3218..0.22198517200004822 * x('1') - 
+0.97505004149126062 * x('2') =g= -1;
+con3219..0.22137250428375466 * x('1') - 
+0.97518932230984723 * x('2') =g= -1;
+con3220..0.78063923892567044 * x('1') + 
+0.62498190265762898 * x('2') =g= -1;
+con3221..0.22075974917825802 * x('1') - 
+0.97532821816184145 * x('2') =g= -1;
+con3222..0.22014690692544919 * x('1') - 
+0.97546672899241293 * x('2') =g= -1;
+con3223..0.78024640873915085 * x('1') + 
+0.62547225489997393 * x('2') =g= -1;
+con3224..0.21953397776725345 * x('1') - 
+0.97560485474688319 * x('2') =g= -1;
+con3225..0.21892096194563296 * x('1') - 
+0.97574259537072516 * x('2') =g= -1;
+con3226..0.7798532705418747 * x('1') + 
+0.62596236023034291 * x('2') =g= -1;
+con3227..0.21830785970258154 * x('1') - 
+0.97587995080956447 * x('2') =g= -1;
+con3228..0.21769467128012798 * x('1') - 
+0.97601692100917847 * x('2') =g= -1;
+con3229..0.7794598244890375 * x('1') + 
+0.62645221845526167 * x('2') =g= -1;
+con3230..0.21708139692033504 * x('1') - 
+0.97615350591549688 * x('2') =g= -1;
+con3231..0.2164680368652995 * x('1') - 
+0.97628970547460103 * x('2') =g= -1;
+con3232..0.77906607073595646 * x('1') + 
+0.62694182938135312 * x('2') =g= -1;
+con3233..0.21585459135715099 * x('1') - 
+0.97642551963272517 * x('2') =g= -1;
+con3234..0.21524106063805556 * x('1') - 
+0.97656094833625462 * x('2') =g= -1;
+con3235..0.77867200943807002 * x('1') + 
+0.62743119281533832 * x('2') =g= -1;
+con3236..0.21462744495021027 * x('1') - 
+0.97669599153172759 * x('2') =g= -1;
+con3237..0.21401374453584573 * x('1') - 
+0.97683064916583451 * x('2') =g= -1;
+con3238..0.7782776407509383 * x('1') + 
+0.62792030856403547 * x('2') =g= -1;
+con3239..0.21339995963722941 * x('1') - 
+0.97696492118541745 * x('2') =g= -1;
+con3240..0.21278609049665614 * x('1') - 
+0.97709880753747158 * x('2') =g= -1;
+con3241..0.77788296483024244 * x('1') + 
+0.62840917643436101 * x('2') =g= -1;
+con3242..0.21217213735646004 * x('1') - 
+0.9772323081691433 * x('2') =g= -1;
+con3243..0.21155810045900492 * x('1') - 
+0.97736542302773199 * x('2') =g= -1;
+con3244..0.77748798183178514 * x('1') + 
+0.62889779623332887 * x('2') =g= -1;
+con3245..0.21094398004668766 * x('1') - 
+0.97749815206068935 * x('2') =g= -1;
+con3246..0.2103297763619407 * x('1') - 
+0.97763049521561873 * x('2') =g= -1;
+con3247..0.77709269191149044 * x('1') + 
+0.62938616776805112 * x('2') =g= -1;
+con3248..0.20971548964722678 * x('1') - 
+0.97776245244027649 * x('2') =g= -1;
+con3249..0.2091011201450422 * x('1') - 
+0.97789402368257095 * x('2') =g= -1;
+con3250..0.77669709522540309 * x('1') + 
+0.62987429084573787 * x('2') =g= -1;
+con3251..0.20848666809791608 * x('1') - 
+0.97802520889056299 * x('2') =g= -1;
+con3252..0.20787213374840913 * x('1') - 
+0.97815600801246605 * x('2') =g= -1;
+con3253..0.77630119192968927 * x('1') + 
+0.63036216527369704 * x('2') =g= -1;
+con3254..0.20725751733911724 * x('1') - 
+0.97828642099664531 * x('2') =g= -1;
+con3255..0.20664281911266602 * x('1') - 
+0.97841644779161907 * x('2') =g= -1;
+con3256..0.77590498218063608 * x('1') + 
+0.63084979085933512 * x('2') =g= -1;
+con3257..0.20602803931171432 * x('1') - 
+0.97854608834605772 * x('2') =g= -1;
+con3258..0.20541317817895224 * x('1') - 
+0.97867534260878464 * x('2') =g= -1;
+con3259..0.77550846613465163 * x('1') + 
+0.63133716741015644 * x('2') =g= -1;
+con3260..0.20479823595710556 * x('1') - 
+0.97880421052877464 * x('2') =g= -1;
+con3261..0.20418321288892588 * x('1') - 
+0.97893269205515632 * x('2') =g= -1;
+con3262..0.77511164394826493 * x('1') + 
+0.63182429473376389 * x('2') =g= -1;
+con3263..0.203568109217202 * x('1') - 
+0.97906078713721001 * x('2') =g= -1;
+con3264..0.20295292518475455 * x('1') - 
+0.97918849572436839 * x('2') =g= -1;
+con3265..0.77471451577812589 * x('1') + 
+0.63231117263785874 * x('2') =g= -1;
+con3266..0.20233766103443063 * x('1') - 
+0.97931581776621779 * x('2') =g= -1;
+con3267..0.20172231700911505 * x('1') - 
+0.97944275321249585 * x('2') =g= -1;
+con3268..0.77431708178100522 * x('1') + 
+0.6327978009302403 * x('2') =g= -1;
+con3269..0.20110689335172069 * x('1') - 
+0.97956930201309378 * x('2') =g= -1;
+con3270..0.20049139030519272 * x('1') - 
+0.97969546411805486 * x('2') =g= -1;
+con3271..0.77391934211379421 * x('1') + 
+0.63328417941880721 * x('2') =g= -1;
+con3272..0.19987580811250685 * x('1') - 
+0.97982123947757549 * x('2') =g= -1;
+con3273..0.19926014701667252 * x('1') - 
+0.97994662804200416 * x('2') =g= -1;
+con3274..0.77352129693350502 * x('1') + 
+0.63377030791155597 * x('2') =g= -1;
+con3275..0.1986444072607278 * x('1') - 
+0.98007162976184248 * x('2') =g= -1;
+con3276..0.19802858908774265 * x('1') - 
+0.98019624458774479 * x('2') =g= -1;
+con3277..0.77312294639727019 * x('1') + 
+0.63425618621658209 * x('2') =g= -1;
+con3278..0.19741269274081802 * x('1') - 
+0.9803204724705179 * x('2') =g= -1;
+con3279..0.19679671846308477 * x('1') - 
+0.9804443133611217 * x('2') =g= -1;
+con3280..0.77272429066234305 * x('1') + 
+0.63474181414207997 * x('2') =g= -1;
+con3281..0.1961806664977081 * x('1') - 
+0.98056776721066807 * x('2') =g= -1;
+con3282..0.19556453708787774 * x('1') - 
+0.98069083397042311 * x('2') =g= -1;
+con3283..0.77232532988609714 * x('1') + 
+0.63522719149634266 * x('2') =g= -1;
+con3284..0.1949483304768192 * x('1') - 
+0.98081351359180446 * x('2') =g= -1;
+con3285..0.19433204690778849 * x('1') - 
+0.98093580602638264 * x('2') =g= -1;
+con3286..0.77192606422602683 * x('1') + 
+0.63571231808776196 * x('2') =g= -1;
+con3287..0.19371568662406677 * x('1') - 
+0.98105771122588215 * x('2') =g= -1;
+con3288..0.19309924986897156 * x('1') - 
+0.98117922914217892 * x('2') =g= -1;
+con3289..0.77152649383974636 * x('1') + 
+0.63619719372482919 * x('2') =g= -1;
+con3290..0.19248273688584713 * x('1') - 
+0.98130035972730267 * x('2') =g= -1;
+con3291..0.19186614791806869 * x('1') - 
+0.98142110293343587 * x('2') =g= -1;
+con3292..0.77112661888499057 * x('1') + 
+0.63668181821613423 * x('2') =g= -1;
+con3293..0.19124948320904056 * x('1') - 
+0.98154145871291387 * x('2') =g= -1;
+con3294..0.19063274300219957 * x('1') - 
+0.98166142701822467 * x('2') =g= -1;
+con3295..0.77072643951961439 * x('1') + 
+0.63716619137036634 * x('2') =g= -1;
+con3296..0.19001592754100977 * x('1') - 
+0.98178100780200961 * x('2') =g= -1;
+con3297..0.18939903706896577 * x('1') - 
+0.98190020101706288 * x('2') =g= -1;
+con3298..0.77032595590159292 * x('1') + 
+0.63765031299631392 * x('2') =g= -1;
+con3299..0.18878207182959178 * x('1') - 
+0.98201900661633168 * x('2') =g= -1;
+con3300..0.1881650320664407 * x('1') - 
+0.9821374245529163 * x('2') =g= -1;
+con3301..0.76992516818902157 * x('1') + 
+0.63813418290286472 * x('2') =g= -1;
+con3302..0.18754791802309737 * x('1') - 
+0.9822554547800697 * x('2') =g= -1;
+con3303..0.18693072994317347 * x('1') - 
+0.98237309725119837 * x('2') =g= -1;
+con3304..0.76952407654011556 * x('1') + 
+0.63861780089900588 * x('2') =g= -1;
+con3305..0.1863134680703098 * x('1') - 
+0.98249035191986167 * x('2') =g= -1;
+con3306..0.18569613264817983 * x('1') - 
+0.98260721873977175 * x('2') =g= -1;
+con3307..0.76912268111321036 * x('1') + 
+0.63910116679382378 * x('2') =g= -1;
+con3308..0.18507872392047992 * x('1') - 
+0.98272369766479473 * x('2') =g= -1;
+con3309..0.18446124213094151 * x('1') - 
+0.98283978864894872 * x('2') =g= -1;
+con3310..0.76872098206676087 * x('1') + 
+0.63958428039650461 * x('2') =g= -1;
+con3311..0.18384368752332136 * x('1') - 
+0.98295549164640583 * x('2') =g= -1;
+con3312..0.18322606034140504 * x('1') - 
+0.98307080661149115 * x('2') =g= -1;
+con3313..0.76831897955934236 * x('1') + 
+0.64006714151633404 * x('2') =g= -1;
+con3314..0.18260836082900933 * x('1') - 
+0.98318573349868255 * x('2') =g= -1;
+con3315..0.18199058922997693 * x('1') - 
+0.98330027226261141 * x('2') =g= -1;
+con3316..0.76791667374964978 * x('1') + 
+0.64054974996269731 * x('2') =g= -1;
+con3317..0.18137274578817994 * x('1') - 
+0.98341442285806258 * x('2') =g= -1;
+con3318..0.18075483074751875 * x('1') - 
+0.98352818523997365 * x('2') =g= -1;
+con3319..0.76751406479649742 * x('1') + 
+0.64103210554507961 * x('2') =g= -1;
+con3320..0.18013684435192204 * x('1') - 
+0.98364155936343567 * x('2') =g= -1;
+con3321..0.17951878684534581 * x('1') - 
+0.98375454518369332 * x('2') =g= -1;
+con3322..0.76711115285881981 * x('1') + 
+0.64151420807306547 * x('2') =g= -1;
+con3323..0.17890065847177669 * x('1') - 
+0.98386714265614372 * x('2') =g= -1;
+con3324..0.17828245947522675 * x('1') - 
+0.9839793517363381 * x('2') =g= -1;
+con3325..0.76670793809567073 * x('1') + 
+0.64199605735634013 * x('2') =g= -1;
+con3326..0.17766419009973589 * x('1') - 
+0.98409117237998067 * x('2') =g= -1;
+con3327..0.17704585058937528 * x('1') - 
+0.98420260454292874 * x('2') =g= -1;
+con3328..0.76630442066622351 * x('1') + 
+0.64247765320468819 * x('2') =g= -1;
+con3329..0.17642744118823764 * x('1') - 
+0.98431364818119382 * x('2') =g= -1;
+con3330..0.1758089621404495 * x('1') - 
+0.98442430325093966 * x('2') =g= -1;
+con3331..0.76590060072977129 * x('1') + 
+0.64295899542799428 * x('2') =g= -1;
+con3332..0.17519041369016125 * x('1') - 
+0.98453456970848419 * x('2') =g= -1;
+con3333..0.1745717960815508 * x('1') - 
+0.98464444751029878 * x('2') =g= -1;
+con3334..0.7654964784457261 * x('1') + 
+0.64344008383624351 * x('2') =g= -1;
+con3335..0.17395310955882587 * x('1') - 
+0.98475393661300747 * x('2') =g= -1;
+con3336..0.17333435436621888 * x('1') - 
+0.98486303697338851 * x('2') =g= -1;
+con3337..0.76509205397361968 * x('1') + 
+0.64392091823952091 * x('2') =g= -1;
+con3338..0.17271553074799012 * x('1') - 
+0.98497174854837333 * x('2') =g= -1;
+con3339..0.17209663894842611 * x('1') - 
+0.98508007129504704 * x('2') =g= -1;
+con3340..0.76468732747310308 * x('1') + 
+0.64440149844801198 * x('2') =g= -1;
+con3341..0.17147767921184284 * x('1') - 
+0.98518800517064775 * x('2') =g= -1;
+con3342..0.17085865178258056 * x('1') - 
+0.98529555013256753 * x('2') =g= -1;
+con3343..0.76428229910394652 * x('1') + 
+0.64488182427200236 * x('2') =g= -1;
+con3344..0.17023955690500703 * x('1') - 
+0.98540270613835179 * x('2') =g= -1;
+con3345..0.16962039482351673 * x('1') - 
+0.98550947314569959 * x('2') =g= -1;
+con3346..0.7638769690260393 * x('1') + 
+0.64536189552187806 * x('2') =g= -1;
+con3347..0.16900116578252972 * x('1') - 
+0.98561585111246353 * x('2') =g= -1;
+con3348..0.16838187002649604 * x('1') - 
+0.98572183999664942 * x('2') =g= -1;
+con3349..0.76347133739938977 * x('1') + 
+0.64584171200812601 * x('2') =g= -1;
+con3350..0.16776250779988594 * x('1') - 
+0.98582743975641762 * x('2') =g= -1;
+con3351..0.16714307934720113 * x('1') - 
+0.98593265035008104 * x('2') =g= -1;
+con3352..0.76306540438412551 * x('1') + 
+0.64632127354133329 * x('2') =g= -1;
+con3353..0.16652358491296948 * x('1') - 
+0.98603747173610656 * x('2') =g= -1;
+con3354..0.16590402474173965 * x('1') - 
+0.98614190387311518 * x('2') =g= -1;
+con3355..0.762659170140493 * x('1') + 
+0.64680057993218787 * x('2') =g= -1;
+con3356..0.16528439907809239 * x('1') - 
+0.98624594671988075 * x('2') =g= -1;
+con3357..0.16466470816663079 * x('1') - 
+0.98634960023533158 * x('2') =g= -1;
+con3358..0.76225263482885763 * x('1') + 
+0.64727963099147823 * x('2') =g= -1;
+con3359..0.16404495225198457 * x('1') - 
+0.98645286437854907 * x('2') =g= -1;
+con3360..0.16342513157880828 * x('1') - 
+0.98655573910876881 * x('2') =g= -1;
+con3361..0.76184579860970369 * x('1') + 
+0.64775842653009374 * x('2') =g= -1;
+con3362..0.16280524639178456 * x('1') - 
+0.98665822438537976 * x('2') =g= -1;
+con3363..0.16218529693561903 * x('1') - 
+0.98676032016792459 * x('2') =g= -1;
+con3364..0.76143866164363405 * x('1') + 
+0.64823696635902472 * x('2') =g= -1;
+con3365..0.16156528345504342 * x('1') - 
+0.9868620264161001 * x('2') =g= -1;
+con3366..0.16094520619481484 * x('1') - 
+0.98696334308975653 * x('2') =g= -1;
+con3367..0.76103122409137058 * x('1') + 
+0.64871525028936239 * x('2') =g= -1;
+con3368..0.16032506539971461 * x('1') - 
+0.9870642701488983 * x('2') =g= -1;
+con3369..0.15970486131455272 * x('1') - 
+0.98716480755368274 * x('2') =g= -1;
+con3370..0.76062348611375374 * x('1') + 
+0.64919327813229888 * x('2') =g= -1;
+con3371..0.15908459418415796 * x('1') - 
+0.98726495526442226 * x('2') =g= -1;
+con3372..0.1584642642533893 * x('1') - 
+0.98736471324158226 * x('2') =g= -1;
+con3373..0.76021544787174233 * x('1') + 
+0.64967104969912748 * x('2') =g= -1;
+con3374..0.15784387176713044 * x('1') - 
+0.98746408144578179 * x('2') =g= -1;
+con3375..0.15722341697028458 * x('1') - 
+0.98756305983779491 * x('2') =g= -1;
+con3376..0.75980710952641406 * x('1') + 
+0.65014856480124283 * x('2') =g= -1;
+con3377..0.15660290010778563 * x('1') - 
+0.9876616483785482 * x('2') =g= -1;
+con3378..0.15598232142458848 * x('1') - 
+0.98775984702912289 * x('2') =g= -1;
+con3379..0.75939847123896476 * x('1') + 
+0.65062582325014062 * x('2') =g= -1;
+con3380..0.15536168116567334 * x('1') - 
+0.98785765575075424 * x('2') =g= -1;
+con3381..0.1547409795760438 * x('1') - 
+0.98795507450483111 * x('2') =g= -1;
+con3382..0.75898953317070905 * x('1') + 
+0.65110282485741766 * x('2') =g= -1;
+con3383..0.15412021690073033 * x('1') - 
+0.98805210325289616 * x('2') =g= -1;
+con3384..0.15349939338478488 * x('1') - 
+0.98814874195664648 * x('2') =g= -1;
+con3385..0.75858029548307959 * x('1') + 
+0.65157956943477258 * x('2') =g= -1;
+con3386..0.15287850927328428 * x('1') - 
+0.98824499057793269 * x('2') =g= -1;
+con3387..0.15225756481132927 * x('1') - 
+0.98834084907875985 * x('2') =g= -1;
+con3388..0.75817075833762737 * x('1') + 
+0.65205605679400525 * x('2') =g= -1;
+con3389..0.15163656024404357 * x('1') - 
+0.98843631742128668 * x('2') =g= -1;
+con3390..0.15101549581657722 * x('1') - 
+0.98853139556782588 * x('2') =g= -1;
+con3391..0.75776092189602173 * x('1') + 
+0.65253228674701702 * x('2') =g= -1;
+con3392..0.15039437177410134 * x('1') - 
+0.98862608348084435 * x('2') =g= -1;
+con3393..0.14977318836181044 * x('1') - 
+0.98872038112296323 * x('2') =g= -1;
+con3394..0.75735078632004993 * x('1') + 
+0.65300825910581106 * x('2') =g= -1;
+con3395..0.14915194582492614 * x('1') - 
+0.98881428845695707 * x('2') =g= -1;
+con3396..0.14853064440868713 * x('1') - 
+0.98890780544575552 * x('2') =g= -1;
+con3397..0.75694035177161745 * x('1') + 
+0.65348397368249211 * x('2') =g= -1;
+con3398..0.14790928435836154 * x('1') - 
+0.98900093205244122 * x('2') =g= -1;
+con3399..0.14728786591923715 * x('1') - 
+0.98909366824025158 * x('2') =g= -1;
+con3400..0.75652961841274802 * x('1') + 
+0.6539594302892664 * x('2') =g= -1;
+con3401..0.14666638933662474 * x('1') - 
+0.98918601397257822 * x('2') =g= -1;
+con3402..0.14604485485586075 * x('1') - 
+0.98927796921296629 * x('2') =g= -1;
+con3403..0.75611858640558283 * x('1') + 
+0.6544346287384426 * x('2') =g= -1;
+con3404..0.14542326272230174 * x('1') - 
+0.98936953392511562 * x('2') =g= -1;
+con3405..0.14480161318132803 * x('1') - 
+0.98946070807288 * x('2') =g= -1;
+con3406..0.75570725591238141 * x('1') + 
+0.65490956884243068 * x('2') =g= -1;
+con3407..0.14417990647834161 * x('1') - 
+0.98955149162026768 * x('2') =g= -1;
+con3408..0.14355814285877064 * x('1') - 
+0.98964188453144042 * x('2') =g= -1;
+con3409..0.75529562709552078 * x('1') + 
+0.65538425041374315 * x('2') =g= -1;
+con3410..0.14293632256805952 * x('1') - 
+0.98973188677071511 * x('2') =g= -1;
+con3411..0.14231444585168121 * x('1') - 
+0.98982149830256205 * x('2') =g= -1;
+con3412..0.75488370011749606 * x('1') + 
+0.65585867326499403 * x('2') =g= -1;
+con3413..0.14169251295512747 * x('1') - 
+0.98991071909160633 * x('2') =g= -1;
+con3414..0.14107052412391216 * x('1') - 
+0.989999549102627 * x('2') =g= -1;
+con3415..0.75447147514091983 * x('1') + 
+0.65633283720890001 * x('2') =g= -1;
+con3416..0.14044847960357479 * x('1') - 
+0.99008798830055722 * x('2') =g= -1;
+con3417..0.13982637963967068 * x('1') - 
+0.99017603665048504 * x('2') =g= -1;
+con3418..0.75405895232852238 * x('1') + 
+0.65680674205827949 * x('2') =g= -1;
+con3419..0.13920422447778319 * x('1') - 
+0.99026369411765214 * x('2') =g= -1;
+con3420..0.13858201436351394 * x('1') - 
+0.99035096066745487 * x('2') =g= -1;
+con3421..0.75364613184315166 * x('1') + 
+0.65728038762605334 * x('2') =g= -1;
+con3422..0.1379597495424863 * x('1') - 
+0.99043783626544402 * x('2') =g= -1;
+con3423..0.13733743026034784 * x('1') - 
+0.99052432087732412 * x('2') =g= -1;
+con3424..0.75323301384777286 * x('1') + 
+0.65775377372524502 * x('2') =g= -1;
+con3425..0.13671505676276494 * x('1') - 
+0.99061041446895459 * x('2') =g= -1;
+con3426..0.13609262929542632 * x('1') - 
+0.99069611700634908 * x('2') =g= -1;
+con3427..0.75281959850546898 * x('1') + 
+0.65822690016898011 * x('2') =g= -1;
+con3428..0.13547014810404112 * x('1') - 
+0.99078142845567563 * x('2') =g= -1;
+con3429..0.13484761343434323 * x('1') - 
+0.99086634878325641 * x('2') =g= -1;
+con3430..0.75240588597944025 * x('1') + 
+0.65869976677048669 * x('2') =g= -1;
+con3431..0.13422502553208143 * x('1') - 
+0.99095087795556858 * x('2') =g= -1;
+con3432..0.13360238464303173 * x('1') - 
+0.99103501593924292 * x('2') =g= -1;
+con3433..0.75199187643300391 * x('1') + 
+0.65917237334309597 * x('2') =g= -1;
+con3434..0.13297969101298746 * x('1') - 
+0.99111876270106525 * x('2') =g= -1;
+con3435..0.1323569448877629 * x('1') - 
+0.99120211820797566 * x('2') =g= -1;
+con3436..0.75157757002959491 * x('1') + 
+0.65964471970024086 * x('2') =g= -1;
+con3437..0.13173414651319643 * x('1') - 
+0.99128508242706836 * x('2') =g= -1;
+con3438..0.131111296135141 * x('1') - 
+0.99136765532559279 * x('2') =g= -1;
+con3439..0.75116296693276541 * x('1') + 
+0.66011680565545761 * x('2') =g= -1;
+con3440..0.13048839399947532 * x('1') - 
+0.99144983687095223 * x('2') =g= -1;
+con3441..0.12986544035209854 * x('1') - 
+0.99153162703070419 * x('2') =g= -1;
+con3442..0.75074806730618426 * x('1') + 
+0.6605886310223853 * x('2') =g= -1;
+con3443..0.12924243543892489 * x('1') - 
+0.99161302577256183 * x('2') =g= -1;
+con3444..0.12861937950589494 * x('1') - 
+0.99169403306439152 * x('2') =g= -1;
+con3445..0.75033287131363757 * x('1') + 
+0.66106019561476559 * x('2') =g= -1;
+con3446..0.12799627279896594 * x('1') - 
+0.99177464887421507 * x('2') =g= -1;
+con3447..0.12737311556411604 * x('1') - 
+0.99185487317020848 * x('2') =g= -1;
+con3448..0.74991737911902856 * x('1') + 
+0.66153149924644339 * x('2') =g= -1;
+con3449..0.12674990804734243 * x('1') - 
+0.99193470592070232 * x('2') =g= -1;
+con3450..0.12612665049466487 * x('1') - 
+0.99201414709418168 * x('2') =g= -1;
+con3451..0.74950159088637736 * x('1') + 
+0.6620025417313663 * x('2') =g= -1;
+con3452..0.12550334315212011 * x('1') - 
+0.99209319665928619 * x('2') =g= -1;
+con3453..0.12487998626576557 * x('1') - 
+0.99217185458481039 * x('2') =g= -1;
+con3454..0.74908550677982078 * x('1') + 
+0.6624733228835854 * x('2') =g= -1;
+con3455..0.12425658008167813 * x('1') - 
+0.9922501208397031 * x('2') =g= -1;
+con3456..0.12363312484595328 * x('1') - 
+0.99232799539306804 * x('2') =g= -1;
+con3457..0.74866912696361254 * x('1') + 
+0.66294384251725447 * x('2') =g= -1;
+con3458..0.12300962080470851 * x('1') - 
+0.99240547821416314 * x('2') =g= -1;
+con3459..0.12238606820407795 * x('1') - 
+0.9924825692724013 * x('2') =g= -1;
+con3460..0.74825245160212317 * x('1') + 
+0.66341410044663074 * x('2') =g= -1;
+con3461..0.12176246729021488 * x('1') - 
+0.99255926853734999 * x('2') =g= -1;
+con3462..0.12113881830929521 * x('1') - 
+0.99263557597873131 * x('2') =g= -1;
+con3463..0.74783548085983975 * x('1') + 
+0.66388409648607505 * x('2') =g= -1;
+con3464..0.12051512150750762 * x('1') - 
+0.99271149156642213 * x('2') =g= -1;
+con3465..0.11989137713106586 * x('1') - 
+0.99278701527045399 * x('2') =g= -1;
+con3466..0.74741821490136606 * x('1') + 
+0.66435383045005114 * x('2') =g= -1;
+con3467..0.1192675854261989 * x('1') - 
+0.99286214706101283 * x('2') =g= -1;
+con3468..0.11864374663915533 * x('1') - 
+0.99293688690843984 * x('2') =g= -1;
+con3469..0.74700065389142234 * x('1') + 
+0.66482330215312657 * x('2') =g= -1;
+con3470..0.11801986101620141 * x('1') - 
+0.99301123478323072 * x('2') =g= -1;
+con3471..0.11739592880362452 * x('1') - 
+0.99308519065603551 * x('2') =g= -1;
+con3472..0.74658279799484539 * x('1') + 
+0.66529251140997203 * x('2') =g= -1;
+con3473..0.11677195024772782 * x('1') - 
+0.99315875449765945 * x('2') =g= -1;
+con3474..0.11614792559483363 * x('1') - 
+0.99323192627906243 * x('2') =g= -1;
+con3475..0.74616464737658839 * x('1') + 
+0.66576145803536224 * x('2') =g= -1;
+con3476..0.11552385509128248 * x('1') - 
+0.99330470597135923 * x('2') =g= -1;
+con3477..0.11489973898343207 * x('1') - 
+0.99337709354581916 * x('2') =g= -1;
+con3478..0.74574620220172072 * x('1') + 
+0.66623014184417551 * x('2') =g= -1;
+con3479..0.11427557751766083 * x('1') - 
+0.99344908897386641 * x('2') =g= -1;
+con3480..0.11365137094036239 * x('1') - 
+0.99352069222707995 * x('2') =g= -1;
+con3481..0.74532746263542826 * x('1') + 
+0.6666985626513936 * x('2') =g= -1;
+con3482..0.11302711949794819 * x('1') - 
+0.99359190327719382 * x('2') =g= -1;
+con3483..0.11240282343685094 * x('1') - 
+0.99366272209609641 * x('2') =g= -1;
+con3484..0.74490842884301312 * x('1') + 
+0.66716672027210233 * x('2') =g= -1;
+con3485..0.11177848300351477 * x('1') - 
+0.99373314865583151 * x('2') =g= -1;
+con3486..0.1111540984444075 * x('1') - 
+0.99380318292859726 * x('2') =g= -1;
+con3487..0.74448910098989318 * x('1') + 
+0.66763461452149164 * x('2') =g= -1;
+con3488..0.11052967000601084 * x('1') - 
+0.99387282488674689 * x('2') =g= -1;
+con3489..0.10990519793482384 * x('1') - 
+0.99394207450278871 * x('2') =g= -1;
+con3490..0.74406947924160283 * x('1') + 
+0.66810224521485484 * x('2') =g= -1;
+con3491..0.10928068247736539 * x('1') - 
+0.99401093174938537 * x('2') =g= -1;
+con3492..0.10865612388016889 * x('1') - 
+0.99407939659935485 * x('2') =g= -1;
+con3493..0.74364956376379221 * x('1') + 
+0.66856961216758992 * x('2') =g= -1;
+con3494..0.10803152238978563 * x('1') - 
+0.99414746902566986 * x('2') =g= -1;
+con3495..0.10740687825278296 * x('1') - 
+0.99421514900145824 * x('2') =g= -1;
+con3496..0.74322935472222762 * x('1') + 
+0.66903671519519847 * x('2') =g= -1;
+con3497..0.1067821917157486 * x('1') - 
+0.99428243650000225 * x('2') =g= -1;
+con3498..0.10615746302528083 * x('1') - 
+0.99434933149473992 * x('2') =g= -1;
+con3499..0.74280885228279125 * x('1') + 
+0.66950355411328644 * x('2') =g= -1;
+con3500..0.10553269242800073 * x('1') - 
+0.99441583395926325 * x('2') =g= -1;
+con3501..0.10490788017054242 * x('1') - 
+0.99448194386731981 * x('2') =g= -1;
+con3502..0.74238805661148088 * x('1') + 
+0.66997012873756445 * x('2') =g= -1;
+con3503..0.10428302649955644 * x('1') - 
+0.99454766119281224 * x('2') =g= -1;
+con3504..0.10365813166171323 * x('1') - 
+0.99461298590979741 * x('2') =g= -1;
+con3505..0.74196696787441019 * x('1') + 
+0.67043643888384674 * x('2') =g= -1;
+con3506..0.10303319590369329 * x('1') - 
+0.99467791799248828 * x('2') =g= -1;
+con3507..0.10240821947219945 * x('1') - 
+0.99474245741525169 * x('2') =g= -1;
+con3508..0.74154558623780842 * x('1') + 
+0.67090248436805255 * x('2') =g= -1;
+con3509..0.10178320261394709 * x('1') - 
+0.99480660415261024 * x('2') =g= -1;
+con3510..0.1011581455756675 * x('1') - 
+0.99487035817924141 * x('2') =g= -1;
+con3511..0.74112391186802085 * x('1') + 
+0.67136826500620517 * x('2') =g= -1;
+con3512..0.10053304860411055 * x('1') - 
+0.99493371946997733 * x('2') =g= -1;
+con3513..0.099907911946039152 * x('1') - 
+0.99499668799980556 * x('2') =g= -1;
+con3514..0.74070194493150787 * x('1') + 
+0.67183378061443255 * x('2') =g= -1;
+con3515..0.099282735848232814 * x('1') - 
+0.99505926374386866 * x('2') =g= -1;
+con3516..0.098657520557485723 * x('1') - 
+0.99512144667746427 * x('2') =g= -1;
+con3517..0.74027968559484536 * x('1') + 
+0.67229903100896771 * x('2') =g= -1;
+con3518..0.098032266320611058 * x('1') - 
+0.99518323677604459 * x('2') =g= -1;
+con3519..0.097406973384431189 * x('1') - 
+0.99524463401521779 * x('2') =g= -1;
+con3520..0.73985713402472497 * x('1') + 
+0.67276401600614766 * x('2') =g= -1;
+con3521..0.096781641995789966 * x('1') - 
+0.99530563837074626 * x('2') =g= -1;
+con3522..0.096156272401542869 * x('1') - 
+0.99536624981854804 * x('2') =g= -1;
+con3523..0.73943429038795361 * x('1') + 
+0.67322873542241468 * x('2') =g= -1;
+con3524..0.095530864848560479 * x('1') - 
+0.99542646833469628 * x('2') =g= -1;
+con3525..0.094905419583730971 * x('1') - 
+0.99548629389541876 * x('2') =g= -1;
+con3526..0.73901115485145308 * x('1') + 
+0.67369318907431563 * x('2') =g= -1;
+con3527..0.094279936853954791 * x('1') - 
+0.99554572647709871 * x('2') =g= -1;
+con3528..0.093654416906147175 * x('1') - 
+0.99560476605627479 * x('2') =g= -1;
+con3529..0.7385877275822611 * x('1') + 
+0.6741573767785024 * x('2') =g= -1;
+con3530..0.093028859987241572 * x('1') - 
+0.99566341260963998 * x('2') =g= -1;
+con3531..0.092403266344179849 * x('1') - 
+0.99572166611404345 * x('2') =g= -1;
+con3532..0.73816400874752996 * x('1') + 
+0.67462129835173201 * x('2') =g= -1;
+con3533..0.091777636223924541 * x('1') - 
+0.9957795265464886 * x('2') =g= -1;
+con3534..0.091151969873449076 * x('1') - 
+0.9958369938841346 * x('2') =g= -1;
+con3535..0.73773999851452732 * x('1') + 
+0.67508495361086618 * x('2') =g= -1;
+con3536..0.090526267539742036 * x('1') - 
+0.99589406810429548 * x('2') =g= -1;
+con3537..0.089900529469805354 * x('1') - 
+0.99595074918444071 * x('2') =g= -1;
+con3538..0.73731569705063593 * x('1') + 
+0.67554834237287187 * x('2') =g= -1;
+con3539..0.089274755910657685 * x('1') - 
+0.99600703710219463 * x('2') =g= -1;
+con3540..0.088648947109329093 * x('1') - 
+0.99606293183533712 * x('2') =g= -1;
+con3541..0.73689110452335327 * x('1') + 
+0.67601146445482152 * x('2') =g= -1;
+con3542..0.088023103312864379 * x('1') - 
+0.99611843336180306 * x('2') =g= -1;
+con3543..0.087397224768322207 * x('1') - 
+0.99617354165968264 * x('2') =g= -1;
+con3544..0.73646622110029203 * x('1') + 
+0.6764743196738926 * x('2') =g= -1;
+con3545..0.086771311722774053 * x('1') - 
+0.99622825670722126 * x('2') =g= -1;
+con3546..0.086145364423307683 * x('1') - 
+0.99628257848281954 * x('2') =g= -1;
+con3547..0.73604104694917927 * x('1') + 
+0.67693690784736804 * x('2') =g= -1;
+con3548..0.085519383117021688 * x('1') - 
+0.9963365069650334 * x('2') =g= -1;
+con3549..0.084893368051028123 * x('1') - 
+0.99639004213257409 * x('2') =g= -1;
+con3550..0.73561558223785739 * x('1') + 
+0.67739922879263603 * x('2') =g= -1;
+con3551..0.084267319472455915 * x('1') - 
+0.99644318396430764 * x('2') =g= -1;
+con3552..0.083641237628440987 * x('1') - 
+0.99649593243925616 * x('2') =g= -1;
+con3553..0.73518982713428316 * x('1') + 
+0.67786128232719034 * x('2') =g= -1;
+con3554..0.083015122766138635 * x('1') - 
+0.99654828753659641 * x('2') =g= -1;
+con3555..0.082388975132713607 * x('1') - 
+0.99660024923566071 * x('2') =g= -1;
+con3556..0.73476378180652802 * x('1') + 
+0.67832306826863031 * x('2') =g= -1;
+con3557..0.081762794975344499 * x('1') - 
+0.99665181751593657 * x('2') =g= -1;
+con3558..0.081136582541221858 * x('1') - 
+0.99670299235706694 * x('2') =g= -1;
+con3559..0.73433744642277798 * x('1') + 
+0.67878458643466089 * x('2') =g= -1;
+con3560..0.080510338077551619 * x('1') - 
+0.99675377373884988 * x('2') =g= -1;
+con3561..0.07988406183154971 * x('1') - 
+0.99680416164123886 * x('2') =g= -1;
+con3562..0.73391082115133355 * x('1') + 
+0.67924583664309302 * x('2') =g= -1;
+con3563..0.07925775405044462 * x('1') - 
+0.99685415604434291 * x('2') =g= -1;
+con3564..0.078631414981480782 * x('1') - 
+0.99690375692842592 * x('2') =g= -1;
+con3565..0.73348390616060966 * x('1') + 
+0.67970681871184291 * x('2') =g= -1;
+con3566..0.078005044871908846 * x('1') - 
+0.99695296427390767 * x('2') =g= -1;
+con3567..0.077378643968997865 * x('1') - 
+0.99700177806136292 * x('2') =g= -1;
+con3568..0.73305670161913572 * x('1') + 
+0.68016753245893291 * x('2') =g= -1;
+con3569..0.076752212520025537 * x('1') - 
+0.99705019827152175 * x('2') =g= -1;
+con3570..0.076125750772281592 * x('1') - 
+0.99709822488527 * x('2') =g= -1;
+con3571..0.73262920769555528 * x('1') + 
+0.68062797770249128 * x('2') =g= -1;
+con3572..0.075499258973071276 * x('1') - 
+0.9971458578836484 * x('2') =g= -1;
+con3573..0.074872737369705511 * x('1') - 
+0.99719309724785354 * x('2') =g= -1;
+con3574..0.73220142455862636 * x('1') + 
+0.6810881542607522 * x('2') =g= -1;
+con3575..0.074246186209513149 * x('1') - 
+0.99723994295923701 * x('2') =g= -1;
+con3576..0.073619605739831215 * x('1') - 
+0.99728639499930605 * x('2') =g= -1;
+con3577..0.73177335237722096 * x('1') + 
+0.68154806195205597 * x('2') =g= -1;
+con3578..0.072992996208008268 * x('1') - 
+0.99733245334972309 * x('2') =g= -1;
+con3579..0.072366357861407007 * x('1') - 
+0.99737811799230625 * x('2') =g= -1;
+con3580..0.73134499132032516 * x('1') + 
+0.68200770059484928 * x('2') =g= -1;
+con3581..0.071739690947398849 * x('1') - 
+0.99742338890902882 * x('2') =g= -1;
+con3582..0.071112995713367377 * x('1') - 
+0.99746826608201955 * x('2') =g= -1;
+con3583..0.73091634155703922 * x('1') + 
+0.68246707000768436 * x('2') =g= -1;
+con3584..0.070486272406706463 * x('1') - 
+0.99751274949356294 * x('2') =g= -1;
+con3585..0.069859521274824601 * x('1') - 
+0.99755683912609827 * x('2') =g= -1;
+con3586..0.73048740325657713 * x('1') + 
+0.68292617000922051 * x('2') =g= -1;
+con3587..0.069232742565135091 * x('1') - 
+0.99760053496222112 * x('2') =g= -1;
+con3588..0.068605936525068287 * x('1') - 
+0.99764383698468173 * x('2') =g= -1;
+con3589..0.73005817658826722 * x('1') + 
+0.68338500041822281 * x('2') =g= -1;
+con3590..0.067979103402061813 * x('1') - 
+0.99768674517638645 * x('2') =g= -1;
+con3591..0.067352243443563983 * x('1') - 
+0.99772925952039659 * x('2') =g= -1;
+con3592..0.72962866172155127 * x('1') + 
+0.68384356105356292 * x('2') =g= -1;
+con3593..0.066725356897036348 * x('1') - 
+0.99777137999992915 * x('2') =g= -1;
+con3594..0.066098444009948298 * x('1') - 
+0.99781310659835676 * x('2') =g= -1;
+con3595..0.7291988588259849 * x('1') + 
+0.68430185173421931 * x('2') =g= -1;
+con3596..0.065471505029780525 * x('1') - 
+0.99785443929920736 * x('2') =g= -1;
+con3597..0.064844540204024012 * x('1') - 
+0.99789537808616424 * x('2') =g= -1;
+con3598..0.72876876807123747 * x('1') + 
+0.68475987227927637 * x('2') =g= -1;
+con3599..0.064217549780179045 * x('1') - 
+0.99793592294306666 * x('2') =g= -1;
+con3600..0.063590534005758689 * x('1') - 
+0.99797607385390885 * x('2') =g= -1;
+con3601..0.72833838962709208 * x('1') + 
+0.68521762250792584 * x('2') =g= -1;
+con3602..0.062963493128283365 * x('1') - 
+0.99801583080284084 * x('2') =g= -1;
+con3603..0.062336427395284277 * x('1') - 
+0.99805519377416818 * x('2') =g= -1;
+con3604..0.72790772366344514 * x('1') + 
+0.68567510223946559 * x('2') =g= -1;
+con3605..0.061709337054301552 * x('1') - 
+0.99809416275235208 * x('2') =g= -1;
+con3606..0.061082222352888585 * x('1') - 
+0.99813273772200872 * x('2') =g= -1;
+con3607..0.72747677035030678 * x('1') + 
+0.68613231129330077 * x('2') =g= -1;
+con3608..0.060455083538602176 * x('1') - 
+0.99817091866791063 * x('2') =g= -1;
+con3609..0.059827920859014859 * x('1') - 
+0.9982087055749852 * x('2') =g= -1;
+con3610..0.72704552985780069 * x('1') + 
+0.68658924948894295 * x('2') =g= -1;
+con3611..0.059200734561705028 * x('1') - 
+0.99824609842831569 * x('2') =g= -1;
+con3612..0.058573524894260424 * x('1') - 
+0.99828309721314101 * x('2') =g= -1;
+con3613..0.72661400235616358 * x('1') + 
+0.68704591664601078 * x('2') =g= -1;
+con3614..0.057946292104280643 * x('1') - 
+0.9983197019148552 * x('2') =g= -1;
+con3615..0.057319036439371772 * x('1') - 
+0.99835591251900846 * x('2') =g= -1;
+con3616..0.72618218801574552 * x('1') + 
+0.68750231258423 * x('2') =g= -1;
+con3617..0.056691758147149808 * x('1') - 
+0.99839172901130602 * x('2') =g= -1;
+con3618..0.056064457475239679 * x('1') - 
+0.99842715137760907 * x('2') =g= -1;
+con3619..0.72575008700701016 * x('1') + 
+0.68795843712343352 * x('2') =g= -1;
+con3620..0.055437134671274257 * x('1') - 
+0.99846217960393424 * x('2') =g= -1;
+con3621..0.05480978998289783 * x('1') - 
+0.99849681367645371 * x('2') =g= -1;
+con3622..0.72531769950053393 * x('1') + 
+0.68841429008356092 * x('2') =g= -1;
+con3623..0.054182423657760631 * x('1') - 
+0.9985310535814953 * x('2') =g= -1;
+con3624..0.053555035943522351 * x('1') - 
+0.99856489930554237 * x('2') =g= -1;
+con3625..0.72488502566700652 * x('1') + 
+0.68886987128465949 * x('2') =g= -1;
+con3626..0.052927627087850232 * x('1') - 
+0.99859835083523418 * x('2') =g= -1;
+con3627..0.052300197338422505 * x('1') - 
+0.99863140815736517 * x('2') =g= -1;
+con3628..0.72445206567723075 * x('1') + 
+0.68932518054688341 * x('2') =g= -1;
+con3629..0.051672746942923016 * x('1') - 
+0.99866407125888568 * x('2') =g= -1;
+con3630..0.051045276149043729 * x('1') - 
+0.99869634012690156 * x('2') =g= -1;
+con3631..0.72401881970212212 * x('1') + 
+0.68978021769049458 * x('2') =g= -1;
+con3632..0.050417785204488245 * x('1') - 
+0.99872821474867435 * x('2') =g= -1;
+con3633..0.049790274356961879 * x('1') - 
+0.99875969511162122 * x('2') =g= -1;
+con3634..0.72358528791270915 * x('1') + 
+0.69023498253586202 * x('2') =g= -1;
+con3635..0.049162743854184031 * x('1') - 
+0.99879078120331477 * x('2') =g= -1;
+con3636..0.048535193943878299 * x('1') - 
+0.99882147301148372 * x('2') =g= -1;
+con3637..0.72315147048013351 * x('1') + 
+0.69068947490346244 * x('2') =g= -1;
+con3638..0.047907624873775957 * x('1') - 
+0.99885177052401197 * x('2') =g= -1;
+con3639..0.047280036891619373 * x('1') - 
+0.99888167372893932 * x('2') =g= -1;
+con3640..0.72271736757564897 * x('1') + 
+0.69114369461388003 * x('2') =g= -1;
+con3641..0.046652430245152192 * x('1') - 
+0.9989111826144611 * x('2') =g= -1;
+con3642..0.046024805182131617 * x('1') - 
+0.99894029716892829 * x('2') =g= -1;
+con3643..0.72228297937062269 * x('1') + 
+0.69159764148780656 * x('2') =g= -1;
+con3644..0.045397161950318586 * x('1') - 
+0.99896901738084776 * x('2') =g= -1;
+con3645..0.044769500797482084 * x('1') - 
+0.99899734323888179 * x('2') =g= -1;
+con3646..0.72184830603653394 * x('1') + 
+0.69205131534604158 * x('2') =g= -1;
+con3647..0.044141821971397301 * x('1') - 
+0.99902527473184854 * x('2') =g= -1;
+con3648..0.043514125719849049 * x('1') - 
+0.99905281184872163 * x('2') =g= -1;
+con3649..0.7214133477449749 * x('1') + 
+0.69250471600949248 * x('2') =g= -1;
+con3650..0.042886412290626369 * x('1') - 
+0.99907995457863052 * x('2') =g= -1;
+con3651..0.042258681931525065 * x('1') - 
+0.99910670291086034 * x('2') =g= -1;
+con3652..0.72097810466765011 * x('1') + 
+0.69295784329917431 * x('2') =g= -1;
+con3653..0.041630934890351204 * x('1') - 
+0.99913305683485187 * x('2') =g= -1;
+con3654..0.041003171414911194 * x('1') - 
+0.99915901634020166 * x('2') =g= -1;
+con3655..0.72054257697637625 * x('1') + 
+0.69341069703621017 * x('2') =g= -1;
+con3656..0.040375391753024167 * x('1') - 
+0.99918458141666189 * x('2') =g= -1;
+con3657..0.039747596152512082 * x('1') - 
+0.99920975205414042 * x('2') =g= -1;
+con3658..0.72010676484308278 * x('1') + 
+0.69386327704183126 * x('2') =g= -1;
+con3659..0.03911978486120319 * x('1') - 
+0.99923452824270098 * x('2') =g= -1;
+con3660..0.038491958126934608 * x('1') - 
+0.99925890997256273 * x('2') =g= -1;
+con3661..0.71967066843981131 * x('1') + 
+0.6943155831373764 * x('2') =g= -1;
+con3662..0.037864116197546878 * x('1') - 
+0.99928289723410091 * x('2') =g= -1;
+con3663..0.037236259320887428 * x('1') - 
+0.99930649001784611 * x('2') =g= -1;
+con3664..0.71923428793871569 * x('1') + 
+0.69476761514429319 * x('2') =g= -1;
+con3665..0.036608387744809595 * x('1') - 
+0.99932968831448499 * x('2') =g= -1;
+con3666..0.035980501717171619 * x('1') - 
+0.99935249211485966 * x('2') =g= -1;
+con3667..0.71879762351206178 * x('1') + 
+0.69521937288413671 * x('2') =g= -1;
+con3668..0.035352601485840122 * x('1') - 
+0.9993749014099681 * x('2') =g= -1;
+con3669..0.034724687298684657 * x('1') - 
+0.99939691619096394 * x('2') =g= -1;
+con3670..0.71836067533222747 * x('1') + 
+0.69567085617857105 * x('2') =g= -1;
+con3671..0.034096759403581173 * x('1') - 
+0.99941853644915668 * x('2') =g= -1;
+con3672..0.033468818048410162 * x('1') - 
+0.99943976217601149 * x('2') =g= -1;
+con3673..0.71792344357170312 * x('1') + 
+0.69612206484936801 * x('2') =g= -1;
+con3674..0.03284086348106096 * x('1') - 
+0.99946059336314919 * x('2') =g= -1;
+con3675..0.032212895949421914 * x('1') - 
+0.99948103000234667 * x('2') =g= -1;
+con3676..0.71748592840309044 * x('1') + 
+0.69657299871840805 * x('2') =g= -1;
+con3677..0.031584915701392699 * x('1') - 
+0.99950107208553607 * x('2') =g= -1;
+con3678..0.030956922984874458 * x('1') - 
+0.99952071960480571 * x('2') =g= -1;
+con3679..0.7170481299991035 * x('1') + 
+0.69702365760768037 * x('2') =g= -1;
+con3680..0.030328918047773264 * x('1') - 
+0.99953997255239946 * x('2') =g= -1;
+con3681..0.02970090113800267 * x('1') - 
+0.99955883092071707 * x('2') =g= -1;
+con3682..0.71661004853256782 * x('1') + 
+0.69747404133928226 * x('2') =g= -1;
+con3683..0.029072872503478297 * x('1') - 
+0.99957729470231393 * x('2') =g= -1;
+con3684..0.028444832392121273 * x('1') - 
+0.99959536388990122 * x('2') =g= -1;
+con3685..0.71617168417642096 * x('1') + 
+0.69792414973541983 * x('2') =g= -1;
+con3686..0.027816781051857271 * x('1') - 
+0.99961303847634608 * x('2') =g= -1;
+con3687..0.027188718730615496 * x('1') - 
+0.99963031845467121 * x('2') =g= -1;
+con3688..0.71573303710371194 * x('1') + 
+0.69837398261840811 * x('2') =g= -1;
+con3689..0.026560645676332158 * x('1') - 
+0.99964720381805516 * x('2') =g= -1;
+con3690..0.025932562136945041 * x('1') - 
+0.99966369455983217 * x('2') =g= -1;
+con3691..0.71529410748760147 * x('1') + 
+0.69882353981067036 * x('2') =g= -1;
+con3692..0.025304468360396948 * x('1') - 
+0.99967979067349244 * x('2') =g= -1;
+con3693..0.024676364594633848 * x('1') - 
+0.99969549215268183 * x('2') =g= -1;
+con3694..0.71485489550136183 * x('1') + 
+0.69927282113473921 * x('2') =g= -1;
+con3695..0.024048251087609194 * x('1') - 
+0.99971079899120185 * x('2') =g= -1;
+con3696..0.023420128087274072 * x('1') - 
+0.99972571118301023 * x('2') =g= -1;
+con3697..0.71441540131837677 * x('1') + 
+0.69972182641325587 * x('2') =g= -1;
+con3698..0.022791995841588648 * x('1') - 
+0.99974022872222013 * x('2') =g= -1;
+con3699..0.022163854598516733 * x('1') - 
+0.99975435160310044 * x('2') =g= -1;
+con3700..0.71397562511214119 * x('1') + 
+0.70017055546897089 * x('2') =g= -1;
+con3701..0.021535704606020362 * x('1') - 
+0.99976807982007621 * x('2') =g= -1;
+con3702..0.02090754611207124 * x('1') - 
+0.99978141336772786 * x('2') =g= -1;
+con3703..0.71353556705626175 * x('1') + 
+0.7006190081247432 * x('2') =g= -1;
+con3704..0.020279379364640884 * x('1') - 
+0.99979435224079205 * x('2') =g= -1;
+con3705..0.019651204611704939 * x('1') - 
+0.99980689643416087 * x('2') =g= -1;
+con3706..0.71309522732445607 * x('1') + 
+0.70106718420354142 * x('2') =g= -1;
+con3707..0.01902302210124223 * x('1') - 
+0.9998190459428824 * x('2') =g= -1;
+con3708..0.018394832081233745 * x('1') - 
+0.99983080076216058 * x('2') =g= -1;
+con3709..0.71265460609055309 * x('1') + 
+0.70151508352844316 * x('2') =g= -1;
+con3710..0.017766634799666101 * x('1') - 
+0.99984216088735489 * x('2') =g= -1;
+con3711..0.017138430504526125 * x('1') - 
+0.99985312631398093 * x('2') =g= -1;
+con3712..0.71221370352849278 * x('1') + 
+0.70196270592263532 * x('2') =g= -1;
+con3713..0.016510219443804292 * x('1') - 
+0.99986369703770994 * x('2') =g= -1;
+con3714..0.015882001865492861 * x('1') - 
+0.99987387305436903 * x('2') =g= -1;
+con3715..0.71177251981232625 * x('1') + 
+0.70241005120941402 * x('2') =g= -1;
+con3716..0.015253778017589334 * x('1') - 
+0.99988365435994109 * x('2') =g= -1;
+con3717..0.014625548148091019 * x('1') - 
+0.99989304095056486 * x('2') =g= -1;
+con3718..0.71133105511621553 * x('1') + 
+0.70285711921218486 * x('2') =g= -1;
+con3719..0.013997312504997602 * x('1') - 
+0.99990203282253476 * x('2') =g= -1;
+con3720..0.013369071336314601 * x('1') - 
+0.99991062997230129 * x('2') =g= -1;
+con3721..0.71088930961443364 * x('1') + 
+0.703303909754463 * x('2') =g= -1;
+con3722..0.012740824890043499 * x('1') - 
+0.99991883239647072 * x('2') =g= -1;
+con3723..0.012112573414194076 * x('1') - 
+0.99992664009180476 * x('2') =g= -1;
+con3724..0.71044728348136443 * x('1') + 
+0.70375042265987287 * x('2') =g= -1;
+con3725..0.011484317156774551 * x('1') - 
+0.99993405305522154 * x('2') =g= -1;
+con3726..0.010856056365795024 * x('1') - 
+0.9999410712837945 * x('2') =g= -1;
+con3727..0.71000497689150255 * x('1') + 
+0.70419665775214868 * x('2') =g= -1;
+con3728..0.010227791289270054 * x('1') - 
+0.99994769477475332 * x('2') =g= -1;
+con3729..0.0095995221752132251 * x('1') - 
+0.99995392352548307 * x('2') =g= -1;
+con3730..0.70956239001945343 * x('1') + 
+0.70464261485513424 * x('2') =g= -1;
+con3731..0.0089712492716406012 * x('1') - 
+0.99995975753352495 * x('2') =g= -1;
+con3732..0.008342972826569749 * x('1') - 
+0.99996519679657603 * x('2') =g= -1;
+con3733..0.70911952303993275 * x('1') + 
+0.70508829379278326 * x('2') =g= -1;
+con3734..0.0077146930880196262 * x('1') - 
+0.99997024131248913 * x('2') =g= -1;
+con3735..0.0070864103040096061 * x('1') - 
+0.99997489107927262 * x('2') =g= -1;
+con3736..0.70867637612776724 * x('1') + 
+0.70553369438915903 * x('2') =g= -1;
+con3737..0.0064581247225629279 * x('1') - 
+0.9999791460950912 * x('2') =g= -1;
+con3738..0.0058298365917012701 * x('1') - 
+0.99998300635826509 * x('2') =g= -1;
+con3739..0.70823294945789406 * x('1') + 
+0.70597881646843486 * x('2') =g= -1;
+con3740..0.0052015461594473178 * x('1') - 
+0.99998647186727041 * x('2') =g= -1;
+con3741..0.0045732536738282191 * x('1') - 
+0.99998954262073902 * x('2') =g= -1;
+con3742..0.70778924320536063 * x('1') + 
+0.70642365985489397 * x('2') =g= -1;
+con3743..0.0039449593828657118 * x('1') - 
+0.99999221861745879 * x('2') =g= -1;
+con3744..0.0033166635345884682 * x('1') - 
+0.99999449985637334 * x('2') =g= -1;
+con3745..0.70734525754532485 * x('1') + 
+0.70686822437292951 * x('2') =g= -1;
+con3746..0.0026883663770222179 * x('1') - 
+0.99999638633658217 * x('2') =g= -1;
+con3747..0.0020600681581932111 * x('1') - 
+0.99999787805734053 * x('2') =g= -1;
+con3748..0.70690099265305473 * x('1') + 
+0.70731250984704486 * x('2') =g= -1;
+con3749..0.0014317691261307799 * x('1') - 
+0.99999897501805945 * x('2') =g= -1;
+con3750..0.0008034695288619125 * x('1') - 
+0.99999967721830596 * x('2') =g= -1;
+con3751..0.70645644870392887 * x('1') + 
+0.70775651610185342 * x('2') =g= -1;
+con3752..0.00017516961441470922 * x('1') - 
+0.99999998465780293 * x('2') =g= -1;
+con3753..(-0.00045313036918260462) * x('1') - 
+0.99999989733642902 * x('2') =g= -1;
+con3754..0.70601162587343569 * x('1') + 
+0.70820024296207906 * x('2') =g= -1;
+con3755..(-0.0010814301739017766) * x('1') - 
+0.99999941525421854 * x('2') =g= -1;
+con3756..(-0.0017097295517155128) * x('1') - 
+0.99999853841136188 * x('2') =g= -1;
+con3757..0.70556652433717393 * x('1') + 
+0.7086436902525558 * x('2') =g= -1;
+con3758..(-0.0023380282545940236) * x('1') - 
+0.99999726680820522 * x('2') =g= -1;
+con3759..(-0.0029663260345104501) * x('1') - 
+0.99999560044525049 * x('2') =g= -1;
+con3760..0.70512114427085215 * x('1') + 
+0.70908685779822778 * x('2') =g= -1;
+con3761..(-0.0035946226434382979) * x('1') - 
+0.99999353932315549 * x('2') =g= -1;
+con3762..(-0.0042229178333479823) * x('1') - 
+0.99999108344273391 * x('2') =g= -1;
+con3763..0.70467548585028916 * x('1') + 
+0.70952974542414993 * x('2') =g= -1;
+con3764..(-0.0048512113562166953) * x('1') - 
+0.99998823280495519 * x('2') =g= -1;
+con3765..(-0.0054795029640169581) * x('1') - 
+0.99998498741094477 * x('2') =g= -1;
+con3766..0.70422954925141334 * x('1') + 
+0.70997235295548733 * x('2') =g= -1;
+con3767..(-0.00610779240872205) * x('1') - 
+0.99998134726198362 * x('2') =g= -1;
+con3768..(-0.0067360794423114295) * x('1') - 
+0.99997731235950893 * x('2') =g= -1;
+con3769..0.7037833346502631 * x('1') + 
+0.71041468021751619 * x('2') =g= -1;
+con3770..(-0.0073643638167592935) * x('1') - 
+0.99997288270511331 * x('2') =g= -1;
+con3771..(-0.0079926452840444386) * x('1') - 
+0.99996805830054569 * x('2') =g= -1;
+con3772..0.70333684222298631 * x('1') + 
+0.71085672703562286 * x('2') =g= -1;
+con3773..(-0.0086209235961459199) * x('1') - 
+0.99996283914771023 * x('2') =g= -1;
+con3774..(-0.0092491985050440432) * x('1') - 
+0.99995722524866748 * x('2') =g= -1;
+con3775..0.70289007214584087 * x('1') + 
+0.71129849323530447 * x('2') =g= -1;
+con3776..(-0.0098774697627213408) * x('1') - 
+0.99995121660563346 * x('2') =g= -1;
+con3777..(-0.010505737121159124) * x('1') - 
+0.99994481322098028 * x('2') =g= -1;
+con3778..0.70244302459519414 * x('1') + 
+0.7117399786421692 * x('2') =g= -1;
+con3779..(-0.011134000332342908) * x('1') - 
+0.99993801509723557 * x('2') =g= -1;
+con3780..(-0.011762259148258956) * x('1') - 
+0.99993082223708318 * x('2') =g= -1;
+con3781..0.70199569974752307 * x('1') + 
+0.71218118308193556 * x('2') =g= -1;
+con3782..(-0.012390513320896156) * x('1') - 
+0.99992323464336241 * x('2') =g= -1;
+con3783..(-0.013018762602241673) * x('1') - 
+0.99991525231906853 * x('2') =g= -1;
+con3784..0.70154809777941385 * x('1') + 
+0.71262210638043366 * x('2') =g= -1;
+con3785..(-0.013647006744290823) * x('1') - 
+0.99990687526735278 * x('2') =g= -1;
+con3786..(-0.014275245499035624) * x('1') - 
+0.99989810349152186 * x('2') =g= -1;
+con3787..0.70110021886756224 * x('1') + 
+0.71306274836360395 * x('2') =g= -1;
+con3788..(-0.014903478618470216) * x('1') - 
+0.99988893699503889 * x('2') =g= -1;
+con3789..(-0.015531705854596293) * x('1') - 
+0.99987937578152208 * x('2') =g= -1;
+con3790..0.70065206318877338 * x('1') + 
+0.71350310885749835 * x('2') =g= -1;
+con3791..(-0.016159926959411656) * x('1') - 
+0.99986941985474609 * x('2') =g= -1;
+con3792..(-0.016788141684920082) * x('1') - 
+0.99985906921864098 * x('2') =g= -1;
+con3793..0.70020363091996152 * x('1') + 
+0.7139431876882798 * x('2') =g= -1;
+con3794..(-0.017416349783126974) * x('1') - 
+0.99984832387729283 * x('2') =g= -1;
+con3795..(-0.018044551006041239) * x('1') - 
+0.99983718383494335 * x('2') =g= -1;
+con3796..0.69975492223815017 * x('1') + 
+0.71438298468222239 * x('2') =g= -1;
+con3797..(-0.018672745105671833) * x('1') - 
+0.99982564909599048 * x('2') =g= -1;
+con3798..(-0.019300931834033194) * x('1') - 
+0.99981371966498744 * x('2') =g= -1;
+con3799..0.69930593732047219 * x('1') + 
+0.71482249966571121 * x('2') =g= -1;
+con3800..(-0.01992911094314178) * x('1') - 
+0.99980139554664349 * x('2') =g= -1;
+con3801..(-0.020557282185017046) * x('1') - 
+0.99978867674582395 * x('2') =g= -1;
+con3802..0.69885667634416904 * x('1') + 
+0.71526173246524338 * x('2') =g= -1;
+con3803..(-0.021185445311682462) * x('1') - 
+0.99977556326754946 * x('2') =g= -1;
+con3804..(-0.021813600075162014) * x('1') - 
+0.99976205511699678 * x('2') =g= -1;
+con3805..0.6984071394865915 * x('1') + 
+0.71570068290742661 * x('2') =g= -1;
+con3806..(-0.022441746227485671) * x('1') - 
+0.99974815229949843 * x('2') =g= -1;
+con3807..(-0.023069883520686795) * x('1') - 
+0.99973385482054267 * x('2') =g= -1;
+con3808..0.69795732692519896 * x('1') + 
+0.71613935081898061 * x('2') =g= -1;
+con3809..(-0.02369801170679869) * x('1') - 
+0.99971916268577365 * x('2') =g= -1;
+con3810..(-0.024326130537864477) * x('1') - 
+0.9997040759009912 * x('2') =g= -1;
+con3811..0.69750723883755994 * x('1') + 
+0.71657773602673647 * x('2') =g= -1;
+con3812..(-0.02495423976592475) * x('1') - 
+0.99968859447215097 * x('2') =g= -1;
+con3813..(-0.02558233914302745) * x('1') - 
+0.99967271840536442 * x('2') =g= -1;
+con3814..0.69705687540135153 * x('1') + 
+0.71701583835763671 * x('2') =g= -1;
+con3815..(-0.026210428421224397) * x('1') - 
+0.99965644770689888 * x('2') =g= -1;
+con3816..(-0.02683850735256875) * x('1') - 
+0.9996397823831773 * x('2') =g= -1;
+con3817..0.69660623679435973 * x('1') + 
+0.71745365763873592 * x('2') =g= -1;
+con3818..(-0.0274665756891204) * x('1') - 
+0.99962272244077854 * x('2') =g= -1;
+con3819..(-0.028094633182942544) * x('1') - 
+0.99960526788643722 * x('2') =g= -1;
+con3820..0.69615532319447904 * x('1') + 
+0.71789119369719978 * x('2') =g= -1;
+con3821..(-0.028722679586102653) * x('1') - 
+0.9995874187270436 * x('2') =g= -1;
+con3822..(-0.029350714650672578) * x('1') - 
+0.99956917496964404 * x('2') =g= -1;
+con3823..0.69570413477971227 * x('1') + 
+0.71832844636030657 * x('2') =g= -1;
+con3824..(-0.029978738128729535) * x('1') - 
+0.99955053662144022 * x('2') =g= -1;
+con3825..(-0.03060674977235265) * x('1') - 
+0.99953150368978994 * x('2') =g= -1;
+con3826..0.69525267172817118 * x('1') + 
+0.71876541545544592 * x('2') =g= -1;
+con3827..(-0.031234749333628381) * x('1') - 
+0.99951207618220672 * x('2') =g= -1;
+con3828..(-0.031862736564647956) * x('1') - 
+0.99949225410635967 * x('2') =g= -1;
+con3829..0.69480093421807576 * x('1') + 
+0.71920210081011937 * x('2') =g= -1;
+con3830..(-0.03249071121750393) * x('1') - 
+0.99947203747007385 * x('2') =g= -1;
+con3831..(-0.033118673044300023) * x('1') - 
+0.99945142628132999 * x('2') =g= -1;
+con3832..0.69434892242775403 * x('1') + 
+0.71963850225194093 * x('2') =g= -1;
+con3833..(-0.033746621797138811) * x('1') - 
+0.99943042054826448 * x('2') =g= -1;
+con3834..(-0.034374557228131583) * x('1') - 
+0.99940902027916978 * x('2') =g= -1;
+con3835..0.69389663653564282 * x('1') + 
+0.72007461960863617 * x('2') =g= -1;
+con3836..(-0.035002479089394883) * x('1') - 
+0.99938722548249359 * x('2') =g= -1;
+con3837..(-0.035630387133047954) * x('1') - 
+0.9993650361668398 * x('2') =g= -1;
+con3838..0.69344407672028674 * x('1') + 
+0.72051045270804293 * x('2') =g= -1;
+con3839..(-0.036258281111218156) * x('1') - 
+0.99934245234096797 * x('2') =g= -1;
+con3840..(-0.036886160776037499) * x('1') - 
+0.99931947401379317 * x('2') =g= -1;
+con3841..0.69299124316033889 * x('1') + 
+0.7209460013781116 * x('2') =g= -1;
+con3842..(-0.03751402587964367) * x('1') - 
+0.99929610119438639 * x('2') =g= -1;
+con3843..(-0.038141876174180085) * x('1') - 
+0.99927233389197434 * x('2') =g= -1;
+con3844..0.69253813603456005 * x('1') + 
+0.7213812654469044 * x('2') =g= -1;
+con3845..(-0.038769711411796894) * x('1') - 
+0.99924817211593941 * x('2') =g= -1;
+con3846..(-0.039397531344647539) * x('1') - 
+0.99922361587581965 * x('2') =g= -1;
+con3847..0.69208475552181925 * x('1') + 
+0.72181624474259631 * x('2') =g= -1;
+con3848..(-0.040025335724894161) * x('1') - 
+0.99919866518130895 * x('2') =g= -1;
+con3849..(-0.040653124304705031) * x('1') - 
+0.99917332004225679 * x('2') =g= -1;
+con3850..0.69163110180109344 * x('1') + 
+0.72225093909347426 * x('2') =g= -1;
+con3851..(-0.041280896836251128) * x('1') - 
+0.99914758046866869 * x('2') =g= -1;
+con3852..(-0.041908653071715957) * x('1') - 
+0.99912144647070533 * x('2') =g= -1;
+con3853..0.69117717505146725 * x('1') + 
+0.72268534832793818 * x('2') =g= -1;
+con3854..(-0.042536392763284143) * x('1') - 
+0.99909491805868356 * x('2') =g= -1;
+con3855..(-0.043164115663146846) * x('1') - 
+0.99906799524307577 * x('2') =g= -1;
+con3856..0.69072297545213335 * x('1') + 
+0.72311947227450024 * x('2') =g= -1;
+con3857..(-0.04379182152350717) * x('1') - 
+0.99904067803450991 * x('2') =g= -1;
+con3858..(-0.044419510096568735) * x('1') - 
+0.9990129664437698 * x('2') =g= -1;
+con3859..0.69026850318239186 * x('1') + 
+0.72355331076178508 * x('2') =g= -1;
+con3860..(-0.045047181134545533) * x('1') - 
+0.99898486048179502 * x('2') =g= -1;
+con3861..(-0.045674834389657609) * x('1') - 
+0.99895636015968048 * x('2') =g= -1;
+con3862..0.6898137584216506 * x('1') + 
+0.72398686361853049 * x('2') =g= -1;
+con3863..(-0.046302469614131994) * x('1') - 
+0.99892746548867717 * x('2') =g= -1;
+con3864..(-0.046930086560203761) * x('1') - 
+0.99889817648019152 * x('2') =g= -1;
+con3865..0.68935874134942521 * x('1') + 
+0.72442013067358657 * x('2') =g= -1;
+con3866..(-0.047557684980112508) * x('1') - 
+0.99886849314578563 * x('2') =g= -1;
+con3867..(-0.048185264626107824) * x('1') - 
+0.99883841549717733 * x('2') =g= -1;
+con3868..0.68890345214533844 * x('1') + 
+0.7248531117559166 * x('2') =g= -1;
+con3869..(-0.048812825250445814) * x('1') - 
+0.99880794354624025 * x('2') =g= -1;
+con3870..(-0.049440366605390994) * x('1') - 
+0.99877707730500331 * x('2') =g= -1;
+con3871..0.68844789098912074 * x('1') + 
+0.72528580669459652 * x('2') =g= -1;
+con3872..(-0.05006788844321191) * x('1') - 
+0.99874581678565144 * x('2') =g= -1;
+con3873..(-0.050695390516191055) * x('1') - 
+0.99871416200052499 * x('2') =g= -1;
+con3874..0.68799205806060981 * x('1') + 
+0.72571821531881542 * x('2') =g= -1;
+con3875..(-0.051322872576613374) * x('1') - 
+0.99868211296212006 * x('2') =g= -1;
+con3876..(-0.051950334376771733) * x('1') - 
+0.99864966968308844 * x('2') =g= -1;
+con3877..0.68753595353975061 * x('1') + 
+0.72615033745787505 * x('2') =g= -1;
+con3878..(-0.052577775668972301) * x('1') - 
+0.99861683217623731 * x('2') =g= -1;
+con3879..(-0.053205196205523157) * x('1') - 
+0.99858360045452965 * x('2') =g= -1;
+con3880..0.68707957760659544 * x('1') + 
+0.72658217294119065 * x('2') =g= -1;
+con3881..(-0.053832595738744091) * x('1') - 
+0.99854997453108418 * x('2') =g= -1;
+con3882..(-0.054459974020962316) * x('1') - 
+0.99851595441917507 * x('2') =g= -1;
+con3883..0.68662293044130374 * x('1') + 
+0.72701372159829047 * x('2') =g= -1;
+con3884..(-0.055087330804514327) * x('1') - 
+0.998481540132232 * x('2') =g= -1;
+con3885..(-0.055714665841742429) * x('1') - 
+0.99844673168384046 * x('2') =g= -1;
+con3886..0.68616601222414175 * x('1') + 
+0.7274449832588159 * x('2') =g= -1;
+con3887..(-0.056341978885000185) * x('1') - 
+0.99841152908774156 * x('2') =g= -1;
+con3888..(-0.056969269686648935) * x('1') - 
+0.99837593235783173 * x('2') =g= -1;
+con3889..0.68570882313548298 * x('1') + 
+0.72787595775252178 * x('2') =g= -1;
+con3890..(-0.057596537999058825) * x('1') - 
+0.9983399415081633 * x('2') =g= -1;
+con3891..(-0.05822378357460975) * x('1') - 
+0.998303556552944 * x('2') =g= -1;
+con3892..0.68525136335580783 * x('1') + 
+0.72830664490927621 * x('2') =g= -1;
+con3893..(-0.058851006165687031) * x('1') - 
+0.99826677750653725 * x('2') =g= -1;
+con3894..(-0.059478205524691283) * x('1') - 
+0.99822960438346175 * x('2') =g= -1;
+con3895..0.68479363306570351 * x('1') + 
+0.72873704455906085 * x('2') =g= -1;
+con3896..(-0.060105381404026957) * x('1') - 
+0.99819203719839222 * x('2') =g= -1;
+con3897..(-0.060732533556107776) * x('1') - 
+0.99815407596615879 * x('2') =g= -1;
+con3898..0.68433563244586404 * x('1') + 
+0.72916715653197051 * x('2') =g= -1;
+con3899..(-0.061359661733362166) * x('1') - 
+0.99811572070174681 * x('2') =g= -1;
+con3900..(-0.061986765688221784) * x('1') - 
+0.99807697142029761 * x('2') =g= -1;
+con3901..0.68387736167709012 * x('1') + 
+0.7295969806582141 * x('2') =g= -1;
+con3902..(-0.062613845173131413) * x('1') - 
+0.99803782813710784 * x('2') =g= -1;
+con3903..(-0.063240899940545506) * x('1') - 
+0.9979982908676297 * x('2') =g= -1;
+con3904..0.68341882094028927 * x('1') + 
+0.73002651676811359 * x('2') =g= -1;
+con3905..(-0.063867929742925586) * x('1') - 
+0.99795835962747104 * x('2') =g= -1;
+con3906..(-0.06449493433274571) * x('1') - 
+0.99791803443239502 * x('2') =g= -1;
+con3907..0.68296001041647514 * x('1') + 
+0.73045576469210527 * x('2') =g= -1;
+con3908..(-0.065121913462488981) * x('1') - 
+0.99787731529832069 * x('2') =g= -1;
+con3909..(-0.065748866884648594) * x('1') - 
+0.99783620224132219 * x('2') =g= -1;
+con3910..0.68250093028676828 * x('1') + 
+0.73088472426073858 * x('2') =g= -1;
+con3911..(-0.066375794351727843) * x('1') - 
+0.99779469527762932 * x('2') =g= -1;
+con3912..(-0.067002695616241198) * x('1') - 
+0.99775279442362741 * x('2') =g= -1;
+con3913..0.68204158073239574 * x('1') + 
+0.73131339530467709 * x('2') =g= -1;
+con3914..(-0.067629570430710773) * x('1') - 
+0.99771049969585746 * x('2') =g= -1;
+con3915..(-0.06825641854767181) * x('1') - 
+0.99766781111101555 * x('2') =g= -1;
+con3916..0.68158196193469067 * x('1') + 
+0.73174177765469828 * x('2') =g= -1;
+con3917..(-0.0688832397196701) * x('1') - 
+0.99762472868595353 * x('2') =g= -1;
+con3918..(-0.069510033699258483) * x('1') - 
+0.99758125243767881 * x('2') =g= -1;
+con3919..0.6811220740750924 * x('1') + 
+0.73216987114169374 * x('2') =g= -1;
+con3920..(-0.070136800239006786) * x('1') - 
+0.99753738238335388 * x('2') =g= -1;
+con3921..(-0.070763539091489414) * x('1') - 
+0.9974931185402971 * x('2') =g= -1;
+con3922..0.68066191733514692 * x('1') + 
+0.73259767559666855 * x('2') =g= -1;
+con3923..(-0.071390250009295303) * x('1') - 
+0.99744846092598205 * x('2') =g= -1;
+con3924..(-0.072016932745024367) * x('1') - 
+0.99740340955803763 * x('2') =g= -1;
+con3925..0.68020149189650603 * x('1') + 
+0.73302519085074247 * x('2') =g= -1;
+con3926..(-0.072643587051285013) * x('1') - 
+0.99735796445424874 * x('2') =g= -1;
+con3927..(-0.073270212680699526) * x('1') - 
+0.99731212563255489 * x('2') =g= -1;
+con3928..0.67974079794092745 * x('1') + 
+0.73345241673514938 * x('2') =g= -1;
+con3929..(-0.073896809385900625) * x('1') - 
+0.99726589311105185 * x('2') =g= -1;
+con3930..(-0.074523376919532439) * x('1') - 
+0.99721926690799012 * x('2') =g= -1;
+con3931..0.6792798356502755 * x('1') + 
+0.73387935308123686 * x('2') =g= -1;
+con3932..(-0.075149915034250628) * x('1') - 
+0.99717224704177609 * x('2') =g= -1;
+con3933..(-0.075776423482723329) * x('1') - 
+0.99712483353097114 * x('2') =g= -1;
+con3934..0.67881860520651993 * x('1') + 
+0.73430599972046728 * x('2') =g= -1;
+con3935..(-0.076402902017627755) * x('1') - 
+0.99707702639429252 * x('2') =g= -1;
+con3936..(-0.077029350391655579) * x('1') - 
+0.99702882565061257 * x('2') =g= -1;
+con3937..0.67835710679173622 * x('1') + 
+0.73473235648441737 * x('2') =g= -1;
+con3938..(-0.077655768357510369) * x('1') - 
+0.99698023131895885 * x('2') =g= -1;
+con3939..(-0.078282155667904169) * x('1') - 
+0.9969312434185148 * x('2') =g= -1;
+con3940..0.6778953405881063 * x('1') + 
+0.73515842320477787 * x('2') =g= -1;
+con3941..(-0.078908512075567316) * x('1') - 
+0.99688186196861861 * x('2') =g= -1;
+con3942..(-0.079534837333236144) * x('1') - 
+0.99683208698876447 * x('2') =g= -1;
+con3943..0.67743330677791724 * x('1') + 
+0.73558419971335454 * x('2') =g= -1;
+con3944..(-0.080161131193662832) * x('1') - 
+0.99678191849860132 * x('2') =g= -1;
+con3945..(-0.080787393409611941) * x('1') - 
+0.99673135651793388 * x('2') =g= -1;
+con3946..0.67697100554356182 * x('1') + 
+0.73600968584206738 * x('2') =g= -1;
+con3947..(-0.081413623733857909) * x('1') - 
+0.99668040106672195 * x('2') =g= -1;
+con3948..(-0.082039821919190362) * x('1') - 
+0.99662905216508091 * x('2') =g= -1;
+con3949..0.67650843706753838 * x('1') + 
+0.73643488142295133 * x('2') =g= -1;
+con3950..(-0.082665987718410772) * x('1') - 
+0.99657730983328108 * x('2') =g= -1;
+con3951..(-0.083292120884334242) * x('1') - 
+0.99652517409174834 * x('2') =g= -1;
+con3952..0.67604560153245119 * x('1') + 
+0.73685978628815552 * x('2') =g= -1;
+con3953..(-0.083918221169786145) * x('1') - 
+0.99647264496106402 * x('2') =g= -1;
+con3954..(-0.084544288327607464) * x('1') - 
+0.99641972246196453 * x('2') =g= -1;
+con3955..0.67558249912100954 * x('1') + 
+0.73728440026994413 * x('2') =g= -1;
+con3956..(-0.085170322110651384) * x('1') - 
+0.99636640661534148 * x('2') =g= -1;
+con3957..(-0.085796322271784242) * x('1') - 
+0.99631269744224182 * x('2') =g= -1;
+con3958..0.67511913001602775 * x('1') + 
+0.73770872320069647 * x('2') =g= -1;
+con3959..(-0.086422288563886562) * x('1') - 
+0.99625859496386793 * x('2') =g= -1;
+con3960..(-0.087048220739848678) * x('1') - 
+0.9962040992015776 * x('2') =g= -1;
+con3961..0.67465549440042638 * x('1') + 
+0.73813275491290609 * x('2') =g= -1;
+con3962..(-0.087674118552580615) * x('1') - 
+0.99614921017688307 * x('2') =g= -1;
+con3963..(-0.088299981755000617) * x('1') - 
+0.99609392791145279 * x('2') =g= -1;
+con3964..0.67419159245723015 * x('1') + 
+0.7385564952391821 * x('2') =g= -1;
+con3965..(-0.088925810100040609) * x('1') - 
+0.99603825242711008 * x('2') =g= -1;
+con3966..(-0.089551603340651584) * x('1') - 
+0.99598218374583314 * x('2') =g= -1;
+con3967..0.67372742436956967 * x('1') + 
+0.73897994401224831 * x('2') =g= -1;
+con3968..(-0.090177361229792211) * x('1') - 
+0.99592572188975603 * x('2') =g= -1;
+con3969..(-0.090803083520438616) * x('1') - 
+0.99586886688116738 * x('2') =g= -1;
+con3970..0.67326299032068038 * x('1') + 
+0.73940310106494378 * x('2') =g= -1;
+con3971..(-0.091428769965580151) * x('1') - 
+0.99581161874251145 * x('2') =g= -1;
+con3972..(-0.092054420318221142) * x('1') - 
+0.9957539774963875 * x('2') =g= -1;
+con3973..0.6727982904939025 * x('1') + 
+0.73982596623022256 * x('2') =g= -1;
+con3974..(-0.092680034331377559) * x('1') - 
+0.99569594316555021 * x('2') =g= -1;
+con3975..(-0.093305611758082344) * x('1') - 
+0.99563751577290915 * x('2') =g= -1;
+con3976..0.67233332507268129 * x('1') + 
+0.74024853934115409 * x('2') =g= -1;
+con3977..(-0.093931152351381997) * x('1') - 
+0.99557869534152921 * x('2') =g= -1;
+con3978..(-0.094556655864337563) * x('1') - 
+0.99551948189463035 * x('2') =g= -1;
+con3979..0.67186809424056726 * x('1') + 
+0.74067082023092301 * x('2') =g= -1;
+con3980..(-0.095182122050025617) * x('1') - 
+0.99545987545558767 * x('2') =g= -1;
+con3981..(-0.095807550661534818) * x('1') - 
+0.99539987604793156 * x('2') =g= -1;
+con3982..0.67140259818121506 * x('1') + 
+0.74109280873282934 * x('2') =g= -1;
+con3983..(-0.096432941451971302) * x('1') - 
+0.99533948369534742 * x('2') =g= -1;
+con3984..(-0.09705829417445612) * x('1') - 
+0.9952786984216756 * x('2') =g= -1;
+con3985..0.67093683707838425 * x('1') + 
+0.74151450468028857 * x('2') =g= -1;
+con3986..(-0.097683608582121842) * x('1') - 
+0.99521752025091215 * x('2') =g= -1;
+con3987..(-0.098308884428122328) * x('1') - 
+0.99515594920720751 * x('2') =g= -1;
+con3988..0.6704708111159392 * x('1') + 
+0.74193590790683173 * x('2') =g= -1;
+con3989..(-0.0989341214656205) * x('1') - 
+0.99509398531486759 * x('2') =g= -1;
+con3990..(-0.099559319447798125) * x('1') - 
+0.99503162859835326 * x('2') =g= -1;
+con3991..0.67000452047784886 * x('1') + 
+0.742357018246105 * x('2') =g= -1;
+con3992..(-0.10018447812785237) * x('1') - 
+0.9949688790822806 * x('2') =g= -1;
+con3993..(-0.10080959725899327) * x('1') - 
+0.99490573679142069 * x('2') =g= -1;
+con3994..0.66953796534818644 * x('1') + 
+0.74277783553187071 * x('2') =g= -1;
+con3995..(-0.10143467659444916) * x('1') - 
+0.99484220175069948 * x('2') =g= -1;
+con3996..(-0.10205971588746315) * x('1') - 
+0.99477827398519836 * x('2') =g= -1;
+con3997..0.66907114591112948 * x('1') + 
+0.74319835959800673 * x('2') =g= -1;
+con3998..(-0.1026847148912942) * x('1') - 
+0.99471395352015324 * x('2') =g= -1;
+con3999..(-0.10330967335921713) * x('1') - 
+0.99464924038095548 * x('2') =g= -1;
+con4000..0.66860406235096026 * x('1') + 
+0.74361859027850641 * x('2') =g= -1;
+con4001..(-0.1039345910445237) * x('1') - 
+0.9945841345931512 * x('2') =g= -1;
+con4002..(-0.10455946770051906) * x('1') - 
+0.99451863618244185 * x('2') =g= -1;
+con4003..0.66813671485206494 * x('1') + 
+0.74403852740747933 * x('2') =g= -1;
+con4004..(-0.10518430308052724) * x('1') - 
+0.99445274517468341 * x('2') =g= -1;
+con4005..(-0.10580909693788859) * x('1') - 
+0.99438646159588706 * x('2') =g= -1;
+con4006..0.66766910359893417 * x('1') + 
+0.74445817081915067 * x('2') =g= -1;
+con4007..(-0.10643384902595628) * x('1') - 
+0.99431978547221922 * x('2') =g= -1;
+con4008..(-0.10705855909810613) * x('1') - 
+0.9942527168300006 * x('2') =g= -1;
+con4009..0.6672012287761625 * x('1') + 
+0.74487752034786159 * x('2') =g= -1;
+con4010..(-0.10768322690772442) * x('1') - 
+0.99418525569570759 * x('2') =g= -1;
+con4011..(-0.10830785220821762) * x('1') - 
+0.99411740209597121 * x('2') =g= -1;
+con4012..0.66673309056844865 * x('1') + 
+0.74529657582806919 * x('2') =g= -1;
+con4013..(-0.10893243475300897) * x('1') - 
+0.99404915605757715 * x('2') =g= -1;
+con4014..(-0.10955697429553597) * x('1') - 
+0.99398051760746664 * x('2') =g= -1;
+con4015..0.66626468916059522 * x('1') + 
+0.7457153370943469 * x('2') =g= -1;
+con4016..(-0.1101814705892557) * x('1') - 
+0.99391148677273522 * x('2') =g= -1;
+con4017..(-0.11080592338764149) * x('1') - 
+0.99384206358063354 * x('2') =g= -1;
+con4018..0.66579602473750865 * x('1') + 
+0.74613380398138429 * x('2') =g= -1;
+con4019..(-0.11143033244418465) * x('1') - 
+0.99377224805856723 * x('2') =g= -1;
+con4020..(-0.11205469751239029) * x('1') - 
+0.99370204023409692 * x('2') =g= -1;
+con4021..0.6653270974841996 * x('1') + 
+0.74655197632398662 * x('2') =g= -1;
+con4022..(-0.11267901834578703) * x('1') - 
+0.99363144013493743 * x('2') =g= -1;
+con4023..(-0.11330329469791478) * x('1') - 
+0.99356044778895936 * x('2') =g= -1;
+con4024..0.664857907585782 * x('1') + 
+0.74696985395707616 * x('2') =g= -1;
+con4025..(-0.11392752632233455) * x('1') - 
+0.99348906322418762 * x('2') =g= -1;
+con4026..(-0.11455171297262499) * x('1') - 
+0.99341728646880179 * x('2') =g= -1;
+con4027..0.66438845522747358 * x('1') + 
+0.74738743671569119 * x('2') =g= -1;
+con4028..(-0.11517585440237901) * x('1') - 
+0.99334511755113686 * x('2') =g= -1;
+con4029..(-0.11579995036521348) * x('1') - 
+0.99327255649968205 * x('2') =g= -1;
+con4030..0.6639187405945961 * x('1') + 
+0.74780472443498602 * x('2') =g= -1;
+con4031..(-0.11642400061475711) * x('1') - 
+0.99319960334308177 * x('2') =g= -1;
+con4032..(-0.11704800490466015) * x('1') - 
+0.99312625811013511 * x('2') =g= -1;
+con4033..0.66344876387257434 * x('1') + 
+0.7482217169502321 * x('2') =g= -1;
+con4034..(-0.11767196298859101) * x('1') - 
+0.99305252082979567 * x('2') =g= -1;
+con4035..(-0.11829587462023367) * x('1') - 
+0.99297839153117218 * x('2') =g= -1;
+con4036..0.66297852524693646 * x('1') + 
+0.74863841409681697 * x('2') =g= -1;
+con4037..(-0.11891973955329312) * x('1') - 
+0.99290387024352811 * x('2') =g= -1;
+con4038..(-0.11954355754149189) * x('1') - 
+0.99282895699628138 * x('2') =g= -1;
+con4039..0.66250802490331473 * x('1') + 
+0.7490548157102449 * x('2') =g= -1;
+con4040..(-0.12016732833857192) * x('1') - 
+0.99275365181900477 * x('2') =g= -1;
+con4041..(-0.12079105169829116) * x('1') - 
+0.99267795474142606 * x('2') =g= -1;
+con4042..0.66203726302744392 * x('1') + 
+0.74947092162613693 * x('2') =g= -1;
+con4043..(-0.12141472737442888) * x('1') - 
+0.99260186579342735 * x('2') =g= -1;
+con4044..(-0.12203835512078234) * x('1') - 
+0.9925253850050455 * x('2') =g= -1;
+con4045..0.6615662398051626 * x('1') + 
+0.74988673168023057 * x('2') =g= -1;
+con4046..(-0.12266193469116772) * x('1') - 
+0.99244851240647225 * x('2') =g= -1;
+con4047..(-0.12328546583942106) * x('1') - 
+0.99237124802805377 * x('2') =g= -1;
+con4048..0.66109495542241226 * x('1') + 
+0.75030224570838044 * x('2') =g= -1;
+con4049..(-0.12390894831939489) * x('1') - 
+0.99229359190029109 * x('2') =g= -1;
+con4050..(-0.12453238188496361) * x('1') - 
+0.99221554405383994 * x('2') =g= -1;
+con4051..0.6606234100652375 * x('1') + 
+0.75071746354655755 * x('2') =g= -1;
+con4052..(-0.12515576629002095) * x('1') - 
+0.99213710451951032 * x('2') =g= -1;
+con4053..(-0.12577910128847644) * x('1') - 
+0.99205827332826735 * x('2') =g= -1;
+con4054..0.66015160391978611 * x('1') + 
+0.75113238503085045 * x('2') =g= -1;
+con4055..(-0.12640238663426537) * x('1') - 
+0.99197905051123014 * x('2') =g= -1;
+con4056..(-0.12702562208133639) * x('1') - 
+0.99189943609967313 * x('2') =g= -1;
+con4057..0.65967953717230843 * x('1') + 
+0.75154700999746449 * x('2') =g= -1;
+con4058..(-0.12764880738366144) * x('1') - 
+0.99181943012502483 * x('2') =g= -1;
+con4059..(-0.12827194229523137) * x('1') - 
+0.99173903261886831 * x('2') =g= -1;
+con4060..0.65920721000915827 * x('1') + 
+0.75196133828272149 * x('2') =g= -1;
+con4061..(-0.12889502657005772) * x('1') - 
+0.99165824361294153 * x('2') =g= -1;
+con4062..(-0.12951805996216945) * x('1') - 
+0.99157706313913685 * x('2') =g= -1;
+con4063..0.65873462261679161 * x('1') + 
+0.75237536972306129 * x('2') =g= -1;
+con4064..(-0.13014104222561826) * x('1') - 
+0.9914954912295012 * x('2') =g= -1;
+con4065..(-0.13076397311447507) * x('1') - 
+0.99141352791623583 * x('2') =g= -1;
+con4066..0.65826177518176754 * x('1') + 
+0.7527891041550403 * x('2') =g= -1;
+con4067..(-0.13138685238283121) * x('1') - 
+0.99133117323169662 * x('2') =g= -1;
+con4068..(-0.13200967978479913) * x('1') - 
+0.99124842720839401 * x('2') =g= -1;
+con4069..0.65778866789074797 * x('1') + 
+0.75320254141533216 * x('2') =g= -1;
+con4070..(-0.13263245507450924) * x('1') - 
+0.99116528987899299 * x('2') =g= -1;
+con4071..(-0.13325517800611503) * x('1') - 
+0.99108176127631298 * x('2') =g= -1;
+con4072..0.65731530093049706 * x('1') + 
+0.75361568134072832 * x('2') =g= -1;
+con4073..(-0.13387784833379077) * x('1') - 
+0.99099784143332748 * x('2') =g= -1;
+con4074..(-0.13450046581172795) * x('1') - 
+0.99091353038316532 * x('2') =g= -1;
+con4075..0.65684167448788122 * x('1') + 
+0.75402852376813723 * x('2') =g= -1;
+con4076..(-0.13512303019414501) * x('1') - 
+0.99082882815910855 * x('2') =g= -1;
+con4077..(-0.13574554123527532) * x('1') - 
+0.99074373479459465 * x('2') =g= -1;
+con4078..0.65636778874987001 * x('1') + 
+0.7544410685345847 * x('2') =g= -1;
+con4079..(-0.13636799868937671) * x('1') - 
+0.99065825032321519 * x('2') =g= -1;
+con4080..(-0.13699040231072732) * x('1') - 
+0.99057237477871607 * x('2') =g= -1;
+con4081..0.65589364390353488 * x('1') + 
+0.75485331547721435 * x('2') =g= -1;
+con4082..(-0.13761275185362748) * x('1') - 
+0.99048610819499727 * x('2') =g= -1;
+con4083..(-0.13823504707239614) * x('1') - 
+0.99039945060611401 * x('2') =g= -1;
+con4084..0.6554192401360498 * x('1') + 
+0.75526526443328712 * x('2') =g= -1;
+con4085..(-0.13885728772137637) * x('1') - 
+0.99031240204627491 * x('2') =g= -1;
+con4086..(-0.13947947355493281) * x('1') - 
+0.99022496254984338 * x('2') =g= -1;
+con4087..0.65494457763469038 * x('1') + 
+0.75567691524018188 * x('2') =g= -1;
+con4088..(-0.1401016043274482) * x('1') - 
+0.99013713215133747 * x('2') =g= -1;
+con4089..(-0.14072367979333314) * x('1') - 
+0.99004891088542868 * x('2') =g= -1;
+con4090..0.65446965658683531 * x('1') + 
+0.75608826773539461 * x('2') =g= -1;
+con4091..(-0.14134569970701394) * x('1') - 
+0.98996029878694358 * x('2') =g= -1;
+con4092..(-0.14196766382294237) * x('1') - 
+0.98987129589086276 * x('2') =g= -1;
+con4093..0.65399447717996462 * x('1') + 
+0.75649932175653978 * x('2') =g= -1;
+con4094..(-0.14258957189559221) * x('1') - 
+0.98978190223232099 * x('2') =g= -1;
+con4095..(-0.14321142367945583) * x('1') - 
+0.9896921178466076 * x('2') =g= -1;
+con4096..0.65351903960166036 * x('1') + 
+0.75691007714134939 * x('2') =g= -1;
+con4097..(-0.14383321892905401) * x('1') - 
+0.98960194276916558 * x('2') =g= -1;
+con4098..(-0.14445495739892364) * x('1') - 
+0.98951137703559289 * x('2') =g= -1;
+con4099..0.65304334403960718 * x('1') + 
+0.75732053372767283 * x('2') =g= -1;
+con4100..(-0.14507663884362762) * x('1') - 
+0.98942042068164104 * x('2') =g= -1;
+con4101..(-0.14569826301775127) * x('1') - 
+0.98932907374321621 * x('2') =g= -1;
+con4102..0.65256739068159053 * x('1') + 
+0.75773069135347837 * x('2') =g= -1;
+con4103..(-0.14631982967589996) * x('1') - 
+0.98923733625637866 * x('2') =g= -1;
+con4104..(-0.14694133857270439) * x('1') - 
+0.98914520825734265 * x('2') =g= -1;
+con4105..0.65209117971549846 * x('1') + 
+0.75814054985685175 * x('2') =g= -1;
+con4106..(-0.14756278946281712) * x('1') - 
+0.98905268978247685 * x('2') =g= -1;
+con4107..(-0.14818418210091452) * x('1') - 
+0.98895978086830361 * x('2') =g= -1;
+con4108..0.65161471132932047 * x('1') + 
+0.75855010907599663 * x('2') =g= -1;
+con4109..(-0.1488055162416925) * x('1') - 
+0.98886648155150014 * x('2') =g= -1;
+con4110..(-0.14942679163987613) * x('1') - 
+0.98877279186889699 * x('2') =g= -1;
+con4111..0.65113798571114767 * x('1') + 
+0.75895936884923509 * x('2') =g= -1;
+con4112..(-0.15004800805020757) * x('1') - 
+0.98867871185747946 * x('2') =g= -1;
+con4113..(-0.15066916522745577) * x('1') - 
+0.98858424155438651 * x('2') =g= -1;
+con4114..0.65066100304917229 * x('1') + 
+0.75936832901500773 * x('2') =g= -1;
+con4115..(-0.15129026292641304) * x('1') - 
+0.9884893809969113 * x('2') =g= -1;
+con4116..(-0.15191130090189256) * x('1') - 
+0.98839413022250122 * x('2') =g= -1;
+con4117..0.65018376353168894 * x('1') + 
+0.75977698941187266 * x('2') =g= -1;
+con4118..(-0.15253227890873369) * x('1') - 
+0.98829848926875741 * x('2') =g= -1;
+con4119..(-0.15315319670179864) * x('1') - 
+0.98820245817343533 * x('2') =g= -1;
+con4120..0.6497062673470928 * x('1') + 
+0.76018534987850694 * x('2') =g= -1;
+con4121..(-0.15377405403597333) * x('1') - 
+0.9881060369744441 * x('2') =g= -1;
+con4122..(-0.15439485066616845) * x('1') - 
+0.98800922570984706 * x('2') =g= -1;
+con4123..0.64922851468388076 * x('1') + 
+0.76059341025370575 * x('2') =g= -1;
+con4124..(-0.15501558634731608) * x('1') - 
+0.98791202441786174 * x('2') =g= -1;
+con4125..(-0.15563626083437487) * x('1') - 
+0.98781443313685913 * x('2') =g= -1;
+con4126..0.64875050573065085 * x('1') + 
+0.76100117037638304 * x('2') =g= -1;
+con4127..(-0.15625687388232684) * x('1') - 
+0.98771645190536472 * x('2') =g= -1;
+con4128..(-0.15687742524617909) * x('1') - 
+0.98761808076205726 * x('2') =g= -1;
+con4129..0.64827224067610234 * x('1') + 
+0.7614086300855708 * x('2') =g= -1;
+con4130..(-0.15749791468096053) * x('1') - 
+0.98751931974577023 * x('2') =g= -1;
+con4131..(-0.15811834194172703) * x('1') - 
+0.98742016889549056 * x('2') =g= -1;
+con4132..0.64779371970903565 * x('1') + 
+0.76181578922041993 * x('2') =g= -1;
+con4133..(-0.15873870678355817) * x('1') - 
+0.98732062825035893 * x('2') =g= -1;
+con4134..(-0.15935900896155822) * x('1') - 
+0.98722069784967026 * x('2') =g= -1;
+con4135..0.64731494301835191 * x('1') + 
+0.7622226476202002 * x('2') =g= -1;
+con4136..(-0.15997924823085702) * x('1') - 
+0.98712037773287298 * x('2') =g= -1;
+con4137..(-0.1605994243466066) * x('1') - 
+0.98701966793956974 * x('2') =g= -1;
+con4138..0.64683591079305369 * x('1') + 
+0.76262920512429933 * x('2') =g= -1;
+con4139..(-0.16121953706398656) * x('1') - 
+0.98691856850951687 * x('2') =g= -1;
+con4140..(-0.16183958613820157) * x('1') - 
+0.98681707948262409 * x('2') =g= -1;
+con4141..0.64635662322224396 * x('1') + 
+0.76303546157222479 * x('2') =g= -1;
+con4142..(-0.16245957132447786) * x('1') - 
+0.98671520089895592 * x('2') =g= -1;
+con4143..(-0.16307949237807307) * x('1') - 
+0.9866129327987293 * x('2') =g= -1;
+con4144..0.64587708049512671 * x('1') + 
+0.76344141680360234 * x('2') =g= -1;
+con4145..(-0.16369934905426395) * x('1') - 
+0.98651027522231627 * x('2') =g= -1;
+con4146..(-0.16431914110835621) * x('1') - 
+0.98640722821024185 * x('2') =g= -1;
+con4147..0.64539728280100683 * x('1') + 
+0.76384707065817636 * x('2') =g= -1;
+con4148..(-0.16493886829568025) * x('1') - 
+0.98630379180318484 * x('2') =g= -1;
+con4149..(-0.16555853037159285) * x('1') - 
+0.9861999660419779 * x('2') =g= -1;
+con4150..0.64491723032928971 * x('1') + 
+0.76425242297581097 * x('2') =g= -1;
+con4151..(-0.16617812709147395) * x('1') - 
+0.9860957509676076 * x('2') =g= -1;
+con4152..(-0.16679765821073184) * x('1') - 
+0.98599114662121379 * x('2') =g= -1;
+con4153..0.64443692326948099 * x('1') + 
+0.76465747359648883 * x('2') =g= -1;
+con4154..(-0.16741712348480076) * x('1') - 
+0.98588615304409011 * x('2') =g= -1;
+con4155..(-0.16803652266913743) * x('1') - 
+0.98578077027768418 * x('2') =g= -1;
+con4156..0.64395636181118721 * x('1') + 
+0.76506222236031196 * x('2') =g= -1;
+con4157..(-0.16865585551923082) * x('1') - 
+0.98567499836359673 * x('2') =g= -1;
+con4158..(-0.16927512179058987) * x('1') - 
+0.98556883734358247 * x('2') =g= -1;
+con4159..0.64347554614411528 * x('1') + 
+0.76546666910750116 * x('2') =g= -1;
+con4160..(-0.16989432123875339) * x('1') - 
+0.98546228725954976 * x('2') =g= -1;
+con4161..(-0.17051345361928655) * x('1') - 
+0.98535534815355996 * x('2') =g= -1;
+con4162..0.64299447645807251 * x('1') + 
+0.7658708136783966 * x('2') =g= -1;
+con4163..(-0.17113251868777746) * x('1') - 
+0.98524802006782919 * x('2') =g= -1;
+con4164..(-0.17175151619984694) * x('1') - 
+0.98514030304472555 * x('2') =g= -1;
+con4165..0.64251315294296618 * x('1') + 
+0.76627465591345811 * x('2') =g= -1;
+con4166..(-0.1723704459111364) * x('1') - 
+0.98503219712677215 * x('2') =g= -1;
+con4167..(-0.17298930757731745) * x('1') - 
+0.98492370235664461 * x('2') =g= -1;
+con4168..0.64203157578880421 * x('1') + 
+0.76667819565326423 * x('2') =g= -1;
+con4169..(-0.17360810095408774) * x('1') - 
+0.98481481877717258 * x('2') =g= -1;
+con4170..(-0.17422682579717269) * x('1') - 
+0.9847055464313389 * x('2') =g= -1;
+con4171..0.6415497451856943 * x('1') + 
+0.76708143273851348 * x('2') =g= -1;
+con4172..(-0.17484548186232224) * x('1') - 
+0.98459588536228015 * x('2') =g= -1;
+con4173..(-0.17546406890531602) * x('1') - 
+0.98448583561328629 * x('2') =g= -1;
+con4174..0.6410676613238443 * x('1') + 
+0.76748436701002387 * x('2') =g= -1;
+con4175..(-0.17608258668196095) * x('1') - 
+0.98437539722780032 * x('2') =g= -1;
+con4176..(-0.17670103494808778) * x('1') - 
+0.9842645702494196 * x('2') =g= -1;
+con4177..0.64058532439356197 * x('1') + 
+0.76788699830873219 * x('2') =g= -1;
+con4178..(-0.17731941345956084) * x('1') - 
+0.98415335472189358 * x('2') =g= -1;
+con4179..(-0.17793772197226584) * x('1') - 
+0.98404175068912636 * x('2') =g= -1;
+con4180..0.64010273458525546 * x('1') + 
+0.76828932647569559 * x('2') =g= -1;
+con4181..(-0.17855596024211967) * x('1') - 
+0.98392975819517448 * x('2') =g= -1;
+con4182..(-0.17917412802506694) * x('1') - 
+0.98381737728424823 * x('2') =g= -1;
+con4183..0.63961989208943182 * x('1') + 
+0.76869135135209088 * x('2') =g= -1;
+con4184..(-0.1797922250770774) * x('1') - 
+0.98370460800071158 * x('2') =g= -1;
+con4185..(-0.18041025115415138) * x('1') - 
+0.98359145038908102 * x('2') =g= -1;
+con4186..0.63913679709669879 * x('1') + 
+0.76909307277921402 * x('2') =g= -1;
+con4187..(-0.18102820601231642) * x('1') - 
+0.98347790449402694 * x('2') =g= -1;
+con4188..(-0.18164608940762808) * x('1') - 
+0.98336397036037271 * x('2') =g= -1;
+con4189..0.63865344979776317 * x('1') + 
+0.76949449059848118 * x('2') =g= -1;
+con4190..(-0.18226390109617108) * x('1') - 
+0.983249648033095 * x('2') =g= -1;
+con4191..(-0.18288164083405573) * x('1') - 
+0.98313493755732406 * x('2') =g= -1;
+con4192..0.63816985038343166 * x('1') + 
+0.76989560465142837 * x('2') =g= -1;
+con4193..(-0.18349930837742348) * x('1') - 
+0.98301983897834289 * x('2') =g= -1;
+con4194..(-0.18411690348244331) * x('1') - 
+0.98290435234158802 * x('2') =g= -1;
+con4195..0.6376859990446101 * x('1') + 
+0.77029641477971167 * x('2') =g= -1;
+con4196..(-0.18473442590531372) * x('1') - 
+0.98278847769264888 * x('2') =g= -1;
+con4197..(-0.18535187540225839) * x('1') - 
+0.98267221507726865 * x('2') =g= -1;
+con4198..0.63720189597230437 * x('1') + 
+0.77069692082510655 * x('2') =g= -1;
+con4199..(-0.18596925172953593) * x('1') - 
+0.98255556454134263 * x('2') =g= -1;
+con4200..(-0.18658655464342769) * x('1') - 
+0.98243852613092042 * x('2') =g= -1;
+con4201..0.63671754135761949 * x('1') + 
+0.77109712262950902 * x('2') =g= -1;
+con4202..(-0.18720378390024747) * x('1') - 
+0.98232109989220395 * x('2') =g= -1;
+con4203..(-0.18782093925633825) * x('1') - 
+0.98220328587154859 * x('2') =g= -1;
+con4204..0.6362329353917594 * x('1') + 
+0.77149702003493525 * x('2') =g= -1;
+con4205..(-0.18843802046806943) * x('1') - 
+0.98208508411546269 * x('2') =g= -1;
+con4206..(-0.1890550272918424) * x('1') - 
+0.9819664946706077 * x('2') =g= -1;
+con4207..0.63574807826602797 * x('1') + 
+0.77189661288352107 * x('2') =g= -1;
+con4208..(-0.18967195948408699) * x('1') - 
+0.98184751758379818 * x('2') =g= -1;
+con4209..(-0.1902888168012625) * x('1') - 
+0.98172815290200144 * x('2') =g= -1;
+con4210..0.63526297017182753 * x('1') + 
+0.7722959010175231 * x('2') =g= -1;
+con4211..(-0.19090559899985868) * x('1') - 
+0.9816084006723379 * x('2') =g= -1;
+con4212..(-0.19152230583639232) * x('1') - 
+0.98148826094208153 * x('2') =g= -1;
+con4213..0.63477761130065968 * x('1') + 
+0.77269488427931798 * x('2') =g= -1;
+con4214..(-0.1921389370674125) * x('1') - 
+0.98136773375865838 * x('2') =g= -1;
+con4215..(-0.19275549244949741) * x('1') - 
+0.98124681916964795 * x('2') =g= -1;
+con4216..0.63429200184412537 * x('1') + 
+0.77309356251140271 * x('2') =g= -1;
+con4217..(-0.19337197173925594) * x('1') - 
+0.98112551722278252 * x('2') =g= -1;
+con4218..(-0.19398837469332356) * x('1') - 
+0.98100382796594765 * x('2') =g= -1;
+con4219..0.63380614199392427 * x('1') + 
+0.77349193555639451 * x('2') =g= -1;
+con4220..(-0.19460470106837199) * x('1') - 
+0.98088175144718115 * x('2') =g= -1;
+con4221..(-0.19522095062109798) * x('1') - 
+0.98075928771467402 * x('2') =g= -1;
+con4222..0.6333200319418546 * x('1') + 
+0.7738900032570315 * x('2') =g= -1;
+con4223..(-0.19583712310822854) * x('1') - 
+0.98063643681677082 * x('2') =g= -1;
+con4224..(-0.19645321828652637) * x('1') - 
+0.98051319880196741 * x('2') =g= -1;
+con4225..0.63283367187981365 * x('1') + 
+0.77428776545617228 * x('2') =g= -1;
+con4226..(-0.19706923591277858) * x('1') - 
+0.98038957371891389 * x('2') =g= -1;
+con4227..(-0.1976851757438064) * x('1') - 
+0.98026556161641243 * x('2') =g= -1;
+con4228..0.6323470619997974 * x('1') + 
+0.77468522199679546 * x('2') =g= -1;
+con4229..(-0.19830103753646172) * x('1') - 
+0.98014116254341788 * x('2') =g= -1;
+con4230..(-0.19891682104762384) * x('1') - 
+0.98001637654903895 * x('2') =g= -1;
+con4231..0.6318602024939004 * x('1') + 
+0.7750823727220012 * x('2') =g= -1;
+con4232..(-0.19953252603420896) * x('1') - 
+0.97989120368253524 * x('2') =g= -1;
+con4233..(-0.20014815225315821) * x('1') - 
+0.97976564399332078 * x('2') =g= -1;
+con4234..0.6313730935543157 * x('1') + 
+0.77547921747500959 * x('2') =g= -1;
+con4235..(-0.20076369946144737) * x('1') - 
+0.97963969753096147 * x('2') =g= -1;
+con4236..(-0.20137916741608247) * x('1') - 
+0.979513364345176 * x('2') =g= -1;
+con4237..0.63088573537333492 * x('1') + 
+0.77587575609916215 * x('2') =g= -1;
+con4238..(-0.20199455587410167) * x('1') - 
+0.97938664448583557 * x('2') =g= -1;
+con4239..(-0.20260986459257199) * x('1') - 
+0.97925953800296461 * x('2') =g= -1;
+con4240..0.63039812814334795 * x('1') + 
+0.77627198843792056 * x('2') =g= -1;
+con4241..(-0.20322509332859448) * x('1') - 
+0.97913204494673955 * x('2') =g= -1;
+con4242..(-0.20384024183930174) * x('1') - 
+0.97900416536748958 * x('2') =g= -1;
+con4243..0.62991027205684291 * x('1') + 
+0.77666791433486826 * x('2') =g= -1;
+con4244..(-0.20445530988185465) * x('1') - 
+0.97887589931569707 * x('2') =g= -1;
+con4245..(-0.20507029721345185) * x('1') - 
+0.97874724684199577 * x('2') =g= -1;
+con4246..0.62942216730640654 * x('1') + 
+0.77706353363370873 * x('2') =g= -1;
+con4247..(-0.20568520359131778) * x('1') - 
+0.97861820799717303 * x('2') =g= -1;
+con4248..(-0.20630002877271239) * x('1') - 
+0.97848878283216822 * x('2') =g= -1;
+con4249..0.62893381408472349 * x('1') + 
+0.77745884617826722 * x('2') =g= -1;
+con4250..(-0.20691477251492754) * x('1') - 
+0.97835897139807315 * x('2') =g= -1;
+con4251..(-0.20752943457528392) * x('1') - 
+0.97822877374613293 * x('2') =g= -1;
+con4252..0.6284452125845762 * x('1') + 
+0.77785385181248978 * x('2') =g= -1;
+con4253..(-0.20814401471114044) * x('1') - 
+0.97809818992774367 * x('2') =g= -1;
+con4254..(-0.20875851267988227) * x('1') - 
+0.97796721999445535 * x('2') =g= -1;
+con4255..0.62795636299884572 * x('1') + 
+0.77824855038044372 * x('2') =g= -1;
+con4256..(-0.20937292823893058) * x('1') - 
+0.97783586399796951 * x('2') =g= -1;
+con4257..(-0.2099872611457381) * x('1') - 
+0.97770412199014056 * x('2') =g= -1;
+con4258..0.62746726552051069 * x('1') + 
+0.77864294172631721 * x('2') =g= -1;
+con4259..(-0.21060151115779113) * x('1') - 
+0.97757199402297468 * x('2') =g= -1;
+con4260..(-0.21121567803260602) * x('1') - 
+0.97743948014863125 * x('2') =g= -1;
+con4261..0.62697792034264765 * x('1') + 
+0.77903702569442013 * x('2') =g= -1;
+con4262..(-0.21182976152773464) * x('1') - 
+0.97730658041942142 * x('2') =g= -1;
+con4263..(-0.21244376140076168) * x('1') - 
+0.97717329488780869 * x('2') =g= -1;
+con4264..0.62648832765843077 * x('1') + 
+0.7794308021291837 * x('2') =g= -1;
+con4265..(-0.2130576774093014) * x('1') - 
+0.97703962360640939 * x('2') =g= -1;
+con4266..(-0.21367150931100728) * x('1') - 
+0.976905566627991 * x('2') =g= -1;
+con4267..0.62599848766113242 * x('1') + 
+0.77982427087516015 * x('2') =g= -1;
+con4268..(-0.2142852568635599) * x('1') - 
+0.97677112400547461 * x('2') =g= -1;
+con4269..(-0.21489891982467657) * x('1') - 
+0.97663629579193256 * x('2') =g= -1;
+con4270..0.62550840054412193 * x('1') + 
+0.78021743177702352 * x('2') =g= -1;
+con4271..(-0.21551249795210806) * x('1') - 
+0.97650108204058972 * x('2') =g= -1;
+con4272..(-0.21612599100363597) * x('1') - 
+0.9763654828048236 * x('2') =g= -1;
+con4273..0.62501806650086666 * x('1') + 
+0.78061028467956928 * x('2') =g= -1;
+con4274..(-0.21673939873707815) * x('1') - 
+0.97622949813816318 * x('2') =g= -1;
+con4275..(-0.21735272091028518) * x('1') - 
+0.97609312809428983 * x('2') =g= -1;
+con4276..0.62452748572493133 * x('1') + 
+0.78100282942771448 * x('2') =g= -1;
+con4277..(-0.21796595728114149) * x('1') - 
+0.97595637272703717 * x('2') =g= -1;
+con4278..(-0.21857910760756619) * x('1') - 
+0.97581923209039079 * x('2') =g= -1;
+con4279..0.62403665840997813 * x('1') + 
+0.78139506586649776 * x('2') =g= -1;
+con4280..(-0.21919217164750984) * x('1') - 
+0.97568170623848871 * x('2') =g= -1;
+con4281..(-0.21980514915895955) * x('1') - 
+0.97554379522562062 * x('2') =g= -1;
+con4282..0.62354558474976618 * x('1') + 
+0.78178699384107964 * x('2') =g= -1;
+con4283..(-0.22041803989993583) * x('1') - 
+0.97540549910622831 * x('2') =g= -1;
+con4284..(-0.22103084362849421) * x('1') - 
+0.97526681793490555 * x('2') =g= -1;
+con4285..0.62305426493815241 * x('1') + 
+0.78217861319674198 * x('2') =g= -1;
+con4286..(-0.22164356010272118) * x('1') - 
+0.97512775176639876 * x('2') =g= -1;
+con4287..(-0.22225618908074374) * x('1') - 
+0.97498830065560516 * x('2') =g= -1;
+con4288..0.62256269916909068 * x('1') + 
+0.78256992377888912 * x('2') =g= -1;
+con4289..(-0.22286873032071816) * x('1') - 
+0.97484846465757491 * x('2') =g= -1;
+con4290..(-0.22348118358083541) * x('1') - 
+0.97470824382751009 * x('2') =g= -1;
+con4291..0.62207088763663176 * x('1') + 
+0.78296092543304685 * x('2') =g= -1;
+con4292..(-0.22409354861932637) * x('1') - 
+0.97456763822076387 * x('2') =g= -1;
+con4293..(-0.22470582519445068) * x('1') - 
+0.97442664789284217 * x('2') =g= -1;
+con4294..0.62157883053492358 * x('1') + 
+0.78335161800486297 * x('2') =g= -1;
+con4295..(-0.22531801306450636) * x('1') - 
+0.97428527289940237 * x('2') =g= -1;
+con4296..(-0.22593011198782559) * x('1') - 
+0.97414351329625382 * x('2') =g= -1;
+con4297..0.6210865280582113 * x('1') + 
+0.7837420013401073 * x('2') =g= -1;
+con4298..(-0.22654212172277566) * x('1') - 
+0.97400136913935753 * x('2') =g= -1;
+con4299..(-0.22715404202775996) * x('1') - 
+0.9738588404848264 * x('2') =g= -1;
+con4300..0.62059398040083646 * x('1') + 
+0.78413207528467188 * x('2') =g= -1;
+con4301..(-0.22776587266121454) * x('1') - 
+0.97371592738892554 * x('2') =g= -1;
+con4302..(-0.22837761338161347) * x('1') - 
+0.97357262990807125 * x('2') =g= -1;
+con4303..0.62010118775723744 * x('1') + 
+0.78452183968457079 * x('2') =g= -1;
+con4304..(-0.22898926394746547) * x('1') - 
+0.97342894809883174 * x('2') =g= -1;
+con4305..(-0.22960082411731567) * x('1') - 
+0.97328488201792673 * x('2') =g= -1;
+con4306..0.61960815032194994 * x('1') + 
+0.78491129438594009 * x('2') =g= -1;
+con4307..(-0.23021229364974141) * x('1') - 
+0.97314043172222853 * x('2') =g= -1;
+con4308..(-0.23082367230336198) * x('1') - 
+0.97299559726875962 * x('2') =g= -1;
+con4309..0.61911486828960549 * x('1') + 
+0.78530043923503845 * x('2') =g= -1;
+con4310..(-0.23143495983682721) * x('1') - 
+0.97285037871469537 * x('2') =g= -1;
+con4311..(-0.23204615600882303) * x('1') - 
+0.97270477611736283 * x('2') =g= -1;
+con4312..0.61862134185493278 * x('1') + 
+0.78568927407824685 * x('2') =g= -1;
+con4313..(-0.23265726057807651) * x('1') - 
+0.97255878953423947 * x('2') =g= -1;
+con4314..(-0.23326827330334488) * x('1') - 
+0.9724124190229555 * x('2') =g= -1;
+con4315..0.61812757121275652 * x('1') + 
+0.78607779876206829 * x('2') =g= -1;
+con4316..(-0.2338791939434251) * x('1') - 
+0.97226566464129227 * x('2') =g= -1;
+con4317..(-0.23449002225715049) * x('1') - 
+0.97211852644718233 * x('2') =g= -1;
+con4318..0.61763355655799823 * x('1') + 
+0.78646601313312836 * x('2') =g= -1;
+con4319..(-0.23510075800338731) * x('1') - 
+0.97197100449871077 * x('2') =g= -1;
+con4320..(-0.23571140094104442) * x('1') - 
+0.97182309885411255 * x('2') =g= -1;
+con4321..0.61713929808567525 * x('1') + 
+0.78685391703817553 * x('2') =g= -1;
+con4322..(-0.23632195082906132) * x('1') - 
+0.97167480957177577 * x('2') =g= -1;
+con4323..(-0.23693240742641766) * x('1') - 
+0.97152613671023902 * x('2') =g= -1;
+con4324..0.61664479599090194 * x('1') + 
+0.78724151032408018 * x('2') =g= -1;
+con4325..(-0.23754277049212905) * x('1') - 
+0.97137708032819248 * x('2') =g= -1;
+con4326..(-0.2381530397852489) * x('1') - 
+0.97122764048447763 * x('2') =g= -1;
+con4327..0.61615005046888827 * x('1') + 
+0.78762879283783582 * x('2') =g= -1;
+con4328..(-0.23876321506486503) * x('1') - 
+0.97107781723808773 * x('2') =g= -1;
+con4329..(-0.23937329609010499) * x('1') - 
+0.97092761064816724 * x('2') =g= -1;
+con4330..0.61565506171494011 * x('1') + 
+0.78801576442655852 * x('2') =g= -1;
+con4331..(-0.23998328262013349) * x('1') - 
+0.97077702077401129 * x('2') =g= -1;
+con4332..(-0.24059317441414918) * x('1') - 
+0.97062604767506766 * x('2') =g= -1;
+con4333..0.61515982992445972 * x('1') + 
+0.78840242493748691 * x('2') =g= -1;
+con4334..(-0.24120297123139406) * x('1') - 
+0.9704746914109339 * x('2') =g= -1;
+con4335..(-0.24181267283114158) * x('1') - 
+0.97032295204135988 * x('2') =g= -1;
+con4336..0.61466435529294561 * x('1') + 
+0.78878877421798255 * x('2') =g= -1;
+con4337..(-0.24242227897270632) * x('1') - 
+0.97017082962624646 * x('2') =g= -1;
+con4338..(-0.24303178941544049) * x('1') - 
+0.97001832422564527 * x('2') =g= -1;
+con4339..0.61416863801599153 * x('1') + 
+0.78917481211552998 * x('2') =g= -1;
+con4340..(-0.24364120391873145) * x('1') - 
+0.96986543589975982 * x('2') =g= -1;
+con4341..(-0.24425052224200705) * x('1') - 
+0.96971216470894439 * x('2') =g= -1;
+con4342..0.61367267828928707 * x('1') + 
+0.78956053847773644 * x('2') =g= -1;
+con4343..(-0.2448597441447323) * x('1') - 
+0.96955851071370425 * x('2') =g= -1;
+con4344..(-0.24546886938641022) * x('1') - 
+0.9694044739746962 * x('2') =g= -1;
+con4345..0.61317647630861816 * x('1') + 
+0.78994595315233218 * x('2') =g= -1;
+con4346..(-0.24607789772658198) * x('1') - 
+0.96925005455272784 * x('2') =g= -1;
+con4347..(-0.24668682892482785) * x('1') - 
+0.96909525250875761 * x('2') =g= -1;
+con4348..0.61268003226986556 * x('1') + 
+0.79033105598717079 * x('2') =g= -1;
+con4349..(-0.24729566274076395) * x('1') - 
+0.96894006790389586 * x('2') =g= -1;
+con4350..(-0.24790439893404734) * x('1') - 
+0.96878450079940315 * x('2') =g= -1;
+con4351..0.61218334636900607 * x('1') + 
+0.79071584683022866 * x('2') =g= -1;
+con4352..(-0.24851303726437365) * x('1') - 
+0.96862855125669101 * x('2') =g= -1;
+con4353..(-0.24912157749147371) * x('1') - 
+0.96847221933732286 * x('2') =g= -1;
+con4354..0.61168641880211194 * x('1') + 
+0.79110032552960519 * x('2') =g= -1;
+con4355..(-0.24973001937512304) * x('1') - 
+0.96831550510301168 * x('2') =g= -1;
+con4356..(-0.2503383626751301) * x('1') - 
+0.96815840861562275 * x('2') =g= -1;
+con4357..0.61118924976535072 * x('1') + 
+0.79148449193352344 * x('2') =g= -1;
+con4358..(-0.25094660715134554) * x('1') - 
+0.96800092993717124 * x('2') =g= -1;
+con4359..(-0.25155475256365911) * x('1') - 
+0.96784306912982343 * x('2') =g= -1;
+con4360..0.61069183945498529 * x('1') + 
+0.79186834589032951 * x('2') =g= -1;
+con4361..(-0.25216279867199703) * x('1') - 
+0.96768482625589713 * x('2') =g= -1;
+con4362..(-0.25277074523632748) * x('1') - 
+0.96752620137786016 * x('2') =g= -1;
+con4363..0.61019418806737347 * x('1') + 
+0.79225188724849294 * x('2') =g= -1;
+con4364..(-0.2533785920166568) * x('1') - 
+0.96736719455833142 * x('2') =g= -1;
+con4365..(-0.25398633877303095) * x('1') - 
+0.96720780586008048 * x('2') =g= -1;
+con4366..0.609696295798969 * x('1') + 
+0.79263511585660651 * x('2') =g= -1;
+con4367..(-0.25459398526553612) * x('1') - 
+0.96704803534602768 * x('2') =g= -1;
+con4368..(-0.25520153125429551) * x('1') - 
+0.96688788307924456 * x('2') =g= -1;
+con4369..0.60919816284632011 * x('1') + 
+0.79301803156338668 * x('2') =g= -1;
+con4370..(-0.25580897649947459) * x('1') - 
+0.96672734912295266 * x('2') =g= -1;
+con4371..(-0.25641632076127779) * x('1') - 
+0.96656643354052463 * x('2') =g= -1;
+con4372..0.60869978940606995 * x('1') + 
+0.79340063421767315 * x('2') =g= -1;
+con4373..(-0.25702356379995017) * x('1') - 
+0.96640513639548342 * x('2') =g= -1;
+con4374..(-0.25763070537577337) * x('1') - 
+0.96624345775150344 * x('2') =g= -1;
+con4375..0.60820117567495735 * x('1') + 
+0.7937829236684294 * x('2') =g= -1;
+con4376..(-0.25823774524907511) * x('1') - 
+0.96608139767240819 * x('2') =g= -1;
+con4377..(-0.25884468318021803) * x('1') - 
+0.96591895622217316 * x('2') =g= -1;
+con4378..0.60770232184981521 * x('1') + 
+0.79416489976474258 * x('2') =g= -1;
+con4379..(-0.25945151892960511) * x('1') - 
+0.96575613346492439 * x('2') =g= -1;
+con4380..(-0.26005825225768475) * x('1') - 
+0.9655929294649368 * x('2') =g= -1;
+con4381..0.60720322812757144 * x('1') + 
+0.79454656235582344 * x('2') =g= -1;
+con4382..(-0.26066488292493978) * x('1') - 
+0.96542934428663785 * x('2') =g= -1;
+con4383..(-0.26127141069189702) * x('1') - 
+0.96526537799460421 * x('2') =g= -1;
+con4384..0.60670389470524888 * x('1') + 
+0.79492791129100648 * x('2') =g= -1;
+con4385..(-0.26187783531912306) * x('1') - 
+0.96510103065356334 * x('2') =g= -1;
+con4386..(-0.26248415656722512) * x('1') - 
+0.96493630232839334 * x('2') =g= -1;
+con4387..0.60620432177996475 * x('1') + 
+0.79530894641975014 * x('2') =g= -1;
+con4388..(-0.26309037419685222) * x('1') - 
+0.96477119308412207 * x('2') =g= -1;
+con4389..(-0.26369648796869161) * x('1') - 
+0.96460570298592874 * x('2') =g= -1;
+con4390..0.60570450954893085 * x('1') + 
+0.79568966759163651 * x('2') =g= -1;
+con4391..(-0.26430249764347413) * x('1') - 
+0.96443983209914208 * x('2') =g= -1;
+con4392..(-0.26490840298197094) * x('1') - 
+0.9642735804892415 * x('2') =g= -1;
+con4393..0.60520445820945357 * x('1') + 
+0.79607007465637214 * x('2') =g= -1;
+con4394..(-0.26551420374499507) * x('1') - 
+0.96410694822185639 * x('2') =g= -1;
+con4395..(-0.26611989969339755) * x('1') - 
+0.96393993536276734 * x('2') =g= -1;
+con4396..0.60470416795893367 * x('1') + 
+0.79645016746378661 * x('2') =g= -1;
+con4397..(-0.26672549058807676) * x('1') - 
+0.96377254197790352 * x('2') =g= -1;
+con4398..(-0.26733097618996737) * x('1') - 
+0.96360476813334583 * x('2') =g= -1;
+con4399..0.60420363899486607 * x('1') + 
+0.7968299458638346 * x('2') =g= -1;
+con4400..(-0.26793635626004564) * x('1') - 
+0.9634366138953252 * x('2') =g= -1;
+con4401..(-0.26854163055933467) * x('1') - 
+0.96326807933022141 * x('2') =g= -1;
+con4402..0.60370287151483981 * x('1') + 
+0.79720940970659449 * x('2') =g= -1;
+con4403..(-0.26914679884889325) * x('1') - 
+0.96309916450456612 * x('2') =g= -1;
+con4404..(-0.26975186088982545) * x('1') - 
+0.96292986948504 * x('2') =g= -1;
+con4405..0.60320186571653878 * x('1') + 
+0.79758855884226842 * x('2') =g= -1;
+con4406..(-0.27035681644327653) * x('1') - 
+0.96276019433847415 * x('2') =g= -1;
+con4407..(-0.27096166527043442) * x('1') - 
+0.96259013913184932 * x('2') =g= -1;
+con4408..0.6027006217977402 * x('1') + 
+0.79796739312118348 * x('2') =g= -1;
+con4409..(-0.27156640713252689) * x('1') - 
+0.96241970393229725 * x('2') =g= -1;
+con4410..(-0.2721710417908263) * x('1') - 
+0.9622488888070988 * x('2') =g= -1;
+con4411..0.60219913995631547 * x('1') + 
+0.7983459123937906 * x('2') =g= -1;
+con4412..(-0.27277556900664651) * x('1') - 
+0.96207769382368502 * x('2') =g= -1;
+con4413..(-0.27337998854134393) * x('1') - 
+0.96190611904963708 * x('2') =g= -1;
+con4414..0.60169742039023022 * x('1') + 
+0.79872411651066511 * x('2') =g= -1;
+con4415..(-0.27398430015631814) * x('1') - 
+0.96173416455268579 * x('2') =g= -1;
+con4416..(-0.27458850361300891) * x('1') - 
+0.96156183040071252 * x('2') =g= -1;
+con4417..0.6011954632975437 * x('1') + 
+0.79910200532250686 * x('2') =g= -1;
+con4418..(-0.27519259867290113) * x('1') - 
+0.96138911666174776 * x('2') =g= -1;
+con4419..(-0.27579658509752264) * x('1') - 
+0.96121602340397183 * x('2') =g= -1;
+con4420..0.60069326887640861 * x('1') + 
+0.7994795786801403 * x('2') =g= -1;
+con4421..(-0.27640046264844059) * x('1') - 
+0.96104255069571609 * x('2') =g= -1;
+con4422..(-0.27700423108727124) * x('1') - 
+0.96086869860545965 * x('2') =g= -1;
+con4423..0.60019083732507206 * x('1') + 
+0.799856836434514 * x('2') =g= -1;
+con4424..(-0.27760789017566784) * x('1') - 
+0.96069446720183327 * x('2') =g= -1;
+con4425..(-0.27821143967533024) * x('1') - 
+0.96051985655361649 * x('2') =g= -1;
+con4426..0.59968816884187404 * x('1') + 
+0.80023377843670151 * x('2') =g= -1;
+con4427..(-0.27881487934800159) * x('1') - 
+0.96034486672973862 * x('2') =g= -1;
+con4428..(-0.27941820895546576) * x('1') - 
+0.96016949779927907 * x('2') =g= -1;
+con4429..0.59918526362524871 * x('1') + 
+0.80061040453790078 * x('2') =g= -1;
+con4430..(-0.28002142825955273) * x('1') - 
+0.95999374983146646 * x('2') =g= -1;
+con4431..(-0.28062453702213508) * x('1') - 
+0.95981762289567929 * x('2') =g= -1;
+con4432..0.59868212187372305 * x('1') + 
+0.80098671458943482 * x('2') =g= -1;
+con4433..(-0.28122753500512909) * x('1') - 
+0.9596411170614455 * x('2') =g= -1;
+con4434..(-0.28183042197049474) * x('1') - 
+0.9594642323984427 * x('2') =g= -1;
+con4435..0.59817874378591807 * x('1') + 
+0.8013627084427507 * x('2') =g= -1;
+con4436..(-0.28243319768023667) * x('1') - 
+0.9592869689764979 * x('2') =g= -1;
+con4437..(-0.28303586189640095) * x('1') - 
+0.95910932686558803 * x('2') =g= -1;
+con4438..0.59767512956054747 * x('1') + 
+0.80173838594942104 * x('2') =g= -1;
+con4439..(-0.28363841438108023) * x('1') - 
+0.95893130613583921 * x('2') =g= -1;
+con4440..(-0.28424085489641104) * x('1') - 
+0.95875290685752679 * x('2') =g= -1;
+con4441..0.59717127939641856 * x('1') + 
+0.80211374696114301 * x('2') =g= -1;
+con4442..(-0.28484318320457108) * x('1') - 
+0.95857412910107642 * x('2') =g= -1;
+con4443..(-0.28544539906778793) * x('1') - 
+0.95839497293706177 * x('2') =g= -1;
+con4444..0.59666719349243169 * x('1') + 
+0.80248879132973883 * x('2') =g= -1;
+con4445..(-0.28604750224832792) * x('1') - 
+0.95821543843620727 * x('2') =g= -1;
+con4446..(-0.28664949250850502) * x('1') - 
+0.95803552566938588 * x('2') =g= -1;
+con4447..0.59616287204758023 * x('1') + 
+0.80286351890715546 * x('2') =g= -1;
+con4448..(-0.28725136961067788) * x('1') - 
+0.95785523470761991 * x('2') =g= -1;
+con4449..(-0.28785313331724732) * x('1') - 
+0.95767456562208175 * x('2') =g= -1;
+con4450..0.59565831526095048 * x('1') + 
+0.80323792954546547 * x('2') =g= -1;
+con4451..(-0.28845478339066144) * x('1') - 
+0.95749351848409214 * x('2') =g= -1;
+con4452..(-0.28905631959341227) * x('1') - 
+0.95731209336512146 * x('2') =g= -1;
+con4453..0.595153523331722 * x('1') + 
+0.80361202309686575 * x('2') =g= -1;
+con4454..(-0.28965774168803687) * x('1') - 
+0.95713029033678931 * x('2') =g= -1;
+con4455..(-0.29025904943711817) * x('1') - 
+0.95694810947086395 * x('2') =g= -1;
+con4456..0.59464849645916662 * x('1') + 
+0.80398579941367898 * x('2') =g= -1;
+con4457..(-0.29086024260328169) * x('1') - 
+0.95676555083926396 * x('2') =g= -1;
+con4458..(-0.2914613209492008) * x('1') - 
+0.95658261451405591 * x('2') =g= -1;
+con4459..0.59414323484264919 * x('1') + 
+0.80435925834835309 * x('2') =g= -1;
+con4460..(-0.29206228423759317) * x('1') - 
+0.95639930056745615 * x('2') =g= -1;
+con4461..(-0.29266313223122298) * x('1') - 
+0.95621560907182945 * x('2') =g= -1;
+con4462..0.59363773868162728 * x('1') + 
+0.80473239975346089 * x('2') =g= -1;
+con4463..(-0.29326386469289628) * x('1') - 
+0.95603154009969071 * x('2') =g= -1;
+con4464..(-0.29386448138547089) * x('1') - 
+0.95584709372370236 * x('2') =g= -1;
+con4465..0.59313200817565104 * x('1') + 
+0.80510522348170077 * x('2') =g= -1;
+con4466..(-0.29446498207184513) * x('1') - 
+0.95566227001667692 * x('2') =g= -1;
+con4467..(-0.29506536651496307) * x('1') - 
+0.95547706905157614 * x('2') =g= -1;
+con4468..0.59262604352436321 * x('1') + 
+0.80547772938589657 * x('2') =g= -1;
+con4469..(-0.29566563447781985) * x('1') - 
+0.95529149090150922 * x('2') =g= -1;
+con4470..(-0.29626578572345064) * x('1') - 
+0.95510553563973566 * x('2') =g= -1;
+con4471..0.59211984492749847 * x('1') + 
+0.80584991731899758 * x('2') =g= -1;
+con4472..(-0.29686582001494) * x('1') - 
+0.95491920333966329 * x('2') =g= -1;
+con4473..(-0.29746573711541791) * x('1') - 
+0.95473249407484873 * x('2') =g= -1;
+con4474..0.59161341258488465 * x('1') + 
+0.80622178713407833 * x('2') =g= -1;
+con4475..(-0.29806553678806136) * x('1') - 
+0.95454540791899722 * x('2') =g= -1;
+con4476..(-0.29866521879609131) * x('1') - 
+0.9543579449459636 * x('2') =g= -1;
+con4477..0.59110674669644114 * x('1') + 
+0.80659333868433936 * x('2') =g= -1;
+con4478..(-0.29926478290277753) * x('1') - 
+0.95417010522975065 * x('2') =g= -1;
+con4479..(-0.29986422887143555) * x('1') - 
+0.95398188884451018 * x('2') =g= -1;
+con4480..0.59059984746217986 * x('1') + 
+0.80696457182310666 * x('2') =g= -1;
+con4481..(-0.30046355646542766) * x('1') - 
+0.95379329586454253 * x('2') =g= -1;
+con4482..(-0.30106276544816352) * x('1') - 
+0.95360432636429671 * x('2') =g= -1;
+con4483..0.59009271508220484 * x('1') + 
+0.8073354864038319 * x('2') =g= -1;
+con4484..(-0.30166185558309638) * x('1') - 
+0.95341498041837114 * x('2') =g= -1;
+con4485..(-0.30226082663373227) * x('1') - 
+0.95322525810151126 * x('2') =g= -1;
+con4486..0.58958534975671217 * x('1') + 
+0.80770608228009244 * x('2') =g= -1;
+con4487..(-0.3028596783636191) * x('1') - 
+0.9530351594886125 * x('2') =g= -1;
+con4488..(-0.30345841053635209) * x('1') - 
+0.95284468465471894 * x('2') =g= -1;
+con4489..0.58907775168598953 * x('1') + 
+0.80807635930559163 * x('2') =g= -1;
+con4490..(-0.3040570229155784) * x('1') - 
+0.95265383367502143 * x('2') =g= -1;
+con4491..(-0.30465551526498685) * x('1') - 
+0.95246260662486137 * x('2') =g= -1;
+con4492..0.58856992107041728 * x('1') + 
+0.80844631733415839 * x('2') =g= -1;
+con4493..(-0.30525388734831693) * x('1') - 
+0.95227100357972727 * x('2') =g= -1;
+con4494..(-0.30585213892935476) * x('1') - 
+0.95207902461525673 * x('2') =g= -1;
+con4495..0.58806185811046674 * x('1') + 
+0.808815956219748 * x('2') =g= -1;
+con4496..(-0.30645026977193479) * x('1') - 
+0.95188666980723524 * x('2') =g= -1;
+con4497..(-0.30704827963993669) * x('1') - 
+0.95169393923159729 * x('2') =g= -1;
+con4498..0.58755356300670136 * x('1') + 
+0.80918527581644129 * x('2') =g= -1;
+con4499..(-0.30764616829729052) * x('1') - 
+0.95150083296442534 * x('2') =g= -1;
+con4500..(-0.30824393550797308) * x('1') - 
+0.95130735108195008 * x('2') =g= -1;
+con4501..0.58704503595977608 * x('1') + 
+0.80955427597844554 * x('2') =g= -1;
+con4502..(-0.30884158103600934) * x('1') - 
+0.95111349366055054 * x('2') =g= -1;
+con4503..(-0.30943910464547308) * x('1') - 
+0.95091926077675382 * x('2') =g= -1;
+con4504..0.58653627717043755 * x('1') + 
+0.80992295656009383 * x('2') =g= -1;
+con4505..(-0.31003650610048361) * x('1') - 
+0.95072465250723603 * x('2') =g= -1;
+con4506..(-0.31063378516521106) * x('1') - 
+0.95052966892882074 * x('2') =g= -1;
+con4507..0.58602728683952399 * x('1') + 
+0.81029131741584537 * x('2') =g= -1;
+con4508..(-0.31123094160387393) * x('1') - 
+0.95033431011847935 * x('2') =g= -1;
+con4509..(-0.31182797518073568) * x('1') - 
+0.95013857615333275 * x('2') =g= -1;
+con4510..0.58551806516796445 * x('1') + 
+0.81065935840028602 * x('2') =g= -1;
+con4511..(-0.31242488566011412) * x('1') - 
+0.949942467110648 * x('2') =g= -1;
+con4512..(-0.31302167280636983) * x('1') - 
+0.94974598306784219 * x('2') =g= -1;
+con4513..0.58500861235678026 * x('1') + 
+0.81102707936812712 * x('2') =g= -1;
+con4514..(-0.31361833638391551) * x('1') - 
+0.94954912410247905 * x('2') =g= -1;
+con4515..(-0.3142148761572125) * x('1') - 
+0.94935189029227074 * x('2') =g= -1;
+con4516..0.58449892860708319 * x('1') + 
+0.81139448017420712 * x('2') =g= -1;
+con4517..(-0.31481129189076856) * x('1') - 
+0.94915428171507787 * x('2') =g= -1;
+con4518..(-0.31540758334914293) * x('1') - 
+0.94895629844890828 * x('2') =g= -1;
+con4519..0.5839890141200762 * x('1') + 
+0.8117615606734907 * x('2') =g= -1;
+con4520..(-0.31600375029694311) * x('1') - 
+0.94875794057191809 * x('2') =g= -1;
+con4521..(-0.31659979249882564) * x('1') - 
+0.94855920816241124 * x('2') =g= -1;
+con4522..0.58347886909705404 * x('1') + 
+0.81212832072106866 * x('2') =g= -1;
+con4523..(-0.31719570971949645) * x('1') - 
+0.94836010129883941 * x('2') =g= -1;
+con4524..(-0.31779150172371151) * x('1') - 
+0.94816062005980206 * x('2') =g= -1;
+con4525..0.58296849373940174 * x('1') + 
+0.81249476017215827 * x('2') =g= -1;
+con4526..(-0.31838716827627384) * x('1') - 
+0.94796076452404698 * x('2') =g= -1;
+con4527..(-0.31898270914203836) * x('1') - 
+0.94776053477046918 * x('2') =g= -1;
+con4528..0.58245788824859568 * x('1') + 
+0.8128608788821039 * x('2') =g= -1;
+con4529..(-0.31957812408590974) * x('1') - 
+0.94755993087811119 * x('2') =g= -1;
+con4530..(-0.3201734128728389) * x('1') - 
+0.94735895292616445 * x('2') =g= -1;
+con4531..0.58194705282620263 * x('1') + 
+0.81322667670637616 * x('2') =g= -1;
+con4532..(-0.32076857526783248) * x('1') - 
+0.94715760099396595 * x('2') =g= -1;
+con4533..(-0.32136361103594108) * x('1') - 
+0.94695587516100266 * x('2') =g= -1;
+con4534..0.58143598767388083 * x('1') + 
+0.81359215350057223 * x('2') =g= -1;
+con4535..(-0.32195851994226882) * x('1') - 
+0.94675377550690742 * x('2') =g= -1;
+con4536..(-0.32255330175196967) * x('1') - 
+0.94655130211146121 * x('2') =g= -1;
+con4537..0.58092469299337846 * x('1') + 
+0.81395730912041631 * x('2') =g= -1;
+con4538..(-0.32314795623024539) * x('1') - 
+0.9463484550545932 * x('2') =g= -1;
+con4539..(-0.32374248314235049) * x('1') - 
+0.9461452344163791 * x('2') =g= -1;
+con4540..0.58041316898653483 * x('1') + 
+0.81432214342175913 * x('2') =g= -1;
+con4541..(-0.32433688225358903) * x('1') - 
+0.94594164027704242 * x('2') =g= -1;
+con4542..(-0.32493115332931632) * x('1') - 
+0.94573767271695397 * x('2') =g= -1;
+con4543..0.57990141585527966 * x('1') + 
+0.81468665626057857 * x('2') =g= -1;
+con4544..(-0.32552529613493492) * x('1') - 
+0.94553333181663302 * x('2') =g= -1;
+con4545..(-0.32611931043590375) * x('1') - 
+0.94532861765674403 * x('2') =g= -1;
+con4546..0.57938943380163299 * x('1') + 
+0.81505084749297896 * x('2') =g= -1;
+con4547..(-0.32671319599772675) * x('1') - 
+0.94512353031810137 * x('2') =g= -1;
+con4548..(-0.32730695258596199) * x('1') - 
+0.94491806988166482 * x('2') =g= -1;
+con4549..0.57887722302770517 * x('1') + 
+0.81541471697519208 * x('2') =g= -1;
+con4550..(-0.32790057996621841) * x('1') - 
+0.94471223642854207 * x('2') =g= -1;
+con4551..(-0.32849407790415264) * x('1') - 
+0.9445060300399889 * x('2') =g= -1;
+con4552..0.57836478373569722 * x('1') + 
+0.81577826456357627 * x('2') =g= -1;
+con4553..(-0.32908744616547825) * x('1') - 
+0.94429945079740651 * x('2') =g= -1;
+con4554..(-0.32968068451595495) * x('1') - 
+0.94409249878234458 * x('2') =g= -1;
+con4555..0.5778521161279 * x('1') + 
+0.81614149011461723 * x('2') =g= -1;
+con4556..(-0.3302737927213939) * x('1') - 
+0.94388517407650052 * x('2') =g= -1;
+con4557..(-0.33086677054766239) * x('1') - 
+0.94367747676171676 * x('2') =g= -1;
+con4558..0.5773392204066945 * x('1') + 
+0.81650439348492809 * x('2') =g= -1;
+con4559..(-0.33145961776067356) * x('1') - 
+0.94346940691998493 * x('2') =g= -1;
+con4560..(-0.33205233412639529) * x('1') - 
+0.94326096463344267 * x('2') =g= -1;
+con4561..0.5768260967745521 * x('1') + 
+0.81686697453124824 * x('2') =g= -1;
+con4562..(-0.33264491941084645) * x('1') - 
+0.9430521499843747 * x('2') =g= -1;
+con4563..(-0.33323737338009829) * x('1') - 
+0.94284296305521254 * x('2') =g= -1;
+con4564..0.57631274543403399 * x('1') + 
+0.81722923311044515 * x('2') =g= -1;
+con4565..(-0.3338296958002715) * x('1') - 
+0.94263340392853578 * x('2') =g= -1;
+con4566..(-0.33442188643754128) * x('1') - 
+0.94242347268706983 * x('2') =g= -1;
+con4567..0.57579916658779096 * x('1') + 
+0.81759116907951335 * x('2') =g= -1;
+con4568..(-0.33501394505813387) * x('1') - 
+0.94221316941368727 * x('2') =g= -1;
+con4569..(-0.33560587142832765) * x('1') - 
+0.94200249419140758 * x('2') =g= -1;
+con4570..0.57528536043856382 * x('1') + 
+0.81795278229557467 * x('2') =g= -1;
+con4571..(-0.33619766531445416) * x('1') - 
+0.94179144710339679 * x('2') =g= -1;
+con4572..(-0.33678932648289461) * x('1') - 
+0.94158002823296871 * x('2') =g= -1;
+con4573..0.57477132718918345 * x('1') + 
+0.81831407261587807 * x('2') =g= -1;
+con4574..(-0.33738085470008516) * x('1') - 
+0.94136823766358291 * x('2') =g= -1;
+con4575..(-0.3379722497325145) * x('1') - 
+0.94115607547884583 * x('2') =g= -1;
+con4576..0.57425706704256985 * x('1') + 
+0.81867503989780066 * x('2') =g= -1;
+con4577..(-0.33856351134672041) * x('1') - 
+0.94094354176251149 * x('2') =g= -1;
+con4578..(-0.33915463930929934) * x('1') - 
+0.94073063659847878 * x('2') =g= -1;
+con4579..0.57374258020173263 * x('1') + 
+0.81903568399884652 * x('2') =g= -1;
+con4580..(-0.33974563338689462) * x('1') - 
+0.94051736007079523 * x('2') =g= -1;
+con4581..(-0.34033649334620564) * x('1') - 
+0.94030371226365372 * x('2') =g= -1;
+con4582..0.57322786686977145 * x('1') + 
+0.81939600477664742 * x('2') =g= -1;
+con4583..(-0.34092721895398409) * x('1') - 
+0.94008969326139413 * x('2') =g= -1;
+con4584..(-0.34151780997703546) * x('1') - 
+0.93987530314850254 * x('2') =g= -1;
+con4585..0.57271292724987488 * x('1') + 
+0.81975600208896282 * x('2') =g= -1;
+con4586..(-0.34210826618221579) * x('1') - 
+0.93966054200961224 * x('2') =g= -1;
+con4587..(-0.34269858733643693) * x('1') - 
+0.93944540992950221 * x('2') =g= -1;
+con4588..0.57219776154532065 * x('1') + 
+0.82011567579367994 * x('2') =g= -1;
+con4589..(-0.34328877320666318) * x('1') - 
+0.93922990699309838 * x('2') =g= -1;
+con4590..(-0.34387882355991223) * x('1') - 
+0.93901403328547262 * x('2') =g= -1;
+con4591..0.57168236995947641 * x('1') + 
+0.82047502574881359 * x('2') =g= -1;
+con4592..(-0.34446873816325613) * x('1') - 
+0.9387977888918434 * x('2') =g= -1;
+con4593..(-0.34505851678381805) * x('1') - 
+0.93858117389757589 * x('2') =g= -1;
+con4594..0.57116675269579853 * x('1') + 
+0.82083405181250646 * x('2') =g= -1;
+con4595..(-0.34564815918877723) * x('1') - 
+0.93836418838818103 * x('2') =g= -1;
+con4596..(-0.3462376651453668) * x('1') - 
+0.93814683244931596 * x('2') =g= -1;
+con4597..0.5706509099578323 * x('1') + 
+0.82119275384302926 * x('2') =g= -1;
+con4598..(-0.34682703442087037) * x('1') - 
+0.93792910616678504 * x('2') =g= -1;
+con4599..(-0.34741626678263132) * x('1') - 
+0.93771100962653708 * x('2') =g= -1;
+con4600..0.57013484194921227 * x('1') + 
+0.82155113169878036 * x('2') =g= -1;
+con4601..(-0.34800536199804127) * x('1') - 
+0.93749254291466888 * x('2') =g= -1;
+con4602..(-0.3485943198345493) * x('1') - 
+0.93727370611742222 * x('2') =g= -1;
+con4603..0.56961854887366214 * x('1') + 
+0.82190918523828616 * x('2') =g= -1;
+con4604..(-0.34918314005965878) * x('1') - 
+0.93705449932118501 * x('2') =g= -1;
+con4605..(-0.34977182244092481) * x('1') - 
+0.93683492261249213 * x('2') =g= -1;
+con4606..0.56910203093499412 * x('1') + 
+0.82226691432020116 * x('2') =g= -1;
+con4607..(-0.35036036674595938) * x('1') - 
+0.93661497607802369 * x('2') =g= -1;
+con4608..(-0.35094877274242842) * x('1') - 
+0.93639465980460579 * x('2') =g= -1;
+con4609..0.5685852883371092 * x('1') + 
+0.822624318803308 * x('2') =g= -1;
+con4610..(-0.35153704019805287) * x('1') - 
+0.93617397387921042 * x('2') =g= -1;
+con4611..(-0.35212516888060547) * x('1') - 
+0.93595291838895678 * x('2') =g= -1;
+con4612..0.5680683212839972 * x('1') + 
+0.8229813985465172 * x('2') =g= -1;
+con4613..(-0.35271315855791918) * x('1') - 
+0.93573149342110751 * x('2') =g= -1;
+con4614..(-0.35330100899787625) * x('1') - 
+0.93550969906307357 * x('2') =g= -1;
+con4615..0.56755112997973656 * x('1') + 
+0.82333815340886773 * x('2') =g= -1;
+con4616..(-0.3538887199684172) * x('1') - 
+0.9352875354024105 * x('2') =g= -1;
+con4617..(-0.35447629123753749) * x('1') - 
+0.93506500252681923 * x('2') =g= -1;
+con4618..0.56703371462849395 * x('1') + 
+0.82369458324952682 * x('2') =g= -1;
+con4619..(-0.3550637225732845) * x('1') - 
+0.93484210052414818 * x('2') =g= -1;
+con4620..(-0.35565101374376668) * x('1') - 
+0.93461882948238906 * x('2') =g= -1;
+con4621..0.56651607543452498 * x('1') + 
+0.82405068792778979 * x('2') =g= -1;
+con4622..(-0.35623816451714191) * x('1') - 
+0.93439518948968148 * x('2') =g= -1;
+con4623..(-0.35682517466162689) * x('1') - 
+0.93417118063430937 * x('2') =g= -1;
+con4624..0.56599821260217331 * x('1') + 
+0.82440646730308043 * x('2') =g= -1;
+con4625..(-0.35741204394549381) * x('1') - 
+0.93394680300470245 * x('2') =g= -1;
+con4626..(-0.35799877213706799) * x('1') - 
+0.93372205668943675 * x('2') =g= -1;
+con4627..0.56548012633587064 * x('1') + 
+0.82476192123495118 * x('2') =g= -1;
+con4628..(-0.35858535900473293) * x('1') - 
+0.93349694177723308 * x('2') =g= -1;
+con4629..(-0.35917180431692702) * x('1') - 
+0.93327145835695791 * x('2') =g= -1;
+con4630..0.56496181684013747 * x('1') + 
+0.82511704958308241 * x('2') =g= -1;
+con4631..(-0.35975810784214551) * x('1') - 
+0.93304560651762314 * x('2') =g= -1;
+con4632..(-0.36034426934893615) * x('1') - 
+0.93281938634838701 * x('2') =g= -1;
+con4633..0.56444328431958202 * x('1') + 
+0.8254718522072837 * x('2') =g= -1;
+con4634..(-0.36093028860590864) * x('1') - 
+0.93259279793855121 * x('2') =g= -1;
+con4635..(-0.36151616538172304) * x('1') - 
+0.93236584137756495 * x('2') =g= -1;
+con4636..0.56392452897890066 * x('1') + 
+0.82582632896749242 * x('2') =g= -1;
+con4637..(-0.36210189944509896) * x('1') - 
+0.93213851675502146 * x('2') =g= -1;
+con4638..(-0.36268749056481231) * x('1') - 
+0.93191082416065929 * x('2') =g= -1;
+con4639..0.56340555102287748 * x('1') + 
+0.82618047972377551 * x('2') =g= -1;
+con4640..(-0.36327293850969217) * x('1') - 
+0.93168276368436342 * x('2') =g= -1;
+con4641..(-0.36385824304862985) * x('1') - 
+0.93145433541616207 * x('2') =g= -1;
+con4642..0.56288635065638504 * x('1') + 
+0.82653430433632769 * x('2') =g= -1;
+con4643..(-0.3644434039505684) * x('1') - 
+0.93122553944623043 * x('2') =g= -1;
+con4644..(-0.36502842098450755) * x('1') - 
+0.9309963758648887 * x('2') =g= -1;
+con4645..0.56236692808438316 * x('1') + 
+0.82688780266547302 * x('2') =g= -1;
+con4646..(-0.3656132939195087) * x('1') - 
+0.93076684476260052 * x('2') =g= -1;
+con4647..(-0.36619802252468453) * x('1') - 
+0.93053694622997674 * x('2') =g= -1;
+con4648..0.56184728351191948 * x('1') + 
+0.82724097457166423 * x('2') =g= -1;
+con4649..(-0.3667826065692078) * x('1') - 
+0.93030668035777198 * x('2') =g= -1;
+con4650..(-0.36736704582230761) * x('1') - 
+0.93007604723688619 * x('2') =g= -1;
+con4651..0.56132741714412948 * x('1') + 
+0.82759381991548275 * x('2') =g= -1;
+con4652..(-0.36795134005327107) * x('1') - 
+0.92984504695836401 * x('2') =g= -1;
+con4653..(-0.36853548903144001) * x('1') - 
+0.9296136796133958 * x('2') =g= -1;
+con4654..0.56080732918623588 * x('1') + 
+0.82794633855763911 * x('2') =g= -1;
+con4655..(-0.36911949252621606) * x('1') - 
+0.9293819452933163 * x('2') =g= -1;
+con4656..(-0.36970335030705753) * x('1') - 
+0.92914984408960488 * x('2') =g= -1;
+con4657..0.56028701984354912 * x('1') + 
+0.82829853035897294 * x('2') =g= -1;
+con4658..(-0.37028706214348023) * x('1') - 
+0.92891737609388614 * x('2') =g= -1;
+con4659..(-0.37087062780505836) * x('1') - 
+0.92868454139792911 * x('2') =g= -1;
+con4660..0.55976648932146722 * x('1') + 
+0.82865039518045225 * x('2') =g= -1;
+con4661..(-0.37145404706142132) * x('1') - 
+0.92845134009364827 * x('2') =g= -1;
+con4662..(-0.37203731968225895) * x('1') - 
+0.9282177722731022 * x('2') =g= -1;
+con4663..0.55924573782547515 * x('1') + 
+0.82900193288317481 * x('2') =g= -1;
+con4664..(-0.37262044543731876) * x('1') - 
+0.92798383802849393 * x('2') =g= -1;
+con4665..(-0.37320342409640311) * x('1') - 
+0.92774953745217259 * x('2') =g= -1;
+con4666..0.55872476556114503 * x('1') + 
+0.8293531433283674 * x('2') =g= -1;
+con4667..(-0.3737862554293781) * x('1') - 
+0.92751487063662963 * x('2') =g= -1;
+con4668..(-0.37436893920616227) * x('1') - 
+0.92727983767450306 * x('2') =g= -1;
+con4669..0.55820357273413634 * x('1') + 
+0.82970402637738583 * x('2') =g= -1;
+con4670..(-0.37495147519673566) * x('1') - 
+0.92704443865857467 * x('2') =g= -1;
+con4671..(-0.37553386317113585) * x('1') - 
+0.92680867368177056 * x('2') =g= -1;
+con4672..0.55768215955019573 * x('1') + 
+0.8300545818917151 * x('2') =g= -1;
+con4673..(-0.37611610289945968) * x('1') - 
+0.92657254283716128 * x('2') =g= -1;
+con4674..(-0.37669819415186007) * x('1') - 
+0.92633604621796273 * x('2') =g= -1;
+con4675..0.55716052621515688 * x('1') + 
+0.8304048097329696 * x('2') =g= -1;
+con4676..(-0.37728013669855098) * x('1') - 
+0.9260991839175341 * x('2') =g= -1;
+con4677..(-0.37786193030980508) * x('1') - 
+0.92586195602937915 * x('2') =g= -1;
+con4678..0.55663867293493985 * x('1') + 
+0.83075470976289323 * x('2') =g= -1;
+con4679..(-0.37844357475595047) * x('1') - 
+0.92562436264714709 * x('2') =g= -1;
+con4680..(-0.3790250698073801) * x('1') - 
+0.92538640386462923 * x('2') =g= -1;
+con4681..0.5561165999155524 * x('1') + 
+0.83110428184335894 * x('2') =g= -1;
+con4682..(-0.37960641523453992) * x('1') - 
+0.9251480797757633 * x('2') =g= -1;
+con4683..(-0.38018761080793834) * x('1') - 
+0.92490939047463006 * x('2') =g= -1;
+con4684..0.55559430736308812 * x('1') + 
+0.83145352583636956 * x('2') =g= -1;
+con4685..(-0.38076865629814294) * x('1') - 
+0.92467033605545423 * x('2') =g= -1;
+con4686..(-0.38134955147577715) * x('1') - 
+0.92443091661260635 * x('2') =g= -1;
+con4687..0.55507179548372765 * x('1') + 
+0.83180244160405714 * x('2') =g= -1;
+con4688..(-0.38193029611152962) * x('1') - 
+0.92419113224059846 * x('2') =g= -1;
+con4689..(-0.38251088997614263) * x('1') - 
+0.92395098303408896 * x('2') =g= -1;
+con4690..0.55454906448373864 * x('1') + 
+0.83215102900868321 * x('2') =g= -1;
+con4691..(-0.38309133284042124) * x('1') - 
+0.92371046908787902 * x('2') =g= -1;
+con4692..(-0.38367162447523012) * x('1') - 
+0.92346959049691402 * x('2') =g= -1;
+con4693..0.55402611456947437 * x('1') + 
+0.83249928791263939 * x('2') =g= -1;
+con4694..(-0.38425176465149125) * x('1') - 
+0.92322834735628378 * x('2') =g= -1;
+con4695..(-0.3848317531401888) * x('1') - 
+0.92298673976122148 * x('2') =g= -1;
+con4696..0.55350294594737526 * x('1') + 
+0.83284721817844665 * x('2') =g= -1;
+con4697..(-0.38541158971236594) * x('1') - 
+0.92274476780710435 * x('2') =g= -1;
+con4698..(-0.38599127413912671) * x('1') - 
+0.92250243158945311 * x('2') =g= -1;
+con4699..0.55297955882396788 * x('1') + 
+0.83319481966875542 * x('2') =g= -1;
+con4700..(-0.38657080619163198) * x('1') - 
+0.92225973120393356 * x('2') =g= -1;
+con4701..(-0.38715018564110837) * x('1') - 
+0.92201666674635296 * x('2') =g= -1;
+con4702..0.55245595340586484 * x('1') + 
+0.83354209224634657 * x('2') =g= -1;
+con4703..(-0.38772941225883717) * x('1') - 
+0.92177323831266478 * x('2') =g= -1;
+con4704..(-0.38830848581616312) * x('1') - 
+0.92152944599896458 * x('2') =g= -1;
+con4705..0.55193212989976526 * x('1') + 
+0.83388903577413021 * x('2') =g= -1;
+con4706..(-0.38888740608449146) * x('1') - 
+0.92128528990149183 * x('2') =g= -1;
+con4707..(-0.38946617283528473) * x('1') - 
+0.92104077011663066 * x('2') =g= -1;
+con4708..0.55140808851245371 * x('1') + 
+0.834235650115147 * x('2') =g= -1;
+con4709..(-0.39004478584007163) * x('1') - 
+0.92079588674090673 * x('2') =g= -1;
+con4710..(-0.39062324487043598) * x('1') - 
+0.92055063987099128 * x('2') =g= -1;
+con4711..0.55088382945080172 * x('1') + 
+0.83458193513256684 * x('2') =g= -1;
+con4712..(-0.39120154969802562) * x('1') - 
+0.92030502960369787 * x('2') =g= -1;
+con4713..(-0.39177970009454921) * x('1') - 
+0.92005905603598348 * x('2') =g= -1;
+con4714..0.55035935292176619 * x('1') + 
+0.83492789068968998 * x('2') =g= -1;
+con4715..(-0.39235769583177404) * x('1') - 
+0.91981271926494967 * x('2') =g= -1;
+con4716..(-0.39293553668153069) * x('1') - 
+0.91956601938784011 * x('2') =g= -1;
+con4717..0.5498346591323896 * x('1') + 
+0.83527351664994676 * x('2') =g= -1;
+con4718..(-0.3935132224157103) * x('1') - 
+0.91931895650204221 * x('2') =g= -1;
+con4719..(-0.39409075280626593) * x('1') - 
+0.9190715307050864 * x('2') =g= -1;
+con4720..0.54930974828980095 * x('1') + 
+0.83561881287689754 * x('2') =g= -1;
+con4721..(-0.3946681276252087) * x('1') - 
+0.9188237420946479 * x('2') =g= -1;
+con4722..(-0.39524534664461697) * x('1') - 
+0.91857559076854234 * x('2') =g= -1;
+con4723..0.54878462060121436 * x('1') + 
+0.83596377923423293 * x('2') =g= -1;
+con4724..(-0.39582240963662468) * x('1') - 
+0.91832707682473136 * x('2') =g= -1;
+con4725..(-0.39639931637343084) * x('1') - 
+0.91807820036131815 * x('2') =g= -1;
+con4726..0.54825927627392945 * x('1') + 
+0.83630841558577373 * x('2') =g= -1;
+con4727..(-0.39697606662729606) * x('1') - 
+0.91782896147654902 * x('2') =g= -1;
+con4728..(-0.39755266017054025) * x('1') - 
+0.91757936026881459 * x('2') =g= -1;
+con4729..0.5477337155153319 * x('1') + 
+0.83665272179547079 * x('2') =g= -1;
+con4730..(-0.39812909677554764) * x('1') - 
+0.91732939683664705 * x('2') =g= -1;
+con4731..(-0.3987053762147636) * x('1') - 
+0.91707907127872235 * x('2') =g= -1;
+con4732..0.5472079385328924 * x('1') + 
+0.8369966977274057 * x('2') =g= -1;
+con4733..(-0.39928149826069559) * x('1') - 
+0.91682838369385911 * x('2') =g= -1;
+con4734..(-0.39985746268591399) * x('1') - 
+0.91657733418101872 * x('2') =g= -1;
+con4735..0.54668194553416727 * x('1') + 
+0.83734034324579021 * x('2') =g= -1;
+con4736..(-0.4004332692630489) * x('1') - 
+0.91632592283930647 * x('2') =g= -1;
+con4737..(-0.40100891776479525) * x('1') - 
+0.91607414976796919 * x('2') =g= -1;
+con4738..0.54615573672679774 * x('1') + 
+0.83768365821496649 * x('2') =g= -1;
+con4739..(-0.40158440796390954) * x('1') - 
+0.91582201506639715 * x('2') =g= -1;
+con4740..(-0.40215973963321155) * x('1') - 
+0.91556951883412296 * x('2') =g= -1;
+con4741..0.54562931231851075 * x('1') + 
+0.83802664249940706 * x('2') =g= -1;
+con4742..(-0.40273491254558125) * x('1') - 
+0.91531666117082289 * x('2') =g= -1;
+con4743..(-0.40330992647396363) * x('1') - 
+0.91506344217631497 * x('2') =g= -1;
+con4744..0.54510267251711786 * x('1') + 
+0.83836929596371534 * x('2') =g= -1;
+con4745..(-0.40388478119136656) * x('1') - 
+0.91480986195055958 * x('2') =g= -1;
+con4746..(-0.40445947647085745) * x('1') - 
+0.91455592059366164 * x('2') =g= -1;
+con4747..0.54457581753051576 * x('1') + 
+0.83871161847262521 * x('2') =g= -1;
+con4748..(-0.40503401208557233) * x('1') - 
+0.91430161820586564 * x('2') =g= -1;
+con4749..(-0.40560838780870451) * x('1') - 
+0.91404695488756127 * x('2') =g= -1;
+con4750..0.54404874756668642 * x('1') + 
+0.83905360989100086 * x('2') =g= -1;
+con4751..(-0.40618260341351387) * x('1') - 
+0.91379193073927945 * x('2') =g= -1;
+con4752..(-0.40675665867332322) * x('1') - 
+0.91353654586169331 * x('2') =g= -1;
+con4753..0.54352146283369651 * x('1') + 
+0.83939527008383763 * x('2') =g= -1;
+con4754..(-0.40733055336151563) * x('1') - 
+0.91328080035561976 * x('2') =g= -1;
+con4755..(-0.40790428725154326) * x('1') - 
+0.91302469432201583 * x('2') =g= -1;
+con4756..0.54299396353969698 * x('1') + 
+0.83973659891626151 * x('2') =g= -1;
+con4757..(-0.40847786011691584) * x('1') - 
+0.91276822786198319 * x('2') =g= -1;
+con4758..(-0.40905127173121014) * x('1') - 
+0.91251140107676443 * x('2') =g= -1;
+con4759..0.54246624989292436 * x('1') + 
+0.84007759625352896 * x('2') =g= -1;
+con4760..(-0.40962452186806569) * x('1') - 
+0.91225421406774465 * x('2') =g= -1;
+con4761..(-0.41019761030118651) * x('1') - 
+0.91199666693645098 * x('2') =g= -1;
+con4762..0.54193832210169923 * x('1') + 
+0.84041826196102787 * x('2') =g= -1;
+con4763..(-0.41077053680433817) * x('1') - 
+0.91173875978455354 * x('2') =g= -1;
+con4764..(-0.41134330115135243) * x('1') - 
+0.91148049271386367 * x('2') =g= -1;
+con4765..0.54141018037442667 * x('1') + 
+0.84075859590427671 * x('2') =g= -1;
+con4766..(-0.41191590311612519) * x('1') - 
+0.9112218658263348 * x('2') =g= -1;
+con4767..(-0.41248834247261318) * x('1') - 
+0.91096287922406372 * x('2') =g= -1;
+con4768..0.54088182491959658 * x('1') + 
+0.84109859794892472 * x('2') =g= -1;
+con4769..(-0.41306061899484298) * x('1') - 
+0.91070353300928686 * x('2') =g= -1;
+con4770..(-0.41363273245689974) * x('1') - 
+0.91044382728438489 * x('2') =g= -1;
+con4771..0.54035325594578276 * x('1') + 
+0.84143826796075261 * x('2') =g= -1;
+con4772..(-0.41420468263293625) * x('1') - 
+0.91018376215187913 * x('2') =g= -1;
+con4773..(-0.41477646929716977) * x('1') - 
+0.9099233377144329 * x('2') =g= -1;
+con4774..0.53982447366164388 * x('1') + 
+0.84177760580567196 * x('2') =g= -1;
+con4775..(-0.41534809222387892) * x('1') - 
+0.90966255407485264 * x('2') =g= -1;
+con4776..(-0.41591955118741253) * x('1') - 
+0.90940141133608388 * x('2') =g= -1;
+con4777..0.53929547827592228 * x('1') + 
+0.84211661134972526 * x('2') =g= -1;
+con4778..(-0.41649084596217856) * x('1') - 
+0.90913990960121693 * x('2') =g= -1;
+con4779..(-0.41706197632265296) * x('1') - 
+0.9088780489734819 * x('2') =g= -1;
+con4780..0.53876626999744459 * x('1') + 
+0.84245528445908668 * x('2') =g= -1;
+con4781..(-0.41763294204337659) * x('1') - 
+0.90861582955625075 * x('2') =g= -1;
+con4782..(-0.41820374289895301) * x('1') - 
+0.90835325145303825 * x('2') =g= -1;
+con4783..0.53823684903512203 * x('1') + 
+0.84279362500006094 * x('2') =g= -1;
+con4784..(-0.41877437866405304) * x('1') - 
+0.90809031476749946 * x('2') =g= -1;
+con4785..(-0.41934484911341213) * x('1') - 
+0.90782701960343171 * x('2') =g= -1;
+con4786..0.53770721559794843 * x('1') + 
+0.84313163283908488 * x('2') =g= -1;
+con4787..(-0.4199151540218316) * x('1') - 
+0.90756336606477317 * x('2') =g= -1;
+con4788..(-0.42048529316417499) * x('1') - 
+0.90729935425560504 * x('2') =g= -1;
+con4789..0.5371773698950032 * x('1') + 
+0.84346930784272578 * x('2') =g= -1;
+con4790..(-0.42105526631537687) * x('1') - 
+0.90703498428014728 * x('2') =g= -1;
+con4791..(-0.42162507325043175) * x('1') - 
+0.90677025624276408 * x('2') =g= -1;
+con4792..0.53664731213544814 * x('1') + 
+0.84380664987768317 * x('2') =g= -1;
+con4793..(-0.42219471374440293) * x('1') - 
+0.90650517024795929 * x('2') =g= -1;
+con4794..(-0.42276418757241946) * x('1') - 
+0.90623972640037809 * x('2') =g= -1;
+con4795..0.53611704252852943 * x('1') + 
+0.84414365881078735 * x('2') =g= -1;
+con4796..(-0.42333349450967378) * x('1') - 
+0.9059739248048081 * x('2') =g= -1;
+con4797..(-0.42390263433142644) * x('1') - 
+0.90570776556617694 * x('2') =g= -1;
+con4798..0.53558656128357696 * x('1') + 
+0.8444803345090004 * x('2') =g= -1;
+con4799..(-0.4244716068130035) * x('1') - 
+0.90544124878955401 * x('2') =g= -1;
+con4800..(-0.42504041172979673) * x('1') - 
+0.9051743745801496 * x('2') =g= -1;
+con4801..0.53505586861000376 * x('1') + 
+0.84481667683941608 * x('2') =g= -1;
+con4802..(-0.42560904885726508) * x('1') - 
+0.90490714304331477 * x('2') =g= -1;
+con4803..(-0.42617751797093123) * x('1') - 
+0.90463955428454301 * x('2') =g= -1;
+con4804..0.53452496471730682 * x('1') + 
+0.84515268566925938 * x('2') =g= -1;
+con4805..(-0.42674581884638663) * x('1') - 
+0.9043716084094674 * x('2') =g= -1;
+con4806..(-0.42731395125928828) * x('1') - 
+0.90410330552386242 * x('2') =g= -1;
+con4807..0.53399384981506559 * x('1') + 
+0.84548836086588741 * x('2') =g= -1;
+con4808..(-0.4278819149853606) * x('1') - 
+0.90383464573364336 * x('2') =g= -1;
+con4809..(-0.42844970980039132) * x('1') - 
+0.9035656291448676 * x('2') =g= -1;
+con4810..0.53346252411294437 * x('1') + 
+0.84582370229678849 * x('2') =g= -1;
+con4811..(-0.42901733548024046) * x('1') - 
+0.90329625586373097 * x('2') =g= -1;
+con4812..(-0.42958479180082915) * x('1') - 
+0.9030265259965724 * x('2') =g= -1;
+con4813..0.53293098782068904 * x('1') + 
+0.84615870982958308 * x('2') =g= -1;
+con4814..(-0.43015207853814869) * x('1') - 
+0.90275643964987051 * x('2') =g= -1;
+con4815..(-0.43071919546825727) * x('1') - 
+0.90248599693024445 * x('2') =g= -1;
+con4816..0.53239924114812953 * x('1') + 
+0.84649338333202329 * x('2') =g= -1;
+con4817..(-0.43128614236727764) * x('1') - 
+0.90221519794445515 * x('2') =g= -1;
+con4818..(-0.43185291901140227) * x('1') - 
+0.90194404279940299 * x('2') =g= -1;
+con4819..0.53186728430517871 * x('1') + 
+0.84682772267199313 * x('2') =g= -1;
+con4820..(-0.43241952517688981) * x('1') - 
+0.90167253160212946 * x('2') =g= -1;
+con4821..(-0.43298596064006639) * x('1') - 
+0.90140066445981659 * x('2') =g= -1;
+con4822..0.53133511750183227 * x('1') + 
+0.84716172771750853 * x('2') =g= -1;
+con4823..(-0.43355222517732622) * x('1') - 
+0.90112844147978655 * x('2') =g= -1;
+con4824..(-0.43411831856512856) * x('1') - 
+0.90085586276950291 * x('2') =g= -1;
+con4825..0.53080274094816882 * x('1') + 
+0.84749539833671728 * x('2') =g= -1;
+con4826..(-0.43468424058000277) * x('1') - 
+0.90058292843656895 * x('2') =g= -1;
+con4827..(-0.43524999099854494) * x('1') - 
+0.90030963858872826 * x('2') =g= -1;
+con4828..0.53027015485434992 * x('1') + 
+0.8478287343978993 * x('2') =g= -1;
+con4829..(-0.43581556959741974) * x('1') - 
+0.90003599333386475 * x('2') =g= -1;
+con4830..(-0.43638097615335725) * x('1') - 
+0.89976199278000346 * x('2') =g= -1;
+con4831..0.52973735943061973 * x('1') + 
+0.84816173576946652 * x('2') =g= -1;
+con4832..(-0.43694621044315796) * x('1') - 
+0.89948763703530887 * x('2') =g= -1;
+con4833..(-0.43751127224369019) * x('1') - 
+0.89921292620808535 * x('2') =g= -1;
+con4834..0.52920435488730466 * x('1') + 
+0.84849440231996331 * x('2') =g= -1;
+con4835..(-0.43807616133188726) * x('1') - 
+0.89893786040677937 * x('2') =g= -1;
+con4836..(-0.43864087748475628) * x('1') - 
+0.89866243973997439 * x('2') =g= -1;
+con4837..0.52867114143481453 * x('1') + 
+0.84882673391806551 * x('2') =g= -1;
+con4838..(-0.43920542047936706) * x('1') - 
+0.89838666431639691 * x('2') =g= -1;
+con4839..(-0.43976979009286082) * x('1') - 
+0.89811053424491194 * x('2') =g= -1;
+con4840..0.52813771928364106 * x('1') + 
+0.84915873043258172 * x('2') =g= -1;
+con4841..(-0.44033398610244739) * x('1') - 
+0.8978340496345244 * x('2') =g= -1;
+con4842..(-0.44089800828540182) * x('1') - 
+0.89755721059438087 * x('2') =g= -1;
+con4843..0.52760408864435815 * x('1') + 
+0.84949039173245289 * x('2') =g= -1;
+con4844..(-0.44146185641907343) * x('1') - 
+0.89728001723376483 * x('2') =g= -1;
+con4845..(-0.4420255302808746) * x('1') - 
+0.89700246966210273 * x('2') =g= -1;
+con4846..0.52707024972762251 * x('1') + 
+0.84982171768675197 * x('2') =g= -1;
+con4847..(-0.44258902964828983) * x('1') - 
+0.89672456798895905 * x('2') =g= -1;
+con4848..(-0.44315235429887151) * x('1') - 
+0.89644631232403837 * x('2') =g= -1;
+con4849..0.5265362027441729 * x('1') + 
+0.85015270816468458 * x('2') =g= -1;
+con4850..(-0.44371550401024196) * x('1') - 
+0.89616770277718494 * x('2') =g= -1;
+con4851..(-0.44427847856009012) * x('1') - 
+0.89588873945838365 * x('2') =g= -1;
+con4852..0.52600194790483001 * x('1') + 
+0.85048336303558836 * x('2') =g= -1;
+con4853..(-0.44484127772617643) * x('1') - 
+0.89560942247775777 * x('2') =g= -1;
+con4854..(-0.44540390128633062) * x('1') - 
+0.89532975194557041 * x('2') =g= -1;
+con4855..0.52546748542049693 * x('1') + 
+0.85081368216893394 * x('2') =g= -1;
+con4856..(-0.44596634901844856) * x('1') - 
+0.89504972797222582 * x('2') =g= -1;
+con4857..(-0.44652862070050098) * x('1') - 
+0.8947693506682648 * x('2') =g= -1;
+con4858..0.52493281550215842 * x('1') + 
+0.85114366543432418 * x('2') =g= -1;
+con4859..(-0.4470907161105227) * x('1') - 
+0.89448862014437058 * x('2') =g= -1;
+con4860..(-0.44765263502662123) * x('1') - 
+0.8942075365113642 * x('2') =g= -1;
+con4861..0.52439793836088155 * x('1') + 
+0.85147331270149451 * x('2') =g= -1;
+con4862..(-0.44821437722697377) * x('1') - 
+0.89392609988020599 * x('2') =g= -1;
+con4863..(-0.44877594248982483) * x('1') - 
+0.8936443103619971 * x('2') =g= -1;
+con4864..0.5238628542078142 * x('1') + 
+0.85180262384031336 * x('2') =g= -1;
+con4865..(-0.44933733059349129) * x('1') - 
+0.89336216806797653 * x('2') =g= -1;
+con4866..(-0.44989854131635898) * x('1') - 
+0.89307967310952296 * x('2') =g= -1;
+con4867..0.5233275632541875 * x('1') + 
+0.85213159872078115 * x('2') =g= -1;
+con4868..(-0.450459574436884) * x('1') - 
+0.89279682559815443 * x('2') =g= -1;
+con4869..(-0.45102042973359235) * x('1') - 
+0.89251362564552794 * x('2') =g= -1;
+con4870..0.52279206571131276 * x('1') + 
+0.85246023721303177 * x('2') =g= -1;
+con4871..(-0.45158110698508108) * x('1') - 
+0.89223007336343951 * x('2') =g= -1;
+con4872..(-0.45214160597001518) * x('1') - 
+0.89194616886382527 * x('2') =g= -1;
+con4873..0.52225636179058366 * x('1') + 
+0.85278853918733166 * x('2') =g= -1;
+con4874..(-0.45270192646713242) * x('1') - 
+0.89166191225875913 * x('2') =g= -1;
+con4875..(-0.4532620682552409) * x('1') - 
+0.89137730366045409 * x('2') =g= -1;
+con4876..0.52172045170347514 * x('1') + 
+0.85311650451407983 * x('2') =g= -1;
+con4877..(-0.45382203111321617) * x('1') - 
+0.89109234318126374 * x('2') =g= -1;
+con4878..(-0.45438181482001005) * x('1') - 
+0.89080703093367763 * x('2') =g= -1;
+con4879..0.52118433566154354 * x('1') + 
+0.8534441330638084 * x('2') =g= -1;
+con4880..(-0.45494141915463943) * x('1') - 
+0.89052136703032714 * x('2') =g= -1;
+con4881..(-0.45550084389619522) * x('1') - 
+0.89023535158398082 * x('2') =g= -1;
+con4882..0.52064801387642667 * x('1') + 
+0.85377142470718248 * x('2') =g= -1;
+con4883..(-0.45606008882383914) * x('1') - 
+0.88994898470754602 * x('2') =g= -1;
+con4884..(-0.45661915371680167) * x('1') - 
+0.88966226651406988 * x('2') =g= -1;
+con4885..0.52011148655984285 * x('1') + 
+0.85409837931500043 * x('2') =g= -1;
+con4886..(-0.45717803835438658) * x('1') - 
+0.88937519711673718 * x('2') =g= -1;
+con4887..(-0.45773674251596813) * x('1') - 
+0.88908777662887162 * x('2') =g= -1;
+con4888..0.51957475392359287 * x('1') + 
+0.85442499675819283 * x('2') =g= -1;
+con4889..(-0.4582952659809918) * x('1') - 
+0.88880000516393565 * x('2') =g= -1;
+con4890..(-0.45885360852897505) * x('1') - 
+0.88851188283552973 * x('2') =g= -1;
+con4891..0.51903781617955724 * x('1') + 
+0.85475127690782438 * x('2') =g= -1;
+con4892..(-0.45941176993950467) * x('1') - 
+0.88822340975739411 * x('2') =g= -1;
+con4893..(-0.45996974999224105) * x('1') - 
+0.88793458604340625 * x('2') =g= -1;
+con4894..0.51850067353969798 * x('1') + 
+0.85507721963509209 * x('2') =g= -1;
+con4895..(-0.46052754846691552) * x('1') - 
+0.8876454118075825 * x('2') =g= -1;
+con4896..(-0.46108516514333181) * x('1') - 
+0.8873558871640771 * x('2') =g= -1;
+con4897..0.51796332621605812 * x('1') + 
+0.85540282481132668 * x('2') =g= -1;
+con4898..(-0.46164259980136241) * x('1') - 
+0.88706601222718429 * x('2') =g= -1;
+con4899..(-0.462199852220957) * x('1') - 
+0.88677578711133376 * x('2') =g= -1;
+con4900..0.51742577442076143 * x('1') + 
+0.85572809230799207 * x('2') =g= -1;
+con4901..(-0.4627569221821326) * x('1') - 
+0.88648521193109575 * x('2') =g= -1;
+con4902..(-0.46331380946497813) * x('1') - 
+0.88619428680117873 * x('2') =g= -1;
+con4903..0.51688801836601217 * x('1') + 
+0.85605302199668509 * x('2') =g= -1;
+con4904..(-0.46387051384965955) * x('1') - 
+0.88590301183642717 * x('2') =g= -1;
+con4905..(-0.46442703511640926) * x('1') - 
+0.88561138715182608 * x('2') =g= -1;
+con4906..0.51635005826409541 * x('1') + 
+0.85637761374913657 * x('2') =g= -1;
+con4907..(-0.46498337304553528) * x('1') - 
+0.88531941286249705 * x('2') =g= -1;
+con4908..(-0.46553952741741716) * x('1') - 
+0.8850270890837002 * x('2') =g= -1;
+con4909..0.51581189432737706 * x('1') + 
+0.85670186743720989 * x('2') =g= -1;
+con4910..(-0.46609549801250694) * x('1') - 
+0.88473441593083357 * x('2') =g= -1;
+con4911..(-0.46665128461132993) * x('1') - 
+0.88444139351943241 * x('2') =g= -1;
+con4912..0.51527352676830274 * x('1') + 
+0.85702578293290288 * x('2') =g= -1;
+con4913..(-0.46720688699448176) * x('1') - 
+0.88414802196517162 * x('2') =g= -1;
+con4914..(-0.4677623049426331) * x('1') - 
+0.88385430138386223 * x('2') =g= -1;
+con4915..0.51473495579939887 * x('1') + 
+0.85734936010834628 * x('2') =g= -1;
+con4916..(-0.46831753823652672) * x('1') - 
+0.88356023189145361 * x('2') =g= -1;
+con4917..(-0.46887258665697906) * x('1') - 
+0.88326581360403256 * x('2') =g= -1;
+con4918..0.51419618163327285 * x('1') + 
+0.85767259883580416 * x('2') =g= -1;
+con4919..(-0.46942744998487707) * x('1') - 
+0.88297104663782477 * x('2') =g= -1;
+con4920..(-0.46998212800118322) * x('1') - 
+0.88267593110919218 * x('2') =g= -1;
+con4921..0.51365720448261099 * x('1') + 
+0.85799549898767491 * x('2') =g= -1;
+con4922..(-0.47053662048693312) * x('1') - 
+0.88238046713463458 * x('2') =g= -1;
+con4923..(-0.47109092722323248) * x('1') - 
+0.88208465483079068 * x('2') =g= -1;
+con4924..0.51311802456018063 * x('1') + 
+0.85831806043648984 * x('2') =g= -1;
+con4925..(-0.47164504799126583) * x('1') - 
+0.88178849431443396 * x('2') =g= -1;
+con4926..(-0.4721989825722856) * x('1') - 
+0.88149198570247833 * x('2') =g= -1;
+con4927..0.51257864207882886 * x('1') + 
+0.85864028305491458 * x('2') =g= -1;
+con4928..(-0.47275273074762092) * x('1') - 
+0.8811951291119734 * x('2') =g= -1;
+con4929..(-0.47330629229867438) * x('1') - 
+0.88089792466010597 * x('2') =g= -1;
+con4930..0.5120390572514828 * x('1') + 
+0.85896216671574821 * x('2') =g= -1;
+con4931..(-0.47385966700692) * x('1') - 
+0.88060037246420175 * x('2') =g= -1;
+con4932..(-0.47441285465390798) * x('1') - 
+0.88030247264172212 * x('2') =g= -1;
+con4933..0.51149927029114939 * x('1') + 
+0.85928371129192349 * x('2') =g= -1;
+con4934..(-0.47496585502126132) * x('1') - 
+0.88000422531026645 * x('2') =g= -1;
+con4935..(-0.4755186678906772) * x('1') - 
+0.87970563058757101 * x('2') =g= -1;
+con4936..0.51095928141091551 * x('1') + 
+0.85960491665650729 * x('2') =g= -1;
+con4937..(-0.4760712930439267) * x('1') - 
+0.87940668859150928 * x('2') =g= -1;
+con4938..(-0.47662373026285582) * x('1') - 
+0.87910739944009142 * x('2') =g= -1;
+con4939..0.51041909082394776 * x('1') + 
+0.85992578268270026 * x('2') =g= -1;
+con4940..(-0.47717597932938238) * x('1') - 
+0.87880776325146603 * x('2') =g= -1;
+con4941..(-0.47772804002550084) * x('1') - 
+0.87850778014391739 * x('2') =g= -1;
+con4942..0.5098786987434919 * x('1') + 
+0.86024630924383716 * x('2') =g= -1;
+con4943..(-0.47827991213328008) * x('1') - 
+0.87820745023586644 * x('2') =g= -1;
+con4944..(-0.47883159543486015) * x('1') - 
+0.87790677364587322 * x('2') =g= -1;
+con4945..0.50933810538287372 * x('1') + 
+0.86056649621338654 * x('2') =g= -1;
+con4946..(-0.47938308971246124) * x('1') - 
+0.87760575049263112 * x('2') =g= -1;
+con4947..(-0.47993439474837263) * x('1') - 
+0.87730438089497376 * x('2') =g= -1;
+con4948..0.50879731095549829 * x('1') + 
+0.86088634346495119 * x('2') =g= -1;
+con4949..(-0.48048551032496145) * x('1') - 
+0.87700266497186963 * x('2') =g= -1;
+con4950..(-0.48103643622466957) * x('1') - 
+0.8767006028424239 * x('2') =g= -1;
+con4951..0.5082563156748503 * x('1') + 
+0.86120585087226786 * x('2') =g= -1;
+con4952..(-0.48158717223001146) * x('1') - 
+0.87639819462587965 * x('2') =g= -1;
+con4953..(-0.48213771812357892) * x('1') - 
+0.87609544044161558 * x('2') =g= -1;
+con4954..0.50771511975449335 * x('1') + 
+0.86152501830920758 * x('2') =g= -1;
+con4955..(-0.4826880736880379) * x('1') - 
+0.875792340409147 * x('2') =g= -1;
+con4956..(-0.48323823870612964) * x('1') - 
+0.87548889464812607 * x('2') =g= -1;
+con4957..0.50717372340807043 * x('1') + 
+0.86184384564977556 * x('2') =g= -1;
+con4958..(-0.48378821296067043) * x('1') - 
+0.87518510327834131 * x('2') =g= -1;
+con4959..(-0.48433799623455276) * x('1') - 
+0.87488096641971724 * x('2') =g= -1;
+con4960..0.50663212684930381 * x('1') + 
+0.86216233276811094 * x('2') =g= -1;
+con4961..(-0.48488758831074213) * x('1') - 
+0.87457648419231593 * x('2') =g= -1;
+con4962..(-0.48543698897228194) * x('1') - 
+0.87427165671633478 * x('2') =g= -1;
+con4963..0.50609033029199413 * x('1') + 
+0.86248047953848805 * x('2') =g= -1;
+con4964..(-0.48598619800229098) * x('1') - 
+0.8739664841121072 * x('2') =g= -1;
+con4965..(-0.4865352151839607) * x('1') - 
+0.87366096650010472 * x('2') =g= -1;
+con4966..0.5055483339500223 * x('1') + 
+0.86279828583531437 * x('2') =g= -1;
+con4967..(-0.48708404030056379) * x('1') - 
+0.87335510400093197 * x('2') =g= -1;
+con4968..(-0.48763267313544389) * x('1') - 
+0.87304889673533248 * x('2') =g= -1;
+con4969..0.50500613803734651 * x('1') + 
+0.8631157515331328 * x('2') =g= -1;
+con4970..(-0.48818111347202081) * x('1') - 
+0.87274234482418578 * x('2') =g= -1;
+con4971..(-0.48872936109379472) * x('1') - 
+0.87243544838850473 * x('2') =g= -1;
+con4972..0.50446374276800454 * x('1') + 
+0.86343287650662026 * x('2') =g= -1;
+con4973..(-0.48927741578433664) * x('1') - 
+0.87212820754944131 * x('2') =g= -1;
+con4974..(-0.48982527732729686) * x('1') - 
+0.87182062242828184 * x('2') =g= -1;
+con4975..0.50392114835611346 * x('1') + 
+0.863749660630588 * x('2') =g= -1;
+con4976..(-0.49037294550640098) * x('1') - 
+0.87151269314644886 * x('2') =g= -1;
+con4977..(-0.49092042010545106) * x('1') - 
+0.87120441982550079 * x('2') =g= -1;
+con4978..0.5033783550158677 * x('1') + 
+0.86406610377998228 * x('2') =g= -1;
+con4979..(-0.49146770090832637) * x('1') - 
+0.87089580258713151 * x('2') =g= -1;
+con4980..(-0.49201478769898027) * x('1') - 
+0.87058684155317179 * x('2') =g= -1;
+con4981..0.5028353629615413 * x('1') + 
+0.86438220582988345 * x('2') =g= -1;
+con4982..(-0.49256168026144503) * x('1') - 
+0.87027753684558695 * x('2') =g= -1;
+con4983..(-0.4931083783798289) * x('1') - 
+0.86996788858647844 * x('2') =g= -1;
+con4984..0.50229217240748558 * x('1') + 
+0.86469796665550724 * x('2') =g= -1;
+con4985..(-0.49365488183831768) * x('1') - 
+0.86965789689808293 * x('2') =g= -1;
+con4986..(-0.49420119042117078) * x('1') - 
+0.86934756190277407 * x('2') =g= -1;
+con4987..0.50174878356813157 * x('1') + 
+0.86501338613220335 * x('2') =g= -1;
+con4988..(-0.49474730391273014) * x('1') - 
+0.86903688372305843 * x('2') =g= -1;
+con4989..(-0.49529322209740984) * x('1') - 
+0.86872586248158046 * x('2') =g= -1;
+con4990..0.50120519665798791 * x('1') + 
+0.86532846413545628 * x('2') =g= -1;
+con4991..(-0.49583894475970125) * x('1') - 
+0.86841449830111994 * x('2') =g= -1;
+con4992..(-0.49638447168417754) * x('1') - 
+0.86810279130458967 * x('2') =g= -1;
+con4993..0.50066141189164093 * x('1') + 
+0.86564320054088606 * x('2') =g= -1;
+con4994..(-0.4969298026554837) * x('1') - 
+0.86779074161504055 * x('2') =g= -1;
+con4995..(-0.49747493745834515) * x('1') - 
+0.86747834935565715 * x('2') =g= -1;
+con4996..0.50011742948375615 * x('1') + 
+0.86595759522424665 * x('2') =g= -1;
+con4997..(-0.49801987587756397) * x('1') - 
+0.86716561464975983 * x('2') =g= -1;
+con4998..(-0.49856461769802063) * x('1') - 
+0.8668525376208035 * x('2') =g= -1;
+con4999..0.49957324964907623 * x('1') + 
+0.86627164806142753 * x('2') =g= -1;
+con5000..(-0.49910916270467071) * x('1') - 
+0.86653911839237963 * x('2') =g= -1;
+con5001..(-0.49965351068255004) * x('1') - 
+0.86622535708821335 * x('2') =g= -1;
+con5002..0.49902887260242212 * x('1') + 
+0.8665853589284529 * x('2') =g= -1;
+con5003..(-0.50019766141677136) * x('1') - 
+0.8659112538321655 * x('2') =g= -1;
+con5004..(-0.50074161469252509) * x('1') - 
+0.86559680874823164 * x('2') =g= -1;
+con5005..0.49848429855869258 * x('1') + 
+0.86689872770148202 * x('2') =g= -1;
+con5006..(-0.50128537029508058) * x('1') - 
+0.86528202196054205 * x('2') =g= -1;
+con5007..(-0.50182892800978218) * x('1') - 
+0.86496689359336343 * x('2') =g= -1;
+con5008..0.49793952773286415 * x('1') + 
+0.86721175425680908 * x('2') =g= -1;
+con5009..(-0.50237228762205766) * x('1') - 
+0.86465142377109439 * x('2') =g= -1;
+con5010..(-0.50291544891740814) * x('1') - 
+0.86433561261827097 * x('2') =g= -1;
+con5011..0.4973945603399913 * x('1') + 
+0.86752443847086336 * x('2') =g= -1;
+con5012..(-0.50345841168141348) * x('1') - 
+0.864019460259564 * x('2') =g= -1;
+con5013..(-0.50400117569973624) * x('1') - 
+0.86370296681977632 * x('2') =g= -1;
+con5014..0.49684939659520516 * x('1') + 
+0.86783678022020971 * x('2') =g= -1;
+con5015..(-0.50454374075811204) * x('1') - 
+0.86338613242384832 * x('2') =g= -1;
+con5016..(-0.50508610664235831) * x('1') - 
+0.8630689571968535 * x('2') =g= -1;
+con5017..0.49630403671371587 * x('1') + 
+0.86814877938154733 * x('2') =g= -1;
+con5018..(-0.50562827313837089) * x('1') - 
+0.86275144126399983 * x('2') =g= -1;
+con5019..(-0.50617024003212219) * x('1') - 
+0.86243358475063103 * x('2') =g= -1;
+con5020..0.4957584809108096 * x('1') + 
+0.86846043583171162 * x('2') =g= -1;
+con5021..(-0.50671200710966557) * x('1') - 
+0.86211538778222385 * x('2') =g= -1;
+con5022..(-0.50725357415713268) * x('1') - 
+0.86179685048439014 * x('2') =g= -1;
+con5023..0.49521272940185063 * x('1') + 
+0.86877174944767255 * x('2') =g= -1;
+con5024..(-0.50779494096073396) * x('1') - 
+0.86147797298287598 * x('2') =g= -1;
+con5025..(-0.50833610730675893) * x('1') - 
+0.86115875540356157 * x('2') =g= -1;
+con5026..0.49466678240228024 * x('1') + 
+0.86908272010653576 * x('2') =g= -1;
+con5027..(-0.50887707298157725) * x('1') - 
+0.86083919787246121 * x('2') =g= -1;
+con5028..(-0.50941783777163518) * x('1') - 
+0.86051930051572467 * x('2') =g= -1;
+con5029..0.49412064012761708 * x('1') + 
+0.86939334768554211 * x('2') =g= -1;
+con5030..(-0.50995840146346061) * x('1') - 
+0.86019906345963426 * x('2') =g= -1;
+con5031..(-0.510498763843661) * x('1') - 
+0.85987848683060675 * x('2') =g= -1;
+con5032..0.4935743027934566 * x('1') + 
+0.86970363206206813 * x('2') =g= -1;
+con5033..(-0.51103892469892021) * x('1') - 
+0.85955757075519457 * x('2') =g= -1;
+con5034..(-0.5115788838160068) * x('1') - 
+0.85923631536008105 * x('2') =g= -1;
+con5035..0.49302777061547148 * x('1') + 
+0.87001357311362559 * x('2') =g= -1;
+con5036..(-0.51211864098176385) * x('1') - 
+0.85891472077208653 * x('2') =g= -1;
+con5037..(-0.51265819598311702) * x('1') - 
+0.85859278711816345 * x('2') =g= -1;
+con5038..0.49248104380941149 * x('1') + 
+0.87032317071786192 * x('2') =g= -1;
+con5039..(-0.5131975486070719) * x('1') - 
+0.85827051452539838 * x('2') =g= -1;
+con5040..(-0.51373669864071159) * x('1') - 
+0.85794790312101277 * x('2') =g= -1;
+con5041..0.49193412259110231 * x('1') + 
+0.8706324247525602 * x('2') =g= -1;
+con5042..(-0.51427564587120156) * x('1') - 
+0.85762495303236042 * x('2') =g= -1;
+con5043..(-0.51481439008578667) * x('1') - 
+0.85730166438692956 * x('2') =g= -1;
+con5044..0.49138700717644784 * x('1') + 
+0.87094133509563865 * x('2') =g= -1;
+con5045..(-0.51535293107179148) * x('1') - 
+0.85697803731234168 * x('2') =g= -1;
+con5046..(-0.51589126861662138) * x('1') - 
+0.85665407193635223 * x('2') =g= -1;
+con5047..0.49083969778142733 * x('1') + 
+0.87124990162515203 * x('2') =g= -1;
+con5048..(-0.51642940250776237) * x('1') - 
+0.8563297683868496 * x('2') =g= -1;
+con5049..(-0.51696733253277871) * x('1') - 
+0.85600512679185714 * x('2') =g= -1;
+con5050..0.49029219462209717 * x('1') + 
+0.87155812421929013 * x('2') =g= -1;
+con5051..(-0.51750505847931749) * x('1') - 
+0.85568014727953001 * x('2') =g= -1;
+con5052..(-0.51804258013510629) * x('1') - 
+0.85535482997815704 * x('2') =g= -1;
+con5053..0.48974449791459029 * x('1') + 
+0.87186600275637871 * x('2') =g= -1;
+con5054..(-0.5185798972879504) * x('1') - 
+0.85502917501616216 * x('2') =g= -1;
+con5055..(-0.51911700972574082) * x('1') - 
+0.85470318252209931 * x('2') =g= -1;
+con5056..0.48919660787511593 * x('1') + 
+0.87217353711487944 * x('2') =g= -1;
+con5057..(-0.51965391723644527) * x('1') - 
+0.85437685262465868 * x('2') =g= -1;
+con5058..(-0.52019061960811208) * x('1') - 
+0.8540501854526632 * x('2') =g= -1;
+con5059..0.48864852471995979 * x('1') + 
+0.87248072717338965 * x('2') =g= -1;
+con5060..(-0.52072711662887528) * x('1') - 
+0.85372318113506662 * x('2') =g= -1;
+con5061..(-0.52126340808694438) * x('1') - 
+0.85339583980095879 * x('2') =g= -1;
+con5062..0.48810024866548313 * x('1') + 
+0.87278757281064301 * x('2') =g= -1;
+con5063..(-0.52179949377061341) * x('1') - 
+0.85306816157956078 * x('2') =g= -1;
+con5064..(-0.52233537346825654) * x('1') - 
+0.85274014660022712 * x('2') =g= -1;
+con5065..0.48755177992812437 * x('1') + 
+0.87309407390550864 * x('2') =g= -1;
+con5066..(-0.52287104696833042) * x('1') - 
+0.8524117949924449 * x('2') =g= -1;
+con5067..(-0.52340651405937044) * x('1') - 
+0.85208310688583544 * x('2') =g= -1;
+con5068..0.48700311872439761 * x('1') + 
+0.87340023033699177 * x('2') =g= -1;
+con5069..(-0.52394177452999591) * x('1') - 
+0.85175408241015138 * x('2') =g= -1;
+con5070..(-0.52447682816890695) * x('1') - 
+0.85142472169527872 * x('2') =g= -1;
+con5071..0.48645426527089219 * x('1') + 
+0.87370604198423418 * x('2') =g= -1;
+con5072..(-0.52501167476488542) * x('1') - 
+0.85109502487123623 * x('2') =g= -1;
+con5073..(-0.52554631410679542) * x('1') - 
+0.8507649920681748 * x('2') =g= -1;
+con5074..0.48590521978427476 * x('1') + 
+0.87401150872651312 * x('2') =g= -1;
+con5075..(-0.52608074598358001) * x('1') - 
+0.85043462341637988 * x('2') =g= -1;
+con5076..(-0.5266149701842695) * x('1') - 
+0.85010391904626637 * x('2') =g= -1;
+con5077..0.48535598248128642 * x('1') + 
+0.87431663044324237 * x('2') =g= -1;
+con5078..(-0.52714898649797148) * x('1') - 
+0.84977287908838406 * x('2') =g= -1;
+con5079..(-0.52768279471387569) * x('1') - 
+0.84944150367341587 * x('2') =g= -1;
+con5080..0.4848065535787448 * x('1') + 
+0.87462140701397173 * x('2') =g= -1;
+con5081..(-0.52821639462125869) * x('1') - 
+0.84910979293217359 * x('2') =g= -1;
+con5082..(-0.52874978600947364) * x('1') - 
+0.84877774699560538 * x('2') =g= -1;
+con5083..0.48425693329354291 * x('1') + 
+0.87492583831838744 * x('2') =g= -1;
+con5084..(-0.52928296866795943) * x('1') - 
+0.84844536599478926 * x('2') =g= -1;
+con5085..(-0.52981594238623619) * x('1') - 
+0.84811265006093639 * x('2') =g= -1;
+con5086..0.4837071218426493 * x('1') + 
+0.87522992423631196 * x('2') =g= -1;
+con5087..(-0.53034870695390779) * x('1') - 
+0.8477795993253896 * x('2') =g= -1;
+con5088..(-0.53088126216065779) * x('1') - 
+0.84744621391962505 * x('2') =g= -1;
+con5089..0.4831571194431083 * x('1') + 
+0.87553366464770388 * x('2') =g= -1;
+con5090..(-0.53141360779625524) * x('1') - 
+0.8471124939752499 * x('2') =g= -1;
+con5091..(-0.53194574365055081) * x('1') - 
+0.84677843962400368 * x('2') =g= -1;
+con5092..0.48260692631203866 * x('1') + 
+0.87583705943265866 * x('2') =g= -1;
+con5093..(-0.53247766951347808) * x('1') - 
+0.84644405099775799 * x('2') =g= -1;
+con5094..(-0.53300938517505436) * x('1') - 
+0.84610932822851592 * x('2') =g= -1;
+con5095..0.48205654266663595 * x('1') + 
+0.87614010847140755 * x('2') =g= -1;
+con5096..(-0.53354089042537678) * x('1') - 
+0.84577427144841433 * x('2') =g= -1;
+con5097..(-0.53407218505463083) * x('1') - 
+0.84543888078971874 * x('2') =g= -1;
+con5098..0.48150596872416951 * x('1') + 
+0.87644281164431892 * x('2') =g= -1;
+con5099..(-0.53460326885308074) * x('1') - 
+0.84510315638482902 * x('2') =g= -1;
+con5100..(-0.53513414161107387) * x('1') - 
+0.84476709836627706 * x('2') =g= -1;
+con5101..0.4809552047019845 * x('1') + 
+0.87674516883189735 * x('2') =g= -1;
+con5102..(-0.53566480311904541) * x('1') - 
+0.8444307068667235 * x('2') =g= -1;
+con5103..(-0.53619525316750871) * x('1') - 
+0.84409398201896402 * x('2') =g= -1;
+con5104..0.48040425081750115 * x('1') + 
+0.87704717991478398 * x('2') =g= -1;
+con5105..(-0.53672549154706373) * x('1') - 
+0.84375692395592394 * x('2') =g= -1;
+con5106..(-0.53725551804839367) * x('1') - 
+0.84341953281066007 * x('2') =g= -1;
+con5107..0.4798531072882144 * x('1') + 
+0.87734884477375674 * x('2') =g= -1;
+con5108..(-0.53778533246226334) * x('1') - 
+0.84308180871636229 * x('2') =g= -1;
+con5109..(-0.53831493457952362) * x('1') - 
+0.84274375180635019 * x('2') =g= -1;
+con5110..0.47930177433169419 * x('1') + 
+0.87765016328973 * x('2') =g= -1;
+con5111..(-0.53884432419110817) * x('1') - 
+0.84240536221407558 * x('2') =g= -1;
+con5112..(-0.53937350108803472) * x('1') - 
+0.84206664007312149 * x('2') =g= -1;
+con5113..0.47875025216558514 * x('1') + 
+0.87795113534375513 * x('2') =g= -1;
+con5114..(-0.53990246506140493) * x('1') - 
+0.84172758551720195 * x('2') =g= -1;
+con5115..(-0.54043121590240528) * x('1') - 
+0.84138819868016201 * x('2') =g= -1;
+con5116..0.47819854100760689 * x('1') + 
+0.87825176081701994 * x('2') =g= -1;
+con5117..(-0.54095975340230418) * x('1') - 
+0.8410484796959794 * x('2') =g= -1;
+con5118..(-0.5414880773524563) * x('1') - 
+0.84070842869876139 * x('2') =g= -1;
+con5119..0.47764664107555305 * x('1') + 
+0.8785520395908496 * x('2') =g= -1;
+con5120..(-0.54201618754430092) * x('1') - 
+0.84036804582274616 * x('2') =g= -1;
+con5121..(-0.54254408376935848) * x('1') - 
+0.84002733120230511 * x('2') =g= -1;
+con5122..0.47709455258729228 * x('1') + 
+0.87885197154670558 * x('2') =g= -1;
+con5123..(-0.54307176581923922) * x('1') - 
+0.8396862849719372 * x('2') =g= -1;
+con5124..(-0.54359923348563266) * x('1') - 
+0.83934490726627553 * x('2') =g= -1;
+con5125..0.47654227576076746 * x('1') + 
+0.87915155656618649 * x('2') =g= -1;
+con5126..(-0.54412648656031593) * x('1') - 
+0.83900319822008207 * x('2') =g= -1;
+con5127..(-0.54465352483515095) * x('1') - 
+0.8386611579682498 * x('2') =g= -1;
+con5128..0.47598981081399594 * x('1') + 
+0.87945079453102792 * x('2') =g= -1;
+con5129..(-0.54518034810208205) * x('1') - 
+0.83831878664580373 * x('2') =g= -1;
+con5130..(-0.5457069561531408) * x('1') - 
+0.83797608438789828 * x('2') =g= -1;
+con5131..0.47543715796506925 * x('1') + 
+0.87974968532310249 * x('2') =g= -1;
+con5132..(-0.54623334878044294) * x('1') - 
+0.8376330513298188 * x('2') =g= -1;
+con5133..(-0.54675952577619003) * x('1') - 
+0.83728968760698097 * x('2') =g= -1;
+con5134..0.47488431743215315 * x('1') + 
+0.88004822882441958 * x('2') =g= -1;
+con5135..(-0.54728548693266577) * x('1') - 
+0.83694599335493258 * x('2') =g= -1;
+con5136..(-0.54781123204224413) * x('1') - 
+0.836601968709349 * x('2') =g= -1;
+con5137..0.47433128943348762 * x('1') + 
+0.880346424917126 * x('2') =g= -1;
+con5138..(-0.54833676089737937) * x('1') - 
+0.83625761380603891 * x('2') =g= -1;
+con5139..(-0.54886207329061398) * x('1') - 
+0.83591292878093992 * x('2') =g= -1;
+con5140..0.47377807418738582 * x('1') + 
+0.88064427348350593 * x('2') =g= -1;
+con5141..(-0.54938716901457585) * x('1') - 
+0.83556791377011952 * x('2') =g= -1;
+con5142..(-0.54991204786197567) * x('1') - 
+0.83522256890977753 * x('2') =g= -1;
+con5143..0.47322467191223622 * x('1') + 
+0.88094177440597987 * x('2') =g= -1;
+con5144..(-0.55043670962561464) * x('1') - 
+0.8348768943362409 * x('2') =g= -1;
+con5145..(-0.55096115409837465) * x('1') - 
+0.83453089018596971 * x('2') =g= -1;
+con5146..0.47267108282650028 * x('1') + 
+0.88123892756710631 * x('2') =g= -1;
+con5147..(-0.55148538107322631) * x('1') - 
+0.83418455659555246 * x('2') =g= -1;
+con5148..(-0.55200939034322594) * x('1') - 
+0.83383789370170747 * x('2') =g= -1;
+con5149..0.47211730714871292 * x('1') + 
+0.88153573284958098 * x('2') =g= -1;
+con5150..(-0.55253318170151378) * x('1') - 
+0.83349090164128481 * x('2') =g= -1;
+con5151..(-0.55305675494131823) * x('1') - 
+0.83314358055126281 * x('2') =g= -1;
+con5152..0.47156334509748338 * x('1') + 
+0.88183219013623659 * x('2') =g= -1;
+con5153..(-0.55358010985595318) * x('1') - 
+0.83279593056875034 * x('2') =g= -1;
+con5154..(-0.55410324623881912) * x('1') - 
+0.83244795183098541 * x('2') =g= -1;
+con5155..0.47100919689149412 * x('1') + 
+0.88212829931004355 * x('2') =g= -1;
+con5156..(-0.5546261638834008) * x('1') - 
+0.83209964447533746 * x('2') =g= -1;
+con5157..(-0.55514886258327167) * x('1') - 
+0.83175100863930407 * x('2') =g= -1;
+con5158..0.47045486274950121 * x('1') + 
+0.88242406025410935 * x('2') =g= -1;
+con5159..(-0.55567134213209068) * x('1') - 
+0.83140204446051302 * x('2') =g= -1;
+con5160..(-0.55619360232360338) * x('1') - 
+0.8310527520767218 * x('2') =g= -1;
+con5161..0.46990034289033411 * x('1') + 
+0.88271947285167918 * x('2') =g= -1;
+con5162..(-0.55671564295164255) * x('1') - 
+0.83070313162581688 * x('2') =g= -1;
+con5163..(-0.55723746381012484) * x('1') - 
+0.83035318324581608 * x('2') =g= -1;
+con5164..0.46934563753289554 * x('1') + 
+0.88301453698613586 * x('2') =g= -1;
+con5165..(-0.55775906469305858) * x('1') - 
+0.83000290707486346 * x('2') =g= -1;
+con5166..(-0.55828044539453481) * x('1') - 
+0.8296523032512354 * x('2') =g= -1;
+con5167..0.46879074689616168 * x('1') + 
+0.88330925254099935 * x('2') =g= -1;
+con5168..(-0.55880160570873139) * x('1') - 
+0.82930137191333742 * x('2') =g= -1;
+con5169..(-0.55932254542991744) * x('1') - 
+0.82895011319970158 * x('2') =g= -1;
+con5170..0.46823567119918102 * x('1') + 
+0.88360361939992782 * x('2') =g= -1;
+con5171..(-0.55984326435244414) * x('1') - 
+0.82859852724899252 * x('2') =g= -1;
+con5172..(-0.56036376227075291) * x('1') - 
+0.82824661420000212 * x('2') =g= -1;
+con5173..0.46768041066107657 * x('1') + 
+0.88389763744671634 * x('2') =g= -1;
+con5174..(-0.56088403897937134) * x('1') - 
+0.82789437419165191 * x('2') =g= -1;
+con5175..(-0.56140409427291549) * x('1') - 
+0.8275418073629921 * x('2') =g= -1;
+con5176..0.46712496550104282 * x('1') + 
+0.88419130656529843 * x('2') =g= -1;
+con5177..(-0.56192392794608614) * x('1') - 
+0.82718891385320303 * x('2') =g= -1;
+con5178..(-0.56244353979367434) * x('1') - 
+0.82683569380159294 * x('2') =g= -1;
+con5179..0.46656933593834804 * x('1') + 
+0.88448462663974492 * x('2') =g= -1;
+con5180..(-0.56296292961055738) * x('1') - 
+0.82648214734759917 * x('2') =g= -1;
+con5181..(-0.56348209719170073) * x('1') - 
+0.82612827463078808 * x('2') =g= -1;
+con5182..0.466013522192333 * x('1') + 
+0.88477759755426444 * x('2') =g= -1;
+con5183..(-0.56400104233215786) * x('1') - 
+0.82577407579085427 * x('2') =g= -1;
+con5184..(-0.56451976482706812) * x('1') - 
+0.82541955096762265 * x('2') =g= -1;
+con5185..0.46545752448241129 * x('1') + 
+0.88507021919320361 * x('2') =g= -1;
+con5186..(-0.56503826447166094) * x('1') - 
+0.82506470030104506 * x('2') =g= -1;
+con5187..(-0.56555654106125364) * x('1') - 
+0.82470952393120234 * x('2') =g= -1;
+con5188..0.46490134302806913 * x('1') + 
+0.88536249144104673 * x('2') =g= -1;
+con5189..(-0.56607459439124885) * x('1') - 
+0.82435402199830576 * x('2') =g= -1;
+con5190..(-0.56659242425714207) * x('1') - 
+0.82399819464269142 * x('2') =g= -1;
+con5191..0.46434497804886471 * x('1') + 
+0.88565441418241653 * x('2') =g= -1;
+con5192..(-0.56711003045451225) * x('1') - 
+0.8236420420048276 * x('2') =g= -1;
+con5193..(-0.56762741277902951) * x('1') - 
+0.82328556422530896 * x('2') =g= -1;
+con5194..0.46378842976442991 * x('1') + 
+0.88594598730207275 * x('2') =g= -1;
+con5195..(-0.56814457102645144) * x('1') - 
+0.82292876144485883 * x('2') =g= -1;
+con5196..(-0.56866150499262502) * x('1') - 
+0.82257163380432874 * x('2') =g= -1;
+con5197..0.46323169839446759 * x('1') + 
+0.88623721068491423 * x('2') =g= -1;
+con5198..(-0.56917821447348338) * x('1') - 
+0.8222141814446996 * x('2') =g= -1;
+con5199..(-0.56969469926505067) * x('1') - 
+0.82185640450707897 * x('2') =g= -1;
+con5200..0.46267478415875363 * x('1') + 
+0.88652808421597717 * x('2') =g= -1;
+con5201..(-0.57021095916343878) * x('1') - 
+0.82149830313270344 * x('2') =g= -1;
+con5202..(-0.57072699396484861) * x('1') - 
+0.82113987746293726 * x('2') =g= -1;
+con5203..0.46211768727713642 * x('1') + 
+0.88681860778043597 * x('2') =g= -1;
+con5204..(-0.57124280346557044) * x('1') - 
+0.82078112763927247 * x('2') =g= -1;
+con5205..(-0.5717583874619816) * x('1') - 
+0.82042205380333033 * x('2') =g= -1;
+con5206..0.46156040796953557 * x('1') + 
+0.88710878126360349 * x('2') =g= -1;
+con5207..(-0.57227374575055012) * x('1') - 
+0.82006265609685869 * x('2') =g= -1;
+con5208..(-0.57278887812783374) * x('1') - 
+0.81970293466173316 * x('2') =g= -1;
+con5209..0.46100294645594325 * x('1') + 
+0.88739860455093045 * x('2') =g= -1;
+con5210..(-0.57330378439047591) * x('1') - 
+0.81934288963995938 * x('2') =g= -1;
+con5211..(-0.57381846433521488) * x('1') - 
+0.81898252117366688 * x('2') =g= -1;
+con5212..0.46044530295642344 * x('1') + 
+0.88768807752800616 * x('2') =g= -1;
+con5213..(-0.57433291775887285) * x('1') - 
+0.81862182940511652 * x('2') =g= -1;
+con5214..(-0.5748471444583646) * x('1') - 
+0.81826081447669485 * x('2') =g= -1;
+con5215..0.4598874776911121 * x('1') + 
+0.88797720008055769 * x('2') =g= -1;
+con5216..(-0.57536114423069407) * x('1') - 
+0.81789947653091599 * x('2') =g= -1;
+con5217..(-0.575874916872953) * x('1') - 
+0.81753781571042294 * x('2') =g= -1;
+con5218..0.45932947088021686 * x('1') + 
+0.88826597209445102 * x('2') =g= -1;
+con5219..(-0.57638846218232465) * x('1') - 
+0.81717583215798473 * x('2') =g= -1;
+con5220..(-0.5769017799560815) * x('1') - 
+0.81681352601649837 * x('2') =g= -1;
+con5221..0.45877128274401652 * x('1') + 
+0.88855439345569032 * x('2') =g= -1;
+con5222..(-0.57741486999158642) * x('1') - 
+0.81645089742898769 * x('2') =g= -1;
+con5223..(-0.57792773208628945) * x('1') - 
+0.81608794653860561 * x('2') =g= -1;
+con5224..0.45821291350286258 * x('1') + 
+0.88884246405041778 * x('2') =g= -1;
+con5225..(-0.57844036603773563) * x('1') - 
+0.81572467348862909 * x('2') =g= -1;
+con5226..(-0.57895277164355474) * x('1') - 
+0.81536107842246552 * x('2') =g= -1;
+con5227..0.45765436337717691 * x('1') + 
+0.88913018376491471 * x('2') =g= -1;
+con5228..(-0.57946494870147014) * x('1') - 
+0.81499716148364754 * x('2') =g= -1;
+con5229..(-0.57997689700929478) * x('1') - 
+0.81463292281583477 * x('2') =g= -1;
+con5230..0.45709563258745339 * x('1') + 
+0.8894175524856005 * x('2') =g= -1;
+con5231..(-0.58048861636492943) * x('1') - 
+0.81426836256281609 * x('2') =g= -1;
+con5232..(-0.58100010656637036) * x('1') - 
+0.81390348086850339 * x('2') =g= -1;
+con5233..0.45653672135425705 * x('1') + 
+0.88970457009903314 * x('2') =g= -1;
+con5234..(-0.58151136741169884) * x('1') - 
+0.81353827787693933 * x('2') =g= -1;
+con5235..(-0.58202239869909) * x('1') - 
+0.81317275373229114 * x('2') =g= -1;
+con5236..0.45597762989822416 * x('1') + 
+0.88999123649190959 * x('2') =g= -1;
+con5237..(-0.58253320022680932) * x('1') - 
+0.81280690857885307 * x('2') =g= -1;
+con5238..(-0.58304377179321099) * x('1') - 
+0.81244074256104748 * x('2') =g= -1;
+con5239..0.45541835844006223 * x('1') + 
+0.89027755155106492 * x('2') =g= -1;
+con5240..(-0.58355411319674177) * x('1') - 
+0.81207425582342174 * x('2') =g= -1;
+con5241..(-0.58406422423593918) * x('1') - 
+0.81170744851065058 * x('2') =g= -1;
+con5242..0.45485890720054972 * x('1') + 
+0.89056351516347321 * x('2') =g= -1;
+con5243..(-0.58457410470943194) * x('1') - 
+0.81134032076753471 * x('2') =g= -1;
+con5244..(-0.58508375441593763) * x('1') - 
+0.81097287273900276 * x('2') =g= -1;
+con5245..0.4542992764005363 * x('1') + 
+0.89084912721624709 * x('2') =g= -1;
+con5246..(-0.5855931731542674) * x('1') - 
+0.81060510457010837 * x('2') =g= -1;
+con5247..(-0.58610236072332245) * x('1') - 
+0.81023701640603185 * x('2') =g= -1;
+con5248..0.45373946626094164 * x('1') + 
+0.89113438759663843 * x('2') =g= -1;
+con5249..(-0.58661131692209567) * x('1') - 
+0.8098686083920803 * x('2') =g= -1;
+con5250..(-0.58712004154967157) * x('1') - 
+0.80949988067368606 * x('2') =g= -1;
+con5251..0.45317947700275779 * x('1') + 
+0.89141929619203719 * x('2') =g= -1;
+con5252..(-0.58762853440522433) * x('1') - 
+0.80913083339640945 * x('2') =g= -1;
+con5253..(-0.58813679528802143) * x('1') - 
+0.80876146670593552 * x('2') =g= -1;
+con5254..0.45261930884704593 * x('1') + 
+0.89170385288997289 * x('2') =g= -1;
+con5255..(-0.58864482399742213) * x('1') - 
+0.80839178074807505 * x('2') =g= -1;
+con5256..(-0.58915262033287452) * x('1') - 
+0.80802177566876743 * x('2') =g= -1;
+con5257..0.45205896201493878 * x('1') + 
+0.89198805757811361 * x('2') =g= -1;
+con5258..(-0.58966018409392318) * x('1') - 
+0.80765145161407381 * x('2') =g= -1;
+con5259..(-0.59016751508019971) * x('1') - 
+0.80728080873018548 * x('2') =g= -1;
+con5260..0.45149843672763934 * x('1') + 
+0.89227191014426643 * x('2') =g= -1;
+con5261..(-0.59067461309143032) * x('1') - 
+0.80690984716341707 * x('2') =g= -1;
+con5262..(-0.5911814779274327) * x('1') - 
+0.80653856706020965 * x('2') =g= -1;
+con5263..0.450937733206421 * x('1') + 
+0.89255541047637743 * x('2') =g= -1;
+con5264..(-0.59168810938811711) * x('1') - 
+0.80616696856712966 * x('2') =g= -1;
+con5265..(-0.59219450727348388) * x('1') - 
+0.80579505183087075 * x('2') =g= -1;
+con5266..0.45037685167262786 * x('1') + 
+0.8928385584625318 * x('2') =g= -1;
+con5267..(-0.59270067138362748) * x('1') - 
+0.80542281699825036 * x('2') =g= -1;
+con5268..(-0.59320660151873439) * x('1') - 
+0.80505026421621251 * x('2') =g= -1;
+con5269..0.44981579234767338 * x('1') + 
+0.89312135399095394 * x('2') =g= -1;
+con5270..(-0.59371229747908294) * x('1') - 
+0.80467739363182622 * x('2') =g= -1;
+con5271..(-0.59421775906504493) * x('1') - 
+0.80430420539228575 * x('2') =g= -1;
+con5272..0.44925455545304255 * x('1') + 
+0.89340379695000682 * x('2') =g= -1;
+con5273..(-0.59472298607708252) * x('1') - 
+0.80393069964491237 * x('2') =g= -1;
+con5274..(-0.59522797831575258) * x('1') - 
+0.80355687653715091 * x('2') =g= -1;
+con5275..0.44869314121028925 * x('1') + 
+0.89368588722819353 * x('2') =g= -1;
+con5276..(-0.59573273558170459) * x('1') - 
+0.80318273621657166 * x('2') =g= -1;
+con5277..(-0.59623725767567803) * x('1') - 
+0.80280827883087202 * x('2') =g= -1;
+con5278..0.44813154984103781 * x('1') + 
+0.8939676247141557 * x('2') =g= -1;
+con5279..(-0.59674154439851013) * x('1') - 
+0.80243350452787121 * x('2') =g= -1;
+con5280..(-0.597245595551126) * x('1') - 
+0.80205841345551687 * x('2') =g= -1;
+con5281..0.44756978156698313 * x('1') + 
+0.89424900929667406 * x('2') =g= -1;
+con5282..(-0.59774941093454692) * x('1') - 
+0.80168300576187979 * x('2') =g= -1;
+con5283..(-0.5982529903498861) * x('1') - 
+0.8013072815951563 * x('2') =g= -1;
+con5284..0.4470078366098888 * x('1') + 
+0.89453004086466936 * x('2') =g= -1;
+con5285..(-0.59875633359835079) * x('1') - 
+0.80093124110366698 * x('2') =g= -1;
+con5286..(-0.59925944048123947) * x('1') - 
+0.80055488443585909 * x('2') =g= -1;
+con5287..0.44644571519158899 * x('1') + 
+0.89481071930720113 * x('2') =g= -1;
+con5288..(-0.59976231079994591) * x('1') - 
+0.80017821174030301 * x('2') =g= -1;
+con5289..(-0.60026494435595712) * x('1') - 
+0.79980122316569358 * x('2') =g= -1;
+con5290..0.44588341753398675 * x('1') + 
+0.89509104451346877 * x('2') =g= -1;
+con5291..(-0.60076734095085116) * x('1') - 
+0.79942391886085307 * x('2') =g= -1;
+con5292..(-0.60126950038630411) * x('1') - 
+0.79904629897472412 * x('2') =g= -1;
+con5293..0.44532094385905574 * x('1') + 
+0.89537101637281047 * x('2') =g= -1;
+con5294..(-0.60177142246408111) * x('1') - 
+0.79866836365637794 * x('2') =g= -1;
+con5295..(-0.60227310698604364) * x('1') - 
+0.79829011305500808 * x('2') =g= -1;
+con5296..0.44475829438883863 * x('1') + 
+0.89565063477470452 * x('2') =g= -1;
+con5297..(-0.60277455375414701) * x('1') - 
+0.79791154731993252 * x('2') =g= -1;
+con5298..(-0.60327576257043736) * x('1') - 
+0.79753266660059596 * x('2') =g= -1;
+con5299..0.44419546934544668 * x('1') + 
+0.89592989960876868 * x('2') =g= -1;
+con5300..(-0.60377673323706005) * x('1') - 
+0.79715347104656331 * x('2') =g= -1;
+con5301..(-0.60427746555624939) * x('1') - 
+0.79677396080752783 * x('2') =g= -1;
+con5302..0.44363246895106218 * x('1') + 
+0.89620881076475967 * x('2') =g= -1;
+con5303..(-0.6047779593303364) * x('1') - 
+0.79639413603330478 * x('2') =g= -1;
+con5304..(-0.60527821436174645) * x('1') - 
+0.79601399687383367 * x('2') =g= -1;
+con5305..0.44306929342793488 * x('1') + 
+0.89648736813257468 * x('2') =g= -1;
+con5306..(-0.60577823045299706) * x('1') - 
+0.79563354347917958 * x('2') =g= -1;
+con5307..(-0.60627800740670224) * x('1') - 
+0.79525277599953004 * x('2') =g= -1;
+con5308..0.4425059429983848 * x('1') + 
+0.89676557160225001 * x('2') =g= -1;
+con5309..(-0.60677754502556935) * x('1') - 
+0.79487169458519724 * x('2') =g= -1;
+con5310..(-0.60727684311240149) * x('1') - 
+0.79449029938661664 * x('2') =g= -1;
+con5311..0.44194241788480054 * x('1') + 
+0.89704342106396184 * x('2') =g= -1;
+con5312..(-0.60777590147009297) * x('1') - 
+0.79410859055434968 * x('2') =g= -1;
+con5313..(-0.60827471990163795) * x('1') - 
+0.79372656823907806 * x('2') =g= -1;
+con5314..0.44137871830963982 * x('1') + 
+0.89732091640802603 * x('2') =g= -1;
+con5315..(-0.60877329821012038) * x('1') - 
+0.7933442325916108 * x('2') =g= -1;
+con5316..(-0.60927163619872171) * x('1') - 
+0.79296158376287851 * x('2') =g= -1;
+con5317..0.44081484449542935 * x('1') + 
+0.89759805752489819 * x('2') =g= -1;
+con5318..(-0.60976973367071818) * x('1') - 
+0.79257862190393535 * x('2') =g= -1;
+con5319..(-0.6102675904294792) * x('1') - 
+0.79219534716596096 * x('2') =g= -1;
+con5320..0.44025079666476385 * x('1') + 
+0.89787484430517417 * x('2') =g= -1;
+con5321..(-0.61076520627847108) * x('1') - 
+0.79181175970025652 * x('2') =g= -1;
+con5322..(-0.61126258102125441) * x('1') - 
+0.79142785965824736 * x('2') =g= -1;
+con5323..0.43968657504030817 * x('1') + 
+0.89815127663958894 * x('2') =g= -1;
+con5324..(-0.61175971446148514) * x('1') - 
+0.79104364719148224 * x('2') =g= -1;
+con5325..(-0.61225660640291524) * x('1') - 
+0.79065912245163261 * x('2') =g= -1;
+con5326..0.43912217984479435 * x('1') + 
+0.89842735441901822 * x('2') =g= -1;
+con5327..(-0.61275325664938962) * x('1') - 
+0.79027428559049495 * x('2') =g= -1;
+con5328..(-0.61324966500485112) * x('1') - 
+0.78988913675998729 * x('2') =g= -1;
+con5329..0.43855761130102366 * x('1') + 
+0.89870307753447698 * x('2') =g= -1;
+con5330..(-0.61374583127333704) * x('1') - 
+0.78950367611215122 * x('2') =g= -1;
+con5331..(-0.61424175525898095) * x('1') - 
+0.78911790379915103 * x('2') =g= -1;
+con5332..0.43799286963186573 * x('1') + 
+0.89897844587712084 * x('2') =g= -1;
+con5333..(-0.61473743676600956) * x('1') - 
+0.78873181997327613 * x('2') =g= -1;
+con5334..(-0.61523287559874984) * x('1') - 
+0.78834542478693515 * x('2') =g= -1;
+con5335..0.43742795506025844 * x('1') + 
+0.89925345933824496 * x('2') =g= -1;
+con5336..(-0.61572807156161991) * x('1') - 
+0.78795871839266352 * x('2') =g= -1;
+con5337..(-0.61622302445913635) * x('1') - 
+0.78757170094311701 * x('2') =g= -1;
+con5338..0.43686286780920802 * x('1') + 
+0.89952811780928477 * x('2') =g= -1;
+con5339..(-0.61671773409591202) * x('1') - 
+0.78718437259107477 * x('2') =g= -1;
+con5340..(-0.61721220027665336) * x('1') - 
+0.78679673348943968 * x('2') =g= -1;
+con5341..0.43629760810178875 * x('1') + 
+0.89980242118181586 * x('2') =g= -1;
+con5342..(-0.61770642280616528) * x('1') - 
+0.78640878379123602 * x('2') =g= -1;
+con5343..(-0.61820040148934863) * x('1') - 
+0.78602052364961061 * x('2') =g= -1;
+con5344..0.43573217616114324 * x('1') + 
+0.90007636934755397 * x('2') =g= -1;
+con5345..(-0.61869413613119795) * x('1') - 
+0.78563195321783508 * x('2') =g= -1;
+con5346..(-0.61918762653680892) * x('1') - 
+0.7852430726492996 * x('2') =g= -1;
+con5347..0.43516657221048133 * x('1') + 
+0.90034996219835539 * x('2') =g= -1;
+con5348..(-0.61968087251136861) * x('1') - 
+0.78485388209752072 * x('2') =g= -1;
+con5349..(-0.62017387386016365) * x('1') - 
+0.78446438171613486 * x('2') =g= -1;
+con5350..0.43460079647308214 * x('1') + 
+0.90062319962621584 * x('2') =g= -1;
+con5351..(-0.62066663038857639) * x('1') - 
+0.78407457165890182 * x('2') =g= -1;
+con5352..(-0.62115914190208643) * x('1') - 
+0.78368445207970261 * x('2') =g= -1;
+con5353..0.43403484917229118 * x('1') + 
+0.90089608152327227 * x('2') =g= -1;
+con5354..(-0.62165140820626819) * x('1') - 
+0.78329402313254237 * x('2') =g= -1;
+con5355..(-0.62214342910679477) * x('1') - 
+0.78290328497154649 * x('2') =g= -1;
+con5356..0.43346873053152252 * x('1') + 
+0.90116860778180141 * x('2') =g= -1;
+con5357..(-0.62263520440943643) * x('1') - 
+0.78251223775096279 * x('2') =g= -1;
+con5358..(-0.62312673392005735) * x('1') - 
+0.78212088162516291 * x('2') =g= -1;
+con5359..0.4329024407742576 * x('1') + 
+0.90144077829422076 * x('2') =g= -1;
+con5360..(-0.62361801744462364) * x('1') - 
+0.78172921674863682 * x('2') =g= -1;
+con5361..(-0.62410905478919376) * x('1') - 
+0.78133724327599996 * x('2') =g= -1;
+con5362..0.43233598012404556 * x('1') + 
+0.9017125929530877 * x('2') =g= -1;
+con5363..(-0.624599845759926) * x('1') - 
+0.78094496136198777 * x('2') =g= -1;
+con5364..(-0.6250903901630761) * x('1') - 
+0.78055237116145726 * x('2') =g= -1;
+con5365..0.43176934880450302 * x('1') + 
+0.90198405165110063 * x('2') =g= -1;
+con5366..(-0.62558068780499421) * x('1') - 
+0.78015947282938913 * x('2') =g= -1;
+con5367..(-0.62607073849213268) * x('1') - 
+0.77976626652088232 * x('2') =g= -1;
+con5368..0.43120254703931321 * x('1') + 
+0.90225515428109848 * x('2') =g= -1;
+con5369..(-0.62656054203103673) * x('1') - 
+0.77937275239116077 * x('2') =g= -1;
+con5370..(-0.62705009822835156) * x('1') - 
+0.77897893059556789 * x('2') =g= -1;
+con5371..0.43063557505222805 * x('1') + 
+0.9025259007360602 * x('2') =g= -1;
+con5372..(-0.62753940689081988) * x('1') - 
+0.77858480128956931 * x('2') =g= -1;
+con5373..(-0.6280284678252821) * x('1') - 
+0.77819036462875113 * x('2') =g= -1;
+con5374..0.43006843306706577 * x('1') + 
+0.90279629090910574 * x('2') =g= -1;
+con5375..(-0.62851728083867497) * x('1') - 
+0.77779562076882269 * x('2') =g= -1;
+con5376..(-0.62900584573803486) * x('1') - 
+0.77740056986561279 * x('2') =g= -1;
+con5377..0.42950112130771129 * x('1') + 
+0.90306632469349601 * x('2') =g= -1;
+con5378..(-0.62949416233049604) * x('1') - 
+0.77700521207507167 * x('2') =g= -1;
+con5379..(-0.62998223042328827) * x('1') - 
+0.77660954755327272 * x('2') =g= -1;
+con5380..0.42893363999811784 * x('1') + 
+0.90333600198263164 * x('2') =g= -1;
+con5381..(-0.63047004982374411) * x('1') - 
+0.77621357645640643 * x('2') =g= -1;
+con5382..(-0.63095762033928948) * x('1') - 
+0.77581729894078866 * x('2') =g= -1;
+con5383..0.42836598936230436 * x('1') + 
+0.903605322670055 * x('2') =g= -1;
+con5384..(-0.63144494177745125) * x('1') - 
+0.77542071516285349 * x('2') =g= -1;
+con5385..(-0.63193201394585474) * x('1') - 
+0.77502382527915614 * x('2') =g= -1;
+con5386..0.42779816962435718 * x('1') + 
+0.90387428664944869 * x('2') =g= -1;
+con5387..(-0.63241883665222154) * x('1') - 
+0.7746266294463745 * x('2') =g= -1;
+con5388..(-0.6329054097043737) * x('1') - 
+0.77422912782130515 * x('2') =g= -1;
+con5389..0.42723018100842941 * x('1') + 
+0.90414289381463631 * x('2') =g= -1;
+con5390..(-0.63339173291023121) * x('1') - 
+0.77383132056086634 * x('2') =g= -1;
+con5391..(-0.63387780607781286) * x('1') - 
+0.77343320782209679 * x('2') =g= -1;
+con5392..0.42666202373874068 * x('1') + 
+0.90441114405958223 * x('2') =g= -1;
+con5393..(-0.63436362901523646) * x('1') - 
+0.77303478976215523 * x('2') =g= -1;
+con5394..(-0.63484920153071689) * x('1') - 
+0.77263606653832262 * x('2') =g= -1;
+con5395..0.42609369803957747 * x('1') + 
+0.90467903727839161 * x('2') =g= -1;
+con5396..(-0.63533452343256969) * x('1') - 
+0.77223703830799884 * x('2') =g= -1;
+con5397..(-0.63581959452920889) * x('1') - 
+0.77183770522870443 * x('2') =g= -1;
+con5398..0.42552520413529188 * x('1') + 
+0.90494657336531092 * x('2') =g= -1;
+con5399..(-0.63630441462914789) * x('1') - 
+0.77143806745808019 * x('2') =g= -1;
+con5400..(-0.63678898354099689) * x('1') - 
+0.77103812515388892 * x('2') =g= -1;
+con5401..0.42495654225030399 * x('1') + 
+0.90521375221472722 * x('2') =g= -1;
+con5402..(-0.63727330107346958) * x('1') - 
+0.77063787847401 * x('2') =g= -1;
+con5403..(-0.63775736703537433) * x('1') - 
+0.77023732757644692 * x('2') =g= -1;
+con5404..0.42438771260909858 * x('1') + 
+0.90548057372116886 * x('2') =g= -1;
+con5405..(-0.63824118123562168) * x('1') - 
+0.76983647261932087 * x('2') =g= -1;
+con5406..(-0.63872474348322117) * x('1') - 
+0.76943531376087315 * x('2') =g= -1;
+con5407..0.42381871543622751 * x('1') + 
+0.9057470377793051 * x('2') =g= -1;
+con5408..(-0.63920805358728006) * x('1') - 
+0.76903385115946676 * x('2') =g= -1;
+con5409..(-0.63969111135700707) * x('1') - 
+0.76863208497358293 * x('2') =g= -1;
+con5410..0.42324955095630867 * x('1') + 
+0.90601314428394641 * x('2') =g= -1;
+con5411..(-0.64017391660171008) * x('1') - 
+0.768230015361823 * x('2') =g= -1;
+con5412..(-0.64065646913079621) * x('1') - 
+0.76782764248290847 * x('2') =g= -1;
+con5413..0.42268021939402589 * x('1') + 
+0.90627889313004428 * x('2') =g= -1;
+con5414..(-0.6411387687537734) * x('1') - 
+0.76742496649567993 * x('2') =g= -1;
+con5415..(-0.64162081528024739) * x('1') - 
+0.76702198755909901 * x('2') =g= -1;
+con5416..0.42211072097412899 * x('1') + 
+0.9065442842126914 * x('2') =g= -1;
+con5417..(-0.64210260851992551) * x('1') - 
+0.76661870583224567 * x('2') =g= -1;
+con5418..(-0.64258414828261479) * x('1') - 
+0.76621512147431969 * x('2') =g= -1;
+con5419..0.4215410559214337 * x('1') + 
+0.9068093174271219 * x('2') =g= -1;
+con5420..(-0.64306543437822283) * x('1') - 
+0.76581123464463974 * x('2') =g= -1;
+con5421..(-0.64354646661675474) * x('1') - 
+0.76540704550264638 * x('2') =g= -1;
+con5422..0.42097122446082169 * x('1') + 
+0.9070739926687108 * x('2') =g= -1;
+con5423..(-0.6440272448083203) * x('1') - 
+0.76500255420789531 * x('2') =g= -1;
+con5424..(-0.64450776876312599) * x('1') - 
+0.76459776092006504 * x('2') =g= -1;
+con5425..0.42040122681723968 * x('1') + 
+0.90733830983297503 * x('2') =g= -1;
+con5426..(-0.64498803829147822) * x('1') - 
+0.76419266579895317 * x('2') =g= -1;
+con5427..(-0.64546805320378819) * x('1') - 
+0.76378726900447325 * x('2') =g= -1;
+con5428..0.41983106321570052 * x('1') + 
+0.90760226881557238 * x('2') =g= -1;
+con5429..(-0.64594781331056272) * x('1') - 
+0.76338157069666179 * x('2') =g= -1;
+con5430..(-0.64642731842241197) * x('1') - 
+0.76297557103567193 * x('2') =g= -1;
+con5431..0.41926073388128299 * x('1') + 
+0.90786586951230186 * x('2') =g= -1;
+con5432..(-0.64690656835004667) * x('1') - 
+0.76256927018177589 * x('2') =g= -1;
+con5433..(-0.64738556290427585) * x('1') - 
+0.76216266829536716 * x('2') =g= -1;
+con5434..0.41869023903913027 * x('1') + 
+0.90812911181910472 * x('2') =g= -1;
+con5435..(-0.64786430189601374) * x('1') - 
+0.76175576553695401 * x('2') =g= -1;
+con5436..(-0.64834278513627097) * x('1') - 
+0.76134856206716728 * x('2') =g= -1;
+con5437..0.41811957891445162 * x('1') + 
+0.90839199563206285 * x('2') =g= -1;
+con5438..(-0.64882101243616164) * x('1') - 
+0.76094105804675449 * x('2') =g= -1;
+con5439..(-0.64929898360690053) * x('1') - 
+0.7605332536365822 * x('2') =g= -1;
+con5440..0.41754875373252126 * x('1') + 
+0.90865452084740017 * x('2') =g= -1;
+con5441..(-0.6497766984598039) * x('1') - 
+0.76012514899763517 * x('2') =g= -1;
+con5442..(-0.65025415680628718) * x('1') - 
+0.75971674429101832 * x('2') =g= -1;
+con5443..0.41697776371867895 * x('1') + 
+0.90891668736148179 * x('2') =g= -1;
+con5444..(-0.65073135845786922) * x('1') - 
+0.75930803967795313 * x('2') =g= -1;
+con5445..(-0.65120830322617029) * x('1') - 
+0.75889903531977976 * x('2') =g= -1;
+con5446..0.4164066090983285 * x('1') + 
+0.90917849507081494 * x('2') =g= -1;
+con5447..(-0.65168499092290899) * x('1') - 
+0.75848973137795872 * x('2') =g= -1;
+con5448..(-0.65216142135991051) * x('1') - 
+0.75808012801406499 * x('2') =g= -1;
+con5449..0.41583529009694004 * x('1') + 
+0.90943994387204796 * x('2') =g= -1;
+con5450..(-0.65263759434909674) * x('1') - 
+0.75767022538979567 * x('2') =g= -1;
+con5451..(-0.65311350970249382) * x('1') - 
+0.75726002366696377 * x('2') =g= -1;
+con5452..0.41526380694004794 * x('1') + 
+0.90970103366197108 * x('2') =g= -1;
+con5453..(-0.65358916723222971) * x('1') - 
+0.75684952300750008 * x('2') =g= -1;
+con5454..(-0.65406456675053182) * x('1') - 
+0.75643872357345587 * x('2') =g= -1;
+con5455..0.41469215985325109 * x('1') + 
+0.90996176433751641 * x('2') =g= -1;
+con5456..(-0.6545397080697325) * x('1') - 
+0.75602762552699709 * x('2') =g= -1;
+con5457..(-0.65501459100226367) * x('1') - 
+0.75561622903041015 * x('2') =g= -1;
+con5458..0.41412034906221346 * x('1') + 
+0.9102221357957575 * x('2') =g= -1;
+con5459..(-0.65548921536066074) * x('1') - 
+0.75520453424609768 * x('2') =g= -1;
+con5460..(-0.65596358095755958) * x('1') - 
+0.75479254133658158 * x('2') =g= -1;
+con5461..0.41354837479266365 * x('1') + 
+0.91048214793391014 * x('2') =g= -1;
+con5462..(-0.65643768760570065) * x('1') - 
+0.75438025046449919 * x('2') =g= -1;
+con5463..(-0.65691153511792477) * x('1') - 
+0.75396766179260732 * x('2') =g= -1;
+con5464..0.41297623727039479 * x('1') + 
+0.91074180064933141 * x('2') =g= -1;
+con5465..(-0.65738512330717425) * x('1') - 
+0.7535547754837808 * x('2') =g= -1;
+con5466..(-0.65785845198649651) * x('1') - 
+0.7531415917010098 * x('2') =g= -1;
+con5467..0.41240393672126424 * x('1') + 
+0.91100109383952088 * x('2') =g= -1;
+con5468..(-0.65833152096903891) * x('1') - 
+0.75272811060740374 * x('2') =g= -1;
+con5469..(-0.65880433006805317) * x('1') - 
+0.75231433236618828 * x('2') =g= -1;
+con5470..0.41183147337119397 * x('1') + 
+0.91126002740211953 * x('2') =g= -1;
+con5471..(-0.65927687909689159) * x('1') - 
+0.75190025714070785 * x('2') =g= -1;
+con5472..(-0.65974916786901172) * x('1') - 
+0.75148588509442182 * x('2') =g= -1;
+con5473..0.41125884744617031 * x('1') + 
+0.91151860123491046 * x('2') =g= -1;
+con5474..(-0.66022119619797204) * x('1') - 
+0.75107121639090846 * x('2') =g= -1;
+con5475..(-0.66069296389743293) * x('1') - 
+0.75065625119386392 * x('2') =g= -1;
+con5476..0.41068605917224293 * x('1') + 
+0.9117768152358191 * x('2') =g= -1;
+con5477..(-0.66116447078116058) * x('1') - 
+0.75024098966709873 * x('2') =g= -1;
+con5478..(-0.66163571666302168) * x('1') - 
+0.74982543197454277 * x('2') =g= -1;
+con5479..0.41011310877552709 * x('1') + 
+0.91203466930291233 * x('2') =g= -1;
+con5480..(-0.66210670135698724) * x('1') - 
+0.74940957828024146 * x('2') =g= -1;
+con5481..(-0.66257742467713077) * x('1') - 
+0.74899342874835773 * x('2') =g= -1;
+con5482..0.40953999648220052 * x('1') + 
+0.91229216333439977 * x('2') =g= -1;
+con5483..(-0.66304788643762824) * x('1') - 
+0.7485769835431717 * x('2') =g= -1;
+con5484..(-0.66351808645276167) * x('1') - 
+0.74816024282907834 * x('2') =g= -1;
+con5485..0.40896672251850574 * x('1') + 
+0.91254929722863276 * x('2') =g= -1;
+con5486..(-0.66398802453691241) * x('1') - 
+0.74774320677059225 * x('2') =g= -1;
+con5487..(-0.66445770050456887) * x('1') - 
+0.74732587553234142 * x('2') =g= -1;
+con5488..0.40839328711074896 * x('1') + 
+0.91280607088410481 * x('2') =g= -1;
+con5489..(-0.66492711417032035) * x('1') - 
+0.74690824927907296 * x('2') =g= -1;
+con5490..(-0.66539626534886154) * x('1') - 
+0.74649032817564853 * x('2') =g= -1;
+con5491..0.40781969048529998 * x('1') + 
+0.9130624841994518 * x('2') =g= -1;
+con5492..(-0.66586515385498934) * x('1') - 
+0.74607211238704751 * x('2') =g= -1;
+con5493..(-0.66633377950360484) * x('1') - 
+0.74565360207836551 * x('2') =g= -1;
+con5494..0.40724593286859251 * x('1') + 
+0.91331853707345168 * x('2') =g= -1;
+con5495..(-0.66680214210971334) * x('1') - 
+0.74523479741481313 * x('2') =g= -1;
+con5496..(-0.66727024148842284) * x('1') - 
+0.74481569856171925 * x('2') =g= -1;
+con5497..0.40667201448712303 * x('1') + 
+0.91357422940502497 * x('2') =g= -1;
+con5498..(-0.66773807745494729) * x('1') - 
+0.74439630568452642 * x('2') =g= -1;
+con5499..(-0.66820564982460229) * x('1') - 
+0.7439766189487953 * x('2') =g= -1;
+con5500..0.40609793556745288 * x('1') + 
+0.9138295610932341 * x('2') =g= -1;
+con5501..(-0.66867295841280927) * x('1') - 
+0.74355663852020137 * x('2') =g= -1;
+con5502..(-0.6691400030350928) * x('1') - 
+0.74313636456453669 * x('2') =g= -1;
+con5503..0.40552369633620527 * x('1') + 
+0.91408453203728435 * x('2') =g= -1;
+con5504..(-0.66960678350708158) * x('1') - 
+0.74271579724770931 * x('2') =g= -1;
+con5505..(-0.67007329964450946) * x('1') - 
+0.74229493673574209 * x('2') =g= -1;
+con5506..0.40494929702006749 * x('1') + 
+0.91433914213652323 * x('2') =g= -1;
+con5507..(-0.6705395512632133) * x('1') - 
+0.74187378319477537 * x('2') =g= -1;
+con5508..(-0.67100553817913655) * x('1') - 
+0.74145233679106259 * x('2') =g= -1;
+con5509..0.40437473784579048 * x('1') + 
+0.91459339129044015 * x('2') =g= -1;
+con5510..(-0.67147126020832459) * x('1') - 
+0.74103059769097546 * x('2') =g= -1;
+con5511..(-0.67193671716692949) * x('1') - 
+0.74060856606099945 * x('2') =g= -1;
+con5512..0.40380001904018709 * x('1') + 
+0.91484727939866806 * x('2') =g= -1;
+con5513..(-0.67240190887120665) * x('1') - 
+0.74018624206773631 * x('2') =g= -1;
+con5514..(-0.67286683513751622) * x('1') - 
+0.73976362587790334 * x('2') =g= -1;
+con5515..0.40322514083013405 * x('1') + 
+0.91510080636098146 * x('2') =g= -1;
+con5516..(-0.6733314957823241) * x('1') - 
+0.73934071765833242 * x('2') =g= -1;
+con5517..(-0.67379589062219958) * x('1') - 
+0.73891751757597202 * x('2') =g= -1;
+con5518..0.40265010344257079 * x('1') + 
+0.91535397207729807 * x('2') =g= -1;
+con5519..(-0.67426001947381897) * x('1') - 
+0.7384940257978837 * x('2') =g= -1;
+con5520..(-0.67472388215396206) * x('1') - 
+0.73807024249124575 * x('2') =g= -1;
+con5521..0.40207490710449956 * x('1') + 
+0.91560677644767796 * x('2') =g= -1;
+con5522..(-0.67518747847951277) * x('1') - 
+0.73764616782335246 * x('2') =g= -1;
+con5523..(-0.67565080826746293) * x('1') - 
+0.73722180196161047 * x('2') =g= -1;
+con5524..0.4014995520429856 * x('1') + 
+0.91585921937232362 * x('2') =g= -1;
+con5525..(-0.67611387133490708) * x('1') - 
+0.73679714507354377 * x('2') =g= -1;
+con5526..(-0.67657666749904688) * x('1') - 
+0.73637219732678949 * x('2') =g= -1;
+con5527..0.4009240384851559 * x('1') + 
+0.91611130075158076 * x('2') =g= -1;
+con5528..(-0.67703919657718736) * x('1') - 
+0.73594695888910144 * x('2') =g= -1;
+con5529..(-0.67750145838674136) * x('1') - 
+0.73552142992834579 * x('2') =g= -1;
+con5530..0.40034836665820156 * x('1') + 
+0.91636302048593721 * x('2') =g= -1;
+con5531..(-0.67796345274522596) * x('1') - 
+0.73509561061250517 * x('2') =g= -1;
+con5532..(-0.67842517947026226) * x('1') - 
+0.73466950110967744 * x('2') =g= -1;
+con5533..0.39977253678937474 * x('1') + 
+0.91661437847602412 * x('2') =g= -1;
+con5534..(-0.67888663837958041) * x('1') - 
+0.7342431015880726 * x('2') =g= -1;
+con5535..(-0.67934782929101356) * x('1') - 
+0.73381641221601734 * x('2') =g= -1;
+con5536..0.39919654910599067 * x('1') + 
+0.91686537462261508 * x('2') =g= -1;
+con5537..(-0.67980875202250213) * x('1') - 
+0.73338943316195138 * x('2') =g= -1;
+con5538..(-0.68026940639209077) * x('1') - 
+0.73296216459443009 * x('2') =g= -1;
+con5539..0.39862040383542674 * x('1') + 
+0.91711600882662669 * x('2') =g= -1;
+con5540..(-0.68072979221793273) * x('1') - 
+0.73253460668212134 * x('2') =g= -1;
+con5541..(-0.68118990931828516) * x('1') - 
+0.73210675959380844 * x('2') =g= -1;
+con5542..0.39804410120512262 * x('1') + 
+0.91736628098911832 * x('2') =g= -1;
+con5543..(-0.68164975751151058) * x('1') - 
+0.73167862349839008 * x('2') =g= -1;
+con5544..(-0.68210933661608064) * x('1') - 
+0.73125019856487594 * x('2') =g= -1;
+con5545..0.39746764144258001 * x('1') + 
+0.91761619101129244 * x('2') =g= -1;
+con5546..(-0.68256864645057036) * x('1') - 
+0.73082148496239241 * x('2') =g= -1;
+con5547..(-0.68302768683366288) * x('1') - 
+0.73039248286017822 * x('2') =g= -1;
+con5548..0.3968910247753627 * x('1') + 
+0.91786573879449407 * x('2') =g= -1;
+con5549..(-0.68348645758414617) * x('1') - 
+0.72996319242758756 * x('2') =g= -1;
+con5550..(-0.68394495852091663) * x('1') - 
+0.72953361383408621 * x('2') =g= -1;
+con5551..0.39631425143109655 * x('1') + 
+0.91811492424021168 * x('2') =g= -1;
+con5552..(-0.68440318946297574) * x('1') - 
+0.72910374724925542 * x('2') =g= -1;
+con5553..(-0.68486115022943062) * x('1') - 
+0.72867359284279076 * x('2') =g= -1;
+con5554..0.39573732163746855 * x('1') + 
+0.91836374725007675 * x('2') =g= -1;
+con5555..(-0.68531884063949788) * x('1') - 
+0.72824315078449897 * x('2') =g= -1;
+con5556..(-0.68577626051249818) * x('1') - 
+0.72781242124430257 * x('2') =g= -1;
+con5557..0.39516023562222879 * x('1') + 
+0.91861220772586327 * x('2') =g= -1;
+con5558..(-0.68623340966786084) * x('1') - 
+0.7273814043922362 * x('2') =g= -1;
+con5559..(-0.6866902879251201) * x('1') - 
+0.72695010039844932 * x('2') =g= -1;
+con5560..0.39458299361318766 * x('1') + 
+0.91886030556948917 * x('2') =g= -1;
+con5561..(-0.68714689510392013) * x('1') - 
+0.7265185094332024 * x('2') =g= -1;
+con5562..(-0.68760323102400889) * x('1') - 
+0.72608663166687171 * x('2') =g= -1;
+con5563..0.39400559583821793 * x('1') + 
+0.9191080406830151 * x('2') =g= -1;
+con5564..(-0.68805929550524247) * x('1') - 
+0.7256544672699462 * x('2') =g= -1;
+con5565..(-0.68851508836758579) * x('1') - 
+0.72522201641302619 * x('2') =g= -1;
+con5566..0.3934280425252536 * x('1') + 
+0.91935541296864476 * x('2') =g= -1;
+con5567..(-0.68897060943110855) * x('1') - 
+0.72478927926682724 * x('2') =g= -1;
+con5568..(-0.6894258585159897) * x('1') - 
+0.72435625600217635 * x('2') =g= -1;
+con5569..0.39285033390229018 * x('1') + 
+0.91960242232872524 * x('2') =g= -1;
+con5570..(-0.68988083544251433) * x('1') - 
+0.72392294679001468 * x('2') =g= -1;
+con5571..(-0.690335540031075) * x('1') - 
+0.72348935180139595 * x('2') =g= -1;
+con5572..0.39227247019738459 * x('1') + 
+0.91984906866574689 * x('2') =g= -1;
+con5573..(-0.69078997210217274) * x('1') - 
+0.72305547120748581 * x('2') =g= -1;
+con5574..(-0.69124413147641461) * x('1') - 
+0.72262130517956447 * x('2') =g= -1;
+con5575..0.39169445163865424 * x('1') + 
+0.9200953518823437 * x('2') =g= -1;
+con5576..(-0.69169801797451758) * x('1') - 
+0.72218685388902226 * x('2') =g= -1;
+con5577..(-0.69215163141730407) * x('1') - 
+0.72175211750736445 * x('2') =g= -1;
+con5578..0.3911162784542791 * x('1') + 
+0.92034127188129233 * x('2') =g= -1;
+con5579..(-0.69260497162570578) * x('1') - 
+0.72131709620620754 * x('2') =g= -1;
+con5580..(-0.69305803842076141) * x('1') - 
+0.72088179015728115 * x('2') =g= -1;
+con5581..0.3905379508724986 * x('1') + 
+0.92058682856551333 * x('2') =g= -1;
+con5582..(-0.69351083162361771) * x('1') - 
+0.72044619953242739 * x('2') =g= -1;
+con5583..(-0.69396335105553031) * x('1') - 
+0.7200103245035997 * x('2') =g= -1;
+con5584..0.38995946912161394 * x('1') + 
+0.92083202183807067 * x('2') =g= -1;
+con5585..(-0.694415596537861) * x('1') - 
+0.71957416524286544 * x('2') =g= -1;
+con5586..(-0.69486756789208259) * x('1') - 
+0.719137721922402 * x('2') =g= -1;
+con5587..0.38938083342998764 * x('1') + 
+0.92107685160217123 * x('2') =g= -1;
+con5588..(-0.69531926493977325) * x('1') - 
+0.71870099471450111 * x('2') =g= -1;
+con5589..(-0.6957706875026215) * x('1') - 
+0.71826398379156497 * x('2') =g= -1;
+con5590..0.38880204402604185 * x('1') + 
+0.92132131776116621 * x('2') =g= -1;
+con5591..(-0.69622183540242288) * x('1') - 
+0.7178266893261086 * x('2') =g= -1;
+con5592..(-0.69667270846108165) * x('1') - 
+0.71738911149075912 * x('2') =g= -1;
+con5593..0.38822310113826036 * x('1') + 
+0.9215654202185497 * x('2') =g= -1;
+con5594..(-0.69712330650061127) * x('1') - 
+0.71695125045825447 * x('2') =g= -1;
+con5595..(-0.69757362934313238) * x('1') - 
+0.71651310640144616 * x('2') =g= -1;
+con5596..0.38764400499518659 * x('1') + 
+0.92180915887795978 * x('2') =g= -1;
+con5597..(-0.69802367681087651) * x('1') - 
+0.71607467949329484 * x('2') =g= -1;
+con5598..(-0.69847344872618145) * x('1') - 
+0.71563596990687539 * x('2') =g= -1;
+con5599..0.3870647558254256 * x('1') + 
+0.92205253364317785 * x('2') =g= -1;
+con5600..(-0.69892294491149554) * x('1') - 
+0.71519697781537261 * x('2') =g= -1;
+con5601..(-0.69937216518937495) * x('1') - 
+0.71475770339208355 * x('2') =g= -1;
+con5602..0.38648535385764243 * x('1') + 
+0.922295544418129 * x('2') =g= -1;
+con5603..(-0.69982110938248476) * x('1') - 
+0.71431814681041694 * x('2') =g= -1;
+con5604..(-0.70026977731359996) * x('1') - 
+0.71387830824389187 * x('2') =g= -1;
+con5605..0.38590579932056152 * x('1') + 
+0.92253819110688229 * x('2') =g= -1;
+con5606..(-0.70071816880560311) * x('1') - 
+0.71343818786614044 * x('2') =g= -1;
+con5607..(-0.70116628368148792) * x('1') - 
+0.71299778585090368 * x('2') =g= -1;
+con5608..0.38532609244296928 * x('1') + 
+0.92278047361365001 * x('2') =g= -1;
+con5609..(-0.70161412176435545) * x('1') - 
+0.71255710237203596 * x('2') =g= -1;
+con5610..(-0.70206168287741733) * x('1') - 
+0.71211613760350134 * x('2') =g= -1;
+con5611..0.38474623345371067 * x('1') + 
+0.92302239184278878 * x('2') =g= -1;
+con5612..(-0.70250896684399344) * x('1') - 
+0.71167489171937559 * x('2') =g= -1;
+con5613..(-0.70295597348751337) * x('1') - 
+0.71123336489384581 * x('2') =g= -1;
+con5614..0.38416622258169147 * x('1') + 
+0.92326394569879866 * x('2') =g= -1;
+con5615..(-0.70340270263151705) * x('1') - 
+0.7107915573012088 * x('2') =g= -1;
+con5616..(-0.70384915409965232) * x('1') - 
+0.71034946911587393 * x('2') =g= -1;
+con5617..0.38358606005587736 * x('1') + 
+0.92350513508632359 * x('2') =g= -1;
+con5618..(-0.70429532771567893) * x('1') - 
+0.70990710051235895 * x('2') =g= -1;
+con5619..(-0.70474122330346445) * x('1') - 
+0.70946445166529404 * x('2') =g= -1;
+con5620..0.38300574610529375 * x('1') + 
+0.92374595991015152 * x('2') =g= -1;
+con5621..(-0.70518684068698578) * x('1') - 
+0.70902152274942098 * x('2') =g= -1;
+con5622..(-0.70563217969033198) * x('1') - 
+0.70857831393958914 * x('2') =g= -1;
+con5623..0.38242528095902589 * x('1') + 
+0.92398642007521414 * x('2') =g= -1;
+con5624..(-0.70607724013769979) * x('1') - 
+0.708134825410761 * x('2') =g= -1;
+con5625..(-0.70652202185339741) * x('1') - 
+0.70769105733800786 * x('2') =g= -1;
+con5626..0.38184466484621876 * x('1') + 
+0.92422651548658719 * x('2') =g= -1;
+con5627..(-0.7069665246618414) * x('1') - 
+0.70724700989651279 * x('2') =g= -1;
+con5628..(-0.70741074838756102) * x('1') - 
+0.70680268326156692 * x('2') =g= -1;
+con5629..0.38126389799607707 * x('1') + 
+0.92446624604949046 * x('2') =g= -1;
+con5630..(-0.70785469285519287) * x('1') - 
+0.70635807760857428 * x('2') =g= -1;
+con5631..(-0.7082983578894847) * x('1') - 
+0.70591319311304801 * x('2') =g= -1;
+con5632..0.38068298063786438 * x('1') + 
+0.92470561166928766 * x('2') =g= -1;
+con5633..(-0.70874174331529627) * x('1') - 
+0.70546802995060998 * x('2') =g= -1;
+con5634..(-0.70918484895759537) * x('1') - 
+0.70502258829699394 * x('2') =g= -1;
+con5635..0.3801019130009044 * x('1') + 
+0.92494461225148661 * x('2') =g= -1;
+con5636..(-0.70962767464146181) * x('1') - 
+0.70457686832804245 * x('2') =g= -1;
+con5637..(-0.71007022019208443) * x('1') - 
+0.70413087021970899 * x('2') =g= -1;
+con5638..0.37952069531457994 * x('1') + 
+0.92518324770173921 * x('2') =g= -1;
+con5639..(-0.71051248543476508) * x('1') - 
+0.70368459414805484 * x('2') =g= -1;
+con5640..(-0.71095447019491365) * x('1') - 
+0.70323804028925341 * x('2') =g= -1;
+con5641..0.37893932780833289 * x('1') + 
+0.9254215179258416 * x('2') =g= -1;
+con5642..(-0.71139617429805135) * x('1') - 
+0.70279120881958712 * x('2') =g= -1;
+con5643..(-0.71183759756981202) * x('1') - 
+0.70234409991544622 * x('2') =g= -1;
+con5644..0.37835781071166452 * x('1') + 
+0.92565942282973401 * x('2') =g= -1;
+con5645..(-0.71227873983593804) * x('1') - 
+0.70189671375333285 * x('2') =g= -1;
+con5646..(-0.71271960092228448) * x('1') - 
+0.70144905050985673 * x('2') =g= -1;
+con5647..0.37777614425413492 * x('1') + 
+0.9258969623195008 * x('2') =g= -1;
+con5648..(-0.71316018065481546) * x('1') - 
+0.70100111036173907 * x('2') =g= -1;
+con5649..(-0.71360047885960898) * x('1') - 
+0.70055289348580718 * x('2') =g= -1;
+con5650..0.37719432866536351 * x('1') + 
+0.92613413630137065 * x('2') =g= -1;
+con5651..(-0.71404049536285141) * x('1') - 
+0.7001044000590011 * x('2') =g= -1;
+con5652..(-0.71448022999084093) * x('1') - 
+0.69965563025836863 * x('2') =g= -1;
+con5653..0.37661236417502769 * x('1') + 
+0.92637094468171677 * x('2') =g= -1;
+con5654..(-0.71491968256998895) * x('1') - 
+0.6992065842610653 * x('2') =g= -1;
+con5655..(-0.71535885292681578) * x('1') - 
+0.69875726224435786 * x('2') =g= -1;
+con5656..0.37603025101286491 * x('1') + 
+0.92660738736705628 * x('2') =g= -1;
+con5657..(-0.71579774088795478) * x('1') - 
+0.69830766438562053 * x('2') =g= -1;
+con5658..(-0.71623634628014921) * x('1') - 
+0.69785779086233768 * x('2') =g= -1;
+con5659..0.37544798940867069 * x('1') + 
+0.92684346426405073 * x('2') =g= -1;
+con5660..(-0.71667466893025622) * x('1') - 
+0.69740764185210047 * x('2') =g= -1;
+con5661..(-0.71711270866524224) * x('1') - 
+0.69695721753261108 * x('2') =g= -1;
+con5662..0.37486557959229866 * x('1') + 
+0.92707917527950656 * x('2') =g= -1;
+con5663..(-0.7175504653121858) * x('1') - 
+0.69650651808168007 * x('2') =g= -1;
+con5664..(-0.71798793869827893) * x('1') - 
+0.69605554367722433 * x('2') =g= -1;
+con5665..0.37428302179366169 * x('1') + 
+0.92731452032037398 * x('2') =g= -1;
+con5666..(-0.71842512865082342) * x('1') - 
+0.69560429449727212 * x('2') =g= -1;
+con5667..(-0.71886203499723444) * x('1') - 
+0.69515277071995829 * x('2') =g= -1;
+con5668..0.37370031624273076 * x('1') + 
+0.92754949929374819 * x('2') =g= -1;
+con5669..(-0.71929865756503797) * x('1') - 
+0.69470097252352703 * x('2') =g= -1;
+con5670..(-0.71973499618187242) * x('1') - 
+0.69424890008633078 * x('2') =g= -1;
+con5671..0.37311746316953548 * x('1') + 
+0.92778411210686851 * x('2') =g= -1;
+con5672..(-0.7201710506754887) * x('1') - 
+0.69379655358682968 * x('2') =g= -1;
+con5673..(-0.72060682087374894) * x('1') - 
+0.69334393320359322 * x('2') =g= -1;
+con5674..0.3725344628041628 * x('1') + 
+0.92801835866711913 * x('2') =g= -1;
+con5675..(-0.72104230660462909) * x('1') - 
+0.69289103911529693 * x('2') =g= -1;
+con5676..(-0.72147750769621577) * x('1') - 
+0.69243787150072678 * x('2') =g= -1;
+con5677..0.37195131537675907 * x('1') + 
+0.92825223888202857 * x('2') =g= -1;
+con5678..(-0.72191242397670896) * x('1') - 
+0.69198443053877479 * x('2') =g= -1;
+con5679..(-0.72234705527442056) * x('1') - 
+0.69153071640844221 * x('2') =g= -1;
+con5680..0.37136802111752809 * x('1') + 
+0.92848575265927002 * x('2') =g= -1;
+con5681..(-0.7227814014177748) * x('1') - 
+0.69107672928883779 * x('2') =g= -1;
+con5682..(-0.72321546223530941) * x('1') - 
+0.69062246935917726 * x('2') =g= -1;
+con5683..0.37078458025673094 * x('1') + 
+0.92871889990666168 * x('2') =g= -1;
+con5684..(-0.72364923755567323) * x('1') - 
+0.69016793679878574 * x('2') =g= -1;
+con5685..(-0.72408272720763012) * x('1') - 
+0.68971313178709359 * x('2') =g= -1;
+con5686..0.37020099302468817 * x('1') + 
+0.9289516805321657 * x('2') =g= -1;
+con5687..(-0.72451593102005418) * x('1') - 
+0.68925805450364097 * x('2') =g= -1;
+con5688..(-0.72494884882193422) * x('1') - 
+0.68880270512807396 * x('2') =g= -1;
+con5689..0.3696172596517765 * x('1') + 
+0.92918409444388961 * x('2') =g= -1;
+con5690..(-0.72538148044237094) * x('1') - 
+0.68834708384014687 * x('2') =g= -1;
+con5691..(-0.72581382571057795) * x('1') - 
+0.68789119081972172 * x('2') =g= -1;
+con5692..0.3690333803684312 * x('1') + 
+0.92941614155008556 * x('2') =g= -1;
+con5693..(-0.7262458844558829) * x('1') - 
+0.68743502624676633 * x('2') =g= -1;
+con5694..(-0.72667765650772498) * x('1') - 
+0.68697859030135788 * x('2') =g= -1;
+con5695..0.36844935540514506 * x('1') + 
+0.92964782175915039 * x('2') =g= -1;
+con5696..(-0.72710914169565866) * x('1') - 
+0.6865218831636779 * x('2') =g= -1;
+con5697..(-0.72754033984934952) * x('1') - 
+0.68606490501401762 * x('2') =g= -1;
+con5698..0.36786518499246829 * x('1') + 
+0.92987913497962582 * x('2') =g= -1;
+con5699..(-0.72797125079857805) * x('1') - 
+0.6856076560327734 * x('2') =g= -1;
+con5700..(-0.72840187437323733) * x('1') - 
+0.68515013640044953 * x('2') =g= -1;
+con5701..0.36728086936100862 * x('1') + 
+0.93011008112019822 * x('2') =g= -1;
+con5702..(-0.72883221040333346) * x('1') - 
+0.68469234629765741 * x('2') =g= -1;
+con5703..(-0.72926225871898731) * x('1') - 
+0.6842342859051137 * x('2') =g= -1;
+con5704..0.36669640874143045 * x('1') + 
+0.93034066008969951 * x('2') =g= -1;
+con5705..(-0.72969201915043169) * x('1') - 
+0.68377595540364389 * x('2') =g= -1;
+con5706..(-0.73012149152801564) * x('1') - 
+0.68331735497417734 * x('2') =g= -1;
+con5707..0.36611180336445676 * x('1') + 
+0.93057087179710574 * x('2') =g= -1;
+con5708..(-0.73055067568219889) * x('1') - 
+0.68285848479775269 * x('2') =g= -1;
+con5709..(-0.73097957144355608) * x('1') - 
+0.68239934505551447 * x('2') =g= -1;
+con5710..0.36552705346086634 * x('1') + 
+0.93080071615153848 * x('2') =g= -1;
+con5711..(-0.7314081786427773) * x('1') - 
+0.6819399359287116 * x('2') =g= -1;
+con5712..(-0.73183649711066401) * x('1') - 
+0.68148025759870179 * x('2') =g= -1;
+con5713..0.36494215926149565 * x('1') + 
+0.93103019306226431 * x('2') =g= -1;
+con5714..(-0.73226452667813369) * x('1') - 
+0.68102031024694765 * x('2') =g= -1;
+con5715..(-0.73269226717621605) * x('1') - 
+0.68056009405501916 * x('2') =g= -1;
+con5716..0.36435712099723816 * x('1') + 
+0.93125930243869459 * x('2') =g= -1;
+con5717..(-0.73311971843605728) * x('1') - 
+0.68009960920459012 * x('2') =g= -1;
+con5718..(-0.73354688028891513) * x('1') - 
+0.67963885587744322 * x('2') =g= -1;
+con5719..0.36377193889904402 * x('1') + 
+0.93148804419038578 * x('2') =g= -1;
+con5720..(-0.73397375256616271) * x('1') - 
+0.67917783425546607 * x('2') =g= -1;
+con5721..(-0.73440033509928859) * x('1') - 
+0.67871654452065089 * x('2') =g= -1;
+con5722..0.36318661319792028 * x('1') + 
+0.93171641822703988 * x('2') =g= -1;
+con5723..(-0.73482662771989371) * x('1') - 
+0.67825498685509766 * x('2') =g= -1;
+con5724..(-0.73525263025969523) * x('1') - 
+0.67779316144101065 * x('2') =g= -1;
+con5725..0.36260114412493055 * x('1') + 
+0.93194442445850345 * x('2') =g= -1;
+con5726..(-0.735678342550523) * x('1') - 
+0.67733106846070146 * x('2') =g= -1;
+con5727..(-0.7361037644243239) * x('1') - 
+0.67686870809658461 * x('2') =g= -1;
+con5728..0.3620155319111954 * x('1') + 
+0.93217206279476872 * x('2') =g= -1;
+con5729..(-0.73652889571315694) * x('1') - 
+0.67640608053118334 * x('2') =g= -1;
+con5730..(-0.73695373624919647) * x('1') - 
+0.6759431859471251 * x('2') =g= -1;
+con5731..0.36142977678789112 * x('1') + 
+0.93239933314597301 * x('2') =g= -1;
+con5732..(-0.73737828586473342) * x('1') - 
+0.67548002452714129 * x('2') =g= -1;
+con5733..(-0.7378025443921713) * x('1') - 
+0.67501659645407097 * x('2') =g= -1;
+con5734..0.36084387898625103 * x('1') + 
+0.93262623542239886 * x('2') =g= -1;
+con5735..(-0.73822651166402997) * x('1') - 
+0.67455290191085671 * x('2') =g= -1;
+con5736..(-0.73865018751294309) * x('1') - 
+0.67408894108054762 * x('2') =g= -1;
+con5737..0.36025783873756517 * x('1') + 
+0.93285276953447405 * x('2') =g= -1;
+con5738..(-0.73907357177166078) * x('1') - 
+0.67362471414629654 * x('2') =g= -1;
+con5739..(-0.73949666427304706) * x('1') - 
+0.67316022129136266 * x('2') =g= -1;
+con5740..0.35967165627317876 * x('1') + 
+0.93307893539277176 * x('2') =g= -1;
+con5741..(-0.73991946485008098) * x('1') - 
+0.67269546269911007 * x('2') =g= -1;
+con5742..(-0.74034197333585861) * x('1') - 
+0.67223043855300602 * x('2') =g= -1;
+con5743..0.35908533182449387 * x('1') + 
+0.93330473290801064 * x('2') =g= -1;
+con5744..(-0.74076418956358936) * x('1') - 
+0.67176514903662476 * x('2') =g= -1;
+con5745..(-0.74118611336659923) * x('1') - 
+0.67129959433364383 * x('2') =g= -1;
+con5746..0.35849886562296851 * x('1') + 
+0.93353016199105465 * x('2') =g= -1;
+con5747..(-0.74160774457832856) * x('1') - 
+0.67083377462784666 * x('2') =g= -1;
+con5748..(-0.74202908303233461) * x('1') - 
+0.67036769010311992 * x('2') =g= -1;
+con5749..0.35791225790011649 * x('1') + 
+0.93375522255291321 * x('2') =g= -1;
+con5750..(-0.74245012856228909) * x('1') - 
+0.66990134094345588 * x('2') =g= -1;
+con5751..(-0.74287088100197918) * x('1') - 
+0.66943472733295173 * x('2') =g= -1;
+con5752..0.35732550888750769 * x('1') + 
+0.93397991450474116 * x('2') =g= -1;
+con5753..(-0.74329134018530918) * x('1') - 
+0.66896784945580678 * x('2') =g= -1;
+con5754..(-0.74371150594629765) * x('1') - 
+0.66850070749632717 * x('2') =g= -1;
+con5755..0.35673861881676761 * x('1') + 
+0.93420423775783901 * x('2') =g= -1;
+con5756..(-0.74413137811908014) * x('1') - 
+0.66803330163892172 * x('2') =g= -1;
+con5757..(-0.74455095653790715) * x('1') - 
+0.66756563206810426 * x('2') =g= -1;
+con5758..0.35615158791957768 * x('1') + 
+0.93442819222365248 * x('2') =g= -1;
+con5759..(-0.74497024103714526) * x('1') - 
+0.66709769896849269 * x('2') =g= -1;
+con5760..(-0.74538923145127789) * x('1') - 
+0.66662950252480813 * x('2') =g= -1;
+con5761..0.35556441642767417 * x('1') + 
+0.93465177781377351 * x('2') =g= -1;
+con5762..(-0.74580792761490333) * x('1') - 
+0.66616104292187717 * x('2') =g= -1;
+con5763..(-0.74622632936273769) * x('1') - 
+0.66569232034462811 * x('2') =g= -1;
+con5764..0.3549771045728502 * x('1') + 
+0.93487499443993893 * x('2') =g= -1;
+con5765..(-0.74664443652961154) * x('1') - 
+0.66522333497809505 * x('2') =g= -1;
+con5766..(-0.74706224895047313) * x('1') - 
+0.66475408700741456 * x('2') =g= -1;
+con5767..0.35438965258695293 * x('1') + 
+0.93509784201403157 * x('2') =g= -1;
+con5768..(-0.74747976646038616) * x('1') - 
+0.66428457661782769 * x('2') =g= -1;
+con5769..(-0.74789698889453071) * x('1') - 
+0.66381480399467907 * x('2') =g= -1;
+con5770..0.35380206070188558 * x('1') + 
+0.93532032044808011 * x('2') =g= -1;
+con5771..(-0.7483139160882043) * x('1') - 
+0.66334476932341602 * x('2') =g= -1;
+con5772..(-0.74873054787681947) * x('1') - 
+0.66287447278959066 * x('2') =g= -1;
+con5773..0.35321432914960643 * x('1') + 
+0.9355424296542586 * x('2') =g= -1;
+con5774..(-0.74914688409590791) * x('1') - 
+0.66240391457885606 * x('2') =g= -1;
+con5775..(-0.7495629245811144) * x('1') - 
+0.66193309487697216 * x('2') =g= -1;
+con5776..0.35262645816212895 * x('1') + 
+0.93576416954488717 * x('2') =g= -1;
+con5777..(-0.74997866916820399) * x('1') - 
+0.66146201386979864 * x('2') =g= -1;
+con5778..(-0.75039411769305642) * x('1') - 
+0.6609906717433004 * x('2') =g= -1;
+con5779..0.35203844797152184 * x('1') + 
+0.93598554003243128 * x('2') =g= -1;
+con5780..(-0.75080926999166853) * x('1') - 
+0.66051906868354515 * x('2') =g= -1;
+con5781..(-0.75122412590015497) * x('1') - 
+0.66004720487670276 * x('2') =g= -1;
+con5782..0.3514502988099078 * x('1') + 
+0.93620654102950307 * x('2') =g= -1;
+con5783..(-0.7516386852547462) * x('1') - 
+0.65957508050904756 * x('2') =g= -1;
+con5784..(-0.75205294789179167) * x('1') - 
+0.65910269576695413 * x('2') =g= -1;
+con5785..0.350862010909466 * x('1') + 
+0.93642717244885931 * x('2') =g= -1;
+con5786..(-0.75246691364775498) * x('1') - 
+0.65863005083690351 * x('2') =g= -1;
+con5787..(-0.75288058235922006) * x('1') - 
+0.65815714590547569 * x('2') =g= -1;
+con5788..0.35027358450242885 * x('1') + 
+0.93664743420340391 * x('2') =g= -1;
+con5789..(-0.75329395386288622) * x('1') - 
+0.65768398115935578 * x('2') =g= -1;
+con5790..(-0.75370702799557021) * x('1') - 
+0.65721055678533091 * x('2') =g= -1;
+con5791..0.3496850198210843 * x('1') + 
+0.93686732620618585 * x('2') =g= -1;
+con5792..(-0.75411980459420713) * x('1') - 
+0.65673687297029004 * x('2') =g= -1;
+con5793..(-0.754532283495848) * x('1') - 
+0.65626292990122581 * x('2') =g= -1;
+con5794..0.34909631709777461 * x('1') + 
+0.93708684837040046 * x('2') =g= -1;
+con5795..(-0.75494446453766373) * x('1') - 
+0.65578872776523089 * x('2') =g= -1;
+con5796..(-0.75535634755693981) * x('1') - 
+0.65531426674950366 * x('2') =g= -1;
+con5797..0.34850747656489667 * x('1') + 
+0.93730600060938907 * x('2') =g= -1;
+con5798..(-0.75576793239108209) * x('1') - 
+0.65483954704134106 * x('2') =g= -1;
+con5799..(-0.75617921887761264) * x('1') - 
+0.65436456882814453 * x('2') =g= -1;
+con5800..0.3479184984549018 * x('1') + 
+0.93752478283663865 * x('2') =g= -1;
+con5801..(-0.75659020685417133) * x('1') - 
+0.6538893322974173 * x('2') =g= -1;
+con5802..(-0.75700089615851662) * x('1') - 
+0.65341383763676353 * x('2') =g= -1;
+con5803..0.34732938300029498 * x('1') + 
+0.93774319496578296 * x('2') =g= -1;
+con5804..(-0.75741128662852397) * x('1') - 
+0.65293808503389039 * x('2') =g= -1;
+con5805..(-0.75782137810218786) * x('1') - 
+0.65246207467660589 * x('2') =g= -1;
+con5806..0.34674013043363672 * x('1') + 
+0.93796123691060096 * x('2') =g= -1;
+con5807..(-0.75823117041761989) * x('1') - 
+0.65198580675282047 * x('2') =g= -1;
+con5808..(-0.75864066341304959) * x('1') - 
+0.65150928145054698 * x('2') =g= -1;
+con5809..0.34615074098754023 * x('1') + 
+0.93817890858501862 * x('2') =g= -1;
+con5810..(-0.75904985692682625) * x('1') - 
+0.65103249895789739 * x('2') =g= -1;
+con5811..(-0.75945875079741532) * x('1') - 
+0.6505554594630879 * x('2') =g= -1;
+con5812..0.34556121489467345 * x('1') + 
+0.93839620990310768 * x('2') =g= -1;
+con5813..(-0.75986734486340213) * x('1') - 
+0.65007816315443445 * x('2') =g= -1;
+con5814..(-0.76027563896348926) * x('1') - 
+0.64960061022035542 * x('2') =g= -1;
+con5815..0.3449715523877589 * x('1') + 
+0.93861314077908564 * x('2') =g= -1;
+con5816..(-0.76068363293649865) * x('1') - 
+0.64912280084936946 * x('2') =g= -1;
+con5817..(-0.76109132662137002) * x('1') - 
+0.64864473523009736 * x('2') =g= -1;
+con5818..0.34438175369957152 * x('1') + 
+0.93882970112731712 * x('2') =g= -1;
+con5819..(-0.76149871985716111) * x('1') - 
+0.64816641355126137 * x('2') =g= -1;
+con5820..(-0.76190581248305034) * x('1') - 
+0.64768783600168289 * x('2') =g= -1;
+con5821..0.34379181906294098 * x('1') + 
+0.93904589086231249 * x('2') =g= -1;
+con5822..(-0.76231260433833259) * x('1') - 
+0.64720900277028659 * x('2') =g= -1;
+con5823..(-0.76271909526242287) * x('1') - 
+0.64672991404609637 * x('2') =g= -1;
+con5824..0.34320174871075049 * x('1') + 
+0.93926170989872826 * x('2') =g= -1;
+con5825..(-0.76312528509485389) * x('1') - 
+0.64625057001823838 * x('2') =g= -1;
+con5826..(-0.76353117367527834) * x('1') - 
+0.64577097087593827 * x('2') =g= -1;
+con5827..0.3426115428759367 * x('1') + 
+0.93947715815136779 * x('2') =g= -1;
+con5828..(-0.76393676084346707) * x('1') - 
+0.64529111680852347 * x('2') =g= -1;
+con5829..(-0.76434204643930947) * x('1') - 
+0.64481100800542202 * x('2') =g= -1;
+con5830..0.34202120179148976 * x('1') + 
+0.93969223553518044 * x('2') =g= -1;
+con5831..(-0.76474703030281599) * x('1') - 
+0.64433064465616086 * x('2') =g= -1;
+con5832..(-0.76515171227411372) * x('1') - 
+0.64385002695036975 * x('2') =g= -1;
+con5833..0.34143072569045324 * x('1') + 
+0.93990694196526203 * x('2') =g= -1;
+con5834..(-0.76555609219345089) * x('1') - 
+0.64336915507777692 * x('2') =g= -1;
+con5835..(-0.76596016990119331) * x('1') - 
+0.64288802922821264 * x('2') =g= -1;
+con5836..0.34084011480592419 * x('1') + 
+0.94012127735685491 * x('2') =g= -1;
+con5837..(-0.76636394523782758) * x('1') - 
+0.64240664959160565 * x('2') =g= -1;
+con5838..(-0.76676741804395876) * x('1') - 
+0.64192501635798638 * x('2') =g= -1;
+con5839..0.34024936937105232 * x('1') + 
+0.94033524162534776 * x('2') =g= -1;
+con5840..(-0.76717058816031092) * x('1') - 
+0.64144312971748529 * x('2') =g= -1;
+con5841..(-0.7675734554277297) * x('1') - 
+0.64096098986033068 * x('2') =g= -1;
+con5842..0.33965848961904094 * x('1') + 
+0.94054883468627604 * x('2') =g= -1;
+con5843..(-0.76797601968717732) * x('1') - 
+0.64047859697685472 * x('2') =g= -1;
+con5844..(-0.76837828077973835) * x('1') - 
+0.63999595125748532 * x('2') =g= -1;
+con5845..0.33906747578314639 * x('1') + 
+0.94076205645532152 * x('2') =g= -1;
+con5846..(-0.76878023854661537) * x('1') - 
+0.63951305289275295 * x('2') =g= -1;
+con5847..(-0.76918189282913096) * x('1') - 
+0.63902990207328736 * x('2') =g= -1;
+con5848..0.33847632809667766 * x('1') + 
+0.94097490684831242 * x('2') =g= -1;
+con5849..(-0.7695832434687282) * x('1') - 
+0.63854649898981686 * x('2') =g= -1;
+con5850..(-0.7699842903069688) * x('1') - 
+0.63806284383317102 * x('2') =g= -1;
+con5851..0.33788504679299686 * x('1') + 
+0.94118738578122385 * x('2') =g= -1;
+con5852..(-0.77038503318553653) * x('1') - 
+0.63757893679427635 * x('2') =g= -1;
+con5853..(-0.77078547194623204) * x('1') - 
+0.63709477806416248 * x('2') =g= -1;
+con5854..0.33729363210551866 * x('1') + 
+0.94139949317017746 * x('2') =g= -1;
+con5855..(-0.77118560643097922) * x('1') - 
+0.63661036783395453 * x('2') =g= -1;
+con5856..(-0.77158543648181999) * x('1') - 
+0.63612570629487952 * x('2') =g= -1;
+con5857..0.33670208426771059 * x('1') + 
+0.94161122893144145 * x('2') =g= -1;
+con5858..(-0.77198496194091693) * x('1') - 
+0.63564079363826309 * x('2') =g= -1;
+con5859..(-0.77238418265055364) * x('1') - 
+0.63515563005552922 * x('2') =g= -1;
+con5860..0.33611040351309207 * x('1') + 
+0.94182259298143112 * x('2') =g= -1;
+con5861..(-0.77278309845313231) * x('1') - 
+0.63467021573820237 * x('2') =g= -1;
+con5862..(-0.77318170919117823) * x('1') - 
+0.6341845508779036 * x('2') =g= -1;
+con5863..0.33551859007523632 * x('1') + 
+0.94203358523670777 * x('2') =g= -1;
+con5864..(-0.77358001470733362) * x('1') - 
+0.63369863566635642 * x('2') =g= -1;
+con5865..(-0.77397801484436457) * x('1') - 
+0.6332124702953793 * x('2') =g= -1;
+con5866..0.33492664418776746 * x('1') + 
+0.94224420561398026 * x('2') =g= -1;
+con5867..(-0.77437570944515555) * x('1') - 
+0.63272605495689205 * x('2') =g= -1;
+con5868..(-0.77477309835271213) * x('1') - 
+0.63223938984291284 * x('2') =g= -1;
+con5869..0.33433456608436279 * x('1') + 
+0.94245445403010375 * x('2') =g= -1;
+con5870..(-0.77517018141016114) * x('1') - 
+0.63175247514555721 * x('2') =g= -1;
+con5871..(-0.77556695846074897) * x('1') - 
+0.63126531105704109 * x('2') =g= -1;
+con5872..0.33374235599875163 * x('1') + 
+0.94266433040208042 * x('2') =g= -1;
+con5873..(-0.7759634293478449) * x('1') - 
+0.63077789776967619 * x('2') =g= -1;
+con5874..(-0.77635959391493614) * x('1') - 
+0.63029023547587626 * x('2') =g= -1;
+con5875..0.33315001416471529 * x('1') + 
+0.94287383464705921 * x('2') =g= -1;
+con5876..(-0.77675545200563367) * x('1') - 
+0.62980232436814942 * x('2') =g= -1;
+con5877..(-0.77715100346366783) * x('1') - 
+0.62931416463910461 * x('2') =g= -1;
+con5878..0.3325575408160874 * x('1') + 
+0.94308296668233615 * x('2') =g= -1;
+con5879..(-0.77754624813288997) * x('1') - 
+0.62882575648144867 * x('2') =g= -1;
+con5880..(-0.77794118585727356) * x('1') - 
+0.62833710008798527 * x('2') =g= -1;
+con5881..0.3319649361867526 * x('1') + 
+0.94329172642535419 * x('2') =g= -1;
+con5882..(-0.7783358164809121) * x('1') - 
+0.62784819565161754 * x('2') =g= -1;
+con5883..(-0.77873013984802142) * x('1') - 
+0.62735904336534509 * x('2') =g= -1;
+con5884..0.3313722005106487 * x('1') + 
+0.94350011379370291 * x('2') =g= -1;
+con5885..(-0.77912415580293726) * x('1') - 
+0.62686964342226714 * x('2') =g= -1;
+con5886..(-0.77951786419011848) * x('1') - 
+0.62637999601557837 * x('2') =g= -1;
+con5887..0.33077933402176452 * x('1') + 
+0.94370812870511922 * x('2') =g= -1;
+con5888..(-0.77991126485414408) * x('1') - 
+0.62589010133857303 * x('2') =g= -1;
+con5889..(-0.7803043576397144) * x('1') - 
+0.62539995958464267 * x('2') =g= -1;
+con5890..0.3301863369541399 * x('1') + 
+0.94391577107748714 * x('2') =g= -1;
+con5891..(-0.78069714239165255) * x('1') - 
+0.62490957094727539 * x('2') =g= -1;
+con5892..(-0.7810896189549017) * x('1') - 
+0.62441893562005824 * x('2') =g= -1;
+con5893..0.32959320954186777 * x('1') + 
+0.94412304082883736 * x('2') =g= -1;
+con5894..(-0.78148178717452821) * x('1') - 
+0.62392805379667404 * x('2') =g= -1;
+con5895..(-0.78187364689571903) * x('1') - 
+0.62343692567090414 * x('2') =g= -1;
+con5896..0.32899995201909094 * x('1') + 
+0.94432993787734798 * x('2') =g= -1;
+con5897..(-0.78226519796378269) * x('1') - 
+0.62294555143662744 * x('2') =g= -1;
+con5898..(-0.78265644022415137) * x('1') - 
+0.62245393128781779 * x('2') =g= -1;
+con5899..0.3284065646200045 * x('1') + 
+0.94453646214134412 * x('2') =g= -1;
+con5900..(-0.78304737352237697) * x('1') - 
+0.6219620654185487 * x('2') =g= -1;
+con5901..(-0.78343799770413491) * x('1') - 
+0.62146995402298888 * x('2') =g= -1;
+con5902..0.32781304757885465 * x('1') + 
+0.94474261353929812 * x('2') =g= -1;
+con5903..(-0.78382831261522157) * x('1') - 
+0.62097759729540525 * x('2') =g= -1;
+con5904..(-0.7842183181015564) * x('1') - 
+0.62048499543016045 * x('2') =g= -1;
+con5905..0.32721940112993864 * x('1') + 
+0.94494839198982938 * x('2') =g= -1;
+con5906..(-0.78460801400918012) * x('1') - 
+0.61999214862171459 * x('2') =g= -1;
+con5907..(-0.78499740018425568) * x('1') - 
+0.61949905706462505 * x('2') =g= -1;
+con5908..0.32662562550760504 * x('1') + 
+0.94515379741170469 * x('2') =g= -1;
+con5909..(-0.78538647647306981) * x('1') - 
+0.61900572095354345 * x('2') =g= -1;
+con5910..(-0.78577524272202892) * x('1') - 
+0.61851214048322167 * x('2') =g= -1;
+con5911..0.32603172094625266 * x('1') + 
+0.94535882972383811 * x('2') =g= -1;
+con5912..(-0.78616369877766468) * x('1') - 
+0.61801831584850409 * x('2') =g= -1;
+con5913..(-0.78655184448662885) * x('1') - 
+0.61752424724433452 * x('2') =g= -1;
+con5914..0.3254376876803326 * x('1') + 
+0.94556348884529073 * x('2') =g= -1;
+con5915..(-0.78693967969569745) * x('1') - 
+0.6170299348657512 * x('2') =g= -1;
+con5916..(-0.78732720425176783) * x('1') - 
+0.61653537890788968 * x('2') =g= -1;
+con5917..0.32484352594434529 * x('1') + 
+0.94576777469527129 * x('2') =g= -1;
+con5918..(-0.78771441800186004) * x('1') - 
+0.61604057956598191 * x('2') =g= -1;
+con5919..(-0.78810132079311868) * x('1') - 
+0.61554553703535364 * x('2') =g= -1;
+con5920..0.32424923597284283 * x('1') + 
+0.94597168719313562 * x('2') =g= -1;
+con5921..(-0.78848791247280781) * x('1') - 
+0.61505025151143033 * x('2') =g= -1;
+con5922..(-0.78887419288831773) * x('1') - 
+0.6145547231897297 * x('2') =g= -1;
+con5923..0.32365481800042761 * x('1') + 
+0.94617522625838713 * x('2') =g= -1;
+con5924..(-0.78926016188715908) * x('1') - 
+0.61405895226586782 * x('2') =g= -1;
+con5925..(-0.78964581931696709) * x('1') - 
+0.61356293893555514 * x('2') =g= -1;
+con5926..0.32306027226175255 * x('1') + 
+0.94637839181067651 * x('2') =g= -1;
+con5927..(-0.79003116502549886) * x('1') - 
+0.61306668339459858 * x('2') =g= -1;
+con5928..(-0.79041619886063452) * x('1') - 
+0.6125701858389011 * x('2') =g= -1;
+con5929..0.32246559899152111 * x('1') + 
+0.94658118376980194 * x('2') =g= -1;
+con5930..(-0.7908009206703791) * x('1') - 
+0.61207344646445883 * x('2') =g= -1;
+con5931..(-0.79118533030285798) * x('1') - 
+0.61157646546736699 * x('2') =g= -1;
+con5932..0.32187079842448701 * x('1') + 
+0.94678360205570911 * x('2') =g= -1;
+con5933..(-0.79156942760632243) * x('1') - 
+0.61107924304381267 * x('2') =g= -1;
+con5934..(-0.79195321242914518) * x('1') - 
+0.61058177939008074 * x('2') =g= -1;
+con5935..0.32127587079545444 * x('1') + 
+0.94698564658849105 * x('2') =g= -1;
+con5936..(-0.79233668461982354) * x('1') - 
+0.61008407470254977 * x('2') =g= -1;
+con5937..(-0.79271984402697737) * x('1') - 
+0.60958612917769439 * x('2') =g= -1;
+con5938..0.32068081633927714 * x('1') + 
+0.94718731728838879 * x('2') =g= -1;
+con5939..(-0.79310269049934978) * x('1') - 
+0.60908794301208469 * x('2') =g= -1;
+con5940..(-0.79348522388580933) * x('1') - 
+0.60858951640238346 * x('2') =g= -1;
+con5941..0.32008563529085954 * x('1') + 
+0.94738861407579034 * x('2') =g= -1;
+con5942..(-0.79386744403534526) * x('1') - 
+0.60809084954535209 * x('2') =g= -1;
+con5943..(-0.79424935079707326) * x('1') - 
+0.60759194263784277 * x('2') =g= -1;
+con5944..0.31949032788515586 * x('1') + 
+0.94758953687123182 * x('2') =g= -1;
+con5945..(-0.79463094402023093) * x('1') - 
+0.60709279587680542 * x('2') =g= -1;
+con5946..(-0.79501222355418) * x('1') - 
+0.60659340945928397 * x('2') =g= -1;
+con5947..0.31889489435717011 * x('1') + 
+0.94779008559539668 * x('2') =g= -1;
+con5948..(-0.79539318924840674) * x('1') - 
+0.60609378358241572 * x('2') =g= -1;
+con5949..(-0.79577384095252024) * x('1') - 
+0.60559391844343435 * x('2') =g= -1;
+con5950..0.31829933494195617 * x('1') + 
+0.94799026016911603 * x('2') =g= -1;
+con5951..(-0.7961541785162547) * x('1') - 
+0.60509381423966624 * x('2') =g= -1;
+con5952..(-0.79653420178946677) * x('1') - 
+0.60459347116853401 * x('2') =g= -1;
+con5953..0.31770364987461763 * x('1') + 
+0.94819006051336896 * x('2') =g= -1;
+con5954..(-0.79691391062213934) * x('1') - 
+0.60409288942755224 * x('2') =g= -1;
+con5955..(-0.79729330486437766) * x('1') - 
+0.60359206921433162 * x('2') =g= -1;
+con5956..0.3171078393903079 * x('1') + 
+0.94838948654928201 * x('2') =g= -1;
+con5957..(-0.79767238436641152) * x('1') - 
+0.60309101072657667 * x('2') =g= -1;
+con5958..(-0.79805114897859553) * x('1') - 
+0.60258971416208518 * x('2') =g= -1;
+con5959..0.31651190372422894 * x('1') + 
+0.9485885381981296 * x('2') =g= -1;
+con5960..(-0.79842959855140783) * x('1') - 
+0.60208817971874995 * x('2') =g= -1;
+con5961..(-0.79880773293545182) * x('1') - 
+0.60158640759455639 * x('2') =g= -1;
+con5962..0.31591584311163345 * x('1') + 
+0.94878721538133393 * x('2') =g= -1;
+con5963..(-0.79918555198145413) * x('1') - 
+0.60108439798758584 * x('2') =g= -1;
+con5964..(-0.79956305554026752) * x('1') - 
+0.60058215109601043 * x('2') =g= -1;
+con5965..0.31531965778782289 * x('1') + 
+0.94898551802046494 * x('2') =g= -1;
+con5966..(-0.79994024346286785) * x('1') - 
+0.60007966711809824 * x('2') =g= -1;
+con5967..(-0.8003171156003559) * x('1') - 
+0.59957694625221081 * x('2') =g= -1;
+con5968..0.31472334798814727 * x('1') + 
+0.94918344603724081 * x('2') =g= -1;
+con5969..(-0.80069367180395778) * x('1') - 
+0.59907398869680195 * x('2') =g= -1;
+con5970..(-0.8010699119250233) * x('1') - 
+0.59857079465042018 * x('2') =g= -1;
+con5971..0.31412691394800724 * x('1') + 
+0.94938099935352682 * x('2') =g= -1;
+con5972..(-0.80144583581502804) * x('1') - 
+0.59806736431170626 * x('2') =g= -1;
+con5973..(-0.80182144332557126) * x('1') - 
+0.59756369787939567 * x('2') =g= -1;
+con5974..0.31353035590285094 * x('1') + 
+0.94957817789133703 * x('2') =g= -1;
+con5975..(-0.80219673430837879) * x('1') - 
+0.59705979555231503 * x('2') =g= -1;
+con5976..(-0.80257170861530003) * x('1') - 
+0.59655565752938589 * x('2') =g= -1;
+con5977..0.31293367408817635 * x('1') + 
+0.94977498157283291 * x('2') =g= -1;
+con5978..(-0.80294636609830938) * x('1') - 
+0.59605128400962248 * x('2') =g= -1;
+con5979..(-0.80332070660950738) * x('1') - 
+0.59554667519213123 * x('2') =g= -1;
+con5980..0.31233686873953015 * x('1') + 
+0.94997141032032406 * x('2') =g= -1;
+con5981..(-0.80369473000111835) * x('1') - 
+0.59504183127611243 * x('2') =g= -1;
+con5982..(-0.80406843612549317) * x('1') - 
+0.59453675246085813 * x('2') =g= -1;
+con5983..0.31173994009250766 * x('1') + 
+0.95016746405626817 * x('2') =g= -1;
+con5984..(-0.80444182483510707) * x('1') - 
+0.59403143894575394 * x('2') =g= -1;
+con5985..(-0.80481489598256006) * x('1') - 
+0.59352589093027874 * x('2') =g= -1;
+con5986..0.31114288838275334 * x('1') + 
+0.95036314270327082 * x('2') =g= -1;
+con5987..(-0.80518764942057963) * x('1') - 
+0.59302010861400112 * x('2') =g= -1;
+con5988..(-0.80556008500201581) * x('1') - 
+0.59251409219658657 * x('2') =g= -1;
+con5989..0.31054571384595903 * x('1') + 
+0.95055844618408591 * x('2') =g= -1;
+con5990..(-0.80593220257984688) * x('1') - 
+0.59200784187778854 * x('2') =g= -1;
+con5991..(-0.80630400200717456) * x('1') - 
+0.59150135785745594 * x('2') =g= -1;
+con5992..0.30994841671786677 * x('1') + 
+0.95075337442161501 * x('2') =g= -1;
+con5993..(-0.80667548313722759) * x('1') - 
+0.59099464033552829 * x('2') =g= -1;
+con5994..(-0.80704664582335939) * x('1') - 
+0.59048768951203812 * x('2') =g= -1;
+con5995..0.30935099723426557 * x('1') + 
+0.95094792733890821 * x('2') =g= -1;
+con5996..(-0.80741748991904894) * x('1') - 
+0.58998050558711046 * x('2') =g= -1;
+con5997..(-0.80778801527790289) * x('1') - 
+0.58947308876095994 * x('2') =g= -1;
+con5998..0.30875345563099332 * x('1') + 
+0.95114210485916362 * x('2') =g= -1;
+con5999..(-0.80815822175365071) * x('1') - 
+0.58896543923389699 * x('2') =g= -1;
+con6000..(-0.80852810920015061) * x('1') - 
+0.58845755720631998 * x('2') =g= -1;
+con6001..0.30815579214393618 * x('1') + 
+0.95133590690572756 * x('2') =g= -1;
+con6002..(-0.80889767747138486) * x('1') - 
+0.58794944287872197 * x('2') =g= -1;
+con6003..(-0.8092669264214627) * x('1') - 
+0.58744109645168585 * x('2') =g= -1;
+con6004..0.30755800700902824 * x('1') + 
+0.95152933340209456 * x('2') =g= -1;
+con6005..(-0.80963585590461895) * x('1') - 
+0.58693251812588731 * x('2') =g= -1;
+con6006..(-0.81000446577521412) * x('1') - 
+0.58642370810209399 * x('2') =g= -1;
+con6007..0.30696010046225197 * x('1') + 
+0.95172238427190736 * x('2') =g= -1;
+con6008..(-0.81037275588773683) * x('1') - 
+0.5859146665811622 * x('2') =g= -1;
+con6009..(-0.81074072609679892) * x('1') - 
+0.58540539376404388 * x('2') =g= -1;
+con6010..0.30636207273963684 * x('1') + 
+0.95191505943895727 * x('2') =g= -1;
+con6011..(-0.81110837625714149) * x('1') - 
+0.58489588985177809 * x('2') =g= -1;
+con6012..(-0.81147570622362986) * x('1') - 
+0.58438615504549829 * x('2') =g= -1;
+con6013..0.30576392407726155 * x('1') + 
+0.95210735882718323 * x('2') =g= -1;
+con6014..(-0.811842715851257) * x('1') - 
+0.58387618954642706 * x('2') =g= -1;
+con6015..(-0.8122094049951416) * x('1') - 
+0.58336599355587926 * x('2') =g= -1;
+con6016..0.30516565471125123 * x('1') + 
+0.95229928236067329 * x('2') =g= -1;
+con6017..(-0.8125757735105289) * x('1') - 
+0.58285556727526044 * x('2') =g= -1;
+con6018..(-0.81294182125279146) * x('1') - 
+0.58234491090606644 * x('2') =g= -1;
+con6019..0.30456726487777946 * x('1') + 
+0.95249082996366352 * x('2') =g= -1;
+con6020..(-0.81330754807742722) * x('1') - 
+0.58183402464988532 * x('2') =g= -1;
+con6021..(-0.81367295384006255) * x('1') - 
+0.58132290870839376 * x('2') =g= -1;
+con6022..0.30396875481306707 * x('1') + 
+0.95268200156053828 * x('2') =g= -1;
+con6023..(-0.81403803839644873) * x('1') - 
+0.58081156328336114 * x('2') =g= -1;
+con6024..(-0.81440280160246525) * x('1') - 
+0.58029998857664622 * x('2') =g= -1;
+con6025..0.30337012475338249 * x('1') + 
+0.95287279707583061 * x('2') =g= -1;
+con6026..(-0.81476724331411743) * x('1') - 
+0.57978818479019878 * x('2') =g= -1;
+con6027..(-0.815131363387538) * x('1') - 
+0.57927615212605943 * x('2') =g= -1;
+con6028..0.30277137493504136 * x('1') + 
+0.95306321643422198 * x('2') =g= -1;
+con6029..(-0.81549516167898684) * x('1') - 
+0.57876389078635782 * x('2') =g= -1;
+con6030..(-0.81585863804484993) * x('1') - 
+0.57825140097331584 * x('2') =g= -1;
+con6031..0.30217250559440673 * x('1') + 
+0.95325325956054208 * x('2') =g= -1;
+con6032..(-0.81622179234164216) * x('1') - 
+0.57773868288924302 * x('2') =g= -1;
+con6033..(-0.81658462442600366) * x('1') - 
+0.57722573673654098 * x('2') =g= -1;
+con6034..0.30157351696788898 * x('1') + 
+0.95344292637976935 * x('2') =g= -1;
+con6035..(-0.81694713415470255) * x('1') - 
+0.57671256271770122 * x('2') =g= -1;
+con6036..(-0.81730932138463441) * x('1') - 
+0.57619916103530411 * x('2') =g= -1;
+con6037..0.30097440929194474 * x('1') + 
+0.95363221681703103 * x('2') =g= -1;
+con6038..(-0.81767118597282162) * x('1') - 
+0.57568553189202121 * x('2') =g= -1;
+con6039..(-0.81803272777641456) * x('1') - 
+0.57517167549061243 * x('2') =g= -1;
+con6040..0.30037518280307901 * x('1') + 
+0.95382113079760233 * x('2') =g= -1;
+con6041..(-0.81839394665268994) * x('1') - 
+0.57465759203392941 * x('2') =g= -1;
+con6042..(-0.81875484245905372) * x('1') - 
+0.57414328172491069 * x('2') =g= -1;
+con6043..0.29977583773784289 * x('1') + 
+0.95400966824690747 * x('2') =g= -1;
+con6044..(-0.81911541505303787) * x('1') - 
+0.57362874476658643 * x('2') =g= -1;
+con6045..(-0.81947566429230212) * x('1') - 
+0.57311398136207625 * x('2') =g= -1;
+con6046..0.29917637433283389 * x('1') + 
+0.95419782909051942 * x('2') =g= -1;
+con6047..(-0.81983559003463458) * x('1') - 
+0.57259899171458772 * x('2') =g= -1;
+con6048..(-0.82019519213795045) * x('1') - 
+0.57208377602741944 * x('2') =g= -1;
+con6049..0.29857679282469701 * x('1') + 
+0.95438561325415938 * x('2') =g= -1;
+con6050..(-0.82055447046029306) * x('1') - 
+0.57156833450395761 * x('2') =g= -1;
+con6051..(-0.82091342485983287) * x('1') - 
+0.57105266734767957 * x('2') =g= -1;
+con6052..0.29797709345012352 * x('1') + 
+0.95457302066369776 * x('2') =g= -1;
+con6053..(-0.82127205519486957) * x('1') - 
+0.57053677476214903 * x('2') =g= -1;
+con6054..(-0.82163036132382972) * x('1') - 
+0.57002065695102055 * x('2') =g= -1;
+con6055..0.29737727644585132 * x('1') + 
+0.95476005124515329 * x('2') =g= -1;
+con6056..(-0.82198834310526714) * x('1') - 
+0.56950431411803859 * x('2') =g= -1;
+con6057..(-0.82234600039786587) * x('1') - 
+0.56898774646703354 * x('2') =g= -1;
+con6058..0.29677734204866463 * x('1') + 
+0.95494670492469369 * x('2') =g= -1;
+con6059..(-0.82270333306043597) * x('1') - 
+0.56847095420192695 * x('2') =g= -1;
+con6060..(-0.82306034095191705) * x('1') - 
+0.56795393752672763 * x('2') =g= -1;
+con6061..0.29617729049539415 * x('1') + 
+0.95513298162863525 * x('2') =g= -1;
+con6062..(-0.82341702393137561) * x('1') - 
+0.56743669664553453 * x('2') =g= -1;
+con6063..(-0.82377338185800819) * x('1') - 
+0.56691923176253267 * x('2') =g= -1;
+con6064..0.29557712202291692 * x('1') + 
+0.95531888128344333 * x('2') =g= -1;
+con6065..(-0.82412941459113831) * x('1') - 
+0.56640154308199731 * x('2') =g= -1;
+con6066..(-0.82448512199021717) * x('1') - 
+0.56588363080829318 * x('2') =g= -1;
+con6067..0.29497683686815535 * x('1') + 
+0.9555044038157321 * x('2') =g= -1;
+con6068..(-0.82484050391482677) * x('1') - 
+0.56536549514586998 * x('2') =g= -1;
+con6069..(-0.82519556022467533) * x('1') - 
+0.56484713629926842 * x('2') =g= -1;
+con6070..0.29437643526807938 * x('1') + 
+0.95568954915226434 * x('2') =g= -1;
+con6071..(-0.82555029077960107) * x('1') - 
+0.56432855447311558 * x('2') =g= -1;
+con6072..(-0.82590469543956957) * x('1') - 
+0.56380974987212829 * x('2') =g= -1;
+con6073..0.29377591745970344 * x('1') + 
+0.95587431721995209 * x('2') =g= -1;
+con6074..(-0.82625877406467663) * x('1') - 
+0.56329072270110903 * x('2') =g= -1;
+con6075..(-0.82661252651514561) * x('1') - 
+0.56277147316494969 * x('2') =g= -1;
+con6076..0.29317528368008872 * x('1') + 
+0.95605870794585601 * x('2') =g= -1;
+con6077..(-0.82696595265132788) * x('1') - 
+0.56225200146863119 * x('2') =g= -1;
+con6078..(-0.82731905233370606) * x('1') - 
+0.56173230781721872 * x('2') =g= -1;
+con6079..0.29257453416634183 * x('1') + 
+0.9562427212571859 * x('2') =g= -1;
+con6080..(-0.8276718254228892) * x('1') - 
+0.56121239241586807 * x('2') =g= -1;
+con6081..(-0.82802427177961702) * x('1') - 
+0.56069225546982093 * x('2') =g= -1;
+con6082..0.29197366915561529 * x('1') + 
+0.95642635708130053 * x('2') =g= -1;
+con6083..(-0.82837639126475704) * x('1') - 
+0.56017189718440719 * x('2') =g= -1;
+con6084..(-0.8287281837393059) * x('1') - 
+0.55965131776504484 * x('2') =g= -1;
+con6085..0.29137268888510726 * x('1') + 
+0.95660961534570754 * x('2') =g= -1;
+con6086..(-0.82907964906439091) * x('1') - 
+0.55913051741723641 * x('2') =g= -1;
+con6087..(-0.82943078710126572) * x('1') - 
+0.55860949634657553 * x('2') =g= -1;
+con6088..0.29077159359206056 * x('1') + 
+0.95679249597806393 * x('2') =g= -1;
+con6089..(-0.8297815977113161) * x('1') - 
+0.55808825475873935 * x('2') =g= -1;
+con6090..(-0.83013208075605505) * x('1') - 
+0.55756679285949462 * x('2') =g= -1;
+con6091..0.29017038351376501 * x('1') + 
+0.95697499890617543 * x('2') =g= -1;
+con6092..(-0.8304822360971259) * x('1') - 
+0.55704511085469333 * x('2') =g= -1;
+con6093..(-0.83083206359630102) * x('1') - 
+0.55652320895027552 * x('2') =g= -1;
+con6094..0.28956905888755419 * x('1') + 
+0.95715712405799713 * x('2') =g= -1;
+con6095..(-0.83118156311548175) * x('1') - 
+0.55600108735226816 * x('2') =g= -1;
+con6096..(-0.8315307345166999) * x('1') - 
+0.5554787462667834 * x('2') =g= -1;
+con6097..0.2889676199508075 * x('1') + 
+0.9573388713616332 * x('2') =g= -1;
+con6098..(-0.83187957766211551) * x('1') - 
+0.55495618590002249 * x('2') =g= -1;
+con6099..(-0.83222809241402007) * x('1') - 
+0.55443340645827011 * x('2') =g= -1;
+con6100..0.28836606694095013 * x('1') + 
+0.9575202407453367 * x('2') =g= -1;
+con6101..(-0.83257627863483263) * x('1') - 
+0.55391040814790038 * x('2') =g= -1;
+con6102..(-0.83292413618710359) * x('1') - 
+0.55338719117537172 * x('2') =g= -1;
+con6103..0.28776440009545107 * x('1') + 
+0.95770123213751013 * x('2') =g= -1;
+con6104..(-0.83327166493351201) * x('1') - 
+0.55286375574723012 * x('2') =g= -1;
+con6105..(-0.83361886473686697) * x('1') - 
+0.55234010207010786 * x('2') =g= -1;
+con6106..0.28716261965182505 * x('1') + 
+0.95788184546670541 * x('2') =g= -1;
+con6107..(-0.83396573546010799) * x('1') - 
+0.55181623035072203 * x('2') =g= -1;
+con6108..(-0.83431227696630339) * x('1') - 
+0.55129214079587796 * x('2') =g= -1;
+con6109..0.28656072584763148 * x('1') + 
+0.95806208066162324 * x('2') =g= -1;
+con6110..(-0.83465848911865326) * x('1') - 
+0.55076783361246417 * x('2') =g= -1;
+con6111..(-0.83500437178048559) * x('1') - 
+0.55024330900745777 * x('2') =g= -1;
+con6112..0.28595871892047464 * x('1') + 
+0.95824193765111376 * x('2') =g= -1;
+con6113..(-0.83534992481526005) * x('1') - 
+0.54971856718791967 * x('2') =g= -1;
+con6114..(-0.83569514808656564) * x('1') - 
+0.54919360836099795 * x('2') =g= -1;
+con6115..0.28535659910800293 * x('1') + 
+0.95842141636417666 * x('2') =g= -1;
+con6116..(-0.83604004145812127) * x('1') - 
+0.54866843273392607 * x('2') =g= -1;
+con6117..(-0.8363846047937773) * x('1') - 
+0.54814304051402218 * x('2') =g= -1;
+con6118..0.28475436664790971 * x('1') + 
+0.95860051672996083 * x('2') =g= -1;
+con6119..(-0.83672883795751274) * x('1') - 
+0.54761743190869161 * x('2') =g= -1;
+con6120..(-0.83707274081343874) * x('1') - 
+0.54709160712542249 * x('2') =g= -1;
+con6121..0.28415202177793336 * x('1') + 
+0.95877923867776405 * x('2') =g= -1;
+con6122..(-0.83741631322579513) * x('1') - 
+0.54656556637179121 * x('2') =g= -1;
+con6123..(-0.83775955505895361) * x('1') - 
+0.54603930985545723 * x('2') =g= -1;
+con6124..0.28354956473585552 * x('1') + 
+0.9589575821370343 * x('2') =g= -1;
+con6125..(-0.83810246617741535) * x('1') - 
+0.54551283778416648 * x('2') =g= -1;
+con6126..(-0.83844504644581241) * x('1') - 
+0.54498615036574971 * x('2') =g= -1;
+con6127..0.28294699575950277 * x('1') + 
+0.95913554703736836 * x('2') =g= -1;
+con6128..(-0.83878729572890776) * x('1') - 
+0.54445924780812194 * x('2') =g= -1;
+con6129..(-0.83912921389159412) * x('1') - 
+0.54393213031928478 * x('2') =g= -1;
+con6130..0.28234431508674585 * x('1') + 
+0.95931313330851276 * x('2') =g= -1;
+con6131..(-0.83947080079889658) * x('1') - 
+0.54340479810732201 * x('2') =g= -1;
+con6132..(-0.83981205631596967) * x('1') - 
+0.54287725138040421 * x('2') =g= -1;
+con6133..0.28174152295549953 * x('1') + 
+0.95949034088036333 * x('2') =g= -1;
+con6134..(-0.84015298030809815) * x('1') - 
+0.5423494903467877 * x('2') =g= -1;
+con6135..(-0.8404935726406999) * x('1') - 
+0.54182151521480992 * x('2') =g= -1;
+con6136..0.28113861960372244 * x('1') + 
+0.95966716968296539 * x('2') =g= -1;
+con6137..(-0.84083383317932148) * x('1') - 
+0.54129332619289605 * x('2') =g= -1;
+con6138..(-0.84117376178964187) * x('1') - 
+0.54076492348955363 * x('2') =g= -1;
+con6139..0.2805356052694174 * x('1') + 
+0.95984361964651388 * x('2') =g= -1;
+con6140..(-0.84151335833746987) * x('1') - 
+0.54023630731337646 * x('2') =g= -1;
+con6141..(-0.84185262268874705) * x('1') - 
+0.53970747787304008 * x('2') =g= -1;
+con6142..0.27993248019063094 * x('1') + 
+0.96001969070135329 * x('2') =g= -1;
+con6143..(-0.84219155470954477) * x('1') - 
+0.53917843537730614 * x('2') =g= -1;
+con6144..(-0.84253015426606503) * x('1') - 
+0.53864918003502116 * x('2') =g= -1;
+con6145..0.27932924460545289 * x('1') + 
+0.96019538277797767 * x('2') =g= -1;
+con6146..(-0.84286842122464312) * x('1') - 
+0.53811971205511278 * x('2') =g= -1;
+con6147..(-0.84320635545174394) * x('1') - 
+0.53759003164659536 * x('2') =g= -1;
+con6148..0.27872589875201725 * x('1') + 
+0.96037069580703061 * x('2') =g= -1;
+con6149..(-0.84354395681396444) * x('1') - 
+0.53706013901856509 * x('2') =g= -1;
+con6150..(-0.84388122517803232) * x('1') - 
+0.53653003438020408 * x('2') =g= -1;
+con6151..0.27812244286850141 * x('1') + 
+0.96054562971930546 * x('2') =g= -1;
+con6152..(-0.84421816041080822) * x('1') - 
+0.5359997179407755 * x('2') =g= -1;
+con6153..(-0.84455476237928295) * x('1') - 
+0.53546918990962777 * x('2') =g= -1;
+con6154..0.27751887719312612 * x('1') + 
+0.96072018444574514 * x('2') =g= -1;
+con6155..(-0.84489103095057816) * x('1') - 
+0.53493845049619415 * x('2') =g= -1;
+con6156..(-0.84522696599194957) * x('1') - 
+0.53440749990998793 * x('2') =g= -1;
+con6157..0.27691520196415542 * x('1') + 
+0.96089435991744221 * x('2') =g= -1;
+con6158..(-0.84556256737078239) * x('1') - 
+0.53387633836060866 * x('2') =g= -1;
+con6159..(-0.8458978349545947) * x('1') - 
+0.53334496605773751 * x('2') =g= -1;
+con6160..0.27631141741989679 * x('1') + 
+0.96106815606563911 * x('2') =g= -1;
+con6161..(-0.84623276861103547) * x('1') - 
+0.53281338321114058 * x('2') =g= -1;
+con6162..(-0.84656736820788692) * x('1') - 
+0.53228159003066411 * x('2') =g= -1;
+con6163..0.27570752379870089 * x('1') + 
+0.96124157282172773 * x('2') =g= -1;
+con6164..(-0.84690163361306148) * x('1') - 
+0.53174958672624062 * x('2') =g= -1;
+con6165..(-0.84723556469460393) * x('1') - 
+0.53121737350788478 * x('2') =g= -1;
+con6166..0.27510352133896065 * x('1') + 
+0.96141461011725016 * x('2') =g= -1;
+con6167..(-0.84756916132069238) * x('1') - 
+0.53068495058569187 * x('2') =g= -1;
+con6168..(-0.84790242335963506) * x('1') - 
+0.53015231816984276 * x('2') =g= -1;
+con6169..0.27449941027911345 * x('1') + 
+0.9615872678838977 * x('2') =g= -1;
+con6170..(-0.84823535067987366) * x('1') - 
+0.52961947647059937 * x('2') =g= -1;
+con6171..(-0.84856794314998141) * x('1') - 
+0.52908642569830688 * x('2') =g= -1;
+con6172..0.27389519085763819 * x('1') + 
+0.96175954605351222 * x('2') =g= -1;
+con6173..(-0.84890020063866345) * x('1') - 
+0.52855316606339331 * x('2') =g= -1;
+con6174..(-0.84923212301475792) * x('1') - 
+0.52801969777636804 * x('2') =g= -1;
+con6175..0.27329086331305708 * x('1') + 
+0.96193144455808488 * x('2') =g= -1;
+con6176..(-0.84956371014723442) * x('1') - 
+0.52748602104782449 * x('2') =g= -1;
+con6177..(-0.84989496190519598) * x('1') - 
+0.52695213608843594 * x('2') =g= -1;
+con6178..0.27268642788393516 * x('1') + 
+0.96210296332975687 * x('2') =g= -1;
+con6179..(-0.85022587815787676) * x('1') - 
+0.52641804310896034 * x('2') =g= -1;
+con6180..(-0.85055645877464459) * x('1') - 
+0.52588374232023605 * x('2') =g= -1;
+con6181..0.27208188480887979 * x('1') + 
+0.96227410230081922 * x('2') =g= -1;
+con6182..(-0.85088670362499863) * x('1') - 
+0.52534923393318433 * x('2') =g= -1;
+con6183..(-0.85121661257857117) * x('1') - 
+0.52481451815880875 * x('2') =g= -1;
+con6184..0.27147723432654114 * x('1') + 
+0.96244486140371299 * x('2') =g= -1;
+con6185..(-0.8515461855051274) * x('1') - 
+0.52427959520819334 * x('2') =g= -1;
+con6186..(-0.85187542227456425) * x('1') - 
+0.52374446529250585 * x('2') =g= -1;
+con6187..0.27087247667561098 * x('1') + 
+0.96261524057102932 * x('2') =g= -1;
+con6188..(-0.8522043227569126) * x('1') - 
+0.52320912862299318 * x('2') =g= -1;
+con6189..(-0.85253288682233497) * x('1') - 
+0.52267358541098641 * x('2') =g= -1;
+con6190..0.27026761209482458 * x('1') + 
+0.96278523973550889 * x('2') =g= -1;
+con6191..(-0.85286111434112755) * x('1') - 
+0.5221378358678963 * x('2') =g= -1;
+con6192..(-0.85318900518371854) * x('1') - 
+0.52160188020521614 * x('2') =g= -1;
+con6193..0.26966264082295882 * x('1') + 
+0.96295485883004295 * x('2') =g= -1;
+con6194..(-0.85351655922066938) * x('1') - 
+0.52106571863452078 * x('2') =g= -1;
+con6195..(-0.85384377632267505) * x('1') - 
+0.52052935136746481 * x('2') =g= -1;
+con6196..0.26905756309883205 * x('1') + 
+0.96312409778767238 * x('2') =g= -1;
+con6197..(-0.85417065636056222) * x('1') - 
+0.51999277861578641 * x('2') =g= -1;
+con6198..(-0.85449719920529243) * x('1') - 
+0.51945600059130204 * x('2') =g= -1;
+con6199..0.26845237916130615 * x('1') + 
+0.96329295654158831 * x('2') =g= -1;
+con6200..(-0.8548234047279587) * x('1') - 
+0.51891901750591152 * x('2') =g= -1;
+con6201..(-0.85514927279978825) * x('1') - 
+0.51838182957159429 * x('2') =g= -1;
+con6202..0.26784708924928335 * x('1') + 
+0.96346143502513193 * x('2') =g= -1;
+con6203..(-0.85547480329214087) * x('1') - 
+0.51784443700041127 * x('2') =g= -1;
+con6204..(-0.85579999607650958) * x('1') - 
+0.51730684000450455 * x('2') =g= -1;
+con6205..0.26724169360170874 * x('1') + 
+0.96362953317179445 * x('2') =g= -1;
+con6206..(-0.85612485102452163) * x('1') - 
+0.5167690387960957 * x('2') =g= -1;
+con6207..(-0.85644936800793614) * x('1') - 
+0.51623103358748856 * x('2') =g= -1;
+con6208..0.26663619245756875 * x('1') + 
+0.96379725091521729 * x('2') =g= -1;
+con6209..(-0.85677354689864749) * x('1') - 
+0.51569282459106514 * x('2') =g= -1;
+con6210..(-0.85709738756868181) * x('1') - 
+0.51515441201929035 * x('2') =g= -1;
+con6211..0.26603058605589158 * x('1') + 
+0.96396458818919217 * x('2') =g= -1;
+con6212..(-0.85742088989020004) * x('1') - 
+0.51461579608470776 * x('2') =g= -1;
+con6213..(-0.85774405373549567) * x('1') - 
+0.51407697699994215 * x('2') =g= -1;
+con6214..0.26542487463574721 * x('1') + 
+0.96413154492766073 * x('2') =g= -1;
+con6215..(-0.85806687897699629) * x('1') - 
+0.51353795497769861 * x('2') =g= -1;
+con6216..(-0.85838936548726341) * x('1') - 
+0.51299873023076126 * x('2') =g= -1;
+con6217..0.26481905843624609 * x('1') + 
+0.96429812106471513 * x('2') =g= -1;
+con6218..(-0.8587115131389913) * x('1') - 
+0.51245930297199593 * x('2') =g= -1;
+con6219..(-0.85903332180500969) * x('1') - 
+0.51191967341434597 * x('2') =g= -1;
+con6220..0.26421313769654164 * x('1') + 
+0.96446431653459752 * x('2') =g= -1;
+con6221..(-0.85935479135828075) * x('1') - 
+0.5113798417708364 * x('2') =g= -1;
+con6222..(-0.8596759216719001) * x('1') - 
+0.5108398082545732 * x('2') =g= -1;
+con6223..0.26360711265582698 * x('1') + 
+0.9646301312717005 * x('2') =g= -1;
+con6224..(-0.85999671261909905) * x('1') - 
+0.51029957307873852 * x('2') =g= -1;
+con6225..(-0.86031716407324121) * x('1') - 
+0.50975913645659721 * x('2') =g= -1;
+con6226..0.2630009835533374 * x('1') + 
+0.96479556521056686 * x('2') =g= -1;
+con6227..(-0.86063727590782557) * x('1') - 
+0.50921849860149171 * x('2') =g= -1;
+con6228..(-0.86095704799648354) * x('1') - 
+0.50867765972684587 * x('2') =g= -1;
+con6229..0.26239475062834888 * x('1') + 
+0.96496061828588975 * x('2') =g= -1;
+con6230..(-0.86127648021298286) * x('1') - 
+0.50813662004615978 * x('2') =g= -1;
+con6231..(-0.8615955724312232) * x('1') - 
+0.50759537977301639 * x('2') =g= -1;
+con6232..0.26178841412017845 * x('1') + 
+0.96512529043251272 * x('2') =g= -1;
+con6233..(-0.86191432452523942) * x('1') - 
+0.50705393912107644 * x('2') =g= -1;
+con6234..(-0.86223273636920139) * x('1') - 
+0.50651229830407807 * x('2') =g= -1;
+con6235..0.26118197426818412 * x('1') + 
+0.96528958158542955 * x('2') =g= -1;
+con6236..(-0.86255080783741189) * x('1') - 
+0.50597045753584091 * x('2') =g= -1;
+con6237..(-0.86286853880430925) * x('1') - 
+0.50542841703026176 * x('2') =g= -1;
+con6238..0.26057543131176453 * x('1') + 
+0.96545349167978456 * x('2') =g= -1;
+con6239..(-0.86318592914446501) * x('1') - 
+0.50488617700131833 * x('2') =g= -1;
+con6240..(-0.86350297873258708) * x('1') - 
+0.50434373766306362 * x('2') =g= -1;
+con6241..0.2599687854903594 * x('1') + 
+0.96561702065087252 * x('2') =g= -1;
+con6242..(-0.86381968744351578) * x('1') - 
+0.50380109922963323 * x('2') =g= -1;
+con6243..(-0.86413605515222658) * x('1') - 
+0.5032582619152397 * x('2') =g= -1;
+con6244..0.25936203704344823 * x('1') + 
+0.9657801684341385 * x('2') =g= -1;
+con6245..(-0.86445208173383081) * x('1') - 
+0.50271522593417262 * x('2') =g= -1;
+con6246..(-0.86476776706357295) * x('1') - 
+0.50217199150080249 * x('2') =g= -1;
+con6247..0.25875518621055194 * x('1') + 
+0.96594293496517825 * x('2') =g= -1;
+con6248..(-0.86508311101683322) * x('1') - 
+0.50162855882957613 * x('2') =g= -1;
+con6249..(-0.86539811346912532) * x('1') - 
+0.5010849281350207 * x('2') =g= -1;
+con6250..0.25814823323123132 * x('1') + 
+0.96610532017973783 * x('2') =g= -1;
+con6251..(-0.86571277429609994) * x('1') - 
+0.50054109963173854 * x('2') =g= -1;
+con6252..(-0.86602709337354022) * x('1') - 
+0.49999707353441319 * x('2') =g= -1;
+con6253..0.25754117834508783 * x('1') + 
+0.96626732401371396 * x('2') =g= -1;
+con6254..(-0.86634107057736531) * x('1') - 
+0.49945285005780538 * x('2') =g= -1;
+con6255..(-0.86665470578362991) * x('1') - 
+0.49890842941675168 * x('2') =g= -1;
+con6256..0.25693402179176283 * x('1') + 
+0.9664289464031538 * x('2') =g= -1;
+con6257..(-0.8669679988685226) * x('1') - 
+0.49836381182616923 * x('2') =g= -1;
+con6258..(-0.86728094970836789) * x('1') - 
+0.49781899750105096 * x('2') =g= -1;
+con6259..0.25632676381093811 * x('1') + 
+0.96659018728425516 * x('2') =g= -1;
+con6260..(-0.86759355817962447) * x('1') - 
+0.49727398665646944 * x('2') =g= -1;
+con6261..(-0.86790582415888784) * x('1') - 
+0.49672877950757166 * x('2') =g= -1;
+con6262..0.2557194046423355 * x('1') + 
+0.96675104659336653 * x('2') =g= -1;
+con6263..(-0.86821774752288661) * x('1') - 
+0.49618337626958564 * x('2') =g= -1;
+con6264..(-0.86852932814848549) * x('1') - 
+0.4956377771578156 * x('2') =g= -1;
+con6265..0.25511194452571606 * x('1') + 
+0.9669115242669869 * x('2') =g= -1;
+con6266..(-0.86884056591268555) * x('1') - 
+0.49509198238764118 * x('2') =g= -1;
+con6267..(-0.8691514606926215) * x('1') - 
+0.494545992174522 * x('2') =g= -1;
+con6268..0.2545043837008818 * x('1') + 
+0.96707162024176596 * x('2') =g= -1;
+con6269..(-0.86946201236556486) * x('1') - 
+0.49399980673399285 * x('2') =g= -1;
+con6270..(-0.86977222080892169) * x('1') - 
+0.49345342628166672 * x('2') =g= -1;
+con6271..0.25389672240767408 * x('1') + 
+0.96723133445450393 * x('2') =g= -1;
+con6272..(-0.87008208590023361) * x('1') - 
+0.49290685103323367 * x('2') =g= -1;
+con6273..(-0.87039160751717848) * x('1') - 
+0.4923600812044594 * x('2') =g= -1;
+con6274..0.25328896088597314 * x('1') + 
+0.96739066684215225 * x('2') =g= -1;
+con6275..(-0.87070078553756858) * x('1') - 
+0.49181311701118852 * x('2') =g= -1;
+con6276..(-0.87100961983935343) * x('1') - 
+0.49126595866933936 * x('2') =g= -1;
+con6277..0.25268109937570027 * x('1') + 
+0.96754961734181233 * x('2') =g= -1;
+con6278..(-0.87131811030061657) * x('1') - 
+0.49071860639491 * x('2') =g= -1;
+con6279..(-0.87162625679957861) * x('1') - 
+0.49017106040397274 * x('2') =g= -1;
+con6280..0.25207313811681481 * x('1') + 
+0.96770818589073704 * x('2') =g= -1;
+con6281..(-0.87193405921459499) * x('1') - 
+0.48962332091267785 * x('2') =g= -1;
+con6282..(-0.87224151742415734) * x('1') - 
+0.48907538813725177 * x('2') =g= -1;
+con6283..0.25146507734931628 * x('1') + 
+0.96786637242632956 * x('2') =g= -1;
+con6284..(-0.87254863130689342) * x('1') - 
+0.48852726229399612 * x('2') =g= -1;
+con6285..(-0.8728554007415662) * x('1') - 
+0.48797894359929078 * x('2') =g= -1;
+con6286..0.25085691731324322 * x('1') + 
+0.96802417688614406 * x('2') =g= -1;
+con6287..(-0.873161825607076) * x('1') - 
+0.48743043226958888 * x('2') =g= -1;
+con6288..(-0.87346790578245737) * x('1') - 
+0.48688172852142247 * x('2') =g= -1;
+con6289..0.25024865824867354 * x('1') + 
+0.96818159920788549 * x('2') =g= -1;
+con6290..(-0.8737736411468825) * x('1') - 
+0.48633283257139753 * x('2') =g= -1;
+con6291..(-0.87407903157965872) * x('1') - 
+0.48578374463619706 * x('2') =g= -1;
+con6292..0.24964030039572424 * x('1') + 
+0.96833863932940967 * x('2') =g= -1;
+con6293..(-0.87438407696022968) * x('1') - 
+0.48523446493257988 * x('2') =g= -1;
+con6294..(-0.87468877716817584) * x('1') - 
+0.48468499367737944 * x('2') =g= -1;
+con6295..0.24903184399455058 * x('1') + 
+0.96849529718872351 * x('2') =g= -1;
+con6296..(-0.87499313208321261) * x('1') - 
+0.48413533108750656 * x('2') =g= -1;
+con6297..(-0.87529714158519401) * x('1') - 
+0.48358547737994462 * x('2') =g= -1;
+con6298..0.24842328928534824 * x('1') + 
+0.96865157272398428 * x('2') =g= -1;
+con6299..(-0.87560080555410735) * x('1') - 
+0.4830354327717567 * x('2') =g= -1;
+con6300..(-0.87590412387007932) * x('1') - 
+0.4824851974800769 * x('2') =g= -1;
+con6301..0.24781463650835012 * x('1') + 
+0.96880746587350075 * x('2') =g= -1;
+con6302..(-0.87620709641337102) * x('1') - 
+0.48193477172211746 * x('2') =g= -1;
+con6303..(-0.8765097230643808) * x('1') - 
+0.48138415571516519 * x('2') =g= -1;
+con6304..0.24720588590382875 * x('1') + 
+0.96896297657573238 * x('2') =g= -1;
+con6305..(-0.87681200370364376) * x('1') - 
+0.48083334967658109 * x('2') =g= -1;
+con6306..(-0.87711393821183081) * x('1') - 
+0.48028235382380297 * x('2') =g= -1;
+con6307..0.24659703771209507 * x('1') + 
+0.9691181047692895 * x('2') =g= -1;
+con6308..(-0.87741552646975096) * x('1') - 
+0.47973116837434043 * x('2') =g= -1;
+con6309..(-0.87771676835834811) * x('1') - 
+0.4791797935457815 * x('2') =g= -1;
+con6310..0.24598809217349851 * x('1') + 
+0.96927285039293365 * x('2') =g= -1;
+con6311..(-0.87801766375870371) * x('1') - 
+0.47862822955578782 * x('2') =g= -1;
+con6312..(-0.87831821255203668) * x('1') - 
+0.47807647662209374 * x('2') =g= -1;
+con6313..0.24537904952842715 * x('1') + 
+0.96942721338557736 * x('2') =g= -1;
+con6314..(-0.87861841461970158) * x('1') - 
+0.47752453496251085 * x('2') =g= -1;
+con6315..(-0.87891826984319077) * x('1') - 
+0.47697240479492331 * x('2') =g= -1;
+con6316..0.24476991001730658 * x('1') + 
+0.96958119368628415 * x('2') =g= -1;
+con6317..(-0.87921777810413249) * x('1') - 
+0.47642008633729171 * x('2') =g= -1;
+con6318..(-0.87951693928429364) * x('1') - 
+0.47586757980764788 * x('2') =g= -1;
+con6319..0.24416067388060211 * x('1') + 
+0.96973479123426842 * x('2') =g= -1;
+con6320..(-0.87981575326557637) * x('1') - 
+0.47531488542410127 * x('2') =g= -1;
+con6321..(-0.88011421993002026) * x('1') - 
+0.47476200340483443 * x('2') =g= -1;
+con6322..0.24355134135881565 * x('1') + 
+0.96988800596889624 * x('2') =g= -1;
+con6323..(-0.88041233915980321) * x('1') - 
+0.47420893396810199 * x('2') =g= -1;
+con6324..(-0.88071011083723882) * x('1') - 
+0.47365567733223524 * x('2') =g= -1;
+con6325..0.24294191269248788 * x('1') + 
+0.9700408378296842 * x('2') =g= -1;
+con6326..(-0.88100753484477889) * x('1') - 
+0.47310223371563753 * x('2') =g= -1;
+con6327..(-0.88130461106501146) * x('1') - 
+0.47254860333678789 * x('2') =g= -1;
+con6328..0.24233238812219801 * x('1') + 
+0.97019328675630012 * x('2') =g= -1;
+con6329..(-0.88160133938066343) * x('1') - 
+0.47199478641423598 * x('2') =g= -1;
+con6330..(-0.88189771967459729) * x('1') - 
+0.47144078316660865 * x('2') =g= -1;
+con6331..0.24172276788856187 * x('1') + 
+0.97034535268856337 * x('2') =g= -1;
+con6332..(-0.88219375182981352) * x('1') - 
+0.47088659381260511 * x('2') =g= -1;
+con6333..(-0.88248943572945104) * x('1') - 
+0.470332218570996 * x('2') =g= -1;
+con6334..0.24111305223223387 * x('1') + 
+0.97049703556644418 * x('2') =g= -1;
+con6335..(-0.88278477125678467) * x('1') - 
+0.46977765766062818 * x('2') =g= -1;
+con6336..(-0.883079758295228) * x('1') - 
+0.46922291130041988 * x('2') =g= -1;
+con6337..0.24050324139390591 * x('1') + 
+0.97064833533006412 * x('2') =g= -1;
+con6338..(-0.88337439672833129) * x('1') - 
+0.46866797970936397 * x('2') =g= -1;
+con6339..(-0.88366868643978314) * x('1') - 
+0.46811286310652495 * x('2') =g= -1;
+con6340..0.23989333561430767 * x('1') + 
+0.97079925191969585 * x('2') =g= -1;
+con6341..(-0.88396262731340947) * x('1') - 
+0.46755756171104151 * x('2') =g= -1;
+con6342..(-0.88425621923317321) * x('1') - 
+0.46700207574212582 * x('2') =g= -1;
+con6343..0.23928333513420547 * x('1') + 
+0.97094978527576359 * x('2') =g= -1;
+con6344..(-0.88454946208317686) * x('1') - 
+0.46644640541906035 * x('2') =g= -1;
+con6345..(-0.8848423557476589) * x('1') - 
+0.46589055096120313 * x('2') =g= -1;
+con6346..0.23867324019440422 * x('1') + 
+0.97109993533884253 * x('2') =g= -1;
+con6347..(-0.88513490011099671) * x('1') - 
+0.46533451258798308 * x('2') =g= -1;
+con6348..(-0.885427095057705) * x('1') - 
+0.46477829051890313 * x('2') =g= -1;
+con6349..0.23806305103574557 * x('1') + 
+0.97124970204965932 * x('2') =g= -1;
+con6350..(-0.88571894047243682) * x('1') - 
+0.46422188497353717 * x('2') =g= -1;
+con6351..(-0.88601043623998288) * x('1') - 
+0.46366529617153279 * x('2') =g= -1;
+con6352..0.23745276789910791 * x('1') + 
+0.97139908534909192 * x('2') =g= -1;
+con6353..(-0.88630158224527178) * x('1') - 
+0.46310852433261024 * x('2') =g= -1;
+con6354..(-0.88659237837337102) * x('1') - 
+0.46255156967655969 * x('2') =g= -1;
+con6355..0.23684239102540733 * x('1') + 
+0.97154808517816971 * x('2') =g= -1;
+con6356..(-0.88688282450948541) * x('1') - 
+0.46199443242324617 * x('2') =g= -1;
+con6357..(-0.88717292053895824) * x('1') - 
+0.46143711279260502 * x('2') =g= -1;
+con6358..0.23623192065559676 * x('1') + 
+0.9716967014780733 * x('2') =g= -1;
+con6359..(-0.887462666347271) * x('1') - 
+0.46087961100464447 * x('2') =g= -1;
+con6360..(-0.88775206182004296) * x('1') - 
+0.46032192727944493 * x('2') =g= -1;
+con6361..0.235621357030666 * x('1') + 
+0.97184493419013473 * x('2') =g= -1;
+con6362..(-0.88804110684303272) * x('1') - 
+0.45976406183715723 * x('2') =g= -1;
+con6363..(-0.8883298013021359) * x('1') - 
+0.45920601489800605 * x('2') =g= -1;
+con6364..0.23501070039164171 * x('1') + 
+0.97199278325583771 * x('2') =g= -1;
+con6365..(-0.88861814508338799) * x('1') - 
+0.45864778668228495 * x('2') =g= -1;
+con6366..(-0.8889061380729617) * x('1') - 
+0.45808937741036171 * x('2') =g= -1;
+con6367..0.23439995097958724 * x('1') + 
+0.97214024861681714 * x('2') =g= -1;
+con6368..(-0.88919378015716888) * x('1') - 
+0.45753078730267371 * x('2') =g= -1;
+con6369..(-0.88948107122245956) * x('1') - 
+0.45697201657973086 * x('2') =g= -1;
+con6370..0.23378910903560274 * x('1') + 
+0.97228733021485936 * x('2') =g= -1;
+con6371..(-0.88976801115542237) * x('1') - 
+0.45641306546211435 * x('2') =g= -1;
+con6372..(-0.8900545998427849) * x('1') - 
+0.45585393417047543 * x('2') =g= -1;
+con6373..0.23317817480082412 * x('1') + 
+0.97243402799190259 * x('2') =g= -1;
+con6374..(-0.89034083717141255) * x('1') - 
+0.45529462292553846 * x('2') =g= -1;
+con6375..(-0.89062672302831114) * x('1') - 
+0.45473513194809567 * x('2') =g= -1;
+con6376..0.2325671485164251 * x('1') + 
+0.97258034189003584 * x('2') =g= -1;
+con6377..(-0.89091225730062285) * x('1') - 
+0.45417546145901461 * x('2') =g= -1;
+con6378..(-0.89119743987563094) * x('1') - 
+0.4536156116792292 * x('2') =g= -1;
+con6379..0.2319560304236144 * x('1') + 
+0.97272627185150051 * x('2') =g= -1;
+con6380..(-0.89148227064075602) * x('1') - 
+0.45305558282974712 * x('2') =g= -1;
+con6381..(-0.89176674948355794) * x('1') - 
+0.45249537513164623 * x('2') =g= -1;
+con6382..0.23134482076363766 * x('1') + 
+0.97287181781868903 * x('2') =g= -1;
+con6383..(-0.89205087629173585) * x('1') - 
+0.45193498880607386 * x('2') =g= -1;
+con6384..(-0.89233465095312725) * x('1') - 
+0.45137442407424966 * x('2') =g= -1;
+con6385..0.23073351977777662 * x('1') + 
+0.97301697973414547 * x('2') =g= -1;
+con6386..(-0.89261807335570975) * x('1') - 
+0.45081368115746084 * x('2') =g= -1;
+con6387..(-0.89290114338759818) * x('1') - 
+0.45025276027706901 * x('2') =g= -1;
+con6388..0.23012212770734894 * x('1') + 
+0.97316175754056555 * x('2') =g= -1;
+con6389..(-0.8931838609370486) * x('1') - 
+0.44969166165450192 * x('2') =g= -1;
+con6390..(-0.89346622589245472) * x('1') - 
+0.44913038551126006 * x('2') =g= -1;
+con6391..0.2295106447937085 * x('1') + 
+0.97330615118079689 * x('2') =g= -1;
+con6392..(-0.89374823814234972) * x('1') - 
+0.44856893206891368 * x('2') =g= -1;
+con6393..(-0.89402989757540663) * x('1') - 
+0.4480073015491019 * x('2') =g= -1;
+con6394..0.22889907127824424 * x('1') + 
+0.9734501605978384 * x('2') =g= -1;
+con6395..(-0.89431120408043663) * x('1') - 
+0.44744549417353568 * x('2') =g= -1;
+con6396..(-0.8945921575463921) * x('1') - 
+0.44688351016399253 * x('2') =g= -1;
+con6397..0.22828740740238226 * x('1') + 
+0.97359378573484057 * x('2') =g= -1;
+con6398..(-0.8948727578623622) * x('1') - 
+0.44632134974232418 * x('2') =g= -1;
+con6399..(-0.89515300491757799) * x('1') - 
+0.44575901313044763 * x('2') =g= -1;
+con6400..0.22767565340758292 * x('1') + 
+0.97373702653510619 * x('2') =g= -1;
+con6401..(-0.89543289860140851) * x('1') - 
+0.44519650055035209 * x('2') =g= -1;
+con6402..(-0.89571243880336249) * x('1') - 
+0.44463381222409593 * x('2') =g= -1;
+con6403..0.22706380953534275 * x('1') + 
+0.97387988294208927 * x('2') =g= -1;
+con6404..(-0.89599162541308874) * x('1') - 
+0.44407094837380573 * x('2') =g= -1;
+con6405..(-0.896270458320375) * x('1') - 
+0.44350790922167888 * x('2') =g= -1;
+con6406..0.22645187602719441 * x('1') + 
+0.97402235489939559 * x('2') =g= -1;
+con6407..(-0.89654893741514929) * x('1') - 
+0.44294469498998046 * x('2') =g= -1;
+con6408..(-0.89682706258747868) * x('1') - 
+0.44238130590104574 * x('2') =g= -1;
+con6409..0.2258398531247047 * x('1') + 
+0.97416444235078292 * x('2') =g= -1;
+con6410..(-0.89710483372756999) * x('1') - 
+0.44181774217727954 * x('2') =g= -1;
+con6411..(-0.89738225072577071) * x('1') - 
+0.44125400404115311 * x('2') =g= -1;
+con6412..0.22522774106947649 * x('1') + 
+0.97430614524016057 * x('2') =g= -1;
+con6413..(-0.897659313472567) * x('1') - 
+0.44069009171520951 * x('2') =g= -1;
+con6414..(-0.89793602185858556) * x('1') - 
+0.44012600542205843 * x('2') =g= -1;
+con6415..0.22461554010314766 * x('1') + 
+0.97444746351158984 * x('2') =g= -1;
+con6416..(-0.89821237577459245) * x('1') - 
+0.43956174538437981 * x('2') =g= -1;
+con6417..(-0.89848837511149438) * x('1') - 
+0.43899731182492069 * x('2') =g= -1;
+con6418..0.22400325046739128 * x('1') + 
+0.97458839710928391 * x('2') =g= -1;
+con6419..(-0.89876401976033726) * x('1') - 
+0.43843270496649778 * x('2') =g= -1;
+con6420..(-0.89903930961230716) * x('1') - 
+0.43786792503199651 * x('2') =g= -1;
+con6421..0.22339087240391547 * x('1') + 
+0.9747289459776074 * x('2') =g= -1;
+con6422..(-0.8993142445587311) * x('1') - 
+0.43730297224436832 * x('2') =g= -1;
+con6423..(-0.89958882449107491) * x('1') - 
+0.43673784682663574 * x('2') =g= -1;
+con6424..0.22277840615446254 * x('1') + 
+0.97486911006107757 * x('2') =g= -1;
+con6425..(-0.89986304930094574) * x('1') - 
+0.43617254900188729 * x('2') =g= -1;
+con6426..(-0.90013691888008973) * x('1') - 
+0.43560707899328127 * x('2') =g= -1;
+con6427..0.22216585196081104 * x('1') + 
+0.97500888930436269 * x('2') =g= -1;
+con6428..(-0.90041043312039437) * x('1') - 
+0.4350414370240423 * x('2') =g= -1;
+con6429..(-0.90068359191388681) * x('1') - 
+0.43447562331746414 * x('2') =g= -1;
+con6430..0.22155321006477274 * x('1') + 
+0.97514828365228368 * x('2') =g= -1;
+con6431..(-0.90095639515273418) * x('1') - 
+0.43390963809690869 * x('2') =g= -1;
+con6432..(-0.90122884272924531) * x('1') - 
+0.43334348158580316 * x('2') =g= -1;
+con6433..0.22094048070819497 * x('1') + 
+0.97528729304981299 * x('2') =g= -1;
+con6434..(-0.90150093453586777) * x('1') - 
+0.43277715400764516 * x('2') =g= -1;
+con6435..(-0.90177267046519094) * x('1') - 
+0.43221065558599786 * x('2') =g= -1;
+con6436..0.22032766413295923 * x('1') + 
+0.97542591744207507 * x('2') =g= -1;
+con6437..(-0.90204405040994373) * x('1') - 
+0.4316439865444936 * x('2') =g= -1;
+con6438..(-0.90231507426299618) * x('1') - 
+0.43107714710683015 * x('2') =g= -1;
+con6439..0.21971476058098161 * x('1') + 
+0.9755641567743466 * x('2') =g= -1;
+con6440..(-0.90258574191735863) * x('1') - 
+0.43051013749677414 * x('2') =g= -1;
+con6441..(-0.90285605326618157) * x('1') - 
+0.42994295793815945 * x('2') =g= -1;
+con6442..0.21910177029421238 * x('1') + 
+0.975702010992056 * x('2') =g= -1;
+con6443..(-0.90312600820275768) * x('1') - 
+0.42937560865488439 * x('2') =g= -1;
+con6444..(-0.90339560662051821) * x('1') - 
+0.42880808987091873 * x('2') =g= -1;
+con6445..0.21848869351463615 * x('1') + 
+0.9758394800407838 * x('2') =g= -1;
+con6446..(-0.90366484841303718) * x('1') - 
+0.4282404018102946 * x('2') =g= -1;
+con6447..(-0.90393373347402783) * x('1') - 
+0.42767254469711435 * x('2') =g= -1;
+con6448..0.21787553048427188 * x('1') + 
+0.97597656386626264 * x('2') =g= -1;
+con6449..(-0.9042022616973453) * x('1') - 
+0.42710451875554484 * x('2') =g= -1;
+con6450..(-0.90447043297698493) * x('1') - 
+0.42653632420982091 * x('2') =g= -1;
+con6451..0.2172622814451719 * x('1') + 
+0.97611326241437724 * x('2') =g= -1;
+con6452..(-0.90473824720708285) * x('1') - 
+0.42596796128424436 * x('2') =g= -1;
+con6453..(-0.9050057042819174) * x('1') - 
+0.42539943020318066 * x('2') =g= -1;
+con6454..0.21664894663942316 * x('1') + 
+0.97624957563116432 * x('2') =g= -1;
+con6455..(-0.90527280409590583) * x('1') - 
+0.42483073119106601 * x('2') =g= -1;
+con6456..(-0.90553954654360858) * x('1') - 
+0.4242618644723985 * x('2') =g= -1;
+con6457..0.21603552630914621 * x('1') + 
+0.97638550346281272 * x('2') =g= -1;
+con6458..(-0.90580593151972566) * x('1') - 
+0.42369283027174531 * x('2') =g= -1;
+con6459..(-0.90607195891909875) * x('1') - 
+0.42312362881373927 * x('2') =g= -1;
+con6460..0.21542202069649546 * x('1') + 
+0.97652104585566346 * x('2') =g= -1;
+con6461..(-0.90633762863671086) * x('1') - 
+0.42255426032307802 * x('2') =g= -1;
+con6462..(-0.90660294056768542) * x('1') - 
+0.42198472502452716 * x('2') =g= -1;
+con6463..0.21480843004365888 * x('1') + 
+0.97665620275620968 * x('2') =g= -1;
+con6464..(-0.90686789460728867) * x('1') - 
+0.42141502314291501 * x('2') =g= -1;
+con6465..(-0.90713249065092594) * x('1') - 
+0.4208451549031399 * x('2') =g= -1;
+con6466..0.21419475459285808 * x('1') + 
+0.97679097411109672 * x('2') =g= -1;
+con6467..(-0.907396728594146) * x('1') - 
+0.42027512053016158 * x('2') =g= -1;
+con6468..(-0.90766060833263762) * x('1') - 
+0.41970492024900807 * x('2') =g= -1;
+con6469..0.2135809945863483 * x('1') + 
+0.97692535986712226 * x('2') =g= -1;
+con6470..(-0.90792412976223136) * x('1') - 
+0.41913455428477253 * x('2') =g= -1;
+con6471..(-0.90818729277889942) * x('1') - 
+0.41856402286261241 * x('2') =g= -1;
+con6472..0.21296715026641735 * x('1') + 
+0.97705935997123594 * x('2') =g= -1;
+con6473..(-0.90845009727875503) * x('1') - 
+0.41799332620775231 * x('2') =g= -1;
+con6474..(-0.90871254315805405) * x('1') - 
+0.41742246454547899 * x('2') =g= -1;
+con6475..0.21235322187538785 * x('1') + 
+0.97719297437053976 * x('2') =g= -1;
+con6476..(-0.90897463031319214) * x('1') - 
+0.41685143810114866 * x('2') =g= -1;
+con6477..(-0.90923635864070818) * x('1') - 
+0.41628024710017825 * x('2') =g= -1;
+con6478..0.21173920965561399 * x('1') + 
+0.97732620301228801 * x('2') =g= -1;
+con6479..(-0.90949772803728202) * x('1') - 
+0.41570889176805237 * x('2') =g= -1;
+con6480..(-0.90975873839973476) * x('1') - 
+0.41513737233032028 * x('2') =g= -1;
+con6481..0.21112511384948385 * x('1') + 
+0.97745904584388721 * x('2') =g= -1;
+con6482..(-0.91001938962503037) * x('1') - 
+0.41456568901259455 * x('2') =g= -1;
+con6483..(-0.91027968161027339) * x('1') - 
+0.41399384204055423 * x('2') =g= -1;
+con6484..0.21051093469941901 * x('1') + 
+0.97759150281289631 * x('2') =g= -1;
+con6485..(-0.91053961425271113) * x('1') - 
+0.4134218316399414 * x('2') =g= -1;
+con6486..(-0.91079918744973187) * x('1') - 
+0.41284965803656448 * x('2') =g= -1;
+con6487..0.20989667244787277 * x('1') + 
+0.97772357386702624 * x('2') =g= -1;
+con6488..(-0.91105840109886693) * x('1') - 
+0.4122773214562937 * x('2') =g= -1;
+con6489..(-0.9113172550977886) * x('1') - 
+0.41170482212506593 * x('2') =g= -1;
+con6490..0.20928232733733224 * x('1') + 
+0.97785525895414083 * x('2') =g= -1;
+con6491..(-0.91157574934431118) * x('1') - 
+0.41113216026888194 * x('2') =g= -1;
+con6492..(-0.91183388373639163) * x('1') - 
+0.41055933611380535 * x('2') =g= -1;
+con6493..0.20866789961031618 * x('1') + 
+0.97798655802225576 * x('2') =g= -1;
+con6494..(-0.91209165817212834) * x('1') - 
+0.40998634988596561 * x('2') =g= -1;
+con6495..(-0.91234907254976227) * x('1') - 
+0.40941320181155438 * x('2') =g= -1;
+con6496..0.2080533895093773 * x('1') + 
+0.97811747101953928 * x('2') =g= -1;
+con6497..(-0.91260612676767627) * x('1') - 
+0.40883989211682858 * x('2') =g= -1;
+con6498..(-0.91286282072439484) * x('1') - 
+0.40826642102810917 * x('2') =g= -1;
+con6499..0.20743879727710013 * x('1') + 
+0.97824799789431216 * x('2') =g= -1;
+con6500..(-0.91311915431858615) * x('1') - 
+0.40769278877177856 * x('2') =g= -1;
+con6501..(-0.91337512744905902) * x('1') - 
+0.40711899557428549 * x('2') =g= -1;
+con6502..0.20682412315610096 * x('1') + 
+0.97837813859504752 * x('2') =g= -1;
+con6503..(-0.91363074001476585) * x('1') - 
+0.40654504166214034 * x('2') =g= -1;
+con6504..(-0.91388599191480013) * x('1') - 
+0.4059709272619183 * x('2') =g= -1;
+con6505..0.20620936738903001 * x('1') + 
+0.97850789307037067 * x('2') =g= -1;
+con6506..(-0.91414088304839902) * x('1') - 
+0.40539665260025665 * x('2') =g= -1;
+con6507..(-0.91439541331494123) * x('1') - 
+0.40482221790385686 * x('2') =g= -1;
+con6508..0.20559453021856811 * x('1') + 
+0.97863726126905992 * x('2') =g= -1;
+con6509..(-0.9146495826139478) * x('1') - 
+0.40424762339948411 * x('2') =g= -1;
+con6510..(-0.91490339084508343) * x('1') - 
+0.40367286931396379 * x('2') =g= -1;
+con6511..0.20497961188742916 * x('1') + 
+0.97876624314004568 * x('2') =g= -1;
+con6512..(-0.91515683790815361) * x('1') - 
+0.40309795587418873 * x('2') =g= -1;
+con6513..(-0.91540992370310825) * x('1') - 
+0.40252288330711034 * x('2') =g= -1;
+con6514..0.20436461263835884 * x('1') + 
+0.97889483863241078 * x('2') =g= -1;
+con6515..(-0.91566264813003839) * x('1') - 
+0.4019476518397459 * x('2') =g= -1;
+con6516..(-0.91591501108917861) * x('1') - 
+0.40137226169917345 * x('2') =g= -1;
+con6517..0.20374953271413482 * x('1') + 
+0.97902304769539095 * x('2') =g= -1;
+con6518..(-0.91616701248090582) * x('1') - 
+0.40079671311253501 * x('2') =g= -1;
+con6519..(-0.91641865220573937) * x('1') - 
+0.40022100630703544 * x('2') =g= -1;
+con6520..0.20313437235756679 * x('1') + 
+0.97915087027837411 * x('2') =g= -1;
+con6521..(-0.91666993016434262) * x('1') - 
+0.39964514150993918 * x('2') =g= -1;
+con6522..(-0.91692084625751968) * x('1') - 
+0.39906911894857755 * x('2') =g= -1;
+con6523..0.20251913181149533 * x('1') + 
+0.97927830633090107 * x('2') =g= -1;
+con6524..(-0.91717140038621969) * x('1') - 
+0.39849293885033976 * x('2') =g= -1;
+con6525..(-0.91742159245153321) * x('1') - 
+0.39791660144268032 * x('2') =g= -1;
+con6526..0.20190381131879423 * x('1') + 
+0.97940535580266497 * x('2') =g= -1;
+con6527..(-0.91767142235469445) * x('1') - 
+0.39734010695311395 * x('2') =g= -1;
+con6528..(-0.91792088999708021) * x('1') - 
+0.39676345560921844 * x('2') =g= -1;
+con6529..0.20128841112236726 * x('1') + 
+0.97953201864351169 * x('2') =g= -1;
+con6530..(-0.91816999528020993) * x('1') - 
+0.39618664763863409 * x('2') =g= -1;
+con6531..(-0.9184187381057477) * x('1') - 
+0.39560968326905999 * x('2') =g= -1;
+con6532..0.20067293146515061 * x('1') + 
+0.97965829480343958 * x('2') =g= -1;
+con6533..(-0.91866711837549841) * x('1') - 
+0.39503256272826159 * x('2') =g= -1;
+con6534..(-0.91891513599141217) * x('1') - 
+0.39445528624406151 * x('2') =g= -1;
+con6535..0.20005737259011153 * x('1') + 
+0.97978418423259994 * x('2') =g= -1;
+con6536..(-0.91916279085558072) * x('1') - 
+0.39387785404434705 * x('2') =g= -1;
+con6537..(-0.91941008287024006) * x('1') - 
+0.39330026635706511 * x('2') =g= -1;
+con6538..0.19944173474024859 * x('1') + 
+0.97990968688129643 * x('2') =g= -1;
+con6539..(-0.91965701193776872) * x('1') - 
+0.39272252341022507 * x('2') =g= -1;
+con6540..(-0.91990357796068845) * x('1') - 
+0.3921446254318981 * x('2') =g= -1;
+con6541..0.19882601815859155 * x('1') + 
+0.98003480269998544 * x('2') =g= -1;
+con6542..(-0.92014978084166543) * x('1') - 
+0.39156657265021366 * x('2') =g= -1;
+con6543..(-0.92039562048350754) * x('1') - 
+0.39098836529336684 * x('2') =g= -1;
+con6544..0.19821022308820119 * x('1') + 
+0.98015953163927627 * x('2') =g= -1;
+con6545..(-0.9206410967891675) * x('1') - 
+0.39041000358960914 * x('2') =g= -1;
+con6546..(-0.92088620966174084) * x('1') - 
+0.38983148776725607 * x('2') =g= -1;
+con6547..0.19759434977216955 * x('1') + 
+0.98028387364993086 * x('2') =g= -1;
+con6548..(-0.92113095900446618) * x('1') - 
+0.38925281805468342 * x('2') =g= -1;
+con6549..(-0.92137534472072646) * x('1') - 
+0.38867399468032654 * x('2') =g= -1;
+con6550..0.19697839845361867 * x('1') + 
+0.98040782868286369 * x('2') =g= -1;
+con6551..(-0.92161936671404743) * x('1') - 
+0.38809501787268302 * x('2') =g= -1;
+con6552..(-0.92186302488809913) * x('1') - 
+0.38751588786030949 * x('2') =g= -1;
+con6553..0.19636236937570267 * x('1') + 
+0.98053139668914224 * x('2') =g= -1;
+con6554..(-0.92210631914669428) * x('1') - 
+0.38693660487182502 * x('2') =g= -1;
+con6555..(-0.92234924939379048) * x('1') - 
+0.38635716913590629 * x('2') =g= -1;
+con6556..0.19574626278160576 * x('1') + 
+0.98065457761998676 * x('2') =g= -1;
+con6557..(-0.92259181553348812) * x('1') - 
+0.38577758088129255 * x('2') =g= -1;
+con6558..(-0.92283401747003135) * x('1') - 
+0.38519784033678311 * x('2') =g= -1;
+con6559..0.19513007891454226 * x('1') + 
+0.98077737142677013 * x('2') =g= -1;
+con6560..(-0.92307585510780865) * x('1') - 
+0.38461794773123598 * x('2') =g= -1;
+con6561..(-0.92331732835135172) * x('1') - 
+0.3840379032935709 * x('2') =g= -1;
+con6562..0.19451381801775766 * x('1') + 
+0.98089977806101813 * x('2') =g= -1;
+con6563..(-0.92355843710533669) * x('1') - 
+0.3834577072527659 * x('2') =g= -1;
+con6564..(-0.9237991812745826) * x('1') - 
+0.38287735983786092 * x('2') =g= -1;
+con6565..0.19389748033452767 * x('1') + 
+0.98102179747440954 * x('2') =g= -1;
+con6566..(-0.92403956076405391) * x('1') - 
+0.3822968612779527 * x('2') =g= -1;
+con6567..(-0.92427957547885786) * x('1') - 
+0.38171621180220028 * x('2') =g= -1;
+con6568..0.19328106610815854 * x('1') + 
+0.98114342961877576 * x('2') =g= -1;
+con6569..(-0.9245192253242458) * x('1') - 
+0.38113541163982173 * x('2') =g= -1;
+con6570..(-0.92475851020561373) * x('1') - 
+0.38055446102009344 * x('2') =g= -1;
+con6571..0.19266457558198577 * x('1') + 
+0.98126467444610133 * x('2') =g= -1;
+con6572..(-0.92499743002850099) * x('1') - 
+0.37997336017235273 * x('2') =g= -1;
+con6573..(-0.92523598469859158) * x('1') - 
+0.37939210932599476 * x('2') =g= -1;
+con6574..0.19204800899937641 * x('1') + 
+0.9813855319085234 * x('2') =g= -1;
+con6575..(-0.92547417412171318) * x('1') - 
+0.37881070871047573 * x('2') =g= -1;
+con6576..(-0.92571199820383843) * x('1') - 
+0.37822915855530836 * x('2') =g= -1;
+con6577..0.19143136660372681 * x('1') + 
+0.98150600195833215 * x('2') =g= -1;
+con6578..(-0.92594945685108365) * x('1') - 
+0.3776474590900662 * x('2') =g= -1;
+con6579..(-0.92618654996970862) * x('1') - 
+0.37706561054438309 * x('2') =g= -1;
+con6580..0.19081464863846259 * x('1') + 
+0.98162608454797085 * x('2') =g= -1;
+con6581..(-0.9264232774661193) * x('1') - 
+0.37648361314794809 * x('2') =g= -1;
+con6582..(-0.92665963924686423) * x('1') - 
+0.3759014671305122 * x('2') =g= -1;
+con6583..0.19019785534704078 * x('1') + 
+0.98174577963003551 * x('2') =g= -1;
+con6584..(-0.92689563521863738) * x('1') - 
+0.37531917272188303 * x('2') =g= -1;
+con6585..(-0.92713126528827638) * x('1') - 
+0.37473673015192893 * x('2') =g= -1;
+con6586..0.18958098697294656 * x('1') + 
+0.98186508715727516 * x('2') =g= -1;
+con6587..(-0.92736652936276442) * x('1') - 
+0.3741541396505737 * x('2') =g= -1;
+con6588..(-0.92760142734922812) * x('1') - 
+0.37357140144780182 * x('2') =g= -1;
+con6589..0.18896404375969567 * x('1') + 
+0.98198400708259181 * x('2') =g= -1;
+con6590..(-0.92783595915493833) * x('1') - 
+0.3729885157736571 * x('2') =g= -1;
+con6591..(-0.92807012468731187) * x('1') - 
+0.37240548285823794 * x('2') =g= -1;
+con6592..0.18834702595083311 * x('1') + 
+0.98210253935904079 * x('2') =g= -1;
+con6593..(-0.92830392385390892) * x('1') - 
+0.37182230293170415 * x('2') =g= -1;
+con6594..(-0.92853735656243508) * x('1') - 
+0.3712389762242716 * x('2') =g= -1;
+con6595..0.18772993378993344 * x('1') + 
+0.98222068393982986 * x('2') =g= -1;
+con6596..(-0.92877042272073995) * x('1') - 
+0.37065550296621519 * x('2') =g= -1;
+con6597..(-0.92900312223681791) * x('1') - 
+0.37007188338786817 * x('2') =g= -1;
+con6598..0.18711276752060066 * x('1') + 
+0.98233844077832033 * x('2') =g= -1;
+con6599..(-0.92923545501880911) * x('1') - 
+0.3694881177196187 * x('2') =g= -1;
+con6600..(-0.92946742097499657) * x('1') - 
+0.36890420619191705 * x('2') =g= -1;
+con6601..0.18649552738646724 * x('1') + 
+0.98245580982802649 * x('2') =g= -1;
+con6602..(-0.92969902001381011) * x('1') - 
+0.36832014903526661 * x('2') =g= -1;
+con6603..(-0.92993025204382307) * x('1') - 
+0.36773594648023156 * x('2') =g= -1;
+con6604..0.1858782136311963 * x('1') + 
+0.98257279104261552 * x('2') =g= -1;
+con6605..(-0.93016111697375425) * x('1') - 
+0.36715159875743131 * x('2') =g= -1;
+con6606..(-0.93039161471246723) * x('1') - 
+0.36656710609754395 * x('2') =g= -1;
+con6607..0.18526082649847853 * x('1') + 
+0.9826893843759078 * x('2') =g= -1;
+con6608..(-0.93062174516897) * x('1') - 
+0.36598246873130513 * x('2') =g= -1;
+con6609..(-0.93085150825241691) * x('1') - 
+0.36539768688950475 * x('2') =g= -1;
+con6610..0.18464336623203439 * x('1') + 
+0.98280558978187682 * x('2') =g= -1;
+con6611..(-0.93108090387210574) * x('1') - 
+0.36481276080299424 * x('2') =g= -1;
+con6612..(-0.93130993193748057) * x('1') - 
+0.36422769070267752 * x('2') =g= -1;
+con6613..0.1840258330756131 * x('1') + 
+0.98292140721464938 * x('2') =g= -1;
+con6614..(-0.93153859235812975) * x('1') - 
+0.36364247681951861 * x('2') =g= -1;
+con6615..(-0.93176688504378746) * x('1') - 
+0.36305711938453622 * x('2') =g= -1;
+con6616..0.18340822727299252 * x('1') + 
+0.98303683662850516 * x('2') =g= -1;
+con6617..(-0.93199480990433237) * x('1') - 
+0.36247161862880695 * x('2') =g= -1;
+con6618..(-0.93222236684978865) * x('1') - 
+0.36188597478346407 * x('2') =g= -1;
+con6619..0.18279054906797931 * x('1') + 
+0.98315187797787718 * x('2') =g= -1;
+con6620..(-0.93244955579032607) * x('1') - 
+0.36130018807969599 * x('2') =g= -1;
+con6621..(-0.93267637663625858) * x('1') - 
+0.36071425874874957 * x('2') =g= -1;
+con6622..0.18217279870440861 * x('1') + 
+0.98326653121735152 * x('2') =g= -1;
+con6623..(-0.93290282929804713) * x('1') - 
+0.36012818702192523 * x('2') =g= -1;
+con6624..(-0.93312891368629636) * x('1') - 
+0.35954197313058239 * x('2') =g= -1;
+con6625..0.18155497642614438 * x('1') + 
+0.98338079630166775 * x('2') =g= -1;
+con6626..(-0.93335462971175753) * x('1') - 
+0.35895561730613446 * x('2') =g= -1;
+con6627..(-0.93357997728532638) * x('1') - 
+0.3583691197800522 * x('2') =g= -1;
+con6628..0.18093708247707818 * x('1') + 
+0.98349467318571837 * x('2') =g= -1;
+con6629..(-0.93380495631804461) * x('1') - 
+0.35778248078386238 * x('2') =g= -1;
+con6630..(-0.93402956672109938) * x('1') - 
+0.35719570054914629 * x('2') =g= -1;
+con6631..0.18031911710113041 * x('1') + 
+0.98360816182454935 * x('2') =g= -1;
+con6632..(-0.93425380840582295) * x('1') - 
+0.35660877930754292 * x('2') =g= -1;
+con6633..(-0.93447768128369413) * x('1') - 
+0.35602171729074433 * x('2') =g= -1;
+con6634..0.17970108054225029 * x('1') + 
+0.98372126217335965 * x('2') =g= -1;
+con6635..(-0.93470118526633617) * x('1') - 
+0.35543451473050036 * x('2') =g= -1;
+con6636..(-0.93492432026551853) * x('1') - 
+0.35484717185861603 * x('2') =g= -1;
+con6637..0.17908297304441378 * x('1') + 
+0.98383397418750174 * x('2') =g= -1;
+con6638..(-0.93514708619315634) * x('1') - 
+0.35425968890695053 * x('2') =g= -1;
+con6639..(-0.93536948296131017) * x('1') - 
+0.35367206610741997 * x('2') =g= -1;
+con6640..0.17846479485162575 * x('1') + 
+0.98394629782248133 * x('2') =g= -1;
+con6641..(-0.93559151048218681) * x('1') - 
+0.35308430369199401 * x('2') =g= -1;
+con6642..(-0.9358131686681378) * x('1') - 
+0.35249640189269948 * x('2') =g= -1;
+con6643..0.17784654620791882 * x('1') + 
+0.98405823303395745 * x('2') =g= -1;
+con6644..(-0.93603445743166191) * x('1') - 
+0.35190836094161537 * x('2') =g= -1;
+con6645..(-0.93625537668540282) * x('1') - 
+0.35132018107087803 * x('2') =g= -1;
+con6646..0.17722822735735333 * x('1') + 
+0.98416977977774256 * x('2') =g= -1;
+con6647..(-0.93647592634214982) * x('1') - 
+0.35073186251267835 * x('2') =g= -1;
+con6648..(-0.93669610631483913) * x('1') - 
+0.3501434054992606 * x('2') =g= -1;
+con6649..0.17660983854401738 * x('1') + 
+0.98428093800980221 * x('2') =g= -1;
+con6650..(-0.93691591651655182) * x('1') - 
+0.34955481026292545 * x('2') =g= -1;
+con6651..(-0.93713535686051563) * x('1') - 
+0.34896607703602639 * x('2') =g= -1;
+con6652..0.17599138001202666 * x('1') + 
+0.98439170768625561 * x('2') =g= -1;
+con6653..(-0.93735442726010398) * x('1') - 
+0.34837720605097355 * x('2') =g= -1;
+con6654..(-0.93757312762883671) * x('1') - 
+0.34778819754022849 * x('2') =g= -1;
+con6655..0.17537285200552463 * x('1') + 
+0.98450208876337497 * x('2') =g= -1;
+con6656..(-0.93779145788037954) * x('1') - 
+0.34719905173630916 * x('2') =g= -1;
+con6657..(-0.93800941792854353) * x('1') - 
+0.3466097688717889 * x('2') =g= -1;
+con6658..0.17475425476868153 * x('1') + 
+0.98461208119758659 * x('2') =g= -1;
+con6659..(-0.9382270076872874) * x('1') - 
+0.34602034917929148 * x('2') =g= -1;
+con6660..(-0.93844422707071462) * x('1') - 
+0.34543079289149797 * x('2') =g= -1;
+con6661..0.17413558854569558 * x('1') + 
+0.98472168494546941 * x('2') =g= -1;
+con6662..(-0.93866107599307602) * x('1') - 
+0.34484110024114129 * x('2') =g= -1;
+con6663..(-0.93887755436876741) * x('1') - 
+0.34425127146101026 * x('2') =g= -1;
+con6664..0.17351685358079194 * x('1') + 
+0.98483089996375617 * x('2') =g= -1;
+con6665..(-0.93909366211233236) * x('1') - 
+0.34366130678394458 * x('2') =g= -1;
+con6666..(-0.9393093991384599) * x('1') - 
+0.34307120644283962 * x('2') =g= -1;
+con6667..0.17289805011822304 * x('1') + 
+0.98493972620933334 * x('2') =g= -1;
+con6668..(-0.9395247653619847) * x('1') - 
+0.34248097067064553 * x('2') =g= -1;
+con6669..(-0.93973976069788945) * x('1') - 
+0.34189059970036234 * x('2') =g= -1;
+con6670..0.17227917840226822 * x('1') + 
+0.9850481636392403 * x('2') =g= -1;
+con6671..(-0.93995438506130202) * x('1') - 
+0.34130009376504655 * x('2') =g= -1;
+con6672..(-0.94016863836749731) * x('1') - 
+0.34070945309780598 * x('2') =g= -1;
+con6673..0.17166023867723385 * x('1') + 
+0.98515621221067018 * x('2') =g= -1;
+con6674..(-0.94038252053189608) * x('1') - 
+0.34011867793180378 * x('2') =g= -1;
+con6675..(-0.94059603147006665) * x('1') - 
+0.33952776850025312 * x('2') =g= -1;
+con6676..0.17104123118745332 * x('1') + 
+0.98526387188096987 * x('2') =g= -1;
+con6677..(-0.940809171097723) * x('1') - 
+0.33893672503642241 * x('2') =g= -1;
+con6678..(-0.94102193933072542) * x('1') - 
+0.33834554777363413 * x('2') =g= -1;
+con6679..0.17042215617728593 * x('1') + 
+0.98537114260763936 * x('2') =g= -1;
+con6680..(-0.94123433608508211) * x('1') - 
+0.3377542369452598 * x('2') =g= -1;
+con6681..(-0.9414463612769467) * x('1') - 
+0.33716279278472711 * x('2') =g= -1;
+con6682..0.16980301389111913 * x('1') + 
+0.98547802434833243 * x('2') =g= -1;
+con6683..(-0.94165801482262013) * x('1') - 
+0.33657121552551422 * x('2') =g= -1;
+con6684..(-0.94186929663854979) * x('1') - 
+0.33597950540115312 * x('2') =g= -1;
+con6685..0.16918380457336543 * x('1') + 
+0.98558451706085626 * x('2') =g= -1;
+con6686..(-0.94208020664132974) * x('1') - 
+0.33538766264522824 * x('2') =g= -1;
+con6687..(-0.94229074474770125) * x('1') - 
+0.33479568749137512 * x('2') =g= -1;
+con6688..0.16856452846846467 * x('1') + 
+0.98569062070317182 * x('2') =g= -1;
+con6689..(-0.94250091087455168) * x('1') - 
+0.33420358017328355 * x('2') =g= -1;
+con6690..(-0.94271070493891629) * x('1') - 
+0.3336113409246928 * x('2') =g= -1;
+con6691..0.16794518582088283 * x('1') + 
+0.98579633523339349 * x('2') =g= -1;
+con6692..(-0.94292012685797599) * x('1') - 
+0.33301896997939689 * x('2') =g= -1;
+con6693..(-0.9431291765490597) * x('1') - 
+0.33242646757123995 * x('2') =g= -1;
+con6694..0.16732577687511213 * x('1') + 
+0.98590166060978934 * x('2') =g= -1;
+con6695..(-0.94333785392964242) * x('1') - 
+0.33183383393411914 * x('2') =g= -1;
+con6696..(-0.94354615891734661) * x('1') - 
+0.33124106930198344 * x('2') =g= -1;
+con6697..0.16670630187567123 * x('1') + 
+0.98600659679078084 * x('2') =g= -1;
+con6698..(-0.9437540914299416) * x('1') - 
+0.33064817390883228 * x('2') =g= -1;
+con6699..(-0.9439616513853436) * x('1') - 
+0.33005514798871882 * x('2') =g= -1;
+con6700..0.16608676106710396 * x('1') + 
+0.98611114373494368 * x('2') =g= -1;
+con6701..(-0.9441688387016165) * x('1') - 
+0.32946199177574487 * x('2') =g= -1;
+con6702..(-0.94437565329697037) * x('1') - 
+0.32886870550406649 * x('2') =g= -1;
+con6703..0.16546715469398166 * x('1') + 
+0.98621530140100644 * x('2') =g= -1;
+con6704..(-0.94458209508976332) * x('1') - 
+0.32827528940788914 * x('2') =g= -1;
+con6705..(-0.94478816399849996) * x('1') - 
+0.32768174372147058 * x('2') =g= -1;
+con6706..0.16484748300090005 * x('1') + 
+0.98631906974785188 * x('2') =g= -1;
+con6707..(-0.94499385994183227) * x('1') - 
+0.32708806867911994 * x('2') =g= -1;
+con6708..(-0.94519918283855986) * x('1') - 
+0.32649426451519603 * x('2') =g= -1;
+con6709..0.16422774623248124 * x('1') + 
+0.98642244873451645 * x('2') =g= -1;
+con6710..(-0.94540413260762868) * x('1') - 
+0.32590033146411074 * x('2') =g= -1;
+con6711..(-0.94560870916813333) * x('1') - 
+0.32530626976032395 * x('2') =g= -1;
+con6712..0.16360794463337375 * x('1') + 
+0.98652543832018991 * x('2') =g= -1;
+con6713..(-0.94581291243931442) * x('1') - 
+0.32471207963834925 * x('2') =g= -1;
+con6714..(-0.94601674234056099) * x('1') - 
+0.32411776133274878 * x('2') =g= -1;
+con6715..0.16298807844825033 * x('1') + 
+0.98662803846421621 * x('2') =g= -1;
+con6716..(-0.94622019879140862) * x('1') - 
+0.32352331507813659 * x('2') =g= -1;
+con6717..(-0.94642328171154055) * x('1') - 
+0.32292874110917724 * x('2') =g= -1;
+con6718..0.16236814792181012 * x('1') + 
+0.98673024912609286 * x('2') =g= -1;
+con6719..(-0.94662599102078793) * x('1') - 
+0.32233403966058438 * x('2') =g= -1;
+con6720..(-0.94682832663912853) * x('1') - 
+0.32173921096712421 * x('2') =g= -1;
+con6721..0.16174815329877743 * x('1') + 
+0.98683207026547082 * x('2') =g= -1;
+con6722..(-0.94703028848668891) * x('1') - 
+0.32114425526361012 * x('2') =g= -1;
+con6723..(-0.94723187648374185) * x('1') - 
+0.32054917278490858 * x('2') =g= -1;
+con6724..0.16112809482390189 * x('1') + 
+0.98693350184215534 * x('2') =g= -1;
+con6725..(-0.94743309055070868) * x('1') - 
+0.31995396376593399 * x('2') =g= -1;
+con6726..(-0.94763393060815782) * x('1') - 
+0.31935862844165214 * x('2') =g= -1;
+con6727..0.16050797274195852 * x('1') + 
+0.98703454381610511 * x('2') =g= -1;
+con6728..(-0.94783439657680513) * x('1') - 
+0.31876316704707841 * x('2') =g= -1;
+con6729..(-0.94803448837751503) * x('1') - 
+0.31816757981727689 * x('2') =g= -1;
+con6730..0.15988778729774666 * x('1') + 
+0.98713519614743273 * x('2') =g= -1;
+con6731..(-0.94823420593129859) * x('1') - 
+0.31757186698736339 * x('2') =g= -1;
+con6732..(-0.94843354915931566) * x('1') - 
+0.31697602879250031 * x('2') =g= -1;
+con6733..0.15926753873609209 * x('1') + 
+0.98723545879640451 * x('2') =g= -1;
+con6734..(-0.94863251798287318) * x('1') - 
+0.31638006546790165 * x('2') =g= -1;
+con6735..(-0.94883111232342554) * x('1') - 
+0.31578397724883217 * x('2') =g= -1;
+con6736..0.15864722730184402 * x('1') + 
+0.9873353317234409 * x('2') =g= -1;
+con6737..(-0.94902933210257623) * x('1') - 
+0.31518776437060209 * x('2') =g= -1;
+con6738..(-0.94922717724207517) * x('1') - 
+0.31459142706857407 * x('2') =g= -1;
+con6739..0.15802685323987739 * x('1') + 
+0.98743481488911578 * x('2') =g= -1;
+con6740..(-0.9494246476638214) * x('1') - 
+0.31399496557815804 * x('2') =g= -1;
+con6741..(-0.94962174328986071) * x('1') - 
+0.3133983801348148 * x('2') =g= -1;
+con6742..0.15740641679509157 * x('1') + 
+0.9875339082541571 * x('2') =g= -1;
+con6743..(-0.94981846404238812) * x('1') - 
+0.31280167097405137 * x('2') =g= -1;
+con6744..(-0.95001480984374576) * x('1') - 
+0.31220483833142554 * x('2') =g= -1;
+con6745..0.15678591821241061 * x('1') + 
+0.98763261177944672 * x('2') =g= -1;
+con6746..(-0.9502107806164235) * x('1') - 
+0.31160788244254517 * x('2') =g= -1;
+con6747..(-0.95040637628306046) * x('1') - 
+0.31101080354306299 * x('2') =g= -1;
+con6748..0.15616535773678306 * x('1') + 
+0.98773092542602037 * x('2') =g= -1;
+con6749..(-0.95060159676644262) * x('1') - 
+0.31041360186868372 * x('2') =g= -1;
+con6750..(-0.95079644198950486) * x('1') - 
+0.30981627765515829 * x('2') =g= -1;
+con6751..0.15554473561318194 * x('1') + 
+0.98782884915506763 * x('2') =g= -1;
+con6752..(-0.95099091187532958) * x('1') - 
+0.30921883113828819 * x('2') =g= -1;
+con6753..(-0.95118500634714809) * x('1') - 
+0.30862126255392031 * x('2') =g= -1;
+con6754..0.15492405208660479 * x('1') + 
+0.987926382927932 * x('2') =g= -1;
+con6755..(-0.95137872532833945) * x('1') - 
+0.30802357213795173 * x('2') =g= -1;
+con6756..(-0.9515720687424305) * x('1') - 
+0.30742576012632894 * x('2') =g= -1;
+con6757..0.15430330740207254 * x('1') + 
+0.98802352670611115 * x('2') =g= -1;
+con6758..(-0.95176503651309741) * x('1') - 
+0.30682782675504261 * x('2') =g= -1;
+con6759..(-0.95195762856416355) * x('1') - 
+0.30622977226013476 * x('2') =g= -1;
+con6760..0.15368250180463178 * x('1') + 
+0.98812028045125633 * x('2') =g= -1;
+con6761..(-0.95214984481960163) * x('1') - 
+0.30563159687769298 * x('2') =g= -1;
+con6762..(-0.95234168520353157) * x('1') - 
+0.30503330084385483 * x('2') =g= -1;
+con6763..0.15306163553935156 * x('1') + 
+0.98821664412517296 * x('2') =g= -1;
+con6764..(-0.95253314964022306) * x('1') - 
+0.30443488439480204 * x('2') =g= -1;
+con6765..(-0.9527242380540929) * x('1') - 
+0.30383634776676777 * x('2') =g= -1;
+con6766..0.15244070885132591 * x('1') + 
+0.98831261768982048 * x('2') =g= -1;
+con6767..(-0.95291495036970664) * x('1') - 
+0.30323769119603117 * x('2') =g= -1;
+con6768..(-0.95310528651177917) * x('1') - 
+0.30263891491891681 * x('2') =g= -1;
+con6769..0.15181972198567231 * x('1') + 
+0.98840820110731231 * x('2') =g= -1;
+con6770..(-0.95329524640517271) * x('1') - 
+0.30204001917179946 * x('2') =g= -1;
+con6771..(-0.95348482997489892) * x('1') - 
+0.30144100419109876 * x('2') =g= -1;
+con6772..0.15119867518753213 * x('1') + 
+0.98850339433991585 * x('2') =g= -1;
+con6773..(-0.95367403714611743) * x('1') - 
+0.3008418702132829 * x('2') =g= -1;
+con6774..(-0.95386286784413654) * x('1') - 
+0.30024261747486691 * x('2') =g= -1;
+con6775..0.15057756870207054 * x('1') + 
+0.98859819735005239 * x('2') =g= -1;
+con6776..(-0.95405132199441356) * x('1') - 
+0.29964324621241156 * x('2') =g= -1;
+con6777..(-0.95423939952255366) * x('1') - 
+0.29904375666252636 * x('2') =g= -1;
+con6778..0.14995640277447544 * x('1') + 
+0.98869261010029774 * x('2') =g= -1;
+con6779..(-0.95442710035431177) * x('1') - 
+0.29844414906186467 * x('2') =g= -1;
+con6780..(-0.95461442441559063) * x('1') - 
+0.29784442364712937 * x('2') =g= -1;
+con6781..0.14933517764995968 * x('1') + 
+0.98878663255338106 * x('2') =g= -1;
+con6782..(-0.95480137163244216) * x('1') - 
+0.29724458065506776 * x('2') =g= -1;
+con6783..(-0.95498794193106684) * x('1') - 
+0.29664462032247479 * x('2') =g= -1;
+con6784..0.14871389357375803 * x('1') + 
+0.98888026467218615 * x('2') =g= -1;
+con6785..(-0.95517413523781403) * x('1') - 
+0.29604454288619181 * x('2') =g= -1;
+con6786..(-0.95535995147918185) * x('1') - 
+0.29544434858310498 * x('2') =g= -1;
+con6787..0.1480925507911291 * x('1') + 
+0.98897350641975079 * x('2') =g= -1;
+con6788..(-0.9555453905818172) * x('1') - 
+0.29484403765014888 * x('2') =g= -1;
+con6789..(-0.95573045247251642) * x('1') - 
+0.29424361032430102 * x('2') =g= -1;
+con6790..0.14747114954735538 * x('1') + 
+0.98906635775926655 * x('2') =g= -1;
+con6791..(-0.95591513707822384) * x('1') - 
+0.2936430668425879 * x('2') =g= -1;
+con6792..(-0.95609944432603355) * x('1') - 
+0.29304240744207977 * x('2') =g= -1;
+con6793..0.14684969008774112 * x('1') + 
+0.98915881865407962 * x('2') =g= -1;
+con6794..(-0.95628337414318809) * x('1') - 
+0.2924416323598939 * x('2') =g= -1;
+con6795..(-0.95646692645707909) * x('1') - 
+0.2918407418331932 * x('2') =g= -1;
+con6796..0.14622817265761462 * x('1') + 
+0.98925088906768988 * x('2') =g= -1;
+con6797..(-0.9566501011952474) * x('1') - 
+0.29123973609918485 * x('2') =g= -1;
+con6798..(-0.95683289828538265) * x('1') - 
+0.2906386153951237 * x('2') =g= -1;
+con6799..0.14560659750232599 * x('1') + 
+0.98934256896375161 * x('2') =g= -1;
+con6800..(-0.95701531765532399) * x('1') - 
+0.29003737995830697 * x('2') =g= -1;
+con6801..(-0.95719735923305904) * x('1') - 
+0.28943603002608026 * x('2') =g= -1;
+con6802..0.14498496486724946 * x('1') + 
+0.98943385830607311 * x('2') =g= -1;
+con6803..(-0.95737902294672528) * x('1') - 
+0.288834565835832 * x('2') =g= -1;
+con6804..(-0.95756030872460884) * x('1') - 
+0.28823298762499727 * x('2') =g= -1;
+con6805..0.14436327499778126 * x('1') + 
+0.98952475705861698 * x('2') =g= -1;
+con6806..(-0.95774121649514499) * x('1') - 
+0.28763129563105594 * x('2') =g= -1;
+con6807..(-0.95792174618691861) * x('1') - 
+0.28702949009153172 * x('2') =g= -1;
+con6808..0.1437415281393396 * x('1') + 
+0.98961526518550003 * x('2') =g= -1;
+con6809..(-0.95810189772866339) * x('1') - 
+0.28642757124399509 * x('2') =g= -1;
+con6810..(-0.95828167104926298) * x('1') - 
+0.28582553932605836 * x('2') =g= -1;
+con6811..0.14311972453736663 * x('1') + 
+0.98970538265099295 * x('2') =g= -1;
+con6812..(-0.95846106607774961) * x('1') - 
+0.28522339457538148 * x('2') =g= -1;
+con6813..(-0.95864008274330526) * x('1') - 
+0.28462113722966681 * x('2') =g= -1;
+con6814..0.14249786443732548 * x('1') + 
+0.98979510941952098 * x('2') =g= -1;
+con6815..(-0.95881872097526111) * x('1') - 
+0.28401876752666239 * x('2') =g= -1;
+con6816..(-0.95899698070309769) * x('1') - 
+0.28341628570416066 * x('2') =g= -1;
+con6817..0.14187594808470241 * x('1') + 
+0.98988444545566368 * x('2') =g= -1;
+con6818..(-0.95917486185644529) * x('1') - 
+0.28281369199999695 * x('2') =g= -1;
+con6819..(-0.95935236436508287) * x('1') - 
+0.28221098665205302 * x('2') =g= -1;
+con6820..0.14125397572500561 * x('1') + 
+0.98997339072415458 * x('2') =g= -1;
+con6821..(-0.95952948815894001) * x('1') - 
+0.28160816989825166 * x('2') =g= -1;
+con6822..(-0.959706233168095) * x('1') - 
+0.28100524197656174 * x('2') =g= -1;
+con6823..0.14063194760376552 * x('1') + 
+0.99006194518988144 * x('2') =g= -1;
+con6824..(-0.95988259932277542) * x('1') - 
+0.28040220312499736 * x('2') =g= -1;
+con6825..(-0.96005858655335918) * x('1') - 
+0.27979905358161244 * x('2') =g= -1;
+con6826..0.14000986396653442 * x('1') + 
+0.99015010881788657 * x('2') =g= -1;
+con6827..(-0.96023419479037331) * x('1') - 
+0.27919579358450825 * x('2') =g= -1;
+con6828..(-0.96040942396449469) * x('1') - 
+0.27859242337182721 * x('2') =g= -1;
+con6829..0.13938772505888664 * x('1') + 
+0.99023788157336634 * x('2') =g= -1;
+con6830..(-0.96058427400654933) * x('1') - 
+0.27798894318175771 * x('2') =g= -1;
+con6831..(-0.96075874484751389) * x('1') - 
+0.27738535325252789 * x('2') =g= -1;
+con6832..0.13876553112641848 * x('1') + 
+0.99032526342167149 * x('2') =g= -1;
+con6833..(-0.96093283641851357) * x('1') - 
+0.27678165382241321 * x('2') =g= -1;
+con6834..(-0.96110654865082379) * x('1') - 
+0.27617784512973093 * x('2') =g= -1;
+con6835..0.13814328241474735 * x('1') + 
+0.99041225432830715 * x('2') =g= -1;
+con6836..(-0.96127988147587018) * x('1') - 
+0.27557392741283948 * x('2') =g= -1;
+con6837..(-0.96145283482522748) * x('1') - 
+0.27496990091014317 * x('2') =g= -1;
+con6838..0.13752097916951289 * x('1') + 
+0.99049885425893269 * x('2') =g= -1;
+con6839..(-0.96162540863062052) * x('1') - 
+0.27436576586008721 * x('2') =g= -1;
+con6840..(-0.96179760282392357) * x('1') - 
+0.27376152250116176 * x('2') =g= -1;
+con6841..0.13689862163637609 * x('1') + 
+0.9905850631793619 * x('2') =g= -1;
+con6842..(-0.9619694173371619) * x('1') - 
+0.2731571710718963 * x('2') =g= -1;
+con6843..(-0.96214085210250921) * x('1') - 
+0.27255271181086682 * x('2') =g= -1;
+con6844..0.13627621006101936 * x('1') + 
+0.99067088105556278 * x('2') =g= -1;
+con6845..(-0.96231190705228975) * x('1') - 
+0.27194814495669067 * x('2') =g= -1;
+con6846..(-0.96248258211897808) * x('1') - 
+0.27134347074802551 * x('2') =g= -1;
+con6847..0.13565374468914643 * x('1') + 
+0.99075630785365776 * x('2') =g= -1;
+con6848..(-0.9626528772351981) * x('1') - 
+0.27073868942357421 * x('2') =g= -1;
+con6849..(-0.96282279233372414) * x('1') - 
+0.27013380122208003 * x('2') =g= -1;
+con6850..0.13503122576648224 * x('1') + 
+0.99084134353992381 * x('2') =g= -1;
+con6851..(-0.96299232734748008) * x('1') - 
+0.26952880638233045 * x('2') =g= -1;
+con6852..(-0.96316148220954068) * x('1') - 
+0.26892370514315161 * x('2') =g= -1;
+con6853..0.13440865353877321 * x('1') + 
+0.99092598808079202 * x('2') =g= -1;
+con6854..(-0.96333025685312967) * x('1') - 
+0.26831849774341548 * x('2') =g= -1;
+con6855..(-0.96349865121162137) * x('1') - 
+0.26771318442203473 * x('2') =g= -1;
+con6856..0.13378602825178576 * x('1') + 
+0.99101024144284822 * x('2') =g= -1;
+con6857..(-0.96366666521854083) * x('1') - 
+0.26710776541796161 * x('2') =g= -1;
+con6858..(-0.96383429880756222) * x('1') - 
+0.2665022409701932 * x('2') =g= -1;
+con6859..0.1331633501513087 * x('1') + 
+0.99109410359283234 * x('2') =g= -1;
+con6860..(-0.96400155191251058) * x('1') - 
+0.26589661131776604 * x('2') =g= -1;
+con6861..(-0.96416842446736073) * x('1') - 
+0.2652908766997602 * x('2') =g= -1;
+con6862..0.13254061948315096 * x('1') + 
+0.99117757449763899 * x('2') =g= -1;
+con6863..(-0.96433491640623836) * x('1') - 
+0.26468503735529397 * x('2') =g= -1;
+con6864..(-0.9645010276634185) * x('1') - 
+0.26407909352353065 * x('2') =g= -1;
+con6865..0.13191783649314182 * x('1') + 
+0.99126065412431696 * x('2') =g= -1;
+con6866..(-0.96466675817332681) * x('1') - 
+0.26347304544367367 * x('2') =g= -1;
+con6867..(-0.96483210787053997) * x('1') - 
+0.26286689335496533 * x('2') =g= -1;
+con6868..0.13129500142713185 * x('1') + 
+0.99134334244006983 * x('2') =g= -1;
+con6869..(-0.96499707668978396) * x('1') - 
+0.26226063749669204 * x('2') =g= -1;
+con6870..(-0.96516166456593566) * x('1') - 
+0.26165427810817909 * x('2') =g= -1;
+con6871..0.13067211453099195 * x('1') + 
+0.99142563941225537 * x('2') =g= -1;
+con6872..(-0.96532587143402226) * x('1') - 
+0.26104781542879379 * x('2') =g= -1;
+con6873..(-0.96548969722922107) * x('1') - 
+0.26044124969794441 * x('2') =g= -1;
+con6874..0.13004917605061353 * x('1') + 
+0.991507545008386 * x('2') =g= -1;
+con6875..(-0.96565314188686036) * x('1') - 
+0.2598345811550784 * x('2') =g= -1;
+con6876..(-0.9658162053424183) * x('1') - 
+0.25922781003968615 * x('2') =g= -1;
+con6877..0.12942618623190832 * x('1') + 
+0.99158905919612861 * x('2') =g= -1;
+con6878..(-0.96597888753152428) * x('1') - 
+0.25862093659129542 * x('2') =g= -1;
+con6879..(-0.96614118838995722) * x('1') - 
+0.25801396104947738 * x('2') =g= -1;
+con6880..0.12880314532080833 * x('1') + 
+0.99167018194330459 * x('2') =g= -1;
+con6881..(-0.96630310785364748) * x('1') - 
+0.25740688365384135 * x('2') =g= -1;
+con6882..(-0.96646464585867531) * x('1') - 
+0.25679970464403817 * x('2') =g= -1;
+con6883..0.12818005356326595 * x('1') + 
+0.99175091321788977 * x('2') =g= -1;
+con6884..(-0.96662580234127193) * x('1') - 
+0.2561924242597588 * x('2') =g= -1;
+con6885..(-0.96678657723781924) * x('1') - 
+0.2555850427407329 * x('2') =g= -1;
+con6886..0.12755691120525278 * x('1') + 
+0.99183125298801467 * x('2') =g= -1;
+con6887..(-0.96694697048484912) * x('1') - 
+0.25497756032673224 * x('2') =g= -1;
+con6888..(-0.9671069820190451) * x('1') - 
+0.25436997725756538 * x('2') =g= -1;
+con6889..0.12693371849276189 * x('1') + 
+0.99191120122196441 * x('2') =g= -1;
+con6890..(-0.9672666117772406) * x('1') - 
+0.25376229377308368 * x('2') =g= -1;
+con6891..(-0.96742585969642036) * x('1') - 
+0.25315451011317591 * x('2') =g= -1;
+con6892..0.12631047567180476 * x('1') + 
+0.99199075788817836 * x('2') =g= -1;
+con6893..(-0.96758472571371912) * x('1') - 
+0.25254662651777166 * x('2') =g= -1;
+con6894..(-0.96774320976642303) * x('1') - 
+0.25193864322684012 * x('2') =g= -1;
+con6895..0.12568718298841347 * x('1') + 
+0.99206992295525065 * x('2') =g= -1;
+con6896..(-0.9679013117919687) * x('1') - 
+0.25133056048038838 * x('2') =g= -1;
+con6897..(-0.9680590317279435) * x('1') - 
+0.25072237851846502 * x('2') =g= -1;
+con6898..0.1250638406886396 * x('1') + 
+0.99214869639193026 * x('2') =g= -1;
+con6899..(-0.96821636951208634) * x('1') - 
+0.25011409758115433 * x('2') =g= -1;
+con6900..(-0.96837332508228557) * x('1') - 
+0.24950571790858439 * x('2') =g= -1;
+con6901..0.12444044901855429 * x('1') + 
+0.9922270781671203 * x('2') =g= -1;
+con6902..(-0.96852989837658199) * x('1') - 
+0.2488972397409176 * x('2') =g= -1;
+con6903..(-0.96868608933316624) * x('1') - 
+0.24828866331835817 * x('2') =g= -1;
+con6904..0.12381700822424842 * x('1') + 
+0.99230506824987874 * x('2') =g= -1;
+con6905..(-0.96884189789038033) * x('1') - 
+0.24767998888114867 * x('2') =g= -1;
+con6906..(-0.96899732398671712) * x('1') - 
+0.2470712166695691 * x('2') =g= -1;
+con6907..0.12319351855183135 * x('1') + 
+0.99238266660941821 * x('2') =g= -1;
+con6908..(-0.96915236756082035) * x('1') - 
+0.24646234692394026 * x('2') =g= -1;
+con6909..(-0.96930702855148521) * x('1') - 
+0.24585337988461786 * x('2') =g= -1;
+con6910..0.12256998024743329 * x('1') + 
+0.99245987321510576 * x('2') =g= -1;
+con6911..(-0.96946130689765708) * x('1') - 
+0.24524431579200093 * x('2') =g= -1;
+con6912..(-0.96961520253843347) * x('1') - 
+0.2446351548865219 * x('2') =g= -1;
+con6913..0.1219463935572021 * x('1') + 
+0.99253668803646344 * x('2') =g= -1;
+con6914..(-0.9697687154130622) * x('1') - 
+0.24402589740865463 * x('2') =g= -1;
+con6915..(-0.96992184546094218) * x('1') - 
+0.24341654359891049 * x('2') =g= -1;
+con6916..0.12132275872730566 * x('1') + 
+0.99261311104316774 * x('2') =g= -1;
+con6917..(-0.97007459262162388) * x('1') - 
+0.24280709369783771 * x('2') =g= -1;
+con6918..(-0.97022695683480842) * x('1') - 
+0.24219754794602452 * x('2') =g= -1;
+con6919..0.12069907600393058 * x('1') + 
+0.99268914220504967 * x('2') =g= -1;
+con6920..(-0.97037893804034892) * x('1') - 
+0.2415879065840936 * x('2') =g= -1;
+con6921..(-0.97053053617824869) * x('1') - 
+0.24097816985270923 * x('2') =g= -1;
+con6922..0.1200753456332824 * x('1') + 
+0.99276478149209535 * x('2') =g= -1;
+con6923..(-0.97068175118866262) * x('1') - 
+0.24036833799257207 * x('2') =g= -1;
+con6924..(-0.97083258301189734) * x('1') - 
+0.2397584112444181 * x('2') =g= -1;
+con6925..0.11945156786158548 * x('1') + 
+0.99284002887444511 * x('2') =g= -1;
+con6926..(-0.97098303158841004) * x('1') - 
+0.2391483898490239 * x('2') =g= -1;
+con6927..(-0.97113309685880977) * x('1') - 
+0.23853827404720115 * x('2') =g= -1;
+con6928..0.11882774293508284 * x('1') + 
+0.99291488432239439 * x('2') =g= -1;
+con6929..(-0.97128277876385627) * x('1') - 
+0.23792806407980099 * x('2') =g= -1;
+con6930..(-0.97143207724446146) * x('1') - 
+0.23731776018770828 * x('2') =g= -1;
+con6931..0.11820387110003644 * x('1') + 
+0.99298934780639314 * x('2') =g= -1;
+con6932..(-0.97158099224168781) * x('1') - 
+0.23670736261184888 * x('2') =g= -1;
+con6933..(-0.97172952369674936) * x('1') - 
+0.23609687159318429 * x('2') =g= -1;
+con6934..0.11757995260272598 * x('1') + 
+0.99306341929704611 * x('2') =g= -1;
+con6935..(-0.97187767155101212) * x('1') - 
+0.23548628737271071 * x('2') =g= -1;
+con6936..(-0.97202543574599287) * x('1') - 
+0.23487561019146427 * x('2') =g= -1;
+con6937..0.11695598768945009 * x('1') + 
+0.99313709876511269 * x('2') =g= -1;
+con6938..(-0.97217281622336016) * x('1') - 
+0.23426484029051553 * x('2') =g= -1;
+con6939..(-0.97231981292493386) * x('1') - 
+0.23365397791097339 * x('2') =g= -1;
+con6940..0.11633197660652637 * x('1') + 
+0.99321038618150714 * x('2') =g= -1;
+con6941..(-0.9724664257926855) * x('1') - 
+0.2330430232939816 * x('2') =g= -1;
+con6942..(-0.97261265476873815) * x('1') - 
+0.23243197668072155 * x('2') =g= -1;
+con6943..0.11570791960028932 * x('1') + 
+0.99328328151729861 * x('2') =g= -1;
+con6944..(-0.97275849979536588) * x('1') - 
+0.23182083831241138 * x('2') =g= -1;
+con6945..(-0.97290396081499531) * x('1') - 
+0.23120960843030294 * x('2') =g= -1;
+con6946..0.11508381691709246 * x('1') + 
+0.99335578474371067 * x('2') =g= -1;
+con6947..(-0.97304903777020391) * x('1') - 
+0.2305982872756871 * x('2') =g= -1;
+con6948..(-0.97319373060372105) * x('1') - 
+0.22998687508988874 * x('2') =g= -1;
+con6949..0.1144596688033071 * x('1') + 
+0.99342789583212188 * x('2') =g= -1;
+con6950..(-0.97333803925842743) * x('1') - 
+0.22937537211427028 * x('2') =g= -1;
+con6951..(-0.97348196367735595) * x('1') - 
+0.22876377859022831 * x('2') =g= -1;
+con6952..0.1138354755053225 * x('1') + 
+0.99349961475406579 * x('2') =g= -1;
+con6953..(-0.97362550380369073) * x('1') - 
+0.22815209475919651 * x('2') =g= -1;
+con6954..(-0.97376865958076753) * x('1') - 
+0.22754032086264453 * x('2') =g= -1;
+con6955..0.11321123726954575 * x('1') + 
+0.99357094148123037 * x('2') =g= -1;
+con6956..(-0.97391143095207455) * x('1') - 
+0.22692845714207507 * x('2') =g= -1;
+con6957..(-0.97405381786125078) * x('1') - 
+0.22631650383902929 * x('2') =g= -1;
+con6958..0.11258695434240169 * x('1') + 
+0.99364187598545883 * x('2') =g= -1;
+con6959..(-0.97419582025208773) * x('1') - 
+0.22570446119508153 * x('2') =g= -1;
+con6960..(-0.97433743806852824) * x('1') - 
+0.22509232945184274 * x('2') =g= -1;
+con6961..0.11196262697033302 * x('1') + 
+0.99371241823874878 * x('2') =g= -1;
+con6962..(-0.97447867125466714) * x('1') - 
+0.22448010885095898 * x('2') =g= -1;
+con6963..(-0.97461951975475125) * x('1') - 
+0.22386779963411016 * x('2') =g= -1;
+con6964..0.11133825539979908 * x('1') + 
+0.99378256821325317 * x('2') =g= -1;
+con6965..(-0.97475998351317872) * x('1') - 
+0.22325540204301328 * x('2') =g= -1;
+con6966..(-0.97490006247450056) * x('1') - 
+0.22264291631941677 * x('2') =g= -1;
+con6967..0.11071383987727824 * x('1') + 
+0.99385232588127925 * x('2') =g= -1;
+con6968..(-0.97503975658341846) * x('1') - 
+0.22203034270510869 * x('2') =g= -1;
+con6969..(-0.97517906578478719) * x('1') - 
+0.22141768144190691 * x('2') =g= -1;
+con6970..0.11008938064926466 * x('1') + 
+0.9939216912152895 * x('2') =g= -1;
+con6971..(-0.97531799002361252) * x('1') - 
+0.22080493277166702 * x('2') =g= -1;
+con6972..(-0.97545652924505277) * x('1') - 
+0.22019209693627867 * x('2') =g= -1;
+con6973..0.10946487796227061 * x('1') + 
+0.99399066418790127 * x('2') =g= -1;
+con6974..(-0.97559468339441813) * x('1') - 
+0.21957917417766457 * x('2') =g= -1;
+con6975..(-0.97573245241717033) * x('1') - 
+0.21896616473778396 * x('2') =g= -1;
+con6976..0.10884033206282535 * x('1') + 
+0.99405924477188679 * x('2') =g= -1;
+con6977..(-0.97586983625892432) * x('1') - 
+0.21835306885862685 * x('2') =g= -1;
+con6978..(-0.97600683486544559) * x('1') - 
+0.21773988678222206 * x('2') =g= -1;
+con6979..0.10821574319747514 * x('1') + 
+0.99412743294017303 * x('2') =g= -1;
+con6980..(-0.97614344818265286) * x('1') - 
+0.21712661875062775 * x('2') =g= -1;
+con6981..(-0.97627967615661648) * x('1') - 
+0.21651326500593898 * x('2') =g= -1;
+con6982..0.10759111161278347 * x('1') + 
+0.99419522866584187 * x('2') =g= -1;
+con6983..(-0.97641551873355892) * x('1') - 
+0.21589982579028427 * x('2') =g= -1;
+con6984..(-0.97655097585985484) * x('1') - 
+0.21528630134582455 * x('2') =g= -1;
+con6985..0.10696643755532977 * x('1') + 
+0.99426263192213038 * x('2') =g= -1;
+con6986..(-0.97668604748203092) * x('1') - 
+0.21467269191475657 * x('2') =g= -1;
+con6987..(-0.97682073354676668) * x('1') - 
+0.21405899773930714 * x('2') =g= -1;
+con6988..0.10634172127171181 * x('1') + 
+0.99432964268243029 * x('2') =g= -1;
+con6989..(-0.97695503400089256) * x('1') - 
+0.21344521906174135 * x('2') =g= -1;
+con6990..(-0.97708894879139274) * x('1') - 
+0.21283135612435283 * x('2') =g= -1;
+con6991..0.10571696300854247 * x('1') + 
+0.99439626092028843 * x('2') =g= -1;
+con6992..(-0.97722247786540251) * x('1') - 
+0.21221740916947152 * x('2') =g= -1;
+con6993..(-0.9773556211702098) * x('1') - 
+0.21160337843946006 * x('2') =g= -1;
+con6994..0.10509216301245189 * x('1') + 
+0.99446248660940662 * x('2') =g= -1;
+con6995..(-0.977488378653255) * x('1') - 
+0.2109892641767129 * x('2') =g= -1;
+con6996..(-0.97762075026213036) * x('1') - 
+0.21037506662365968 * x('2') =g= -1;
+con6997..0.10446732153008731 * x('1') + 
+0.99452831972364131 * x('2') =g= -1;
+con6998..(-0.97775273594458134) * x('1') - 
+0.20976078602275933 * x('2') =g= -1;
+con6999..(-0.97788433564850441) * x('1') - 
+0.20914642261650843 * x('2') =g= -1;
+con7000..0.10384243880811105 * x('1') + 
+0.99459376023700441 * x('2') =g= -1;
+con7001..(-0.97801554932194978) * x('1') - 
+0.20853197664743145 * x('2') =g= -1;
+con7002..(-0.97814637691311912) * x('1') - 
+0.20791744835808848 * x('2') =g= -1;
+con7003..0.10321751509320277 * x('1') + 
+0.99465880812366225 * x('2') =g= -1;
+con7004..(-0.97827681837036673) * x('1') - 
+0.20730283799107169 * x('2') =g= -1;
+con7005..(-0.97840687364219969) * x('1') - 
+0.20668814578900432 * x('2') =g= -1;
+con7006..0.1025925506320573 * x('1') + 
+0.99472346335793682 * x('2') =g= -1;
+con7007..(-0.97853654267727708) * x('1') - 
+0.2060733719945437 * x('2') =g= -1;
+con7008..(-0.97866582542441072) * x('1') - 
+0.20545851685037758 * x('2') =g= -1;
+con7009..0.10196754567138699 * x('1') + 
+0.99478772591430464 * x('2') =g= -1;
+con7010..(-0.97879472183256477) * x('1') - 
+0.20484358059922717 * x('2') =g= -1;
+con7011..(-0.97892323185085595) * x('1') - 
+0.20422856348384608 * x('2') =g= -1;
+con7012..0.1013425004579187 * x('1') + 
+0.99485159576739723 * x('2') =g= -1;
+con7013..(-0.9790513554285537) * x('1') - 
+0.2036134657470173 * x('2') =g= -1;
+con7014..(-0.97917909251507973) * x('1') - 
+0.20299828763155864 * x('2') =g= -1;
+con7015..0.10071741523839585 * x('1') + 
+0.99491507289200143 * x('2') =g= -1;
+con7016..(-0.97930644306000847) * x('1') - 
+0.20238302938031749 * x('2') =g= -1;
+con7017..(-0.9794334070130668) * x('1') - 
+0.20176769123617461 * x('2') =g= -1;
+con7018..0.10009229025957825 * x('1') + 
+0.99497815726305894 * x('2') =g= -1;
+con7019..(-0.97955998432413449) * x('1') - 
+0.20115227344204054 * x('2') =g= -1;
+con7020..(-0.97968617494324362) * x('1') - 
+0.20053677624085861 * x('2') =g= -1;
+con7021..0.099467125768240156 * x('1') + 
+0.99504084885566635 * x('2') =g= -1;
+con7022..(-0.97981197882057902) * x('1') - 
+0.19992119987560386 * x('2') =g= -1;
+con7023..(-0.97993739590647855) * x('1') - 
+0.19930554458928007 * x('2') =g= -1;
+con7024..0.098841922011172256 * x('1') + 
+0.99510314764507568 * x('2') =g= -1;
+con7025..(-0.98006242615143213) * x('1') - 
+0.19868981062492513 * x('2') =g= -1;
+con7026..(-0.98018706950608292) * x('1') - 
+0.19807399822560587 * x('2') =g= -1;
+con7027..0.098216679235180529 * x('1') + 
+0.99516505360669372 * x('2') =g= -1;
+con7028..(-0.9803113259212265) * x('1') - 
+0.19745810763442176 * x('2') =g= -1;
+con7029..(-0.98043519534781132) * x('1') - 
+0.19684213909450149 * x('2') =g= -1;
+con7030..0.097591397687086384 * x('1') + 
+0.99522656671608245 * x('2') =g= -1;
+con7031..(-0.98055867773693861) * x('1') - 
+0.19622609284900577 * x('2') =g= -1;
+con7032..(-0.98068177303986204) * x('1') - 
+0.19560996914112641 * x('2') =g= -1;
+con7033..0.096966077613726706 * x('1') + 
+0.99528768694895886 * x('2') =g= -1;
+con7034..(-0.98080448120798902) * x('1') - 
+0.19499376821408318 * x('2') =g= -1;
+con7035..(-0.98092680219287864) * x('1') - 
+0.19437749031112947 * x('2') =g= -1;
+con7036..0.096340719261952756 * x('1') + 
+0.99534841428119514 * x('2') =g= -1;
+con7037..(-0.98104873594624353) * x('1') - 
+0.19376113567554676 * x('2') =g= -1;
+con7038..(-0.98117028241994908) * x('1') - 
+0.19314470455064864 * x('2') =g= -1;
+con7039..0.095715322878632422 * x('1') + 
+0.99540874868881835 * x('2') =g= -1;
+con7040..(-0.98129144156601344) * x('1') - 
+0.19252819717977712 * x('2') =g= -1;
+con7041..(-0.98141221333660777) * x('1') - 
+0.19191161380630564 * x('2') =g= -1;
+con7042..0.095089888710647066 * x('1') + 
+0.99546869014801098 * x('2') =g= -1;
+con7043..(-0.98153259768405587) * x('1') - 
+0.19129495467363805 * x('2') =g= -1;
+con7044..(-0.9816525945608352) * x('1') - 
+0.19067822002520507 * x('2') =g= -1;
+con7045..0.09446441700489383 * x('1') + 
+0.99552823863511053 * x('2') =g= -1;
+con7046..(-0.98177220391957509) * x('1') - 
+0.19006141010447206 * x('2') =g= -1;
+con7047..(-0.98189142571305887) * x('1') - 
+0.18944452515492921 * x('2') =g= -1;
+con7048..0.093838908008284511 * x('1') + 
+0.99558739412660946 * x('2') =g= -1;
+con7049..(-0.98201025989422219) * x('1') - 
+0.1888275654200999 * x('2') =g= -1;
+con7050..(-0.98212870641615424) * x('1') - 
+0.18821053114353484 * x('2') =g= -1;
+con7051..0.093213361967745559 * x('1') + 
+0.99564615659915545 * x('2') =g= -1;
+con7052..(-0.98224676523209675) * x('1') - 
+0.18759342256881545 * x('2') =g= -1;
+con7053..(-0.98236443629544468) * x('1') - 
+0.1869762399395529 * x('2') =g= -1;
+con7054..0.092587779130218081 * x('1') + 
+0.99570452602955162 * x('2') =g= -1;
+con7055..(-0.98248171955974639) * x('1') - 
+0.18635898349938457 * x('2') =g= -1;
+con7056..(-0.9825986149787026) * x('1') - 
+0.18574165349198182 * x('2') =g= -1;
+con7057..0.091962159742657729 * x('1') + 
+0.99576250239475572 * x('2') =g= -1;
+con7058..(-0.98271512250616788) * x('1') - 
+0.18512425016104014 * x('2') =g= -1;
+con7059..(-0.98283124209614969) * x('1') - 
+0.18450677375028712 * x('2') =g= -1;
+con7060..0.09133650405203475 * x('1') + 
+0.99582008567188107 * x('2') =g= -1;
+con7061..(-0.98294697370280826) * x('1') - 
+0.18388922450347869 * x('2') =g= -1;
+con7062..(-0.98306231728045745) * x('1') - 
+0.18327160266439832 * x('2') =g= -1;
+con7063..0.0907108123053329 * x('1') + 
+0.99587727583819619 * x('2') =g= -1;
+con7064..(-0.98317727278356404) * x('1') - 
+0.18265390847686022 * x('2') =g= -1;
+con7065..(-0.98329184016674842) * x('1') - 
+0.18203614218470368 * x('2') =g= -1;
+con7066..0.090085084749551667 * x('1') + 
+0.99593407287112434 * x('2') =g= -1;
+con7067..(-0.98340601938478334) * x('1') - 
+0.18141830403180134 * x('2') =g= -1;
+con7068..(-0.98351981039259573) * x('1') - 
+0.18080039426204933 * x('2') =g= -1;
+con7069..0.089459321631703143 * x('1') + 
+0.99599047674824459 * x('2') =g= -1;
+con7070..(-0.98363321314526531) * x('1') - 
+0.18018241311937511 * x('2') =g= -1;
+con7071..(-0.98374622759802477) * x('1') - 
+0.17956436084773389 * x('2') =g= -1;
+con7072..0.088833523198814365 * x('1') + 
+0.99604648744729063 * x('2') =g= -1;
+con7073..(-0.98385885370626081) * x('1') - 
+0.17894623769110765 * x('2') =g= -1;
+con7074..(-0.98397109142551287) * x('1') - 
+0.17832804389350815 * x('2') =g= -1;
+con7075..0.088207689697926056 * x('1') + 
+0.99610210494615181 * x('2') =g= -1;
+con7076..(-0.98408294071147395) * x('1') - 
+0.1777097796989732 * x('2') =g= -1;
+con7077..(-0.98419440151999016) * x('1') - 
+0.17709144535157062 * x('2') =g= -1;
+con7078..0.0875818213760928 * x('1') + 
+0.99615732922287237 * x('2') =g= -1;
+con7079..(-0.98430547380706146) * x('1') - 
+0.17647304109539289 * x('2') =g= -1;
+con7080..(-0.98441615752884071) * x('1') - 
+0.17585456717456269 * x('2') =g= -1;
+con7081..0.086955918480383157 * x('1') + 
+0.99621216025565207 * x('2') =g= -1;
+con7082..(-0.98452645264163408) * x('1') - 
+0.17523602383322978 * x('2') =g= -1;
+con7083..(-0.98463635910190161) * x('1') - 
+0.17461741131556996 * x('2') =g= -1;
+con7084..0.086329981257878413 * x('1') + 
+0.99626659802284567 * x('2') =g= -1;
+con7085..(-0.98474587686625659) * x('1') - 
+0.17399872986578815 * x('2') =g= -1;
+con7086..(-0.98485500589146546) * x('1') - 
+0.1733799797281147 * x('2') =g= -1;
+con7087..0.085704009955674801 * x('1') + 
+0.99632064250296326 * x('2') =g= -1;
+con7088..(-0.98496374613444848) * x('1') - 
+0.17276116114680928 * x('2') =g= -1;
+con7089..(-0.98507209755227931) * x('1') - 
+0.17214227436615551 * x('2') =g= -1;
+con7090..0.085078004820881264 * x('1') + 
+0.99637429367467023 * x('2') =g= -1;
+con7091..(-0.98518006010218495) * x('1') - 
+0.17152331963046652 * x('2') =g= -1;
+con7092..(-0.98528763374154604) * x('1') - 
+0.17090429718408187 * x('2') =g= -1;
+con7093..0.084451966100619474 * x('1') + 
+0.9964275515167873 * x('2') =g= -1;
+con7094..(-0.98539481842789678) * x('1') - 
+0.17028520727136656 * x('2') =g= -1;
+con7095..(-0.98550161411892478) * x('1') - 
+0.1696660501367139 * x('2') =g= -1;
+con7096..0.083825894042025936 * x('1') + 
+0.99648041600829018 * x('2') =g= -1;
+con7097..(-0.98560802077247134) * x('1') - 
+0.16904682602454207 * x('2') =g= -1;
+con7098..(-0.98571403834653115) * x('1') - 
+0.16842753517929696 * x('2') =g= -1;
+con7099..0.08319978889224873 * x('1') + 
+0.99653288712831012 * x('2') =g= -1;
+con7100..(-0.98581966679925259) * x('1') - 
+0.16780817784545121 * x('2') =g= -1;
+con7101..(-0.9859249060889379) * x('1') - 
+0.1671887542675011 * x('2') =g= -1;
+con7102..0.082573650898449896 * x('1') + 
+0.99658496485613357 * x('2') =g= -1;
+con7103..(-0.98602975617404265) * x('1') - 
+0.16656926468997221 * x('2') =g= -1;
+con7104..(-0.98613421701317605) * x('1') - 
+0.16594970935741385 * x('2') =g= -1;
+con7105..0.081947480307804216 * x('1') + 
+0.9966366491712022 * x('2') =g= -1;
+con7106..(-0.9862382885651011) * x('1') - 
+0.16533008851440312 * x('2') =g= -1;
+con7107..(-0.98634197078873442) * x('1') - 
+0.16471040240554122 * x('2') =g= -1;
+con7108..0.081321277367499334 * x('1') + 
+0.99668794005311323 * x('2') =g= -1;
+con7109..(-0.98644526364314633) * x('1') - 
+0.16409065127545638 * x('2') =g= -1;
+con7110..(-0.98654816708756077) * x('1') - 
+0.16347083536880305 * x('2') =g= -1;
+con7111..0.080695042324735899 * x('1') + 
+0.99673883748161884 * x('2') =g= -1;
+con7112..(-0.98665068108135567) * x('1') - 
+0.16285095493025806 * x('2') =g= -1;
+con7113..(-0.9867528055840622) * x('1') - 
+0.1622310102045286 * x('2') =g= -1;
+con7114..0.080068775426726344 * x('1') + 
+0.9967893414366269 * x('2') =g= -1;
+con7115..(-0.98685454055536603) * x('1') - 
+0.16161100143634238 * x('2') =g= -1;
+con7116..(-0.98695588595510575) * x('1') - 
+0.16099092887045593 * x('2') =g= -1;
+con7117..0.079442476920697225 * x('1') + 
+0.99683945189820033 * x('2') =g= -1;
+con7118..(-0.98705684174327457) * x('1') - 
+0.16037079275164878 * x('2') =g= -1;
+con7119..(-0.98715740788001882) * x('1') - 
+0.15975059332472685 * x('2') =g= -1;
+con7120..0.078816147053886024 * x('1') + 
+0.99688916884655754 * x('2') =g= -1;
+con7121..(-0.98725758432563882) * x('1') - 
+0.15913033083452147 * x('2') =g= -1;
+con7122..(-0.98735737104058918) * x('1') - 
+0.15851000552588579 * x('2') =g= -1;
+con7123..0.078189786073543488 * x('1') + 
+0.9969384922620721 * x('2') =g= -1;
+con7124..(-0.98745676798547766) * x('1') - 
+0.15788961764370263 * x('2') =g= -1;
+con7125..(-0.98755577512106651) * x('1') - 
+0.1572691674328747 * x('2') =g= -1;
+con7126..0.077563394226932425 * x('1') + 
+0.99698742212527314 * x('2') =g= -1;
+con7127..(-0.98765439240827135) * x('1') - 
+0.1566486551383327 * x('2') =g= -1;
+con7128..(-0.9877526198081622) * x('1') - 
+0.1560280810050298 * x('2') =g= -1;
+con7129..0.076936971761327827 * x('1') + 
+0.997035958416845 * x('2') =g= -1;
+con7130..(-0.98785045728196264) * x('1') - 
+0.15540744527794481 * x('2') =g= -1;
+con7131..(-0.98794790479104999) * x('1') - 
+0.1547867482020813 * x('2') =g= -1;
+con7132..0.076310518924016787 * x('1') + 
+0.99708410111762757 * x('2') =g= -1;
+con7133..(-0.98804496229695615) * x('1') - 
+0.15416599002246398 * x('2') =g= -1;
+con7134..(-0.98814162976136632) * x('1') - 
+0.15354517098414658 * x('2') =g= -1;
+con7135..0.075684035962298377 * x('1') + 
+0.99713185020861583 * x('2') =g= -1;
+con7136..(-0.98823790714612025) * x('1') - 
+0.15292429133220192 * x('2') =g= -1;
+con7137..(-0.98833379441321123) * x('1') - 
+0.15230335131173034 * x('2') =g= -1;
+con7138..0.07505752312348378 * x('1') + 
+0.99717920567096052 * x('2') =g= -1;
+con7139..(-0.98842929152478676) * x('1') - 
+0.15168235116785381 * x('2') =g= -1;
+con7140..(-0.98852439844314832) * x('1') - 
+0.15106129114571928 * x('2') =g= -1;
+con7141..0.074430980654895298 * x('1') + 
+0.99722616748596737 * x('2') =g= -1;
+con7142..(-0.98861911513075129) * x('1') - 
+0.15044017149049785 * x('2') =g= -1;
+con7143..(-0.98871344155020546) * x('1') - 
+0.14981899244738109 * x('2') =g= -1;
+con7144..0.073804408803867613 * x('1') + 
+0.99727273563509777 * x('2') =g= -1;
+con7145..(-0.98880737766427418) * x('1') - 
+0.14919775426158877 * x('2') =g= -1;
+con7146..(-0.98890092343587543) * x('1') - 
+0.14857645717835927 * x('2') =g= -1;
+con7147..0.073177807817746784 * x('1') + 
+0.99731891009996843 * x('2') =g= -1;
+con7148..(-0.98899407882808088) * x('1') - 
+0.14795510144295723 * x('2') =g= -1;
+con7149..(-0.98908684380411627) * x('1') - 
+0.14733368730067001 * x('2') =g= -1;
+con7150..0.072551177943890363 * x('1') + 
+0.99736469086235147 * x('2') =g= -1;
+con7151..(-0.98917921832736189) * x('1') - 
+0.14671221499680676 * x('2') =g= -1;
+con7152..(-0.98927120236135169) * x('1') - 
+0.14609068477670126 * x('2') =g= -1;
+con7153..0.071924519429667322 * x('1') + 
+0.99741007790417446 * x('2') =g= -1;
+con7154..(-0.98936279586977416) * x('1') - 
+0.1454690968857085 * x('2') =g= -1;
+con7155..(-0.98945399881647145) * x('1') - 
+0.14484745156920834 * x('2') =g= -1;
+con7156..0.071297832522457888 * x('1') + 
+0.99745507120752042 * x('2') =g= -1;
+con7157..(-0.98954481116544057) * x('1') - 
+0.1442257490726003 * x('2') =g= -1;
+con7158..(-0.98963523288083211) * x('1') - 
+0.14360398964130905 * x('2') =g= -1;
+con7159..0.070671117469653794 * x('1') + 
+0.99749967075462753 * x('2') =g= -1;
+con7160..(-0.98972526392695115) * x('1') - 
+0.14298217352078135 * x('2') =g= -1;
+con7161..(-0.98981490426825713) * x('1') - 
+0.142360300956485 * x('2') =g= -1;
+con7162..0.070044374518656943 * x('1') + 
+0.99754387652788989 * x('2') =g= -1;
+con7163..(-0.98990415386936337) * x('1') - 
+0.14173837219391183 * x('2') =g= -1;
+con7164..(-0.98999301269503759) * x('1') - 
+0.14111638747857411 * x('2') =g= -1;
+con7165..0.069417603916881607 * x('1') + 
+0.99758768850985668 * x('2') =g= -1;
+con7166..(-0.99008148071020186) * x('1') - 
+0.14049434705600838 * x('2') =g= -1;
+con7167..(-0.99016955787993266) * x('1') - 
+0.13987225117177013 * x('2') =g= -1;
+con7168..0.068790805911752281 * x('1') + 
+0.99763110668323274 * x('2') =g= -1;
+con7169..(-0.99025724416946026) * x('1') - 
+0.13925010007143931 * x('2') =g= -1;
+con7170..(-0.99034453954416979) * x('1') - 
+0.13862789400061731 * x('2') =g= -1;
+con7171..0.068163980750703859 * x('1') + 
+0.9976741310308781 * x('2') =g= -1;
+con7172..(-0.99043144396960026) * x('1') - 
+0.13800563320492587 * x('2') =g= -1;
+con7173..(-0.99051795741144533) * x('1') - 
+0.13738331793001007 * x('2') =g= -1;
+con7174..0.067537128681182612 * x('1') + 
+0.99771676153580846 * x('2') =g= -1;
+con7175..(-0.99060407983555288) * x('1') - 
+0.13676094842153474 * x('2') =g= -1;
+con7176..(-0.99068981120792488) * x('1') - 
+0.13613852492518838 * x('2') =g= -1;
+con7177..0.066910249950645234 * x('1') + 
+0.99775899818119518 * x('2') =g= -1;
+con7178..(-0.9907751514947184) * x('1') - 
+0.1355160476866776 * x('2') =g= -1;
+con7179..(-0.99086010066224417) * x('1') - 
+0.1348935169517326 * x('2') =g= -1;
+con7180..0.066283344806558883 * x('1') + 
+0.99780084095036459 * x('2') =g= -1;
+con7181..(-0.99094465867696746) * x('1') - 
+0.13427093296610582 * x('2') =g= -1;
+con7182..(-0.9910288255055083) * x('1') - 
+0.13364829597556693 * x('2') =g= -1;
+con7183..0.065656413496401222 * x('1') + 
+0.99784228982679901 * x('2') =g= -1;
+con7184..(-0.99111260111464083) * x('1') - 
+0.13302560622590995 * x('2') =g= -1;
+con7185..(-0.99119598547129373) * x('1') - 
+0.13240286396294754 * x('2') =g= -1;
+con7186..0.065029456267660171 * x('1') + 
+0.99788334479413598 * x('2') =g= -1;
+con7187..(-0.99127897854255009) * x('1') - 
+0.13178006943251486 * x('2') =g= -1;
+con7188..(-0.99136158029564758) * x('1') - 
+0.13115722288046641 * x('2') =g= -1;
+con7189..0.064402473367834168 * x('1') + 
+0.99792400583616858 * x('2') =g= -1;
+con7190..(-0.99144379069797817) * x('1') - 
+0.13053432455267719 * x('2') =g= -1;
+con7191..(-0.99152560971708836) * x('1') - 
+0.12991137469504399 * x('2') =g= -1;
+con7192..0.063775465044430851 * x('1') + 
+0.99796427293684542 * x('2') =g= -1;
+con7193..(-0.99160703732067945) * x('1') - 
+0.12928837355348211 * x('2') =g= -1;
+con7194..(-0.9916880734766067) * x('1') - 
+0.1286653213739285 * x('2') =g= -1;
+con7195..0.063148431544969449 * x('1') + 
+0.99800414608027066 * x('2') =g= -1;
+con7196..(-0.99176871815288037) * x('1') - 
+0.12804221840234026 * x('2') =g= -1;
+con7197..(-0.99184897131766503) * x('1') - 
+0.12741906488469354 * x('2') =g= -1;
+con7198..0.062521373116977627 * x('1') + 
+0.998043625250704 * x('2') =g= -1;
+con7199..(-0.99192883293927991) * x('1') - 
+0.12679586106698504 * x('2') =g= -1;
+con7200..(-0.9920083029861988) * x('1') - 
+0.1261726071952308 * x('2') =g= -1;
+con7201..0.061894290007993714 * x('1') + 
+0.99808271043256047 * x('2') =g= -1;
+con7202..(-0.99208738142705) * x('1') - 
+0.12554930351546748 * x('2') =g= -1;
+con7203..(-0.99216606823061637) * x('1') - 
+0.12492595027375142 * x('2') =g= -1;
+con7204..0.061267182465565589 * x('1') + 
+0.99812140161041085 * x('2') =g= -1;
+con7205..(-0.99224436336583566) * x('1') - 
+0.12430254771615723 * x('2') =g= -1;
+con7206..(-0.99232226680179969) * x('1') - 
+0.12367909608878074 * x('2') =g= -1;
+con7207..0.060640050737250789 * x('1') + 
+0.99815969876898136 * x('2') =g= -1;
+con7208..(-0.9923997785077554) * x('1') - 
+0.1230555956377358 * x('2') =g= -1;
+con7209..(-0.99247689845310427) * x('1') - 
+0.12243204660915601 * x('2') =g= -1;
+con7210..0.0600128950706166 * x('1') + 
+0.99819760189315376 * x('2') =g= -1;
+con7211..(-0.99255362660740232) * x('1') - 
+0.12180844924919368 * x('2') =g= -1;
+con7212..(-0.99262996294036021) * x('1') - 
+0.12118480380402111 * x('2') =g= -1;
+con7213..0.059385715713238869 * x('1') + 
+0.99823511096796547 * x('2') =g= -1;
+con7214..(-0.99270590742184339) * x('1') - 
+0.12056111051982954 * x('2') =g= -1;
+con7215..(-0.99278146002187195) * x('1') - 
+0.11993736964282781 * x('2') =g= -1;
+con7216..0.058758512912704376 * x('1') + 
+0.99827222597860932 * x('2') =g= -1;
+con7217..(-0.99285662071062064) * x('1') - 
+0.11931358141924529 * x('2') =g= -1;
+con7218..(-0.99293138945841897) * x('1') - 
+0.11868974609532873 * x('2') =g= -1;
+con7219..0.058131286916607565 * x('1') + 
+0.9983089469104337 * x('2') =g= -1;
+con7220..(-0.99300576623575121) * x('1') - 
+0.11806586391734347 * x('2') =g= -1;
+con7221..(-0.9930797510132563) * x('1') - 
+0.11744193513157467 * x('2') =g= -1;
+con7222..0.057504037972552949 * x('1') + 
+0.99834527374894266 * x('2') =g= -1;
+con7223..(-0.99315334376172792) * x('1') - 
+0.11681795998432411 * x('2') =g= -1;
+con7224..(-0.99322654445211445) * x('1') - 
+0.11619393872191366 * x('2') =g= -1;
+con7225..0.056876766328153874 * x('1') + 
+0.99838120647979578 * x('2') =g= -1;
+con7226..(-0.99329935305551942) * x('1') - 
+0.11556987159068162 * x('2') =g= -1;
+con7227..(-0.9933717695432005) * x('1') - 
+0.11494575883698614 * x('2') =g= -1;
+con7228..0.056249472231032639 * x('1') + 
+0.99841674508880829 * x('2') =g= -1;
+con7229..(-0.99344379388657067) * x('1') - 
+0.11432160070720211 * x('2') =g= -1;
+con7230..(-0.99351542605719745) * x('1') - 
+0.11369739744772227 * x('2') =g= -1;
+con7231..0.055622155928820416 * x('1') + 
+0.99845188956195075 * x('2') =g= -1;
+con7232..(-0.99358666602680346) * x('1') - 
+0.11307314930495811 * x('2') =g= -1;
+con7233..(-0.99365751376726563) * x('1') - 
+0.1124488565253388 * x('2') =g= -1;
+con7234..0.054994817669157134 * x('1') + 
+0.9984866398853498 * x('2') =g= -1;
+con7235..(-0.99372796925061635) * x('1') - 
+0.11182451935531026 * x('2') =g= -1;
+con7236..(-0.9937980324490423) * x('1') - 
+0.11120013804133597 * x('2') =g= -1;
+con7237..0.054367457699691618 * x('1') + 
+0.9985209960452871 * x('2') =g= -1;
+con7238..(-0.9938677033348855) * x('1') - 
+0.11057571282989809 * x('2') =g= -1;
+con7239..(-0.99393698188064239) * x('1') - 
+0.10995124396749482 * x('2') =g= -1;
+con7240..0.053740076268080604 * x('1') + 
+0.99855495802820027 * x('2') =g= -1;
+con7241..(-0.99400586805896474) * x('1') - 
+0.10932673170064164 * x('2') =g= -1;
+con7242..(-0.99407436184265874) * x('1') - 
+0.10870217627587196 * x('2') =g= -1;
+con7243..0.05311267362198973 * x('1') + 
+0.99858852582068258 * x('2') =g= -1;
+con7244..(-0.99414246320468591) * x('1') - 
+0.10807757793973628 * x('2') =g= -1;
+con7245..(-0.99421017211816232) * x('1') - 
+0.10745293693880115 * x('2') =g= -1;
+con7246..0.052485250009093674 * x('1') + 
+0.99862169940948253 * x('2') =g= -1;
+con7247..(-0.99427748855635945) * x('1') - 
+0.10682825351964995 * x('2') =g= -1;
+con7248..(-0.994344412492703) * x('1') - 
+0.10620352792888414 * x('2') =g= -1;
+con7249..0.051857805677074077 * x('1') + 
+0.99865447878150471 * x('2') =g= -1;
+con7250..(-0.99441094390077434) * x('1') - 
+0.10557876041312052 * x('2') =g= -1;
+con7251..(-0.99447708275430935) * x('1') - 
+0.10495395121899238 * x('2') =g= -1;
+con7252..0.051230340873621633 * x('1') + 
+0.99868686392380901 * x('2') =g= -1;
+con7253..(-0.99454282902719893) * x('1') - 
+0.10432910059315043 * x('2') =g= -1;
+con7254..(-0.99460818269348916) * x('1') - 
+0.10370420878226166 * x('2') =g= -1;
+con7255..0.05060285584643489 * x('1') + 
+0.998718854823611 * x('2') =g= -1;
+con7256..(-0.9946731437273808) * x('1') - 
+0.1030792760330085 * x('2') =g= -1;
+con7257..(-0.99473771210323003) * x('1') - 
+0.10245430259208947 * x('2') =g= -1;
+con7258..0.049975350843220398 * x('1') + 
+0.99875045146828201 * x('2') =g= -1;
+con7259..(-0.99480188779554757) * x('1') - 
+0.10182928870622054 * x('2') =g= -1;
+con7260..(-0.99486567077899934) * x('1') - 
+0.10120423462213231 * x('2') =g= -1;
+con7261..0.049347826111692576 * x('1') + 
+0.99878165384534878 * x('2') =g= -1;
+con7262..(-0.99492906102840661) * x('1') - 
+0.10057914058657121 * x('2') =g= -1;
+con7263..(-0.99499205851874506) * x('1') - 
+0.099954006846300361 * x('2') =g= -1;
+con7264..0.048720281899573635 * x('1') + 
+0.99881246194249407 * x('2') =g= -1;
+con7265..(-0.9950546632251458) * x('1') - 
+0.099328833648098552 * x('2') =g= -1;
+con7266..(-0.99511687512289504) * x('1') - 
+0.098703621238759254 * x('2') =g= -1;
+con7267..0.048092718454593709 * x('1') + 
+0.99884287574755581 * x('2') =g= -1;
+con7268..(-0.99517869418743399) * x('1') - 
+0.098078369865091442 * x('2') =g= -1;
+con7269..(-0.99524012039435883) * x('1') - 
+0.097453079773920759 * x('2') =g= -1;
+con7270..0.047465136024489624 * x('1') + 
+0.99887289524852796 * x('2') =g= -1;
+con7271..(-0.99530115371942085) * x('1') - 
+0.096827751212086394 * x('2') =g= -1;
+con7272..(-0.99536179413852666) * x('1') - 
+0.096202384426444049 * x('2') =g= -1;
+con7273..0.046837534857007264 * x('1') + 
+0.99890252043355998 * x('2') =g= -1;
+con7274..(-0.99542204162773751) * x('1') - 
+0.095576979663864484 * x('2') =g= -1;
+con7275..(-0.99548189616327032) * x('1') - 
+0.094951537171232614 * x('2') =g= -1;
+con7276..0.046209915199898338 * x('1') + 
+0.9989317512909569 * x('2') =g= -1;
+con7277..(-0.99554135772149666) * x('1') - 
+0.094326057195448662 * x('2') =g= -1;
+con7278..(-0.99560042627894363) * x('1') - 
+0.0937005399834272 * x('2') =g= -1;
+con7279..0.045582277300922763 * x('1') + 
+0.99896058780917962 * x('2') =g= -1;
+con7280..(-0.995659101812293) * x('1') - 
+0.093074985782098829 * x('2') =g= -1;
+con7281..(-0.9957173842983823) * x('1') - 
+0.092449394838407015 * x('2') =g= -1;
+con7282..0.044954621407847423 * x('1') + 
+0.99898902997684469 * x('2') =g= -1;
+con7283..(-0.99577527371420371) * x('1') - 
+0.091823767399311015 * x('2') =g= -1;
+con7284..(-0.99583277003690462) * x('1') - 
+0.091198103711784495 * x('2') =g= -1;
+con7285..0.044326947768446312 * x('1') + 
+0.99901707778272408 * x('2') =g= -1;
+con7286..(-0.99588987324378797) * x('1') - 
+0.090572404022814579 * x('2') =g= -1;
+con7287..(-0.99594658331231156) * x('1') - 
+0.089946668579402589 * x('2') =g= -1;
+con7288..0.043699256630500644 * x('1') + 
+0.99904473121574577 * x('2') =g= -1;
+con7289..(-0.99600290022008842) * x('1') - 
+0.089320897628565252 * x('2') =g= -1;
+con7290..(-0.99605882394488687) * x('1') - 
+0.088695091417332034 * x('2') =g= -1;
+con7291..0.043071548241797659 * x('1') + 
+0.99907199026499316 * x('2') =g= -1;
+con7292..(-0.99611435446463048) * x('1') - 
+0.088069250192746293 * x('2') =g= -1;
+con7293..(-0.99616949175739788) * x('1') - 
+0.087443374201866125 * x('2') =g= -1;
+con7294..0.042443822850132963 * x('1') + 
+0.9990988549197054 * x('2') =g= -1;
+con7295..(-0.99622423580142305) * x('1') - 
+0.086817463691763297 * x('2') =g= -1;
+con7296..(-0.99627858657509516) * x('1') - 
+0.086191518909522369 * x('2') =g= -1;
+con7297..0.041816080703307314 * x('1') + 
+0.99912532516927755 * x('2') =g= -1;
+con7298..(-0.99633254405695881) * x('1') - 
+0.085565540102241391 * x('2') =g= -1;
+con7299..(-0.9963861082257135) * x('1') - 
+0.084939527517033223 * x('2') =g= -1;
+con7300..0.041188322049128749 * x('1') + 
+0.99915140100325994 * x('2') =g= -1;
+con7301..(-0.99643927906021423) * x('1') - 
+0.084313481401022211 * x('2') =g= -1;
+con7302..(-0.99649205653947126) * x('1') - 
+0.083687402001347805 * x('2') =g= -1;
+con7303..0.040560547135412496 * x('1') + 
+0.99917708241135916 * x('2') =g= -1;
+con7304..(-0.99654444064265013) * x('1') - 
+0.083061289565160734 * x('2') =g= -1;
+con7305..(-0.99659643134907172) * x('1') - 
+0.082435144339626593 * x('2') =g= -1;
+con7306..0.03993275620997886 * x('1') + 
+0.99920236938343698 * x('2') =g= -1;
+con7307..(-0.99664802863821189) * x('1') - 
+0.081808966571922576 * x('2') =g= -1;
+con7308..(-0.99669923248970227) * x('1') - 
+0.081182756509238715 * x('2') =g= -1;
+con7309..0.03930494952065558 * x('1') + 
+0.99922726190951117 * x('2') =g= -1;
+con7310..(-0.99675004288332958) * x('1') - 
+0.080556514398779158 * x('2') =g= -1;
+con7311..(-0.99680045979903575) * x('1') - 
+0.079930240487758875 * x('2') =g= -1;
+con7312..0.038677127315275513 * x('1') + 
+0.99925175997975502 * x('2') =g= -1;
+con7313..(-0.99685048321691816) * x('1') - 
+0.079303935023407199 * x('2') =g= -1;
+con7314..(-0.99690011311722959) * x('1') - 
+0.078677598252964137 * x('2') =g= -1;
+con7315..0.03804928984167897 * x('1') + 
+0.99927586358449783 * x('2') =g= -1;
+con7316..(-0.99694934948037806) * x('1') - 
+0.078051230423683837 * x('2') =g= -1;
+con7317..(-0.99699819228692699) * x('1') - 
+0.077424831782831355 * x('2') =g= -1;
+con7318..0.037421437347711625 * x('1') + 
+0.99929957271422432 * x('2') =g= -1;
+con7319..(-0.99704664151759514) * x('1') - 
+0.076798402577683944 * x('2') =g= -1;
+con7320..(-0.99709469715325671) * x('1') - 
+0.076171943055531766 * x('2') =g= -1;
+con7321..0.036793570081224407 * x('1') + 
+0.99932288735957508 * x('2') =g= -1;
+con7322..(-0.99714235917494121) * x('1') - 
+0.075545453463676998 * x('2') =g= -1;
+con7323..(-0.99718962756383334) * x('1') - 
+0.074918934049432756 * x('2') =g= -1;
+con7324..0.036165688290075639 * x('1') + 
+0.99934580751134638 * x('2') =g= -1;
+con7325..(-0.9972365023012737) * x('1') - 
+0.074292385060123964 * x('2') =g= -1;
+con7326..(-0.99728298336875776) * x('1') - 
+0.073665806743088535 * x('2') =g= -1;
+con7327..0.035537792222127815 * x('1') + 
+0.99936833316049034 * x('2') =g= -1;
+con7328..(-0.99732907074793664) * x('1') - 
+0.073039199345674627 * x('2') =g= -1;
+con7329..(-0.9973747644206169) * x('1') - 
+0.072412563115241885 * x('2') =g= -1;
+con7330..0.034909882125249973 * x('1') + 
+0.99939046429811462 * x('2') =g= -1;
+con7331..(-0.99742006436876052) * x('1') - 
+0.071785898299162224 * x('2') =g= -1;
+con7332..(-0.99746497057448469) * x('1') - 
+0.071159205144818841 * x('2') =g= -1;
+con7333..0.034281958247316446 * x('1') + 
+0.99941220091548277 * x('2') =g= -1;
+con7334..(-0.99750948302006226) * x('1') - 
+0.070532483899605231 * x('2') =g= -1;
+con7335..(-0.99755360168792162) * x('1') - 
+0.069905734810925962 * x('2') =g= -1;
+con7336..0.03365402083620702 * x('1') + 
+0.99943354300401388 * x('2') =g= -1;
+con7337..(-0.99759732656064615) * x('1') - 
+0.069278958126197956 * x('2') =g= -1;
+con7338..(-0.9976406576209752) * x('1') - 
+0.068652154092847695 * x('2') =g= -1;
+con7339..0.03302607013980681 * x('1') + 
+0.99945449055528313 * x('2') =g= -1;
+con7340..(-0.99768359485180336) * x('1') - 
+0.068025322958312415 * x('2') =g= -1;
+con7341..(-0.99772613823618062) * x('1') - 
+0.067398464970040997 * x('2') =g= -1;
+con7342..0.032398106406006183 * x('1') + 
+0.99947504356102113 * x('2') =g= -1;
+con7343..(-0.99776828775731252) * x('1') - 
+0.06677158037549287 * x('2') =g= -1;
+con7344..(-0.99781004339856005) * x('1') - 
+0.06614466942213712 * x('2') =g= -1;
+con7345..0.031770129882700886 * x('1') + 
+0.99949520201311437 * x('2') =g= -1;
+con7346..(-0.99785140514343973) * x('1') - 
+0.065517732357453215 * x('2') =g= -1;
+con7347..(-0.99789237297562361) * x('1') - 
+0.06489076942893228 * x('2') =g= -1;
+con7348..0.031142140817791028 * x('1') + 
+0.99951496590360511 * x('2') =g= -1;
+con7349..(-0.99793294687893919) * x('1') - 
+0.064263780884074279 * x('2') =g= -1;
+con7350..(-0.9979731268373695) * x('1') - 
+0.063636766970388892 * x('2') =g= -1;
+con7351..0.030514139459182348 * x('1') + 
+0.99953433522469126 * x('2') =g= -1;
+con7352..(-0.998012912835053) * x('1') - 
+0.063009727935398455 * x('2') =g= -1;
+con7353..(-0.99805230485628371) * x('1') - 
+0.062382664026632562 * x('2') =g= -1;
+con7354..0.029886126054785217 * x('1') + 
+0.99955330996872671 * x('2') =g= -1;
+con7355..(-0.99809130288551129) * x('1') - 
+0.061755575491631062 * x('2') =g= -1;
+con7356..(-0.99812990690734082) * x('1') - 
+0.06112846257794486 * x('2') =g= -1;
+con7357..0.029258100852514752 * x('1') + 
+0.9995718901282209 * x('2') =g= -1;
+con7358..(-0.99816811690653284) * x('1') - 
+0.060501325533133164 * x('2') =g= -1;
+con7359..(-0.99820593286800374) * x('1') - 
+0.059874164604765134 * x('2') =g= -1;
+con7360..0.028630064100290734 * x('1') + 
+0.99959007569583902 * x('2') =g= -1;
+con7361..(-0.99824335477682502) * x('1') - 
+0.059246980040418493 * x('2') =g= -1;
+con7362..(-0.99828038261822416) * x('1') - 
+0.058619772087682938 * x('2') =g= -1;
+con7363..0.028002016046037505 * x('1') + 
+0.99960786666440227 * x('2') =g= -1;
+con7364..(-0.99831701637758397) * x('1') - 
+0.05799254099415474 * x('2') =g= -1;
+con7365..(-0.99835325604044289) * x('1') - 
+0.057365287007439758 * x('2') =g= -1;
+con7366..0.027373956937684085 * x('1') + 
+0.99962526302688737 * x('2') =g= -1;
+con7367..(-0.99838910159249483) * x('1') - 
+0.056738010375154212 * x('2') =g= -1;
+con7368..(-0.99842455301958943) * x('1') - 
+0.056110711344921925 * x('2') =g= -1;
+con7369..0.026745887023162971 * x('1') + 
+0.99964226477642704 * x('2') =g= -1;
+con7370..(-0.99845961030773178) * x('1') - 
+0.055483390164375576 * x('2') =g= -1;
+con7371..(-0.99849427344308284) * x('1') - 
+0.054856047081157468 * x('2') =g= -1;
+con7372..0.026117806550412483 * x('1') + 
+0.99965887190630942 * x('2') =g= -1;
+con7373..(-0.99852854241195876) * x('1') - 
+0.054228682342918548 * x('2') =g= -1;
+con7374..(-0.9985624172008315) * x('1') - 
+0.053601296197317426 * x('2') =g= -1;
+con7375..0.025489715767373557 * x('1') + 
+0.99967508440997899 * x('2') =g= -1;
+con7376..(-0.99859589779632874) * x('1') - 
+0.052973888892021162 * x('2') =g= -1;
+con7377..(-0.99862898418523349) * x('1') - 
+0.05234646067470651 * x('2') =g= -1;
+con7378..0.024861614921992077 * x('1') + 
+0.99969090228103541 * x('2') =g= -1;
+con7379..(-0.99866167635448477) * x('1') - 
+0.051719011793057129 * x('2') =g= -1;
+con7380..(-0.99869397429117679) * x('1') - 
+0.051091542494764851 * x('2') =g= -1;
+con7381..0.024233504262217688 * x('1') + 
+0.99970632551323446 * x('2') =g= -1;
+con7382..(-0.99872587798255963) * x('1') - 
+0.050464053027530452 * x('2') =g= -1;
+con7383..(-0.99875738741603903) * x('1') - 
+0.049836543639062661 * x('2') =g= -1;
+con7384..0.023605384036003901 * x('1') + 
+0.99972135410048768 * x('2') =g= -1;
+con7385..(-0.99878850257917617) * x('1') - 
+0.049209014577077201 * x('2') =g= -1;
+con7386..(-0.9988192234596881) * x('1') - 
+0.048581466089297545 * x('2') =g= -1;
+con7387..0.022977254491308236 * x('1') + 
+0.99973598803686248 * x('2') =g= -1;
+con7388..(-0.99884955004544751) * x('1') - 
+0.047953898423456168 * x('2') =g= -1;
+con7389..(-0.99887948232448243) * x('1') - 
+0.047326311827291356 * x('2') =g= -1;
+con7390..0.022349115876090991 * x('1') + 
+0.99975022731658181 * x('2') =g= -1;
+con7391..(-0.99890902028497686) * x('1') - 
+0.046698706548550621 * x('2') =g= -1;
+con7392..(-0.99893816391527046) * x('1') - 
+0.046071082834987093 * x('2') =g= -1;
+con7393..0.021720968438317383 * x('1') + 
+0.99976407193402461 * x('2') =g= -1;
+con7394..(-0.99896691320385833) * x('1') - 
+0.045443440934362943 * x('2') =g= -1;
+con7395..(-0.99899526813939143) * x('1') - 
+0.044815781094446193 * x('2') =g= -1;
+con7396..0.021092812425955447 * x('1') + 
+0.9997775218837256 * x('2') =g= -1;
+con7397..(-0.99902322871067639) * x('1') - 
+0.044188103563011949 * x('2') =g= -1;
+con7398..(-0.99905079490667548) * x('1') - 
+0.043560408587843637 * x('2') =g= -1;
+con7399..0.020464648086975935 * x('1') + 
+0.99979057716037523 * x('2') =g= -1;
+con7400..(-0.9990779667165065) * x('1') - 
+0.042932696416729782 * x('2') =g= -1;
+con7401..(-0.99910474412944317) * x('1') - 
+0.04230496729746748 * x('2') =g= -1;
+con7402..0.019836475669354439 * x('1') + 
+0.99980323775881974 * x('2') =g= -1;
+con7403..(-0.99913112713491492) * x('1') - 
+0.041677221477858739 * x('2') =g= -1;
+con7404..(-0.99915711572250654) * x('1') - 
+0.041049459205713942 * x('2') =g= -1;
+con7405..0.019208295421068191 * x('1') + 
+0.99981550367406136 * x('2') =g= -1;
+con7406..(-0.99918270988195901) * x('1') - 
+0.040421680728848629 * x('2') =g= -1;
+con7407..(-0.99920790960316852) * x('1') - 
+0.039793886295084742 * x('2') =g= -1;
+con7408..0.018580107590098396 * x('1') + 
+0.99982737490125784 * x('2') =g= -1;
+con7409..(-0.99923271487618737) * x('1') - 
+0.039166076152251837 * x('2') =g= -1;
+con7410..(-0.99925712569122338) * x('1') - 
+0.038538250548183918 * x('2') =g= -1;
+con7411..0.017951912424429034 * x('1') + 
+0.99983885143572293 * x('2') =g= -1;
+con7412..(-0.99928114203864005) * x('1') - 
+0.037910409730722863 * x('2') =g= -1;
+con7413..(-0.99930476390895673) * x('1') - 
+0.037282553947714771 * x('2') =g= -1;
+con7414..0.01732371017204698 * x('1') + 
+0.99984993327292615 * x('2') =g= -1;
+con7415..(-0.99932799129284833) * x('1') - 
+0.036654683447013427 * x('2') =g= -1;
+con7416..(-0.99935082418114574) * x('1') - 
+0.036026798476477093 * x('2') =g= -1;
+con7417..0.016695501080942126 * x('1') + 
+0.99986062040849288 * x('2') =g= -1;
+con7418..(-0.99937326256483539) * x('1') - 
+0.035398899283969762 * x('2') =g= -1;
+con7419..(-0.99939530643505936) * x('1') - 
+0.034770986117361902 * x('2') =g= -1;
+con7420..0.016067285399106179 * x('1') + 
+0.99987091283820417 * x('2') =g= -1;
+con7421..(-0.99941695578311573) * x('1') - 
+0.034143059224529509 * x('2') =g= -1;
+con7422..(-0.99943821060045812) * x('1') - 
+0.033515118853353114 * x('2') =g= -1;
+con7423..0.015439063374535 * x('1') + 
+0.99988081055799705 * x('2') =g= -1;
+con7424..(-0.9994590708786959) * x('1') - 
+0.032887165251718559 * x('2') =g= -1;
+con7425..(-0.99947953660959443) * x('1') - 
+0.032259198667518252 * x('2') =g= -1;
+con7426..0.014810835255225403 * x('1') + 
+0.99989031356396418 * x('2') =g= -1;
+con7427..(-0.99949960778507452) * x('1') - 
+0.03163121934864839 * x('2') =g= -1;
+con7428..(-0.99951928439721283) * x('1') - 
+0.031003227543010194 * x('2') =g= -1;
+con7429..0.014182601289177491 * x('1') + 
+0.99989942185235425 * x('2') =g= -1;
+con7430..(-0.99953856643824179) * x('1') - 
+0.030375223498510701 * x('2') =g= -1;
+con7431..(-0.99955745390054973) * x('1') - 
+0.029747207463061788 * x('2') =g= -1;
+con7432..0.013554361724393454 * x('1') + 
+0.99990813541957158 * x('2') =g= -1;
+con7433..(-0.99957594677668049) * x('1') - 
+0.029119179684578719 * x('2') =g= -1;
+con7434..(-0.99959404505933391) * x('1') - 
+0.028491140410983187 * x('2') =g= -1;
+con7435..0.012926116808877697 * x('1') + 
+0.99991645426217646 * x('2') =g= -1;
+con7436..(-0.99961174874136538) * x('1') - 
+0.027863089890200077 * x('2') =g= -1;
+con7437..(-0.99962905781578626) * x('1') - 
+0.027235028370159165 * x('2') =g= -1;
+con7438..0.012297866790636731 * x('1') + 
+0.99992437837688497 * x('2') =g= -1;
+con7439..(-0.99964597227576368) * x('1') - 
+0.026606956098793683 * x('2') =g= -1;
+con7440..(-0.99966249211462033) * x('1') - 
+0.025978873324043764 * x('2') =g= -1;
+con7441..0.011669611917679085 * x('1') + 
+0.99993190776056884 * x('2') =g= -1;
+con7442..(-0.99967861732583485) * x('1') - 
+0.025350780293851027 * x('2') =g= -1;
+con7443..(-0.99969434790304168) * x('1') - 
+0.024722677256161583 * x('2') =g= -1;
+con7444..0.011041352438015429 * x('1') + 
+0.99993904241025588 * x('2') =g= -1;
+con7445..(-0.99970968384003089) * x('1') - 
+0.024094564458926829 * x('2') =g= -1;
+con7446..(-0.99972462513074867) * x('1') - 
+0.023466442150100679 * x('2') =g= -1;
+con7447..0.010413088599657576 * x('1') + 
+0.99994578232312958 * x('2') =g= -1;
+con7448..(-0.99973917176929661) * x('1') - 
+0.0228383105776408 * x('2') =g= -1;
+con7449..(-0.99975332374993242) * x('1') - 
+0.022210169989509407 * x('2') =g= -1;
+con7450..0.0097848206506197365 * x('1') + 
+0.99995212749652929 * x('2') =g= -1;
+con7451..(-0.99976708106706924) * x('1') - 
+0.021582020633672275 * x('2') =g= -1;
+con7452..(-0.9997804437152763) * x('1') - 
+0.020953862758097751 * x('2') =g= -1;
+con7453..0.009156548838917514 * x('1') + 
+0.99995807792795022 * x('2') =g= -1;
+con7454..(-0.99979341168927871) * x('1') - 
+0.020325696610757542 * x('2') =g= -1;
+con7455..(-0.9998059849839569) * x('1') - 
+0.019697522439627958 * x('2') =g= -1;
+con7456..0.0085282734125680434 * x('1') + 
+0.99996363361504326 * x('2') =g= -1;
+con7457..(-0.99981816359434772) * x('1') - 
+0.019069340492687142 * x('2') =g= -1;
+con7458..(-0.99982994751564347) * x('1') - 
+0.018441151017916303 * x('2') =g= -1;
+con7459..0.0078999946195898799 * x('1') + 
+0.99996879455561538 * x('2') =g= -1;
+con7460..(-0.9998413367431922) * x('1') - 
+0.017812954263300516 * x('2') =g= -1;
+con7461..(-0.99985233127249806) * x('1') - 
+0.017184750476827725 * x('2') =g= -1;
+con7462..0.007271712708002912 * x('1') + 
+0.99997356074762911 * x('2') =g= -1;
+con7463..(-0.99986293109922064) * x('1') - 
+0.016556539906487765 * x('2') =g= -1;
+con7464..(-0.99987313621917573) * x('1') - 
+0.015928322800273148 * x('2') =g= -1;
+con7465..0.0066434279258284811 * x('1') + 
+0.99997793218920306 * x('2') =g= -1;
+con7466..(-0.99988294662833455) * x('1') - 
+0.015300099406180295 * x('2') =g= -1;
+con7467..(-0.99989236232282452) * x('1') - 
+0.014671869972206784 * x('2') =g= -1;
+con7468..0.0060151405210881704 * x('1') + 
+0.99998190887861149 * x('2') =g= -1;
+con7469..(-0.99990138329892864) * x('1') - 
+0.014043634746352571 * x('2') =g= -1;
+con7470..(-0.99991000955308573) * x('1') - 
+0.013415393976620789 * x('2') =g= -1;
+con7471..0.0053868507418059356 * x('1') + 
+0.99998549081428456 * x('2') =g= -1;
+con7472..(-0.99991824108189054) * x('1') - 
+0.012787147911016759 * x('2') =g= -1;
+con7473..(-0.99992607788209353) * x('1') - 
+0.012158896797547005 * x('2') =g= -1;
+con7474..0.0047585588360059983 * x('1') + 
+0.99998867799480828 * x('2') =g= -1;
+con7475..(-0.99993351995060109) * x('1') - 
+0.011530640884220043 * x('2') =g= -1;
+con7476..(-0.99994056728447533) * x('1') - 
+0.010902380419047617 * x('2') =g= -1;
+con7477..0.0041302650517127584 * x('1') + 
+0.99999147041892444 * x('2') =g= -1;
+con7478..(-0.99994721988093427) * x('1') - 
+0.010274115650041937 * x('2') =g= -1;
+con7479..(-0.99995347773735177) * x('1') - 
+0.0096458468252169083 * x('2') =g= -1;
+con7480..0.0035019696369529081 * x('1') + 
+0.9999938680855307 * x('2') =g= -1;
+con7481..(-0.99995934085125737) * x('1') - 
+0.0090175741925889261 * x('2') =g= -1;
+con7482..(-0.99996480922033659) * x('1') - 
+0.0083892980001758922 * x('2') =g= -1;
+con7483..0.0028736728397522307 * x('1') + 
+0.9999958709936807 * x('2') =g= -1;
+con7484..(-0.99996988284243082) * x('1') - 
+0.0077610184959962213 * x('2') =g= -1;
+con7485..(-0.999974561715537) * x('1') - 
+0.0071327359280696388 * x('2') =g= -1;
+con7486..0.002245374908137943 * x('1') + 
+0.99999747914258363 * x('2') =g= -1;
+con7487..(-0.99997884583780827) * x('1') - 
+0.006504450544418409 * x('2') =g= -1;
+con7488..(-0.99998273520755343) * x('1') - 
+0.005876162593064135 * x('2') =g= -1;
+con7489..0.0016170760901374872 * x('1') + 
+0.99999869253160467 * x('2') =g= -1;
+con7490..(-0.99998622982323693) * x('1') - 
+0.0052478723220312053 * x('2') =g= -1;
+con7491..(-0.99998932968347942) * x('1') - 
+0.0046195799793431521 * x('2') =g= -1;
+con7492..0.00098877663377865588 * x('1') + 
+0.99999951116026475 * x('2') =g= -1;
+con7493..(-0.999992034787057) * x('1') - 
+0.0039912858130260985 * x('2') =g= -1;
+con7494..(-0.99999434513290208) * x('1') - 
+0.0033629900711055569 * x('2') =g= -1;
+con7495..0.00036047678708971549 * x('1') + 
+0.99999993502824092 * x('2') =g= -1;
+con7496..(-0.99999626072010239) * x('1') - 
+0.0027346930016076618 * x('2') =g= -1;
+con7497..(-0.99999778154790175) * x('1') - 
+0.0021063948525604026 * x('2') =g= -1;
+con7498..(-0.00026782320190180163) * x('1') + 
+0.99999996413536563 * x('2') =g= -1;
+con7499..(-0.99999890761569998) * x('1') - 
+0.0014780958719904202 * x('2') =g= -1;
+con7500..(-0.99999963892305233) * x('1') - 
+0.00084979630792601497 * x('2') =g= -1;
+con7501..(-0.00089612308516675264) * x('1') + 
+0.99999959848162756 * x('2') =g= -1;
+con7502..(-0.99999997546967023) * x('1') - 
+0.00022149640839571808 * x('2') =g= -1;
+con7503..(-0.99999991725542081) * x('1') + 
+0.00040680357857269525 * x('2') =g= -1;
+con7504..(-0.0015244226146775906) * x('1') + 
+0.99999883806717094 * x('2') =g= -1;
+con7505..(-0.99999946428032704) * x('1') + 
+0.0010351034049509711 * x('2') =g= -1;
+con7506..(-0.99999861654456768) * x('1') + 
+0.0016634028227113633 * x('2') =g= -1;
+con7507..(-0.0021527215424060201) * x('1') + 
+0.99999768289229596 * x('2') =g= -1;
+con7508..(-0.99999737404847755) * x('1') + 
+0.0022917015838253979 * x('2') =g= -1;
+con7509..(-0.99999573679254694) * x('1') + 
+0.0029199994402648618 * x('2') =g= -1;
+con7510..(-0.0027810196203242061) * x('1') + 
+0.99999613295745871 * x('2') =g= -1;
+con7511..(-0.99999370477742233) * x('1') + 
+0.0035482961440032297 * x('2') =g= -1;
+con7512..(-0.99999127800390575) * x('1') + 
+0.0041765914470126555 * x('2') =g= -1;
+con7513..(-0.0034093166004046473) * x('1') + 
+0.99999418826327091 * x('2') =g= -1;
+con7514..(-0.99998845647295531) * x('1') + 
+0.0048048851012671796 * x('2') =g= -1;
+con7515..(-0.9999852401856848) * x('1') + 
+0.0054331768587414907 * x('2') =g= -1;
+con7516..(-0.0040376122346200555) * x('1') + 
+0.99999184881050052 * x('2') =g= -1;
+con7517..(-0.99998162914336375) * x('1') + 
+0.0060614664714096957 * x('2') =g= -1;
+con7518..(-0.99997762334741791) * x('1') + 
+0.0066897536912485251 * x('2') =g= -1;
+con7519..(-0.0046659062749445611) * x('1') + 
+0.99998911460007078 * x('2') =g= -1;
+con7520..(-0.99997322279942846) * x('1') + 
+0.0073180382702338759 * x('2') =g= -1;
+con7521..(-0.99996842750113257) * x('1') + 
+0.0079463199603444657 * x('2') =g= -1;
+con7522..(-0.0052941984733513693) * x('1') + 
+0.99998598563306118 * x('2') =g= -1;
+con7523..(-0.99996323745442328) * x('1') + 
+0.0085745985135583739 * x('2') =g= -1;
+con7524..(-0.99995765266134939) * x('1') + 
+0.0092028736818562541 * x('2') =g= -1;
+con7525..(-0.005922488581815967) * x('1') + 
+0.99998246191070683 * x('2') =g= -1;
+con7526..(-0.99995167312411548) * x('1') + 
+0.0098311452172200921 * x('2') =g= -1;
+con7527..(-0.99994529884508221) * x('1') + 
+0.010459412871632422 * x('2') =g= -1;
+con7528..(-0.0065507763523139995) * x('1') + 
+0.99997854343439885 * x('2') =g= -1;
+con7529..(-0.99993852982676579) * x('1') + 
+0.01108767639707731 * x('2') =g= -1;
+con7530..(-0.9999313660718383) * x('1') + 
+0.011715935545541338 * x('2') =g= -1;
+con7531..(-0.0071790615368213708) * x('1') + 
+0.9999742302056841 * x('2') =g= -1;
+con7532..(-0.99992380758312782) * x('1') + 
+0.012344190069012819 * x('2') =g= -1;
+con7533..(-0.99991585436361818) * x('1') + 
+0.012972439719480561 * x('2') =g= -1;
+con7534..(-0.0078073438873163354) * x('1') + 
+0.99996952222626523 * x('2') =g= -1;
+con7535..(-0.99990750641644888) * x('1') + 
+0.01360068424893662 * x('2') =g= -1;
+con7536..(-0.99989876374491538) * x('1') + 
+0.014228923409375082 * x('2') =g= -1;
+con7537..(-0.0084356231557773803) * x('1') + 
+0.99996441949800075 * x('2') =g= -1;
+con7538..(-0.99988962635246903) * x('1') + 
+0.014857156952791259 * x('2') =g= -1;
+con7539..(-0.99988009424271684) * x('1') + 
+0.015485384631182684 * x('2') =g= -1;
+con7540..(-0.0090638990941844296) * x('1') + 
+0.99995892202290515 * x('2') =g= -1;
+con7541..(-0.99987016741942181) * x('1') + 
+0.016113606196550091 * x('2') =g= -1;
+con7542..(-0.99985984588650245) * x('1') + 
+0.016741821400896629 * x('2') =g= -1;
+con7543..(-0.0096921714545187242) * x('1') + 
+0.99995302980314837 * x('2') =g= -1;
+con7544..(-0.99984912964803352) * x('1') + 
+0.017370029996226624 * x('2') =g= -1;
+con7545..(-0.99983801870824529) * x('1') + 
+0.017998231734548342 * x('2') =g= -1;
+con7546..(-0.010320439988762914) * x('1') + 
+0.99994674284105667 * x('2') =g= -1;
+con7547..(-0.99982651307152393) * x('1') + 
+0.018626426367872762 * x('2') =g= -1;
+con7548..(-0.99981461274241135) * x('1') + 
+0.019254613648212772 * x('2') =g= -1;
+con7549..(-0.010948704448901163) * x('1') + 
+0.99994006113911182 * x('2') =g= -1;
+con7550..(-0.99980231772560546) * x('1') + 
+0.019882793327584167 * x('2') =g= -1;
+con7551..(-0.99978962802595983) * x('1') + 
+0.020510965158006631 * x('2') =g= -1;
+con7552..(-0.011576964586919021) * x('1') + 
+0.9999329846999514 * x('2') =g= -1;
+con7553..(-0.99977654364848367) * x('1') + 
+0.021139128891502944 * x('2') =g= -1;
+con7554..(-0.99976306459834241) * x('1') + 
+0.021767284280097755 * x('2') =g= -1;
+con7555..(-0.012205220154804405) * x('1') + 
+0.99992551352636905 * x('2') =g= -1;
+con7556..(-0.99974919088085701) * x('1') + 
+0.02239543107582033 * x('2') =g= -1;
+con7557..(-0.99973492250150409) * x('1') + 
+0.02302356903070334 * x('2') =g= -1;
+con7558..(-0.012833470904546378) * x('1') + 
+0.99991764762131397 * x('2') =g= -1;
+con7559..(-0.99972025946591647) * x('1') + 
+0.023651697896782047 * x('2') =g= -1;
+con7560..(-0.99970520177988242) * x('1') + 
+0.024279817426095304 * x('2') =g= -1;
+con7561..(-0.013461716588136122) * x('1') + 
+0.99990938698789134 * x('2') =g= -1;
+con7562..(-0.99968974944934619) * x('1') + 
+0.02490792737068654 * x('2') =g= -1;
+con7563..(-0.99967390248040777) * x('1') + 
+0.025536027482602967 * x('2') =g= -1;
+con7564..(-0.014089956957566818) * x('1') + 
+0.99990073162936222 * x('2') =g= -1;
+con7565..(-0.99965766087932284) * x('1') + 
+0.026164117513894344 * x('2') =g= -1;
+con7566..(-0.99964102465250293) * x('1') + 
+0.026792197216615746 * x('2') =g= -1;
+con7567..(-0.01471819176483375) * x('1') + 
+0.99989168154914343 * x('2') =g= -1;
+con7568..(-0.99962399380651545) * x('1') + 
+0.027420266342826766 * x('2') =g= -1;
+con7569..(-0.99960656834808348) * x('1') + 
+0.028048324644588511 * x('2') =g= -1;
+con7570..(-0.015346420761934392) * x('1') + 
+0.99988223675080745 * x('2') =g= -1;
+con7571..(-0.99958874828408595) * x('1') + 
+0.028676371873969018 * x('2') =g= -1;
+con7572..(-0.99957053362155757) * x('1') + 
+0.029304407783039815 * x('2') =g= -1;
+con7573..(-0.015974643700868294) * x('1') + 
+0.99987239723808274 * x('2') =g= -1;
+con7574..(-0.99955192436768858) * x('1') + 
+0.029932432123877337 * x('2') =g= -1;
+con7575..(-0.99953292052982534) * x('1') + 
+0.030560444648561263 * x('2') =g= -1;
+con7576..(-0.016602860333638281) * x('1') + 
+0.99986216301485364 * x('2') =g= -1;
+con7577..(-0.99951352211546984) * x('1') + 
+0.031188445109177697 * x('2') =g= -1;
+con7578..(-0.99949372913227974) * x('1') + 
+0.03181643325781619 * x('2') =g= -1;
+con7579..(-0.017231070412248119) * x('1') + 
+0.99985153408516014 * x('2') =g= -1;
+con7580..(-0.99947354158806856) * x('1') + 
+0.032444408846571141 * x('2') =g= -1;
+con7581..(-0.99945295949080548) * x('1') + 
+0.033072371627542806 * x('2') =g= -1;
+con7582..(-0.017859273688705712) * x('1') + 
+0.99984051045319822 * x('2') =g= -1;
+con7583..(-0.99943198284861567) * x('1') + 
+0.033700321352836481 * x('2') =g= -1;
+con7584..(-0.99941061166977974) * x('1') + 
+0.034328257774561298 * x('2') =g= -1;
+con7585..(-0.01848746991502076) * x('1') + 
+0.9998290921233195 * x('2') =g= -1;
+con7586..(-0.99938884596273425) * x('1') + 
+0.034956180644832975 * x('2') =g= -1;
+con7587..(-0.99936668573607146) * x('1') + 
+0.035584089715772566 * x('2') =g= -1;
+con7588..(-0.019115658843205968) * x('1') + 
+0.99981727910003149 * x('2') =g= -1;
+con7589..(-0.99934413099853936) * x('1') + 
+0.036211984739505688 * x('2') =g= -1;
+con7590..(-0.99932118175904172) * x('1') + 
+0.036839865468163514 * x('2') =g= -1;
+con7591..(-0.019743840225276931) * x('1') + 
+0.99980507138799746 * x('2') =g= -1;
+con7592..(-0.99929783802663785) * x('1') + 
+0.037467731653883743 * x('2') =g= -1;
+con7593..(-0.99927409981054305) * x('1') + 
+0.038095583048809806 * x('2') =g= -1;
+con7594..(-0.020372013813251984) * x('1') + 
+0.99979246899203666 * x('2') =g= -1;
+con7595..(-0.99924996712012837) * x('1') + 
+0.038723419405089651 * x('2') =g= -1;
+con7596..(-0.99922543996492019) * x('1') + 
+0.039351240474878937 * x('2') =g= -1;
+con7597..(-0.021000179359153444) * x('1') + 
+0.99977947191712402 * x('2') =g= -1;
+con7598..(-0.999200518354601) * x('1') + 
+0.039979046010337575 * x('2') =g= -1;
+con7599..(-0.99917520229900891) * x('1') + 
+0.040606835763633387 * x('2') =g= -1;
+con7600..(-0.021628336615005239) * x('1') + 
+0.99976608016839019 * x('2') =g= -1;
+con7601..(-0.99914949180813761) * x('1') + 
+0.041234609486938661 * x('2') =g= -1;
+con7602..(-0.99912338689213676) * x('1') + 
+0.04186236693243333 * x('2') =g= -1;
+con7603..(-0.022256485332836126) * x('1') + 
+0.99975229375112173 * x('2') =g= -1;
+con7604..(-0.99909688756131132) * x('1') + 
+0.042490107852303761 * x('2') =g= -1;
+con7605..(-0.99906999382612238) * x('1') + 
+0.043117831998741508 * x('2') =g= -1;
+con7606..(-0.022884625264677567) * x('1') + 
+0.99973811267076107 * x('2') =g= -1;
+con7607..(-0.99904270569718656) * x('1') + 
+0.04374553912394652 * x('2') =g= -1;
+con7608..(-0.99901502318527602) * x('1') + 
+0.044373228980123698 * x('2') =g= -1;
+con7609..(-0.023512756162563823) * x('1') + 
+0.99972353693290616 * x('2') =g= -1;
+con7610..(-0.99898694630131868) * x('1') + 
+0.045000901319486537 * x('2') =g= -1;
+con7611..(-0.99895847505639845) * x('1') + 
+0.045628555894253658 * x('2') =g= -1;
+con7612..(-0.024140877778534055) * x('1') + 
+0.99970856654331108 * x('2') =g= -1;
+con7613..(-0.99892960946175435) * x('1') + 
+0.046256192456652037 * x('2') =g= -1;
+con7614..(-0.99890034952878171) * x('1') + 
+0.046883810758915762 * x('2') =g= -1;
+con7615..(-0.024768989864630206) * x('1') + 
+0.99969320150788554 * x('2') =g= -1;
+con7616..(-0.99887069526903094) * x('1') + 
+0.047511410553284783 * x('2') =g= -1;
+con7617..(-0.99884064669420847) * x('1') + 
+0.048138991592008157 * x('2') =g= -1;
+con7618..(-0.025397092172898195) * x('1') + 
+0.99967744183269502 * x('2') =g= -1;
+con7619..(-0.99881020381617636) * x('1') + 
+0.048766553627340545 * x('2') =g= -1;
+con7620..(-0.99877936664695222) * x('1') + 
+0.049394096411545893 * x('2') =g= -1;
+con7621..(-0.026025184455387804) * x('1') + 
+0.99966128752396077 * x('2') =g= -1;
+con7622..(-0.99874813519870931) * x('1') + 
+0.050021619696893983 * x('2') =g= -1;
+con7623..(-0.99871650948377666) * x('1') + 
+0.050649123235663611 * x('2') =g= -1;
+con7624..(-0.026653266464152548) * x('1') + 
+0.99964473858806002 * x('2') =g= -1;
+con7625..(-0.99868448951463884) * x('1') + 
+0.051276606780141377 * x('2') =g= -1;
+con7626..(-0.99865207530393607) * x('1') + 
+0.051904070082620879 * x('2') =g= -1;
+con7627..(-0.027281337951250897) * x('1') + 
+0.99962779503152555 * x('2') =g= -1;
+con7628..(-0.99861926686446423) * x('1') + 
+0.052531512895403705 * x('2') =g= -1;
+con7629..(-0.99858606420917484) * x('1') + 
+0.053158934970800438 * x('2') =g= -1;
+con7630..(-0.027909398668743902) * x('1') + 
+0.99961045686104599 * x('2') =g= -1;
+con7631..(-0.99855246735117487) * x('1') + 
+0.053786336061129821 * x('2') =g= -1;
+con7632..(-0.99851847630372725) * x('1') + 
+0.054413715918717562 * x('2') =g= -1;
+con7633..(-0.028537448368698433) * x('1') + 
+0.99959272408346589 * x('2') =g= -1;
+con7634..(-0.99848409108025016) * x('1') + 
+0.055041074295899092 * x('2') =g= -1;
+con7635..(-0.99844931169431761) * x('1') + 
+0.055668410945018301 * x('2') =g= -1;
+con7636..(-0.029165486803184822) * x('1') + 
+0.9995745967057853 * x('2') =g= -1;
+con7637..(-0.99841413815965907) * x('1') + 
+0.056295725618426787 * x('2') =g= -1;
+con7638..(-0.99837857049015977) * x('1') + 
+0.056923018068484807 * x('2') =g= -1;
+con7639..(-0.029793513724278058) * x('1') + 
+0.99955607473516028 * x('2') =g= -1;
+con7640..(-0.99834260869986047) * x('1') + 
+0.057550288047562292 * x('2') =g= -1;
+con7641..(-0.99830625280295726) * x('1') + 
+0.058177535308038042 * x('2') =g= -1;
+con7642..(-0.030421528884057691) * x('1') + 
+0.99953715817890254 * x('2') =g= -1;
+con7643..(-0.99826950281380222) * x('1') + 
+0.058804759602298487 * x('2') =g= -1;
+con7644..(-0.99823235874690275) * x('1') + 
+0.05943196068274046 * x('2') =g= -1;
+con7645..(-0.031049532034607898) * x('1') + 
+0.99951784704447966 * x('2') =g= -1;
+con7646..(-0.99819482061692189) * x('1') + 
+0.060059138301770391 * x('2') =g= -1;
+con7647..(-0.99815688843867822) * x('1') + 
+0.060686292211801336 * x('2') =g= -1;
+con7648..(-0.031677522928017614) * x('1') + 
+0.99949814133951487 * x('2') =g= -1;
+con7649..(-0.99811856222714579) * x('1') + 
+0.061313422165258341 * x('2') =g= -1;
+con7650..(-0.99807984199745448) * x('1') + 
+0.061940527914575036 * x('2') =g= -1;
+con7651..(-0.032305501316380367) * x('1') + 
+0.99947804107178728 * x('2') =g= -1;
+con7652..(-0.99804072776488939) * x('1') + 
+0.062567609212195063 * x('2') =g= -1;
+con7653..(-0.99800121954489129) * x('1') + 
+0.063194665810570344 * x('2') =g= -1;
+con7654..(-0.032933466951795318) * x('1') + 
+0.99945754624923167 * x('2') =g= -1;
+con7655..(-0.99796131735305649) * x('1') + 
+0.063821697462163943 * x('2') =g= -1;
+con7656..(-0.99792102120513682) * x('1') + 
+0.064448703919449152 * x('2') =g= -1;
+con7657..(-0.033561419586365965) * x('1') + 
+0.99943665687993843 * x('2') =g= -1;
+con7658..(-0.99788033111703967) * x('1') + 
+0.065075684934906605 * x('2') =g= -1;
+con7659..(-0.99783924710482785) * x('1') + 
+0.065702640261029593 * x('2') =g= -1;
+con7660..(-0.034189358972201184) * x('1') + 
+0.9994153729721541 * x('2') =g= -1;
+con7661..(-0.99779776918471974) * x('1') + 
+0.066329569650321135 * x('2') =g= -1;
+con7662..(-0.99775589737308912) * x('1') + 
+0.066956472855293145 * x('2') =g= -1;
+con7663..(-0.034817284861415075) * x('1') + 
+0.99939369453428062 * x('2') =g= -1;
+con7664..(-0.99771363168646543) * x('1') + 
+0.067583349628469222 * x('2') =g= -1;
+con7665..(-0.99767097214153355) * x('1') + 
+0.068210199722383361 * x('2') =g= -1;
+con7666..(-0.035445197006127055) * x('1') + 
+0.9993716215748758 * x('2') =g= -1;
+con7667..(-0.99762791875513368) * x('1') + 
+0.068837022889579227 * x('2') =g= -1;
+con7668..(-0.99758447154426166) * x('1') + 
+0.069463818882611134 * x('2') =g= -1;
+con7669..(-0.036073095158461979) * x('1') + 
+0.99934915410265324 * x('2') =g= -1;
+con7670..(-0.99754063052606878) * x('1') + 
+0.070090587454044978 * x('2') =g= -1;
+con7671..(-0.99749639571786175) * x('1') + 
+0.070717328356457484 * x('2') =g= -1;
+con7672..(-0.036700979070549998) * x('1') + 
+0.99932629212648205 * x('2') =g= -1;
+con7673..(-0.99745176713710271) * x('1') + 
+0.071344041342434994 * x('2') =g= -1;
+con7674..(-0.99740674480140934) * x('1') + 
+0.071970726164576171 * x('2') =g= -1;
+con7675..(-0.037328848494527778) * x('1') + 
+0.99930303565538747 * x('2') =g= -1;
+con7676..(-0.99736132872855454) * x('1') + 
+0.07259738257549081 * x('2') =g= -1;
+con7677..(-0.99731551893646697) * x('1') + 
+0.07322401032779903 * x('2') =g= -1;
+con7678..(-0.037956703182536147) * x('1') + 
+0.99927938469855004 * x('2') =g= -1;
+con7679..(-0.9972693154432305) * x('1') + 
+0.07385060917413229 * x('2') =g= -1;
+con7680..(-0.99722271826708442) * x('1') + 
+0.074477178867134286 * x('2') =g= -1;
+con7681..(-0.038584542886723298) * x('1') + 
+0.99925533926530641 * x('2') =g= -1;
+con7682..(-0.99717572742642357) * x('1') + 
+0.075103719159460278 * x('2') =g= -1;
+con7683..(-0.99712834293979791) * x('1') + 
+0.075730229803775792 * x('2') =g= -1;
+con7684..(-0.039212367359242682) * x('1') + 
+0.99923089936514864 * x('2') =g= -1;
+con7685..(-0.99708056482591323) * x('1') + 
+0.076356710552759374 * x('2') =g= -1;
+con7686..(-0.99703239310363023) * x('1') + 
+0.076983161159101365 * x('2') =g= -1;
+con7687..(-0.039840176352253093) * x('1') + 
+0.99920606500772469 * x('2') =g= -1;
+con7688..(-0.99698382779196537) * x('1') + 
+0.077609581375503153 * x('2') =g= -1;
+con7689..(-0.9969348689100902) * x('1') + 
+0.078235970954678075 * x('2') =g= -1;
+con7690..(-0.04046796961792077) * x('1') + 
+0.99918083620283826 * x('2') =g= -1;
+con7691..(-0.99688551647733192) * x('1') + 
+0.078862329649352497 * x('2') =g= -1;
+con7692..(-0.99683577051317285) * x('1') + 
+0.07948865721226496 * x('2') =g= -1;
+con7693..(-0.041095746908417052) * x('1') + 
+0.99915521296044851 * x('2') =g= -1;
+con7694..(-0.99678563103725082) * x('1') + 
+0.080114953396164923 * x('2') =g= -1;
+con7695..(-0.99673509806935878) * x('1') + 
+0.080741217953816072 * x('2') =g= -1;
+con7696..(-0.041723507975920678) * x('1') + 
+0.99912919529067079 * x('2') =g= -1;
+con7697..(-0.99668417162944545) * x('1') + 
+0.081367450637992778 * x('2') =g= -1;
+con7698..(-0.99663285173761429) * x('1') + 
+0.081993651201483747 * x('2') =g= -1;
+con7699..(-0.042351252572615489) * x('1') + 
+0.99910278320377555 * x('2') =g= -1;
+con7700..(-0.99658113841412455) * x('1') + 
+0.082619819397088609 * x('2') =g= -1;
+con7701..(-0.99652903167939055) * x('1') + 
+0.083245954977621106 * x('2') =g= -1;
+con7702..(-0.042978980450692462) * x('1') + 
+0.99907597671018944 * x('2') =g= -1;
+con7703..(-0.99647653155398208) * x('1') + 
+0.083872057695907859 * x('2') =g= -1;
+con7704..(-0.99642363805862411) * x('1') + 
+0.084498127304787118 * x('2') =g= -1;
+con7705..(-0.043606691362349868) * x('1') + 
+0.99904877582049456 * x('2') =g= -1;
+con7706..(-0.99637035121419693) * x('1') + 
+0.08512416355711197 * x('2') =g= -1;
+con7707..(-0.99631667104173605) * x('1') + 
+0.085750166205746922 * x('2') =g= -1;
+con7708..(-0.044234385059791111) * x('1') + 
+0.99902118054542877 * x('2') =g= -1;
+con7709..(-0.99626259756243218) * x('1') + 
+0.086376135003571511 * x('2') =g= -1;
+con7710..(-0.99620813079763171) * x('1') + 
+0.087002069703476834 * x('2') =g= -1;
+con7711..(-0.044862061295227927) * x('1') + 
+0.99899319089588556 * x('2') =g= -1;
+con7712..(-0.99615327076883586) * x('1') + 
+0.087627970058368837 * x('2') =g= -1;
+con7713..(-0.9960980174977011) * x('1') + 
+0.088253835821166957 * x('2') =g= -1;
+con7714..(-0.045489719820878079) * x('1') + 
+0.99896480688291422 * x('2') =g= -1;
+con7715..(-0.99604237100603943) * x('1') + 
+0.088879666744803451 * x('2') =g= -1;
+con7716..(-0.99598633131581782) * x('1') + 
+0.089505462582224304 * x('2') =g= -1;
+con7717..(-0.046117360388966543) * x('1') + 
+0.99893602851771957 * x('2') =g= -1;
+con7718..(-0.99592989844915858) * x('1') + 
+0.090131223086390266 * x('2') =g= -1;
+con7719..(-0.99587307242833911) * x('1') + 
+0.090756948010275992 * x('2') =g= -1;
+con7720..(-0.046744982751725374) * x('1') + 
+0.99890685581166216 * x('2') =g= -1;
+con7721..(-0.99581585327579236) * x('1') + 
+0.091382637106868878 * x('2') =g= -1;
+con7722..(-0.99575824101410582) * x('1') + 
+0.092008290129171805 * x('2') =g= -1;
+con7723..(-0.047372586661393601) * x('1') + 
+0.99887728877625837 * x('2') =g= -1;
+con7724..(-0.99570023566602284) * x('1') + 
+0.092633906830201854 * x('2') =g= -1;
+con7725..(-0.99564183725444155) * x('1') + 
+0.093259486962989621 * x('2') =g= -1;
+con7726..(-0.048000171870218412) * x('1') + 
+0.99884732742318005 * x('2') =g= -1;
+con7727..(-0.99558304580241552) * x('1') + 
+0.093885030280580067 * x('2') =g= -1;
+con7728..(-0.99552386133315307) * x('1') + 
+0.09451053653603407 * x('2') =g= -1;
+con7729..(-0.048627738130452833) * x('1') + 
+0.99881697176425477 * x('2') =g= -1;
+con7730..(-0.99546428387001806) * x('1') + 
+0.095136005482425345 * x('2') =g= -1;
+con7731..(-0.99540431343652935) * x('1') + 
+0.09576143687284365 * x('2') =g= -1;
+con7732..(-0.049255285194358921) * x('1') + 
+0.9987862218114657 * x('2') =g= -1;
+con7733..(-0.99534395005636089) * x('1') + 
+0.096386830460393161 * x('2') =g= -1;
+con7734..(-0.99528319375334162) * x('1') + 
+0.097012185998193834 * x('2') =g= -1;
+con7735..(-0.049882812814205431) * x('1') + 
+0.99875507757695181 * x('2') =g= -1;
+con7736..(-0.99522204455145613) * x('1') + 
+0.09763750323937799 * x('2') =g= -1;
+con7737..(-0.99516050247484333) * x('1') + 
+0.098262781937095728 * x('2') =g= -1;
+con7738..(-0.050510320742269008) * x('1') + 
+0.99872353907300748 * x('2') =g= -1;
+con7739..(-0.99509856754779791) * x('1') + 
+0.098888021844511953 * x('2') =g= -1;
+con7740..(-0.99503623979476929) * x('1') + 
+0.099513222714805491 * x('2') =g= -1;
+con7741..(-0.051137808730834074) * x('1') + 
+0.99869160631208298 * x('2') =g= -1;
+con7742..(-0.99497351924036193) * x('1') + 
+0.10013838430117196 * x('2') =g= -1;
+con7743..(-0.99491040590933544) * x('1') + 
+0.10076350635682246 * x('2') =g= -1;
+con7744..(-0.051765276532192914) * x('1') + 
+0.99865927930678422 * x('2') =g= -1;
+con7745..(-0.99484689982660457) * x('1') + 
+0.10138858863498283 * x('2') =g= -1;
+con7746..(-0.99478300101723915) * x('1') + 
+0.10201363088889458 * x('2') =g= -1;
+con7747..(-0.052392723898645785) * x('1') + 
+0.99862655806987244 * x('2') =g= -1;
+con7748..(-0.99471870950646368) * x('1') + 
+0.10263863287181593 * x('2') =g= -1;
+con7749..(-0.99465402531965819) * x('1') + 
+0.10326359433702101 * x('2') =g= -1;
+con7750..(-0.053020150582500807) * x('1') + 
+0.99859344261426475 * x('2') =g= -1;
+con7751..(-0.99458894848235724) * x('1') + 
+0.10388851503779857 * x('2') =g= -1;
+con7752..(-0.99452347902025084) * x('1') + 
+0.10451339472745481 * x('2') =g= -1;
+con7753..(-0.053647556336075125) * x('1') + 
+0.99855993295303391 * x('2') =g= -1;
+con7754..(-0.99445761695918344) * x('1') + 
+0.10513823315931216 * x('2') =g= -1;
+con7755..(-0.99439136232515513) * x('1') + 
+0.10576303008670836 * x('2') =g= -1;
+con7756..(-0.054274940911692833) * x('1') + 
+0.99852602909940824 * x('2') =g= -1;
+con7757..(-0.99432471514432064) * x('1') + 
+0.10638778526299761 * x('2') =g= -1;
+con7758..(-0.99425767544298949) * x('1') + 
+0.10701249844155145 * x('2') =g= -1;
+con7759..(-0.05490230406168705) * x('1') + 
+0.99849173106677158 * x('2') =g= -1;
+con7760..(-0.99419024324762628) * x('1') + 
+0.10763716937575799 * x('2') =g= -1;
+con7761..(-0.99412241858485084) * x('1') + 
+0.10826179781902071 * x('2') =g= -1;
+con7762..(-0.055529645538399779) * x('1') + 
+0.99845703886866344 * x('2') =g= -1;
+con7763..(-0.99405420148143764) * x('1') + 
+0.10888638352476117 * x('2') =g= -1;
+con7764..(-0.99398559196431602) * x('1') + 
+0.10951092624641783 * x('2') =g= -1;
+con7765..(-0.056156965094180937) * x('1') + 
+0.99842195251877897 * x('2') =g= -1;
+con7766..(-0.99391659006057032) * x('1') + 
+0.11013542573744518 * x('2') =g= -1;
+con7767..(-0.99384719579743985) * x('1') + 
+0.11075988175131485 * x('2') =g= -1;
+con7768..(-0.056784262481389312) * x('1') + 
+0.99838647203096886 * x('2') =g= -1;
+con7769..(-0.99377740920231883) * x('1') + 
+0.11138429404151645 * x('2') =g= -1;
+con7770..(-0.99370723030275609) * x('1') + 
+0.1120086623615569 * x('2') =g= -1;
+con7771..(-0.057411537452392421) * x('1') + 
+0.99835059741923959 * x('2') =g= -1;
+con7772..(-0.99363665912645571) * x('1') + 
+0.11263298646495913 * x('2') =g= -1;
+con7773..(-0.99356569570127629) * x('1') + 
+0.11325726610526483 * x('2') =g= -1;
+con7774..(-0.05803878975956666) * x('1') + 
+0.99831432869775283 * x('2') =g= -1;
+con7775..(-0.99349434005523152) * x('1') + 
+0.11388150103603328 * x('2') =g= -1;
+con7776..(-0.99342259221648965) * x('1') + 
+0.1145056910108405 * x('2') =g= -1;
+con7777..(-0.058666019155297344) * x('1') + 
+0.99827766588082611 * x('2') =g= -1;
+con7778..(-0.99335045221337415) * x('1') + 
+0.11512983578328027 * x('2') =g= -1;
+con7779..(-0.99327792007436289) * x('1') + 
+0.11575393510696511 * x('2') =g= -1;
+con7780..(-0.059293225391978642) * x('1') + 
+0.99824060898293254 * x('2') =g= -1;
+con7781..(-0.99320499582808885) * x('1') + 
+0.11637798873552545 * x('2') =g= -1;
+con7782..(-0.99313167950333958) * x('1') + 
+0.11700199642260843 * x('2') =g= -1;
+con7783..(-0.059920408222014721) * x('1') + 
+0.99820315801870063 * x('2') =g= -1;
+con7784..(-0.99305797112905747) * x('1') + 
+0.11762595792188114 * x('2') =g= -1;
+con7785..(-0.9929838707343398) * x('1') + 
+0.1182498729870271 * x('2') =g= -1;
+con7786..(-0.060547567397817463) * x('1') + 
+0.99816531300291478 * x('2') =g= -1;
+con7787..(-0.9929093783484384) * x('1') + 
+0.11887374137174996 * x('2') =g= -1;
+con7788..(-0.99283449400076007) * x('1') + 
+0.11949756282976995 * x('2') =g= -1;
+con7789..(-0.061174702671809612) * x('1') + 
+0.99812707395051448 * x('2') =g= -1;
+con7790..(-0.99275921772086606) * x('1') + 
+0.12012133711482724 * x('2') =g= -1;
+con7791..(-0.99268354953847271) * x('1') + 
+0.12074506398068059 * x('2') =g= -1;
+con7792..(-0.061801813796422488) * x('1') + 
+0.99808844087659498 * x('2') =g= -1;
+con7793..(-0.99260748948345068) * x('1') + 
+0.12136874318110615 * x('2') =g= -1;
+con7794..(-0.99253103758582562) * x('1') + 
+0.12199237446990065 * x('2') =g= -1;
+con7795..(-0.06242890052409715) * x('1') + 
+0.99804941379640733 * x('2') =g= -1;
+con7796..(-0.9924541938757776) * x('1') + 
+0.1226159576008784 * x('2') =g= -1;
+con7797..(-0.99237695838364171) * x('1') + 
+0.12323949232787276 * x('2') =g= -1;
+con7798..(-0.063055962607284285) * x('1') + 
+0.99800999272535784 * x('2') =g= -1;
+con7799..(-0.99229933113990743) * x('1') + 
+0.12386297840473706 * x('2') =g= -1;
+con7800..(-0.99222131217521892) * x('1') + 
+0.12448641558534336 * x('2') =g= -1;
+con7801..(-0.063682999798444107) * x('1') + 
+0.99797017767900831 * x('2') =g= -1;
+con7802..(-0.99214290152037488) * x('1') + 
+0.12510980362358351 * x('2') =g= -1;
+con7803..(-0.9920640992063291) * x('1') + 
+0.12573314227336743 * x('2') =g= -1;
+con7804..(-0.064310011850047505) * x('1') + 
+0.99792996867307615 * x('2') =g= -1;
+con7805..(-0.99198490526418936) * x('1') + 
+0.12635643128862625 * x('2') =g= -1;
+con7806..(-0.99190531972521834) * x('1') + 
+0.12697967042330946 * x('2') =g= -1;
+con7807..(-0.064936998514573796) * x('1') + 
+0.99788936572343445 * x('2') =g= -1;
+con7808..(-0.99182534262083355) * x('1') + 
+0.12760285943138616 * x('2') =g= -1;
+con7809..(-0.99174497398260664) * x('1') + 
+0.12822599806684618 * x('2') =g= -1;
+con7810..(-0.065563959544513814) * x('1') + 
+0.9978483688461115 * x('2') =g= -1;
+con7811..(-0.991664213842264) * x('1') + 
+0.12884908608369874 * x('2') =g= -1;
+con7812..(-0.99158306223168657) * x('1') + 
+0.12947212323597351 * x('2') =g= -1;
+con7813..(-0.066190894692367677) * x('1') + 
+0.99780697805729135 * x('2') =g= -1;
+con7814..(-0.99150151918290985) * x('1') + 
+0.13009510927771936 * x('2') =g= -1;
+con7815..(-0.99141958472812397) * x('1') + 
+0.13071804396300532 * x('2') =g= -1;
+con7816..(-0.066817803710645884) * x('1') + 
+0.99776519337331349 * x('2') =g= -1;
+con7817..(-0.99133725889967328) * x('1') + 
+0.13134092704592207 * x('2') =g= -1;
+con7818..(-0.99125454173005678) * x('1') + 
+0.13196375828057882 * x('2') =g= -1;
+con7819..(-0.067444686351869301) * x('1') + 
+0.99772301481067283 * x('2') =g= -1;
+con7820..(-0.99117143325192814) * x('1') + 
+0.13258653742110663 * x('2') =g= -1;
+con7821..(-0.99108793349809521) * x('1') + 
+0.13320926422165708 * x('2') =g= -1;
+con7822..(-0.06807154236856898) * x('1') + 
+0.99768044238601983 * x('2') =g= -1;
+con7823..(-0.99100404250152041) * x('1') + 
+0.13383193843640112 * x('2') =g= -1;
+con7824..(-0.9909197602953207) * x('1') + 
+0.13445455981953219 * x('2') =g= -1;
+con7825..(-0.068698371513287101) * x('1') + 
+0.99763747611616038 * x('2') =g= -1;
+con7826..(-0.99083508691276734) * x('1') + 
+0.1350771281252629 * x('2') =g= -1;
+con7827..(-0.99075002238728616) * x('1') + 
+0.13569964310782848 * x('2') =g= -1;
+con7828..(-0.069325173538576049) * x('1') + 
+0.99759411601805592 * x('2') =g= -1;
+con7829..(-0.99066456675245718) * x('1') + 
+0.13632210452148347 * x('2') =g= -1;
+con7830..(-0.99057872004201508) * x('1') + 
+0.13694451212050496 * x('2') =g= -1;
+con7831..(-0.069951948196998473) * x('1') + 
+0.99755036210882331 * x('2') =g= -1;
+con7832..(-0.99049248228984865) * x('1') + 
+0.13756686565919116 * x('2') =g= -1;
+con7833..(-0.9904058535300011) * x('1') + 
+0.13818916489186081 * x('2') =g= -1;
+con7834..(-0.070578695241128489) * x('1') + 
+0.99750621440573484 * x('2') =g= -1;
+con7835..(-0.99031883379667041) * x('1') + 
+0.13881140957285412 * x('2') =g= -1;
+con7836..(-0.99023142312420831) * x('1') + 
+0.13943359945653364 * x('2') =g= -1;
+con7837..(-0.071205414423550648) * x('1') + 
+0.99746167292621846 * x('2') =g= -1;
+con7838..(-0.99014362154712121) * x('1') + 
+0.1400557342972836 * x('2') =g= -1;
+con7839..(-0.99005542910006961) * x('1') + 
+0.14067781384950862 * x('2') =g= -1;
+con7840..(-0.071832105496861171) * x('1') + 
+0.99741673768785721 * x('2') =g= -1;
+con7841..(-0.98996684581786865) * x('1') + 
+0.14129983786763645 * x('2') =g= -1;
+con7842..(-0.98987787173548725) * x('1') + 
+0.14192180610611679 * x('2') =g= -1;
+con7843..(-0.072458768213666522) * x('1') + 
+0.99737140870838992 * x('2') =g= -1;
+con7844..(-0.98978850688804909) * x('1') + 
+0.1425437183194205 * x('2') =g= -1;
+con7845..(-0.98969875131083207) * x('1') + 
+0.14316557426204055 * x('2') =g= -1;
+con7846..(-0.073085402326585211) * x('1') + 
+0.99732568600571059 * x('2') =g= -1;
+con7847..(-0.98960860503926784) * x('1') + 
+0.1437873736884929 * x('2') =g= -1;
+con7848..(-0.98951806810894283) * x('1') + 
+0.14440911635331596 * x('2') =g= -1;
+con7849..(-0.073712007588246586) * x('1') + 
+0.99727956959786868 * x('2') =g= -1;
+con7850..(-0.98942714055559744) * x('1') + 
+0.14503080201106916 * x('2') =g= -1;
+con7851..(-0.98933582241512641) * x('1') + 
+0.14565243041633577 * x('2') =g= -1;
+con7852..(-0.074338583751290988) * x('1') + 
+0.9972330595030694 * x('2') =g= -1;
+con7853..(-0.98924411372357823) * x('1') + 
+0.14627400132372165 * x('2') =g= -1;
+con7854..(-0.98915201451715629) * x('1') + 
+0.14689551448785448 * x('2') =g= -1;
+con7855..(-0.074965130568370869) * x('1') + 
+0.99718615573967284 * x('2') =g= -1;
+con7856..(-0.9890595248322176) * x('1') + 
+0.14751696966338473 * x('2') =g= -1;
+con7857..(-0.9889666447052734) * x('1') + 
+0.14813836660498669 * x('2') =g= -1;
+con7858..(-0.075591647792149844) * x('1') + 
+0.99713885832619498 * x('2') =g= -1;
+con7859..(-0.98887337417298926) * x('1') + 
+0.14875970506735756 * x('2') =g= -1;
+con7860..(-0.98877971327218472) * x('1') + 
+0.14938098480521633 * x('2') =g= -1;
+con7861..(-0.076218135175303861) * x('1') + 
+0.99709116728130687 * x('2') =g= -1;
+con7862..(-0.98868566203983332) * x('1') + 
+0.15000220557330654 * x('2') =g= -1;
+con7863..(-0.98859122051306281) * x('1') + 
+0.15062336712639499 * x('2') =g= -1;
+con7864..(-0.076844592470519987) * x('1') + 
+0.99704308262383512 * x('2') =g= -1;
+con7865..(-0.98849638872915513) * x('1') + 
+0.1512444692192709 * x('2') =g= -1;
+con7866..(-0.98840116672554623) * x('1') + 
+0.15186551160674708 * x('2') =g= -1;
+con7867..(-0.077471019430497626) * x('1') + 
+0.99699460437276166 * x('2') =g= -1;
+con7868..(-0.98830555453982583) * x('1') + 
+0.15248649404366069 * x('2') =g= -1;
+con7869..(-0.98820955220973794) * x('1') + 
+0.15310741628487262 * x('2') =g= -1;
+con7870..(-0.07809741580794724) * x('1') + 
+0.99694573254722374 * x('2') =g= -1;
+con7871..(-0.98811315977318059) * x('1') + 
+0.15372827808526621 * x('2') =g= -1;
+con7872..(-0.98801637726820568) * x('1') + 
+0.15434907919974988 * x('2') =g= -1;
+con7873..(-0.078723781355592715) * x('1') + 
+0.99689646716651414 * x('2') =g= -1;
+con7874..(-0.98791920473301909) * x('1') + 
+0.1549698193832566 * x('2') =g= -1;
+con7875..(-0.9878216422059809) * x('1') + 
+0.1555904983907406 * x('2') =g= -1;
+con7876..(-0.079350115826169229) * x('1') + 
+0.99684680825008087 * x('2') =g= -1;
+con7877..(-0.98772368972560498) * x('1') + 
+0.15621111597718301 * x('2') =g= -1;
+con7878..(-0.98762534733055896) * x('1') + 
+0.15683167189758829 * x('2') =g= -1;
+con7879..(-0.079976418972424204) * x('1') + 
+0.99679675581752736 * x('2') =g= -1;
+con7880..(-0.98752661505966466) * x('1') + 
+0.15745216590698563 * x('2') =g= -1;
+con7881..(-0.9874274929518978) * x('1') + 
+0.15807259776042748 * x('2') =g= -1;
+con7882..(-0.080602690547118105) * x('1') + 
+0.99674630988861224 * x('2') =g= -1;
+con7883..(-0.98732798104638775) * x('1') + 
+0.15869296721299242 * x('2') =g= -1;
+con7884..(-0.98722807938241797) * x('1') + 
+0.15931327401978243 * x('2') =g= -1;
+con7885..(-0.081228930303023208) * x('1') + 
+0.9966954704832498 * x('2') =g= -1;
+con7886..(-0.9871277879994258) * x('1') + 
+0.15993351793592425 * x('2') =g= -1;
+con7887..(-0.98702710693700235) * x('1') + 
+0.16055369871657027 * x('2') =g= -1;
+con7888..(-0.081855137992924751) * x('1') + 
+0.99664423762150922 * x('2') =g= -1;
+con7889..(-0.9869260362348925) * x('1') + 
+0.16117381611689779 * x('2') =g= -1;
+con7890..(-0.98682457593299511) * x('1') + 
+0.16179386989210789 * x('2') =g= -1;
+con7891..(-0.082481313369619794) * x('1') + 
+0.99659261132361532 * x('2') =g= -1;
+con7892..(-0.98672272607136269) * x('1') + 
+0.16241385979742801 * x('2') =g= -1;
+con7893..(-0.98662048669020141) * x('1') + 
+0.16303378558811085 * x('2') =g= -1;
+con7894..(-0.083107456185919457) * x('1') + 
+0.99654059160994812 * x('2') =g= -1;
+con7895..(-0.98651785782987156) * x('1') + 
+0.1636536470194335 * x('2') =g= -1;
+con7896..(-0.98641483953088704) * x('1') + 
+0.16427344384669848 * x('2') =g= -1;
+con7897..(-0.083733566194646836) * x('1') + 
+0.9964881785010431 * x('2') =g= -1;
+con7898..(-0.98631143183391534) * x('1') + 
+0.16489317582523469 * x('2') =g= -1;
+con7899..(-0.9862076347797778) * x('1') + 
+0.16551284271039665 * x('2') =g= -1;
+con7900..(-0.084359643148637961) * x('1') + 
+0.99643537201759069 * x('2') =g= -1;
+con7901..(-0.98610344840944941) * x('1') + 
+0.16613244425756324 * x('2') =g= -1;
+con7902..(-0.98599887276405884) * x('1') + 
+0.16675198022214086 * x('2') =g= -1;
+con7903..(-0.084985686800742588) * x('1') + 
+0.99638217218043701 * x('2') =g= -1;
+con7904..(-0.98589390788488862) * x('1') + 
+0.16737145035956008 * x('2') =g= -1;
+con7905..(-0.9857885538133746) * x('1') + 
+0.1679908544252792 * x('2') =g= -1;
+con7906..(-0.085611696903823184) * x('1') + 
+0.99632857901058314 * x('2') =g= -1;
+con7907..(-0.98568281059110663) * x('1') + 
+0.16861019217478088 * x('2') =g= -1;
+con7908..(-0.98557667825982787) * x('1') + 
+0.16922946336357519 * x('2') =g= -1;
+con7909..(-0.086237673210755011) * x('1') + 
+0.99627459252918571 * x('2') =g= -1;
+con7910..(-0.98547015686143524) * x('1') + 
+0.16984866774719859 * x('2') =g= -1;
+con7911..(-0.98536324643797923) * x('1') + 
+0.17046780508121251 * x('2') =g= -1;
+con7912..(-0.086863615474427336) * x('1') + 
+0.99622021275755634 * x('2') =g= -1;
+con7913..(-0.98525594703166375) * x('1') + 
+0.17108687512120663 * x('2') =g= -1;
+con7914..(-0.98514825868484668) * x('1') + 
+0.17170587762279546 * x('2') =g= -1;
+con7915..(-0.087489523447742398) * x('1') + 
+0.99616543971716209 * x('2') =g= -1;
+con7916..(-0.98504018144003891) * x('1') + 
+0.17232481234162186 * x('2') =g= -1;
+con7917..(-0.98493171533990531) * x('1') + 
+0.17294367903335378 * x('2') =g= -1;
+con7918..(-0.088115396883616692) * x('1') + 
+0.99611027342962521 * x('2') =g= -1;
+con7919..(-0.98482286042726397) * x('1') + 
+0.1735624774536873 * x('2') =g= -1;
+con7920..(-0.98471361674508651) * x('1') + 
+0.17418120735834544 * x('2') =g= -1;
+con7921..(-0.088741235534979396) * x('1') + 
+0.99605471391672318 * x('2') =g= -1;
+con7922..(-0.98460398433649798) * x('1') + 
+0.17479986850307738 * x('2') =g= -1;
+con7923..(-0.98449396324477723) * x('1') + 
+0.17541846064365951 * x('2') =g= -1;
+con7924..(-0.089367039154774369) * x('1') + 
+0.99599876120038877 * x('2') =g= -1;
+con7925..(-0.98438355351335616) * x('1') + 
+0.17603698353589628 * x('2') =g= -1;
+con7926..(-0.98427275518582014) * x('1') + 
+0.17665543693561947 * x('2') =g= -1;
+con7927..(-0.089992807495958796) * x('1') + 
+0.99594241530270977 * x('2') =g= -1;
+con7928..(-0.98416156830590806) * x('1') + 
+0.17727382059868702 * x('2') =g= -1;
+con7929..(-0.98404999291751216) * x('1') + 
+0.17789213428098566 * x('2') =g= -1;
+con7930..(-0.090618540311503404) * x('1') + 
+0.99588567624592961 * x('2') =g= -1;
+con7931..(-0.98393802906467798) * x('1') + 
+0.17851037773842982 * x('2') =g= -1;
+con7932..(-0.98382567679160449) * x('1') + 
+0.17912855072696068 * x('2') =g= -1;
+con7933..(-0.091244237354393562) * x('1') + 
+0.99582854405244636 * x('2') =g= -1;
+con7934..(-0.9837129361426441) * x('1') + 
+0.17974665300254733 * x('2') =g= -1;
+con7935..(-0.98359980716230233) * x('1') + 
+0.1803646843211876 * x('2') =g= -1;
+con7936..(-0.091869898377628323) * x('1') + 
+0.99577101874481377 * x('2') =g= -1;
+con7937..(-0.98348628989523801) * x('1') + 
+0.18098264443890735 * x('2') =g= -1;
+con7938..(-0.98337238438626329) * x('1') + 
+0.18160053311175922 * x('2') =g= -1;
+con7939..(-0.092495523134221672) * x('1') + 
+0.99571310034574045 * x('2') =g= -1;
+con7940..(-0.98325809068034387) * x('1') + 
+0.18221835009582538 * x('2') =g= -1;
+con7941..(-0.98314340882259799) * x('1') + 
+0.18283609514721627 * x('2') =g= -1;
+con7942..(-0.093121111377201179) * x('1') + 
+0.99565478887809045 * x('2') =g= -1;
+con7943..(-0.98302833885829788) * x('1') + 
+0.18345376802206989 * x('2') =g= -1;
+con7944..(-0.98291288083286865) * x('1') + 
+0.1840713684765527 * x('2') =g= -1;
+con7945..(-0.093746662859608865) * x('1') + 
+0.99559608436488278 * x('2') =g= -1;
+con7946..(-0.98279703479188862) * x('1') + 
+0.18468889626686069 * x('2') =g= -1;
+con7947..(-0.9826808007810891) * x('1') + 
+0.18530635114921842 * x('2') =g= -1;
+con7948..(-0.09437217733450215) * x('1') + 
+0.9955369868292917 * x('2') =g= -1;
+con7949..(-0.98256417884635494) * x('1') + 
+0.18592373287987804 * x('2') =g= -1;
+con7950..(-0.98244716903372376) * x('1') + 
+0.18654104121512183 * x('2') =g= -1;
+con7951..(-0.094997654554951724) * x('1') + 
+0.99547749629464655 * x('2') =g= -1;
+con7952..(-0.98232977138938637) * x('1') + 
+0.18715827591126144 * x('2') =g= -1;
+con7953..(-0.98221198595968706) * x('1') + 
+0.18777543672463504 * x('2') =g= -1;
+con7954..(-0.095623094274043877) * x('1') + 
+0.99541761278443197 * x('2') =g= -1;
+con7955..(-0.98209381279112284) * x('1') + 
+0.18839252341161253 * x('2') =g= -1;
+con7956..(-0.98197525193034363) * x('1') + 
+0.18900953572859272 * x('2') =g= -1;
+con7957..(-0.096248496244879231) * x('1') + 
+0.99535733632228751 * x('2') =g= -1;
+con7958..(-0.98185630342415287) * x('1') + 
+0.1896264734320024 * x('2') =g= -1;
+con7959..(-0.98173696731950666) * x('1') + 
+0.19024333627829909 * x('2') =g= -1;
+con7960..(-0.096873860220574037) * x('1') + 
+0.99529666693200813 * x('2') =g= -1;
+con7961..(-0.98161724366351422) * x('1') + 
+0.19086012402396951 * x('2') =g= -1;
+con7962..(-0.98149713250343762) * x('1') + 
+0.19147683642553087 * x('2') =g= -1;
+con7963..(-0.097499185954258813) * x('1') + 
+0.99523560463754357 * x('2') =g= -1;
+con7964..(-0.98137663388669227) * x('1') + 
+0.1920934732395275 * x('2') =g= -1;
+con7965..(-0.98125574786084635) * x('1') + 
+0.19271003422253613 * x('2') =g= -1;
+con7966..(-0.098124473199079659) * x('1') + 
+0.99517414946299876 * x('2') =g= -1;
+con7967..(-0.98113447447362079) * x('1') + 
+0.19332651913116308 * x('2') =g= -1;
+con7968..(-0.98101281377288962) * x('1') + 
+0.19394292772204338 * x('2') =g= -1;
+con7969..(-0.098749721708197194) * x('1') + 
+0.99511230143263407 * x('2') =g= -1;
+con7970..(-0.98089076580667978) * x('1') + 
+0.19455925975184343 * x('2') =g= -1;
+con7971..(-0.98076833062317081) * x('1') + 
+0.19517551497725988 * x('2') =g= -1;
+con7972..(-0.099374931234787744) * x('1') + 
+0.99505006057086454 * x('2') =g= -1;
+con7973..(-0.98064550827069563) * x('1') + 
+0.1957916931550189 * x('2') =g= -1;
+con7974..(-0.98052229879773956) * x('1') + 
+0.19640779404187697 * x('2') =g= -1;
+con7975..(-0.10000010153204353) * x('1') + 
+0.99498742690226039 * x('2') =g= -1;
+con7976..(-0.9803987022529409) * x('1') + 
+0.19702381739462199 * x('2') =g= -1;
+con7977..(-0.98027471868509064) * x('1') + 
+0.19763976297007252 * x('2') =g= -1;
+con7978..(-0.10062523235317129) * x('1') + 
+0.99492440045154706 * x('2') =g= -1;
+con7979..(-0.98015034814313273) * x('1') + 
+0.19825563052507647 * x('2') =g= -1;
+con7980..(-0.9800255906761639) * x('1') + 
+0.19887141981651382 * x('2') =g= -1;
+con7981..(-0.10125032345139431) * x('1') + 
+0.99486098124360467 * x('2') =g= -1;
+con7982..(-0.97990044633343321) * x('1') + 
+0.1994871306012955 * x('2') =g= -1;
+con7983..(-0.97977491516434301) * x('1') + 
+0.20010276263636256 * x('2') =g= -1;
+con7984..(-0.10187537457995084) * x('1') + 
+0.99479716930346895 * x('2') =g= -1;
+con7985..(-0.97964899721844811) * x('1') + 
+0.20071831567868711 * x('2') =g= -1;
+con7986..(-0.97952269254545588) * x('1') + 
+0.20133378948527333 * x('2') =g= -1;
+con7987..(-0.10250038549209538) * x('1') + 
+0.99473296465633021 * x('2') =g= -1;
+con7988..(-0.97939600119522641) * x('1') + 
+0.20194918381315669 * x('2') =g= -1;
+con7989..(-0.97926892321777259) * x('1') + 
+0.20256449841940266 * x('2') =g= -1;
+con7990..(-0.10312535594109763) * x('1') + 
+0.99466836732753394 * x('2') =g= -1;
+con7991..(-0.97914145866325974) * x('1') + 
+0.20317973306111006 * x('2') =g= -1;
+con7992..(-0.97901360758200606) * x('1') + 
+0.20379488749540739 * x('2') =g= -1;
+con7993..(-0.10375028568024371) * x('1') + 
+0.99460337734258064 * x('2') =g= -1;
+con7994..(-0.97888537002448206) * x('1') + 
+0.20440996147945664 * x('2') =g= -1;
+con7995..(-0.9787567460413108) * x('1') + 
+0.2050249547704498 * x('2') =g= -1;
+con7996..(-0.10437517446283623) * x('1') + 
+0.99453799472712578 * x('2') =g= -1;
+con7997..(-0.97862773568326822) * x('1') + 
+0.205639867125612 * x('2') =g= -1;
+con7998..(-0.97849833900128225) * x('1') + 
+0.20625469830220033 * x('2') =g= -1;
+con7999..(-0.10500002204219314) * x('1') + 
+0.99447221950697995 * x('2') =g= -1;
+con8000..(-0.97836855604643402) * x('1') + 
+0.20686944805750263 * x('2') =g= -1;
+con8001..(-0.97823838686995634) * x('1') + 
+0.20748411614884063 * x('2') =g= -1;
+con8002..(-0.10562482817164946) * x('1') + 
+0.99440605170810858 * x('2') =g= -1;
+con8003..(-0.97810783152323533) * x('1') + 
+0.20809870233356656 * x('2') =g= -1;
+con8004..(-0.97797689005780875) * x('1') + 
+0.20871320636906665 * x('2') =g= -1;
+con8005..(-0.10624959260455621) * x('1') + 
+0.99433949135663213 * x('2') =g= -1;
+con8006..(-0.97784556252536747) * x('1') + 
+0.20932762801275795 * x('2') =g= -1;
+con8007..(-0.97771384897775437) * x('1') + 
+0.2099419670220912 * x('2') =g= -1;
+con8008..(-0.10687431509428039) * x('1') + 
+0.99427253847882602 * x('2') =g= -1;
+con8009..(-0.97758174946696474) * x('1') + 
+0.21055622315454989 * x('2') =g= -1;
+con8010..(-0.97744926404514632) * x('1') + 
+0.21117039616764882 * x('2') =g= -1;
+con8011..(-0.1074989953942062) * x('1') + 
+0.99420519310112054 * x('2') =g= -1;
+con8012..(-0.97731639276459914) * x('1') + 
+0.21178448581893738 * x('2') =g= -1;
+con8013..(-0.97718313567777582) * x('1') + 
+0.21239849186599616 * x('2') =g= -1;
+con8014..(-0.10812363325773408) * x('1') + 
+0.99413745525010122 * x('2') =g= -1;
+con8015..(-0.9770494928372806) * x('1') + 
+0.21301241406644045 * x('2') =g= -1;
+con8016..(-0.97691546429587095) * x('1') + 
+0.21362625217791692 * x('2') =g= -1;
+con8017..(-0.10874822843828191) * x('1') + 
+0.9940693249525081 * x('2') =g= -1;
+con8018..(-0.97678105010645577) * x('1') + 
+0.21424000595810672 * x('2') =g= -1;
+con8019..(-0.97664625032209651) * x('1') + 
+0.21485367516472431 * x('2') =g= -1;
+con8020..(-0.1093727806892837) * x('1') + 
+0.99400080223523657 * x('2') =g= -1;
+con8021..(-0.97651106499600693) * x('1') + 
+0.21546725955551665 * x('2') =g= -1;
+con8022..(-0.97637549418155301) * x('1') + 
+0.21608075888826422 * x('2') =g= -1;
+con8023..(-0.10999728976419045) * x('1') + 
+0.99393188712533653 * x('2') =g= -1;
+con8024..(-0.9762395379322526) * x('1') + 
+0.21669417292078233 * x('2') =g= -1;
+con8025..(-0.97610319630177611) * x('1') + 
+0.21730750141091829 * x('2') =g= -1;
+con8026..(-0.11062175541647104) * x('1') + 
+0.99386257965001301 * x('2') =g= -1;
+con8027..(-0.97596646934394582) * x('1') + 
+0.21792074411655438 * x('2') =g= -1;
+con8028..(-0.97582935711273622) * x('1') + 
+0.21853390079560642 * x('2') =g= -1;
+con8029..(-0.11124617739961025) * x('1') + 
+0.9937928798366259 * x('2') =g= -1;
+con8030..(-0.97569185966227368) * x('1') + 
+0.21914697120602453 * x('2') =g= -1;
+con8031..(-0.97555397704683677) * x('1') + 
+0.2197599551057921 * x('2') =g= -1;
+con8032..(-0.1118705554671109) * x('1') + 
+0.99372278771269007 * x('2') =g= -1;
+con8033..(-0.97541570932085653) * x('1') + 
+0.22037285225292666 * x('2') =g= -1;
+con8034..(-0.97527705653891539) * x('1') + 
+0.2209856624054812 * x('2') =g= -1;
+con8035..(-0.11249488937249273) * x('1') + 
+0.99365230330587506 * x('2') =g= -1;
+con8036..(-0.97513801875574802) * x('1') + 
+0.22159838532154141 * x('2') =g= -1;
+con8037..(-0.97499859602624128) * x('1') + 
+0.22221102075922869 * x('2') =g= -1;
+con8038..(-0.11311917886929361) * x('1') + 
+0.99358142664400528 * x('2') =g= -1;
+con8039..(-0.97485878840543361) * x('1') + 
+0.22282356847669854 * x('2') =g= -1;
+con8040..(-0.97471859594851551) * x('1') + 
+0.22343602823214193 * x('2') =g= -1;
+con8041..(-0.11374342371106821) * x('1') + 
+0.99351015775506013 * x('2') =g= -1;
+con8042..(-0.97457801871082983) * x('1') + 
+0.22404839978378202 * x('2') =g= -1;
+con8043..(-0.97443705674787073) * x('1') + 
+0.22466068288987928 * x('2') =g= -1;
+con8044..(-0.11436762365138935) * x('1') + 
+0.99343849666717376 * x('2') =g= -1;
+con8045..(-0.97429571011528449) * x('1') + 
+0.2252728773087288 * x('2') =g= -1;
+con8046..(-0.97415397886886923) * x('1') + 
+0.22588498279865923 * x('2') =g= -1;
+con8047..(-0.11499177844384685) * x('1') + 
+0.99336644340863522 * x('2') =g= -1;
+con8048..(-0.9740118630645751) * x('1') + 
+0.22649699911803578 * x('2') =g= -1;
+con8049..(-0.97386936275850344) * x('1') + 
+0.22710892602525876 * x('2') =g= -1;
+con8050..(-0.11561588784204882) * x('1') + 
+0.99329399800788831 * x('2') =g= -1;
+con8051..(-0.97372647800690804) * x('1') + 
+0.22772076327876289 * x('2') =g= -1;
+con8052..(-0.97358320886619443) * x('1') + 
+0.2283325106370184 * x('2') =g= -1;
+con8053..(-0.11623995159962174) * x('1') + 
+0.9932211604935316 * x('2') =g= -1;
+con8054..(-0.97343955539291938) * x('1') + 
+0.22894416785853172 * x('2') =g= -1;
+con8055..(-0.97329551764379152) * x('1') + 
+0.22955573470184501 * x('2') =g= -1;
+con8056..(-0.11686396947020919) * x('1') + 
+0.99314793089431852 * x('2') =g= -1;
+con8057..(-0.97315109567567171) * x('1') + 
+0.23016721092553469 * x('2') =g= -1;
+con8058..(-0.97300628954557189) * x('1') + 
+0.23077859628821434 * x('2') =g= -1;
+con8059..(-0.11748794120747379) * x('1') + 
+0.99307430923915718 * x('2') =g= -1;
+con8060..(-0.97286109931065579) * x('1') + 
+0.23138989054853337 * x('2') =g= -1;
+con8061..(-0.97271552502823899) * x('1') + 
+0.23200109346517625 * x('2') =g= -1;
+con8062..(-0.11811186656509566) * x('1') + 
+0.99300029555711067 * x('2') =g= -1;
+con8063..(-0.97256956675578843) * x('1') + 
+0.23261220479686359 * x('2') =g= -1;
+con8064..(-0.97242322455092278) * x('1') + 
+0.23322322430235295 * x('2') =g= -1;
+con8065..(-0.11873574529677373) * x('1') + 
+0.99292588987739649 * x('2') =g= -1;
+con8066..(-0.97227649847141207) * x('1') + 
+0.23383415174043817 * x('2') =g= -1;
+con8067..(-0.97212938857517817) * x('1') + 
+0.23444498686994816 * x('2') =g= -1;
+con8068..(-0.11935957715622465) * x('1') + 
+0.99285109222938728 * x('2') =g= -1;
+con8069..(-0.97198189492029441) * x('1') + 
+0.23505572944974951 * x('2') =g= -1;
+con8070..(-0.97183401756498511) * x('1') + 
+0.23566637923874539 * x('2') =g= -1;
+con8071..(-0.11998336189718398) * x('1') + 
+0.99277590264261018 * x('2') =g= -1;
+con8072..(-0.97168575656762679) * x('1') + 
+0.23627693599587471 * x('2') =g= -1;
+con8073..(-0.97153711198674719) * x('1') + 
+0.23688739948011314 * x('2') =g= -1;
+con8074..(-0.12060709927340635) * x('1') + 
+0.992700321146747 * x('2') =g= -1;
+con8075..(-0.97138808388102516) * x('1') + 
+0.23749776945047399 * x('2') =g= -1;
+con8076..(-0.97123867230929106) * x('1') + 
+0.23810804566600752 * x('2') =g= -1;
+con8077..(-0.12123078903866445) * x('1') + 
+0.99262434777163455 * x('2') =g= -1;
+con8078..(-0.97108887733052707) * x('1') + 
+0.23871822788579969 * x('2') =g= -1;
+con8079..(-0.9709386990038662) * x('1') + 
+0.23932831586897485 * x('2') =g= -1;
+con8080..(-0.12185443094674972) * x('1') + 
+0.99254798254726395 * x('2') =g= -1;
+con8081..(-0.97078813738859282) * x('1') + 
+0.2399383093746946 * x('2') =g= -1;
+con8082..(-0.97063719254414293) * x('1') + 
+0.24054820816215688 * x('2') =g= -1;
+con8083..(-0.12247802475147319) * x('1') + 
+0.99247122550378131 * x('2') =g= -1;
+con8084..(-0.97048586453010377) * x('1') + 
+0.24115801199059711 * x('2') =g= -1;
+con8085..(-0.97033415340621365) * x('1') + 
+0.24176772061928906 * x('2') =g= -1;
+con8086..(-0.12310157020666442) * x('1') + 
+0.99239407667148727 * x('2') =g= -1;
+con8087..(-0.970182059232362) * x('1') + 
+0.242377333807544 * x('2') =g= -1;
+con8088..(-0.97002958206858991) * x('1') + 
+0.24298685131470962 * x('2') =g= -1;
+con8089..(-0.12372506706617159) * x('1') + 
+0.99231653608083714 * x('2') =g= -1;
+con8090..(-0.96987672197508912) * x('1') + 
+0.24359627290017319 * x('2') =g= -1;
+con8091..(-0.96972347901220313) * x('1') + 
+0.24420559832335798 * x('2') =g= -1;
+con8092..(-0.12434851508386258) * x('1') + 
+0.992238603762441 * x('2') =g= -1;
+con8093..(-0.96956985324042599) * x('1') + 
+0.24481482734372703 * x('2') =g= -1;
+con8094..(-0.96941584472040332) * x('1') + 
+0.24542395972077971 * x('2') =g= -1;
+con8095..(-0.12497191401362491) * x('1') + 
+0.99216027974706344 * x('2') =g= -1;
+con8096..(-0.96926145351293158) * x('1') + 
+0.24603299521405481 * x('2') =g= -1;
+con8097..(-0.96910667967895836) * x('1') + 
+0.24664193358312936 * x('2') =g= -1;
+con8098..(-0.12559526360936485) * x('1') + 
+0.99208156406562364 * x('2') =g= -1;
+con8099..(-0.96895152327958245) * x('1') + 
+0.24725077458761746 * x('2') =g= -1;
+con8100..(-0.9687959843760533) * x('1') + 
+0.2478595179871734 * x('2') =g= -1;
+con8101..(-0.12621856362500816) * x('1') + 
+0.99200245674919563 * x('2') =g= -1;
+con8102..(-0.96864006302977168) * x('1') + 
+0.24846816354148865 * x('2') =g= -1;
+con8103..(-0.96848375930228936) * x('1') + 
+0.2490767110102933 * x('2') =g= -1;
+con8104..(-0.1268418138145013) * x('1') + 
+0.99192295782900775 * x('2') =g= -1;
+con8105..(-0.96832707325530898) * x('1') + 
+0.24968516015335707 * x('2') =g= -1;
+con8106..(-0.96817000495068384) * x('1') + 
+0.25029351073048806 * x('2') =g= -1;
+con8107..(-0.12746501393180806) * x('1') + 
+0.99184306733644312 * x('2') =g= -1;
+con8108..(-0.96801255445041823) * x('1') + 
+0.25090176250153362 * x('2') =g= -1;
+con8109..(-0.96785472181666776) * x('1') + 
+0.25150991522637944 * x('2') =g= -1;
+con8110..(-0.12808816373091439) * x('1') + 
+0.9917627853030393 * x('2') =g= -1;
+con8111..(-0.9676965071117386) * x('1') + 
+0.25211796866495007 * x('2') =g= -1;
+con8112..(-0.96753791039808756) * x('1') + 
+0.25272592257721072 * x('2') =g= -1;
+con8113..(-0.12871126296582464) * x('1') + 
+0.9916821117604887 * x('2') =g= -1;
+con8114..(-0.96737893173832246) * x('1') + 
+0.25333377672316409 * x('2') =g= -1;
+con8115..(-0.96721957119520197) * x('1') + 
+0.25394153086285365 * x('2') =g= -1;
+con8116..(-0.12933431139056406) * x('1') + 
+0.99160104674063787 * x('2') =g= -1;
+con8117..(-0.9670598288316351) * x('1') + 
+0.25454918475636212 * x('2') =g= -1;
+con8118..(-0.96689970471068221) * x('1') + 
+0.25515673816381079 * x('2') =g= -1;
+con8119..(-0.12995730875917727) * x('1') + 
+0.99151959027548808 * x('2') =g= -1;
+con8120..(-0.96673919889555382) * x('1') + 
+0.25576419084536212 * x('2') =g= -1;
+con8121..(-0.96657831144961148) * x('1') + 
+0.25637154256121675 * x('2') =g= -1;
+con8122..(-0.1305802548257291) * x('1') + 
+0.9914377423971954 * x('2') =g= -1;
+con8123..(-0.96641704243636717) * x('1') + 
+0.25697879307161686 * x('2') =g= -1;
+con8124..(-0.96625539191948373) * x('1') + 
+0.25758594213684277 * x('2') =g= -1;
+con8125..(-0.13120314934430566) * x('1') + 
+0.99135550313806997 * x('2') =g= -1;
+con8126..(-0.96609335996277435) * x('1') + 
+0.25819298951721631 * x('2') =g= -1;
+con8127..(-0.96593094663020274) * x('1') + 
+0.25879993497309922 * x('2') =g= -1;
+con8128..(-0.13182599206901127) * x('1') + 
+0.99127287253057672 * x('2') =g= -1;
+con8129..(-0.96576815198588362) * x('1') + 
+0.25940677826489289 * x('2') =g= -1;
+con8130..(-0.9656049760940818) * x('1') + 
+0.26001351915303883 * x('2') =g= -1;
+con8131..(-0.13244878275397287) * x('1') + 
+0.99118985060733489 * x('2') =g= -1;
+con8132..(-0.96544141901921288) * x('1') + 
+0.26062015739801991 * x('2') =g= -1;
+con8133..(-0.96527748082584253) * x('1') + 
+0.26122669276035948 * x('2') =g= -1;
+con8134..(-0.13307152115333659) * x('1') + 
+0.99110643740111848 * x('2') =g= -1;
+con8135..(-0.96511316157868743) * x('1') + 
+0.26183312500062034 * x('2') =g= -1;
+con8136..(-0.96494846134261414) * x('1') + 
+0.26243945387940709 * x('2') =g= -1;
+con8137..(-0.13369420702127013) * x('1') + 
+0.99102263294485549 * x('2') =g= -1;
+con8138..(-0.96478338018263998) * x('1') + 
+0.26304567915736532 * x('2') =g= -1;
+con8139..(-0.9646179181639325) * x('1') + 
+0.26365180059518056 * x('2') =g= -1;
+con8140..(-0.13431684011196127) * x('1') + 
+0.99093843727162878 * x('2') =g= -1;
+con8141..(-0.96445207535180977) * x('1') + 
+0.26425781795357933 * x('2') =g= -1;
+con8142..(-0.96428585181173987) * x('1') + 
+0.26486373099333016 * x('2') =g= -1;
+con8143..(-0.13493942017961902) * x('1') + 
+0.99085385041467555 * x('2') =g= -1;
+con8144..(-0.96411924760934142) * x('1') + 
+0.26546953947524266 * x('2') =g= -1;
+con8145..(-0.96395226281038326) * x('1') + 
+0.26607524316016651 * x('2') =g= -1;
+con8146..(-0.13556194697847271) * x('1') + 
+0.99076887240738731 * x('2') =g= -1;
+con8147..(-0.96378489748078455) * x('1') + 
+0.26668084180899398 * x('2') =g= -1;
+con8148..(-0.96361715168661422) * x('1') + 
+0.26728633518265893 * x('2') =g= -1;
+con8149..(-0.13618442026277308) * x('1') + 
+0.99068350328331012 * x('2') =g= -1;
+con8150..(-0.96344902549409206) * x('1') + 
+0.26789172304213577 * x('2') =g= -1;
+con8151..(-0.96328051896958766) * x('1') + 
+0.26849700514844066 * x('2') =g= -1;
+con8152..(-0.13680683978679251) * x('1') + 
+0.99059774307614434 * x('2') =g= -1;
+con8153..(-0.96311163217962092) * x('1') + 
+0.2691021812626323 * x('2') =g= -1;
+con8154..(-0.9629423651908614) * x('1') + 
+0.26970725114581134 * x('2') =g= -1;
+con8155..(-0.13742920530482386) * x('1') + 
+0.99051159181974469 * x('2') =g= -1;
+con8156..(-0.96277271807012943) * x('1') + 
+0.27031221455911891 * x('2') =g= -1;
+con8157..(-0.96260269088439487) * x('1') + 
+0.2709170712637396 * x('2') =g= -1;
+con8158..(-0.13805151657118139) * x('1') + 
+0.99042504954812038 * x('2') =g= -1;
+con8159..(-0.96243228370077771) * x('1') + 
+0.27152182102090006 * x('2') =g= -1;
+con8160..(-0.96226149658654825) * x('1') + 
+0.27212646359186832 * x('2') =g= -1;
+con8161..(-0.1386737733402014) * x('1') + 
+0.990338116295435 * x('2') =g= -1;
+con8162..(-0.96209032960912655) * x('1') + 
+0.27273099873795476 * x('2') =g= -1;
+con8163..(-0.96191878283608256) * x('1') + 
+0.27333542622051293 * x('2') =g= -1;
+con8164..(-0.13929597536624125) * x('1') + 
+0.99025079209600608 * x('2') =g= -1;
+con8165..(-0.96174685633513612) * x('1') + 
+0.27393974580093894 * x('2') =g= -1;
+con8166..(-0.96157455017415738) * x('1') + 
+0.27454395724067021 * x('2') =g= -1;
+con8167..(-0.13991812240367946) * x('1') + 
+0.99016307698430617 * x('2') =g= -1;
+con8168..(-0.96140186442116582) * x('1') + 
+0.27514806030118821 * x('2') =g= -1;
+con8169..(-0.9612287991443309) * x('1') + 
+0.27575205474401743 * x('2') =g= -1;
+con8170..(-0.14054021420691673) * x('1') + 
+0.99007497099496156 * x('2') =g= -1;
+con8171..(-0.96105535441197243) * x('1') + 
+0.2763559403307228 * x('2') =g= -1;
+con8172..(-0.9608815302925594) * x('1') + 
+0.27695971682291481 * x('2') =g= -1;
+con8173..(-0.14116225053037604) * x('1') + 
+0.98998647416275309 * x('2') =g= -1;
+con8174..(-0.96070732685471083) * x('1') + 
+0.27756338398224611 * x('2') =g= -1;
+con8175..(-0.96053274416719514) * x('1') + 
+0.278166941570413 * x('2') =g= -1;
+con8176..(-0.1417842311285015) * x('1') + 
+0.98989758652261584 * x('2') =g= -1;
+con8177..(-0.96035778229893121) * x('1') + 
+0.2787703893491536 * x('2') =g= -1;
+con8178..(-0.96018244131898667) * x('1') + 
+0.27937372708025121 * x('2') =g= -1;
+con8179..(-0.14240615575575932) * x('1') + 
+0.98980830810963916 * x('2') =g= -1;
+con8180..(-0.96000672129657949) * x('1') + 
+0.2799769545255314 * x('2') =g= -1;
+con8181..(-0.9598306223010773) * x('1') + 
+0.28058007144686298 * x('2') =g= -1;
+con8182..(-0.14302802416663887) * x('1') + 
+0.98971863895906664 * x('2') =g= -1;
+con8183..(-0.95965414440199681) * x('1') + 
+0.28118307760615951 * x('2') =g= -1;
+con8184..(-0.95947728766900453) * x('1') + 
+0.28178597276537815 * x('2') =g= -1;
+con8185..(-0.14364983611564949) * x('1') + 
+0.98962857910629631 * x('2') =g= -1;
+con8186..(-0.95930005217191672) * x('1') + 
+0.28238875668651858 * x('2') =g= -1;
+con8187..(-0.95912243798069907) * x('1') + 
+0.28299142913162578 * x('2') =g= -1;
+con8188..(-0.14427159135732506) * x('1') + 
+0.98953812858688017 * x('2') =g= -1;
+con8189..(-0.95894444516546651) * x('1') + 
+0.28359398986278866 * x('2') =g= -1;
+con8190..(-0.95876607379648382) * x('1') + 
+0.28419643864213945 * x('2') =g= -1;
+con8191..(-0.14489328964622045) * x('1') + 
+0.98944728743652455 * x('2') =g= -1;
+con8192..(-0.95858732394416513) * x('1') + 
+0.28479877523185437 * x('2') =g= -1;
+con8193..(-0.95840819567907365) * x('1') + 
+0.28540099939415503 * x('2') =g= -1;
+con8194..(-0.14551493073691399) * x('1') + 
+0.98935605569108998 * x('2') =g= -1;
+con8195..(-0.95822868907192216) * x('1') + 
+0.28600311089130731 * x('2') =g= -1;
+con8196..(-0.95804880419357319) * x('1') + 
+0.28660510948562029 * x('2') =g= -1;
+con8197..(-0.14613651438400585) * x('1') + 
+0.9892644333865912 * x('2') =g= -1;
+con8198..(-0.95786854111503794) * x('1') + 
+0.28720699493944929 * x('2') =g= -1;
+con8199..(-0.95768789990747749) * x('1') + 
+0.28780876701519265 * x('2') =g= -1;
+con8200..(-0.1467580403421189) * x('1') + 
+0.98917242055919707 * x('2') =g= -1;
+con8201..(-0.95750688064220157) * x('1') + 
+0.28841042547529516 * x('2') =g= -1;
+con8202..(-0.95732548339066981) * x('1') + 
+0.28901197008224477 * x('2') =g= -1;
+con8203..(-0.14737950836589989) * x('1') + 
+0.98908001724523054 * x('2') =g= -1;
+con8204..(-0.95714370822449069) * x('1') + 
+0.2896134005985756 * x('2') =g= -1;
+con8205..(-0.9569615552154217) * x('1') + 
+0.29021471678686683 * x('2') =g= -1;
+con8206..(-0.14800091821001626) * x('1') + 
+0.98898722348116919 * x('2') =g= -1;
+con8207..(-0.95677902443537011) * x('1') + 
+0.29081591840974153 * x('2') =g= -1;
+con8208..(-0.9565961159563916) * x('1') + 
+0.29141700522986963 * x('2') =g= -1;
+con8209..(-0.14862226962916059) * x('1') + 
+0.98889403930364406 * x('2') =g= -1;
+con8210..(-0.95641282985069143) * x('1') + 
+0.29201797700996474 * x('2') =g= -1;
+con8211..(-0.9562291661906237) * x('1') + 
+0.29261883351278756 * x('2') =g= -1;
+con8212..(-0.1492435623780474) * x('1') + 
+0.98880046474944072 * x('2') =g= -1;
+con8213..(-0.95604512504869188) * x('1') + 
+0.29321957450114261 * x('2') =g= -1;
+con8214..(-0.95586070649754795) * x('1') + 
+0.29382019973788132 * x('2') =g= -1;
+con8215..(-0.14986479621141441) * x('1') + 
+0.98870649985549874 * x('2') =g= -1;
+con8216..(-0.95567591060999313) * x('1') + 
+0.29442070898590067 * x('2') =g= -1;
+con8217..(-0.95549073745897783) * x('1') + 
+0.2950211020081423 * x('2') =g= -1;
+con8218..(-0.15048597088402324) * x('1') + 
+0.98861214465891167 * x('2') =g= -1;
+con8219..(-0.95530518711760093) * x('1') + 
+0.29562137856759546 * x('2') =g= -1;
+con8220..(-0.9551192596591106) * x('1') + 
+0.29622153842729348 * x('2') =g= -1;
+con8221..(-0.15110708615065804) * x('1') + 
+0.98851739919692749 * x('2') =g= -1;
+con8222..(-0.95493295515690357) * x('1') + 
+0.29682158135031761 * x('2') =g= -1;
+con8223..(-0.9547462736845258) * x('1') + 
+0.29742150709979354 * x('2') =g= -1;
+con8224..(-0.15172814176612762) * x('1') + 
+0.98842226350694762 * x('2') =g= -1;
+con8225..(-0.95455921531567167) * x('1') + 
+0.29802131543889454 * x('2') =g= -1;
+con8226..(-0.95437178012418455) * x('1') + 
+0.29862100613084003 * x('2') =g= -1;
+con8227..(-0.15234913748526224) * x('1') + 
+0.98832673762652834 * x('2') =g= -1;
+con8228..(-0.95418396818405637) * x('1') + 
+0.29922057893889531 * x('2') =g= -1;
+con8229..(-0.95399577956942827) * x('1') + 
+0.299820033626372 * x('2') =g= -1;
+con8230..(-0.15297007306291796) * x('1') + 
+0.98823082159337938 * x('2') =g= -1;
+con8231..(-0.95380721435458959) * x('1') + 
+0.30041936995662927 * x('2') =g= -1;
+con8232..(-0.95361827261397825) * x('1') + 
+0.30101858769307299 * x('2') =g= -1;
+con8233..(-0.15359094825397349) * x('1') + 
+0.98813451544536446 * x('2') =g= -1;
+con8234..(-0.95342895442218145) * x('1') + 
+0.30161768659915461 * x('2') =g= -1;
+con8235..(-0.95323925985393443) * x('1') + 
+0.30221666643837375 * x('2') =g= -1;
+con8236..(-0.15421176281333135) * x('1') + 
+0.98803781922050171 * x('2') =g= -1;
+con8237..(-0.95304918898412105) * x('1') + 
+0.30281552697427699 * x('2') =g= -1;
+con8238..(-0.95285874188777397) * x('1') + 
+0.30341426797045729 * x('2') =g= -1;
+con8239..(-0.1548325164959187) * x('1') + 
+0.98794073295696294 * x('2') =g= -1;
+con8240..(-0.9526679186400745) * x('1') + 
+0.30401288919055458 * x('2') =g= -1;
+con8241..(-0.95247671931635192) * x('1') + 
+0.30461139039825719 * x('2') =g= -1;
+con8242..(-0.15545320905668628) * x('1') + 
+0.98784325669307382 * x('2') =g= -1;
+con8243..(-0.95228514399208408) * x('1') + 
+0.30520977135730054 * x('2') =g= -1;
+con8244..(-0.95209319274289783) * x('1') + 
+0.30580803183146643 * x('2') =g= -1;
+con8245..(-0.15607384025060847) * x('1') + 
+0.98774539046731447 * x('2') =g= -1;
+con8246..(-0.95190086564456777) * x('1') + 
+0.30640617158458555 * x('2') =g= -1;
+con8247..(-0.95170816277301695) * x('1') + 
+0.30700419038053645 * x('2') =g= -1;
+con8248..(-0.1566944098326844) * x('1') + 
+0.98764713431831852 * x('2') =g= -1;
+con8249..(-0.95151508420431741) * x('1') + 
+0.30760208798324307 * x('2') =g= -1;
+con8250..(-0.95132163001468861) * x('1') + 
+0.30819986415667966 * x('2') =g= -1;
+con8251..(-0.15731491755793789) * x('1') + 
+0.98754848828487363 * x('2') =g= -1;
+con8252..(-0.95112780028049893) * x('1') + 
+0.3087975186648676 * x('2') =g= -1;
+con8253..(-0.95093359507826458) * x('1') + 
+0.30939505127187666 * x('2') =g= -1;
+con8254..(-0.15793536318141657) * x('1') + 
+0.98744945240592141 * x('2') =g= -1;
+con8255..(-0.95073901448465026) * x('1') + 
+0.30999246174182354 * x('2') =g= -1;
+con8256..(-0.95054405857646884) * x('1') + 
+0.31058974983887433 * x('2') =g= -1;
+con8257..(-0.15855574645819256) * x('1') + 
+0.98735002672055738 * x('2') =g= -1;
+con8258..(-0.950348727430681) * x('1') + 
+0.31118691532724396 * x('2') =g= -1;
+con8259..(-0.95015302112439626) * x('1') + 
+0.31178395797119307 * x('2') =g= -1;
+con8260..(-0.15917606714336321) * x('1') + 
+0.98725021126803081 * x('2') =g= -1;
+con8261..(-0.9499569397348715) * x('1') + 
+0.31238087753503357 * x('2') =g= -1;
+con8262..(-0.94976048333951213) * x('1') + 
+0.31297767378312524 * x('2') =g= -1;
+con8263..(-0.15979632499205024) * x('1') + 
+0.98715000608774506 * x('2') =g= -1;
+con8264..(-0.94956365201587145) * x('1') + 
+0.31357434647987553 * x('2') =g= -1;
+con8265..(-0.94936644584165075) * x('1') + 
+0.3141708953897418 * x('2') =g= -1;
+con8266..(-0.16041651975939966) * x('1') + 
+0.98704941121925716 * x('2') =g= -1;
+con8267..(-0.9491688648946992) * x('1') + 
+0.31476732027722987 * x('2') =g= -1;
+con8268..(-0.94897090925301386) * x('1') + 
+0.3153636209068954 * x('2') =g= -1;
+con8269..(-0.16103665120058283) * x('1') + 
+0.986948426702278 * x('2') =g= -1;
+con8270..(-0.94877257899474043) * x('1') + 
+0.31595979704334048 * x('2') =g= -1;
+con8271..(-0.94857387419817174) * x('1') + 
+0.31655584845121904 * x('2') =g= -1;
+con8272..(-0.16165671907079654) * x('1') + 
+0.98684705257667238 * x('2') =g= -1;
+con8273..(-0.94837479494174826) * x('1') + 
+0.31715177489523361 * x('2') =g= -1;
+con8274..(-0.94817534130405923) * x('1') + 
+0.31774757614013494 * x('2') =g= -1;
+con8275..(-0.16227672312526206) * x('1') + 
+0.98674528888245883 * x('2') =g= -1;
+con8276..(-0.94797551336384078) * x('1') + 
+0.31834325195072449 * x('2') =g= -1;
+con8277..(-0.94777531119997727) * x('1') + 
+0.3189388020918531 * x('2') =g= -1;
+con8278..(-0.16289666311922582) * x('1') + 
+0.98664313565980966 * x('2') =g= -1;
+con8279..(-0.94757473489150068) * x('1') + 
+0.31953422632842049 * x('2') =g= -1;
+con8280..(-0.9473737845175908) * x('1') + 
+0.32012952442537601 * x('2') =g= -1;
+con8281..(-0.16351653880796066) * x('1') + 
+0.98654059294905083 * x('2') =g= -1;
+con8282..(-0.94717246015757495) * x('1') + 
+0.32072469614771976 * x('2') =g= -1;
+con8283..(-0.94697076189092777) * x('1') + 
+0.32131974126050156 * x('2') =g= -1;
+con8284..(-0.16413634994676257) * x('1') + 
+0.98643766079066242 * x('2') =g= -1;
+con8285..(-0.94676868979727236) * x('1') + 
+0.32191465952882009 * x('2') =g= -1;
+con8286..(-0.94656624395637867) * x('1') + 
+0.32250945071782533 * x('2') =g= -1;
+con8287..(-0.16475609629095522) * x('1') + 
+0.9863343392252778 * x('2') =g= -1;
+con8288..(-0.94636342444816424) * x('1') + 
+0.32310411459271737 * x('2') =g= -1;
+con8289..(-0.94616023135269434) * x('1') + 
+0.32369865091874572 * x('2') =g= -1;
+con8290..(-0.16537577759588684) * x('1') + 
+0.98623062829368457 * x('2') =g= -1;
+con8291..(-0.94595666475018181) * x('1') + 
+0.3242930594612104 * x('2') =g= -1;
+con8292..(-0.9457527247209867) * x('1') + 
+0.32488733998546243 * x('2') =g= -1;
+con8293..(-0.16599539361693122) * x('1') + 
+0.98612652803682355 * x('2') =g= -1;
+con8294..(-0.94554841134561651) * x('1') + 
+0.3254814922569037 * x('2') =g= -1;
+con8295..(-0.94534372470472627) * x('1') + 
+0.32607551604098517 * x('2') =g= -1;
+con8296..(-0.16661494410948866) * x('1') + 
+0.9860220384957894 * x('2') =g= -1;
+con8297..(-0.94513866487911802) * x('1') + 
+0.32666941110321035 * x('2') =g= -1;
+con8298..(-0.94493323194974166) * x('1') + 
+0.32726317720913195 * x('2') =g= -1;
+con8299..(-0.1672344288289844) * x('1') + 
+0.98591715971183058 * x('2') =g= -1;
+con8300..(-0.94472742599769388) * x('1') + 
+0.32785681412435508 * x('2') =g= -1;
+con8301..(-0.94452124710421892) * x('1') + 
+0.3284503216145343 * x('2') =g= -1;
+con8302..(-0.16785384753087104) * x('1') + 
+0.98581189172634909 * x('2') =g= -1;
+con8303..(-0.94431469535070811) * x('1') + 
+0.32904369944537654 * x('2') =g= -1;
+con8304..(-0.9441077708186999) * x('1') + 
+0.32963694738263982 * x('2') =g= -1;
+con8305..(-0.16847319997062493) * x('1') + 
+0.98570623458090079 * x('2') =g= -1;
+con8306..(-0.94390047358988016) * x('1') + 
+0.33023006519213222 * x('2') =g= -1;
+con8307..(-0.94369280374608155) * x('1') + 
+0.3308230526397149 * x('2') =g= -1;
+con8308..(-0.16909248590375089) * x('1') + 
+0.98560018831719476 * x('2') =g= -1;
+con8309..(-0.94348476136928427) * x('1') + 
+0.33141590949129879 * x('2') =g= -1;
+con8310..(-0.94327634654161496) * x('1') + 
+0.33200863551284798 * x('2') =g= -1;
+con8311..(-0.16971170508577882) * x('1') + 
+0.98549375297709407 * x('2') =g= -1;
+con8312..(-0.94306755934534792) * x('1') + 
+0.33260123047037665 * x('2') =g= -1;
+con8313..(-0.94285839986290421) * x('1') + 
+0.33319369412995187 * x('2') =g= -1;
+con8314..(-0.17033085727226496) * x('1') + 
+0.98538692860261512 * x('2') =g= -1;
+con8315..(-0.94264886817685145) * x('1') + 
+0.33378602625769255 * x('2') =g= -1;
+con8316..(-0.94243896436990471) * x('1') + 
+0.33437822661976879 * x('2') =g= -1;
+con8317..(-0.17094994221879276) * x('1') + 
+0.98527971523592806 * x('2') =g= -1;
+con8318..(-0.94222868852492603) * x('1') + 
+0.33497029498240266 * x('2') =g= -1;
+con8319..(-0.94201804072492401) * x('1') + 
+0.33556223111186911 * x('2') =g= -1;
+con8320..(-0.17156895968097163) * x('1') + 
+0.98517211291935636 * x('2') =g= -1;
+con8321..(-0.94180702105305381) * x('1') + 
+0.33615403477449529 * x('2') =g= -1;
+con8322..(-0.94159562959261822) * x('1') + 
+0.33674570573665946 * x('2') =g= -1;
+con8323..(-0.17218790941443732) * x('1') + 
+0.98506412169537749 * x('2') =g= -1;
+con8324..(-0.94138386642706606) * x('1') + 
+0.33733724376479357 * x('2') =g= -1;
+con8325..(-0.94117173163999313) * x('1') + 
+0.33792864862538186 * x('2') =g= -1;
+con8326..(-0.17280679117485265) * x('1') + 
+0.98495574160662203 * x('2') =g= -1;
+con8327..(-0.94095922531514187) * x('1') + 
+0.33851992008496046 * x('2') =g= -1;
+con8328..(-0.94074634753640185) * x('1') + 
+0.33911105791011809 * x('2') =g= -1;
+con8329..(-0.17342560471790774) * x('1') + 
+0.98484697269587418 * x('2') =g= -1;
+con8330..(-0.94053309838780841) * x('1') + 
+0.33970206186749752 * x('2') =g= -1;
+con8331..(-0.94031947795354431) * x('1') + 
+0.34029293172379266 * x('2') =g= -1;
+con8332..(-0.17404434979931904) * x('1') + 
+0.98473781500607172 * x('2') =g= -1;
+con8333..(-0.94010548631793855) * x('1') + 
+0.34088366724575164 * x('2') =g= -1;
+con8334..(-0.93989112356546645) * x('1') + 
+0.34147426820017518 * x('2') =g= -1;
+con8335..(-0.17466302617482993) * x('1') + 
+0.98462826858030572 * x('2') =g= -1;
+con8336..(-0.93967638978074997) * x('1') + 
+0.34206473435391754 * x('2') =g= -1;
+con8337..(-0.93946128504855764) * x('1') + 
+0.34265506547388536 * x('2') =g= -1;
+con8338..(-0.17528163360021165) * x('1') + 
+0.98451833346182094 * x('2') =g= -1;
+con8339..(-0.93924580945380476) * x('1') + 
+0.34324526132703859 * x('2') =g= -1;
+con8340..(-0.93902996308155229) * x('1') + 
+0.34383532168039188 * x('2') =g= -1;
+con8341..(-0.17590017183126219) * x('1') + 
+0.98440800969401521 * x('2') =g= -1;
+con8342..(-0.93881374601700818) * x('1') + 
+0.34442524630101162 * x('2') =g= -1;
+con8343..(-0.93859715834552626) * x('1') + 
+0.34501503495601904 * x('2') =g= -1;
+con8344..(-0.17651864062380643) * x('1') + 
+0.98429729732044047 * x('2') =g= -1;
+con8345..(-0.93838020015260692) * x('1') + 
+0.3456046874125891 * x('2') =g= -1;
+con8346..(-0.93816287152389666) * x('1') + 
+0.34619420343794965 * x('2') =g= -1;
+con8347..(-0.17713703973369704) * x('1') + 
+0.98418619638480132 * x('2') =g= -1;
+con8348..(-0.93794517254518872) * x('1') + 
+0.34678358279938243 * x('2') =g= -1;
+con8349..(-0.93772710330242182) * x('1') + 
+0.34737282526422397 * x('2') =g= -1;
+con8350..(-0.17775536891681473) * x('1') + 
+0.98407470693095611 * x('2') =g= -1;
+con8351..(-0.93750866388168108) * x('1') + 
+0.34796193059986469 * x('2') =g= -1;
+con8352..(-0.93728985436919821) * x('1') + 
+0.34855089857374816 * x('2') =g= -1;
+con8353..(-0.17837362792906711) * x('1') + 
+0.98396282900291654 * x('2') =g= -1;
+con8354..(-0.93707067485135032) * x('1') + 
+0.3491397289533732 * x('2') =g= -1;
+con8355..(-0.93685112541466087) * x('1') + 
+0.34972842150629307 * x('2') =g= -1;
+con8356..(-0.17899181652638943) * x('1') + 
+0.98385056264484771 * x('2') =g= -1;
+con8357..(-0.93663120614579953) * x('1') + 
+0.35031697600011458 * x('2') =g= -1;
+con8358..(-0.93641091713158198) * x('1') + 
+0.35090539220249894 * x('2') =g= -1;
+con8359..(-0.17960993446474552) * x('1') + 
+0.98373790790106785 * x('2') =g= -1;
+con8360..(-0.93619025845896942) * x('1') + 
+0.35149366988116293 * x('2') =g= -1;
+con8361..(-0.93596923021506939) * x('1') + 
+0.35208180880387802 * x('2') =g= -1;
+con8362..(-0.18022798150012659) * x('1') + 
+0.98362486481604872 * x('2') =g= -1;
+con8363..(-0.93574783248713522) * x('1') + 
+0.35266980873846898 * x('2') =g= -1;
+con8364..(-0.93552606536256611) * x('1') + 
+0.353257669452817 * x('2') =g= -1;
+con8365..(-0.18084595738855139) * x('1') + 
+0.98351143343441527 * x('2') =g= -1;
+con8366..(-0.93530392892890679) * x('1') + 
+0.35384539071485799 * x('2') =g= -1;
+con8367..(-0.93508142327384813) * x('1') + 
+0.35443297229258225 * x('2') =g= -1;
+con8368..(-0.18146386188606745) * x('1') + 
+0.98339761380094581 * x('2') =g= -1;
+con8369..(-0.93485854848522698) * x('1') + 
+0.35502041395403511 * x('2') =g= -1;
+con8370..(-0.9346353046510254) * x('1') + 
+0.35560771546731795 * x('2') =g= -1;
+con8371..(-0.18208169474875002) * x('1') + 
+0.98328340596057195 * x('2') =g= -1;
+con8372..(-0.93441169185937101) * x('1') + 
+0.35619487660058763 * x('2') =g= -1;
+con8373..(-0.93418771019853786) * x('1') + 
+0.35678189712205499 * x('2') =g= -1;
+con8374..(-0.18269945573270333) * x('1') + 
+0.98316880995837841 * x('2') =g= -1;
+con8375..(-0.93396335975694489) * x('1') + 
+0.35736877679998774 * x('2') =g= -1;
+con8376..(-0.93373864062315681) * x('1') + 
+0.3579555154027092 * x('2') =g= -1;
+con8377..(-0.18331714459405901) * x('1') + 
+0.98305382583960321 * x('2') =g= -1;
+con8378..(-0.93351355288588411) * x('1') + 
+0.35854211269859743 * x('2') =g= -1;
+con8379..(-0.9332880966339826) * x('1') + 
+0.35912856845608637 * x('2') =g= -1;
+con8380..(-0.18393476108897858) * x('1') + 
+0.98293845364963739 * x('2') =g= -1;
+con8381..(-0.93306227195645364) * x('1') + 
+0.35971488244366673 * x('2') =g= -1;
+con8382..(-0.93283607894244369) * x('1') + 
+0.36030105442988497 * x('2') =g= -1;
+con8383..(-0.18455230497364991) * x('1') + 
+0.98282269343402573 * x('2') =g= -1;
+con8384..(-0.93260951768124534) * x('1') + 
+0.36088708418334259 * x('2') =g= -1;
+con8385..(-0.93238258826229559) * x('1') + 
+0.3614729714726988 * x('2') =g= -1;
+con8386..(-0.18516977600429169) * x('1') + 
+0.98270654523846557 * x('2') =g= -1;
+con8387..(-0.93215529077517789) * x('1') + 
+0.36205871606666729 * x('2') =g= -1;
+con8388..(-0.93192762530961981) * x('1') + 
+0.36264431773401995 * x('2') =g= -1;
+con8389..(-0.18578717393715027) * x('1') + 
+0.98259000910880778 * x('2') =g= -1;
+con8390..(-0.93169959195549523) * x('1') + 
+0.36322977624358327 * x('2') =g= -1;
+con8391..(-0.9314711908028227) * x('1') + 
+0.36381509136424162 * x('2') =g= -1;
+con8392..(-0.18640449852850094) * x('1') + 
+0.98247308509105635 * x('2') =g= -1;
+con8393..(-0.93124242194176576) * x('1') + 
+0.36440026286493576 * x('2') =g= -1;
+con8394..(-0.93101328546263384) * x('1') + 
+0.36498529051466216 * x('2') =g= -1;
+con8395..(-0.18702174953464851) * x('1') + 
+0.98235577323136813 * x('2') =g= -1;
+con8396..(-0.93078378145588059) * x('1') + 
+0.36557017408247561 * x('2') =g= -1;
+con8397..(-0.93055391001210552) * x('1') + 
+0.36615491333748656 * x('2') =g= -1;
+con8398..(-0.1876389267119262) * x('1') + 
+0.98223807357605331 * x('2') =g= -1;
+con8399..(-0.93032367122205295) * x('1') + 
+0.36673950804886235 * x('2') =g= -1;
+con8400..(-0.93009306517661205) * x('1') + 
+0.36732395798582829 * x('2') =g= -1;
+con8401..(-0.18825602981669684) * x('1') + 
+0.98211998617157514 * x('2') =g= -1;
+con8402..(-0.92986209196681702) * x('1') + 
+0.36790826291766643 * x('2') =g= -1;
+con8403..(-0.9296307516838469) * x('1') + 
+0.36849242261371651 * x('2') =g= -1;
+con8404..(-0.18887305860535161) * x('1') + 
+0.98200151106454991 * x('2') =g= -1;
+con8405..(-0.9293990444190261) * x('1') + 
+0.36907643684337416 * x('2') =g= -1;
+con8406..(-0.92916697026382322) * x('1') + 
+0.3696603053760944 * x('2') =g= -1;
+con8407..(-0.18949001283431235) * x('1') + 
+0.98188264830174699 * x('2') =g= -1;
+con8408..(-0.92893452930985232) * x('1') + 
+0.37024402798138828 * x('2') =g= -1;
+con8409..(-0.92870172164887221) * x('1') + 
+0.37082760442882456 * x('2') =g= -1;
+con8410..(-0.19010689226002941) * x('1') + 
+0.9817633979300886 * x('2') =g= -1;
+con8411..(-0.92846854737278584) * x('1') + 
+0.37141103448803048 * x('2') =g= -1;
+con8412..(-0.92823500657364133) * x('1') + 
+0.37199431792869109 * x('2') =g= -1;
+con8413..(-0.19072369663898278) * x('1') + 
+0.98164375999665032 * x('2') =g= -1;
+con8414..(-0.92800109934363162) * x('1') + 
+0.37257745452054808 * x('2') =g= -1;
+con8415..(-0.92776682577509395) * x('1') + 
+0.37316044403340282 * x('2') =g= -1;
+con8416..(-0.19134042572768259) * x('1') + 
+0.98152373454866038 * x('2') =g= -1;
+con8417..(-0.92753218596051068) * x('1') + 
+0.373743286237113 * x('2') =g= -1;
+con8418..(-0.92729717999250805) * x('1') + 
+0.37432598090159613 * x('2') =g= -1;
+con8419..(-0.19195707928266834) * x('1') + 
+0.98140332163350019 * x('2') =g= -1;
+con8420..(-0.92706180796385751) * x('1') + 
+0.37490852779682632 * x('2') =g= -1;
+con8421..(-0.92682606996747463) * x('1') + 
+0.37549092669283729 * x('2') =g= -1;
+con8422..(-0.19257365706050891) * x('1') + 
+0.98128252129870397 * x('2') =g= -1;
+con8423..(-0.92658996609641942) * x('1') + 
+0.37607317735972118 * x('2') =g= -1;
+con8424..(-0.92635349644389675) * x('1') + 
+0.37665527956762729 * x('2') =g= -1;
+con8425..(-0.19319015881780374) * x('1') + 
+0.98116133359195912 * x('2') =g= -1;
+con8426..(-0.92611666110325508) * x('1') + 
+0.37723723308676532 * x('2') =g= -1;
+con8427..(-0.92587946016798839) * x('1') + 
+0.37781903768740199 * x('2') =g= -1;
+con8428..(-0.19380658431118183) * x('1') + 
+0.98103975856110581 * x('2') =g= -1;
+con8429..(-0.92564189373173367) * x('1') + 
+0.37840069313986435 * x('2') =g= -1;
+con8430..(-0.92540396188827345) * x('1') + 
+0.37898219921453685 * x('2') =g= -1;
+con8431..(-0.19442293329730292) * x('1') + 
+0.98091779625413689 * x('2') =g= -1;
+con8432..(-0.92516566473153361) * x('1') + 
+0.37956355568186406 * x('2') =g= -1;
+con8433..(-0.92492700235558445) * x('1') + 
+0.3801447623123495 * x('2') =g= -1;
+con8434..(-0.19503920553285617) * x('1') + 
+0.9807954467191986 * x('2') =g= -1;
+con8435..(-0.9246879748546406) * x('1') + 
+0.38072581887655516 * x('2') =g= -1;
+con8436..(-0.92444858232306104) * x('1') + 
+0.38130672514510228 * x('2') =g= -1;
+con8437..(-0.19565540077456178) * x('1') + 
+0.98067271000458944 * x('2') =g= -1;
+con8438..(-0.92420882485534839) * x('1') + 
+0.38188748088867219 * x('2') =g= -1;
+con8439..(-0.92396870254614927) * x('1') + 
+0.38246808587800563 * x('2') =g= -1;
+con8440..(-0.19627151877917001) * x('1') + 
+0.9805495861587612 * x('2') =g= -1;
+con8441..(-0.92372821549025508) * x('1') + 
+0.38304853988390158 * x('2') =g= -1;
+con8442..(-0.92348736378260032) * x('1') + 
+0.38362884267722008 * x('2') =g= -1;
+con8443..(-0.19688755930346116) * x('1') + 
+0.98042607523031844 * x('2') =g= -1;
+con8444..(-0.92324614751826373) * x('1') + 
+0.38420899402888053 * x('2') =g= -1;
+con8445..(-0.92300456679246834) * x('1') + 
+0.38478899370986158 * x('2') =g= -1;
+con8446..(-0.19750352210424671) * x('1') + 
+0.98030217726801838 * x('2') =g= -1;
+con8447..(-0.92276262170058077) * x('1') + 
+0.3853688414912016 * x('2') =g= -1;
+con8448..(-0.92252031233811138) * x('1') + 
+0.38594853714399979 * x('2') =g= -1;
+con8449..(-0.19811940693836844) * x('1') + 
+0.98017789232077113 * x('2') =g= -1;
+con8450..(-0.92227763880071434) * x('1') + 
+0.38652808043941533 * x('2') =g= -1;
+con8451..(-0.9220346011841879) * x('1') + 
+0.3871074711486665 * x('2') =g= -1;
+con8452..(-0.19873521356269955) * x('1') + 
+0.98005322043763943 * x('2') =g= -1;
+con8453..(-0.92179119958447353) * x('1') + 
+0.38768670904303282 * x('2') =g= -1;
+con8454..(-0.92154743409765671) * x('1') + 
+0.38826579389385429 * x('2') =g= -1;
+con8455..(-0.19935094173414322) * x('1') + 
+0.97992816166783892 * x('2') =g= -1;
+con8456..(-0.9213033048199667) * x('1') + 
+0.38884472547253046 * x('2') =g= -1;
+con8457..(-0.92105881184777616) * x('1') + 
+0.38942350355052135 * x('2') =g= -1;
+con8458..(-0.19996659120963456) * x('1') + 
+0.97980271606073788 * x('2') =g= -1;
+con8459..(-0.92081395527760124) * x('1') + 
+0.39000212789934846 * x('2') =g= -1;
+con8460..(-0.92056873520610161) * x('1') + 
+0.39058059829059394 * x('2') =g= -1;
+con8461..(-0.20058216174613916) * x('1') + 
+0.97967688366585726 * x('2') =g= -1;
+con8462..(-0.92032315173008095) * x('1') + 
+0.39115891449589951 * x('2') =g= -1;
+con8463..(-0.9200772049464857) * x('1') + 
+0.39173707628696891 * x('2') =g= -1;
+con8464..(-0.20119765310065349) * x('1') + 
+0.97955066453287098 * x('2') =g= -1;
+con8465..(-0.91983089495240578) * x('1') + 
+0.39231508343556731 * x('2') =g= -1;
+con8466..(-0.91958422184507549) * x('1') + 
+0.39289293571351852 * x('2') =g= -1;
+con8467..(-0.2018130650302058) * x('1') + 
+0.97942405871160521 * x('2') =g= -1;
+con8468..(-0.91933718572187118) * x('1') + 
+0.39347063289270984 * x('2') =g= -1;
+con8469..(-0.91908978668031327) * x('1') + 
+0.39404817474508907 * x('2') =g= -1;
+con8470..(-0.20242839729185538) * x('1') + 
+0.97929706625203916 * x('2') =g= -1;
+con8471..(-0.91884202481806487) * x('1') + 
+0.39462556104266566 * x('2') =g= -1;
+con8472..(-0.91859390023293308) * x('1') + 
+0.39520279155750926 * x('2') =g= -1;
+con8473..(-0.2030436496426935) * x('1') + 
+0.97916968720430431 * x('2') =g= -1;
+con8474..(-0.91834541302286765) * x('1') + 
+0.39577986606175225 * x('2') =g= -1;
+con8475..(-0.91809656328596123) * x('1') + 
+0.39635678432758903 * x('2') =g= -1;
+con8476..(-0.20365882183984244) * x('1') + 
+0.97904192161868497 * x('2') =g= -1;
+con8477..(-0.91784735112045068) * x('1') + 
+0.39693354612727322 * x('2') =g= -1;
+con8478..(-0.91759777662471476) * x('1') + 
+0.39751015123312261 * x('2') =g= -1;
+con8479..(-0.20427391364045647) * x('1') + 
+0.97891376954561804 * x('2') =g= -1;
+con8480..(-0.91734783989727586) * x('1') + 
+0.39808659941751606 * x('2') =g= -1;
+con8481..(-0.91709754103679897) * x('1') + 
+0.39866289045289482 * x('2') =g= -1;
+con8482..(-0.20488892480172075) * x('1') + 
+0.97878523103569293 * x('2') =g= -1;
+con8483..(-0.91684688014209259) * x('1') + 
+0.39923902411176093 * x('2') =g= -1;
+con8484..(-0.91659585731210769) * x('1') + 
+0.39981500016668009 * x('2') =g= -1;
+con8485..(-0.20550385508085361) * x('1') + 
+0.9786563061396516 * x('2') =g= -1;
+con8486..(-0.9163444726459381) * x('1') + 
+0.40039081839027918 * x('2') =g= -1;
+con8487..(-0.91609272624282112) * x('1') + 
+0.40096647855524725 * x('2') =g= -1;
+con8488..(-0.20611870423510442) * x('1') + 
+0.97852699490838857 * x('2') =g= -1;
+con8489..(-0.91584061820213614) * x('1') + 
+0.40154198043433659 * x('2') =g= -1;
+con8490..(-0.91558814862340521) * x('1') + 
+0.40211732380036203 * x('2') =g= -1;
+con8491..(-0.20673347202175454) * x('1') + 
+0.97839729739295089 * x('2') =g= -1;
+con8492..(-0.91533531760629405) * x('1') + 
+0.40269250842619958 * x('2') =g= -1;
+con8493..(-0.91508212525061006) * x('1') + 
+0.40326753408478938 * x('2') =g= -1;
+con8494..(-0.20734815819811817) * x('1') + 
+0.97826721364453806 * x('2') =g= -1;
+con8495..(-0.9148285716563036) * x('1') + 
+0.40384240054913412 * x('2') =g= -1;
+con8496..(-0.91457465692346795) * x('1') + 
+0.40441710759229871 * x('2') =g= -1;
+con8497..(-0.207962762521541) * x('1') + 
+0.97813674371450188 * x('2') =g= -1;
+con8498..(-0.91432038115233882) * x('1') + 
+0.40499165498741074 * x('2') =g= -1;
+con8499..(-0.91406574444329403) * x('1') + 
+0.40556604250766193 * x('2') =g= -1;
+con8500..(-0.20857728474940157) * x('1') + 
+0.97800588765434693 * x('2') =g= -1;
+con8501..(-0.91381074689685426) * x('1') + 
+0.40614026992630686 * x('2') =g= -1;
+con8502..(-0.91355538861368268) * x('1') + 
+0.40671433701666226 * x('2') =g= -1;
+con8503..(-0.20919172463911004) * x('1') + 
+0.97787464551573011 * x('2') =g= -1;
+con8504..(-0.91329966969458465) * x('1') + 
+0.40728824355210969 * x('2') =g= -1;
+con8505..(-0.91304359024050807) * x('1') + 
+0.40786198930609247 * x('2') =g= -1;
+con8506..(-0.2098060819481096) * x('1') + 
+0.97774301735046065 * x('2') =g= -1;
+con8507..(-0.91278715035254299) * x('1') + 
+0.40843557405211911 * x('2') =g= -1;
+con8508..(-0.91253035013192207) * x('1') + 
+0.40900899756375986 * x('2') =g= -1;
+con8509..(-0.21042035643387649) * x('1') + 
+0.9776110032105001 * x('2') =g= -1;
+con8510..(-0.9122731896800198) * x('1') + 
+0.40958225961465006 * x('2') =g= -1;
+con8511..(-0.91201566909835297) * x('1') + 
+0.41015535997848868 * x('2') =g= -1;
+con8512..(-0.2110345478539187) * x('1') + 
+0.97747860314796253 * x('2') =g= -1;
+con8513..(-0.9117577884885808) * x('1') + 
+0.41072829842903724 * x('2') =g= -1;
+con8514..(-0.91149954795250443) * x('1') + 
+0.4113010747401229 * x('2') =g= -1;
+con8515..(-0.21164865596577795) * x('1') + 
+0.97734581721511438 * x('2') =g= -1;
+con8516..(-0.9112409475920672) * x('1') + 
+0.41187368868563518 * x('2') =g= -1;
+con8517..(-0.91098198750935411) * x('1') + 
+0.41244614003952929 * x('2') =g= -1;
+con8518..(-0.21226268052702835) * x('1') + 
+0.97721264546437414 * x('2') =g= -1;
+con8519..(-0.91072266780659294) * x('1') + 
+0.41301842857582305 * x('2') =g= -1;
+con8520..(-0.9104629885861526) * x('1') + 
+0.41359055406859974 * x('2') =g= -1;
+con8521..(-0.21287662129527662) * x('1') + 
+0.97707908794831311 * x('2') =g= -1;
+con8522..(-0.91020294995054429) * x('1') + 
+0.41416251629200695 * x('2') =g= -1;
+con8523..(-0.90994255200242125) * x('1') + 
+0.41473431502025598 * x('2') =g= -1;
+con8524..(-0.21349047802816318) * x('1') + 
+0.97694514471965432 * x('2') =g= -1;
+con8525..(-0.90968179484457845) * x('1') + 
+0.41530595002762272 * x('2') =g= -1;
+con8526..(-0.90942067857995257) * x('1') + 
+0.41587742108844838 * x('2') =g= -1;
+con8527..(-0.21410425048336118) * x('1') + 
+0.97681081583127349 * x('2') =g= -1;
+con8528..(-0.90915920331162181) * x('1') + 
+0.416448727977139 * x('2') =g= -1;
+con8529..(-0.90889736914280683) * x('1') + 
+0.41701987046816413 * x('2') =g= -1;
+con8530..(-0.2147179384185777) * x('1') + 
+0.97667610133619831 * x('2') =g= -1;
+con8531..(-0.90863517617686929) * x('1') + 
+0.41759084833605942 * x('2') =g= -1;
+con8532..(-0.90837262451731249) * x('1') + 
+0.4181616613554256 * x('2') =g= -1;
+con8533..(-0.21533154159155254) * x('1') + 
+0.97654100128760879 * x('2') =g= -1;
+con8534..(-0.90810971426778175) * x('1') + 
+0.41873230930092764 * x('2') =g= -1;
+con8535..(-0.90784644553206406) * x('1') + 
+0.41930279194729558 * x('2') =g= -1;
+con8536..(-0.21594505976005895) * x('1') + 
+0.97640551573883716 * x('2') =g= -1;
+con8537..(-0.90758281841408728) * x('1') + 
+0.41987310906932568 * x('2') =g= -1;
+con8538..(-0.90731883301792093) * x('1') + 
+0.42044326044187941 * x('2') =g= -1;
+con8539..(-0.21655849268190464) * x('1') + 
+0.97626964474336775 * x('2') =g= -1;
+con8540..(-0.90705448944777656) * x('1') + 
+0.42101324583988248 * x('2') =g= -1;
+con8541..(-0.90678978780800645) * x('1') + 
+0.42158306503832738 * x('2') =g= -1;
+con8542..(-0.21717184011492957) * x('1') + 
+0.97613338835483721 * x('2') =g= -1;
+con8543..(-0.90652472820310426) * x('1') + 
+0.4221527178122722 * x('2') =g= -1;
+con8544..(-0.90625931073770527) * x('1') + 
+0.42272220393683996 * x('2') =g= -1;
+con8545..(-0.21778510181700847) * x('1') + 
+0.97599674662703428 * x('2') =g= -1;
+con8546..(-0.90599353551658623) * x('1') + 
+0.4232915231872193 * x('2') =g= -1;
+con8547..(-0.90572740264466445) * x('1') + 
+0.42386067533866573 * x('2') =g= -1;
+con8548..(-0.21839827754604935) * x('1') + 
+0.97585971961389961 * x('2') =g= -1;
+con8549..(-0.90546091222699876) * x('1') + 
+0.42442966016650063 * x('2') =g= -1;
+con8550..(-0.90519406436878946) * x('1') + 
+0.42499847744611025 * x('2') =g= -1;
+con8551..(-0.21901136705999488) * x('1') + 
+0.97572230736952625 * x('2') =g= -1;
+con8552..(-0.90492685917537741) * x('1') + 
+0.42556712695294818 * x('2') =g= -1;
+con8553..(-0.90465929675224432) * x('1') + 
+0.42613560846253468 * x('2') =g= -1;
+con8554..(-0.21962437011682104) * x('1') + 
+0.97558450994815904 * x('2') =g= -1;
+con8555..(-0.90439137720501439) * x('1') + 
+0.42670392175045385 * x('2') =g= -1;
+con8556..(-0.90412310063945112) * x('1') + 
+0.42727206659235861 * x('2') =g= -1;
+con8557..(-0.2202372864745385) * x('1') + 
+0.97544632740419501 * x('2') =g= -1;
+con8558..(-0.90385446716145956) * x('1') + 
+0.42784004276396803 * x('2') =g= -1;
+con8559..(-0.90358547687708601) * x('1') + 
+0.42840785004106657 * x('2') =g= -1;
+con8560..(-0.22085011589119113) * x('1') + 
+0.97530775979218343 * x('2') =g= -1;
+con8561..(-0.90331612989251719) * x('1') + 
+0.42897548819950654 * x('2') =g= -1;
+con8562..(-0.90304642631408072) * x('1') + 
+0.42954295701520651 * x('2') =g= -1;
+con8563..(-0.22146285812485855) * x('1') + 
+0.97516880716682519 * x('2') =g= -1;
+con8564..(-0.90277636624824464) * x('1') + 
+0.43011025626415289 * x('2') =g= -1;
+con8565..(-0.9025059498016188) * x('1') + 
+0.4306773857223965 * x('2') =g= -1;
+con8566..(-0.22207551293365388) * x('1') + 
+0.97502946958297343 * x('2') =g= -1;
+con8567..(-0.9022351770809528) * x('1') + 
+0.43124434516605759 * x('2') =g= -1;
+con8568..(-0.90196404819313669) * x('1') + 
+0.43181113437132318 * x('2') =g= -1;
+con8569..(-0.22268808007572471) * x('1') + 
+0.97488974709563314 * x('2') =g= -1;
+con8570..(-0.90169256324520219) * x('1') + 
+0.43237775311444626 * x('2') =g= -1;
+con8571..(-0.90142072234432058) * x('1') + 
+0.43294420117174837 * x('2') =g= -1;
+con8572..(-0.22330055930925399) * x('1') + 
+0.97474963975996132 * x('2') =g= -1;
+con8573..(-0.9011485255978039) * x('1') + 
+0.43351047831961825 * x('2') =g= -1;
+con8574..(-0.90087597311310486) * x('1') + 
+0.43407658433451157 * x('2') =g= -1;
+con8575..(-0.22391295039245865) * x('1') + 
+0.97460914763126683 * x('2') =g= -1;
+con8576..(-0.90060306499781684) * x('1') + 
+0.43464251899295137 * x('2') =g= -1;
+con8577..(-0.900329801359673) * x('1') + 
+0.43520828207152912 * x('2') =g= -1;
+con8578..(-0.22452525308359084) * x('1') + 
+0.9744682707650103 * x('2') =g= -1;
+con8579..(-0.90005618230654705) * x('1') + 
+0.43577387334690421 * x('2') =g= -1;
+con8580..(-0.89978220794645336) * x('1') + 
+0.43633929259580245 * x('2') =g= -1;
+con8581..(-0.22513746714093702) * x('1') + 
+0.97432700921680471 * x('2') =g= -1;
+con8582..(-0.8995078783875462) * x('1') + 
+0.4369045395950189 * x('2') =g= -1;
+con8583..(-0.89923319373811983) * x('1') + 
+0.43746961412141649 * x('2') =g= -1;
+con8584..(-0.22574959232281896) * x('1') + 
+0.97418536304241454 * x('2') =g= -1;
+con8585..(-0.89895815410660929) * x('1') + 
+0.43803451595192561 * x('2') =g= -1;
+con8586..(-0.89868275960158961) * x('1') + 
+0.43859924486354457 * x('2') =g= -1;
+con8587..(-0.2263616283875941) * x('1') + 
+0.97404333229775597 * x('2') =g= -1;
+con8588..(-0.89840701033177561) * x('1') + 
+0.43916380063334104 * x('2') =g= -1;
+con8589..(-0.898130906406022) * x('1') + 
+0.43972818303845074 * x('2') =g= -1;
+con8590..(-0.22697357509365407) * x('1') + 
+0.97390091703889747 * x('2') =g= -1;
+con8591..(-0.89785444793332447) * x('1') + 
+0.44029239185607694 * x('2') =g= -1;
+con8592..(-0.89757763502281729) * x('1') + 
+0.44085642686349275 * x('2') =g= -1;
+con8593..(-0.2275854321994267) * x('1') + 
+0.97375811732205864 * x('2') =g= -1;
+con8594..(-0.89730046778377603) * x('1') + 
+0.44142028783803844 * x('2') =g= -1;
+con8595..(-0.89702294632561497) * x('1') + 
+0.44198397455712457 * x('2') =g= -1;
+con8596..(-0.22819719946337452) * x('1') + 
+0.97361493320361148 * x('2') =g= -1;
+con8597..(-0.89674507075788901) * x('1') + 
+0.44254748679822892 * x('2') =g= -1;
+con8598..(-0.89646684119029252) * x('1') + 
+0.4431108243388992 * x('2') =g= -1;
+con8599..(-0.22880887664399596) * x('1') + 
+0.97347136474007934 * x('2') =g= -1;
+con8600..(-0.89618825773265942) * x('1') + 
+0.44367398695675231 * x('2') =g= -1;
+con8601..(-0.89590932049496386) * x('1') + 
+0.4442369744294728 * x('2') =g= -1;
+con8602..(-0.22942046349982437) * x('1') + 
+0.97332741198813766 * x('2') =g= -1;
+con8603..(-0.89563002958731908) * x('1') + 
+0.44479978653481606 * x('2') =g= -1;
+con8604..(-0.89535038511997855) * x('1') + 
+0.44536242305060508 * x('2') =g= -1;
+con8605..(-0.23003195978942917) * x('1') + 
+0.9731830750046131 * x('2') =g= -1;
+con8606..(-0.89507038720333454) * x('1') + 
+0.44592488375473377 * x('2') =g= -1;
+con8607..(-0.89479003594791962) * x('1') + 
+0.44648716842516389 * x('2') =g= -1;
+con8608..(-0.23064336527141602) * x('1') + 
+0.97303835384648441 * x('2') =g= -1;
+con8609..(-0.89450933146440548) * x('1') + 
+0.44704927683992784 * x('2') =g= -1;
+con8610..(-0.89422827386360282) * x('1') + 
+0.44761120877712757 * x('2') =g= -1;
+con8611..(-0.23125467970442573) * x('1') + 
+0.97289324857088177 * x('2') =g= -1;
+con8612..(-0.89394686325646278) * x('1') + 
+0.44817296401493362 * x('2') =g= -1;
+con8613..(-0.89366509975407482) * x('1') + 
+0.44873454233158766 * x('2') =g= -1;
+con8614..(-0.23186590284713501) * x('1') + 
+0.97274775923508705 * x('2') =g= -1;
+con8615..(-0.89338298346766853) * x('1') + 
+0.44929594350539986 * x('2') =g= -1;
+con8616..(-0.89310051450861194) * x('1') + 
+0.44985716731475178 * x('2') =g= -1;
+con8617..(-0.2324770344582576) * x('1') + 
+0.97260188589653374 * x('2') =g= -1;
+con8618..(-0.89281769298841318) * x('1') + 
+0.45041821353809341 * x('2') =g= -1;
+con8619..(-0.89253451901871894) * x('1') + 
+0.45097908195394598 * x('2') =g= -1;
+con8620..(-0.23308807429654196) * x('1') + 
+0.9724556286128071 * x('2') =g= -1;
+con8621..(-0.89225099271131503) * x('1') + 
+0.45153977234090109 * x('2') =g= -1;
+con8622..(-0.89196711417812669) * x('1') + 
+0.45210028447761968 * x('2') =g= -1;
+con8623..(-0.23369902212077368) * x('1') + 
+0.97230898744164351 * x('2') =g= -1;
+con8624..(-0.89168288353121838) * x('1') + 
+0.45266061814283304 * x('2') =g= -1;
+con8625..(-0.89139830088279259) * x('1') + 
+0.4532207731153442 * x('2') =g= -1;
+con8626..(-0.23430987768977427) * x('1') + 
+0.97216196244093145 * x('2') =g= -1;
+con8627..(-0.89111336634519211) * x('1') + 
+0.45378074917402506 * x('2') =g= -1;
+con8628..(-0.89082808003089753) * x('1') + 
+0.45434054609781943 * x('2') =g= -1;
+con8629..(-0.23492064076240224) * x('1') + 
+0.97201455366871048 * x('2') =g= -1;
+con8630..(-0.89054244205252886) * x('1') + 
+0.45490016366574137 * x('2') =g= -1;
+con8631..(-0.89025645252284447) * x('1') + 
+0.45545960165687616 * x('2') =g= -1;
+con8632..(-0.23553131109755204) * x('1') + 
+0.97186676118317172 * x('2') =g= -1;
+con8633..(-0.88997011155474226) * x('1') + 
+0.4560188598503791 * x('2') =g= -1;
+con8634..(-0.88968341926125838) * x('1') + 
+0.45657793802547664 * x('2') =g= -1;
+con8635..(-0.23614188845415471) * x('1') + 
+0.97171858504265807 * x('2') =g= -1;
+con8636..(-0.8893963757555674) * x('1') + 
+0.45713683596146731 * x('2') =g= -1;
+con8637..(-0.88910898115098347) * x('1') + 
+0.45769555343771928 * x('2') =g= -1;
+con8638..(-0.23675237259117904) * x('1') + 
+0.9715700253056635 * x('2') =g= -1;
+con8639..(-0.88882123556095827) * x('1') + 
+0.45825409023367325 * x('2') =g= -1;
+con8640..(-0.8885331390990826) * x('1') + 
+0.45881244612884059 * x('2') =g= -1;
+con8641..(-0.23736276326762845) * x('1') + 
+0.97142108203083377 * x('2') =g= -1;
+con8642..(-0.88824469187908539) * x('1') + 
+0.45937062090280512 * x('2') =g= -1;
+con8643..(-0.88795589401483488) * x('1') + 
+0.4599286143352197 * x('2') =g= -1;
+con8644..(-0.23797306024254553) * x('1') + 
+0.97127175527696563 * x('2') =g= -1;
+con8645..(-0.88766674562033698) * x('1') + 
+0.46048642620581109 * x('2') =g= -1;
+con8646..(-0.88737724680973584) * x('1') + 
+0.46104405629437745 * x('2') =g= -1;
+con8647..(-0.23858326327500839) * x('1') + 
+0.9711220451030077 * x('2') =g= -1;
+con8648..(-0.88708739769731482) * x('1') + 
+0.4616015043807874 * x('2') =g= -1;
+con8649..(-0.8867971983974946) * x('1') + 
+0.46215877024498264 * x('2') =g= -1;
+con8650..(-0.23919337212413322) * x('1') + 
+0.97097195156805938 * x('2') =g= -1;
+con8651..(-0.88650664902483445) * x('1') + 
+0.46271585366697682 * x('2') =g= -1;
+con8652..(-0.88621574969403194) * x('1') + 
+0.46327275442685478 * x('2') =g= -1;
+con8653..(-0.23980338654907268) * x('1') + 
+0.97082147473137204 * x('2') =g= -1;
+con8654..(-0.88592450051992322) * x('1') + 
+0.4638294723047735 * x('2') =g= -1;
+con8655..(-0.88563290161748154) * x('1') + 
+0.464386007080963 * x('2') =g= -1;
+con8656..(-0.24041330630901719) * x('1') + 
+0.97067061465234783 * x('2') =g= -1;
+con8657..(-0.88534095310181882) * x('1') + 
+0.46494235853572541 * x('2') =g= -1;
+con8658..(-0.8850486550881852) * x('1') + 
+0.46549852644943424 * x('2') =g= -1;
+con8659..(-0.24102313116319385) * x('1') + 
+0.97051937139054045 * x('2') =g= -1;
+con8660..(-0.88475600769196827) * x('1') + 
+0.46605451060253655 * x('2') =g= -1;
+con8661..(-0.88446301102869351) * x('1') + 
+0.46661031077555187 * x('2') =g= -1;
+con8662..(-0.24163286087086766) * x('1') + 
+0.97036774500565504 * x('2') =g= -1;
+con8663..(-0.88416966521402496) * x('1') + 
+0.4671659267490717 * x('2') =g= -1;
+con8664..(-0.88387597036376409) * x('1') + 
+0.46772135830376016 * x('2') =g= -1;
+con8665..(-0.24224249519134158) * x('1') + 
+0.97021573555754748 * x('2') =g= -1;
+con8666..(-0.88358192659385004) * x('1') + 
+0.46827660522035502 * x('2') =g= -1;
+con8667..(-0.88328753402035942) * x('1') + 
+0.46883166727966696 * x('2') =g= -1;
+con8668..(-0.24285203388395546) * x('1') + 
+0.97006334310622533 * x('2') =g= -1;
+con8669..(-0.88299279275950748) * x('1') + 
+0.46938654426257831 * x('2') =g= -1;
+con8670..(-0.88269770292764638) * x('1') + 
+0.46994123595004583 * x('2') =g= -1;
+con8671..(-0.24346147670808765) * x('1') + 
+0.96991056771184692 * x('2') =g= -1;
+con8672..(-0.88240226464126559) * x('1') + 
+0.47049574212309925 * x('2') =g= -1;
+con8673..(-0.88210647801699293) * x('1') + 
+0.47105006256284088 * x('2') =g= -1;
+con8674..(-0.24407082342315381) * x('1') + 
+0.96975740943472233 * x('2') =g= -1;
+con8675..(-0.88181034317159368) * x('1') + 
+0.47160419705044632 * x('2') =g= -1;
+con8676..(-0.88151386022196998) * x('1') + 
+0.47215814536716533 * x('2') =g= -1;
+con8677..(-0.24468007378860784) * x('1') + 
+0.9696038683353122 * x('2') =g= -1;
+con8678..(-0.88121702928516144) * x('1') + 
+0.47271190729432117 * x('2') =g= -1;
+con8679..(-0.88091985047834587) * x('1') + 
+0.47326548261330953 * x('2') =g= -1;
+con8680..(-0.24528922756394117) * x('1') + 
+0.96944994447422872 * x('2') =g= -1;
+con8681..(-0.88062232391883744) * x('1') + 
+0.47381887110560095 * x('2') =g= -1;
+con8682..(-0.88032444972408797) * x('1') + 
+0.47437207255273961 * x('2') =g= -1;
+con8683..(-0.24589828450868367) * x('1') + 
+0.96929563791223494 * x('2') =g= -1;
+con8684..(-0.88002622801168673) * x('1') + 
+0.47492508673634287 * x('2') =g= -1;
+con8685..(-0.87972765889936) * x('1') + 
+0.47547791343810197 * x('2') =g= -1;
+con8686..(-0.24650724438240396) * x('1') + 
+0.96914094871024503 * x('2') =g= -1;
+con8687..(-0.87942874250497127) * x('1') + 
+0.47603055243978304 * x('2') =g= -1;
+con8688..(-0.87912947894652049) * x('1') + 
+0.47658300352322608 * x('2') =g= -1;
+con8689..(-0.24711610694470823) * x('1') + 
+0.96898587692932425 * x('2') =g= -1;
+con8690..(-0.87882986834214594) * x('1') + 
+0.47713526647034427 * x('2') =g= -1;
+con8691..(-0.87852991081012155) * x('1') + 
+0.47768734106312666 * x('2') =g= -1;
+con8692..(-0.2477248719552412) * x('1') + 
+0.96883042263068897 * x('2') =g= -1;
+con8693..(-0.87822960646885906) * x('1') + 
+0.47823922708363531 * x('2') =g= -1;
+con8694..(-0.87792895543690719) * x('1') + 
+0.47879092431400688 * x('2') =g= -1;
+con8695..(-0.24833353917368689) * x('1') + 
+0.96867458587570621 * x('2') =g= -1;
+con8696..(-0.87762795783295089) * x('1') + 
+0.47934243253645326 * x('2') =g= -1;
+con8697..(-0.87732661377581223) * x('1') + 
+0.47989375153326058 * x('2') =g= -1;
+con8698..(-0.24894210835976666) * x('1') + 
+0.96851836672589442 * x('2') =g= -1;
+con8699..(-0.87702492338444993) * x('1') + 
+0.48044488108679007 * x('2') =g= -1;
+con8700..(-0.87672288677795984) * x('1') + 
+0.48099582097947652 * x('2') =g= -1;
+con8701..(-0.2495505792732414) * x('1') + 
+0.96836176524292283 * x('2') =g= -1;
+con8702..(-0.87642050407557393) * x('1') + 
+0.48154657099383125 * x('2') =g= -1;
+con8703..(-0.87611777539666114) * x('1') + 
+0.48209713091243928 * x('2') =g= -1;
+con8704..(-0.25015895167391039) * x('1') + 
+0.96820478148861167 * x('2') =g= -1;
+con8705..(-0.87581470086072721) * x('1') + 
+0.48264750051796074 * x('2') =g= -1;
+con8706..(-0.8755112805874139) * x('1') + 
+0.48319767959313159 * x('2') =g= -1;
+con8707..(-0.25076722532161244) * x('1') + 
+0.96804741552493168 * x('2') =g= -1;
+con8708..(-0.8752075146964996) * x('1') + 
+0.48374766792076268 * x('2') =g= -1;
+con8709..(-0.87490340330789895) * x('1') + 
+0.48429746528374057 * x('2') =g= -1;
+con8710..(-0.25137539997622471) * x('1') + 
+0.96788966741400495 * x('2') =g= -1;
+con8711..(-0.87459894654166359) * x('1') + 
+0.48484707146502626 * x('2') =g= -1;
+con8712..(-0.87429414451798126) * x('1') + 
+0.48539648624765641 * x('2') =g= -1;
+con8713..(-0.25198347539766341) * x('1') + 
+0.96773153721810434 * x('2') =g= -1;
+con8714..(-0.87398899735717539) * x('1') + 
+0.48594570941474435 * x('2') =g= -1;
+con8715..(-0.87368350517970672) * x('1') + 
+0.48649474074947752 * x('2') =g= -1;
+con8716..(-0.25259145134588495) * x('1') + 
+0.96757302499965314 * x('2') =g= -1;
+con8717..(-0.87337766810617135) * x('1') + 
+0.4870435800351201 * x('2') =g= -1;
+con8718..(-0.87307148625730147) * x('1') + 
+0.48759222705501232 * x('2') =g= -1;
+con8719..(-0.25319932758088309) * x('1') + 
+0.96741413082122629 * x('2') =g= -1;
+con8720..(-0.87276495975396617) * x('1') + 
+0.48814068159256896 * x('2') =g= -1;
+con8721..(-0.87245808871716979) * x('1') + 
+0.48868894343128239 * x('2') =g= -1;
+con8722..(-0.25380710386269273) * x('1') + 
+0.96725485474554862 * x('2') =g= -1;
+con8723..(-0.87215087326805329) * x('1') + 
+0.48923701235471956 * x('2') =g= -1;
+con8724..(-0.87184331352789302) * x('1') + 
+0.48978488814652504 * x('2') =g= -1;
+con8725..(-0.25441477995138734) * x('1') + 
+0.96709519683549616 * x('2') =g= -1;
+con8726..(-0.87153540961810183) * x('1') + 
+0.49033257059041818 * x('2') =g= -1;
+con8727..(-0.87122716166022807) * x('1') + 
+0.4908800594701957 * x('2') =g= -1;
+con8728..(-0.25502235560708042) * x('1') + 
+0.96693515715409573 * x('2') =g= -1;
+con8729..(-0.87091856977595561) * x('1') + 
+0.4914273545697308 * x('2') =g= -1;
+con8730..(-0.87060963408710501) * x('1') + 
+0.49197445567297204 * x('2') =g= -1;
+con8731..(-0.25562983058992478) * x('1') + 
+0.96677473576452455 * x('2') =g= -1;
+con8732..(-0.8703003547156315) * x('1') + 
+0.49252136256394613 * x('2') =g= -1;
+con8733..(-0.86999073178362685) * x('1') + 
+0.49306807502675476 * x('2') =g= -1;
+con8734..(-0.25623720466011279) * x('1') + 
+0.96661393273011098 * x('2') =g= -1;
+con8735..(-0.86968076541331774) * x('1') + 
+0.49361459284557802 * x('2') =g= -1;
+con8736..(-0.86937045572706717) * x('1') + 
+0.49416091580467136 * x('2') =g= -1;
+con8737..(-0.25684447757787787) * x('1') + 
+0.96645274811433335 * x('2') =g= -1;
+con8738..(-0.86905980284737305) * x('1') + 
+0.49470704368836815 * x('2') =g= -1;
+con8739..(-0.86874880689686884) * x('1') + 
+0.49525297628107895 * x('2') =g= -1;
+con8740..(-0.257451649103491) * x('1') + 
+0.96629118198082142 * x('2') =g= -1;
+con8741..(-0.86843746799832366) * x('1') + 
+0.49579871336729048 * x('2') =g= -1;
+con8742..(-0.8681257862746421) * x('1') + 
+0.49634425473156668 * x('2') =g= -1;
+con8743..(-0.25805871899726562) * x('1') + 
+0.96612923439335496 * x('2') =g= -1;
+con8744..(-0.86781376184886394) * x('1') + 
+0.4968896001585496 * x('2') =g= -1;
+con8745..(-0.86750139484416378) * x('1') + 
+0.49743474943295857 * x('2') =g= -1;
+con8746..(-0.25866568701955395) * x('1') + 
+0.96596690541586472 * x('2') =g= -1;
+con8747..(-0.86718868538385241) * x('1') + 
+0.49797970233958921 * x('2') =g= -1;
+con8748..(-0.86687563359137509) * x('1') + 
+0.49852445866331579 * x('2') =g= -1;
+con8749..(-0.25927255293074863) * x('1') + 
+0.96580419511243176 * x('2') =g= -1;
+con8750..(-0.86656223959031209) * x('1') + 
+0.49906901818909027 * x('2') =g= -1;
+con8751..(-0.86624850350437943) * x('1') + 
+0.49961338070194145 * x('2') =g= -1;
+con8752..(-0.25987931649128315) * x('1') + 
+0.9656411035472876 * x('2') =g= -1;
+con8753..(-0.86593442545742805) * x('1') + 
+0.50015754598697593 * x('2') =g= -1;
+con8754..(-0.86562000557344354) * x('1') + 
+0.50070151382937889 * x('2') =g= -1;
+con8755..(-0.26048597746163099) * x('1') + 
+0.96547763078481452 * x('2') =g= -1;
+con8756..(-0.86530524397654607) * x('1') + 
+0.50124528401441348 * x('2') =g= -1;
+con8757..(-0.86499014079099201) * x('1') + 
+0.50178885632741976 * x('2') =g= -1;
+con8758..(-0.26109253560230572) * x('1') + 
+0.96531377688954523 * x('2') =g= -1;
+con8759..(-0.86467469614117121) * x('1') + 
+0.50233223055381704 * x('2') =g= -1;
+con8760..(-0.86435891015160882) * x('1') + 
+0.50287540647910289 * x('2') =g= -1;
+con8761..(-0.26169899067386188) * x('1') + 
+0.96514954192616287 * x('2') =g= -1;
+con8762..(-0.86404278294696513) * x('1') + 
+0.50341838388885218 * x('2') =g= -1;
+con8763..(-0.86372631465203475) * x('1') + 
+0.50396116256871837 * x('2') =g= -1;
+con8764..(-0.26230534243689518) * x('1') + 
+0.96498492595950081 * x('2') =g= -1;
+con8765..(-0.86340950539174699) * x('1') + 
+0.50450374230443407 * x('2') =g= -1;
+con8766..(-0.86309235529116535) * x('1') + 
+0.50504612288181039 * x('2') =g= -1;
+con8767..(-0.26291159065204145) * x('1') + 
+0.96481992905454295 * x('2') =g= -1;
+con8768..(-0.8627748644754889) * x('1') + 
+0.50558830408673594 * x('2') =g= -1;
+con8769..(-0.86245703307005028) * x('1') + 
+0.50613028570517915 * x('2') =g= -1;
+con8770..(-0.26351773507997744) * x('1') + 
+0.96465455127642397 * x('2') =g= -1;
+con8771..(-0.86213886120031635) * x('1') + 
+0.50667206752318761 * x('2') =g= -1;
+con8772..(-0.86182034899189008) * x('1') + 
+0.50721364932688562 * x('2') =g= -1;
+con8773..(-0.26412377548142141) * x('1') + 
+0.9644887926904282 * x('2') =g= -1;
+con8774..(-0.8615014965705069) * x('1') + 
+0.50775503090247853 * x('2') =g= -1;
+con8775..(-0.86118230406203733) * x('1') + 
+0.50829621203625019 * x('2') =g= -1;
+con8776..(-0.26472971161713232) * x('1') + 
+0.96432265336199063 * x('2') =g= -1;
+con8777..(-0.86086277159248603) * x('1') + 
+0.50883719251456372 * x('2') =g= -1;
+con8778..(-0.86054289928799221) * x('1') + 
+0.5093779721238606 * x('2') =g= -1;
+con8779..(-0.26533554324790992) * x('1') + 
+0.96415613335669681 * x('2') =g= -1;
+con8780..(-0.86022268727482853) * x('1') + 
+0.50991855065066272 * x('2') =g= -1;
+con8781..(-0.85990213567940244) * x('1') + 
+0.51045892788157066 * x('2') =g= -1;
+con8782..(-0.26594127013459551) * x('1') + 
+0.96398923274028225 * x('2') =g= -1;
+con8783..(-0.85958124462825525) * x('1') + 
+0.51099910360326417 * x('2') =g= -1;
+con8784..(-0.8592600142480622) * x('1') + 
+0.51153907760250339 * x('2') =g= -1;
+con8785..(-0.2665468920380723) * x('1') + 
+0.96382195157863271 * x('2') =g= -1;
+con8786..(-0.85893844466563196) * x('1') + 
+0.51207884966612816 * x('2') =g= -1;
+con8787..(-0.85861653600790833) * x('1') + 
+0.51261841958105658 * x('2') =g= -1;
+con8788..(-0.26715240871926427) * x('1') + 
+0.96365428993778424 * x('2') =g= -1;
+con8789..(-0.85829428840196798) * x('1') + 
+0.51315778713428828 * x('2') =g= -1;
+con8790..(-0.85797170197502126) * x('1') + 
+0.51369695211290212 * x('2') =g= -1;
+con8791..(-0.26775781993913683) * x('1') + 
+0.96348624788392323 * x('2') =g= -1;
+con8792..(-0.8576487768544131) * x('1') + 
+0.5142359143040568 * x('2') =g= -1;
+con8793..(-0.85732551316762173) * x('1') + 
+0.5147746734949904 * x('2') =g= -1;
+con8794..(-0.26836312545869817) * x('1') + 
+0.96331782548338585 * x('2') =g= -1;
+con8795..(-0.85700191104225898) * x('1') + 
+0.51531322947302249 * x('2') =g= -1;
+con8796..(-0.85667797060606998) * x('1') + 
+0.51585158202555259 * x('2') =g= -1;
+con8797..(-0.26896832503899615) * x('1') + 
+0.96314902280265902 * x('2') =g= -1;
+con8798..(-0.85635369198693423) * x('1') + 
+0.51638973094005935 * x('2') =g= -1;
+con8799..(-0.85602907531286399) * x('1') + 
+0.51692767600410305 * x('2') =g= -1;
+con8800..(-0.26957341844112248) * x('1') + 
+0.9629798399083791 * x('2') =g= -1;
+con8801..(-0.85570412071200508) * x('1') + 
+0.51746541700532445 * x('2') =g= -1;
+con8802..(-0.8553788283126369) * x('1') + 
+0.51800295373144389 * x('2') =g= -1;
+con8803..(-0.27017840542620947) * x('1') + 
+0.96281027686733323 * x('2') =g= -1;
+con8804..(-0.8550531982431725) * x('1') + 
+0.5185402859702628 * x('2') =g= -1;
+con8805..(-0.85472723063215772) * x('1') + 
+0.51907741350966352 * x('2') =g= -1;
+con8806..(-0.27078328575543242) * x('1') + 
+0.96264033374645785 * x('2') =g= -1;
+con8807..(-0.85440092560827152) * x('1') + 
+0.51961433613760966 * x('2') =g= -1;
+con8808..(-0.85407428330032686) * x('1') + 
+0.52015105364214442 * x('2') =g= -1;
+con8809..(-0.27138805919000797) * x('1') + 
+0.96247001061284021 * x('2') =g= -1;
+con8810..(-0.85374730383726882) * x('1') + 
+0.52068756581139342 * x('2') =g= -1;
+con8811..(-0.8534199873481767) * x('1') + 
+0.52122387243356183 * x('2') =g= -1;
+con8812..(-0.27199272549119508) * x('1') + 
+0.96229930753371706 * x('2') =g= -1;
+con8813..(-0.85309233396226158) * x('1') + 
+0.52175997329693768 * x('2') =g= -1;
+con8814..(-0.85276434380886879) * x('1') + 
+0.5222958681898886 * x('2') =g= -1;
+con8815..(-0.27259728442029596) * x('1') + 
+0.96212822457647518 * x('2') =g= -1;
+con8816..(-0.85243601701747573) * x('1') + 
+0.52283155690086436 * x('2') =g= -1;
+con8817..(-0.85210735371769275) * x('1') + 
+0.52336703921839667 * x('2') =g= -1;
+con8818..(-0.27320173573865314) * x('1') + 
+0.96195676180865175 * x('2') =g= -1;
+con8819..(-0.85177835403926383) * x('1') + 
+0.52390231493109718 * x('2') =g= -1;
+con8820..(-0.85144901811206453) * x('1') + 
+0.52443738382766081 * x('2') =g= -1;
+con8821..(-0.27380607920765371) * x('1') + 
+0.96178491929793331 * x('2') =g= -1;
+con8822..(-0.8511193460661044) * x('1') + 
+0.52497224569686241 * x('2') =g= -1;
+con8823..(-0.85078933803152446) * x('1') + 
+0.52550690032756031 * x('2') =g= -1;
+con8824..(-0.27441031458872633) * x('1') + 
+0.96161269711215658 * x('2') =g= -1;
+con8825..(-0.8504589941385996) * x('1') + 
+0.52604134750869291 * x('2') =g= -1;
+con8826..(-0.85012831451773629) * x('1') + 
+0.52657558702928187 * x('2') =g= -1;
+con8827..(-0.27501444164334232) * x('1') + 
+0.9614400953193083 * x('2') =g= -1;
+con8828..(-0.84979729929947379) * x('1') + 
+0.52710961867843065 * x('2') =g= -1;
+con8829..(-0.8494659486144841) * x('1') + 
+0.52764344224532411 * x('2') =g= -1;
+con8830..(-0.27561846013301633) * x('1') + 
+0.96126711398752474 * x('2') =g= -1;
+con8831..(-0.84913426259357183) * x('1') + 
+0.52817705751922917 * x('2') =g= -1;
+con8832..(-0.84880224136767324) * x('1') + 
+0.52871046428949575 * x('2') =g= -1;
+con8833..(-0.27622236981930554) * x('1') + 
+0.96109375318509216 * x('2') =g= -1;
+con8834..(-0.84846988506785725) * x('1') + 
+0.5292436623455562 * x('2') =g= -1;
+con8835..(-0.8481371938253256) * x('1') + 
+0.52977665147692388 * x('2') =g= -1;
+con8836..(-0.27682617046380953) * x('1') + 
+0.96092001298044671 * x('2') =g= -1;
+con8837..(-0.84780416777141143) * x('1') + 
+0.53030943147319609 * x('2') =g= -1;
+con8838..(-0.84747080703758026) * x('1') + 
+0.5308420021240523 * x('2') =g= -1;
+con8839..(-0.27742986182817148) * x('1') + 
+0.96074589344217431 * x('2') =g= -1;
+con8840..(-0.84713711175543005) * x('1') + 
+0.53137436321925435 * x('2') =g= -1;
+con8841..(-0.84680308205669086) * x('1') + 
+0.53190651454864624 * x('2') =g= -1;
+con8842..(-0.27803344367407806) * x('1') + 
+0.96057139463901031 * x('2') =g= -1;
+con8843..(-0.84646871807322432) * x('1') + 
+0.5324384559021561 * x('2') =g= -1;
+con8844..(-0.84613401993702408) * x('1') + 
+0.53297018706979438 * x('2') =g= -1;
+con8845..(-0.27863691576325861) * x('1') + 
+0.96039651663984016 * x('2') =g= -1;
+con8846..(-0.84579898778021634) * x('1') + 
+0.53350170784165396 * x('2') =g= -1;
+con8847..(-0.84546362173505829) * x('1') + 
+0.53403301800791136 * x('2') =g= -1;
+con8848..(-0.27924027785748573) * x('1') + 
+0.96022125951369885 * x('2') =g= -1;
+con8849..(-0.84512792193393904) * x('1') + 
+0.53456411735882703 * x('2') =g= -1;
+con8850..(-0.8447918885093807) * x('1') + 
+0.53509500568474211 * x('2') =g= -1;
+con8851..(-0.27984352971857601) * x('1') + 
+0.96004562332977095 * x('2') =g= -1;
+con8852..(-0.84445552159403536) * x('1') + 
+0.53562568277608347 * x('2') =g= -1;
+con8853..(-0.84411882132068761) * x('1') + 
+0.5361561484233609 * x('2') =g= -1;
+con8854..(-0.28044667110838933) * x('1') + 
+0.95986960815739075 * x('2') =g= -1;
+con8855..(-0.84378178782225388) * x('1') + 
+0.5366864024171667 * x('2') =g= -1;
+con8856..(-0.84344442123178154) * x('1') + 
+0.53721644454817752 * x('2') =g= -1;
+con8857..(-0.2810497017888286) * x('1') + 
+0.95969321406604235 * x('2') =g= -1;
+con8858..(-0.84310672168244982) * x('1') + 
+0.53774627460715352 * x('2') =g= -1;
+con8859..(-0.84276868930756865) * x('1') + 
+0.53827589238493934 * x('2') =g= -1;
+con8860..(-0.2816526215218409) * x('1') + 
+0.95951644112535905 * x('2') =g= -1;
+con8861..(-0.84243032424058117) * x('1') + 
+0.53880529767246099 * x('2') =g= -1;
+con8862..(-0.84209162661505998) * x('1') + 
+0.53933449026073088 * x('2') =g= -1;
+con8863..(-0.2822554300694175) * x('1') + 
+0.95933928940512392 * x('2') =g= -1;
+con8864..(-0.84175259656470958) * x('1') + 
+0.53986346994084466 * x('2') =g= -1;
+con8865..(-0.84141323422336611) * x('1') + 
+0.54039223650398127 * x('2') =g= -1;
+con8866..(-0.28285812719359299) * x('1') + 
+0.95916175897526956 * x('2') =g= -1;
+con8867..(-0.84107353972499643) * x('1') + 
+0.54092078974140467 * x('2') =g= -1;
+con8868..(-0.84073351320369849) * x('1') + 
+0.54144912944446266 * x('2') =g= -1;
+con8869..(-0.2834607126564459) * x('1') + 
+0.95898384990587815 * x('2') =g= -1;
+con8870..(-0.84039315479370114) * x('1') + 
+0.5419772554045883 * x('2') =g= -1;
+con8871..(-0.84005246462936534) * x('1') + 
+0.54250516741329646 * x('2') =g= -1;
+con8872..(-0.28406318622009952) * x('1') + 
+0.95880556226718094 * x('2') =g= -1;
+con8873..(-0.83971144284518195) * x('1') + 
+0.54303286526218897 * x('2') =g= -1;
+con8874..(-0.83937008957577275) * x('1') + 
+0.54356034874295167 * x('2') =g= -1;
+con8875..(-0.28466554764672081) * x('1') + 
+0.95862689612955909 * x('2') =g= -1;
+con8876..(-0.83902840495589104) * x('1') + 
+0.54408761764735414 * x('2') =g= -1;
+con8877..(-0.83868638912042026) * x('1') + 
+0.54461467176725142 * x('2') =g= -1;
+con8878..(-0.28526779669852065) * x('1') + 
+0.95844785156354306 * x('2') =g= -1;
+con8879..(-0.83834404220437486) * x('1') + 
+0.54514151089458351 * x('2') =g= -1;
+con8880..(-0.83800136434290007) * x('1') + 
+0.54566813482137477 * x('2') =g= -1;
+con8881..(-0.28586993313775488) * x('1') + 
+0.95826842863981254 * x('2') =g= -1;
+con8882..(-0.837658355671272) * x('1') + 
+0.54619454333973416 * x('2') =g= -1;
+con8883..(-0.8373150163248968) * x('1') + 
+0.54672073624185669 * x('2') =g= -1;
+con8884..(-0.28647195672672343) * x('1') + 
+0.95808862742919687 * x('2') =g= -1;
+con8885..(-0.83697134643931115) * x('1') + 
+0.54724671332002217 * x('2') =g= -1;
+con8886..(-0.83662734615018308) * x('1') + 
+0.54777247436659482 * x('2') =g= -1;
+con8887..(-0.28707386722777128) * x('1') + 
+0.95790844800267416 * x('2') =g= -1;
+con8888..(-0.83628301559330998) * x('1') + 
+0.5482980191740251 * x('2') =g= -1;
+con8889..(-0.8359383549046201) * x('1') + 
+0.54882334753484885 * x('2') =g= -1;
+con8890..(-0.28767566440328729) * x('1') + 
+0.95772789043137263 * x('2') =g= -1;
+con8891..(-0.83559336422017205) * x('1') + 
+0.54934845924168652 * x('2') =g= -1;
+con8892..(-0.83524804367615491) * x('1') + 
+0.54987335408724436 * x('2') =g= -1;
+con8893..(-0.28827734801570637) * x('1') + 
+0.95754695478656882 * x('2') =g= -1;
+con8894..(-0.83490239340888761) * x('1') + 
+0.55039803186431469 * x('2') =g= -1;
+con8895..(-0.83455641355481891) * x('1') + 
+0.55092249236577551 * x('2') =g= -1;
+con8896..(-0.28887891782750613) * x('1') + 
+0.95736564113968958 * x('2') =g= -1;
+con8897..(-0.83421010425052888) * x('1') + 
+0.55144673538458977 * x('2') =g= -1;
+con8898..(-0.83386346563272606) * x('1') + 
+0.55197076071380757 * x('2') =g= -1;
+con8899..(-0.28948037360121109) * x('1') + 
+0.95718394956231023 * x('2') =g= -1;
+con8900..(-0.83351649783825066) * x('1') + 
+0.55249456814656339 * x('2') =g= -1;
+con8901..(-0.83316920100407121) * x('1') + 
+0.5530181574760793 * x('2') =g= -1;
+con8902..(-0.29008171509938996) * x('1') + 
+0.95700188012615539 * x('2') =g= -1;
+con8903..(-0.83282157526728751) * x('1') + 
+0.55354152849566196 * x('2') =g= -1;
+con8904..(-0.83247362076512843) * x('1') + 
+0.55406468099870543 * x('2') =g= -1;
+con8905..(-0.29068294208465628) * x('1') + 
+0.95681943290309923 * x('2') =g= -1;
+con8906..(-0.83212533763495244) * x('1') + 
+0.55458761477868979 * x('2') =g= -1;
+con8907..(-0.83177672601424857) * x('1') + 
+0.55511032962918061 * x('2') =g= -1;
+con8908..(-0.29128405431966975) * x('1') + 
+0.95663660796516448 * x('2') =g= -1;
+con8909..(-0.83142778604063472) * x('1') + 
+0.55563282534383129 * x('2') =g= -1;
+con8910..(-0.83107851785185904) * x('1') + 
+0.55615510171638016 * x('2') =g= -1;
+con8911..(-0.29188505156713418) * x('1') + 
+0.95645340538452339 * x('2') =g= -1;
+con8912..(-0.83072892158579859) * x('1') + 
+0.55667715854065369 * x('2') =g= -1;
+con8913..(-0.83037899738046073) * x('1') + 
+0.55719899561056352 * x('2') =g= -1;
+con8914..(-0.29248593358980035) * x('1') + 
+0.95626982523349702 * x('2') =g= -1;
+con8915..(-0.83002874537398164) * x('1') + 
+0.5577206127201092 * x('2') =g= -1;
+con8916..(-0.82967816570462682) * x('1') + 
+0.558242009663377 * x('2') =g= -1;
+con8917..(-0.29308670015046223) * x('1') + 
+0.95608586758455594 * x('2') =g= -1;
+con8918..(-0.82932725851079159) * x('1') + 
+0.55876318623453947 * x('2') =g= -1;
+con8919..(-0.82897602393100078) * x('1') + 
+0.55928414222785616 * x('2') =g= -1;
+con8920..(-0.29368735101196153) * x('1') + 
+0.95590153251031929 * x('2') =g= -1;
+con8921..(-0.82862446210390772) * x('1') + 
+0.55980487743767438 * x('2') =g= -1;
+con8922..(-0.82827257316829506) * x('1') + 
+0.56032539165842854 * x('2') =g= -1;
+con8923..(-0.29428788593718452) * x('1') + 
+0.95571682008355519 * x('2') =g= -1;
+con8924..(-0.82792035726307522) * x('1') + 
+0.56084568468463936 * x('2') =g= -1;
+con8925..(-0.82756781452728911) * x('1') + 
+0.56136575631091579 * x('2') =g= -1;
+con8926..(-0.29488830468906341) * x('1') + 
+0.9555317303771812 * x('2') =g= -1;
+con8927..(-0.8272149451001064) * x('1') + 
+0.56188560633195428 * x('2') =g= -1;
+con8928..(-0.82686174912082655) * x('1') + 
+0.5624052345425381 * x('2') =g= -1;
+con8929..(-0.29548860703057672) * x('1') + 
+0.95534626346426321 * x('2') =g= -1;
+con8930..(-0.82650822672887769) * x('1') + 
+0.5629246407375379 * x('2') =g= -1;
+con8931..(-0.8261543780638162) * x('1') + 
+0.56344382471191312 * x('2') =g= -1;
+con8932..(-0.29608879272474858) * x('1') + 
+0.95516041941801633 * x('2') =g= -1;
+con8933..(-0.82580020326532799) * x('1') + 
+0.56396278626070973 * x('2') =g= -1;
+con8934..(-0.82544570247322746) * x('1') + 
+0.56448152517906214 * x('2') =g= -1;
+con8935..(-0.29668886153464874) * x('1') + 
+0.95497419831180463 * x('2') =g= -1;
+con8936..(-0.82509087582745733) * x('1') + 
+0.56500004126219261 * x('2') =g= -1;
+con8937..(-0.82473572346808932) * x('1') + 
+0.56551833430541165 * x('2') =g= -1;
+con8938..(-0.29728881322339351) * x('1') + 
+0.954787600219141 * x('2') =g= -1;
+con8939..(-0.82438024553532374) * x('1') + 
+0.56603640410411704 * x('2') =g= -1;
+con8940..(-0.82402444216948967) * x('1') + 
+0.56655425045379482 * x('2') =g= -1;
+con8941..(-0.29788864755414585) * x('1') + 
+0.95460062521368683 * x('2') =g= -1;
+con8942..(-0.82366831351104397) * x('1') + 
+0.56707187315002017 * x('2') =g= -1;
+con8943..(-0.82331185970057263) * x('1') + 
+0.56758927198845521 * x('2') =g= -1;
+con8944..(-0.29848836429011444) * x('1') + 
+0.95441327336925275 * x('2') =g= -1;
+con8945..(-0.82295508087878955) * x('1') + 
+0.56810644676485145 * x('2') =g= -1;
+con8946..(-0.82259797718653671) * x('1') + 
+0.56862339727504885 * x('2') =g= -1;
+con8947..(-0.29908796319455433) * x('1') + 
+0.95422554475979782 * x('2') =g= -1;
+con8948..(-0.82224054876478503) * x('1') + 
+0.56914012331497521 * x('2') =g= -1;
+con8949..(-0.82188279575463341) * x('1') + 
+0.56965662468064704 * x('2') =g= -1;
+con8950..(-0.2996874440307678) * x('1') + 
+0.95403743945942998 * x('2') =g= -1;
+con8951..(-0.82152471829730855) * x('1') + 
+0.5701729011681701 * x('2') =g= -1;
+con8952..(-0.82116631653416505) * x('1') + 
+0.57068895257373908 * x('2') =g= -1;
+con8953..(-0.30028680656210321) * x('1') + 
+0.95384895754240562 * x('2') =g= -1;
+con8954..(-0.82080759060668662) * x('1') + 
+0.57120477869363617 * x('2') =g= -1;
+con8955..(-0.82044854065648387) * x('1') + 
+0.57172037932423392 * x('2') =g= -1;
+con8956..(-0.30088605055195533) * x('1') + 
+0.95366009908313043 * x('2') =g= -1;
+con8957..(-0.82008916682529542) * x('1') + 
+0.57223575426199369 * x('2') =g= -1;
+con8958..(-0.81972946925498813) * x('1') + 
+0.57275090330346523 * x('2') =g= -1;
+con8959..(-0.30148517576376627) * x('1') + 
+0.95347086415615812 * x('2') =g= -1;
+con8960..(-0.81936944808755707) * x('1') + 
+0.57326582624528755 * x('2') =g= -1;
+con8961..(-0.8190091034651239) * x('1') + 
+0.57378052288418946 * x('2') =g= -1;
+con8962..(-0.30208418196102454) * x('1') + 
+0.95328125283619136 * x('2') =g= -1;
+con8963..(-0.8186484355299386) * x('1') + 
+0.57429499301698939 * x('2') =g= -1;
+con8964..(-0.81828744442437928) * x('1') + 
+0.57480923644059378 * x('2') =g= -1;
+con8965..(-0.30268306890726648) * x('1') + 
+0.95309126519808107 * x('2') =g= -1;
+con8966..(-0.81792613029095063) * x('1') + 
+0.57532325295199993 * x('2') =g= -1;
+con8967..(-0.8175644932722852) * x('1') + 
+0.57583704234829447 * x('2') =g= -1;
+con8968..(-0.30328183636607448) * x('1') + 
+0.95290090131682714 * x('2') =g= -1;
+con8969..(-0.81720253351114336) * x('1') + 
+0.5763506044266532 * x('2') =g= -1;
+con8970..(-0.81684025115041303) * x('1') + 
+0.57686393898434152 * x('2') =g= -1;
+con8971..(-0.30388048410107937) * x('1') + 
+0.95271016126757757 * x('2') =g= -1;
+con8972..(-0.81647764633310882) * x('1') + 
+0.57737704581871541 * x('2') =g= -1;
+con8973..(-0.81611471920237255) * x('1') + 
+0.57788992472722056 * x('2') =g= -1;
+con8974..(-0.30447901187595722) * x('1') + 
+0.95251904512562935 * x('2') =g= -1;
+con8975..(-0.81575146990147418) * x('1') + 
+0.57840257550739194 * x('2') =g= -1;
+con8976..(-0.81538789857381022) * x('1') + 
+0.5789149979568553 * x('2') =g= -1;
+con8977..(-0.30507741945443351) * x('1') + 
+0.95232755296642746 * x('2') =g= -1;
+con8978..(-0.81502400536290398) * x('1') + 
+0.57942719187332681 * x('2') =g= -1;
+con8979..(-0.81465979041240666) * x('1') + 
+0.57993915705461174 * x('2') =g= -1;
+con8980..(-0.30567570660028015) * x('1') + 
+0.95213568486556555 * x('2') =g= -1;
+con8981..(-0.81429525386609625) * x('1') + 
+0.58045089329860611 * x('2') =g= -1;
+con8982..(-0.8139303958678773) * x('1') + 
+0.58096240040329683 * x('2') =g= -1;
+con8983..(-0.30627387307731657) * x('1') + 
+0.95194344089878569 * x('2') =g= -1;
+con8984..(-0.81356521656178116) * x('1') + 
+0.58147367816676121 * x('2') =g= -1;
+con8985..(-0.81319971609196684) * x('1') + 
+0.58198472638716603 * x('2') =g= -1;
+con8986..(-0.30687191864941044) * x('1') + 
+0.95175082114197807 * x('2') =g= -1;
+con8987..(-0.81283389460271915) * x('1') + 
+0.58249554486277022 * x('2') =g= -1;
+con8988..(-0.81246775223845069) * x('1') + 
+0.58300613339192187 * x('2') =g= -1;
+con8989..(-0.30746984308047659) * x('1') + 
+0.95155782567118175 * x('2') =g= -1;
+con8990..(-0.8121012891436995) * x('1') + 
+0.58351649177306142 * x('2') =g= -1;
+con8991..(-0.81173450546313153) * x('1') + 
+0.58402661980471859 * x('2') =g= -1;
+con8992..(-0.30806764613447801) * x('1') + 
+0.95136445456258356 * x('2') =g= -1;
+con8993..(-0.81136740134153817) * x('1') + 
+0.58453651728551503 * x('2') =g= -1;
+con8994..(-0.81099997692383774) * x('1') + 
+0.58504618401416375 * x('2') =g= -1;
+con8995..(-0.30866532757542486) * x('1') + 
+0.95117070789251901 * x('2') =g= -1;
+con8996..(-0.81063223235507531) * x('1') + 
+0.58555561978946735 * x('2') =g= -1;
+con8997..(-0.81026416778042165) * x('1') + 
+0.58606482441032126 * x('2') =g= -1;
+con8998..(-0.30926288716737654) * x('1') + 
+0.95097658573747157 * x('2') =g= -1;
+con8999..(-0.80989578334517454) * x('1') + 
+0.58657379767571116 * x('2') =g= -1;
+con9000..(-0.80952707919475797) * x('1') + 
+0.58708253938471378 * x('2') =g= -1;
+con9001..(-0.30986032467443964) * x('1') + 
+0.95078208817407306 * x('2') =g= -1;
+con9002..(-0.80915805547472164) * x('1') + 
+0.58759104933649842 * x('2') =g= -1;
+con9003..(-0.80878871233074168) * x('1') + 
+0.58809932733032499 * x('2') =g= -1;
+con9004..(-0.31045763986076896) * x('1') + 
+0.95058721527910373 * x('2') =g= -1;
+con9005..(-0.80841904990862012) * x('1') + 
+0.58860737316554579 * x('2') =g= -1;
+con9006..(-0.80804906835428558) * x('1') + 
+0.58911518664160334 * x('2') =g= -1;
+con9007..(-0.31105483249056837) * x('1') + 
+0.95039196712949148 * x('2') =g= -1;
+con9008..(-0.807678767813792) * x('1') + 
+0.58962276755803344 * x('2') =g= -1;
+con9009..(-0.80730814843331955) * x('1') + 
+0.59013011571446283 * x('2') =g= -1;
+con9010..(-0.31165190232808926) * x('1') + 
+0.95019634380231288 * x('2') =g= -1;
+con9011..(-0.80693721035917476) * x('1') + 
+0.59063723091060971 * x('2') =g= -1;
+con9012..(-0.80656595373778917) * x('1') + 
+0.59114411294628544 * x('2') =g= -1;
+con9013..(-0.31224884913763207) * x('1') + 
+0.95000034537479205 * x('2') =g= -1;
+con9014..(-0.80619437871571997) * x('1') + 
+0.59165076162139296 * x('2') =g= -1;
+con9015..(-0.80582248543965096) * x('1') + 
+0.5921571767359266 * x('2') =g= -1;
+con9016..(-0.31284567268354496) * x('1') + 
+0.94980397192430199 * x('2') =g= -1;
+con9017..(-0.8054502740563908) * x('1') + 
+0.59266335808997417 * x('2') =g= -1;
+con9018..(-0.80507774471287419) * x('1') + 
+0.59316930548371449 * x('2') =g= -1;
+con9019..(-0.3134423727302259) * x('1') + 
+0.94960722352836291 * x('2') =g= -1;
+con9020..(-0.80470489755616081) * x('1') + 
+0.59367501871741979 * x('2') =g= -1;
+con9021..(-0.80433173273343661) * x('1') + 
+0.59418049759145375 * x('2') =g= -1;
+con9022..(-0.31403894904212093) * x('1') + 
+0.94941010026464334 * x('2') =g= -1;
+con9023..(-0.80395825039201219) * x('1') + 
+0.59468574190627332 * x('2') =g= -1;
+con9024..(-0.80358445067932338) * x('1') + 
+0.59519075146242828 * x('2') =g= -1;
+con9025..(-0.31463540138372481) * x('1') + 
+0.94921260221096015 * x('2') =g= -1;
+con9026..(-0.80321033374293249) * x('1') + 
+0.59569552606055975 * x('2') =g= -1;
+con9027..(-0.80283589973052549) * x('1') + 
+0.59620006550140336 * x('2') =g= -1;
+con9028..(-0.31523172951958189) * x('1') + 
+0.94901472944527743 * x('2') =g= -1;
+con9029..(-0.80246114878991481) * x('1') + 
+0.59670436958578588 * x('2') =g= -1;
+con9030..(-0.80208608106903712) * x('1') + 
+0.59720843811462843 * x('2') =g= -1;
+con9031..(-0.31582793321428515) * x('1') + 
+0.94881648204570779 * x('2') =g= -1;
+con9032..(-0.80171069671595485) * x('1') + 
+0.59771227088894396 * x('2') =g= -1;
+con9033..(-0.80133499587885482) * x('1') + 
+0.59821586770983914 * x('2') =g= -1;
+con9034..(-0.31642401223247635) * x('1') + 
+0.94861786009051174 * x('2') =g= -1;
+con9035..(-0.80095897870604882) * x('1') + 
+0.5987192283785141 * x('2') =g= -1;
+con9036..(-0.8005826453459739) * x('1') + 
+0.59922235269626134 * x('2') =g= -1;
+con9037..(-0.31701996633884694) * x('1') + 
+0.94841886365809724 * x('2') =g= -1;
+con9038..(-0.80020599594719199) * x('1') + 
+0.59972524046446685 * x('2') =g= -1;
+con9039..(-0.79982903065838939) * x('1') + 
+0.60022789148461042 * x('2') =g= -1;
+con9040..(-0.31761579529813738) * x('1') + 
+0.94821949282702034 * x('2') =g= -1;
+con9041..(-0.79945174962837684) * x('1') + 
+0.60073030555826545 * x('2') =g= -1;
+con9042..(-0.79907415300609086) * x('1') + 
+0.60123248248709793 * x('2') =g= -1;
+con9043..(-0.31821149887513817) * x('1') + 
+0.94801974767598485 * x('2') =g= -1;
+con9044..(-0.79869624094059133) * x('1') + 
+0.60173442207286831 * x('2') =g= -1;
+con9045..(-0.79831801358106314) * x('1') + 
+0.60223612411743077 * x('2') =g= -1;
+con9046..(-0.31880707683468829) * x('1') + 
+0.94781962828384236 * x('2') =g= -1;
+con9047..(-0.79793947107681562) * x('1') + 
+0.60273758842273284 * x('2') =g= -1;
+con9048..(-0.79756061357728303) * x('1') + 
+0.60323881479081543 * x('2') =g= -1;
+con9049..(-0.31940252894167742) * x('1') + 
+0.94761913472959214 * x('2') =g= -1;
+con9050..(-0.79718144123202317) * x('1') + 
+0.60373980302381458 * x('2') =g= -1;
+con9051..(-0.79680195419071809) * x('1') + 
+0.60424055292395984 * x('2') =g= -1;
+con9052..(-0.31999785496104433) * x('1') + 
+0.94741826709238108 * x('2') =g= -1;
+con9053..(-0.79642215260317517) * x('1') + 
+0.60474106429357422 * x('2') =g= -1;
+con9054..(-0.79604203661932471) * x('1') + 
+0.60524133693507565 * x('2') =g= -1;
+con9055..(-0.32059305465777715) * x('1') + 
+0.94721702545150421 * x('2') =g= -1;
+con9056..(-0.79566160638922145) * x('1') + 
+0.60574137065097644 * x('2') =g= -1;
+con9057..(-0.79528086206304471) * x('1') + 
+0.6062411652438825 * x('2') =g= -1;
+con9058..(-0.32118812779691452) * x('1') + 
+0.94701540988640354 * x('2') =g= -1;
+con9059..(-0.79489980379109759) * x('1') + 
+0.60674072051649419 * x('2') =g= -1;
+con9060..(-0.79451843172380687) * x('1') + 
+0.60724003627160683 * x('2') =g= -1;
+con9061..(-0.32178307414354473) * x('1') + 
+0.94681342047666917 * x('2') =g= -1;
+con9062..(-0.7941367460117229) * x('1') + 
+0.60773911231211064 * x('2') =g= -1;
+con9063..(-0.79375474680552094) * x('1') + 
+0.60823794844098911 * x('2') =g= -1;
+con9064..(-0.32237789346280654) * x('1') + 
+0.94661105730203854 * x('2') =g= -1;
+con9065..(-0.7933724342559989) * x('1') + 
+0.60873654446132164 * x('2') =g= -1;
+con9066..(-0.79298980851407852) * x('1') + 
+0.60923490017628268 * x('2') =g= -1;
+con9067..(-0.32297258551988839) * x('1') + 
+0.94640832044239676 * x('2') =g= -1;
+con9068..(-0.7926068697308063) * x('1') + 
+0.60973301538913949 * x('2') =g= -1;
+con9069..(-0.79222361805735109) * x('1') + 
+0.61023088990325647 * x('2') =g= -1;
+con9070..(-0.3235671500800294) * x('1') + 
+0.94620520997777635 * x('2') =g= -1;
+con9071..(-0.79184005364500565) * x('1') + 
+0.61072852352209217 * x('2') =g= -1;
+con9072..(-0.79145617664518586) * x('1') + 
+0.61122591604920062 * x('2') =g= -1;
+con9073..(-0.32416158690851798) * x('1') + 
+0.94600172598835741 * x('2') =g= -1;
+con9074..(-0.79107198720943195) * x('1') + 
+0.61172306728823 * x('2') =g= -1;
+con9075..(-0.79068748548940659) * x('1') + 
+0.61221997704292497 * x('2') =g= -1;
+con9076..(-0.32475589577069447) * x('1') + 
+0.94579786855446757 * x('2') =g= -1;
+con9077..(-0.79030267163689538) * x('1') + 
+0.61271664511712542 * x('2') =g= -1;
+con9078..(-0.78991754580380913) * x('1') + 
+0.6132130713147651 * x('2') =g= -1;
+con9079..(-0.32535007643194869) * x('1') + 
+0.94559363775658156 * x('2') =g= -1;
+con9080..(-0.78953210814217956) * x('1') + 
+0.61370925543987487 * x('2') =g= -1;
+con9081..(-0.7891463588041624) * x('1') + 
+0.61420519729658118 * x('2') =g= -1;
+con9082..(-0.32594412865772121) * x('1') + 
+0.9453890336753219 * x('2') =g= -1;
+con9083..(-0.78876029794203673) * x('1') + 
+0.61470089668910477 * x('2') =g= -1;
+con9084..(-0.78837392570820419) * x('1') + 
+0.61519635342176326 * x('2') =g= -1;
+con9085..(-0.3265380522135039) * x('1') + 
+0.94518405639145808 * x('2') =g= -1;
+con9086..(-0.7879872422551889) * x('1') + 
+0.61569156729897001 * x('2') =g= -1;
+con9087..(-0.78760024773563897) * x('1') + 
+0.61618653812523383 * x('2') =g= -1;
+con9088..(-0.32713184686483865) * x('1') + 
+0.94497870598590727 * x('2') =g= -1;
+con9089..(-0.78721294230232464) * x('1') + 
+0.61668126570515902 * x('2') =g= -1;
+con9090..(-0.78682532610813882) * x('1') + 
+0.61717574984344692 * x('2') =g= -1;
+con9091..(-0.32772551237731889) * x('1') + 
+0.94477298253973363 * x('2') =g= -1;
+con9092..(-0.78643739930609702) * x('1') + 
+0.61766999034489489 * x('2') =g= -1;
+con9093..(-0.78604916204933795) * x('1') + 
+0.61816398701439546 * x('2') =g= -1;
+con9094..(-0.32831904851658822) * x('1') + 
+0.94456688613414885 * x('2') =g= -1;
+con9095..(-0.78566061449112234) * x('1') + 
+0.61865773965693827 * x('2') =g= -1;
+con9096..(-0.78527175678483319) * x('1') + 
+0.61915124807760968 * x('2') =g= -1;
+con9097..(-0.32891245504834182) * x('1') + 
+0.94436041685051186 * x('2') =g= -1;
+con9098..(-0.78488258908397668) * x('1') + 
+0.61964451208159133 * x('2') =g= -1;
+con9099..(-0.78449311154218127) * x('1') + 
+0.62013753147416162 * x('2') =g= -1;
+con9100..(-0.32950573173832642) * x('1') + 
+0.94415357477032835 * x('2') =g= -1;
+con9101..(-0.78410332431319707) * x('1') + 
+0.62063030606069602 * x('2') =g= -1;
+con9102..(-0.78371322755089667) * x('1') + 
+0.62112283564666704 * x('2') =g= -1;
+con9103..(-0.33009887835233914) * x('1') + 
+0.94394635997525178 * x('2') =g= -1;
+con9104..(-0.78332282140927545) * x('1') + 
+0.62161512003764219 * x('2') =g= -1;
+con9105..(-0.78293210604245) * x('1') + 
+0.62210715903928782 * x('2') =g= -1;
+con9106..(-0.33069189465622933) * x('1') + 
+0.94373877254708216 * x('2') =g= -1;
+con9107..(-0.78254108160466007) * x('1') + 
+0.62259895245736541 * x('2') =g= -1;
+con9108..(-0.78214974825026606) * x('1') + 
+0.62309050009773492 * x('2') =g= -1;
+con9109..(-0.33128478041589743) * x('1') + 
+0.94353081256776694 * x('2') =g= -1;
+con9110..(-0.78175810613375185) * x('1') + 
+0.6235818017663517 * x('2') =g= -1;
+con9111..(-0.7813661554097221) * x('1') + 
+0.62407285726926953 * x('2') =g= -1;
+con9112..(-0.33187753539729481) * x('1') + 
+0.94332248011940079 * x('2') =g= -1;
+con9113..(-0.78097389623290314) * x('1') + 
+0.62456366641263927 * x('2') =g= -1;
+con9114..(-0.78058132875814434) * x('1') + 
+0.62505422900270802 * x('2') =g= -1;
+con9115..(-0.33247015936642532) * x('1') + 
+0.94311377528422502 * x('2') =g= -1;
+con9116..(-0.78018845314041541) * x('1') + 
+0.62554454484582145 * x('2') =g= -1;
+con9117..(-0.77979526953480871) * x('1') + 
+0.6260346137484214 * x('2') =g= -1;
+con9118..(-0.33306265208934388) * x('1') + 
+0.94290469814462829 * x('2') =g= -1;
+con9119..(-0.77940177809653721) * x('1') + 
+0.62652443551704851 * x('2') =g= -1;
+con9120..(-0.77900797898093654) * x('1') + 
+0.62701400995833956 * x('2') =g= -1;
+con9121..(-0.33365501333215802) * x('1') + 
+0.94269524878314592 * x('2') =g= -1;
+con9122..(-0.7786138723434628) * x('1') + 
+0.62750333687903026 * x('2') =g= -1;
+con9123..(-0.77821945833969375) * x('1') + 
+0.62799241608595369 * x('2') =g= -1;
+con9124..(-0.33424724286102625) * x('1') + 
+0.94248542728246054 * x('2') =g= -1;
+con9125..(-0.77782473712532918) * x('1') + 
+0.62848124738603983 * x('2') =g= -1;
+con9126..(-0.77742970885618878) * x('1') + 
+0.62896983058631795 * x('2') =g= -1;
+con9127..(-0.33483934044215996) * x('1') + 
+0.94227523372540112 * x('2') =g= -1;
+con9128..(-0.77703437368821515) * x('1') + 
+0.62945816549391376 * x('2') =g= -1;
+con9129..(-0.77663873177747034) * x('1') + 
+0.62994625191605236 * x('2') =g= -1;
+con9130..(-0.33543130584182224) * x('1') + 
+0.94206466819494394 * x('2') =g= -1;
+con9131..(-0.77624278328013885) * x('1') + 
+0.63043408966005587 * x('2') =g= -1;
+con9132..(-0.77584652835252554) * x('1') + 
+0.63092167853334524 * x('2') =g= -1;
+con9133..(-0.33602313882632778) * x('1') + 
+0.94185373077421231 * x('2') =g= -1;
+con9134..(-0.77544996715105596) * x('1') + 
+0.63140901834343977 * x('2') =g= -1;
+con9135..(-0.77505309983227733) * x('1') + 
+0.63189610889795644 * x('2') =g= -1;
+con9136..(-0.33661483916204438) * x('1') + 
+0.94164242154647593 * x('2') =g= -1;
+con9137..(-0.77465592655285742) * x('1') + 
+0.63238295000461064 * x('2') =g= -1;
+con9138..(-0.77425844746958472) * x('1') + 
+0.63286954147121699 * x('2') =g= -1;
+con9139..(-0.33720640661539159) * x('1') + 
+0.94143074059515142 * x('2') =g= -1;
+con9140..(-0.77386066273936782) * x('1') + 
+0.63335588310568836 * x('2') =g= -1;
+con9141..(-0.77346257251923745) * x('1') + 
+0.63384197471603554 * x('2') =g= -1;
+con9142..(-0.33779784095284227) * x('1') + 
+0.94121868800380193 * x('2') =g= -1;
+con9143..(-0.77306417696634355) * x('1') + 
+0.63432781611036881 * x('2') =g= -1;
+con9144..(-0.77266547623795689) * x('1') + 
+0.63481340709689749 * x('2') =g= -1;
+con9145..(-0.33838914194092096) * x('1') + 
+0.94100626385613784 * x('2') =g= -1;
+con9146..(-0.77226647049146913) * x('1') + 
+0.63529874748392889 * x('2') =g= -1;
+con9147..(-0.77186715988439247) * x('1') + 
+0.63578383707986919 * x('2') =g= -1;
+con9148..(-0.33898030934620499) * x('1') + 
+0.94079346823601573 * x('2') =g= -1;
+con9149..(-0.77146754457435895) * x('1') + 
+0.63626867569322432 * x('2') =g= -1;
+con9150..(-0.7710676247191206) * x('1') + 
+0.63675326313259939 * x('2') =g= -1;
+con9151..(-0.33957134293532526) * x('1') + 
+0.94058030122743896 * x('2') =g= -1;
+con9152..(-0.7706674004765508) * x('1') + 
+0.63723759920669754 * x('2') =g= -1;
+con9153..(-0.77026687200464206) * x('1') + 
+0.63772168372432225 * x('2') =g= -1;
+con9154..(-0.34016224247496418) * x('1') + 
+0.94036676291455756 * x('2') =g= -1;
+con9155..(-0.76986603946150678) * x('1') + 
+0.6382055164943764 * x('2') =g= -1;
+con9156..(-0.76946490300537917) * x('1') + 
+0.63868909732586043 * x('2') =g= -1;
+con9157..(-0.3407530077318579) * x('1') + 
+0.9401528533816681 * x('2') =g= -1;
+con9158..(-0.76906346279461169) * x('1') + 
+0.63917242602787627 * x('2') =g= -1;
+con9159..(-0.76866171898767677) * x('1') + 
+0.63965550240962499 * x('2') =g= -1;
+con9160..(-0.34134363847279525) * x('1') + 
+0.9399385727132139 * x('2') =g= -1;
+con9161..(-0.76825967174316789) * x('1') + 
+0.64013832628040623 * x('2') =g= -1;
+con9162..(-0.76785732121979722) * x('1') + 
+0.64062089744962047 * x('2') =g= -1;
+con9163..(-0.34193413446461873) * x('1') + 
+0.93972392099378421 * x('2') =g= -1;
+con9164..(-0.76745466757639702) * x('1') + 
+0.64110321572676732 * x('2') =g= -1;
+con9165..(-0.7670517109719186) * x('1') + 
+0.64158528092144718 * x('2') =g= -1;
+con9166..(-0.34252449547422337) * x('1') + 
+0.93950889830811535 * x('2') =g= -1;
+con9167..(-0.7666484515654346) * x('1') + 
+0.64206709284335817 * x('2') =g= -1;
+con9168..(-0.76624488951613545) * x('1') + 
+0.64254865130230054 * x('2') =g= -1;
+con9169..(-0.34311472126855802) * x('1') + 
+0.93929350474108986 * x('2') =g= -1;
+con9170..(-0.76584102498333151) * x('1') + 
+0.64302995610817404 * x('2') =g= -1;
+con9171..(-0.76543685812645312) * x('1') + 
+0.64351100707097786 * x('2') =g= -1;
+con9172..(-0.34370481161462418) * x('1') + 
+0.93907774037773661 * x('2') =g= -1;
+con9173..(-0.76503238910504934) * x('1') + 
+0.64399180400081213 * x('2') =g= -1;
+con9174..(-0.76462761807878832) * x('1') + 
+0.64447234670787745 * x('2') =g= -1;
+con9175..(-0.34429476627947725) * x('1') + 
+0.93886160530323115 * x('2') =g= -1;
+con9176..(-0.76422254520745836) * x('1') + 
+0.64495263500247391 * x('2') =g= -1;
+con9177..(-0.76381717065096633) * x('1') + 
+0.64543266869500227 * x('2') =g= -1;
+con9178..(-0.34488458503022668) * x('1') + 
+0.93864509960289488 * x('2') =g= -1;
+con9179..(-0.76341149456933832) * x('1') + 
+0.64591244759596422 * x('2') =g= -1;
+con9180..(-0.7630055171227188) * x('1') + 
+0.64639197151596217 * x('2') =g= -1;
+con9181..(-0.3454742676340346) * x('1') + 
+0.93842822336219589 * x('2') =g= -1;
+con9182..(-0.76259923847137245) * x('1') + 
+0.64687124026569831 * x('2') =g= -1;
+con9183..(-0.76219265877568187) * x('1') + 
+0.64735025365597632 * x('2') =g= -1;
+con9184..(-0.34606381385811785) * x('1') + 
+0.93821097666674846 * x('2') =g= -1;
+con9185..(-0.76178577819614868) * x('1') + 
+0.64782901149770078 * x('2') =g= -1;
+con9186..(-0.7613785968933936) * x('1') + 
+0.64830751360187655 * x('2') =g= -1;
+con9187..(-0.34665322346974647) * x('1') + 
+0.937993359602313 * x('2') =g= -1;
+con9188..(-0.76097111502815606) * x('1') + 
+0.64878575977960928 * x('2') =g= -1;
+con9189..(-0.76056333276129384) * x('1') + 
+0.64926374984210644 * x('2') =g= -1;
+con9190..(-0.34724249623624476) * x('1') + 
+0.93777537225479612 * x('2') =g= -1;
+con9191..(-0.76015525025378305) * x('1') + 
+0.64974148360067674 * x('2') =g= -1;
+con9192..(-0.75974686766671928) * x('1') + 
+0.65021896086672881 * x('2') =g= -1;
+con9193..(-0.3478316319249905) * x('1') + 
+0.9375570147102511 * x('2') =g= -1;
+con9194..(-0.75933818516131568) * x('1') + 
+0.65069618145177355 * x('2') =g= -1;
+con9195..(-0.75892920289890398) * x('1') + 
+0.65117314516742342 * x('2') =g= -1;
+con9196..(-0.34842063030341597) * x('1') + 
+0.93733828705487665 * x('2') =g= -1;
+con9197..(-0.75851992104093446) * x('1') + 
+0.65164985182539137 * x('2') =g= -1;
+con9198..(-0.75811033974897601) * x('1') + 
+0.65212630123749205 * x('2') =g= -1;
+con9199..(-0.34900949113900803) * x('1') + 
+0.93711918937501792 * x('2') =g= -1;
+con9200..(-0.75770045918471496) * x('1') + 
+0.65260249321564212 * x('2') =g= -1;
+con9201..(-0.75729027950995575) * x('1') + 
+0.65307842757185985 * x('2') =g= -1;
+con9202..(-0.34959821419930731) * x('1') + 
+0.93689972175716607 * x('2') =g= -1;
+con9203..(-0.7568798008866221) * x('1') + 
+0.65355410411826453 * x('2') =g= -1;
+con9204..(-0.75646902347675404) * x('1') + 
+0.65402952266707814 * x('2') =g= -1;
+con9205..(-0.35018679925190876) * x('1') + 
+0.93667988428795856 * x('2') =g= -1;
+con9206..(-0.7560579474425112) * x('1') + 
+0.65450468303062359 * x('2') =g= -1;
+con9207..(-0.75564657294616966) * x('1') + 
+0.65497958502132658 * x('2') =g= -1;
+con9208..(-0.35077524606446259) * x('1') + 
+0.93645967705417821 * x('2') =g= -1;
+con9209..(-0.75523490015012451) * x('1') + 
+0.65545422845171386 * x('2') =g= -1;
+con9210..(-0.75482292921688787) * x('1') + 
+0.65592861313441508 * x('2') =g= -1;
+con9211..(-0.35136355440467243) * x('1') + 
+0.93623910014275458 * x('2') =g= -1;
+con9212..(-0.75441066030908932) * x('1') + 
+0.65640273888216205 * x('2') =g= -1;
+con9213..(-0.75399809358947734) * x('1') + 
+0.65687660550778781 * x('2') =g= -1;
+con9214..(-0.35195172404029745) * x('1') + 
+0.93601815364076268 * x('2') =g= -1;
+con9215..(-0.7535852292209162) * x('1') + 
+0.65735021282422901 * x('2') =g= -1;
+con9216..(-0.75317206736638953) * x('1') + 
+0.6578235606445233 * x('2') =g= -1;
+con9217..(-0.35253975473915095) * x('1') + 
+0.93579683763542354 * x('2') =g= -1;
+con9218..(-0.75275860818899654) * x('1') + 
+0.65829664878181227 * x('2') =g= -1;
+con9219..(-0.75234485185195565) * x('1') + 
+0.65876947704933853 * x('2') =g= -1;
+con9220..(-0.35312764626910192) * x('1') + 
+0.93557515221410403 * x('2') =g= -1;
+con9221..(-0.75193079851860112) * x('1') + 
+0.65924204526044827 * x('2') =g= -1;
+con9222..(-0.75151644835238485) * x('1') + 
+0.6597143532285904 * x('2') =g= -1;
+con9223..(-0.35371539839807353) * x('1') + 
+0.93535309746431705 * x('2') =g= -1;
+con9224..(-0.75110180151687633) * x('1') + 
+0.66018640076731583 * x('2') =g= -1;
+con9225..(-0.75068685817576219) * x('1') + 
+0.66065818769027829 * x('2') =g= -1;
+con9226..(-0.35430301089404409) * x('1') + 
+0.93513067347372092 * x('2') =g= -1;
+con9227..(-0.75027161849284529) * x('1') + 
+0.66112971381123564 * x('2') =g= -1;
+con9228..(-0.74985608263204662) * x('1') + 
+0.66160097894404701 * x('2') =g= -1;
+con9229..(-0.35489048352504776) * x('1') + 
+0.93490788033011996 * x('2') =g= -1;
+con9230..(-0.74944025075740306) * x('1') + 
+0.66207198290267566 * x('2') =g= -1;
+con9231..(-0.74902412303306887) * x('1') + 
+0.66254272550118765 * x('2') =g= -1;
+con9232..(-0.35547781605917267) * x('1') + 
+0.93468471812146425 * x('2') =g= -1;
+con9233..(-0.74860769962331475) * x('1') + 
+0.66301320655375262 * x('2') =g= -1;
+con9234..(-0.74819098069252843) * x('1') + 
+0.66348342587464271 * x('2') =g= -1;
+con9235..(-0.35606500826456317) * x('1') + 
+0.93446118693584945 * x('2') =g= -1;
+con9236..(-0.74777396640521476) * x('1') + 
+0.66395338327823339 * x('2') =g= -1;
+con9237..(-0.74735665692599407) * x('1') + 
+0.66442307857900451 * x('2') =g= -1;
+con9238..(-0.35665205990941851) * x('1') + 
+0.93423728686151708 * x('2') =g= -1;
+con9239..(-0.74693905241960434) * x('1') + 
+0.66489251159153806 * x('2') =g= -1;
+con9240..(-0.74652115305089917) * x('1') + 
+0.66536168213052072 * x('2') =g= -1;
+con9241..(-0.35723897076199407) * x('1') + 
+0.93401301798685399 * x('2') =g= -1;
+con9242..(-0.74610295898484857) * x('1') + 
+0.66583059001074241 * x('2') =g= -1;
+con9243..(-0.74568447038653951) * x('1') + 
+0.66629923504709654 * x('2') =g= -1;
+con9244..(-0.35782574059060029) * x('1') + 
+0.93378838040039269 * x('2') =g= -1;
+con9245..(-0.74526568742117538) * x('1') + 
+0.66676761705457999 * x('2') =g= -1;
+con9246..(-0.74484661025407473) * x('1') + 
+0.6672357358482941 * x('2') =g= -1;
+con9247..(-0.35841236916360308) * x('1') + 
+0.93356337419081148 * x('2') =g= -1;
+con9248..(-0.74442723905067276) * x('1') + 
+0.66770359124344425 * x('2') =g= -1;
+con9249..(-0.74400757397652129) * x('1') + 
+0.66817118305533885 * x('2') =g= -1;
+con9250..(-0.35899885624942535) * x('1') + 
+0.93333799944693374 * x('2') =g= -1;
+con9251..(-0.74358761519728744) * x('1') + 
+0.66863851109939121 * x('2') =g= -1;
+con9252..(-0.74316736287875418) * x('1') + 
+0.66910557519111891 * x('2') =g= -1;
+con9253..(-0.35958520161654361) * x('1') + 
+0.93311225625772898 * x('2') =g= -1;
+con9254..(-0.74274681718682101) * x('1') + 
+0.66957237514614287 * x('2') =g= -1;
+con9255..(-0.74232597828750313) * x('1') + 
+0.67003891078018851 * x('2') =g= -1;
+con9256..(-0.3601714050334926) * x('1') + 
+0.93288614471231157 * x('2') =g= -1;
+con9257..(-0.7419048463469311) * x('1') + 
+0.67050518190908603 * x('2') =g= -1;
+con9258..(-0.74148342153135094) * x('1') + 
+0.67097118834877023 * x('2') =g= -1;
+con9259..(-0.36075746626886157) * x('1') + 
+0.93265966489994157 * x('2') =g= -1;
+con9260..(-0.74106170400712523) * x('1') + 
+0.67143692991527948 * x('2') =g= -1;
+con9261..(-0.74063969394073137) * x('1') + 
+0.67190240642475729 * x('2') =g= -1;
+con9262..(-0.36134338509129704) * x('1') + 
+0.93243281691002411 * x('2') =g= -1;
+con9263..(-0.7402173914987622) * x('1') + 
+0.67236761769345221 * x('2') =g= -1;
+con9264..(-0.73979479684792626) * x('1') + 
+0.6728325635377167 * x('2') =g= -1;
+con9265..(-0.36192916126950087) * x('1') + 
+0.93220560083211024 * x('2') =g= -1;
+con9266..(-0.73937191015504777) * x('1') + 
+0.67329724377400801 * x('2') =g= -1;
+con9267..(-0.73894873158706564) * x('1') + 
+0.67376165821888889 * x('2') =g= -1;
+con9268..(-0.36251479457223179) * x('1') + 
+0.93197801675589564 * x('2') =g= -1;
+con9269..(-0.73852526131103391) * x('1') + 
+0.67422580668902699 * x('2') =g= -1;
+con9270..(-0.73810149949412251) * x('1') + 
+0.67468968900119397 * x('2') =g= -1;
+con9271..(-0.3631002847683043) * x('1') + 
+0.93175006477122202 * x('2') =g= -1;
+con9272..(-0.73767744630361598) * x('1') + 
+0.67515330497226766 * x('2') =g= -1;
+con9273..(-0.7372531019069134) * x('1') + 
+0.6756166544192308 * x('2') =g= -1;
+con9274..(-0.36368563162658973) * x('1') + 
+0.9315217449680756 * x('2') =g= -1;
+con9275..(-0.73682846647152977) * x('1') + 
+0.67607973715917102 * x('2') =g= -1;
+con9276..(-0.73640354016509479) * x('1') + 
+0.6765425530092809 * x('2') =g= -1;
+con9277..(-0.36427083491601642) * x('1') + 
+0.93129305743658819 * x('2') =g= -1;
+con9278..(-0.73597832315535239) * x('1') + 
+0.67700510178685924 * x('2') =g= -1;
+con9279..(-0.7355528156101615) * x('1') + 
+0.67746738330931011 * x('2') =g= -1;
+con9280..(-0.36485589440556893) * x('1') + 
+0.93106400226703656 * x('2') =g= -1;
+con9281..(-0.73512701769749622) * x('1') + 
+0.67792939739414237 * x('2') =g= -1;
+con9282..(-0.73470092958544486) * x('1') + 
+0.67839114385897115 * x('2') =g= -1;
+con9283..(-0.36544080986428829) * x('1') + 
+0.93083457954984306 * x('2') =g= -1;
+con9284..(-0.73427455144220977) * x('1') + 
+0.67885262252151723 * x('2') =g= -1;
+con9285..(-0.73384788343610885) * x('1') + 
+0.67931383319960681 * x('2') =g= -1;
+con9286..(-0.36602558106127331) * x('1') + 
+0.93060478937557445 * x('2') =g= -1;
+con9287..(-0.73342092573557416) * x('1') + 
+0.67977477571117151 * x('2') =g= -1;
+con9288..(-0.73299367850915154) * x('1') + 
+0.68023544987424944 * x('2') =g= -1;
+con9289..(-0.36661020776567915) * x('1') + 
+0.93037463183494296 * x('2') =g= -1;
+con9290..(-0.73256614192550129) * x('1') + 
+0.68069585550698508 * x('2') =g= -1;
+con9291..(-0.73213831615339875) * x('1') + 
+0.68115599242762737 * x('2') =g= -1;
+con9292..(-0.36719468974671765) * x('1') + 
+0.9301441070188059 * x('2') =g= -1;
+con9293..(-0.73171020136173204) * x('1') + 
+0.68161586045453315 * x('2') =g= -1;
+con9294..(-0.73128179771950452) * x('1') + 
+0.68207545940616399 * x('2') =g= -1;
+con9295..(-0.36777902677365815) * x('1') + 
+0.92991321501816548 * x('2') =g= -1;
+con9296..(-0.73085310539583359) * x('1') + 
+0.682534789101088 * x('2') =g= -1;
+con9297..(-0.73042412455994965) * x('1') + 
+0.68299384935798002 * x('2') =g= -1;
+con9298..(-0.36836321861582771) * x('1') + 
+0.92968195592416869 * x('2') =g= -1;
+con9299..(-0.72999485538119779) * x('1') + 
+0.68345263999562111 * x('2') =g= -1;
+con9300..(-0.72956529802903636) * x('1') + 
+0.68391116083289893 * x('2') =g= -1;
+con9301..(-0.36894726504261005) * x('1') + 
+0.9294503298281076 * x('2') =g= -1;
+con9302..(-0.72913545267303825) * x('1') + 
+0.68436941168880683 * x('2') =g= -1;
+con9303..(-0.72870531948288919) * x('1') + 
+0.68482739238244583 * x('2') =g= -1;
+con9304..(-0.36953116582344625) * x('1') + 
+0.9292183368214193 * x('2') =g= -1;
+con9305..(-0.72827489862838901) * x('1') + 
+0.6852851027330229 * x('2') =g= -1;
+con9306..(-0.72784419027945146) * x('1') + 
+0.68574254255985145 * x('2') =g= -1;
+con9307..(-0.37011492072783597) * x('1') + 
+0.92898597699568519 * x('2') =g= -1;
+con9308..(-0.7274131946061031) * x('1') + 
+0.6861997116823525 * x('2') =g= -1;
+con9309..(-0.72698191177848404) * x('1') + 
+0.68665660992005351 * x('2') =g= -1;
+con9310..(-0.37069852952533433) * x('1') + 
+0.92875325044263224 * x('2') =g= -1;
+con9311..(-0.72655034196684753) * x('1') + 
+0.68711323709258931 * x('2') =g= -1;
+con9312..(-0.72611848534156098) * x('1') + 
+0.687569593019701 * x('2') =g= -1;
+con9313..(-0.37128199198555634) * x('1') + 
+0.92852015725413162 * x('2') =g= -1;
+con9314..(-0.72568634207310456) * x('1') + 
+0.68802567752123689 * x('2') =g= -1;
+con9315..(-0.72525391233207104) * x('1') + 
+0.68848149041715323 * x('2') =g= -1;
+con9316..(-0.37186530787817329) * x('1') + 
+0.92828669752219939 * x('2') =g= -1;
+con9317..(-0.7248211962891673) * x('1') + 
+0.68893703152751229 * x('2') =g= -1;
+con9318..(-0.72438819411521238) * x('1') + 
+0.68939230067248458 * x('2') =g= -1;
+con9319..(-0.37244847697291544) * x('1') + 
+0.92805287133899628 * x('2') =g= -1;
+con9320..(-0.72395490598113843) * x('1') + 
+0.68984729767234787 * x('2') =g= -1;
+con9321..(-0.72352133205799118) * x('1') + 
+0.69030202234748672 * x('2') =g= -1;
+con9322..(-0.37303149903957017) * x('1') + 
+0.92781867879682778 * x('2') =g= -1;
+con9323..(-0.72308747251692806) * x('1') + 
+0.69075647451839406 * x('2') =g= -1;
+con9324..(-0.7226533275292204) * x('1') + 
+0.6912106540056695 * x('2') =g= -1;
+con9325..(-0.37361437384798296) * x('1') + 
+0.92758411998814405 * x('2') =g= -1;
+con9326..(-0.7222188972662511) * x('1') + 
+0.69166456063002124 * x('2') =g= -1;
+con9327..(-0.72178418189951676) * x('1') + 
+0.69211819421226406 * x('2') =g= -1;
+con9328..(-0.37419710116805849) * x('1') + 
+0.92734919500553936 * x('2') =g= -1;
+con9329..(-0.72134918160062589) * x('1') + 
+0.69257155457332154 * x('2') =g= -1;
+con9330..(-0.720913896541299) * x('1') + 
+0.69302464153422516 * x('2') =g= -1;
+con9331..(-0.37477968076975759) * x('1') + 
+0.9271139039417533 * x('2') =g= -1;
+con9332..(-0.72047832689337044) * x('1') + 
+0.69347745491611301 * x('2') =g= -1;
+con9333..(-0.72004247282878542) * x('1') + 
+0.69392999454023307 * x('2') =g= -1;
+con9334..(-0.37536211242310141) * x('1') + 
+0.92687824688966947 * x('2') =g= -1;
+con9335..(-0.71960633451960254) * x('1') + 
+0.69438226022793947 * x('2') =g= -1;
+con9336..(-0.71916991213799175) * x('1') + 
+0.69483425180069613 * x('2') =g= -1;
+con9337..(-0.3759443958981683) * x('1') + 
+0.92664222394231599 * x('2') =g= -1;
+con9338..(-0.71873320585623601) * x('1') + 
+0.6952859690800739 * x('2') =g= -1;
+con9339..(-0.71829621584672954) * x('1') + 
+0.69573741188775273 * x('2') =g= -1;
+con9340..(-0.37652653096509597) * x('1') + 
+0.92640583519286546 * x('2') =g= -1;
+con9341..(-0.71785894228197866) * x('1') + 
+0.69618858004552109 * x('2') =g= -1;
+con9342..(-0.71742138533460209) * x('1') + 
+0.69663947337527488 * x('2') =g= -1;
+con9343..(-0.37710851739408008) * x('1') + 
+0.926169080734635 * x('2') =g= -1;
+con9344..(-0.71698354517733065) * x('1') + 
+0.69709009169901892 * x('2') =g= -1;
+con9345..(-0.71654542198300608) * x('1') + 
+0.69754043483886707 * x('2') =g= -1;
+con9346..(-0.37769035495537534) * x('1') + 
+0.92593196066108585 * x('2') =g= -1;
+con9347..(-0.71610701592458204) * x('1') + 
+0.69799050261704165 * x('2') =g= -1;
+con9348..(-0.71566832717512463) * x('1') + 
+0.698440294855873 * x('2') =g= -1;
+con9349..(-0.37827204341929466) * x('1') + 
+0.92569447506582392 * x('2') =g= -1;
+con9350..(-0.71522935590781067) * x('1') + 
+0.69888981137780104 * x('2') =g= -1;
+con9351..(-0.71479010229592865) * x('1') + 
+0.69933905200537438 * x('2') =g= -1;
+con9352..(-0.3788535825562101) * x('1') + 
+0.92545662404259921 * x('2') =g= -1;
+con9353..(-0.71435056651287898) * x('1') + 
+0.69978801656125034 * x('2') =g= -1;
+con9354..(-0.71391074873217353) * x('1') + 
+0.70023670486819489 * x('2') =g= -1;
+con9355..(-0.37943497213655331) * x('1') + 
+0.92521840768530594 * x('2') =g= -1;
+con9356..(-0.71347064912743474) * x('1') + 
+0.70068511674908363 * x('2') =g= -1;
+con9357..(-0.71303026787239654) * x('1') + 
+0.70113325202690147 * x('2') =g= -1;
+con9358..(-0.38001621193081409) * x('1') + 
+0.92497982608798268 * x('2') =g= -1;
+con9359..(-0.71258960514090464) * x('1') + 
+0.70158111052474148 * x('2') =g= -1;
+con9360..(-0.71214866110691533) * x('1') + 
+0.70202869206580709 * x('2') =g= -1;
+con9361..(-0.38059730170954159) * x('1') + 
+0.92474087934481197 * x('2') =g= -1;
+con9362..(-0.71170743594449537) * x('1') + 
+0.70247599647341119 * x('2') =g= -1;
+con9363..(-0.71126592982782444) * x('1') + 
+0.70292302357097414 * x('2') =g= -1;
+con9364..(-0.38117824124334465) * x('1') + 
+0.92450156755012081 * x('2') =g= -1;
+con9365..(-0.71082414293119134) * x('1') + 
+0.70336977318202787 * x('2') =g= -1;
+con9366..(-0.71038207542899612) * x('1') + 
+0.70381624513021301 * x('2') =g= -1;
+con9367..(-0.38175903030289116) * x('1') + 
+0.92426189079837984 * x('2') =g= -1;
+con9368..(-0.70993972749574941) * x('1') + 
+0.70426243923928034 * x('2') =g= -1;
+con9369..(-0.70949709930607363) * x('1') + 
+0.70470835533308918 * x('2') =g= -1;
+con9370..(-0.38233966865890778) * x('1') + 
+0.92402184918420438 * x('2') =g= -1;
+con9371..(-0.70905419103470069) * x('1') + 
+0.70515399323560968 * x('2') =g= -1;
+con9372..(-0.70861100285647283) * x('1') + 
+0.70559935277092189 * x('2') =g= -1;
+con9373..(-0.38292015608218133) * x('1') + 
+0.92378144280235353 * x('2') =g= -1;
+con9374..(-0.70816753494634455) * x('1') + 
+0.70604443376321424 * x('2') =g= -1;
+con9375..(-0.70772378747937925) * x('1') + 
+0.70648923603678671 * x('2') =g= -1;
+con9376..(-0.38350049234355843) * x('1') + 
+0.92354067174772991 * x('2') =g= -1;
+con9377..(-0.70727976063075082) * x('1') + 
+0.70693375941604875 * x('2') =g= -1;
+con9378..(-0.70683545457574348) * x('1') + 
+0.70737800372552018 * x('2') =g= -1;
+con9379..(-0.38408067721394484) * x('1') + 
+0.92329953611538085 * x('2') =g= -1;
+con9380..(-0.70639086948975249) * x('1') + 
+0.70782196878983028 * x('2') =g= -1;
+con9381..(-0.70594600554828213) * x('1') + 
+0.70826565443371947 * x('2') =g= -1;
+con9382..(-0.38466071046430611) * x('1') + 
+0.9230580360004973 * x('2') =g= -1;
+con9383..(-0.70550086292694736) * x('1') + 
+0.70870906048203774 * x('2') =g= -1;
+con9384..(-0.70505544180147361) * x('1') + 
+0.70915218675974545 * x('2') =g= -1;
+con9385..(-0.38524059186566811) * x('1') + 
+0.92281617149841377 * x('2') =g= -1;
+con9386..(-0.70460974234769524) * x('1') + 
+0.70959503309191396 * x('2') =g= -1;
+con9387..(-0.70416376474155684) * x('1') + 
+0.71003759930372523 * x('2') =g= -1;
+con9388..(-0.38582032118911641) * x('1') + 
+0.92257394270460891 * x('2') =g= -1;
+con9389..(-0.70371750915911335) * x('1') + 
+0.71047988522047067 * x('2') =g= -1;
+con9390..(-0.70327097577652875) * x('1') + 
+0.71092189066755362 * x('2') =g= -1;
+con9391..(-0.38639989820579618) * x('1') + 
+0.92233134971470554 * x('2') =g= -1;
+con9392..(-0.7028241647700767) * x('1') + 
+0.71136361547048788 * x('2') =g= -1;
+con9393..(-0.70237707631614099) * x('1') + 
+0.71180505945489736 * x('2') =g= -1;
+con9394..(-0.38697932268691299) * x('1') + 
+0.92208839262446962 * x('2') =g= -1;
+con9395..(-0.70192971059121489) * x('1') + 
+0.71224622244651692 * x('2') =g= -1;
+con9396..(-0.7014820677719007) * x('1') + 
+0.71268710427119319 * x('2') =g= -1;
+con9397..(-0.38755859440373325) * x('1') + 
+0.9218450715298111 * x('2') =g= -1;
+con9398..(-0.70103414803490982) * x('1') + 
+0.71312770475488341 * x('2') =g= -1;
+con9399..(-0.70058595155706427) * x('1') + 
+0.71356802372365513 * x('2') =g= -1;
+con9400..(-0.38813771312758288) * x('1') + 
+0.92160138652678369 * x('2') =g= -1;
+con9401..(-0.70013747851529395) * x('1') + 
+0.71400806100368797 * x('2') =g= -1;
+con9402..(-0.69968872908663837) * x('1') + 
+0.71444781642127286 * x('2') =g= -1;
+con9403..(-0.38871667862984827) * x('1') + 
+0.92135733771158479 * x('2') =g= -1;
+con9404..(-0.69923970344824637) * x('1') + 
+0.71488728980281113 * x('2') =g= -1;
+con9405..(-0.69879040177737617) * x('1') + 
+0.71532648097481555 * x('2') =g= -1;
+con9406..(-0.38929549068197727) * x('1') + 
+0.92111292518055488 * x('2') =g= -1;
+con9407..(-0.6983408242513941) * x('1') + 
+0.71576538976391102 * x('2') =g= -1;
+con9408..(-0.69789097104777553) * x('1') + 
+0.71620401599683381 * x('2') =g= -1;
+con9409..(-0.3898741490554764) * x('1') + 
+0.92086814903017911 * x('2') =g= -1;
+con9410..(-0.69744084234410542) * x('1') + 
+0.71664235950043076 * x('2') =g= -1;
+con9411..(-0.69699043831807639) * x('1') + 
+0.71708042010166173 * x('2') =g= -1;
+con9412..(-0.39045265352191466) * x('1') + 
+0.92062300935708508 * x('2') =g= -1;
+con9413..(-0.696539759147491) * x('1') + 
+0.71751819762759683 * x('2') =g= -1;
+con9414..(-0.69608880501025916) * x('1') + 
+0.7179556919054193 * x('2') =g= -1;
+con9415..(-0.39103100385292106) * x('1') + 
+0.9203775062580446 * x('2') =g= -1;
+con9416..(-0.69563757608440047) * x('1') + 
+0.71839290276242296 * x('2') =g= -1;
+con9417..(-0.6951860725480421) * x('1') + 
+0.71882983002601408 * x('2') =g= -1;
+con9418..(-0.39160919982018516) * x('1') + 
+0.92013163982997248 * x('2') =g= -1;
+con9419..(-0.69473429457941971) * x('1') + 
+0.71926647352371154 * x('2') =g= -1;
+con9420..(-0.6942822423568783) * x('1') + 
+0.71970283308314476 * x('2') =g= -1;
+con9421..(-0.39218724119545834) * x('1') + 
+0.91988541016992731 * x('2') =g= -1;
+con9422..(-0.69382991605886968) * x('1') + 
+0.72013890853205675 * x('2') =g= -1;
+con9423..(-0.69337731586395512) * x('1') + 
+0.72057469969830124 * x('2') =g= -1;
+con9424..(-0.392765127750552) * x('1') + 
+0.91963881737511088 * x('2') =g= -1;
+con9425..(-0.69292444195080305) * x('1') + 
+0.7210102064098457 * x('2') =g= -1;
+con9426..(-0.69247129449819078) * x('1') + 
+0.72144542849476834 * x('2') =g= -1;
+con9427..(-0.39334285925734003) * x('1') + 
+0.91939186154286812 * x('2') =g= -1;
+con9428..(-0.692017873685003) * x('1') + 
+0.72188036578126102 * x('2') =g= -1;
+con9429..(-0.69156417969023221) * x('1') + 
+0.72231501809762766 * x('2') =g= -1;
+con9430..(-0.39392043548775529) * x('1') + 
+0.91914454277068802 * x('2') =g= -1;
+con9431..(-0.69111021269297934) * x('1') + 
+0.72274938527228427 * x('2') =g= -1;
+con9432..(-0.69065597287245317) * x('1') + 
+0.72318346713375936 * x('2') =g= -1;
+con9433..(-0.39449785621379424) * x('1') + 
+0.91889686115620206 * x('2') =g= -1;
+con9434..(-0.69020146040796937) * x('1') + 
+0.72361726351069477 * x('2') =g= -1;
+con9435..(-0.68974667547895141) * x('1') + 
+0.72405077423184494 * x('2') =g= -1;
+con9436..(-0.39507512120751342) * x('1') + 
+0.91864881679718535 * x('2') =g= -1;
+con9437..(-0.68929161826493124) * x('1') + 
+0.72448399912607608 * x('2') =g= -1;
+con9438..(-0.68883628894554738) * x('1') + 
+0.72491693802236845 * x('2') =g= -1;
+con9439..(-0.39565223024103113) * x('1') + 
+0.91840040979155602 * x('2') =g= -1;
+con9440..(-0.68838068770054561) * x('1') + 
+0.72534959074981487 * x('2') =g= -1;
+con9441..(-0.68792481470977984) * x('1') + 
+0.72578195713762061 * x('2') =g= -1;
+con9442..(-0.3962291830865276) * x('1') + 
+0.9181516402373755 * x('2') =g= -1;
+con9443..(-0.68746867015321123) * x('1') + 
+0.72621403701510423 * x('2') =g= -1;
+con9444..(-0.6870122542109075) * x('1') + 
+0.72664583021169771 * x('2') =g= -1;
+con9445..(-0.39680597951624447) * x('1') + 
+0.91790250823284814 * x('2') =g= -1;
+con9446..(-0.68655556706304344) * x('1') + 
+0.72707733655694617 * x('2') =g= -1;
+con9447..(-0.68609860888990193) * x('1') + 
+0.72750855588050745 * x('2') =g= -1;
+con9448..(-0.39738261930248464) * x('1') + 
+0.91765301387632159 * x('2') =g= -1;
+con9449..(-0.68564137987187179) * x('1') + 
+0.72793948801215302 * x('2') =g= -1;
+con9450..(-0.68518388018944865) * x('1') + 
+0.72837013278176865 * x('2') =g= -1;
+con9451..(-0.39795910221761333) * x('1') + 
+0.91740315726628674 * x('2') =g= -1;
+con9452..(-0.68472611002323669) * x('1') + 
+0.7288004900193511 * x('2') =g= -1;
+con9453..(-0.68426806955394504) * x('1') + 
+0.72923055955501304 * x('2') =g= -1;
+con9454..(-0.398535428034058) * x('1') + 
+0.9171529385013768 * x('2') =g= -1;
+con9455..(-0.68380975896238982) * x('1') + 
+0.72966034121898005 * x('2') =g= -1;
+con9456..(-0.68335117842949467) * x('1') + 
+0.73008983484159051 * x('2') =g= -1;
+con9457..(-0.39911159652430761) * x('1') + 
+0.91690235768036843 * x('2') =g= -1;
+con9458..(-0.68289232813628908) * x('1') + 
+0.7305190402532975 * x('2') =g= -1;
+con9459..(-0.68243320826390907) * x('1') + 
+0.73094795728466744 * x('2') =g= -1;
+con9460..(-0.39968760746091314) * x('1') + 
+0.91665141490218138 * x('2') =g= -1;
+con9461..(-0.68197381899359677) * x('1') + 
+0.73137658576638132 * x('2') =g= -1;
+con9462..(-0.6815141605067021) * x('1') + 
+0.73180492552923226 * x('2') =g= -1;
+con9463..(-0.40026346061648838) * x('1') + 
+0.91640011026587775 * x('2') =g= -1;
+con9464..(-0.68105423298467971) * x('1') + 
+0.73223297640412888 * x('2') =g= -1;
+con9465..(-0.68059403660909079) * x('1') + 
+0.73266073822209388 * x('2') =g= -1;
+con9466..(-0.4008391557637091) * x('1') + 
+0.91614844387066274 * x('2') =g= -1;
+con9467..(-0.68013357156160337) * x('1') + 
+0.73308821081426301 * x('2') =g= -1;
+con9468..(-0.6796728380239907) * x('1') + 
+0.73351539401188715 * x('2') =g= -1;
+con9469..(-0.40141469267531293) * x('1') + 
+0.91589641581588477 * x('2') =g= -1;
+con9470..(-0.67921183617813219) * x('1') + 
+0.73394228764633129 * x('2') =g= -1;
+con9471..(-0.67875056620601348) * x('1') + 
+0.73436889154907437 * x('2') =g= -1;
+con9472..(-0.40199007112410046) * x('1') + 
+0.91564402620103447 * x('2') =g= -1;
+con9473..(-0.67828902828972626) * x('1') + 
+0.73479520555170941 * x('2') =g= -1;
+con9474..(-0.67782722261146744) * x('1') + 
+0.73522122948594471 * x('2') =g= -1;
+con9475..(-0.40256529088293513) * x('1') + 
+0.91539127512574525 * x('2') =g= -1;
+con9476..(-0.67736514935353942) * x('1') + 
+0.7356469631836029 * x('2') =g= -1;
+con9477..(-0.67690280869835129) * x('1') + 
+0.73607240647662042 * x('2') =g= -1;
+con9478..(-0.40314035172474255) * x('1') + 
+0.91513816268979342 * x('2') =g= -1;
+con9479..(-0.67644020082841683) * x('1') + 
+0.73649755919704929 * x('2') =g= -1;
+con9480..(-0.67597732592635495) * x('1') + 
+0.73692242117705609 * x('2') =g= -1;
+con9481..(-0.40371525342251091) * x('1') + 
+0.91488468899309805 * x('2') =g= -1;
+con9482..(-0.67551418417489117) * x('1') + 
+0.73734699224892153 * x('2') =g= -1;
+con9483..(-0.6750507757568559) * x('1') + 
+0.73777127224504135 * x('2') =g= -1;
+con9484..(-0.40428999574929242) * x('1') + 
+0.91463085413572021 * x('2') =g= -1;
+con9485..(-0.67458710085518436) * x('1') + 
+0.73819526099792676 * x('2') =g= -1;
+con9486..(-0.67412315965291703) * x('1') + 
+0.73861895834020386 * x('2') =g= -1;
+con9487..(-0.40486457847820001) * x('1') + 
+0.91437665821786451 * x('2') =g= -1;
+con9488..(-0.67365895233320017) * x('1') + 
+0.73904236410461277 * x('2') =g= -1;
+con9489..(-0.67319447907928454) * x('1') + 
+0.73946547812400998 * x('2') =g= -1;
+con9490..(-0.40543900138241173) * x('1') + 
+0.91412210133987715 * x('2') =g= -1;
+con9491..(-0.67272974007452568) * x('1') + 
+0.73988830023136676 * x('2') =g= -1;
+con9492..(-0.67226473550238453) * x('1') + 
+0.74031083025976929 * x('2') =g= -1;
+con9493..(-0.4060132642351677) * x('1') + 
+0.9138671836022475 * x('2') =g= -1;
+con9494..(-0.67179946554642722) * x('1') + 
+0.7407330680424189 * x('2') =g= -1;
+con9495..(-0.67133393039032363) * x('1') + 
+0.7411550134126329 * x('2') =g= -1;
+con9496..(-0.4065873668097712) * x('1') + 
+0.91361190510560697 * x('2') =g= -1;
+con9497..(-0.67086813021784863) * x('1') + 
+0.74157666620384421 * x('2') =g= -1;
+con9498..(-0.67040206521288248) * x('1') + 
+0.74199802624959998 * x('2') =g= -1;
+con9499..(-0.4071613088795894) * x('1') + 
+0.91335626595072938 * x('2') =g= -1;
+con9500..(-0.66993573555940888) * x('1') + 
+0.74241909338356449 * x('2') =g= -1;
+con9501..(-0.66946914144151703) * x('1') + 
+0.74283986743951624 * x('2') =g= -1;
+con9502..(-0.40773509021805204) * x('1') + 
+0.91310026623853147 * x('2') =g= -1;
+con9503..(-0.66900228304339937) * x('1') + 
+0.74326034825135079 * x('2') =g= -1;
+con9504..(-0.66853516054935413) * x('1') + 
+0.74368053565307812 * x('2') =g= -1;
+con9505..(-0.40830871059865348) * x('1') + 
+0.91284390607007126 * x('2') =g= -1;
+con9506..(-0.6680677741437826) * x('1') + 
+0.74410042947882504 * x('2') =g= -1;
+con9507..(-0.66760012401119029) * x('1') + 
+0.74452002956283403 * x('2') =g= -1;
+con9508..(-0.40888216979494957) * x('1') + 
+0.91258718554655038 * x('2') =g= -1;
+con9509..(-0.66713221033618797) * x('1') + 
+0.74493933573946292 * x('2') =g= -1;
+con9510..(-0.66666403330348878) * x('1') + 
+0.74535834784318666 * x('2') =g= -1;
+con9511..(-0.40945546758056195) * x('1') + 
+0.91233010476931176 * x('2') =g= -1;
+con9512..(-0.66619559309791143) * x('1') + 
+0.74577706570859503 * x('2') =g= -1;
+con9513..(-0.66572688990437723) * x('1') + 
+0.74619548917039513 * x('2') =g= -1;
+con9514..(-0.41002860372917488) * x('1') + 
+0.91207266383984087 * x('2') =g= -1;
+con9515..(-0.66525792390791239) * x('1') + 
+0.7466136180634092 * x('2') =g= -1;
+con9516..(-0.66478869529364615) * x('1') + 
+0.74703145222257661 * x('2') =g= -1;
+con9517..(-0.41060157801453634) * x('1') + 
+0.91181486285976532 * x('2') =g= -1;
+con9518..(-0.66431920424681112) * x('1') + 
+0.74744899148295307 * x('2') =g= -1;
+con9519..(-0.66384945095274472) * x('1') + 
+0.74786623567970989 * x('2') =g= -1;
+con9520..(-0.41117439021045898) * x('1') + 
+0.91155670193085481 * x('2') =g= -1;
+con9521..(-0.66337943559688661) * x('1') + 
+0.74828318464813581 * x('2') =g= -1;
+con9522..(-0.6629091583647807) * x('1') + 
+0.74869983822363562 * x('2') =g= -1;
+con9523..(-0.41174704009081875) * x('1') + 
+0.91129818115502115 * x('2') =g= -1;
+con9524..(-0.66243861944207438) * x('1') + 
+0.74911619624173031 * x('2') =g= -1;
+con9525..(-0.66196781901451762) * x('1') + 
+0.74953225853805838 * x('2') =g= -1;
+con9526..(-0.41231952742955608) * x('1') + 
+0.91103930063431815 * x('2') =g= -1;
+con9527..(-0.66149675726796409) * x('1') + 
+0.74994802494837476 * x('2') =g= -1;
+con9528..(-0.66102543438837025) * x('1') + 
+0.7503634953085514 * x('2') =g= -1;
+con9529..(-0.41289185200067474) * x('1') + 
+0.91078006047094207 * x('2') =g= -1;
+con9530..(-0.66055385056179616) * x('1') + 
+0.75077866945457661 * x('2') =g= -1;
+con9531..(-0.66008200597440503) * x('1') + 
+0.75119354722255538 * x('2') =g= -1;
+con9532..(-0.41346401357824397) * x('1') + 
+0.91052046076723048 * x('2') =g= -1;
+con9533..(-0.65960990081246196) * x('1') + 
+0.75160812844871105 * x('2') =g= -1;
+con9534..(-0.65913753526233632) * x('1') + 
+0.75202241296938244 * x('2') =g= -1;
+con9535..(-0.41403601193639661) * x('1') + 
+0.91026050162566319 * x('2') =g= -1;
+con9536..(-0.65866490951049916) * x('1') + 
+0.75243640062102646 * x('2') =g= -1;
+con9537..(-0.6581920237435247) * x('1') + 
+0.75285009124021718 * x('2') =g= -1;
+con9538..(-0.41460784684932983) * x('1') + 
+0.91000018314886211 * x('2') =g= -1;
+con9539..(-0.65771887814808938) * x('1') + 
+0.7532634846636459 * x('2') =g= -1;
+con9540..(-0.65724547291097291) * x('1') + 
+0.75367658072812083 * x('2') =g= -1;
+con9541..(-0.41517951809130604) * x('1') + 
+0.90973950543959059 * x('2') =g= -1;
+con9542..(-0.65677180821905745) * x('1') + 
+0.75408937927056741 * x('2') =g= -1;
+con9543..(-0.65629788425932667) * x('1') + 
+0.75450188012802955 * x('2') =g= -1;
+con9544..(-0.41575102543665177) * x('1') + 
+0.90947846860075388 * x('2') =g= -1;
+con9545..(-0.65582370121886779) * x('1') + 
+0.75491408313766761 * x('2') =g= -1;
+con9546..(-0.65534925928486942) * x('1') + 
+0.75532598813676 * x('2') =g= -1;
+con9547..(-0.41632236865975769) * x('1') + 
+0.90921707273539953 * x('2') =g= -1;
+con9548..(-0.65487455864462252) * x('1') + 
+0.75573759496270321 * x('2') =g= -1;
+con9549..(-0.6543995994855204) * x('1') + 
+0.75614890345301067 * x('2') =g= -1;
+con9550..(-0.41689354753508062) * x('1') + 
+0.90895531794671591 * x('2') =g= -1;
+con9551..(-0.65392438199505887) * x('1') + 
+0.75655991344531359 * x('2') =g= -1;
+con9552..(-0.65344890636083475) * x('1') + 
+0.75697062477736154 * x('2') =g= -1;
+con9553..(-0.4174645618371407) * x('1') + 
+0.90869320433803402 * x('2') =g= -1;
+con9554..(-0.65297317277054689) * x('1') + 
+0.757381037287022 * x('2') =g= -1;
+con9555..(-0.65249718141199708) * x('1') + 
+0.75779115081227977 * x('2') =g= -1;
+con9556..(-0.41803541134052424) * x('1') + 
+0.90843073201282587 * x('2') =g= -1;
+con9557..(-0.65202093247308768) * x('1') + 
+0.75820096519123814 * x('2') =g= -1;
+con9558..(-0.65154442614182284) * x('1') + 
+0.75861048026211897 * x('2') =g= -1;
+con9559..(-0.41860609581988256) * x('1') + 
+0.90816790107470502 * x('2') =g= -1;
+con9560..(-0.65106766260630888) * x('1') + 
+0.75901969586326123 * x('2') =g= -1;
+con9561..(-0.65059064205475381) * x('1') + 
+0.75942861183312238 * x('2') =g= -1;
+con9562..(-0.41917661504993098) * x('1') + 
+0.90790471162742736 * x('2') =g= -1;
+con9563..(-0.65011336467546632) * x('1') + 
+0.75983722801027864 * x('2') =g= -1;
+con9564..(-0.64963583065685648) * x('1') + 
+0.76024554423342472 * x('2') =g= -1;
+con9565..(-0.41974696880545165) * x('1') + 
+0.90764116377488913 * x('2') =g= -1;
+con9566..(-0.64915804018743661) * x('1') + 
+0.76065356034137277 * x('2') =g= -1;
+con9567..(-0.64867999345581961) * x('1') + 
+0.76106127617305419 * x('2') =g= -1;
+con9568..(-0.42031715686129034) * x('1') + 
+0.90737725762112942 * x('2') =g= -1;
+con9569..(-0.64820169065071909) * x('1') + 
+0.76146869156751906 * x('2') =g= -1;
+con9570..(-0.64772313196095077) * x('1') + 
+0.76187580636393537 * x('2') =g= -1;
+con9571..(-0.42088717899236) * x('1') + 
+0.90711299327032746 * x('2') =g= -1;
+con9572..(-0.64724431757543111) * x('1') + 
+0.76228262040159001 * x('2') =g= -1;
+con9573..(-0.646765247683177) * x('1') + 
+0.76268913351988876 * x('2') =g= -1;
+con9574..(-0.42145703497363735) * x('1') + 
+0.90684837082680492 * x('2') =g= -1;
+con9575..(-0.64628592247330607) * x('1') + 
+0.76309534555835667 * x('2') =g= -1;
+con9576..(-0.64580634213503807) * x('1') + 
+0.76350125635663635 * x('2') =g= -1;
+con9577..(-0.42202672458016594) * x('1') + 
+0.90658339039502411 * x('2') =g= -1;
+con9578..(-0.64532650685769199) * x('1') + 
+0.76390686575449052 * x('2') =g= -1;
+con9579..(-0.64484641683068766) * x('1') + 
+0.7643121735918007 * x('2') =g= -1;
+con9580..(-0.422596247587055) * x('1') + 
+0.90631805207958893 * x('2') =g= -1;
+con9581..(-0.64436607224354647) * x('1') + 
+0.7647171797085669 * x('2') =g= -1;
+con9582..(-0.64388547328588974) * x('1') + 
+0.76512188394490832 * x('2') =g= -1;
+con9583..(-0.42316560376947876) * x('1') + 
+0.9060523559852447 * x('2') =g= -1;
+con9584..(-0.64340462014743882) * x('1') + 
+0.76552628614106377 * x('2') =g= -1;
+con9585..(-0.64292351301801554) * x('1') + 
+0.76593038613739151 * x('2') =g= -1;
+con9586..(-0.42373479290267724) * x('1') + 
+0.90578630221687784 * x('2') =g= -1;
+con9587..(-0.64244215208754274) * x('1') + 
+0.76633418377436791 * x('2') =g= -1;
+con9588..(-0.64196053754604243) * x('1') + 
+0.76673767889258981 * x('2') =g= -1;
+con9589..(-0.42430381476195766) * x('1') + 
+0.9055198908795159 * x('2') =g= -1;
+con9590..(-0.64147866958363708) * x('1') + 
+0.76714087133277353 * x('2') =g= -1;
+con9591..(-0.64099654839054954) * x('1') + 
+0.76754376093575405 * x('2') =g= -1;
+con9592..(-0.42487266912269167) * x('1') + 
+0.90525312207832775 * x('2') =g= -1;
+con9593..(-0.64051417415710266) * x('1') + 
+0.76794634754248603 * x('2') =g= -1;
+con9594..(-0.64003154707371879) * x('1') + 
+0.76834863099404438 * x('2') =g= -1;
+con9595..(-0.42544135576031816) * x('1') + 
+0.90498599591862328 * x('2') =g= -1;
+con9596..(-0.63954866733091964) * x('1') + 
+0.76875061113162357 * x('2') =g= -1;
+con9597..(-0.63906553511932795) * x('1') + 
+0.76915228779653699 * x('2') =g= -1;
+con9598..(-0.42600987445034194) * x('1') + 
+0.90471851250585333 * x('2') =g= -1;
+con9599..(-0.63858215062966495) * x('1') + 
+0.76955366083021914 * x('2') =g= -1;
+con9600..(-0.63809851405275209) * x('1') + 
+0.7699547300742231 * x('2') =g= -1;
+con9601..(-0.42657822496833447) * x('1') + 
+0.9044506719456098 * x('2') =g= -1;
+con9602..(-0.63761462557951043) * x('1') + 
+0.7703554953702223 * x('2') =g= -1;
+con9603..(-0.63713048540096007) * x('1') + 
+0.77075595656001061 * x('2') =g= -1;
+con9604..(-0.42714640708993279) * x('1') + 
+0.90418247434362575 * x('2') =g= -1;
+con9605..(-0.63664609370822056) * x('1') + 
+0.7711561134855015 * x('2') =g= -1;
+con9606..(-0.6361614506925104) * x('1') + 
+0.771555965988729 * x('2') =g= -1;
+con9607..(-0.42771442059084047) * x('1') + 
+0.90391391980577529 * x('2') =g= -1;
+con9608..(-0.63567655654514832) * x('1') + 
+0.77195551391184636 * x('2') =g= -1;
+con9609..(-0.63519141145755098) * x('1') + 
+0.77235475709712842 * x('2') =g= -1;
+con9610..(-0.42828226524682872) * x('1') + 
+0.90364500843807305 * x('2') =g= -1;
+con9611..(-0.63470601562123496) * x('1') + 
+0.77275369538696914 * x('2') =g= -1;
+con9612..(-0.63422036922781588) * x('1') + 
+0.77315232862388306 * x('2') =g= -1;
+con9613..(-0.42884994083373396) * x('1') + 
+0.90337574034667489 * x('2') =g= -1;
+con9614..(-0.63373447246900771) * x('1') + 
+0.77355065665050571 * x('2') =g= -1;
+con9615..(-0.63324832553662302) * x('1') + 
+0.77394867930959299 * x('2') =g= -1;
+con9616..(-0.42941744712746044) * x('1') + 
+0.90310611563787713 * x('2') =g= -1;
+con9617..(-0.6327619286225743) * x('1') + 
+0.77434639644402059 * x('2') =g= -1;
+con9618..(-0.63227528191887128) * x('1') + 
+0.77474380789678587 * x('2') =g= -1;
+con9619..(-0.42998478390397887) * x('1') + 
+0.90283613441811716 * x('2') =g= -1;
+con9620..(-0.63178838561762396) * x('1') + 
+0.77514091351100578 * x('2') =g= -1;
+con9621..(-0.63130123991103893) * x('1') + 
+0.77553771312991915 * x('2') =g= -1;
+con9622..(-0.43055195093932774) * x('1') + 
+0.90256579679397264 * x('2') =g= -1;
+con9623..(-0.63081384499142323) * x('1') + 
+0.7759342065968845 * x('2') =g= -1;
+con9624..(-0.63032620105118087) * x('1') + 
+0.77633039375538193 * x('2') =g= -1;
+con9625..(-0.43111894800961004) * x('1') + 
+0.90229510287216297 * x('2') =g= -1;
+con9626..(-0.62983830828281417) * x('1') + 
+0.77672627444901254 * x('2') =g= -1;
+con9627..(-0.62935016687892487) * x('1') + 
+0.77712184852149757 * x('2') =g= -1;
+con9628..(-0.4316857748909983) * x('1') + 
+0.90202405275954722 * x('2') =g= -1;
+con9629..(-0.62886177703221136) * x('1') + 
+0.77751711581668048 * x('2') =g= -1;
+con9630..(-0.62837313893547164) * x('1') + 
+0.77791207617852443 * x('2') =g= -1;
+con9631..(-0.4322524313597319) * x('1') + 
+0.90175264656312504 * x('2') =g= -1;
+con9632..(-0.62788425278160009) * x('1') + 
+0.77830672945111534 * x('2') =g= -1;
+con9633..(-0.62739511876359066) * x('1') + 
+0.77870107547865886 * x('2') =g= -1;
+con9634..(-0.43281891719211618) * x('1') + 
+0.90148088439003748 * x('2') =g= -1;
+con9635..(-0.6269057370745339) * x('1') + 
+0.77909511410548282 * x('2') =g= -1;
+con9636..(-0.62641610790761826) * x('1') + 
+0.77948884517603667 * x('2') =g= -1;
+con9637..(-0.43338523216452512) * x('1') + 
+0.9012087663475653 * x('2') =g= -1;
+con9638..(-0.62592623145613036) * x('1') + 
+0.77988226853489029 * x('2') =g= -1;
+con9639..(-0.62543610791345483) * x('1') + 
+0.78027538402673535 * x('2') =g= -1;
+con9640..(-0.43395137605340017) * x('1') + 
+0.90093629254313012 * x('2') =g= -1;
+con9641..(-0.6249457374730728) * x('1') + 
+0.78066819149638544 * x('2') =g= -1;
+con9642..(-0.6244551203285631) * x('1') + 
+0.78106069078877594 * x('2') =g= -1;
+con9643..(-0.43451734863524938) * x('1') + 
+0.90066346308429379 * x('2') =g= -1;
+con9644..(-0.62396425667360267) * x('1') + 
+0.78145288174896288 * x('2') =g= -1;
+con9645..(-0.62347314670196508) * x('1') + 
+0.78184476422212479 * x('2') =g= -1;
+con9646..(-0.43508314968664863) * x('1') + 
+0.90039027807875915 * x('2') =g= -1;
+con9647..(-0.62298179060752101) * x('1') + 
+0.7822363380535623 * x('2') =g= -1;
+con9648..(-0.62249018858423877) * x('1') + 
+0.78262760308869683 * x('2') =g= -1;
+con9649..(-0.43564877898424209) * x('1') + 
+0.90011673763436872 * x('2') =g= -1;
+con9650..(-0.62199834082618422) * x('1') + 
+0.78301855917307217 * x('2') =g= -1;
+con9651..(-0.62150624752751915) * x('1') + 
+0.78340920615235443 * x('2') =g= -1;
+con9652..(-0.43621423630474188) * x('1') + 
+0.89984284185910535 * x('2') =g= -1;
+con9653..(-0.62101390888250241) * x('1') + 
+0.78379954387233164 * x('2') =g= -1;
+con9654..(-0.62052132508549063) * x('1') + 
+0.78418957217891316 * x('2') =g= -1;
+con9655..(-0.43677952142492676) * x('1') + 
+0.89956859086109264 * x('2') =g= -1;
+con9656..(-0.62002849633093637) * x('1') + 
+0.7845792909181315 * x('2') =g= -1;
+con9657..(-0.6195354228133888) * x('1') + 
+0.78496869993614116 * x('2') =g= -1;
+con9658..(-0.43734463412164476) * x('1') + 
+0.89929398474859412 * x('2') =g= -1;
+con9659..(-0.61904210472749432) * x('1') + 
+0.78535779907921832 * x('2') =g= -1;
+con9660..(-0.61854854226799616) * x('1') + 
+0.78574658819376175 * x('2') =g= -1;
+con9661..(-0.43790957417181181) * x('1') + 
+0.89901902363001329 * x('2') =g= -1;
+con9662..(-0.6180547356297329) * x('1') + 
+0.78613506712629289 * x('2') =g= -1;
+con9663..(-0.61756068500763972) * x('1') + 
+0.78652323572345573 * x('2') =g= -1;
+con9664..(-0.43847434135241131) * x('1') + 
+0.89874370761389433 * x('2') =g= -1;
+con9665..(-0.61706639059674939) * x('1') + 
+0.78691109383201607 * x('2') =g= -1;
+con9666..(-0.6165718525921895) * x('1') + 
+0.78729864129886273 * x('2') =g= -1;
+con9667..(-0.43903893544049488) * x('1') + 
+0.89846803680892118 * x('2') =g= -1;
+con9668..(-0.61607707118918364) * x('1') + 
+0.78768587797100797 * x('2') =g= -1;
+con9669..(-0.61558204658305349) * x('1') + 
+0.78807280369558452 * x('2') =g= -1;
+con9670..(-0.43960335621318319) * x('1') + 
+0.8981920113239179 * x('2') =g= -1;
+con9671..(-0.61508677896921482) * x('1') + 
+0.78845941831985 * x('2') =g= -1;
+con9672..(-0.6145912685431798) * x('1') + 
+0.78884572169118405 * x('2') =g= -1;
+con9673..(-0.44016760344766553) * x('1') + 
+0.89791563126784835 * x('2') =g= -1;
+con9674..(-0.6140955155005563) * x('1') + 
+0.78923171365708944 * x('2') =g= -1;
+con9675..(-0.61359952003704887) * x('1') + 
+0.78961739406519105 * x('2') =g= -1;
+con9676..(-0.4407316769211983) * x('1') + 
+0.89763889674981689 * x('2') =g= -1;
+con9677..(-0.61310328234845679) * x('1') + 
+0.79000276276323778 * x('2') =g= -1;
+con9678..(-0.61260680263067457) * x('1') + 
+0.79038781959910143 * x('2') =g= -1;
+con9679..(-0.44129557641110773) * x('1') + 
+0.89736180787906739 * x('2') =g= -1;
+con9680..(-0.61211008107969433) * x('1') + 
+0.79077256442077581 * x('2') =g= -1;
+con9681..(-0.61161311789160167) * x('1') + 
+0.7911569970763791 * x('2') =g= -1;
+con9682..(-0.44185930169478882) * x('1') + 
+0.89708436476498332 * x('2') =g= -1;
+con9683..(-0.61111591326257786) * x('1') + 
+0.79154111741415267 * x('2') =g= -1;
+con9684..(-0.61061846738890058) * x('1') + 
+0.79192492528246017 * x('2') =g= -1;
+con9685..(-0.44242285254970443) * x('1') + 
+0.89680656751708865 * x('2') =g= -1;
+con9686..(-0.61012078046694151) * x('1') + 
+0.79230842052978978 * x('2') =g= -1;
+con9687..(-0.60962285269316774) * x('1') + 
+0.79269160300475261 * x('2') =g= -1;
+con9688..(-0.44298622875338639) * x('1') + 
+0.89652841624504709 * x('2') =g= -1;
+con9689..(-0.60912468426414201) * x('1') + 
+0.7930744725560831 * x('2') =g= -1;
+con9690..(-0.60862627537652203) * x('1') + 
+0.79345702903263893 * x('2') =g= -1;
+con9691..(-0.44354943008343617) * x('1') + 
+0.8962499110586617 * x('2') =g= -1;
+con9692..(-0.60812762622705985) * x('1') + 
+0.79383927228340212 * x('2') =g= -1;
+con9693..(-0.60762873701260223) * x('1') + 
+0.79422120215747827 * x('2') =g= -1;
+con9694..(-0.44411245631752427) * x('1') + 
+0.8959710520678752 * x('2') =g= -1;
+con9695..(-0.60712960793009174) * x('1') + 
+0.79460281850409586 * x('2') =g= -1;
+con9696..(-0.60663023917656489) * x('1') + 
+0.79498412117260786 * x('2') =g= -1;
+con9697..(-0.44467530723338933) * x('1') + 
+0.89569183938277053 * x('2') =g= -1;
+con9698..(-0.60613063094915243) * x('1') + 
+0.79536511001249133 * x('2') =g= -1;
+con9699..(-0.60563078344508048) * x('1') + 
+0.79574578487334635 * x('2') =g= -1;
+con9700..(-0.44523798260884007) * x('1') + 
+0.89541227311356986 * x('2') =g= -1;
+con9701..(-0.60513069686166965) * x('1') + 
+0.79612614560489725 * x('2') =g= -1;
+con9702..(-0.60463037139633424) * x('1') + 
+0.79650619205699269 * x('2') =g= -1;
+con9703..(-0.44580048222175467) * x('1') + 
+0.89513235337063479 * x('2') =g= -1;
+con9704..(-0.60412980724658283) * x('1') + 
+0.79688592407960546 * x('2') =g= -1;
+con9705..(-0.60362900461001923) * x('1') + 
+0.79726534152283168 * x('2') =g= -1;
+con9706..(-0.44636280585007998) * x('1') + 
+0.89485208026446683 * x('2') =g= -1;
+con9707..(-0.60312796368433996) * x('1') + 
+0.79764444423689274 * x('2') =g= -1;
+con9708..(-0.60262668466733715) * x('1') + 
+0.79802323207213322 * x('2') =g= -1;
+con9709..(-0.44692495327183218) * x('1') + 
+0.89457145390570714 * x('2') =g= -1;
+con9710..(-0.60212516775689551) * x('1') + 
+0.79840170487902296 * x('2') =g= -1;
+con9711..(-0.60162341315099488) * x('1') + 
+0.79877986250815514 * x('2') =g= -1;
+con9712..(-0.4474869242650979) * x('1') + 
+0.89429047440513565 * x('2') =g= -1;
+con9713..(-0.60112142104770805) * x('1') + 
+0.79915770481024839 * x('2') =g= -1;
+con9714..(-0.6006191916452015) * x('1') + 
+0.79953523163614537 * x('2') =g= -1;
+con9715..(-0.4480487186080333) * x('1') + 
+0.89400914187367198 * x('2') =g= -1;
+con9716..(-0.60011672514173653) * x('1') + 
+0.79991244283681295 * x('2') =g= -1;
+con9717..(-0.59961402173566636) * x('1') + 
+0.80028933826334325 * x('2') =g= -1;
+con9718..(-0.44861033607886319) * x('1') + 
+0.89372745642237572 * x('2') =g= -1;
+con9719..(-0.59911108162543958) * x('1') + 
+0.80066591776695228 * x('2') =g= -1;
+con9720..(-0.59860790500959637) * x('1') + 
+0.80104218119898163 * x('2') =g= -1;
+con9721..(-0.4491717764558838) * x('1') + 
+0.8934454181624446 * x('2') =g= -1;
+con9722..(-0.59810449208677186) * x('1') + 
+0.80141812841089677 * x('2') =g= -1;
+con9723..(-0.59760084305569361) * x('1') + 
+0.80179375925428864 * x('2') =g= -1;
+con9724..(-0.44973303951745963) * x('1') + 
+0.8931630272052169 * x('2') =g= -1;
+con9725..(-0.59709695811518204) * x('1') + 
+0.8021690735808733 * x('2') =g= -1;
+con9726..(-0.59659283746415204) * x('1') + 
+0.80254407124249061 * x('2') =g= -1;
+con9727..(-0.4502941250420267) * x('1') + 
+0.89288028366216909 * x('2') =g= -1;
+con9728..(-0.59608848130160996) * x('1') + 
+0.80291875209110675 * x('2') =g= -1;
+con9729..(-0.59558388982665655) * x('1') + 
+0.80329311597881203 * x('2') =g= -1;
+con9730..(-0.4508550328080897) * x('1') + 
+0.89259718764491769 * x('2') =g= -1;
+con9731..(-0.59507906323848403) * x('1') + 
+0.80366716275782246 * x('2') =g= -1;
+con9732..(-0.59457400173637909) * x('1') + 
+0.8040408922804787 * x('2') =g= -1;
+con9733..(-0.4514157625942245) * x('1') + 
+0.89231373926521762 * x('2') =g= -1;
+con9734..(-0.59406870551971969) * x('1') + 
+0.8044143043992471 * x('2') =g= -1;
+con9735..(-0.59356317478797671) * x('1') + 
+0.80478739896671947 * x('2') =g= -1;
+con9736..(-0.45197631417907741) * x('1') + 
+0.89202993863496305 * x('2') =g= -1;
+con9737..(-0.59305740974071441) * x('1') + 
+0.8051601758356125 * x('2') =g= -1;
+con9738..(-0.5925514105775892) * x('1') + 
+0.80553263485876803 * x('2') =g= -1;
+con9739..(-0.45253668734136371) * x('1') + 
+0.8917457858661878 * x('2') =g= -1;
+con9740..(-0.5920451774983494) * x('1') + 
+0.80590477588915421 * x('2') =g= -1;
+con9741..(-0.59153871070283581) * x('1') + 
+0.80627659877986457 * x('2') =g= -1;
+con9742..(-0.45309688185987085) * x('1') + 
+0.89146128107106382 * x('2') =g= -1;
+con9743..(-0.59103201039098241) * x('1') + 
+0.8066481033841173 * x('2') =g= -1;
+con9744..(-0.59052507676281418) * x('1') + 
+0.80701928955525737 * x('2') =g= -1;
+con9745..(-0.4536568975134555) * x('1') + 
+0.8911764243619027 * x('2') =g= -1;
+con9746..(-0.59001791001844839) * x('1') + 
+0.80739015714675522 * x('2') =g= -1;
+con9747..(-0.5895105103580951) * x('1') + 
+0.80776070601220651 * x('2') =g= -1;
+con9748..(-0.45421673408104507) * x('1') + 
+0.89089121585115494 * x('2') =g= -1;
+con9749..(-0.58900287798205597) * x('1') + 
+0.80813093600533281 * x('2') =g= -1;
+con9750..(-0.58849501309072383) * x('1') + 
+0.80850084697998237 * x('2') =g= -1;
+con9751..(-0.45477639134163833) * x('1') + 
+0.89060565565140948 * x('2') =g= -1;
+con9752..(-0.58798691588458452) * x('1') + 
+0.80887043879012821 * x('2') =g= -1;
+con9753..(-0.5874785865642147) * x('1') + 
+0.80923971128987027 * x('2') =g= -1;
+con9754..(-0.45533586907430451) * x('1') + 
+0.89031974387539436 * x('2') =g= -1;
+con9755..(-0.58697002533028275) * x('1') + 
+0.80960866433343415 * x('2') =g= -1;
+con9756..(-0.58646123238354819) * x('1') + 
+0.80997729777517213 * x('2') =g= -1;
+con9757..(-0.45589516705818406) * x('1') + 
+0.89003348063597609 * x('2') =g= -1;
+con9758..(-0.58595220792486391) * x('1') + 
+0.8103456114695613 * x('2') =g= -1;
+con9759..(-0.58544295215517206) * x('1') + 
+0.81071360527120606 * x('2') =g= -1;
+con9760..(-0.45645428507248764) * x('1') + 
+0.88974686604616049 * x('2') =g= -1;
+con9761..(-0.5849334652755066) * x('1') + 
+0.81108127903483729 * x('2') =g= -1;
+con9762..(-0.58442374748699388) * x('1') + 
+0.8114486326153113 * x('2') =g= -1;
+con9763..(-0.45701322289649693) * x('1') + 
+0.88945990021909183 * x('2') =g= -1;
+con9764..(-0.58391379899084994) * x('1') + 
+0.81181566586761145 * x('2') =g= -1;
+con9765..(-0.58340361998838264) * x('1') + 
+0.81218237864684728 * x('2') =g= -1;
+con9766..(-0.45757198030956592) * x('1') + 
+0.88917258326805282 * x('2') =g= -1;
+con9767..(-0.58289321068098998) * x('1') + 
+0.8125487708082556 * x('2') =g= -1;
+con9768..(-0.58238257127016302) * x('1') + 
+0.8129148422071979 * x('2') =g= -1;
+con9769..(-0.45813055709111827) * x('1') + 
+0.88888491530646507 * x('2') =g= -1;
+con9770..(-0.58187170195748139) * x('1') + 
+0.81328059269916431 * x('2') =g= -1;
+con9771..(-0.581360602944616) * x('1') + 
+0.81364602213977089 * x('2') =g= -1;
+con9772..(-0.45868895302065016) * x('1') + 
+0.88859689644788864 * x('2') =g= -1;
+con9773..(-0.58084927443332957) * x('1') + 
+0.81401113038475992 * x('2') =g= -1;
+con9774..(-0.58033771662547406) * x('1') + 
+0.81437591729000125 * x('2') =g= -1;
+con9775..(-0.45924716787772901) * x('1') + 
+0.8883085268060219 * x('2') =g= -1;
+con9776..(-0.57982592972299229) * x('1') + 
+0.81474038271149152 * x('2') =g= -1;
+con9777..(-0.57931391392791798) * x('1') + 
+0.8151045265053537 * x('2') =g= -1;
+con9778..(-0.45980520144199277) * x('1') + 
+0.88801980649470225 * x('2') =g= -1;
+con9779..(-0.57880166944237532) * x('1') + 
+0.81546834852783789 * x('2') =g= -1;
+con9780..(-0.5782891964685779) * x('1') + 
+0.81583184863532165 * x('2') =g= -1;
+con9781..(-0.46036305349315232) * x('1') + 
+0.88773073562790483 * x('2') =g= -1;
+con9782..(-0.5777764952088299) * x('1') + 
+0.81619502668430965 * x('2') =g= -1;
+con9783..(-0.57726356586552618) * x('1') + 
+0.8165578825314328 * x('2') =g= -1;
+con9784..(-0.46092072381098875) * x('1') + 
+0.88744131431974371 * x('2') =g= -1;
+con9785..(-0.57675040864115101) * x('1') + 
+0.81692041603345011 * x('2') =g= -1;
+con9786..(-0.57623702373827834) * x('1') + 
+0.81728262704724786 * x('2') =g= -1;
+con9787..(-0.46147821217535639) * x('1') + 
+0.88715154268447105 * x('2') =g= -1;
+con9788..(-0.57572341135957283) * x('1') + 
+0.81764451542983896 * x('2') =g= -1;
+con9789..(-0.57520957170778886) * x('1') + 
+0.81800608103836381 * x('2') =g= -1;
+con9790..(-0.46203551836617984) * x('1') + 
+0.88686142083647745 * x('2') =g= -1;
+con9791..(-0.57469550498576982) * x('1') + 
+0.81836732373009069 * x('2') =g= -1;
+con9792..(-0.57418121139644895) * x('1') + 
+0.81872824336241534 * x('2') =g= -1;
+con9793..(-0.46259264216345691) * x('1') + 
+0.88657094889029153 * x('2') =g= -1;
+con9794..(-0.57366669114284985) * x('1') + 
+0.8190888397928604 * x('2') =g= -1;
+con9795..(-0.57315194442808459) * x('1') + 
+0.81944911287907674 * x('2') =g= -1;
+con9796..(-0.46314958334725725) * x('1') + 
+0.88628012696058012 * x('2') =g= -1;
+con9797..(-0.57263697145535475) * x('1') + 
+0.81980906247884278 * x('2') =g= -1;
+con9798..(-0.57212177242795192) * x('1') + 
+0.82016868845006441 * x('2') =g= -1;
+con9799..(-0.46370634169772146) * x('1') + 
+0.88598895516214871 * x('2') =g= -1;
+con9800..(-0.57160634754925677) * x('1') + 
+0.82052799065077497 * x('2') =g= -1;
+con9801..(-0.57109069702273851) * x('1') + 
+0.82088696893913637 * x('2') =g= -1;
+con9802..(-0.46426291699506395) * x('1') + 
+0.88569743360994013 * x('2') =g= -1;
+con9803..(-0.57057482105195545) * x('1') + 
+0.8212456231734383 * x('2') =g= -1;
+con9804..(-0.57005871984055612) * x('1') + 
+0.82160395321209745 * x('2') =g= -1;
+con9805..(-0.46481930901956975) * x('1') + 
+0.88540556241903612 * x('2') =g= -1;
+con9806..(-0.5695423935922761) * x('1') + 
+0.82196195891365975 * x('2') =g= -1;
+con9807..(-0.56902584251094179) * x('1') + 
+0.82231964013679792 * x('2') =g= -1;
+con9808..(-0.46537551755159789) * x('1') + 
+0.88511334170465561 * x('2') =g= -1;
+con9809..(-0.56850906680046631) * x('1') + 
+0.82267699674031414 * x('2') =g= -1;
+con9810..(-0.56799206666485358) * x('1') + 
+0.82303402858313734 * x('2') =g= -1;
+con9811..(-0.46593154237157813) * x('1') + 
+0.88482077158215622 * x('2') =g= -1;
+con9812..(-0.56747484230819434) * x('1') + 
+0.82339073552432562 * x('2') =g= -1;
+con9813..(-0.56695739393466837) * x('1') + 
+0.82374711742306528 * x('2') =g= -1;
+con9814..(-0.46648738326001415) * x('1') + 
+0.884527852167033 * x('2') =g= -1;
+con9815..(-0.56643972174854462) * x('1') + 
+0.82410317413867018 * x('2') =g= -1;
+con9816..(-0.56592182595417928) * x('1') + 
+0.82445890553058354 * x('2') =g= -1;
+con9817..(-0.46704303999748198) * x('1') + 
+0.88423458357491902 * x('2') =g= -1;
+con9818..(-0.56540370675601792) * x('1') + 
+0.82481431145837603 * x('2') =g= -1;
+con9819..(-0.56488536435859305) * x('1') + 
+0.82516939178174775 * x('2') =g= -1;
+con9820..(-0.46759851236462979) * x('1') + 
+0.88394096592158522 * x('2') =g= -1;
+con9821..(-0.56436679896652675) * x('1') + 
+0.82552414636052651 * x('2') =g= -1;
+con9822..(-0.56384801078452784) * x('1') + 
+0.82587857505466922 * x('2') =g= -1;
+con9823..(-0.46815380014217833) * x('1') + 
+0.88364699932294077 * x('2') =g= -1;
+con9824..(-0.56332900001739339) * x('1') + 
+0.82623267772426168 * x('2') =g= -1;
+con9825..(-0.56280976687000883) * x('1') + 
+0.8265864542295176 * x('2') =g= -1;
+con9826..(-0.46870890311092217) * x('1') + 
+0.88335268389503196 * x('2') =g= -1;
+con9827..(-0.56229031154734743) * x('1') + 
+0.82693990443077958 * x('2') =g= -1;
+con9828..(-0.56177063425446916) * x('1') + 
+0.82729302818852002 * x('2') =g= -1;
+con9829..(-0.4692638210517287) * x('1') + 
+0.88305801975404263 * x('2') =g= -1;
+con9830..(-0.56125073519652302) * x('1') + 
+0.82764582536333886 * x('2') =g= -1;
+con9831..(-0.56073061457874451) * x('1') + 
+0.82799829581596573 * x('2') =g= -1;
+con9832..(-0.46981855374553733) * x('1') + 
+0.88276300701629518 * x('2') =g= -1;
+con9833..(-0.56021027260645673) * x('1') + 
+0.82835043940725928 * x('2') =g= -1;
+con9834..(-0.55968970948507002) * x('1') + 
+0.82870225599820702 * x('2') =g= -1;
+con9835..(-0.47037310097336166) * x('1') + 
+0.88246764579824888 * x('2') =g= -1;
+con9836..(-0.55916892542008279) * x('1') + 
+0.82905374544992549 * x('2') =g= -1;
+con9837..(-0.55864792061708057) * x('1') + 
+0.82940490762366004 * x('2') =g= -1;
+con9838..(-0.47092746251628848) * x('1') + 
+0.8821719362165007 * x('2') =g= -1;
+con9839..(-0.55812669528173486) * x('1') + 
+0.82975574238078609 * x('2') =g= -1;
+con9840..(-0.55760524961980573) * x('1') + 
+0.83010624958280743 * x('2') =g= -1;
+con9841..(-0.47148163815547722) * x('1') + 
+0.88187587838778514 * x('2') =g= -1;
+con9842..(-0.5570835838371393) * x('1') + 
+0.83045642909135753 * x('2') =g= -1;
+con9843..(-0.55656169813966838) * x('1') + 
+0.83080628076819962 * x('2') =g= -1;
+con9844..(-0.47203562767216062) * x('1') + 
+0.88157947242897472 * x('2') =g= -1;
+con9845..(-0.55603959273341341) * x('1') + 
+0.83115580447522575 * x('2') =g= -1;
+con9846..(-0.55551726782448152) * x('1') + 
+0.83150500007445738 * x('2') =g= -1;
+con9847..(-0.4725894308476456) * x('1') + 
+0.88128271845707862 * x('2') =g= -1;
+con9848..(-0.55499472361906577) * x('1') + 
+0.83185386742804579 * x('2') =g= -1;
+con9849..(-0.55447196032344581) * x('1') + 
+0.83220240639827225 * x('2') =g= -1;
+con9850..(-0.47314304746331282) * x('1') + 
+0.88098561658924335 * x('2') =g= -1;
+con9851..(-0.55394897814398891) * x('1') + 
+0.83255061684754672 * x('2') =g= -1;
+con9852..(-0.55342577728714759) * x('1') + 
+0.83289849863840948 * x('2') =g= -1;
+con9853..(-0.47369647730061526) * x('1') + 
+0.88068816694275376 * x('2') =g= -1;
+con9854..(-0.55290235795946063) * x('1') + 
+0.83324605163353072 * x('2') =g= -1;
+con9855..(-0.55237872036755398) * x('1') + 
+0.83359327569570985 * x('2') =g= -1;
+con9856..(-0.47424972014108085) * x('1') + 
+0.88039036963503103 * x('2') =g= -1;
+con9857..(-0.5518548647181396) * x('1') + 
+0.83394017068787607 * x('2') =g= -1;
+con9858..(-0.55133079121801476) * x('1') + 
+0.83428673647308915 * x('2') =g= -1;
+con9859..(-0.47480277576631141) * x('1') + 
+0.88009222478363358 * x('2') =g= -1;
+con9860..(-0.55080650007406295) * x('1') + 
+0.83463297291453875 * x('2') =g= -1;
+con9861..(-0.55028199149325452) * x('1') + 
+0.83497887987554376 * x('2') =g= -1;
+con9862..(-0.47535564395798185) * x('1') + 
+0.87979373250625759 * x('2') =g= -1;
+con9863..(-0.54975726568264449) * x('1') + 
+0.83532445721955384 * x('2') =g= -1;
+con9864..(-0.54923232284937373) * x('1') + 
+0.83566970481014879 * x('2') =g= -1;
+con9865..(-0.47590832449784093) * x('1') + 
+0.87949489292073646 * x('2') =g= -1;
+con9866..(-0.54870716320066959) * x('1') + 
+0.8360146225110382 * x('2') =g= -1;
+con9867..(-0.54818178694384478) * x('1') + 
+0.83635921018606185 * x('2') =g= -1;
+con9868..(-0.47646081716771249) * x('1') + 
+0.87919570614504006 * x('2') =g= -1;
+con9869..(-0.54765619428629697) * x('1') + 
+0.83670346769919013 * x('2') =g= -1;
+con9870..(-0.54713038543550929) * x('1') + 
+0.83704739491452396 * x('2') =g= -1;
+con9871..(-0.4770131217494944) * x('1') + 
+0.87889617229727546 * x('2') =g= -1;
+con9872..(-0.54660436059905115) * x('1') + 
+0.83739099169629383 * x('2') =g= -1;
+con9873..(-0.54607811998457623) * x('1') + 
+0.83773425790886136 * x('2') =g= -1;
+con9874..(-0.4775652380251576) * x('1') + 
+0.87859629149568719 * x('2') =g= -1;
+con9875..(-0.54555166379982345) * x('1') + 
+0.83807719341671882 * x('2') =g= -1;
+con9876..(-0.54502499225261736) * x('1') + 
+0.83841979808448841 * x('2') =g= -1;
+con9877..(-0.47811716577674862) * x('1') + 
+0.87829606385865644 * x('2') =g= -1;
+con9878..(-0.54449810555086764) * x('1') + 
+0.83876207177692297 * x('2') =g= -1;
+con9879..(-0.54397100390256836) * x('1') + 
+0.83910401435890647 * x('2') =g= -1;
+con9880..(-0.47866890478638874) * x('1') + 
+0.87799548950470074 * x('2') =g= -1;
+con9881..(-0.54344368751579808) * x('1') + 
+0.83944562569545356 * x('2') =g= -1;
+con9882..(-0.5429161565987215) * x('1') + 
+0.8397869056517091 * x('2') =g= -1;
+con9883..(-0.4792204548362714) * x('1') + 
+0.87769456855247607 * x('2') =g= -1;
+con9884..(-0.54238841135958682) * x('1') + 
+0.84012785409294921 * x('2') =g= -1;
+con9885..(-0.54186045200672672) * x('1') + 
+0.84046847088458099 * x('2') =g= -1;
+con9886..(-0.47977181570866706) * x('1') + 
+0.87739330112077374 * x('2') =g= -1;
+con9887..(-0.54133227874855938) * x('1') + 
+0.84080875589214221 * x('2') =g= -1;
+con9888..(-0.54080389179358734) * x('1') + 
+0.84114870898130123 * x('2') =g= -1;
+con9889..(-0.48032298718591998) * x('1') + 
+0.87709168732852238 * x('2') =g= -1;
+con9890..(-0.54027529135039676) * x('1') + 
+0.84148833001785828 * x('2') =g= -1;
+con9891..(-0.53974647762765793) * x('1') + 
+0.84182761886774438 * x('2') =g= -1;
+con9892..(-0.48087396905044966) * x('1') + 
+0.8767897272947871 * x('2') =g= -1;
+con9893..(-0.53921745083412653) * x('1') + 
+0.84216657539702111 * x('2') =g= -1;
+con9894..(-0.53868821117864096) * x('1') + 
+0.84250519947188218 * x('2') =g= -1;
+con9895..(-0.48142476108474913) * x('1') + 
+0.87648742113877043 * x('2') =g= -1;
+con9896..(-0.53815875887012476) * x('1') + 
+0.84284349095865174 * x('2') =g= -1;
+con9897..(-0.5376290941175853) * x('1') + 
+0.8431814497237855 * x('2') =g= -1;
+con9898..(-0.48197536307138811) * x('1') + 
+0.87618476897981035 * x('2') =g= -1;
+con9899..(-0.5370992171301131) * x('1') + 
+0.84351907563387063 * x('2') =g= -1;
+con9900..(-0.53656912811688295) * x('1') + 
+0.84385636855562574 * x('2') =g= -1;
+con9901..(-0.48252577479301006) * x('1') + 
+0.87588177093738251 * x('2') =g= -1;
+con9902..(-0.5360388272871528) * x('1') + 
+0.84419332835590088 * x('2') =g= -1;
+con9903..(-0.53550831485026551) * x('1') + 
+0.84452995490167715 * x('2') =g= -1;
+con9904..(-0.48307599603233359) * x('1') + 
+0.87557842713109879 * x('2') =g= -1;
+con9905..(-0.53497759101564579) * x('1') + 
+0.84486624806006805 * x('2') =g= -1;
+con9906..(-0.53444665599280305) * x('1') + 
+0.84520220769831789 * x('2') =g= -1;
+con9907..(-0.48362602657215326) * x('1') + 
+0.87527473768070729 * x('2') =g= -1;
+con9908..(-0.53391550999132997) * x('1') + 
+0.84553783368380264 * x('2') =g= -1;
+con9909..(-0.53338415322090205) * x('1') + 
+0.84587312588403074 * x('2') =g= -1;
+con9910..(-0.48417586619533892) * x('1') + 
+0.87497070270609245 * x('2') =g= -1;
+con9911..(-0.5328525858912776) * x('1') + 
+0.84620808416664195 * x('2') =g= -1;
+con9912..(-0.53232080821229932) * x('1') + 
+0.8465427083994076 * x('2') =g= -1;
+con9913..(-0.48472551468483466) * x('1') + 
+0.87466632232727592 * x('2') =g= -1;
+con9914..(-0.53178882039389164) * x('1') + 
+0.84687699845023134 * x('2') =g= -1;
+con9915..(-0.53125662264606321) * x('1') + 
+0.84721095418714831 * x('2') =g= -1;
+con9916..(-0.48527497182366103) * x('1') + 
+0.87436159666441493 * x('2') =g= -1;
+con9917..(-0.53072421517890411) * x('1') + 
+0.84754457547832629 * x('2') =g= -1;
+con9918..(-0.53019159820258877) * x('1') + 
+0.84787786219206396 * x('2') =g= -1;
+con9919..(-0.48582423739491437) * x('1') + 
+0.87405652583780291 * x('2') =g= -1;
+con9920..(-0.52965877192737321) * x('1') + 
+0.84821081419679323 * x('2') =g= -1;
+con9921..(-0.52912573656359585) * x('1') + 
+0.84854343136107779 * x('2') =g= -1;
+con9922..(-0.48637331118176569) * x('1') + 
+0.87375110996787031 * x('2') =g= -1;
+con9923..(-0.52859249232167904) * x('1') + 
+0.84887571355361302 * x('2') =g= -1;
+con9924..(-0.52805903941212606) * x('1') + 
+0.84920766064322728 * x('2') =g= -1;
+con9925..(-0.48692219296746175) * x('1') + 
+0.87344534917518335 * x('2') =g= -1;
+con9926..(-0.52752537804552391) * x('1') + 
+0.8495392724988805 * x('2') =g= -1;
+con9927..(-0.5269915084325405) * x('1') + 
+0.84987054898966563 * x('2') =g= -1;
+con9928..(-0.48747088253532583) * x('1') + 
+0.87313924358044437 * x('2') =g= -1;
+con9929..(-0.52645743078392737) * x('1') + 
+0.85020148998480727 * x('2') =g= -1;
+con9930..(-0.5259231453105172) * x('1') + 
+0.85053209535366303 * x('2') =g= -1;
+con9931..(-0.48801937966875725) * x('1') + 
+0.87283279330449159 * x('2') =g= -1;
+con9932..(-0.52538865222322462) * x('1') + 
+0.85086236496572321 * x('2') =g= -1;
+con9933..(-0.52485395173304727) * x('1') + 
+0.85119229869060975 * x('2') =g= -1;
+con9934..(-0.48856768415122992) * x('1') + 
+0.87252599846830015 * x('2') =g= -1;
+con9935..(-0.52431904405106322) * x('1') + 
+0.85152189639807807 * x('2') =g= -1;
+con9936..(-0.52378392938843388) * x('1') + 
+0.85185115795801569 * x('2') =g= -1;
+con9937..(-0.4891157957662951) * x('1') + 
+0.87221885919298026 * x('2') =g= -1;
+con9938..(-0.52324860795640082) * x('1') + 
+0.85218008324044325 * x('2') =g= -1;
+con9939..(-0.5227130799662888) * x('1') + 
+0.85250867211551351 * x('2') =g= -1;
+con9940..(-0.48966371429758021) * x('1') + 
+0.87191137559977838 * x('2') =g= -1;
+con9941..(-0.52217734562950291) * x('1') + 
+0.85283692445351278 * x('2') =g= -1;
+con9942..(-0.52164140515752966) * x('1') + 
+0.85316484012486005 * x('2') =g= -1;
+con9943..(-0.49021143952878798) * x('1') + 
+0.8716035478100771 * x('2') =g= -1;
+con9944..(-0.52110525876193792) * x('1') + 
+0.85349241900010675 * x('2') =g= -1;
+con9945..(-0.52056890665437749) * x('1') + 
+0.85381966094993733 * x('2') =g= -1;
+con9946..(-0.49075897124369761) * x('1') + 
+0.87129537594539519 * x('2') =g= -1;
+con9947..(-0.52003234904657902) * x('1') + 
+0.85414656584516979 * x('2') =g= -1;
+con9948..(-0.51949558615035396) * x('1') + 
+0.85447313355675503 * x('2') =g= -1;
+con9949..(-0.49130630922616536) * x('1') + 
+0.87098686012738658 * x('2') =g= -1;
+con9950..(-0.51895861817759603) * x('1') + 
+0.85479936395577649 * x('2') =g= -1;
+con9951..(-0.5184214453402789) * x('1') + 
+0.85512525691345143 * x('2') =g= -1;
+con9952..(-0.49185345326012397) * x('1') + 
+0.87067800047784083 * x('2') =g= -1;
+con9953..(-0.51788406785045693) * x('1') + 
+0.85545081230113007 * x('2') =g= -1;
+con9954..(-0.51734648592026622) * x('1') + 
+0.85577602999029589 * x('2') =g= -1;
+con9955..(-0.49240040312958161) * x('1') + 
+0.87036879711868431 * x('2') =g= -1;
+con9956..(-0.51680869976192334) * x('1') + 
+0.85610090985256537 * x('2') =g= -1;
+con9957..(-0.51627070958772492) * x('1') + 
+0.85642545175968876 * x('2') =g= -1;
+con9958..(-0.49294715861862465) * x('1') + 
+0.87005925017197794 * x('2') =g= -1;
+con9959..(-0.51573251561004796) * x('1') + 
+0.8567496555835501 * x('2') =g= -1;
+con9960..(-0.51519411804135129) * x('1') + 
+0.85707352119616564 * x('2') =g= -1;
+con9961..(-0.49349371951141469) * x('1') + 
+0.86974935975991907 * x('2') =g= -1;
+con9962..(-0.51465551709417268) * x('1') + 
+0.85739704846968634 * x('2') =g= -1;
+con9963..(-0.51411671298113004) * x('1') + 
+0.85772023727639679 * x('2') =g= -1;
+con9964..(-0.49404008559219154) * x('1') + 
+0.86943912600483997 * x('2') =g= -1;
+con9965..(-0.51357770591492369) * x('1') + 
+0.85804308748871361 * x('2') =g= -1;
+con9966..(-0.51303849610833174) * x('1') + 
+0.85836559897918863 * x('2') =g= -1;
+con9967..(-0.49458625664527056) * x('1') + 
+0.86912854902920922 * x('2') =g= -1;
+con9968..(-0.51249908377421305) * x('1') + 
+0.85868777162050702 * x('2') =g= -1;
+con9969..(-0.51195946912550627) * x('1') + 
+0.85900960528548798 * x('2') =g= -1;
+con9970..(-0.49513223245504517) * x('1') + 
+0.86881762895563019 * x('2') =g= -1;
+con9971..(-0.5114196523752309) * x('1') + 
+0.85933109984708345 * x('2') =g= -1;
+con9972..(-0.51087963373648493) * x('1') + 
+0.85965225517838029 * x('2') =g= -1;
+con9973..(-0.49567801280598583) * x('1') + 
+0.86850636590684183 * x('2') =g= -1;
+con9974..(-0.51033941342244593) * x('1') + 
+0.85997307115259936 * x('2') =g= -1;
+con9975..(-0.50979899164637332) * x('1') + 
+0.86029354764309429 * x('2') =g= -1;
+con9976..(-0.49622359748263906) * x('1') + 
+0.86819476000571894 * x('2') =g= -1;
+con9977..(-0.50925836862160367) * x('1') + 
+0.86061368452335385 * x('2') =g= -1;
+con9978..(-0.50871754456155382) * x('1') + 
+0.86093348166700057 * x('2') =g= -1;
+con9979..(-0.49676898626963012) * x('1') + 
+0.8678828113752709 * x('2') =g= -1;
+con9980..(-0.50817651967971955) * x('1') + 
+0.86125293894779109 * x('2') =g= -1;
+con9981..(-0.50763529418967701) * x('1') + 
+0.86157205623961608 * x('2') =g= -1;
+con9982..(-0.49731417895166008) * x('1') + 
+0.86757052013864333 * x('2') =g= -1;
+con9983..(-0.50709386830508052) * x('1') + 
+0.86189083341650041 * x('2') =g= -1;
+con9984..(-0.50655224223966311) * x('1') + 
+0.86220927035260386 * x('2') =g= -1;
+con9985..(-0.49785917531350904) * x('1') + 
+0.86725788641911616 * x('2') =g= -1;
+con9986..(-0.50601041620723908) * x('1') + 
+0.86252736692221921 * x('2') =g= -1;
+con9987..(-0.50546839042169944) * x('1') + 
+0.86284512299977478 * x('2') =g= -1;
+con9988..(-0.49840397514003293) * x('1') + 
+0.86694491034010546 * x('2') =g= -1;
+con9989..(-0.50492616509701427) * x('1') + 
+0.86316253845983304 * x('2') =g= -1;
+con9990..(-0.50438374044723366) * x('1') + 
+0.86347961317709043 * x('2') =g= -1;
+con9991..(-0.49894857821616645) * x('1') + 
+0.86663159202516149 * x('2') =g= -1;
+con9992..(-0.50384111668648535) * x('1') + 
+0.86379634702637831 * x('2') =g= -1;
+con9993..(-0.50329829402897552) * x('1') + 
+0.86411273988266302 * x('2') =g= -1;
+con9994..(-0.49949298432692207) * x('1') + 
+0.8663179315979701 * x('2') =g= -1;
+con9995..(-0.50275527268898978) * x('1') + 
+0.86442879162104469 * x('2') =g= -1;
+con9996..(-0.5022120528808921) * x('1') + 
+0.86474450211675824 * x('2') =g= -1;
+con9997..(-0.50003719325738916) * x('1') + 
+0.86600392918235225 * x('2') =g= -1;
+con9998..(-0.50166863481912394) * x('1') + 
+0.86505987124517369 * x('2') =g= -1;
+con9999..(-0.50112501871820514) * x('1') + 
+0.86537489888179597 * x('2') =g= -1;
+con10000..(-0.50058120479273482) * x('1') + 
+0.865689584902264 * x('2') =g= -1;
+Model m/All/;
+m.workspace = 32;
+m.optfile = 1;options nlp=convert;
+Solve m using nlp minimizing obj;
+display x.l, obj.l;
+  
+
+

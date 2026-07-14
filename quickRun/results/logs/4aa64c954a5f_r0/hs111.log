@@ -1,0 +1,60 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs111.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=exact inertia_correction_strategy=none globalization_mechanism=TR globalization_strategy=funnel_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs111.nl
+10 variables, 3 constraints (3 equality, 0 inequality)
+Problem type: NLP
+
+Non-default options:
+QP_solver = BQPD
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase Funnel    ||Step||  Objective  Infeas    Statio    Compl     Status        
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         1.00e+01  OPT   3.29e+00  -         -2.101e+01 2.20e+00  7.21e+00  0.00e+00  initial point 
+ 1      1      -         1.00e+01  OPT   3.29e+00  1.00e+01  -1.985e+05 1.80e+04  -         -         ✘ (funnel)    
+ -      2      -         5.00e+00  OPT   3.29e+00  5.00e+00  -1.708e+03 1.46e+02  -         -         ✘ (funnel)    
+ -      3      -         2.50e+00  OPT   3.29e+00  2.50e+00  -1.534e+02 1.00e+01  -         -         ✘ (funnel)    
+ -      4      -         1.25e+00  OPT   -         -         -          -         -         -         infeasible    
+ -      4      0.00e+00  1.25e+00  FEAS  -         1.25e+00  -6.180e+01 1.38e+00  1.16e+00  0.00e+00  ✔ (Armijo)    
+ 2      1      0.00e+00  2.50e+00  FEAS  -         2.50e+00  -2.978e+02 2.11e+01  -         -         ✘ (Armijo)    
+ -      2      0.00e+00  1.25e+00  FEAS  -         1.25e+00  -7.708e+01 3.50e+00  -         -         ✘ (Armijo)    
+ -      3      0.00e+00  6.25e-01  FEAS  -         6.25e-01  -5.206e+01 5.97e-01  2.13e+01  0.00e+00  ✔ (Armijo)    
+ 3      1      -         1.25e+00  OPT   2.34e+00  1.25e+00  -8.479e+01 3.17e+00  -         -         ✘ (funnel)    
+ -      2      -         6.25e-01  OPT   2.34e+00  6.25e-01  -5.509e+01 7.10e-01  1.78e+01  0.00e+00  ✔ (f-type)    
+ 4      1      -         1.25e+00  OPT   2.34e+00  1.25e+00  -5.208e+01 3.84e-01  2.33e+00  0.00e+00  ✔ (h-type)    
+ 5      1      -         2.50e+00  OPT   2.34e+00  2.50e+00  -5.894e+01 8.15e-01  4.89e-01  0.00e+00  ✔ (h-type)    
+ 6      1      -         5.00e+00  OPT   2.33e+00  5.00e+00  -6.295e+01 1.18e+00  2.43e+00  0.00e+00  ✔ (h-type)    
+ 7      1      -         1.00e+01  OPT   2.33e+00  1.01e+00  -5.325e+01 4.25e-01  8.49e-01  0.00e+00  ✔ (h-type)    
+ 8      1      -         1.00e+01  OPT   2.33e+00  8.57e-01  -4.923e+01 1.10e-01  3.03e-01  0.00e+00  ✔ (h-type)    
+ 9      1      -         1.00e+01  OPT   2.33e+00  7.10e-01  -4.819e+01 3.20e-02  1.05e-01  0.00e+00  ✔ (h-type)    
+ 10     1      -         1.00e+01  OPT   2.33e+00  5.82e-01  -4.792e+01 1.10e-02  3.38e-02  0.00e+00  ✔ (h-type)    
+ 11     1      -         1.00e+01  OPT   2.33e+00  4.46e-01  -4.782e+01 3.77e-03  9.68e-03  0.00e+00  ✔ (h-type)    
+ 12     1      -         1.00e+01  OPT   2.33e+00  2.64e-01  -4.777e+01 8.75e-04  1.97e-03  0.00e+00  ✔ (h-type)    
+ 13     1      -         1.00e+01  OPT   2.33e+00  8.66e-02  -4.776e+01 7.48e-05  1.57e-04  0.00e+00  ✔ (h-type)    
+ 14     1      -         1.00e+01  OPT   2.33e+00  8.13e-03  -4.776e+01 6.13e-07  1.26e-06  0.00e+00  ✔ (h-type)    
+ 15     1      -         1.00e+01  OPT   2.33e+00  6.63e-05  -4.776e+01 4.04e-11  8.29e-11  0.00e+00  ✔ (h-type)    
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase Funnel    ||Step||  Objective  Infeas    Statio    Compl     Status        
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR funnel restoration inequality-constrained SQP method with exact Hessian and no inertia correction)
+Tue Jul 14 13:54:03 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			-47.76109
+Primal feasibility:			4.042255e-11
+┌ Stationarity residual:		8.293578e-11
+│ Primal feasibility:			4.042255e-11
+└ Complementarity residual:		0
+CPU time:				0.005381s
+Iterations:				15
+Objective evaluations:			22
+Constraints evaluations:		22
+Objective gradient evaluations:		20
+Jacobian evaluations:			22
+Hessian evaluations:			16
+Number of subproblems solved:		22

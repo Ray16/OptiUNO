@@ -1,0 +1,62 @@
+{
+  "name": "gulf",
+  "number": 2267,
+  "classification": "SUR2-MN",
+  "N": 3,
+  "M": 0,
+  "Nnl": 3,
+  "Mnl": 0,
+  "Nz": 3,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "gulf.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gulf.dag",
+      "bytes": 31541
+    },
+    "gms": {
+      "filename": "gulf.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gulf.gms",
+      "bytes": 10359
+    },
+    "mod": {
+      "filename": "gulf.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gulf.mod",
+      "bytes": 1020
+    },
+    "res": {
+      "filename": "gulf.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/gulf.res",
+      "bytes": 166
+    },
+    "nl": {
+      "filename": "gulf.nl",
+      "bytes": 6918
+    },
+    "nl_presolve": {
+      "filename": "gulf_presolve.nl",
+      "bytes": 7017
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gulf.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

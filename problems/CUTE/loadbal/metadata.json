@@ -1,0 +1,62 @@
+{
+  "name": "loadbal",
+  "number": 2467,
+  "classification": "OLR2-MN",
+  "N": 31,
+  "M": 31,
+  "Nnl": 31,
+  "Mnl": 0,
+  "Nz": 122,
+  "Fbest_raw": "0.4528000",
+  "Fbest": 0.4528,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "loadbal.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/loadbal.dag",
+      "bytes": 19528
+    },
+    "gms": {
+      "filename": "loadbal.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/loadbal.gms",
+      "bytes": 7050
+    },
+    "mod": {
+      "filename": "loadbal.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/loadbal.mod",
+      "bytes": 8521
+    },
+    "res": {
+      "filename": "loadbal.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/loadbal.res",
+      "bytes": 635
+    },
+    "nl": {
+      "filename": "loadbal.nl",
+      "bytes": 5226
+    },
+    "nl_presolve": {
+      "filename": "loadbal_presolve.nl",
+      "bytes": 5226
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/loadbal.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

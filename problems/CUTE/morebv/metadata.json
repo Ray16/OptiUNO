@@ -1,0 +1,47 @@
+{
+  "name": "morebv",
+  "number": 2500,
+  "classification": "SUR2-MN",
+  "N": 5002,
+  "M": 2,
+  "Nnl": 5000,
+  "Mnl": 0,
+  "Nz": 5000,
+  "Fbest_raw": "",
+  "Fbest": null,
+  "feasible": null,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": false,
+  "dag_file_available": false,
+  "res_file_available": false,
+  "other_files": [],
+  "files": {
+    "mod": {
+      "filename": "morebv.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/morebv.mod",
+      "bytes": 1044
+    },
+    "nl": {
+      "filename": "morebv.nl",
+      "bytes": 744465
+    },
+    "nl_presolve": {
+      "filename": "morebv_presolve.nl",
+      "bytes": 744465
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/morebv.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "reading1",
+  "number": 2636,
+  "classification": "OOR2-MN",
+  "N": 10002,
+  "M": 5000,
+  "Nnl": 10000,
+  "Mnl": 5000,
+  "Nz": 30000,
+  "Fbest_raw": "",
+  "Fbest": null,
+  "feasible": null,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "reading1.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/reading3.dag",
+      "bytes": 143544
+    },
+    "gms": {
+      "filename": "reading1.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/reading3.gms",
+      "bytes": 40136
+    },
+    "mod": {
+      "filename": "reading1.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/reading3.mod",
+      "bytes": 50208
+    },
+    "res": {
+      "filename": "reading1.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/reading1.res",
+      "bytes": 5238
+    },
+    "nl": {
+      "filename": "reading1.nl",
+      "bytes": 40353
+    },
+    "nl_presolve": {
+      "filename": "reading1_presolve.nl",
+      "bytes": 40353
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/reading1.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

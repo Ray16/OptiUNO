@@ -1,0 +1,62 @@
+{
+  "name": "zangwil2",
+  "number": 2721,
+  "classification": "QUR2-AN",
+  "N": 2,
+  "M": 0,
+  "Nnl": 2,
+  "Mnl": 0,
+  "Nz": 2,
+  "Fbest_raw": "-18.2000000",
+  "Fbest": -18.2,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "zangwil2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zangwil2.dag",
+      "bytes": 455
+    },
+    "gms": {
+      "filename": "zangwil2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zangwil2.gms",
+      "bytes": 563
+    },
+    "mod": {
+      "filename": "zangwil2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zangwil2.mod",
+      "bytes": 899
+    },
+    "res": {
+      "filename": "zangwil2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/zangwil2.res",
+      "bytes": 142
+    },
+    "nl": {
+      "filename": "zangwil2.nl",
+      "bytes": 702
+    },
+    "nl_presolve": {
+      "filename": "zangwil2_presolve.nl",
+      "bytes": 702
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zangwil2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

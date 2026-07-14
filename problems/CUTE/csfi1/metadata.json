@@ -1,0 +1,62 @@
+{
+  "name": "csfi1",
+  "number": 2125,
+  "classification": "LOR2-RN",
+  "N": 5,
+  "M": 4,
+  "Nnl": 4,
+  "Mnl": 4,
+  "Nz": 12,
+  "Fbest_raw": "-49.0752000",
+  "Fbest": -49.0752,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "csfi1.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/csfi1.dag",
+      "bytes": 788
+    },
+    "gms": {
+      "filename": "csfi1.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/csfi1.gms",
+      "bytes": 713
+    },
+    "mod": {
+      "filename": "csfi1.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/csfi1.mod",
+      "bytes": 1294
+    },
+    "res": {
+      "filename": "csfi1.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/csfi1.res",
+      "bytes": 214
+    },
+    "nl": {
+      "filename": "csfi1.nl",
+      "bytes": 773
+    },
+    "nl_presolve": {
+      "filename": "csfi1_presolve.nl",
+      "bytes": 773
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/csfi1.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

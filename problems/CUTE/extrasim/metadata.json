@@ -1,0 +1,62 @@
+{
+  "name": "extrasim",
+  "number": 2227,
+  "classification": "LLR2-AN",
+  "N": 2,
+  "M": 1,
+  "Nnl": 0,
+  "Mnl": 0,
+  "Nz": 3,
+  "Fbest_raw": "1.0000000",
+  "Fbest": 1.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "extrasim.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/extrasim.dag",
+      "bytes": 177
+    },
+    "gms": {
+      "filename": "extrasim.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/extrasim.gms",
+      "bytes": 434
+    },
+    "mod": {
+      "filename": "extrasim.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/extrasim.mod",
+      "bytes": 741
+    },
+    "res": {
+      "filename": "extrasim.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/extrasim.res",
+      "bytes": 142
+    },
+    "nl": {
+      "filename": "extrasim.nl",
+      "bytes": 552
+    },
+    "nl_presolve": {
+      "filename": "extrasim_presolve.nl",
+      "bytes": 552
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/extrasim.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

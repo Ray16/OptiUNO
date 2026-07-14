@@ -1,0 +1,56 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs033.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=exact inertia_correction_strategy=primal globalization_mechanism=TR globalization_strategy=fletcher_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs033.nl
+3 variables, 3 constraints (0 equality, 3 inequality)
+Problem type: NLP
+
+Non-default options:
+QP_solver = BQPD
+linear_solver = MUMPS
+libhsl_path = 
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase Regulariz Regulariz ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         1.00e+01  OPT   -         -         -         -3.000e+00 0.00e+00  1.10e+01  0.00e+00  initial point 
+ 1      1      -         1.00e+01  OPT   1.31e+01  -         7.63e-02  -3.076e+00 0.00e+00  1.00e+00  0.00e+00  ✔ (f-type)    
+ 2      1      -         1.00e+01  OPT   1.31e+01  -         7.63e-02  -3.153e+00 0.00e+00  1.00e+00  0.00e+00  ✔ (f-type)    
+ 3      1      -         1.00e+01  OPT   1.31e+01  -         7.63e-02  -3.229e+00 0.00e+00  1.00e+00  0.00e+00  ✔ (f-type)    
+ 4      1      -         1.00e+01  OPT   1.31e+01  -         7.63e-02  -3.305e+00 0.00e+00  1.00e+00  0.00e+00  ✔ (f-type)    
+ 5      1      -         1.00e+01  OPT   1.31e+01  -         7.63e-02  -3.381e+00 0.00e+00  1.00e+00  0.00e+00  ✔ (f-type)    
+ 6      1      -         1.00e+01  OPT   1.31e+01  -         7.63e-02  -3.458e+00 0.00e+00  1.00e+00  0.00e+00  ✔ (f-type)    
+ 7      1      -         1.00e+01  OPT   1.31e+01  -         7.63e-02  -3.534e+00 0.00e+00  1.00e+00  0.00e+00  ✔ (f-type)    
+ 8      1      -         1.00e+01  OPT   1.31e+01  -         7.63e-02  -3.610e+00 0.00e+00  1.00e+00  0.00e+00  ✔ (f-type)    
+ 9      1      -         1.00e+01  OPT   1.31e+01  -         7.63e-02  -3.687e+00 0.00e+00  1.00e+00  0.00e+00  ✔ (f-type)    
+ 10     1      -         1.00e+01  OPT   1.31e+01  -         7.63e-02  -3.763e+00 0.00e+00  1.00e+00  0.00e+00  ✔ (f-type)    
+ 11     1      -         1.00e+01  OPT   1.31e+01  -         7.63e-02  -3.839e+00 0.00e+00  1.00e+00  0.00e+00  ✔ (f-type)    
+ 12     1      -         1.00e+01  OPT   1.31e+01  -         7.63e-02  -3.916e+00 0.00e+00  1.00e+00  0.00e+00  ✔ (f-type)    
+ 13     1      -         1.00e+01  OPT   1.31e+01  -         7.63e-02  -3.992e+00 0.00e+00  1.00e+00  0.00e+00  ✔ (f-type)    
+ 14     1      -         1.00e+01  OPT   1.31e+01  -         8.16e-03  -4.000e+00 0.00e+00  1.11e-01  1.48e-05  ✔ (f-type)    
+ 15     1      -         1.00e+01  OPT   1.31e+01  -         1.67e-05  -4.000e+00 0.00e+00  2.19e-04  6.93e-11  ✔ (f-type)    
+ 16     1      -         1.00e+01  OPT   1.31e+01  -         6.93e-11  -4.000e+00 0.00e+00  9.09e-10  0.00e+00  ✔ (f-type)    
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase Regulariz Regulariz ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR Fletcher-filter restoration inequality-constrained SQP method with exact Hessian and primal inertia correction)
+Tue Jul 14 13:50:59 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			-4
+Primal feasibility:			0
+┌ Stationarity residual:		9.089203e-10
+│ Primal feasibility:			0
+└ Complementarity residual:		0
+CPU time:				0.11939s
+Iterations:				16
+Objective evaluations:			17
+Constraints evaluations:		17
+Objective gradient evaluations:		17
+Jacobian evaluations:			17
+Hessian evaluations:			16
+Number of subproblems solved:		16

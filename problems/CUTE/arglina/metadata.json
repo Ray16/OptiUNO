@@ -1,0 +1,62 @@
+{
+  "name": "arglina",
+  "number": 2011,
+  "classification": "SUR2-AN",
+  "N": 100,
+  "M": 0,
+  "Nnl": 100,
+  "Mnl": 0,
+  "Nz": 100,
+  "Fbest_raw": "100.0000000",
+  "Fbest": 100.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "arglina.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/arglina.dag",
+      "bytes": 2182604
+    },
+    "gms": {
+      "filename": "arglina.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/arglina.gms",
+      "bytes": 184647
+    },
+    "mod": {
+      "filename": "arglina.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/arglina.mod",
+      "bytes": 990
+    },
+    "res": {
+      "filename": "arglina.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/arglina.res",
+      "bytes": 2586
+    },
+    "nl": {
+      "filename": "arglina.nl",
+      "bytes": 383878
+    },
+    "nl_presolve": {
+      "filename": "arglina_presolve.nl",
+      "bytes": 284036
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/arglina.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

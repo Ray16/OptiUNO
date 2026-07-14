@@ -1,0 +1,62 @@
+{
+  "name": "steenbrc",
+  "number": 2688,
+  "classification": "ONR2-MY",
+  "N": 540,
+  "M": 126,
+  "Nnl": 108,
+  "Mnl": 0,
+  "Nz": 1116,
+  "Fbest_raw": "18274.7169000",
+  "Fbest": 18274.7169,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "steenbrc.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/steenbrc.dag",
+      "bytes": 77479
+    },
+    "gms": {
+      "filename": "steenbrc.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/steenbrc.gms",
+      "bytes": 29929
+    },
+    "mod": {
+      "filename": "steenbrc.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/steenbrc.mod",
+      "bytes": 45632
+    },
+    "res": {
+      "filename": "steenbrc.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/steenbrc.res",
+      "bytes": 14026
+    },
+    "nl": {
+      "filename": "steenbrc.nl",
+      "bytes": 21214
+    },
+    "nl_presolve": {
+      "filename": "steenbrc_presolve.nl",
+      "bytes": 21214
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/steenbrc.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

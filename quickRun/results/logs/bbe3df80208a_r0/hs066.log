@@ -1,0 +1,47 @@
+$ /home/sdinh/sandbox/OptiUNO/quickRun/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs066.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=interior_point hessian_model=exact inertia_correction_strategy=primal_dual globalization_mechanism=LS globalization_strategy=waechter_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs066.nl
+3 variables, 5 constraints (0 equality, 5 inequality)
+Problem type: NLP
+Reformulated model /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs066.nl -> no fixed bounds -> equality constrained -> bounds relaxed
+8 variables, 5 constraints (5 equality, 0 inequality)
+
+Non-default options:
+linear_solver = MUMPS
+libhsl_path = 
+
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Steplength Phase Regulariz Regulariz ||Step||  Objective  Infeas    Statio    Compl     Status        
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         -         -         -          OPT   -         -         -         5.800e-01  5.00e-02  1.64e+00  3.07e+00  initial point 
+ 1      1      -         1.00e-01  -         1.00e+00   OPT   0.00e+00  -         5.00e-01  5.937e-01  3.72e-02  2.58e-01  1.74e-01  ✔ (h-type)    
+ 2      1      -         2.00e-02  -         1.00e+00   OPT   0.00e+00  -         7.72e-02  5.785e-01  1.26e-03  3.14e-02  5.33e-02  ✔ (h-type)    
+ 3      1      -         2.83e-03  -         1.00e+00   OPT   0.00e+00  -         9.42e-02  5.237e-01  1.76e-03  1.48e-03  7.08e-03  ✔ (h-type)    
+ 4      1      -         1.50e-04  -         1.00e+00   OPT   0.00e+00  -         7.03e-02  5.184e-01  5.03e-04  1.52e-04  4.86e-04  ✔ (h-type)    
+ 5      1      -         1.84e-06  -         1.00e+00   OPT   0.00e+00  -         5.78e-03  5.182e-01  5.43e-06  1.81e-06  5.68e-06  ✔ (h-type)    
+ 6      1      -         1.00e-07  -         1.00e+00   OPT   0.00e+00  -         6.81e-05  5.182e-01  7.41e-10  2.60e-10  2.24e-07  ✔ (f-type)    
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Steplength Phase Regulariz Regulariz ||Step||  Objective  Infeas    Statio    Compl     Status        
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (LS Waechter-filter restoration primal-dual interior-point method with exact Hessian and primal-dual inertia correction)
+Tue Jul 14 11:39:24 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			0.5181626
+Primal feasibility:			7.408533e-10
+┌ Stationarity residual:		2.603348e-10
+│ Primal feasibility:			7.408533e-10
+└ Complementarity residual:		2.237849e-07
+CPU time:				0.004843s
+Iterations:				6
+Objective evaluations:			7
+Constraints evaluations:		8
+Objective gradient evaluations:		7
+Jacobian evaluations:			7
+Hessian evaluations:			6
+Number of subproblems solved:		6

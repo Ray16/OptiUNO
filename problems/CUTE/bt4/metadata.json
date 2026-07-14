@@ -1,0 +1,62 @@
+{
+  "name": "bt4",
+  "number": 2084,
+  "classification": "QQR2-AN",
+  "N": 3,
+  "M": 2,
+  "Nnl": 3,
+  "Mnl": 1,
+  "Nz": 8,
+  "Fbest_raw": "-45.5106000",
+  "Fbest": -45.5106,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "bt4.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt4.dag",
+      "bytes": 428
+    },
+    "gms": {
+      "filename": "bt4.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt4.gms",
+      "bytes": 526
+    },
+    "mod": {
+      "filename": "bt4.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt4.mod",
+      "bytes": 1119
+    },
+    "res": {
+      "filename": "bt4.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/bt4.res",
+      "bytes": 166
+    },
+    "nl": {
+      "filename": "bt4.nl",
+      "bytes": 654
+    },
+    "nl_presolve": {
+      "filename": "bt4_presolve.nl",
+      "bytes": 654
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt4.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

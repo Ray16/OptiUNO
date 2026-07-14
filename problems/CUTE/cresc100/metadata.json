@@ -1,0 +1,52 @@
+{
+  "name": "cresc100",
+  "number": 2121,
+  "classification": "OOR2-MY",
+  "N": 6,
+  "M": 200,
+  "Nnl": 6,
+  "Mnl": 200,
+  "Nz": 1103,
+  "Fbest_raw": "",
+  "Fbest": null,
+  "feasible": null,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": false,
+  "dag_file_available": true,
+  "res_file_available": false,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "cresc100.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cresc100.dag",
+      "bytes": 112767
+    },
+    "mod": {
+      "filename": "cresc100.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cresc100.mod",
+      "bytes": 4188
+    },
+    "nl": {
+      "filename": "cresc100.nl",
+      "bytes": 25928
+    },
+    "nl_presolve": {
+      "filename": "cresc100_presolve.nl",
+      "bytes": 26328
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cresc100.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

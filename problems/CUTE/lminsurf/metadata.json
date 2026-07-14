@@ -1,0 +1,62 @@
+{
+  "name": "lminsurf",
+  "number": 2466,
+  "classification": "OXR2-MY",
+  "N": 15625,
+  "M": 496,
+  "Nnl": 15129,
+  "Mnl": 0,
+  "Nz": 15129,
+  "Fbest_raw": "",
+  "Fbest": null,
+  "feasible": null,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "lminsurf.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/minsurf.dag",
+      "bytes": 32575
+    },
+    "gms": {
+      "filename": "lminsurf.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/minsurf.gms",
+      "bytes": 10733
+    },
+    "mod": {
+      "filename": "lminsurf.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/minsurf.mod",
+      "bytes": 913
+    },
+    "res": {
+      "filename": "lminsurf.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/lminsurf.res",
+      "bytes": 2947
+    },
+    "nl": {
+      "filename": "lminsurf.nl",
+      "bytes": 8150
+    },
+    "nl_presolve": {
+      "filename": "lminsurf_presolve.nl",
+      "bytes": 8150
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/lminsurf.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

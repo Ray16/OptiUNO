@@ -1,0 +1,62 @@
+{
+  "name": "mifflin1",
+  "number": 2491,
+  "classification": "LQR2-AN",
+  "N": 3,
+  "M": 2,
+  "Nnl": 2,
+  "Mnl": 1,
+  "Nz": 6,
+  "Fbest_raw": "-1.0000000",
+  "Fbest": -1.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "mifflin1.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mifflin1.dag",
+      "bytes": 348
+    },
+    "gms": {
+      "filename": "mifflin1.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mifflin1.gms",
+      "bytes": 489
+    },
+    "mod": {
+      "filename": "mifflin1.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mifflin1.mod",
+      "bytes": 830
+    },
+    "res": {
+      "filename": "mifflin1.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/mifflin1.res",
+      "bytes": 65
+    },
+    "nl": {
+      "filename": "mifflin1.nl",
+      "bytes": 618
+    },
+    "nl_presolve": {
+      "filename": "mifflin1_presolve.nl",
+      "bytes": 618
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mifflin1.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

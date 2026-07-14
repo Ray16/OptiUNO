@@ -1,0 +1,62 @@
+{
+  "name": "snake",
+  "number": 2674,
+  "classification": "LOR2-AN",
+  "N": 2,
+  "M": 2,
+  "Nnl": 1,
+  "Mnl": 2,
+  "Nz": 5,
+  "Fbest_raw": "-0.0085000",
+  "Fbest": -0.0085,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "snake.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/snake.dag",
+      "bytes": 313
+    },
+    "gms": {
+      "filename": "snake.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/snake.gms",
+      "bytes": 473
+    },
+    "mod": {
+      "filename": "snake.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/snake.mod",
+      "bytes": 834
+    },
+    "res": {
+      "filename": "snake.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/snake.res",
+      "bytes": 142
+    },
+    "nl": {
+      "filename": "snake.nl",
+      "bytes": 596
+    },
+    "nl_presolve": {
+      "filename": "snake_presolve.nl",
+      "bytes": 596
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/snake.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

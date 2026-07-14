@@ -1,0 +1,62 @@
+{
+  "name": "mdhole",
+  "number": 2488,
+  "classification": "OBR2-AN",
+  "N": 2,
+  "M": 0,
+  "Nnl": 2,
+  "Mnl": 0,
+  "Nz": 2,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "mdhole.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mdhole.dag",
+      "bytes": 218
+    },
+    "gms": {
+      "filename": "mdhole.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mdhole.gms",
+      "bytes": 416
+    },
+    "mod": {
+      "filename": "mdhole.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mdhole.mod",
+      "bytes": 650
+    },
+    "res": {
+      "filename": "mdhole.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/mdhole.res",
+      "bytes": 73
+    },
+    "nl": {
+      "filename": "mdhole.nl",
+      "bytes": 570
+    },
+    "nl_presolve": {
+      "filename": "mdhole_presolve.nl",
+      "bytes": 570
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mdhole.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "gpp",
+  "number": 2254,
+  "classification": "OOR2-AY",
+  "N": 250,
+  "M": 498,
+  "Nnl": 250,
+  "Mnl": 249,
+  "Nz": 1246,
+  "Fbest_raw": "14400.9271000",
+  "Fbest": 14400.9271,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "gpp.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gpp.dag",
+      "bytes": 3798688
+    },
+    "gms": {
+      "filename": "gpp.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gpp.gms",
+      "bytes": 930711
+    },
+    "mod": {
+      "filename": "gpp.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gpp.mod",
+      "bytes": 790
+    },
+    "res": {
+      "filename": "gpp.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/gpp.res",
+      "bytes": 6486
+    },
+    "nl": {
+      "filename": "gpp.nl",
+      "bytes": 525823
+    },
+    "nl_presolve": {
+      "filename": "gpp_presolve.nl",
+      "bytes": 525823
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gpp.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

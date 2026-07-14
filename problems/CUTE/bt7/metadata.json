@@ -1,0 +1,62 @@
+{
+  "name": "bt7",
+  "number": 2087,
+  "classification": "OQR2-AN",
+  "N": 5,
+  "M": 3,
+  "Nnl": 5,
+  "Mnl": 3,
+  "Nz": 10,
+  "Fbest_raw": "306.4975000",
+  "Fbest": 306.4975,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "bt7.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt7.dag",
+      "bytes": 723
+    },
+    "gms": {
+      "filename": "bt7.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt7.gms",
+      "bytes": 603
+    },
+    "mod": {
+      "filename": "bt7.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt7.mod",
+      "bytes": 1035
+    },
+    "res": {
+      "filename": "bt7.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/bt7.res",
+      "bytes": 214
+    },
+    "nl": {
+      "filename": "bt7.nl",
+      "bytes": 727
+    },
+    "nl_presolve": {
+      "filename": "bt7_presolve.nl",
+      "bytes": 728
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt7.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

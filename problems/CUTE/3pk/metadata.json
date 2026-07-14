@@ -1,0 +1,62 @@
+{
+  "name": "3pk",
+  "number": 2001,
+  "classification": "SUR2-MN",
+  "N": 30,
+  "M": 0,
+  "Nnl": 30,
+  "Mnl": 0,
+  "Nz": 30,
+  "Fbest_raw": "1.7201000",
+  "Fbest": 1.7201,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "3pk.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/3pk.dag",
+      "bytes": 37050
+    },
+    "gms": {
+      "filename": "3pk.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/3pk.gms",
+      "bytes": 12441
+    },
+    "mod": {
+      "filename": "3pk.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/3pk.mod",
+      "bytes": 10347
+    },
+    "res": {
+      "filename": "3pk.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/3pk.res",
+      "bytes": 543
+    },
+    "nl": {
+      "filename": "3pk.nl",
+      "bytes": 8117
+    },
+    "nl_presolve": {
+      "filename": "3pk_presolve.nl",
+      "bytes": 8171
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/3pk.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

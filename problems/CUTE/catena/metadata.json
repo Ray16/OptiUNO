@@ -1,0 +1,62 @@
+{
+  "name": "catena",
+  "number": 2093,
+  "classification": "LQR2-AY",
+  "N": 36,
+  "M": 11,
+  "Nnl": 32,
+  "Mnl": 11,
+  "Nz": 73,
+  "Fbest_raw": "-23077.7753000",
+  "Fbest": -23077.7753,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "catena.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/catena.dag",
+      "bytes": 4278
+    },
+    "gms": {
+      "filename": "catena.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/catena.gms",
+      "bytes": 1949
+    },
+    "mod": {
+      "filename": "catena.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/catena.mod",
+      "bytes": 1231
+    },
+    "res": {
+      "filename": "catena.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/catena.res",
+      "bytes": 885
+    },
+    "nl": {
+      "filename": "catena.nl",
+      "bytes": 2247
+    },
+    "nl_presolve": {
+      "filename": "catena_presolve.nl",
+      "bytes": 2247
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/catena.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

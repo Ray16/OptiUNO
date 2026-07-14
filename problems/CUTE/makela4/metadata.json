@@ -1,0 +1,62 @@
+{
+  "name": "makela4",
+  "number": 2479,
+  "classification": "LLR2-AN",
+  "N": 21,
+  "M": 40,
+  "Nnl": 0,
+  "Mnl": 0,
+  "Nz": 81,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "makela4.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/makela4.dag",
+      "bytes": 4188
+    },
+    "gms": {
+      "filename": "makela4.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/makela4.gms",
+      "bytes": 1923
+    },
+    "mod": {
+      "filename": "makela4.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/makela4.mod",
+      "bytes": 890
+    },
+    "res": {
+      "filename": "makela4.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/makela4.res",
+      "bytes": 466
+    },
+    "nl": {
+      "filename": "makela4.nl",
+      "bytes": 1838
+    },
+    "nl_presolve": {
+      "filename": "makela4_presolve.nl",
+      "bytes": 1838
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/makela4.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

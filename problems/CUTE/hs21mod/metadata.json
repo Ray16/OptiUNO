@@ -1,0 +1,62 @@
+{
+  "name": "hs21mod",
+  "number": 2429,
+  "classification": "SLR2-AN",
+  "N": 7,
+  "M": 7,
+  "Nnl": 7,
+  "Mnl": 0,
+  "Nz": 9,
+  "Fbest_raw": "-95.9600000",
+  "Fbest": -95.96,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hs21mod.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs21mod.dag",
+      "bytes": 1122
+    },
+    "gms": {
+      "filename": "hs21mod.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs21mod.gms",
+      "bytes": 690
+    },
+    "mod": {
+      "filename": "hs21mod.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs21mod.mod",
+      "bytes": 1098
+    },
+    "res": {
+      "filename": "hs21mod.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hs21mod.res",
+      "bytes": 262
+    },
+    "nl": {
+      "filename": "hs21mod.nl",
+      "bytes": 863
+    },
+    "nl_presolve": {
+      "filename": "hs21mod_presolve.nl",
+      "bytes": 863
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs21mod.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

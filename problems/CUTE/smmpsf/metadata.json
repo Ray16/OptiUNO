@@ -1,0 +1,62 @@
+{
+  "name": "smmpsf",
+  "number": 2673,
+  "classification": "LQR2-AY",
+  "N": 720,
+  "M": 263,
+  "Nnl": 23,
+  "Mnl": 11,
+  "Nz": 1693,
+  "Fbest_raw": "1046985.6373000",
+  "Fbest": 1046985.6373,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "smmpsf.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/smmpsf.dag",
+      "bytes": 99556
+    },
+    "gms": {
+      "filename": "smmpsf.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/smmpsf.gms",
+      "bytes": 44739
+    },
+    "mod": {
+      "filename": "smmpsf.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/smmpsf.mod",
+      "bytes": 59246
+    },
+    "res": {
+      "filename": "smmpsf.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/smmpsf.res",
+      "bytes": 18706
+    },
+    "nl": {
+      "filename": "smmpsf.nl",
+      "bytes": 26833
+    },
+    "nl_presolve": {
+      "filename": "smmpsf_presolve.nl",
+      "bytes": 26833
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/smmpsf.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

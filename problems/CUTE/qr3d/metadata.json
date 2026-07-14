@@ -1,0 +1,57 @@
+{
+  "name": "qr3d",
+  "number": 2630,
+  "classification": "NQR2-AN",
+  "N": 155,
+  "M": 0,
+  "Nnl": 155,
+  "Mnl": 0,
+  "Nz": 155,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": false,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "qr3d.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qr3d.dag",
+      "bytes": 95025
+    },
+    "mod": {
+      "filename": "qr3d.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qr3d.mod",
+      "bytes": 23954
+    },
+    "res": {
+      "filename": "qr3d.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/qr3d.res",
+      "bytes": 4016
+    },
+    "nl": {
+      "filename": "qr3d.nl",
+      "bytes": 16736
+    },
+    "nl_presolve": {
+      "filename": "qr3d_presolve.nl",
+      "bytes": 16736
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qr3d.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

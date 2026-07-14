@@ -1,0 +1,62 @@
+{
+  "name": "haifam",
+  "number": 2274,
+  "classification": "LQR2-AN",
+  "N": 85,
+  "M": 150,
+  "Nnl": 84,
+  "Mnl": 150,
+  "Nz": 712,
+  "Fbest_raw": "-45.0004000",
+  "Fbest": -45.0004,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "haifam.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/haifam.dag",
+      "bytes": 124977
+    },
+    "gms": {
+      "filename": "haifam.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/haifam.gms",
+      "bytes": 42571
+    },
+    "mod": {
+      "filename": "haifam.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/haifam.mod",
+      "bytes": 35452
+    },
+    "res": {
+      "filename": "haifam.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/haifam.res",
+      "bytes": 2210
+    },
+    "nl": {
+      "filename": "haifam.nl",
+      "bytes": 33467
+    },
+    "nl_presolve": {
+      "filename": "haifam_presolve.nl",
+      "bytes": 33467
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/haifam.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "brainpc2",
+  "number": 2056,
+  "classification": "SOR2-MY",
+  "N": 13807,
+  "M": 13800,
+  "Nnl": 13804,
+  "Mnl": 13798,
+  "Nz": 82848,
+  "Fbest_raw": "",
+  "Fbest": null,
+  "feasible": null,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": false,
+  "dag_file_available": false,
+  "res_file_available": false,
+  "other_files": [],
+  "files": {
+    "mod": {
+      "filename": "brainpc2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/brainpc2.mod",
+      "bytes": 209457
+    },
+    "nl": {
+      "filename": "brainpc2.nl",
+      "bytes": 2024684
+    },
+    "nl_presolve": {
+      "filename": "brainpc2_presolve.nl",
+      "bytes": 2024394
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/brainpc2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

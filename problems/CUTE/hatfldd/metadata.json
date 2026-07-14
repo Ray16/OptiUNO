@@ -1,0 +1,62 @@
+{
+  "name": "hatfldd",
+  "number": 2284,
+  "classification": "SUR2-AN",
+  "N": 3,
+  "M": 0,
+  "Nnl": 3,
+  "Mnl": 0,
+  "Nz": 3,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hatfldd.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hatfldd.dag",
+      "bytes": 3273
+    },
+    "gms": {
+      "filename": "hatfldd.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hatfldd.gms",
+      "bytes": 1420
+    },
+    "mod": {
+      "filename": "hatfldd.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hatfldd.mod",
+      "bytes": 1034
+    },
+    "res": {
+      "filename": "hatfldd.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hatfldd.res",
+      "bytes": 166
+    },
+    "nl": {
+      "filename": "hatfldd.nl",
+      "bytes": 1113
+    },
+    "nl_presolve": {
+      "filename": "hatfldd_presolve.nl",
+      "bytes": 1134
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hatfldd.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "synthes1",
+  "number": 2696,
+  "classification": "OOR2-AN",
+  "N": 6,
+  "M": 6,
+  "Nnl": 2,
+  "Mnl": 2,
+  "Nz": 22,
+  "Fbest_raw": "0.7593000",
+  "Fbest": 0.7593,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "synthes1.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/synthes1.dag",
+      "bytes": 1734
+    },
+    "gms": {
+      "filename": "synthes1.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/synthes1.gms",
+      "bytes": 1076
+    },
+    "mod": {
+      "filename": "synthes1.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/synthes1.mod",
+      "bytes": 1118
+    },
+    "res": {
+      "filename": "synthes1.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/synthes1.res",
+      "bytes": 238
+    },
+    "nl": {
+      "filename": "synthes1.nl",
+      "bytes": 904
+    },
+    "nl_presolve": {
+      "filename": "synthes1_presolve.nl",
+      "bytes": 904
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/synthes1.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "liswet2",
+  "number": 2458,
+  "classification": "QLR2-AN",
+  "N": 10002,
+  "M": 10000,
+  "Nnl": 10002,
+  "Mnl": 0,
+  "Nz": 40002,
+  "Fbest_raw": "",
+  "Fbest": null,
+  "feasible": null,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": false,
+  "dag_file_available": false,
+  "res_file_available": false,
+  "other_files": [],
+  "files": {
+    "mod": {
+      "filename": "liswet2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/liswet2.mod",
+      "bytes": 1143
+    },
+    "nl": {
+      "filename": "liswet2.nl",
+      "bytes": 1020560
+    },
+    "nl_presolve": {
+      "filename": "liswet2_presolve.nl",
+      "bytes": 1020560
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/liswet2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

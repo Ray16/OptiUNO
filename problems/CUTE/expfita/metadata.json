@@ -1,0 +1,62 @@
+{
+  "name": "expfita",
+  "number": 2221,
+  "classification": "OLR2-AN",
+  "N": 5,
+  "M": 22,
+  "Nnl": 5,
+  "Mnl": 0,
+  "Nz": 76,
+  "Fbest_raw": "0.0011000",
+  "Fbest": 0.0011,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "expfita.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/expfita.dag",
+      "bytes": 8598
+    },
+    "gms": {
+      "filename": "expfita.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/expfita.gms",
+      "bytes": 3881
+    },
+    "mod": {
+      "filename": "expfita.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/expfita.mod",
+      "bytes": 1211
+    },
+    "res": {
+      "filename": "expfita.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/expfita.res",
+      "bytes": 214
+    },
+    "nl": {
+      "filename": "expfita.nl",
+      "bytes": 2815
+    },
+    "nl_presolve": {
+      "filename": "expfita_presolve.nl",
+      "bytes": 3008
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/expfita.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

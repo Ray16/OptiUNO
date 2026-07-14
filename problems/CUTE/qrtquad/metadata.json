@@ -1,0 +1,62 @@
+{
+  "name": "qrtquad",
+  "number": 2633,
+  "classification": "OBR2-MN",
+  "N": 120,
+  "M": 10,
+  "Nnl": 120,
+  "Mnl": 0,
+  "Nz": 120,
+  "Fbest_raw": "-3648088.3640000",
+  "Fbest": -3648088.364,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "qrtquad.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qrtquad.dag",
+      "bytes": 36970
+    },
+    "gms": {
+      "filename": "qrtquad.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qrtquad.gms",
+      "bytes": 8351
+    },
+    "mod": {
+      "filename": "qrtquad.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qrtquad.mod",
+      "bytes": 718
+    },
+    "res": {
+      "filename": "qrtquad.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/qrtquad.res",
+      "bytes": 3106
+    },
+    "nl": {
+      "filename": "qrtquad.nl",
+      "bytes": 8101
+    },
+    "nl_presolve": {
+      "filename": "qrtquad_presolve.nl",
+      "bytes": 8101
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qrtquad.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

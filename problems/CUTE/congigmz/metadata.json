@@ -1,0 +1,62 @@
+{
+  "name": "congigmz",
+  "number": 2113,
+  "classification": "LQR2-AN",
+  "N": 3,
+  "M": 5,
+  "Nnl": 2,
+  "Mnl": 2,
+  "Nz": 14,
+  "Fbest_raw": "28.0000000",
+  "Fbest": 28.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "congigmz.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/congigmz.dag",
+      "bytes": 729
+    },
+    "gms": {
+      "filename": "congigmz.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/congigmz.gms",
+      "bytes": 657
+    },
+    "mod": {
+      "filename": "congigmz.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/congigmz.mod",
+      "bytes": 968
+    },
+    "res": {
+      "filename": "congigmz.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/congigmz.res",
+      "bytes": 166
+    },
+    "nl": {
+      "filename": "congigmz.nl",
+      "bytes": 728
+    },
+    "nl_presolve": {
+      "filename": "congigmz_presolve.nl",
+      "bytes": 728
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/congigmz.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

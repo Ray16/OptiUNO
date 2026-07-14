@@ -1,0 +1,62 @@
+{
+  "name": "kowosb",
+  "number": 2446,
+  "classification": "SUR2-MN",
+  "N": 4,
+  "M": 0,
+  "Nnl": 4,
+  "Mnl": 0,
+  "Nz": 4,
+  "Fbest_raw": "0.0003000",
+  "Fbest": 0.0003,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "kowosb.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/kowosb.dag",
+      "bytes": 4595
+    },
+    "gms": {
+      "filename": "kowosb.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/kowosb.gms",
+      "bytes": 1790
+    },
+    "mod": {
+      "filename": "kowosb.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/kowosb.mod",
+      "bytes": 1171
+    },
+    "res": {
+      "filename": "kowosb.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/kowosb.res",
+      "bytes": 190
+    },
+    "nl": {
+      "filename": "kowosb.nl",
+      "bytes": 1469
+    },
+    "nl_presolve": {
+      "filename": "kowosb_presolve.nl",
+      "bytes": 1469
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/kowosb.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

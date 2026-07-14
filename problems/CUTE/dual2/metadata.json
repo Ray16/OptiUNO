@@ -1,0 +1,62 @@
+{
+  "name": "dual2",
+  "number": 2190,
+  "classification": "QLR2-MN",
+  "N": 96,
+  "M": 1,
+  "Nnl": 96,
+  "Mnl": 0,
+  "Nz": 192,
+  "Fbest_raw": "0.0337000",
+  "Fbest": 0.0337,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "dual2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dual2.dag",
+      "bytes": 506602
+    },
+    "gms": {
+      "filename": "dual2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dual2.gms",
+      "bytes": 119811
+    },
+    "mod": {
+      "filename": "dual2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dual2.mod",
+      "bytes": 81160
+    },
+    "res": {
+      "filename": "dual2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/dual2.res",
+      "bytes": 1887
+    },
+    "nl": {
+      "filename": "dual2.nl",
+      "bytes": 87487
+    },
+    "nl_presolve": {
+      "filename": "dual2_presolve.nl",
+      "bytes": 87487
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dual2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

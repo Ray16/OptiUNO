@@ -1,0 +1,47 @@
+{
+  "name": "cvxqp1",
+  "number": 2132,
+  "classification": "QLR2-AN",
+  "N": 1000,
+  "M": 500,
+  "Nnl": 1000,
+  "Mnl": 0,
+  "Nz": 2498,
+  "Fbest_raw": "",
+  "Fbest": null,
+  "feasible": null,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": false,
+  "dag_file_available": false,
+  "res_file_available": false,
+  "other_files": [],
+  "files": {
+    "mod": {
+      "filename": "cvxqp1.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cvxqp1.mod",
+      "bytes": 739
+    },
+    "nl": {
+      "filename": "cvxqp1.nl",
+      "bytes": 81278
+    },
+    "nl_presolve": {
+      "filename": "cvxqp1_presolve.nl",
+      "bytes": 81278
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cvxqp1.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

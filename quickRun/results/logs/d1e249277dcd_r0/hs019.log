@@ -1,0 +1,46 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs019.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=exact inertia_correction_strategy=primal globalization_mechanism=TR globalization_strategy=fletcher_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs019.nl
+2 variables, 4 constraints (0 equality, 4 inequality)
+Problem type: NLP
+
+Non-default options:
+QP_solver = BQPD
+linear_solver = MUMPS
+libhsl_path = 
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase Regulariz Regulariz ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         1.00e+01  OPT   -         -         -         -1.809e+03 1.17e+02  6.75e+02  0.00e+00  initial point 
+ 1      1      -         1.00e+01  OPT   1.05e+02  -         5.84e+00  -7.749e+03 4.85e+01  6.81e+02  5.52e+02  ✔ (h-type)    
+ 2      1      -         1.00e+01  OPT   1.05e+02  -         2.21e+00  -7.598e+03 4.98e+00  2.37e+02  8.30e+03  ✔ (h-type)    
+ 3      1      -         1.00e+01  OPT   0.00e+00  -         5.28e-01  -6.999e+03 2.79e-01  1.16e+01  4.53e+02  ✔ (h-type)    
+ 4      1      -         1.00e+01  OPT   0.00e+00  -         3.33e-02  -6.962e+03 1.11e-03  1.34e-01  1.82e+00  ✔ (h-type)    
+ 5      1      -         1.00e+01  OPT   0.00e+00  -         1.33e-04  -6.962e+03 1.77e-08  4.99e-06  2.92e-05  ✔ (h-type)    
+ 6      1      -         1.00e+01  OPT   0.00e+00  -         2.13e-09  -6.962e+03 0.00e+00  7.73e-13  0.00e+00  ✔ (h-type)    
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase Regulariz Regulariz ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR Fletcher-filter restoration inequality-constrained SQP method with exact Hessian and primal inertia correction)
+Tue Jul 14 13:50:58 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			-6961.814
+Primal feasibility:			0
+┌ Stationarity residual:		7.731541e-13
+│ Primal feasibility:			0
+└ Complementarity residual:		0
+CPU time:				0.025865s
+Iterations:				6
+Objective evaluations:			7
+Constraints evaluations:		7
+Objective gradient evaluations:		7
+Jacobian evaluations:			7
+Hessian evaluations:			6
+Number of subproblems solved:		6

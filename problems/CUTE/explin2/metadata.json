@@ -1,0 +1,62 @@
+{
+  "name": "explin2",
+  "number": 2225,
+  "classification": "OBR2-AN",
+  "N": 120,
+  "M": 0,
+  "Nnl": 11,
+  "Mnl": 0,
+  "Nz": 120,
+  "Fbest_raw": "-724459.1430000",
+  "Fbest": -724459.143,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "explin2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/explin2.dag",
+      "bytes": 9308
+    },
+    "gms": {
+      "filename": "explin2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/explin2.gms",
+      "bytes": 6395
+    },
+    "mod": {
+      "filename": "explin2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/explin2.mod",
+      "bytes": 623
+    },
+    "res": {
+      "filename": "explin2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/explin2.res",
+      "bytes": 3106
+    },
+    "nl": {
+      "filename": "explin2.nl",
+      "bytes": 3521
+    },
+    "nl_presolve": {
+      "filename": "explin2_presolve.nl",
+      "bytes": 3521
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/explin2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

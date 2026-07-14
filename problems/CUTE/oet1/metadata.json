@@ -1,0 +1,62 @@
+{
+  "name": "oet1",
+  "number": 2532,
+  "classification": "LLR2-AN",
+  "N": 3,
+  "M": 1002,
+  "Nnl": 0,
+  "Mnl": 0,
+  "Nz": 3005,
+  "Fbest_raw": "0.5382000",
+  "Fbest": 0.5382,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "oet1.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/oet1.dag",
+      "bytes": 189540
+    },
+    "gms": {
+      "filename": "oet1.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/oet1.gms",
+      "bytes": 104318
+    },
+    "mod": {
+      "filename": "oet1.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/oet1.mod",
+      "bytes": 1020
+    },
+    "res": {
+      "filename": "oet1.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/oet1.res",
+      "bytes": 83
+    },
+    "nl": {
+      "filename": "oet1.nl",
+      "bytes": 67112
+    },
+    "nl_presolve": {
+      "filename": "oet1_presolve.nl",
+      "bytes": 67112
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/oet1.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

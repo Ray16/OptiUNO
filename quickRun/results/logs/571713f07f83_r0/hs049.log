@@ -1,0 +1,100 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs049.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=LBFGS inertia_correction_strategy=primal globalization_mechanism=LS globalization_strategy=waechter_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs049.nl
+5 variables, 2 constraints (2 equality, 0 inequality)
+Problem type: NLP
+The problem has no inequalities, picking a pure SQP method
+
+Non-default options:
+QP_solver = BQPD
+linear_solver = MUMPS
+libhsl_path = 
+
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Steplength Phase Regulariz Regulariz |BFGS|  |BFGS|  ||Step||  Objective  Infeas    Statio    Compl     Status        
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         -          OPT   -         -         0       -       -         2.660e+02  0.00e+00  2.56e+02  0.00e+00  initial point 
+ 1      1      -         1.00e+00   OPT   -         -         -       -       5.99e+01  3.136e+06  2.84e-14  -         -         ✘ (f-type)    
+ -      2      -         5.00e-01   -     -         -         -       -       3.00e+01  8.868e+04  2.49e-14  -         -         ✘ (f-type)    
+ -      3      -         2.50e-01   -     -         -         -       -       1.50e+01  1.774e+03  1.42e-14  -         -         ✘ (f-type)    
+ -      4      -         1.25e-01   -     -         -         1       -       7.49e+00  3.841e+01  7.11e-15  3.52e+01  0.00e+00  ✔ (f-type)    
+ 2      1      -         1.00e+00   OPT   -         -         2       -       1.40e+00  2.000e+01  8.88e-16  2.04e+01  0.00e+00  ✔ (f-type)    
+ 3      1      -         1.00e+00   OPT   -         -         3       -       2.56e+00  3.078e+00  8.88e-16  1.28e+01  0.00e+00  ✔ (f-type)    
+ 4      1      -         1.00e+00   OPT   -         -         4       -       1.59e+00  9.837e-02  8.88e-16  1.80e+00  0.00e+00  ✔ (f-type)    
+ 5      1      -         1.00e+00   OPT   -         -         5       -       2.57e-01  5.700e-02  8.88e-16  7.90e-01  0.00e+00  ✔ (f-type)    
+ 6      1      -         1.00e+00   OPT   -         -         6       -       1.23e-01  6.877e-04  0.00e+00  1.21e-02  0.00e+00  ✔ (f-type)    
+ 7      1      -         1.00e+00   OPT   -         -         6       -       7.24e-04  6.817e-04  0.00e+00  1.14e-02  0.00e+00  ✔ (f-type)    
+ 8      1      -         1.00e+00   OPT   -         -         6       -       1.28e-01  1.459e-04  0.00e+00  1.74e-02  0.00e+00  ✔ (f-type)    
+ 9      1      -         1.00e+00   OPT   -         -         6       -       4.88e-02  6.784e-05  0.00e+00  1.26e-02  0.00e+00  ✔ (f-type)    
+ 10     1      -         1.00e+00   OPT   -         -         6       -       1.52e-02  2.217e-05  0.00e+00  2.24e-03  0.00e+00  ✔ (f-type)    
+ 11     1      -         1.00e+00   OPT   -         -         6       -       2.31e-02  1.038e-05  0.00e+00  1.35e-03  0.00e+00  ✔ (f-type)    
+ 12     1      -         1.00e+00   OPT   -         -         6       -       2.65e-02  3.735e-06  0.00e+00  1.16e-03  0.00e+00  ✔ (f-type)    
+ 13     1      -         1.00e+00   OPT   -         -         -       -       1.32e-01  2.031e-02  1.33e-14  -         -         ✘ (f-type)    
+ -      2      -         5.00e-01   -     -         -         -       -       6.60e-02  5.062e-03  7.11e-15  -         -         ✘ (f-type)    
+ -      3      -         2.50e-01   -     -         -         -       -       3.30e-02  1.259e-03  2.66e-15  -         -         ✘ (f-type)    
+ -      4      -         1.25e-01   -     -         -         -       -       1.65e-02  3.132e-04  2.66e-15  -         -         ✘ (f-type)    
+ -      5      -         6.25e-02   -     -         -         -       -       8.25e-03  7.890e-05  8.88e-16  -         -         ✘ (f-type)    
+ -      6      -         3.12e-02   -     -         -         -       -       4.12e-03  2.142e-05  0.00e+00  -         -         ✘ (f-type)    
+ -      7      -         1.56e-02   -     -         -         -       -       2.06e-03  7.604e-06  0.00e+00  -         -         ✘ (f-type)    
+ -      8      -         7.81e-03   -     -         -         -       -       1.03e-03  4.426e-06  0.00e+00  -         -         ✘ (f-type)    
+ -      9      -         3.91e-03   -     -         -         -       -       5.15e-04  3.769e-06  0.00e+00  -         -         ✘ (f-type)    
+ -      10     -         1.95e-03   -     -         -         6       -       2.58e-04  3.674e-06  0.00e+00  8.96e-04  0.00e+00  ✔ (f-type)    
+ 14     1      -         1.00e+00   OPT   -         -         6       -       2.14e-02  1.127e-06  0.00e+00  2.51e-04  0.00e+00  ✔ (f-type)    
+ 15     1      -         1.00e+00   OPT   -         -         -       -       2.66e-02  2.498e-06  8.88e-16  -         -         ✘ (f-type)    
+ -      2      -         5.00e-01   -     -         -         -       -       1.33e-02  1.131e-06  0.00e+00  -         -         ✘ (f-type)    
+ -      3      -         2.50e-01   -     -         -         6       -       6.65e-03  9.482e-07  0.00e+00  9.34e-04  0.00e+00  ✔ (f-type)    
+ 16     1      -         1.00e+00   OPT   -         -         6       -       4.05e-02  3.765e-07  0.00e+00  1.21e-03  0.00e+00  ✔ (f-type)    
+ 17     1      -         1.00e+00   OPT   -         -         6       -       2.68e-03  1.957e-08  8.88e-16  1.86e-04  0.00e+00  ✔ (f-type)    
+ 18     1      -         1.00e+00   OPT   -         -         6       -       1.10e-03  8.937e-09  0.00e+00  1.12e-05  0.00e+00  ✔ (f-type)    
+ 19     1      -         1.00e+00   OPT   -         -         6       -       1.62e-03  6.371e-09  0.00e+00  1.65e-05  0.00e+00  ✔ (f-type)    
+ 20     1      -         1.00e+00   OPT   -         -         -       -       9.82e-03  3.564e-05  0.00e+00  -         -         ✘ (f-type)    
+ -      2      -         5.00e-01   -     -         -         -       -       4.91e-03  8.914e-06  0.00e+00  -         -         ✘ (f-type)    
+ -      3      -         2.50e-01   -     -         -         -       -       2.46e-03  2.232e-06  0.00e+00  -         -         ✘ (f-type)    
+ -      4      -         1.25e-01   -     -         -         -       -       1.23e-03  5.622e-07  0.00e+00  -         -         ✘ (f-type)    
+ -      5      -         6.25e-02   -     -         -         -       -       6.14e-04  1.450e-07  0.00e+00  -         -         ✘ (f-type)    
+ -      6      -         3.12e-02   -     -         -         -       -       3.07e-04  4.088e-08  0.00e+00  -         -         ✘ (f-type)    
+ -      7      -         1.56e-02   -     -         -         -       -       1.53e-04  1.492e-08  0.00e+00  -         -         ✘ (f-type)    
+ -      8      -         7.81e-03   -     -         -         -       -       7.67e-05  8.472e-09  0.00e+00  -         -         ✘ (f-type)    
+ -      9      -         3.91e-03   -     -         -         -       -       3.84e-05  6.877e-09  1.78e-15  -         -         ✘ (f-type)    
+ -      10     -         1.95e-03   -     -         -         -       -       1.92e-05  6.488e-09  0.00e+00  -         -         ✘ (f-type)    
+ -      11     -         9.77e-04   -     -         -         -       -       9.59e-06  6.396e-09  0.00e+00  -         -         ✘ (f-type)    
+ -      12     -         4.88e-04   -     -         -         -       -       4.80e-06  6.375e-09  1.78e-15  -         -         ✘ (f-type)    
+ -      13     -         2.44e-04   -     -         -         6       -       2.40e-06  6.371e-09  0.00e+00  1.69e-05  0.00e+00  ✔ (f-type)    
+ 21     1      -         1.00e+00   OPT   -         -         6       -       4.60e-03  2.088e-09  0.00e+00  2.64e-05  0.00e+00  ✔ (f-type)    
+ 22     1      -         1.00e+00   OPT   -         -         -       -       1.07e-01  8.442e-05  4.60e-13  -         -         ✘ (f-type)    
+ -      2      -         5.00e-01   -     -         -         -       -       5.33e-02  1.983e-05  2.30e-13  -         -         ✘ (f-type)    
+ -      3      -         2.50e-01   -     -         -         -       -       2.67e-02  4.881e-06  1.15e-13  -         -         ✘ (f-type)    
+ -      4      -         1.25e-01   -     -         -         -       -       1.33e-02  1.205e-06  5.86e-14  -         -         ✘ (f-type)    
+ -      5      -         6.25e-02   -     -         -         -       -       6.66e-03  2.942e-07  2.84e-14  -         -         ✘ (f-type)    
+ -      6      -         3.12e-02   -     -         -         -       -       3.33e-03  7.056e-08  1.33e-14  -         -         ✘ (f-type)    
+ -      7      -         1.56e-02   -     -         -         -       -       1.67e-03  1.689e-08  7.11e-15  -         -         ✘ (f-type)    
+ -      8      -         7.81e-03   -     -         -         -       -       8.33e-04  4.624e-09  3.55e-15  -         -         ✘ (f-type)    
+ -      9      -         3.91e-03   -     -         -         -       -       4.16e-04  2.139e-09  8.88e-16  -         -         ✘ (f-type)    
+ -      10     -         1.95e-03   -     -         -         6       -       2.08e-04  1.809e-09  0.00e+00  8.49e-06  0.00e+00  ✔ (f-type)    
+ 23     1      -         1.00e+00   OPT   -         -         6       -       3.04e-03  6.203e-10  0.00e+00  2.05e-06  0.00e+00  ✔ (f-type)    
+ 24     1      -         1.00e+00   OPT   -         -         6       -       2.49e-03  1.963e-10  0.00e+00  2.10e-07  0.00e+00  ✔ (f-type)    
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Steplength Phase Regulariz Regulariz |BFGS|  |BFGS|  ||Step||  Objective  Infeas    Statio    Compl     Status        
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (LS Waechter-filter restoration pure SQP method with L-BFGS Hessian and primal inertia correction)
+Tue Jul 14 13:55:02 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			1.962932e-10
+Primal feasibility:			0
+┌ Stationarity residual:		2.104318e-07
+│ Primal feasibility:			0
+└ Complementarity residual:		0
+CPU time:				0.016547s
+Iterations:				24
+Objective evaluations:			60
+Constraints evaluations:		60
+Objective gradient evaluations:		60
+Jacobian evaluations:			60
+Hessian evaluations:			0
+Number of subproblems solved:		24

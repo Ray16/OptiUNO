@@ -1,0 +1,62 @@
+{
+  "name": "simpllpb",
+  "number": 2660,
+  "classification": "LLR2-AN",
+  "N": 2,
+  "M": 3,
+  "Nnl": 0,
+  "Mnl": 0,
+  "Nz": 8,
+  "Fbest_raw": "1.1000000",
+  "Fbest": 1.1,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "simpllpb.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/simpllpb.dag",
+      "bytes": 415
+    },
+    "gms": {
+      "filename": "simpllpb.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/simpllpb.gms",
+      "bytes": 536
+    },
+    "mod": {
+      "filename": "simpllpb.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/simpllpb.mod",
+      "bytes": 752
+    },
+    "res": {
+      "filename": "simpllpb.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/simpllpb.res",
+      "bytes": 50
+    },
+    "nl": {
+      "filename": "simpllpb.nl",
+      "bytes": 625
+    },
+    "nl_presolve": {
+      "filename": "simpllpb_presolve.nl",
+      "bytes": 625
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/simpllpb.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

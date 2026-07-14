@@ -1,0 +1,62 @@
+{
+  "name": "argauss",
+  "number": 2010,
+  "classification": "NOR2-AN",
+  "N": 3,
+  "M": 15,
+  "Nnl": 3,
+  "Mnl": 15,
+  "Nz": 45,
+  "Fbest_raw": "(0.0000000)",
+  "Fbest": 0.0,
+  "feasible": false,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "argauss.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/argauss.dag",
+      "bytes": 4274
+    },
+    "gms": {
+      "filename": "argauss.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/argauss.gms",
+      "bytes": 1822
+    },
+    "mod": {
+      "filename": "argauss.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/argauss.mod",
+      "bytes": 1109
+    },
+    "res": {
+      "filename": "argauss.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/argauss.res",
+      "bytes": 76
+    },
+    "nl": {
+      "filename": "argauss.nl",
+      "bytes": 1606
+    },
+    "nl_presolve": {
+      "filename": "argauss_presolve.nl",
+      "bytes": 1606
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/argauss.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "haifas",
+  "number": 2275,
+  "classification": "LQR2-AN",
+  "N": 7,
+  "M": 9,
+  "Nnl": 6,
+  "Mnl": 9,
+  "Nz": 32,
+  "Fbest_raw": "-0.4500000",
+  "Fbest": -0.45,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "haifas.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/haifas.dag",
+      "bytes": 3026
+    },
+    "gms": {
+      "filename": "haifas.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/haifas.gms",
+      "bytes": 1401
+    },
+    "mod": {
+      "filename": "haifas.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/haifas.mod",
+      "bytes": 1646
+    },
+    "res": {
+      "filename": "haifas.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/haifas.res",
+      "bytes": 148
+    },
+    "nl": {
+      "filename": "haifas.nl",
+      "bytes": 1214
+    },
+    "nl_presolve": {
+      "filename": "haifas_presolve.nl",
+      "bytes": 1214
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/haifas.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

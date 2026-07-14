@@ -1,0 +1,62 @@
+{
+  "name": "ksip",
+  "number": 2447,
+  "classification": "QLR2-AN",
+  "N": 20,
+  "M": 1001,
+  "Nnl": 20,
+  "Mnl": 0,
+  "Nz": 20020,
+  "Fbest_raw": "0.5758000",
+  "Fbest": 0.5758,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "ksip.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/ksip.dag",
+      "bytes": 1043545
+    },
+    "gms": {
+      "filename": "ksip.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/ksip.gms",
+      "bytes": 692254
+    },
+    "mod": {
+      "filename": "ksip.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/ksip.mod",
+      "bytes": 1193
+    },
+    "res": {
+      "filename": "ksip.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/ksip.res",
+      "bytes": 407
+    },
+    "nl": {
+      "filename": "ksip.nl",
+      "bytes": 464461
+    },
+    "nl_presolve": {
+      "filename": "ksip_presolve.nl",
+      "bytes": 464461
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/ksip.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

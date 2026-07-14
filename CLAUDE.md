@@ -38,3 +38,30 @@ The README specifies these are installed in the workspace, *not* committed here:
 
 - `RelevantFiles/Implementing a unified solver for nonlinearly constrained optimization.pdf` — the UNO paper (Vanaret & Leyffer, MPC 2026), the authoritative description of the strategy building blocks.
 - UNO docs: https://unosolver.readthedocs.io/en/latest/
+
+<!-- crucible-project -->
+## Crucible Knowledge Base
+
+This project has a Crucible knowledge base in `.crucible/`.
+Use the `crucible` CLI to ingest sources, search, and maintain the wiki.
+
+Layout: `.crucible/sources/` (primary sources), `.crucible/wiki/` (distilled articles),
+`.crucible/crucible.db` (graph database).
+
+Conventions: org-mode with scimax, org-ref citations, narrative prose.
+The LLM maintains the wiki; manual edits are the exception.
+Run `crucible help all` for the full CLI reference.
+<!-- crucible-project -->
+
+<!-- crucible-knowledge-base -->
+## Crucible Knowledge Base
+
+A curated knowledge base is available at `/home/sdinh/sandbox/OptiUNO`.
+Before answering domain-specific questions, check if the knowledge base
+covers the topic by reading the manifest:
+`/home/sdinh/sandbox/OptiUNO/.crucible/wiki/MANIFEST.md`
+
+If relevant, use `crucible search "query"` and `crucible concept <name>`
+to find articles. Run `crucible help all` for the full CLI reference.
+Always `cd /home/sdinh/sandbox/OptiUNO` before running crucible commands.
+<!-- crucible-knowledge-base -->

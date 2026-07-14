@@ -1,0 +1,62 @@
+{
+  "name": "allinit",
+  "number": 2006,
+  "classification": "OBR2-AY",
+  "N": 4,
+  "M": 3,
+  "Nnl": 3,
+  "Mnl": 0,
+  "Nz": 3,
+  "Fbest_raw": "16.7060000",
+  "Fbest": 16.706,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "allinit.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/allinit.dag",
+      "bytes": 1331
+    },
+    "gms": {
+      "filename": "allinit.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/allinit.gms",
+      "bytes": 821
+    },
+    "mod": {
+      "filename": "allinit.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/allinit.mod",
+      "bytes": 917
+    },
+    "res": {
+      "filename": "allinit.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/allinit.res",
+      "bytes": 190
+    },
+    "nl": {
+      "filename": "allinit.nl",
+      "bytes": 829
+    },
+    "nl_presolve": {
+      "filename": "allinit_presolve.nl",
+      "bytes": 777
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/allinit.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "coolhans",
+  "number": 2114,
+  "classification": "NQR2-RN",
+  "N": 27,
+  "M": 27,
+  "Nnl": 9,
+  "Mnl": 3,
+  "Nz": 45,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "coolhans.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/coolhans.dag",
+      "bytes": 4917
+    },
+    "gms": {
+      "filename": "coolhans.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/coolhans.gms",
+      "bytes": 2320
+    },
+    "mod": {
+      "filename": "coolhans.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/coolhans.mod",
+      "bytes": 1194
+    },
+    "res": {
+      "filename": "coolhans.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/coolhans.res",
+      "bytes": 385
+    },
+    "nl": {
+      "filename": "coolhans.nl",
+      "bytes": 1689
+    },
+    "nl_presolve": {
+      "filename": "coolhans_presolve.nl",
+      "bytes": 1689
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/coolhans.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

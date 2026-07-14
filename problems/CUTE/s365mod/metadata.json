@@ -1,0 +1,62 @@
+{
+  "name": "s365mod",
+  "number": 2646,
+  "classification": "QOR2-AY",
+  "N": 9,
+  "M": 11,
+  "Nnl": 7,
+  "Mnl": 5,
+  "Nz": 24,
+  "Fbest_raw": "52.1399000",
+  "Fbest": 52.1399,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "s365mod.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/s365mod.dag",
+      "bytes": 2030
+    },
+    "gms": {
+      "filename": "s365mod.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/s365mod.gms",
+      "bytes": 996
+    },
+    "mod": {
+      "filename": "s365mod.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/s365mod.mod",
+      "bytes": 1314
+    },
+    "res": {
+      "filename": "s365mod.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/s365mod.res",
+      "bytes": 310
+    },
+    "nl": {
+      "filename": "s365mod.nl",
+      "bytes": 1075
+    },
+    "nl_presolve": {
+      "filename": "s365mod_presolve.nl",
+      "bytes": 1075
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/s365mod.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

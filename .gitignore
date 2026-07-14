@@ -1,0 +1,15 @@
+# Crucible: entire knowledge base (local-only, not shared)
+.crucible/
+
+# Claude Code: local settings (machine-specific, not shareable)
+.claude/settings.json
+.claude/settings.local.json
+
+# Claude Code: crucible skill (local-only)
+.claude/skills/crucible/
+scripts/__pycache__/problem_parser.cpython-312.pyc
+.gitignore
+scripts/__pycache__/scrape_cute.cpython-312.pyc
+scripts/__pycache__/uno_runner.cpython-312.pyc
+scripts/__pycache__/
+optiuno/__pycache__

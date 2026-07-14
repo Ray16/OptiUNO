@@ -1,0 +1,62 @@
+{
+  "name": "grouping",
+  "number": 2264,
+  "classification": "SQR2-MN",
+  "N": 100,
+  "M": 125,
+  "Nnl": 100,
+  "Mnl": 100,
+  "Nz": 400,
+  "Fbest_raw": "0.3502000",
+  "Fbest": 0.3502,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "grouping.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/grouping.dag",
+      "bytes": 64442
+    },
+    "gms": {
+      "filename": "grouping.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/grouping.gms",
+      "bytes": 23224
+    },
+    "mod": {
+      "filename": "grouping.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/grouping.mod",
+      "bytes": 19592
+    },
+    "res": {
+      "filename": "grouping.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/grouping.res",
+      "bytes": 2586
+    },
+    "nl": {
+      "filename": "grouping.nl",
+      "bytes": 12604
+    },
+    "nl_presolve": {
+      "filename": "grouping_presolve.nl",
+      "bytes": 12724
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/grouping.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

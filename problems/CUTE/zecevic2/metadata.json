@@ -1,0 +1,62 @@
+{
+  "name": "zecevic2",
+  "number": 2723,
+  "classification": "QLR2-AN",
+  "N": 2,
+  "M": 4,
+  "Nnl": 1,
+  "Mnl": 0,
+  "Nz": 6,
+  "Fbest_raw": "-4.1250000",
+  "Fbest": -4.125,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "zecevic2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zecevic2.dag",
+      "bytes": 466
+    },
+    "gms": {
+      "filename": "zecevic2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zecevic2.gms",
+      "bytes": 552
+    },
+    "mod": {
+      "filename": "zecevic2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zecevic2.mod",
+      "bytes": 1023
+    },
+    "res": {
+      "filename": "zecevic2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/zecevic2.res",
+      "bytes": 55
+    },
+    "nl": {
+      "filename": "zecevic2.nl",
+      "bytes": 651
+    },
+    "nl_presolve": {
+      "filename": "zecevic2_presolve.nl",
+      "bytes": 651
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zecevic2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

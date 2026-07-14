@@ -1,0 +1,62 @@
+{
+  "name": "robot",
+  "number": 2642,
+  "classification": "QOR2-RY",
+  "N": 14,
+  "M": 9,
+  "Nnl": 7,
+  "Mnl": 2,
+  "Nz": 21,
+  "Fbest_raw": "5.4628000",
+  "Fbest": 5.4628,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "robot.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/robot.dag",
+      "bytes": 2042
+    },
+    "gms": {
+      "filename": "robot.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/robot.gms",
+      "bytes": 1033
+    },
+    "mod": {
+      "filename": "robot.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/robot.mod",
+      "bytes": 1370
+    },
+    "res": {
+      "filename": "robot.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/robot.res",
+      "bytes": 220
+    },
+    "nl": {
+      "filename": "robot.nl",
+      "bytes": 1098
+    },
+    "nl_presolve": {
+      "filename": "robot_presolve.nl",
+      "bytes": 1098
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/robot.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

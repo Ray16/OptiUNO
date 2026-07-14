@@ -1,0 +1,62 @@
+{
+  "name": "mconcon",
+  "number": 2487,
+  "classification": "LOI2-MN",
+  "N": 15,
+  "M": 16,
+  "Nnl": 11,
+  "Mnl": 4,
+  "Nz": 33,
+  "Fbest_raw": "-6373.1100000",
+  "Fbest": -6373.11,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "mconcon.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mconcon.dag",
+      "bytes": 2526
+    },
+    "gms": {
+      "filename": "mconcon.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mconcon.gms",
+      "bytes": 1251
+    },
+    "mod": {
+      "filename": "mconcon.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mconcon.mod",
+      "bytes": 1435
+    },
+    "res": {
+      "filename": "mconcon.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/mconcon.res",
+      "bytes": 240
+    },
+    "nl": {
+      "filename": "mconcon.nl",
+      "bytes": 1459
+    },
+    "nl_presolve": {
+      "filename": "mconcon_presolve.nl",
+      "bytes": 1459
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mconcon.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

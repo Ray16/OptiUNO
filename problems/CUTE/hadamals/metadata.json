@@ -1,0 +1,62 @@
+{
+  "name": "hadamals",
+  "number": 2268,
+  "classification": "OBR2-RN",
+  "N": 100,
+  "M": 0,
+  "Nnl": 90,
+  "Mnl": 0,
+  "Nz": 90,
+  "Fbest_raw": "25.3164000",
+  "Fbest": 25.3164,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hadamals.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hadamals.dag",
+      "bytes": 110198
+    },
+    "gms": {
+      "filename": "hadamals.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hadamals.gms",
+      "bytes": 31400
+    },
+    "mod": {
+      "filename": "hadamals.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hadamals.mod",
+      "bytes": 27903
+    },
+    "res": {
+      "filename": "hadamals.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hadamals.res",
+      "bytes": 1247
+    },
+    "nl": {
+      "filename": "hadamals.nl",
+      "bytes": 18886
+    },
+    "nl_presolve": {
+      "filename": "hadamals_presolve.nl",
+      "bytes": 17408
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hadamals.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

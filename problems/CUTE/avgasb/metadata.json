@@ -1,0 +1,62 @@
+{
+  "name": "avgasb",
+  "number": 2026,
+  "classification": "QLR2-AN",
+  "N": 8,
+  "M": 10,
+  "Nnl": 6,
+  "Mnl": 0,
+  "Nz": 23,
+  "Fbest_raw": "-4.4832000",
+  "Fbest": -4.4832,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "avgasb.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/avgasb.dag",
+      "bytes": 2643
+    },
+    "gms": {
+      "filename": "avgasb.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/avgasb.gms",
+      "bytes": 1487
+    },
+    "mod": {
+      "filename": "avgasb.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/avgasb.mod",
+      "bytes": 1268
+    },
+    "res": {
+      "filename": "avgasb.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/avgasb.res",
+      "bytes": 286
+    },
+    "nl": {
+      "filename": "avgasb.nl",
+      "bytes": 1165
+    },
+    "nl_presolve": {
+      "filename": "avgasb_presolve.nl",
+      "bytes": 1165
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/avgasb.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "zy2",
+  "number": 2727,
+  "classification": "OQR2-AN",
+  "N": 3,
+  "M": 2,
+  "Nnl": 3,
+  "Mnl": 1,
+  "Nz": 6,
+  "Fbest_raw": "2.0000000",
+  "Fbest": 2.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "zy2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zy2.dag",
+      "bytes": 566
+    },
+    "gms": {
+      "filename": "zy2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zy2.gms",
+      "bytes": 644
+    },
+    "mod": {
+      "filename": "zy2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zy2.mod",
+      "bytes": 954
+    },
+    "res": {
+      "filename": "zy2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/zy2.res",
+      "bytes": 166
+    },
+    "nl": {
+      "filename": "zy2.nl",
+      "bytes": 664
+    },
+    "nl_presolve": {
+      "filename": "zy2_presolve.nl",
+      "bytes": 664
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zy2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

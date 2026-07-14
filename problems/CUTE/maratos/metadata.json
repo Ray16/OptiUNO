@@ -1,0 +1,62 @@
+{
+  "name": "maratos",
+  "number": 2482,
+  "classification": "QQR2-AN",
+  "N": 2,
+  "M": 1,
+  "Nnl": 2,
+  "Mnl": 1,
+  "Nz": 4,
+  "Fbest_raw": "-1.0000000",
+  "Fbest": -1.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "maratos.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/maratos.dag",
+      "bytes": 416
+    },
+    "gms": {
+      "filename": "maratos.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/maratos.gms",
+      "bytes": 548
+    },
+    "mod": {
+      "filename": "maratos.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/maratos.mod",
+      "bytes": 1005
+    },
+    "res": {
+      "filename": "maratos.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/maratos.res",
+      "bytes": 63
+    },
+    "nl": {
+      "filename": "maratos.nl",
+      "bytes": 636
+    },
+    "nl_presolve": {
+      "filename": "maratos_presolve.nl",
+      "bytes": 636
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/maratos.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "palmer5b",
+  "number": 2577,
+  "classification": "SBR2-RN",
+  "N": 9,
+  "M": 0,
+  "Nnl": 9,
+  "Mnl": 0,
+  "Nz": 9,
+  "Fbest_raw": "0.0098000",
+  "Fbest": 0.0098,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "palmer5b.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/palmer5b.dag",
+      "bytes": 8675
+    },
+    "gms": {
+      "filename": "palmer5b.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/palmer5b.gms",
+      "bytes": 3524
+    },
+    "mod": {
+      "filename": "palmer5b.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/palmer5b.mod",
+      "bytes": 1667
+    },
+    "res": {
+      "filename": "palmer5b.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/palmer5b.res",
+      "bytes": 364
+    },
+    "nl": {
+      "filename": "palmer5b.nl",
+      "bytes": 3059
+    },
+    "nl_presolve": {
+      "filename": "palmer5b_presolve.nl",
+      "bytes": 3059
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/palmer5b.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

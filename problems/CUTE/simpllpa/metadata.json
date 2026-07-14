@@ -1,0 +1,62 @@
+{
+  "name": "simpllpa",
+  "number": 2659,
+  "classification": "LLR2-AN",
+  "N": 2,
+  "M": 2,
+  "Nnl": 0,
+  "Mnl": 0,
+  "Nz": 6,
+  "Fbest_raw": "1.0000000",
+  "Fbest": 1.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "simpllpa.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/simpllpa.dag",
+      "bytes": 294
+    },
+    "gms": {
+      "filename": "simpllpa.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/simpllpa.gms",
+      "bytes": 493
+    },
+    "mod": {
+      "filename": "simpllpa.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/simpllpa.mod",
+      "bytes": 698
+    },
+    "res": {
+      "filename": "simpllpa.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/simpllpa.res",
+      "bytes": 44
+    },
+    "nl": {
+      "filename": "simpllpa.nl",
+      "bytes": 583
+    },
+    "nl_presolve": {
+      "filename": "simpllpa_presolve.nl",
+      "bytes": 583
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/simpllpa.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

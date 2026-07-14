@@ -1,0 +1,42 @@
+$ /home/sdinh/sandbox/OptiUNO/quickRun/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs083.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=exact inertia_correction_strategy=none globalization_mechanism=TR globalization_strategy=fletcher_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs083.nl
+5 variables, 3 constraints (0 equality, 3 inequality)
+Problem type: NLP
+
+Non-default options:
+QP_solver = BQPD
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         1.00e+01  OPT   -         -3.222e+04 3.24e+00  3.03e+02  0.00e+00  initial point 
+ 1      1      -         1.00e+01  OPT   1.00e+01  -2.990e+04 0.00e+00  1.68e+02  4.34e+02  ✔ (h-type)    
+ 2      1      -         2.00e+01  OPT   8.00e+00  -3.069e+04 3.25e-02  7.53e+00  2.59e+01  ✔ (f-type)    
+ 3      1      -         2.00e+01  OPT   6.84e-02  -3.067e+04 0.00e+00  1.80e-02  1.53e-02  ✔ (h-type)    
+ 4      1      -         2.00e+01  OPT   6.32e-05  -3.067e+04 1.27e-11  9.26e-09  7.18e-09  ✔ (f-type)    
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR Fletcher-filter restoration inequality-constrained SQP method with exact Hessian and no inertia correction)
+Tue Jul 14 11:39:24 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			-30665.54
+Primal feasibility:			1.269296e-11
+┌ Stationarity residual:		9.257255e-09
+│ Primal feasibility:			1.269296e-11
+└ Complementarity residual:		7.183261e-09
+CPU time:				0.000165s
+Iterations:				4
+Objective evaluations:			5
+Constraints evaluations:		5
+Objective gradient evaluations:		5
+Jacobian evaluations:			5
+Hessian evaluations:			4
+Number of subproblems solved:		4

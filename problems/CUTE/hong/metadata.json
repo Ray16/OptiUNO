@@ -1,0 +1,62 @@
+{
+  "name": "hong",
+  "number": 2313,
+  "classification": "OLR2-AN",
+  "N": 4,
+  "M": 1,
+  "Nnl": 4,
+  "Mnl": 0,
+  "Nz": 8,
+  "Fbest_raw": "1.3473000",
+  "Fbest": 1.3473,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hong.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hong.dag",
+      "bytes": 928
+    },
+    "gms": {
+      "filename": "hong.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hong.gms",
+      "bytes": 728
+    },
+    "mod": {
+      "filename": "hong.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hong.mod",
+      "bytes": 795
+    },
+    "res": {
+      "filename": "hong.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hong.res",
+      "bytes": 190
+    },
+    "nl": {
+      "filename": "hong.nl",
+      "bytes": 752
+    },
+    "nl_presolve": {
+      "filename": "hong_presolve.nl",
+      "bytes": 752
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hong.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "bratu2d",
+  "number": 2065,
+  "classification": "NOR2-MN",
+  "N": 5184,
+  "M": 4900,
+  "Nnl": 4900,
+  "Mnl": 4900,
+  "Nz": 24220,
+  "Fbest_raw": "",
+  "Fbest": null,
+  "feasible": null,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": false,
+  "dag_file_available": false,
+  "res_file_available": false,
+  "other_files": [],
+  "files": {
+    "mod": {
+      "filename": "bratu2d.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bratu2d.mod",
+      "bytes": 1141
+    },
+    "nl": {
+      "filename": "bratu2d.nl",
+      "bytes": 520319
+    },
+    "nl_presolve": {
+      "filename": "bratu2d_presolve.nl",
+      "bytes": 520319
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bratu2d.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "dualc5",
+  "number": 2195,
+  "classification": "QLR2-MN",
+  "N": 8,
+  "M": 278,
+  "Nnl": 8,
+  "Mnl": 0,
+  "Nz": 16,
+  "Fbest_raw": "427.2326000",
+  "Fbest": 427.2326,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "dualc5.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dualc5.dag",
+      "bytes": 81718
+    },
+    "gms": {
+      "filename": "dualc5.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dualc5.gms",
+      "bytes": 42991
+    },
+    "mod": {
+      "filename": "dualc5.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dualc5.mod",
+      "bytes": 32349
+    },
+    "res": {
+      "filename": "dualc5.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/dualc5.res",
+      "bytes": 286
+    },
+    "nl": {
+      "filename": "dualc5.nl",
+      "bytes": 21878
+    },
+    "nl_presolve": {
+      "filename": "dualc5_presolve.nl",
+      "bytes": 1486
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dualc5.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

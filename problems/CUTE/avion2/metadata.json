@@ -1,0 +1,62 @@
+{
+  "name": "avion2",
+  "number": 2027,
+  "classification": "OLR2-RN",
+  "N": 49,
+  "M": 15,
+  "Nnl": 37,
+  "Mnl": 0,
+  "Nz": 80,
+  "Fbest_raw": "94680129.5796000",
+  "Fbest": 94680129.5796,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "avion2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/avion2.dag",
+      "bytes": 8356
+    },
+    "gms": {
+      "filename": "avion2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/avion2.gms",
+      "bytes": 4229
+    },
+    "mod": {
+      "filename": "avion2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/avion2.mod",
+      "bytes": 3332
+    },
+    "res": {
+      "filename": "avion2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/avion2.res",
+      "bytes": 1310
+    },
+    "nl": {
+      "filename": "avion2.nl",
+      "bytes": 2946
+    },
+    "nl_presolve": {
+      "filename": "avion2_presolve.nl",
+      "bytes": 2969
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/avion2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "discs",
+  "number": 2152,
+  "classification": "LQR2-MY",
+  "N": 36,
+  "M": 69,
+  "Nnl": 33,
+  "Mnl": 66,
+  "Nz": 375,
+  "Fbest_raw": "12.0001000",
+  "Fbest": 12.0001,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "discs.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/discs.dag",
+      "bytes": 24454
+    },
+    "gms": {
+      "filename": "discs.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/discs.gms",
+      "bytes": 8596
+    },
+    "mod": {
+      "filename": "discs.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/discs.mod",
+      "bytes": 1244
+    },
+    "res": {
+      "filename": "discs.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/discs.res",
+      "bytes": 985
+    },
+    "nl": {
+      "filename": "discs.nl",
+      "bytes": 8469
+    },
+    "nl_presolve": {
+      "filename": "discs_presolve.nl",
+      "bytes": 7942
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/discs.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}

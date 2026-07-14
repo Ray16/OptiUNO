@@ -1,0 +1,62 @@
+{
+  "name": "camel6",
+  "number": 2091,
+  "classification": "OBR2-AN",
+  "N": 2,
+  "M": 2,
+  "Nnl": 2,
+  "Mnl": 0,
+  "Nz": 2,
+  "Fbest_raw": "-1.0316000",
+  "Fbest": -1.0316,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "camel6.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/camel6.dag",
+      "bytes": 732
+    },
+    "gms": {
+      "filename": "camel6.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/camel6.gms",
+      "bytes": 584
+    },
+    "mod": {
+      "filename": "camel6.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/camel6.mod",
+      "bytes": 821
+    },
+    "res": {
+      "filename": "camel6.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/camel6.res",
+      "bytes": 142
+    },
+    "nl": {
+      "filename": "camel6.nl",
+      "bytes": 700
+    },
+    "nl_presolve": {
+      "filename": "camel6_presolve.nl",
+      "bytes": 664
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/camel6.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
+  }
+}
