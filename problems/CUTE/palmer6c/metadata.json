@@ -1,0 +1,44 @@
+{
+  "name": "palmer6c",
+  "number": 2582,
+  "classification": "SUR2-RN",
+  "N": 8,
+  "M": 0,
+  "Nnl": 8,
+  "Mnl": 0,
+  "Nz": 8,
+  "Fbest_raw": "0.0164000",
+  "Fbest": 0.0164,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "palmer6c.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/palmer6c.dag",
+      "bytes": 8783
+    },
+    "gms": {
+      "filename": "palmer6c.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/palmer6c.gms",
+      "bytes": 3578
+    },
+    "mod": {
+      "filename": "palmer6c.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/palmer6c.mod",
+      "bytes": 1680
+    },
+    "res": {
+      "filename": "palmer6c.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/palmer6c.res",
+      "bytes": 333
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/palmer6c.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

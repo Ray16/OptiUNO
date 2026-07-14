@@ -1,0 +1,44 @@
+{
+  "name": "powellbs",
+  "number": 2616,
+  "classification": "NOR2-AN",
+  "N": 2,
+  "M": 2,
+  "Nnl": 2,
+  "Mnl": 2,
+  "Nz": 4,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "powellbs.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/powellbs.dag",
+      "bytes": 323
+    },
+    "gms": {
+      "filename": "powellbs.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/powellbs.gms",
+      "bytes": 525
+    },
+    "mod": {
+      "filename": "powellbs.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/powellbs.mod",
+      "bytes": 1011
+    },
+    "res": {
+      "filename": "powellbs.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/powellbs.res",
+      "bytes": 60
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/powellbs.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

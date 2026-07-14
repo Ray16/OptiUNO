@@ -1,0 +1,44 @@
+{
+  "name": "aircrftb",
+  "number": 2003,
+  "classification": "SXR2-RN",
+  "N": 18,
+  "M": 13,
+  "Nnl": 5,
+  "Mnl": 0,
+  "Nz": 5,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "aircrftb.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/aircrftb.dag",
+      "bytes": 3173
+    },
+    "gms": {
+      "filename": "aircrftb.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/aircrftb.gms",
+      "bytes": 1880
+    },
+    "mod": {
+      "filename": "aircrftb.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/aircrftb.mod",
+      "bytes": 1618
+    },
+    "res": {
+      "filename": "aircrftb.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/aircrftb.res",
+      "bytes": 535
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/aircrftb.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

@@ -1,0 +1,29 @@
+{
+  "name": "drcav3lq",
+  "number": 2175,
+  "classification": "NQR2-MY",
+  "N": 10816,
+  "M": 10000,
+  "Nnl": 10000,
+  "Mnl": 10000,
+  "Nz": 128004,
+  "Fbest_raw": "",
+  "Fbest": null,
+  "feasible": null,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": false,
+  "dag_file_available": false,
+  "res_file_available": false,
+  "other_files": [],
+  "files": {
+    "mod": {
+      "filename": "drcav3lq.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/drcav3lq.mod",
+      "bytes": 1761
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/drcav3lq.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

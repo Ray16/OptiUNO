@@ -1,0 +1,44 @@
+{
+  "name": "twobars",
+  "number": 2706,
+  "classification": "OOR2-MN",
+  "N": 2,
+  "M": 2,
+  "Nnl": 2,
+  "Mnl": 2,
+  "Nz": 6,
+  "Fbest_raw": "1.5087000",
+  "Fbest": 1.5087,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "twobars.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/twobars.dag",
+      "bytes": 989
+    },
+    "gms": {
+      "filename": "twobars.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/twobars.gms",
+      "bytes": 718
+    },
+    "mod": {
+      "filename": "twobars.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/twobars.mod",
+      "bytes": 1078
+    },
+    "res": {
+      "filename": "twobars.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/twobars.res",
+      "bytes": 63
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/twobars.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

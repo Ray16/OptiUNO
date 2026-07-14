@@ -1,0 +1,44 @@
+{
+  "name": "expquad",
+  "number": 2226,
+  "classification": "OBR2-AN",
+  "N": 120,
+  "M": 10,
+  "Nnl": 120,
+  "Mnl": 0,
+  "Nz": 120,
+  "Fbest_raw": "-3624600.0000000",
+  "Fbest": -3624600.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "expquad.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/expquad.dag",
+      "bytes": 36426
+    },
+    "gms": {
+      "filename": "expquad.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/expquad.gms",
+      "bytes": 8223
+    },
+    "mod": {
+      "filename": "expquad.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/expquad.mod",
+      "bytes": 726
+    },
+    "res": {
+      "filename": "expquad.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/expquad.res",
+      "bytes": 2254
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/expquad.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

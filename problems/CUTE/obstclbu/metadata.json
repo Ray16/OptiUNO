@@ -1,0 +1,44 @@
+{
+  "name": "obstclbu",
+  "number": 2530,
+  "classification": "QBR2-AY",
+  "N": 96,
+  "M": 0,
+  "Nnl": 64,
+  "Mnl": 0,
+  "Nz": 64,
+  "Fbest_raw": "2.8750000",
+  "Fbest": 2.875,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "obstclbu.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/obstclbu.dag",
+      "bytes": 82710
+    },
+    "gms": {
+      "filename": "obstclbu.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/obstclbu.gms",
+      "bytes": 24126
+    },
+    "mod": {
+      "filename": "obstclbu.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/obstclbu.mod",
+      "bytes": 22520
+    },
+    "res": {
+      "filename": "obstclbu.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/obstclbu.res",
+      "bytes": 1563
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/obstclbu.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

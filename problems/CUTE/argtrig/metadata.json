@@ -1,0 +1,44 @@
+{
+  "name": "argtrig",
+  "number": 2014,
+  "classification": "NOR2-AN",
+  "N": 100,
+  "M": 100,
+  "Nnl": 100,
+  "Mnl": 100,
+  "Nz": 10000,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "argtrig.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/argtrig.dag",
+      "bytes": 606896
+    },
+    "gms": {
+      "filename": "argtrig.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/argtrig.gms",
+      "bytes": 164133
+    },
+    "mod": {
+      "filename": "argtrig.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/argtrig.mod",
+      "bytes": 874
+    },
+    "res": {
+      "filename": "argtrig.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/argtrig.res",
+      "bytes": 1960
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/argtrig.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

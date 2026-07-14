@@ -1,0 +1,44 @@
+{
+  "name": "sawpath",
+  "number": 2648,
+  "classification": "QOR2-AN",
+  "N": 593,
+  "M": 786,
+  "Nnl": 586,
+  "Mnl": 196,
+  "Nz": 2928,
+  "Fbest_raw": "(181.5730000)",
+  "Fbest": 181.573,
+  "feasible": false,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "sawpath.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/sawpath.dag",
+      "bytes": 246984
+    },
+    "gms": {
+      "filename": "sawpath.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/sawpath.gms",
+      "bytes": 108757
+    },
+    "mod": {
+      "filename": "sawpath.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/sawpath.mod",
+      "bytes": 5959
+    },
+    "res": {
+      "filename": "sawpath.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/sawpath.res",
+      "bytes": 11970
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/sawpath.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

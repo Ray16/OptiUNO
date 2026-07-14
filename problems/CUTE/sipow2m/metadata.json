@@ -1,0 +1,44 @@
+{
+  "name": "sipow2m",
+  "number": 2668,
+  "classification": "LLR2-AN",
+  "N": 2,
+  "M": 5001,
+  "Nnl": 0,
+  "Mnl": 0,
+  "Nz": 10001,
+  "Fbest_raw": "-1.0000000",
+  "Fbest": -1.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "sipow2m.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/sipow2m.dag",
+      "bytes": 771836
+    },
+    "gms": {
+      "filename": "sipow2m.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/sipow2m.gms",
+      "bytes": 435226
+    },
+    "mod": {
+      "filename": "sipow2m.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/sipow2m.mod",
+      "bytes": 997
+    },
+    "res": {
+      "filename": "sipow2m.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/sipow2m.res",
+      "bytes": 69
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/sipow2m.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

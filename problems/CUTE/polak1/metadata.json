@@ -1,0 +1,44 @@
+{
+  "name": "polak1",
+  "number": 2602,
+  "classification": "LOR2-AN",
+  "N": 3,
+  "M": 2,
+  "Nnl": 2,
+  "Mnl": 2,
+  "Nz": 7,
+  "Fbest_raw": "2.7183000",
+  "Fbest": 2.7183,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "polak1.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/polak1.dag",
+      "bytes": 647
+    },
+    "gms": {
+      "filename": "polak1.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/polak1.gms",
+      "bytes": 543
+    },
+    "mod": {
+      "filename": "polak1.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/polak1.mod",
+      "bytes": 900
+    },
+    "res": {
+      "filename": "polak1.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/polak1.res",
+      "bytes": 86
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/polak1.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

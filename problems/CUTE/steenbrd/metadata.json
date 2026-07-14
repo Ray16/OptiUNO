@@ -1,0 +1,44 @@
+{
+  "name": "steenbrd",
+  "number": 2689,
+  "classification": "ONR2-MY",
+  "N": 468,
+  "M": 108,
+  "Nnl": 468,
+  "Mnl": 0,
+  "Nz": 1332,
+  "Fbest_raw": "9030.0828000",
+  "Fbest": 9030.0828,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "steenbrd.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/steenbrd.dag",
+      "bytes": 91798
+    },
+    "gms": {
+      "filename": "steenbrd.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/steenbrd.gms",
+      "bytes": 39861
+    },
+    "mod": {
+      "filename": "steenbrd.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/steenbrd.mod",
+      "bytes": 3495
+    },
+    "res": {
+      "filename": "steenbrd.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/steenbrd.res",
+      "bytes": 12154
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/steenbrd.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

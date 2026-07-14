@@ -1,0 +1,44 @@
+{
+  "name": "himmelp6",
+  "number": 2312,
+  "classification": "OQR2-AN",
+  "N": 2,
+  "M": 5,
+  "Nnl": 2,
+  "Mnl": 3,
+  "Nz": 10,
+  "Fbest_raw": "-59.0131000",
+  "Fbest": -59.0131,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "himmelp6.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelp6.dag",
+      "bytes": 3010
+    },
+    "gms": {
+      "filename": "himmelp6.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelp6.gms",
+      "bytes": 1539
+    },
+    "mod": {
+      "filename": "himmelp6.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelp6.mod",
+      "bytes": 1701
+    },
+    "res": {
+      "filename": "himmelp6.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/himmelp6.res",
+      "bytes": 142
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelp6.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

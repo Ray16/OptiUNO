@@ -1,0 +1,44 @@
+{
+  "name": "trimloss",
+  "number": 2703,
+  "classification": "LOR2-AN",
+  "N": 142,
+  "M": 75,
+  "Nnl": 20,
+  "Mnl": 4,
+  "Nz": 1000,
+  "Fbest_raw": "9.0600000",
+  "Fbest": 9.06,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "trimloss.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/trimloss.dag",
+      "bytes": 37362
+    },
+    "gms": {
+      "filename": "trimloss.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/trimloss.gms",
+      "bytes": 20557
+    },
+    "mod": {
+      "filename": "trimloss.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/trimloss.mod",
+      "bytes": 26928
+    },
+    "res": {
+      "filename": "trimloss.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/trimloss.res",
+      "bytes": 3678
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/trimloss.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

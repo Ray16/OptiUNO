@@ -1,0 +1,44 @@
+{
+  "name": "makela1",
+  "number": 2476,
+  "classification": "LQR2-AN",
+  "N": 3,
+  "M": 2,
+  "Nnl": 2,
+  "Mnl": 1,
+  "Nz": 7,
+  "Fbest_raw": "-1.4142000",
+  "Fbest": -1.4142,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "makela1.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/makela1.dag",
+      "bytes": 391
+    },
+    "gms": {
+      "filename": "makela1.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/makela1.gms",
+      "bytes": 508
+    },
+    "mod": {
+      "filename": "makela1.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/makela1.mod",
+      "bytes": 771
+    },
+    "res": {
+      "filename": "makela1.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/makela1.res",
+      "bytes": 82
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/makela1.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

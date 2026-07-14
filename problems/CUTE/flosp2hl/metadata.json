@@ -1,0 +1,44 @@
+{
+  "name": "flosp2hl",
+  "number": 2236,
+  "classification": "NQR2-MY",
+  "N": 691,
+  "M": 0,
+  "Nnl": 650,
+  "Mnl": 0,
+  "Nz": 650,
+  "Fbest_raw": "38.3351000",
+  "Fbest": 38.3351,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "flosp2hl.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/flosp2hl.dag",
+      "bytes": 988155
+    },
+    "gms": {
+      "filename": "flosp2hl.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/flosp2hl.gms",
+      "bytes": 187443
+    },
+    "mod": {
+      "filename": "flosp2hl.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/flosp2hl.mod",
+      "bytes": 221896
+    },
+    "res": {
+      "filename": "flosp2hl.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/flosp2hl.res",
+      "bytes": 17952
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/flosp2hl.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

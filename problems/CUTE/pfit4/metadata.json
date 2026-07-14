@@ -1,0 +1,44 @@
+{
+  "name": "pfit4",
+  "number": 2600,
+  "classification": "NOR2-AN",
+  "N": 3,
+  "M": 0,
+  "Nnl": 3,
+  "Mnl": 0,
+  "Nz": 3,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "pfit4.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pfit4.dag",
+      "bytes": 1498
+    },
+    "gms": {
+      "filename": "pfit4.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pfit4.gms",
+      "bytes": 821
+    },
+    "mod": {
+      "filename": "pfit4.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pfit4.mod",
+      "bytes": 770
+    },
+    "res": {
+      "filename": "pfit4.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/pfit4.res",
+      "bytes": 166
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pfit4.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

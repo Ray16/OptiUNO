@@ -1,0 +1,44 @@
+{
+  "name": "bqp1var",
+  "number": 2051,
+  "classification": "QBR2-AN",
+  "N": 1,
+  "M": 1,
+  "Nnl": 1,
+  "Mnl": 0,
+  "Nz": 1,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "bqp1var.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bqp1var.dag",
+      "bytes": 162
+    },
+    "gms": {
+      "filename": "bqp1var.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bqp1var.gms",
+      "bytes": 412
+    },
+    "mod": {
+      "filename": "bqp1var.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bqp1var.mod",
+      "bytes": 655
+    },
+    "res": {
+      "filename": "bqp1var.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/bqp1var.res",
+      "bytes": 34
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bqp1var.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

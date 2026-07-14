@@ -1,0 +1,44 @@
+{
+  "name": "growth",
+  "number": 2265,
+  "classification": "NOR2-AN",
+  "N": 3,
+  "M": 0,
+  "Nnl": 3,
+  "Mnl": 0,
+  "Nz": 3,
+  "Fbest_raw": "1.0040000",
+  "Fbest": 1.004,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "growth.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/growth.dag",
+      "bytes": 3439
+    },
+    "gms": {
+      "filename": "growth.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/growth.gms",
+      "bytes": 1594
+    },
+    "mod": {
+      "filename": "growth.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/growth.mod",
+      "bytes": 1105
+    },
+    "res": {
+      "filename": "growth.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/growth.res",
+      "bytes": 166
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/growth.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

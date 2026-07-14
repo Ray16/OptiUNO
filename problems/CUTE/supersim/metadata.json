@@ -1,0 +1,44 @@
+{
+  "name": "supersim",
+  "number": 2693,
+  "classification": "LLR2-AN",
+  "N": 2,
+  "M": 2,
+  "Nnl": 0,
+  "Mnl": 0,
+  "Nz": 5,
+  "Fbest_raw": "0.6667000",
+  "Fbest": 0.6667,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "supersim.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/supersim.dag",
+      "bytes": 249
+    },
+    "gms": {
+      "filename": "supersim.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/supersim.gms",
+      "bytes": 470
+    },
+    "mod": {
+      "filename": "supersim.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/supersim.mod",
+      "bytes": 746
+    },
+    "res": {
+      "filename": "supersim.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/supersim.res",
+      "bytes": 65
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/supersim.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

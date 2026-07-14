@@ -1,0 +1,44 @@
+{
+  "name": "lakes",
+  "number": 2448,
+  "classification": "QOR2-RN",
+  "N": 90,
+  "M": 78,
+  "Nnl": 90,
+  "Mnl": 18,
+  "Nz": 300,
+  "Fbest_raw": "350524.7811000",
+  "Fbest": 350524.7811,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "lakes.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/lakes.dag",
+      "bytes": 27919
+    },
+    "gms": {
+      "filename": "lakes.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/lakes.gms",
+      "bytes": 10851
+    },
+    "mod": {
+      "filename": "lakes.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/lakes.mod",
+      "bytes": 14761
+    },
+    "res": {
+      "filename": "lakes.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/lakes.res",
+      "bytes": 2335
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/lakes.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

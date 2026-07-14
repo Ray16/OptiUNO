@@ -1,0 +1,44 @@
+{
+  "name": "byrdsphr",
+  "number": 2090,
+  "classification": "LQR2-AN",
+  "N": 3,
+  "M": 2,
+  "Nnl": 3,
+  "Mnl": 2,
+  "Nz": 9,
+  "Fbest_raw": "-4.6833000",
+  "Fbest": -4.6833,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "byrdsphr.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/byrdsphr.dag",
+      "bytes": 487
+    },
+    "gms": {
+      "filename": "byrdsphr.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/byrdsphr.gms",
+      "bytes": 556
+    },
+    "mod": {
+      "filename": "byrdsphr.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/byrdsphr.mod",
+      "bytes": 833
+    },
+    "res": {
+      "filename": "byrdsphr.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/byrdsphr.res",
+      "bytes": 74
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/byrdsphr.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

@@ -1,0 +1,44 @@
+{
+  "name": "lootsma",
+  "number": 2470,
+  "classification": "OQR2-AN",
+  "N": 3,
+  "M": 3,
+  "Nnl": 3,
+  "Mnl": 2,
+  "Nz": 8,
+  "Fbest_raw": "1.4142000",
+  "Fbest": 1.4142,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "lootsma.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/lootsma.dag",
+      "bytes": 709
+    },
+    "gms": {
+      "filename": "lootsma.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/lootsma.gms",
+      "bytes": 638
+    },
+    "mod": {
+      "filename": "lootsma.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/lootsma.mod",
+      "bytes": 947
+    },
+    "res": {
+      "filename": "lootsma.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/lootsma.res",
+      "bytes": 82
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/lootsma.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

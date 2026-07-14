@@ -1,0 +1,44 @@
+{
+  "name": "twirism1",
+  "number": 2705,
+  "classification": "LOI2-RN",
+  "N": 343,
+  "M": 313,
+  "Nnl": 342,
+  "Mnl": 258,
+  "Nz": 4086,
+  "Fbest_raw": "-1.0080000",
+  "Fbest": -1.008,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "twirism1.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/twirism1.dag",
+      "bytes": 363817
+    },
+    "gms": {
+      "filename": "twirism1.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/twirism1.gms",
+      "bytes": 117414
+    },
+    "mod": {
+      "filename": "twirism1.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/twirism1.mod",
+      "bytes": 104347
+    },
+    "res": {
+      "filename": "twirism1.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/twirism1.res",
+      "bytes": 6025
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/twirism1.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

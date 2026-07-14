@@ -1,0 +1,44 @@
+{
+  "name": "catenary",
+  "number": 2094,
+  "classification": "LQR2-AY",
+  "N": 501,
+  "M": 166,
+  "Nnl": 496,
+  "Mnl": 166,
+  "Nz": 992,
+  "Fbest_raw": "-345186.6771000",
+  "Fbest": -345186.6771,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "catenary.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/catenary.dag",
+      "bytes": 76214
+    },
+    "gms": {
+      "filename": "catenary.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/catenary.gms",
+      "bytes": 25868
+    },
+    "mod": {
+      "filename": "catenary.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/catenary.mod",
+      "bytes": 1168
+    },
+    "res": {
+      "filename": "catenary.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/catenary.res",
+      "bytes": 12882
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/catenary.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

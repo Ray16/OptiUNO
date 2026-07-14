@@ -1,0 +1,44 @@
+{
+  "name": "denschnd",
+  "number": 2147,
+  "classification": "SUR2-AN",
+  "N": 3,
+  "M": 0,
+  "Nnl": 3,
+  "Mnl": 0,
+  "Nz": 3,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "denschnd.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/denschnd.dag",
+      "bytes": 638
+    },
+    "gms": {
+      "filename": "denschnd.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/denschnd.gms",
+      "bytes": 541
+    },
+    "mod": {
+      "filename": "denschnd.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/denschnd.mod",
+      "bytes": 855
+    },
+    "res": {
+      "filename": "denschnd.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/denschnd.res",
+      "bytes": 166
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/denschnd.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

@@ -1,0 +1,44 @@
+{
+  "name": "fccu",
+  "number": 2229,
+  "classification": "SLR2-MN",
+  "N": 19,
+  "M": 8,
+  "Nnl": 19,
+  "Mnl": 0,
+  "Nz": 47,
+  "Fbest_raw": "11.1491000",
+  "Fbest": 11.1491,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "fccu.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/fccu.dag",
+      "bytes": 3519
+    },
+    "gms": {
+      "filename": "fccu.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/fccu.gms",
+      "bytes": 1593
+    },
+    "mod": {
+      "filename": "fccu.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/fccu.mod",
+      "bytes": 2665
+    },
+    "res": {
+      "filename": "fccu.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/fccu.res",
+      "bytes": 560
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/fccu.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

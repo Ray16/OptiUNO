@@ -1,0 +1,44 @@
+{
+  "name": "hvycrash",
+  "number": 2439,
+  "classification": "LOR2-AN",
+  "N": 202,
+  "M": 150,
+  "Nnl": 150,
+  "Mnl": 150,
+  "Nz": 600,
+  "Fbest_raw": "-0.0481000",
+  "Fbest": -0.0481,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hvycrash.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hvycrash.dag",
+      "bytes": 116207
+    },
+    "gms": {
+      "filename": "hvycrash.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hvycrash.gms",
+      "bytes": 37426
+    },
+    "mod": {
+      "filename": "hvycrash.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hvycrash.mod",
+      "bytes": 28924
+    },
+    "res": {
+      "filename": "hvycrash.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hvycrash.res",
+      "bytes": 5238
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hvycrash.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

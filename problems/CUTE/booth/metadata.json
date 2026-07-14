@@ -1,0 +1,44 @@
+{
+  "name": "booth",
+  "number": 2048,
+  "classification": "NLR2-AN",
+  "N": 2,
+  "M": 2,
+  "Nnl": 0,
+  "Mnl": 0,
+  "Nz": 4,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "booth.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/booth.dag",
+      "bytes": 222
+    },
+    "gms": {
+      "filename": "booth.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/booth.gms",
+      "bytes": 449
+    },
+    "mod": {
+      "filename": "booth.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/booth.mod",
+      "bytes": 842
+    },
+    "res": {
+      "filename": "booth.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/booth.res",
+      "bytes": 44
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/booth.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

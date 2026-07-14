@@ -1,0 +1,44 @@
+{
+  "name": "cluster",
+  "number": 2111,
+  "classification": "NOR2-AN",
+  "N": 2,
+  "M": 2,
+  "Nnl": 2,
+  "Mnl": 2,
+  "Nz": 4,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "cluster.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cluster.dag",
+      "bytes": 456
+    },
+    "gms": {
+      "filename": "cluster.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cluster.gms",
+      "bytes": 522
+    },
+    "mod": {
+      "filename": "cluster.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cluster.mod",
+      "bytes": 596
+    },
+    "res": {
+      "filename": "cluster.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/cluster.res",
+      "bytes": 57
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cluster.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

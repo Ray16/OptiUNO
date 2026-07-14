@@ -1,0 +1,44 @@
+{
+  "name": "oet3",
+  "number": 2534,
+  "classification": "LLR2-AN",
+  "N": 4,
+  "M": 1002,
+  "Nnl": 0,
+  "Mnl": 0,
+  "Nz": 4005,
+  "Fbest_raw": "0.0045000",
+  "Fbest": 0.0045,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "oet3.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/oet3.dag",
+      "bytes": 219578
+    },
+    "gms": {
+      "filename": "oet3.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/oet3.gms",
+      "bytes": 118612
+    },
+    "mod": {
+      "filename": "oet3.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/oet3.mod",
+      "bytes": 1030
+    },
+    "res": {
+      "filename": "oet3.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/oet3.res",
+      "bytes": 105
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/oet3.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

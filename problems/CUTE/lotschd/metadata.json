@@ -1,0 +1,44 @@
+{
+  "name": "lotschd",
+  "number": 2471,
+  "classification": "QLR2-AN",
+  "N": 12,
+  "M": 7,
+  "Nnl": 6,
+  "Mnl": 0,
+  "Nz": 60,
+  "Fbest_raw": "2398.4158000",
+  "Fbest": 2398.4158,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "lotschd.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/lotschd.dag",
+      "bytes": 2623
+    },
+    "gms": {
+      "filename": "lotschd.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/lotschd.gms",
+      "bytes": 1533
+    },
+    "mod": {
+      "filename": "lotschd.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/lotschd.mod",
+      "bytes": 1398
+    },
+    "res": {
+      "filename": "lotschd.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/lotschd.res",
+      "bytes": 385
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/lotschd.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

@@ -1,0 +1,44 @@
+{
+  "name": "qpcstair",
+  "number": 2626,
+  "classification": "QLR2-MN",
+  "N": 467,
+  "M": 356,
+  "Nnl": 385,
+  "Mnl": 0,
+  "Nz": 4051,
+  "Fbest_raw": "6204392.9810000",
+  "Fbest": 6204392.981,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "qpcstair.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qpcstair.dag",
+      "bytes": 269564
+    },
+    "gms": {
+      "filename": "qpcstair.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qpcstair.gms",
+      "bytes": 145721
+    },
+    "mod": {
+      "filename": "qpcstair.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qpcstair.mod",
+      "bytes": 95974
+    },
+    "res": {
+      "filename": "qpcstair.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/qpcstair.res",
+      "bytes": 12128
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qpcstair.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

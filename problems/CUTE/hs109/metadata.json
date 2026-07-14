@@ -1,0 +1,44 @@
+{
+  "name": "hs109",
+  "number": 2418,
+  "classification": "OOR2-AY",
+  "N": 9,
+  "M": 10,
+  "Nnl": 9,
+  "Mnl": 8,
+  "Nz": 44,
+  "Fbest_raw": "5326.8513000",
+  "Fbest": 5326.8513,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hs109.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs109.dag",
+      "bytes": 4860
+    },
+    "gms": {
+      "filename": "hs109.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs109.gms",
+      "bytes": 2140
+    },
+    "mod": {
+      "filename": "hs109.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs109.mod",
+      "bytes": 2408
+    },
+    "res": {
+      "filename": "hs109.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hs109.res",
+      "bytes": 310
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs109.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

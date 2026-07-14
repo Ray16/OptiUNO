@@ -1,0 +1,44 @@
+{
+  "name": "gouldqp3",
+  "number": 2253,
+  "classification": "QLR2-MN",
+  "N": 699,
+  "M": 349,
+  "Nnl": 698,
+  "Mnl": 0,
+  "Nz": 1745,
+  "Fbest_raw": "2.0652000",
+  "Fbest": 2.0652,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "gouldqp3.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gouldqp3.dag",
+      "bytes": 233417
+    },
+    "gms": {
+      "filename": "gouldqp3.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gouldqp3.gms",
+      "bytes": 100706
+    },
+    "mod": {
+      "filename": "gouldqp3.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gouldqp3.mod",
+      "bytes": 1362
+    },
+    "res": {
+      "filename": "gouldqp3.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/gouldqp3.res",
+      "bytes": 18160
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gouldqp3.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

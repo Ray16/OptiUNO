@@ -1,0 +1,44 @@
+{
+  "name": "explin",
+  "number": 2224,
+  "classification": "OBR2-AN",
+  "N": 120,
+  "M": 0,
+  "Nnl": 11,
+  "Mnl": 0,
+  "Nz": 120,
+  "Fbest_raw": "-723756.3000000",
+  "Fbest": -723756.3,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "explin.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/explin.dag",
+      "bytes": 9299
+    },
+    "gms": {
+      "filename": "explin.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/explin.gms",
+      "bytes": 6385
+    },
+    "mod": {
+      "filename": "explin.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/explin.mod",
+      "bytes": 619
+    },
+    "res": {
+      "filename": "explin.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/explin.res",
+      "bytes": 2251
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/explin.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

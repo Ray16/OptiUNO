@@ -1,0 +1,44 @@
+{
+  "name": "expfitb",
+  "number": 2222,
+  "classification": "OLR2-AN",
+  "N": 5,
+  "M": 102,
+  "Nnl": 5,
+  "Mnl": 0,
+  "Nz": 356,
+  "Fbest_raw": "0.0050000",
+  "Fbest": 0.005,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "expfitb.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/expfitb.dag",
+      "bytes": 48691
+    },
+    "gms": {
+      "filename": "expfitb.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/expfitb.gms",
+      "bytes": 21635
+    },
+    "mod": {
+      "filename": "expfitb.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/expfitb.mod",
+      "bytes": 1212
+    },
+    "res": {
+      "filename": "expfitb.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/expfitb.res",
+      "bytes": 214
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/expfitb.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

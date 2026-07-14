@@ -1,0 +1,44 @@
+{
+  "name": "vanderm3",
+  "number": 2711,
+  "classification": "NOR2-AN",
+  "N": 100,
+  "M": 199,
+  "Nnl": 100,
+  "Mnl": 100,
+  "Nz": 10198,
+  "Fbest_raw": "(0.0000000)",
+  "Fbest": 0.0,
+  "feasible": false,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "vanderm3.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/vanderm3.dag",
+      "bytes": 882682
+    },
+    "gms": {
+      "filename": "vanderm3.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/vanderm3.gms",
+      "bytes": 226883
+    },
+    "mod": {
+      "filename": "vanderm3.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/vanderm3.mod",
+      "bytes": 1031
+    },
+    "res": {
+      "filename": "vanderm3.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/vanderm3.res",
+      "bytes": 1817
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/vanderm3.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

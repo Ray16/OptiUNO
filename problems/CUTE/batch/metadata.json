@@ -1,0 +1,44 @@
+{
+  "name": "batch",
+  "number": 2029,
+  "classification": "OOR2-AN",
+  "N": 46,
+  "M": 73,
+  "Nnl": 22,
+  "Mnl": 1,
+  "Nz": 182,
+  "Fbest_raw": "259177.9452000",
+  "Fbest": 259177.9452,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "batch.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/batch.dag",
+      "bytes": 13524
+    },
+    "gms": {
+      "filename": "batch.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/batch.gms",
+      "bytes": 7228
+    },
+    "mod": {
+      "filename": "batch.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/batch.mod",
+      "bytes": 2412
+    },
+    "res": {
+      "filename": "batch.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/batch.res",
+      "bytes": 1235
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/batch.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

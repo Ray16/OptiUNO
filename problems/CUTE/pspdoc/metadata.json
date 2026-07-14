@@ -1,0 +1,44 @@
+{
+  "name": "pspdoc",
+  "number": 2622,
+  "classification": "SBR2-AY",
+  "N": 4,
+  "M": 1,
+  "Nnl": 4,
+  "Mnl": 0,
+  "Nz": 4,
+  "Fbest_raw": "2.4142000",
+  "Fbest": 2.4142,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "pspdoc.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pspdoc.dag",
+      "bytes": 500
+    },
+    "gms": {
+      "filename": "pspdoc.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pspdoc.gms",
+      "bytes": 488
+    },
+    "mod": {
+      "filename": "pspdoc.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pspdoc.mod",
+      "bytes": 881
+    },
+    "res": {
+      "filename": "pspdoc.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/pspdoc.res",
+      "bytes": 190
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pspdoc.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

@@ -1,0 +1,44 @@
+{
+  "name": "eigenc2",
+  "number": 2209,
+  "classification": "QQR2-AN",
+  "N": 462,
+  "M": 231,
+  "Nnl": 462,
+  "Mnl": 231,
+  "Nz": 9723,
+  "Fbest_raw": "(0.0000000)",
+  "Fbest": 0.0,
+  "feasible": false,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "eigenc2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigenc2.dag",
+      "bytes": 1354662
+    },
+    "gms": {
+      "filename": "eigenc2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigenc2.gms",
+      "bytes": 147115
+    },
+    "mod": {
+      "filename": "eigenc2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigenc2.mod",
+      "bytes": 1104
+    },
+    "res": {
+      "filename": "eigenc2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/eigenc2.res",
+      "bytes": 11998
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigenc2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

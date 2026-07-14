@@ -1,0 +1,44 @@
+{
+  "name": "bt12",
+  "number": 2080,
+  "classification": "QQR2-AN",
+  "N": 5,
+  "M": 3,
+  "Nnl": 5,
+  "Mnl": 3,
+  "Nz": 10,
+  "Fbest_raw": "6.1881000",
+  "Fbest": 6.1881,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "bt12.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt12.dag",
+      "bytes": 623
+    },
+    "gms": {
+      "filename": "bt12.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt12.gms",
+      "bytes": 589
+    },
+    "mod": {
+      "filename": "bt12.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt12.mod",
+      "bytes": 1024
+    },
+    "res": {
+      "filename": "bt12.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/bt12.res",
+      "bytes": 116
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/bt12.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

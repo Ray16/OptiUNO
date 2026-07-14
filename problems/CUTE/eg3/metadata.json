@@ -1,0 +1,44 @@
+{
+  "name": "eg3",
+  "number": 2200,
+  "classification": "OOR2-AY",
+  "N": 101,
+  "M": 200,
+  "Nnl": 101,
+  "Mnl": 200,
+  "Nz": 599,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "eg3.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eg3.dag",
+      "bytes": 43672
+    },
+    "gms": {
+      "filename": "eg3.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eg3.gms",
+      "bytes": 16869
+    },
+    "mod": {
+      "filename": "eg3.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eg3.mod",
+      "bytes": 1045
+    },
+    "res": {
+      "filename": "eg3.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/eg3.res",
+      "bytes": 2612
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eg3.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

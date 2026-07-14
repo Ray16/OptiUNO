@@ -1,0 +1,44 @@
+{
+  "name": "gridneti",
+  "number": 2263,
+  "classification": "ONR2-AY",
+  "N": 61,
+  "M": 36,
+  "Nnl": 61,
+  "Mnl": 0,
+  "Nz": 181,
+  "Fbest_raw": "40.2475000",
+  "Fbest": 40.2475,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "gridneti.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gridneti.dag",
+      "bytes": 32856
+    },
+    "gms": {
+      "filename": "gridneti.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gridneti.gms",
+      "bytes": 9586
+    },
+    "mod": {
+      "filename": "gridneti.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gridneti.mod",
+      "bytes": 10087
+    },
+    "res": {
+      "filename": "gridneti.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/gridneti.res",
+      "bytes": 1067
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gridneti.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

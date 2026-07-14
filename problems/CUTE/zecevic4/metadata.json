@@ -1,0 +1,44 @@
+{
+  "name": "zecevic4",
+  "number": 2725,
+  "classification": "QQR2-AN",
+  "N": 2,
+  "M": 4,
+  "Nnl": 2,
+  "Mnl": 1,
+  "Nz": 6,
+  "Fbest_raw": "7.5575000",
+  "Fbest": 7.5575,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "zecevic4.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zecevic4.dag",
+      "bytes": 598
+    },
+    "gms": {
+      "filename": "zecevic4.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zecevic4.gms",
+      "bytes": 597
+    },
+    "mod": {
+      "filename": "zecevic4.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zecevic4.mod",
+      "bytes": 1041
+    },
+    "res": {
+      "filename": "zecevic4.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/zecevic4.res",
+      "bytes": 142
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/zecevic4.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

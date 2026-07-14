@@ -1,0 +1,44 @@
+{
+  "name": "smbank",
+  "number": 2672,
+  "classification": "ONR2-MN",
+  "N": 117,
+  "M": 64,
+  "Nnl": 85,
+  "Mnl": 0,
+  "Nz": 319,
+  "Fbest_raw": "-7129292.0000000",
+  "Fbest": -7129292.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "smbank.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/smbank.dag",
+      "bytes": 31785
+    },
+    "gms": {
+      "filename": "smbank.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/smbank.gms",
+      "bytes": 11716
+    },
+    "mod": {
+      "filename": "smbank.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/smbank.mod",
+      "bytes": 11371
+    },
+    "res": {
+      "filename": "smbank.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/smbank.res",
+      "bytes": 3028
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/smbank.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

@@ -1,0 +1,44 @@
+{
+  "name": "chandheq",
+  "number": 2102,
+  "classification": "OQR2-AY",
+  "N": 100,
+  "M": 100,
+  "Nnl": 100,
+  "Mnl": 100,
+  "Nz": 10000,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "chandheq.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/chandheq.dag",
+      "bytes": 1400064
+    },
+    "gms": {
+      "filename": "chandheq.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/chandheq.gms",
+      "bytes": 450949
+    },
+    "mod": {
+      "filename": "chandheq.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/chandheq.mod",
+      "bytes": 1030
+    },
+    "res": {
+      "filename": "chandheq.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/chandheq.res",
+      "bytes": 2586
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/chandheq.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

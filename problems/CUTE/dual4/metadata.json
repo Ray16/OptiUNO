@@ -1,0 +1,44 @@
+{
+  "name": "dual4",
+  "number": 2192,
+  "classification": "QLR2-MN",
+  "N": 75,
+  "M": 1,
+  "Nnl": 75,
+  "Mnl": 0,
+  "Nz": 150,
+  "Fbest_raw": "0.7461000",
+  "Fbest": 0.7461,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "dual4.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dual4.dag",
+      "bytes": 307918
+    },
+    "gms": {
+      "filename": "dual4.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dual4.gms",
+      "bytes": 76399
+    },
+    "mod": {
+      "filename": "dual4.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dual4.mod",
+      "bytes": 52518
+    },
+    "res": {
+      "filename": "dual4.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/dual4.res",
+      "bytes": 1418
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dual4.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

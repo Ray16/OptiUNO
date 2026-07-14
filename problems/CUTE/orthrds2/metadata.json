@@ -1,0 +1,44 @@
+{
+  "name": "orthrds2",
+  "number": 2544,
+  "classification": "QOR2-AY",
+  "N": 203,
+  "M": 100,
+  "Nnl": 203,
+  "Mnl": 100,
+  "Nz": 700,
+  "Fbest_raw": "884.8858000",
+  "Fbest": 884.8858,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "orthrds2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/orthrds2.dag",
+      "bytes": 96464
+    },
+    "gms": {
+      "filename": "orthrds2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/orthrds2.gms",
+      "bytes": 29322
+    },
+    "mod": {
+      "filename": "orthrds2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/orthrds2.mod",
+      "bytes": 1548
+    },
+    "res": {
+      "filename": "orthrds2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/orthrds2.res",
+      "bytes": 5264
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/orthrds2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

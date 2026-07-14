@@ -1,0 +1,44 @@
+{
+  "name": "dixchlnv",
+  "number": 2155,
+  "classification": "SOR2-AN",
+  "N": 100,
+  "M": 50,
+  "Nnl": 100,
+  "Mnl": 50,
+  "Nz": 2650,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "dixchlnv.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dixchlnv.dag",
+      "bytes": 258154
+    },
+    "gms": {
+      "filename": "dixchlnv.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dixchlnv.gms",
+      "bytes": 58278
+    },
+    "mod": {
+      "filename": "dixchlnv.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dixchlnv.mod",
+      "bytes": 954
+    },
+    "res": {
+      "filename": "dixchlnv.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/dixchlnv.res",
+      "bytes": 1126
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dixchlnv.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

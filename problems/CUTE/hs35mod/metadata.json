@@ -1,0 +1,44 @@
+{
+  "name": "hs35mod",
+  "number": 2431,
+  "classification": "QLR2-AN",
+  "N": 3,
+  "M": 2,
+  "Nnl": 2,
+  "Mnl": 0,
+  "Nz": 4,
+  "Fbest_raw": "0.2500000",
+  "Fbest": 0.25,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hs35mod.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs35mod.dag",
+      "bytes": 742
+    },
+    "gms": {
+      "filename": "hs35mod.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs35mod.gms",
+      "bytes": 636
+    },
+    "mod": {
+      "filename": "hs35mod.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs35mod.mod",
+      "bytes": 952
+    },
+    "res": {
+      "filename": "hs35mod.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hs35mod.res",
+      "bytes": 166
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs35mod.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

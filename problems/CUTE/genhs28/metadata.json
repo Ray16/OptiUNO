@@ -1,0 +1,44 @@
+{
+  "name": "genhs28",
+  "number": 2245,
+  "classification": "QLR2-AY",
+  "N": 10,
+  "M": 8,
+  "Nnl": 10,
+  "Mnl": 0,
+  "Nz": 34,
+  "Fbest_raw": "0.9272000",
+  "Fbest": 0.9272,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "genhs28.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/genhs28.dag",
+      "bytes": 1738
+    },
+    "gms": {
+      "filename": "genhs28.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/genhs28.gms",
+      "bytes": 1071
+    },
+    "mod": {
+      "filename": "genhs28.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/genhs28.mod",
+      "bytes": 1010
+    },
+    "res": {
+      "filename": "genhs28.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/genhs28.res",
+      "bytes": 200
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/genhs28.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

@@ -1,0 +1,44 @@
+{
+  "name": "tfi2",
+  "number": 2698,
+  "classification": "LLR2-AN",
+  "N": 3,
+  "M": 10001,
+  "Nnl": 0,
+  "Mnl": 0,
+  "Nz": 30003,
+  "Fbest_raw": "0.6491000",
+  "Fbest": 0.6491,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "tfi2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/tfi2.dag",
+      "bytes": 2094554
+    },
+    "gms": {
+      "filename": "tfi2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/tfi2.gms",
+      "bytes": 1121877
+    },
+    "mod": {
+      "filename": "tfi2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/tfi2.mod",
+      "bytes": 863
+    },
+    "res": {
+      "filename": "tfi2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/tfi2.res",
+      "bytes": 81
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/tfi2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

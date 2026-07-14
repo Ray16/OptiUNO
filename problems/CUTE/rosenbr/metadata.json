@@ -1,0 +1,44 @@
+{
+  "name": "rosenbr",
+  "number": 2643,
+  "classification": "SUR2-AN",
+  "N": 2,
+  "M": 0,
+  "Nnl": 2,
+  "Mnl": 0,
+  "Nz": 2,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "rosenbr.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/rosenbr.dag",
+      "bytes": 261
+    },
+    "gms": {
+      "filename": "rosenbr.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/rosenbr.gms",
+      "bytes": 425
+    },
+    "mod": {
+      "filename": "rosenbr.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/rosenbr.mod",
+      "bytes": 878
+    },
+    "res": {
+      "filename": "rosenbr.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/rosenbr.res",
+      "bytes": 54
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/rosenbr.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

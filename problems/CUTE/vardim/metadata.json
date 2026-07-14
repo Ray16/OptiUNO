@@ -1,0 +1,44 @@
+{
+  "name": "vardim",
+  "number": 2713,
+  "classification": "OUR2-AN",
+  "N": 100,
+  "M": 0,
+  "Nnl": 100,
+  "Mnl": 0,
+  "Nz": 100,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "vardim.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/vardim.dag",
+      "bytes": 25058
+    },
+    "gms": {
+      "filename": "vardim.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/vardim.gms",
+      "bytes": 6241
+    },
+    "mod": {
+      "filename": "vardim.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/vardim.mod",
+      "bytes": 928
+    },
+    "res": {
+      "filename": "vardim.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/vardim.res",
+      "bytes": 1126
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/vardim.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

@@ -1,0 +1,44 @@
+{
+  "name": "dualc8",
+  "number": 2196,
+  "classification": "QLR2-MN",
+  "N": 8,
+  "M": 503,
+  "Nnl": 8,
+  "Mnl": 0,
+  "Nz": 128,
+  "Fbest_raw": "18309.3600000",
+  "Fbest": 18309.36,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "dualc8.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dualc8.dag",
+      "bytes": 148813
+    },
+    "gms": {
+      "filename": "dualc8.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dualc8.gms",
+      "bytes": 78415
+    },
+    "mod": {
+      "filename": "dualc8.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dualc8.mod",
+      "bytes": 59268
+    },
+    "res": {
+      "filename": "dualc8.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/dualc8.res",
+      "bytes": 229
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dualc8.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

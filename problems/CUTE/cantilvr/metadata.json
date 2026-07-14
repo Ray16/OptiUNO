@@ -1,0 +1,44 @@
+{
+  "name": "cantilvr",
+  "number": 2092,
+  "classification": "LOR2-MN",
+  "N": 5,
+  "M": 1,
+  "Nnl": 5,
+  "Mnl": 1,
+  "Nz": 10,
+  "Fbest_raw": "1.3400000",
+  "Fbest": 1.34,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "cantilvr.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cantilvr.dag",
+      "bytes": 1050
+    },
+    "gms": {
+      "filename": "cantilvr.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cantilvr.gms",
+      "bytes": 853
+    },
+    "mod": {
+      "filename": "cantilvr.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cantilvr.mod",
+      "bytes": 813
+    },
+    "res": {
+      "filename": "cantilvr.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/cantilvr.res",
+      "bytes": 110
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cantilvr.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

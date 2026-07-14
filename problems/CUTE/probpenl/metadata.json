@@ -1,0 +1,44 @@
+{
+  "name": "probpenl",
+  "number": 2619,
+  "classification": "OBR2-AN",
+  "N": 500,
+  "M": 0,
+  "Nnl": 500,
+  "Mnl": 0,
+  "Nz": 500,
+  "Fbest_raw": "-374026.4045000",
+  "Fbest": -374026.4045,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "probpenl.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/probpenl.dag",
+      "bytes": 239273
+    },
+    "gms": {
+      "filename": "probpenl.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/probpenl.gms",
+      "bytes": 63540
+    },
+    "mod": {
+      "filename": "probpenl.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/probpenl.mod",
+      "bytes": 894
+    },
+    "res": {
+      "filename": "probpenl.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/probpenl.res",
+      "bytes": 12986
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/probpenl.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

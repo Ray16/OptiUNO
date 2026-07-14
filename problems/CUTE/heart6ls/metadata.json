@@ -1,0 +1,44 @@
+{
+  "name": "heart6ls",
+  "number": 2290,
+  "classification": "SUR2-MN",
+  "N": 6,
+  "M": 0,
+  "Nnl": 6,
+  "Mnl": 0,
+  "Nz": 6,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "heart6ls.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/heart6ls.dag",
+      "bytes": 4673
+    },
+    "gms": {
+      "filename": "heart6ls.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/heart6ls.gms",
+      "bytes": 1879
+    },
+    "mod": {
+      "filename": "heart6ls.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/heart6ls.mod",
+      "bytes": 2606
+    },
+    "res": {
+      "filename": "heart6ls.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/heart6ls.res",
+      "bytes": 238
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/heart6ls.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

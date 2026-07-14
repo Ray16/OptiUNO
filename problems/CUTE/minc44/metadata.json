@@ -1,0 +1,44 @@
+{
+  "name": "minc44",
+  "number": 2493,
+  "classification": "LQR2-AN",
+  "N": 311,
+  "M": 262,
+  "Nnl": 302,
+  "Mnl": 247,
+  "Nz": 2251,
+  "Fbest_raw": "0.0026000",
+  "Fbest": 0.0026,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "minc44.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/minc44.dag",
+      "bytes": 123222
+    },
+    "gms": {
+      "filename": "minc44.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/minc44.gms",
+      "bytes": 38326
+    },
+    "mod": {
+      "filename": "minc44.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/minc44.mod",
+      "bytes": 45074
+    },
+    "res": {
+      "filename": "minc44.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/minc44.res",
+      "bytes": 6174
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/minc44.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

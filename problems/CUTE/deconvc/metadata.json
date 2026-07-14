@@ -1,0 +1,44 @@
+{
+  "name": "deconvc",
+  "number": 2139,
+  "classification": "SQR2-MN",
+  "N": 491,
+  "M": 441,
+  "Nnl": 51,
+  "Mnl": 1,
+  "Nz": 62,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "deconvc.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/deconvc.dag",
+      "bytes": 74419
+    },
+    "gms": {
+      "filename": "deconvc.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/deconvc.gms",
+      "bytes": 29564
+    },
+    "mod": {
+      "filename": "deconvc.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/deconvc.mod",
+      "bytes": 1824
+    },
+    "res": {
+      "filename": "deconvc.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/deconvc.res",
+      "bytes": 12752
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/deconvc.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

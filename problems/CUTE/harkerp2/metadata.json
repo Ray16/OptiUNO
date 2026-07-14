@@ -1,0 +1,44 @@
+{
+  "name": "harkerp2",
+  "number": 2279,
+  "classification": "QBR2-AN",
+  "N": 100,
+  "M": 0,
+  "Nnl": 100,
+  "Mnl": 0,
+  "Nz": 100,
+  "Fbest_raw": "-0.5000000",
+  "Fbest": -0.5,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "harkerp2.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/harkerp2.dag",
+      "bytes": 165984
+    },
+    "gms": {
+      "filename": "harkerp2.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/harkerp2.gms",
+      "bytes": 62507
+    },
+    "mod": {
+      "filename": "harkerp2.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/harkerp2.mod",
+      "bytes": 992
+    },
+    "res": {
+      "filename": "harkerp2.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/harkerp2.res",
+      "bytes": 1664
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/harkerp2.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

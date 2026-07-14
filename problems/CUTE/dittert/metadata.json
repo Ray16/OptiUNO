@@ -1,0 +1,44 @@
+{
+  "name": "dittert",
+  "number": 2153,
+  "classification": "OQR2-AN",
+  "N": 327,
+  "M": 264,
+  "Nnl": 326,
+  "Mnl": 247,
+  "Nz": 2448,
+  "Fbest_raw": "-1.9976000",
+  "Fbest": -1.9976,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "dittert.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dittert.dag",
+      "bytes": 126346
+    },
+    "gms": {
+      "filename": "dittert.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dittert.gms",
+      "bytes": 39610
+    },
+    "mod": {
+      "filename": "dittert.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dittert.mod",
+      "bytes": 45576
+    },
+    "res": {
+      "filename": "dittert.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/dittert.res",
+      "bytes": 6509
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dittert.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

@@ -1,0 +1,44 @@
+{
+  "name": "himmelbf",
+  "number": 2301,
+  "classification": "SUR2-AN",
+  "N": 4,
+  "M": 0,
+  "Nnl": 4,
+  "Mnl": 0,
+  "Nz": 4,
+  "Fbest_raw": "318.5717000",
+  "Fbest": 318.5717,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "himmelbf.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelbf.dag",
+      "bytes": 3946
+    },
+    "gms": {
+      "filename": "himmelbf.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelbf.gms",
+      "bytes": 1594
+    },
+    "mod": {
+      "filename": "himmelbf.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelbf.mod",
+      "bytes": 1037
+    },
+    "res": {
+      "filename": "himmelbf.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/himmelbf.res",
+      "bytes": 190
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelbf.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

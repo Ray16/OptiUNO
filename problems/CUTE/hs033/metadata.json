@@ -1,0 +1,44 @@
+{
+  "name": "hs033",
+  "number": 2346,
+  "classification": "OQR2-AN",
+  "N": 3,
+  "M": 3,
+  "Nnl": 3,
+  "Mnl": 2,
+  "Nz": 8,
+  "Fbest_raw": "-4.5858000",
+  "Fbest": -4.5858,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hs033.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs033.dag",
+      "bytes": 738
+    },
+    "gms": {
+      "filename": "hs033.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs033.gms",
+      "bytes": 625
+    },
+    "mod": {
+      "filename": "hs033.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs033.mod",
+      "bytes": 443
+    },
+    "res": {
+      "filename": "hs033.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hs033.res",
+      "bytes": 83
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs033.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

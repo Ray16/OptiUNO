@@ -1,0 +1,44 @@
+{
+  "name": "arglinc",
+  "number": 2013,
+  "classification": "SUR2-AN",
+  "N": 10,
+  "M": 0,
+  "Nnl": 8,
+  "Mnl": 0,
+  "Nz": 8,
+  "Fbest_raw": "6.1351000",
+  "Fbest": 6.1351,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "arglinc.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/arglinc.dag",
+      "bytes": 11295
+    },
+    "gms": {
+      "filename": "arglinc.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/arglinc.gms",
+      "bytes": 2792
+    },
+    "mod": {
+      "filename": "arglinc.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/arglinc.mod",
+      "bytes": 901
+    },
+    "res": {
+      "filename": "arglinc.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/arglinc.res",
+      "bytes": 286
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/arglinc.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

@@ -1,0 +1,44 @@
+{
+  "name": "hadamard",
+  "number": 2269,
+  "classification": "LQR2-RN",
+  "N": 129,
+  "M": 320,
+  "Nnl": 65,
+  "Mnl": 128,
+  "Nz": 1281,
+  "Fbest_raw": "1.0000000",
+  "Fbest": 1.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hadamard.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hadamard.dag",
+      "bytes": 69211
+    },
+    "gms": {
+      "filename": "hadamard.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hadamard.gms",
+      "bytes": 22257
+    },
+    "mod": {
+      "filename": "hadamard.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hadamard.mod",
+      "bytes": 956
+    },
+    "res": {
+      "filename": "hadamard.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hadamard.res",
+      "bytes": 1464
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hadamard.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

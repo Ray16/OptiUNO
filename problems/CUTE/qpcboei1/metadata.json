@@ -1,0 +1,44 @@
+{
+  "name": "qpcboei1",
+  "number": 2624,
+  "classification": "QLR2-MN",
+  "N": 384,
+  "M": 348,
+  "Nnl": 372,
+  "Mnl": 0,
+  "Nz": 2662,
+  "Fbest_raw": "14433867.2876000",
+  "Fbest": 14433867.2876,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "qpcboei1.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qpcboei1.dag",
+      "bytes": 225688
+    },
+    "gms": {
+      "filename": "qpcboei1.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qpcboei1.gms",
+      "bytes": 116335
+    },
+    "mod": {
+      "filename": "qpcboei1.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qpcboei1.mod",
+      "bytes": 108713
+    },
+    "res": {
+      "filename": "qpcboei1.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/qpcboei1.res",
+      "bytes": 9970
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qpcboei1.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

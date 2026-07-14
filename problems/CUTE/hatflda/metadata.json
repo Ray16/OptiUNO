@@ -1,0 +1,44 @@
+{
+  "name": "hatflda",
+  "number": 2281,
+  "classification": "SBR2-AN",
+  "N": 4,
+  "M": 0,
+  "Nnl": 4,
+  "Mnl": 0,
+  "Nz": 4,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "hatflda.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hatflda.dag",
+      "bytes": 624
+    },
+    "gms": {
+      "filename": "hatflda.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hatflda.gms",
+      "bytes": 626
+    },
+    "mod": {
+      "filename": "hatflda.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hatflda.mod",
+      "bytes": 768
+    },
+    "res": {
+      "filename": "hatflda.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hatflda.res",
+      "bytes": 102
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hatflda.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

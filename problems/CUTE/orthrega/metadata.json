@@ -1,0 +1,44 @@
+{
+  "name": "orthrega",
+  "number": 2545,
+  "classification": "QQR2-AN",
+  "N": 517,
+  "M": 256,
+  "Nnl": 517,
+  "Mnl": 256,
+  "Nz": 2304,
+  "Fbest_raw": "1414.0560000",
+  "Fbest": 1414.056,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "orthrega.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/orthrega.dag",
+      "bytes": 277914
+    },
+    "gms": {
+      "filename": "orthrega.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/orthrega.gms",
+      "bytes": 82143
+    },
+    "mod": {
+      "filename": "orthrega.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/orthrega.mod",
+      "bytes": 202178
+    },
+    "res": {
+      "filename": "orthrega.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/orthrega.res",
+      "bytes": 10080
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/orthrega.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

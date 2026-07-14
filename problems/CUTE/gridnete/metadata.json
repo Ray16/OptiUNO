@@ -1,0 +1,29 @@
+{
+  "name": "gridnete",
+  "number": 2259,
+  "classification": "ONR2-AN",
+  "N": 7565,
+  "M": 3844,
+  "Nnl": 7565,
+  "Mnl": 0,
+  "Nz": 22693,
+  "Fbest_raw": "",
+  "Fbest": null,
+  "feasible": null,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": false,
+  "dag_file_available": false,
+  "res_file_available": false,
+  "other_files": [],
+  "files": {
+    "mod": {
+      "filename": "gridnete.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gridnete.mod",
+      "bytes": 1132530
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gridnete.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

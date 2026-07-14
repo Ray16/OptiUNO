@@ -1,0 +1,44 @@
+{
+  "name": "avgasa",
+  "number": 2025,
+  "classification": "QLR2-AN",
+  "N": 8,
+  "M": 10,
+  "Nnl": 6,
+  "Mnl": 0,
+  "Nz": 23,
+  "Fbest_raw": "-4.4122000",
+  "Fbest": -4.4122,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "avgasa.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/avgasa.dag",
+      "bytes": 2721
+    },
+    "gms": {
+      "filename": "avgasa.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/avgasa.gms",
+      "bytes": 1509
+    },
+    "mod": {
+      "filename": "avgasa.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/avgasa.mod",
+      "bytes": 1268
+    },
+    "res": {
+      "filename": "avgasa.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/avgasa.res",
+      "bytes": 286
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/avgasa.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

@@ -1,0 +1,44 @@
+{
+  "name": "himmelbk",
+  "number": 2306,
+  "classification": "LOR2-MN",
+  "N": 24,
+  "M": 14,
+  "Nnl": 24,
+  "Mnl": 12,
+  "Nz": 360,
+  "Fbest_raw": "0.0518000",
+  "Fbest": 0.0518,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "himmelbk.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelbk.dag",
+      "bytes": 37343
+    },
+    "gms": {
+      "filename": "himmelbk.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelbk.gms",
+      "bytes": 14068
+    },
+    "mod": {
+      "filename": "himmelbk.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelbk.mod",
+      "bytes": 1672
+    },
+    "res": {
+      "filename": "himmelbk.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/himmelbk.res",
+      "bytes": 685
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/himmelbk.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

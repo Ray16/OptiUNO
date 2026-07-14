@@ -1,0 +1,44 @@
+{
+  "name": "eigenals",
+  "number": 2204,
+  "classification": "SUR2-AN",
+  "N": 110,
+  "M": 0,
+  "Nnl": 110,
+  "Mnl": 0,
+  "Nz": 110,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "eigenals.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigenals.dag",
+      "bytes": 210249
+    },
+    "gms": {
+      "filename": "eigenals.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigenals.gms",
+      "bytes": 58168
+    },
+    "mod": {
+      "filename": "eigenals.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigenals.mod",
+      "bytes": 42462
+    },
+    "res": {
+      "filename": "eigenals.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/eigenals.res",
+      "bytes": 2249
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigenals.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

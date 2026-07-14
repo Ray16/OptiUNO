@@ -1,0 +1,44 @@
+{
+  "name": "logros",
+  "number": 2469,
+  "classification": "OBR2-AN",
+  "N": 2,
+  "M": 0,
+  "Nnl": 2,
+  "Mnl": 0,
+  "Nz": 2,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "logros.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/logros.dag",
+      "bytes": 338
+    },
+    "gms": {
+      "filename": "logros.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/logros.gms",
+      "bytes": 466
+    },
+    "mod": {
+      "filename": "logros.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/logros.mod",
+      "bytes": 668
+    },
+    "res": {
+      "filename": "logros.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/logros.res",
+      "bytes": 68
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/logros.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

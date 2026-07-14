@@ -1,0 +1,44 @@
+{
+  "name": "haldmads",
+  "number": 2277,
+  "classification": "LOR2-AN",
+  "N": 6,
+  "M": 42,
+  "Nnl": 5,
+  "Mnl": 42,
+  "Nz": 245,
+  "Fbest_raw": "0.0001000",
+  "Fbest": 0.0001,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "haldmads.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/haldmads.dag",
+      "bytes": 21433
+    },
+    "gms": {
+      "filename": "haldmads.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/haldmads.gms",
+      "bytes": 7599
+    },
+    "mod": {
+      "filename": "haldmads.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/haldmads.mod",
+      "bytes": 1044
+    },
+    "res": {
+      "filename": "haldmads.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/haldmads.res",
+      "bytes": 238
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/haldmads.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

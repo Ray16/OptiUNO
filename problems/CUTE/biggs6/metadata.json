@@ -1,0 +1,44 @@
+{
+  "name": "biggs6",
+  "number": 2037,
+  "classification": "SUR2-AN",
+  "N": 6,
+  "M": 0,
+  "Nnl": 6,
+  "Mnl": 0,
+  "Nz": 6,
+  "Fbest_raw": "0.0000000",
+  "Fbest": 0.0,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "biggs6.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/biggs6.dag",
+      "bytes": 6915
+    },
+    "gms": {
+      "filename": "biggs6.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/biggs6.gms",
+      "bytes": 2519
+    },
+    "mod": {
+      "filename": "biggs6.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/biggs6.mod",
+      "bytes": 998
+    },
+    "res": {
+      "filename": "biggs6.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/biggs6.res",
+      "bytes": 238
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/biggs6.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

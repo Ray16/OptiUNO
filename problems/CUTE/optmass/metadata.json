@@ -1,0 +1,44 @@
+{
+  "name": "optmass",
+  "number": 2541,
+  "classification": "QQR2-AN",
+  "N": 70,
+  "M": 55,
+  "Nnl": 26,
+  "Mnl": 11,
+  "Nz": 174,
+  "Fbest_raw": "-0.1895000",
+  "Fbest": -0.1895,
+  "feasible": true,
+  "in_uno_429_subset": true,
+  "mod_file_available": true,
+  "gms_file_available": true,
+  "dag_file_available": true,
+  "res_file_available": true,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "optmass.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/optmass.dag",
+      "bytes": 10271
+    },
+    "gms": {
+      "filename": "optmass.gms",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/optmass.gms",
+      "bytes": 5112
+    },
+    "mod": {
+      "filename": "optmass.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/optmass.mod",
+      "bytes": 1172
+    },
+    "res": {
+      "filename": "optmass.res",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/optmass.res",
+      "bytes": 1180
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/optmass.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}

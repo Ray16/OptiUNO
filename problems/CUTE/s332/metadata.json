@@ -1,0 +1,34 @@
+{
+  "name": "s332",
+  "number": 2645,
+  "classification": "QOR2-AN",
+  "N": 2,
+  "M": 102,
+  "Nnl": 2,
+  "Mnl": 100,
+  "Nz": 202,
+  "Fbest_raw": "",
+  "Fbest": null,
+  "feasible": null,
+  "in_uno_429_subset": false,
+  "mod_file_available": true,
+  "gms_file_available": false,
+  "dag_file_available": true,
+  "res_file_available": false,
+  "other_files": [],
+  "files": {
+    "dag": {
+      "filename": "s332.dag",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/s332.dag",
+      "bytes": 104138
+    },
+    "mod": {
+      "filename": "s332.mod",
+      "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/s332.mod",
+      "bytes": 507
+    }
+  },
+  "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/s332.htm",
+  "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
+  "_all_available_downloaded": true
+}
