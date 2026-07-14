@@ -1,0 +1,1250 @@
+{
+ "config_hash": "f8d7090416ba",
+ "rep": 6,
+ "label": "var-preset-ipopt",
+ "options": {
+  "preset": "ipopt"
+ },
+ "time_limit": 20.0,
+ "n_problems": 123,
+ "n_solved": 121,
+ "reliability": 0.983739837398374,
+ "cum_cpu_time": 2.5681550000000004,
+ "n_rewritten": 0,
+ "status_counts": {
+  "solved": 121,
+  "unsolved": 2
+ },
+ "per_problem": [
+  {
+   "problem": "genhs28",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.9271737,
+   "iterations": 1,
+   "objective_evaluations": 2,
+   "cpu_time": 0.03143
+  },
+  {
+   "problem": "hs001",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.007497e-18,
+   "iterations": 26,
+   "objective_evaluations": 34,
+   "cpu_time": 0.012168
+  },
+  {
+   "problem": "hs002",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 4.941229,
+   "iterations": 11,
+   "objective_evaluations": 14,
+   "cpu_time": 0.045893
+  },
+  {
+   "problem": "hs003",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -7.494096e-09,
+   "iterations": 5,
+   "objective_evaluations": 6,
+   "cpu_time": 0.001535
+  },
+  {
+   "problem": "hs004",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 2.666667,
+   "iterations": 5,
+   "objective_evaluations": 6,
+   "cpu_time": 0.005645
+  },
+  {
+   "problem": "hs005",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -1.913223,
+   "iterations": 8,
+   "objective_evaluations": 9,
+   "cpu_time": 0.002749
+  },
+  {
+   "problem": "hs006",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.0,
+   "iterations": 2,
+   "objective_evaluations": 3,
+   "cpu_time": 0.000513
+  },
+  {
+   "problem": "hs007",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -1.732051,
+   "iterations": 47,
+   "objective_evaluations": 64,
+   "cpu_time": 0.003162
+  },
+  {
+   "problem": "hs008",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -1.0,
+   "iterations": 5,
+   "objective_evaluations": 6,
+   "cpu_time": 0.000599
+  },
+  {
+   "problem": "hs009",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -0.5,
+   "iterations": 3,
+   "objective_evaluations": 5,
+   "cpu_time": 0.004734
+  },
+  {
+   "problem": "hs010",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -1.0,
+   "iterations": 20,
+   "objective_evaluations": 22,
+   "cpu_time": 0.00497
+  },
+  {
+   "problem": "hs011",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -8.498464,
+   "iterations": 8,
+   "objective_evaluations": 9,
+   "cpu_time": 0.004058
+  },
+  {
+   "problem": "hs012",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -30.0,
+   "iterations": 11,
+   "objective_evaluations": 12,
+   "cpu_time": 0.019859
+  },
+  {
+   "problem": "hs013",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.9945785,
+   "iterations": 31,
+   "objective_evaluations": 35,
+   "cpu_time": 0.030101
+  },
+  {
+   "problem": "hs014",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.393465,
+   "iterations": 7,
+   "objective_evaluations": 8,
+   "cpu_time": 0.009597
+  },
+  {
+   "problem": "hs015",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 306.5,
+   "iterations": 18,
+   "objective_evaluations": 22,
+   "cpu_time": 0.003113
+  },
+  {
+   "problem": "hs016",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 23.14466,
+   "iterations": 9,
+   "objective_evaluations": 10,
+   "cpu_time": 0.034022
+  },
+  {
+   "problem": "hs017",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.0,
+   "iterations": 18,
+   "objective_evaluations": 19,
+   "cpu_time": 0.049989
+  },
+  {
+   "problem": "hs018",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 5.0,
+   "iterations": 12,
+   "objective_evaluations": 15,
+   "cpu_time": 0.003843
+  },
+  {
+   "problem": "hs019",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -6961.816,
+   "iterations": 14,
+   "objective_evaluations": 15,
+   "cpu_time": 0.000893
+  },
+  {
+   "problem": "hs020",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 40.19873,
+   "iterations": 9,
+   "objective_evaluations": 10,
+   "cpu_time": 0.00336
+  },
+  {
+   "problem": "hs021",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -99.96,
+   "iterations": 6,
+   "objective_evaluations": 7,
+   "cpu_time": 0.000716
+  },
+  {
+   "problem": "hs022",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.0,
+   "iterations": 7,
+   "objective_evaluations": 8,
+   "cpu_time": 0.001615
+  },
+  {
+   "problem": "hs023",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 2.0,
+   "iterations": 10,
+   "objective_evaluations": 11,
+   "cpu_time": 0.006967
+  },
+  {
+   "problem": "hs024",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -1.0,
+   "iterations": 10,
+   "objective_evaluations": 11,
+   "cpu_time": 0.00465
+  },
+  {
+   "problem": "hs025",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 8.52759e-16,
+   "iterations": 36,
+   "objective_evaluations": 40,
+   "cpu_time": 0.022811
+  },
+  {
+   "problem": "hs026",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 7.519933e-17,
+   "iterations": 24,
+   "objective_evaluations": 27,
+   "cpu_time": 0.017272
+  },
+  {
+   "problem": "hs027",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.04,
+   "iterations": 20,
+   "objective_evaluations": 74,
+   "cpu_time": 0.023606
+  },
+  {
+   "problem": "hs028",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.676329e-30,
+   "iterations": 1,
+   "objective_evaluations": 2,
+   "cpu_time": 0.001419
+  },
+  {
+   "problem": "hs029",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -22.62742,
+   "iterations": 11,
+   "objective_evaluations": 12,
+   "cpu_time": 0.021345
+  },
+  {
+   "problem": "hs030",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.0,
+   "iterations": 23,
+   "objective_evaluations": 28,
+   "cpu_time": 0.011784
+  },
+  {
+   "problem": "hs031",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 6.0,
+   "iterations": 7,
+   "objective_evaluations": 8,
+   "cpu_time": 0.002921
+  },
+  {
+   "problem": "hs032",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.0,
+   "iterations": 15,
+   "objective_evaluations": 16,
+   "cpu_time": 0.000841
+  },
+  {
+   "problem": "hs033",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -4.585787,
+   "iterations": 10,
+   "objective_evaluations": 11,
+   "cpu_time": 0.003863
+  },
+  {
+   "problem": "hs034",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -0.8340324,
+   "iterations": 9,
+   "objective_evaluations": 10,
+   "cpu_time": 0.011246
+  },
+  {
+   "problem": "hs035",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.1111111,
+   "iterations": 7,
+   "objective_evaluations": 8,
+   "cpu_time": 0.002221
+  },
+  {
+   "problem": "hs036",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -3300.0,
+   "iterations": 12,
+   "objective_evaluations": 13,
+   "cpu_time": 0.020975
+  },
+  {
+   "problem": "hs037",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -3456.0,
+   "iterations": 12,
+   "objective_evaluations": 13,
+   "cpu_time": 0.003128
+  },
+  {
+   "problem": "hs038",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.455024e-22,
+   "iterations": 40,
+   "objective_evaluations": 58,
+   "cpu_time": 0.012986
+  },
+  {
+   "problem": "hs039",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -1.0,
+   "iterations": 24,
+   "objective_evaluations": 30,
+   "cpu_time": 0.005454
+  },
+  {
+   "problem": "hs040",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -0.25,
+   "iterations": 4,
+   "objective_evaluations": 5,
+   "cpu_time": 0.033277
+  },
+  {
+   "problem": "hs041",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.925926,
+   "iterations": 8,
+   "objective_evaluations": 9,
+   "cpu_time": 0.000813
+  },
+  {
+   "problem": "hs042",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 13.85786,
+   "iterations": 6,
+   "objective_evaluations": 7,
+   "cpu_time": 0.004462
+  },
+  {
+   "problem": "hs043",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -44.0,
+   "iterations": 9,
+   "objective_evaluations": 10,
+   "cpu_time": 0.007784
+  },
+  {
+   "problem": "hs044",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -13.0,
+   "iterations": 18,
+   "objective_evaluations": 20,
+   "cpu_time": 0.013643
+  },
+  {
+   "problem": "hs045",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.0,
+   "iterations": 15,
+   "objective_evaluations": 24,
+   "cpu_time": 0.009715
+  },
+  {
+   "problem": "hs046",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.227149e-15,
+   "iterations": 23,
+   "objective_evaluations": 24,
+   "cpu_time": 0.019791
+  },
+  {
+   "problem": "hs047",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 6.162178e-14,
+   "iterations": 20,
+   "objective_evaluations": 22,
+   "cpu_time": 0.009689
+  },
+  {
+   "problem": "hs048",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 2.761013e-30,
+   "iterations": 1,
+   "objective_evaluations": 2,
+   "cpu_time": 0.006286
+  },
+  {
+   "problem": "hs049",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 2.09382e-12,
+   "iterations": 20,
+   "objective_evaluations": 21,
+   "cpu_time": 0.02013
+  },
+  {
+   "problem": "hs050",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.232595e-31,
+   "iterations": 9,
+   "objective_evaluations": 10,
+   "cpu_time": 0.01824
+  },
+  {
+   "problem": "hs051",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 2,
+   "cpu_time": 0.006751
+  },
+  {
+   "problem": "hs052",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 5.326648,
+   "iterations": 1,
+   "objective_evaluations": 2,
+   "cpu_time": 0.000459
+  },
+  {
+   "problem": "hs053",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 4.093023,
+   "iterations": 6,
+   "objective_evaluations": 7,
+   "cpu_time": 0.003851
+  },
+  {
+   "problem": "hs054",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.1928571,
+   "iterations": 7,
+   "objective_evaluations": 8,
+   "cpu_time": 0.024703
+  },
+  {
+   "problem": "hs055",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 6.666667,
+   "iterations": 7,
+   "objective_evaluations": 8,
+   "cpu_time": 0.014653
+  },
+  {
+   "problem": "hs056",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -3.456,
+   "iterations": 13,
+   "objective_evaluations": 15,
+   "cpu_time": 0.00243
+  },
+  {
+   "problem": "hs057",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.03064762,
+   "iterations": 24,
+   "objective_evaluations": 26,
+   "cpu_time": 0.038073
+  },
+  {
+   "problem": "hs059",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -7.80279,
+   "iterations": 28,
+   "objective_evaluations": 97,
+   "cpu_time": 0.03643
+  },
+  {
+   "problem": "hs060",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.0325682,
+   "iterations": 6,
+   "objective_evaluations": 7,
+   "cpu_time": 0.010183
+  },
+  {
+   "problem": "hs061",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -22.46335,
+   "iterations": 3,
+   "objective_evaluations": 25,
+   "cpu_time": 0.017685
+  },
+  {
+   "problem": "hs062",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -26272.51,
+   "iterations": 8,
+   "objective_evaluations": 10,
+   "cpu_time": 0.017708
+  },
+  {
+   "problem": "hs063",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 961.7152,
+   "iterations": 7,
+   "objective_evaluations": 8,
+   "cpu_time": 0.034761
+  },
+  {
+   "problem": "hs064",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 6299.842,
+   "iterations": 18,
+   "objective_evaluations": 19,
+   "cpu_time": 0.019286
+  },
+  {
+   "problem": "hs065",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.9535288,
+   "iterations": 12,
+   "objective_evaluations": 13,
+   "cpu_time": 0.00502
+  },
+  {
+   "problem": "hs066",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.5181633,
+   "iterations": 6,
+   "objective_evaluations": 7,
+   "cpu_time": 0.002431
+  },
+  {
+   "problem": "hs067",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -1162.027,
+   "iterations": 12,
+   "objective_evaluations": 13,
+   "cpu_time": 0.002831
+  },
+  {
+   "problem": "hs070",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.1680912,
+   "iterations": 15,
+   "objective_evaluations": 18,
+   "cpu_time": 0.010318
+  },
+  {
+   "problem": "hs071",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 17.01402,
+   "iterations": 8,
+   "objective_evaluations": 9,
+   "cpu_time": 0.002418
+  },
+  {
+   "problem": "hs072",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 727.6789,
+   "iterations": 18,
+   "objective_evaluations": 28,
+   "cpu_time": 0.002151
+  },
+  {
+   "problem": "hs073",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 29.89438,
+   "iterations": 9,
+   "objective_evaluations": 10,
+   "cpu_time": 0.011509
+  },
+  {
+   "problem": "hs074",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 5126.498,
+   "iterations": 9,
+   "objective_evaluations": 10,
+   "cpu_time": 0.007427
+  },
+  {
+   "problem": "hs075",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 5174.413,
+   "iterations": 9,
+   "objective_evaluations": 10,
+   "cpu_time": 0.034451
+  },
+  {
+   "problem": "hs076",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -4.681818,
+   "iterations": 7,
+   "objective_evaluations": 8,
+   "cpu_time": 0.009072
+  },
+  {
+   "problem": "hs077",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.2415051,
+   "iterations": 9,
+   "objective_evaluations": 11,
+   "cpu_time": 0.003818
+  },
+  {
+   "problem": "hs078",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -2.9197,
+   "iterations": 4,
+   "objective_evaluations": 5,
+   "cpu_time": 0.013116
+  },
+  {
+   "problem": "hs079",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.07877682,
+   "iterations": 4,
+   "objective_evaluations": 5,
+   "cpu_time": 0.033982
+  },
+  {
+   "problem": "hs080",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.05394985,
+   "iterations": 6,
+   "objective_evaluations": 7,
+   "cpu_time": 0.000712
+  },
+  {
+   "problem": "hs081",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.05394985,
+   "iterations": 9,
+   "objective_evaluations": 10,
+   "cpu_time": 0.002927
+  },
+  {
+   "problem": "hs083",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -30665.54,
+   "iterations": 16,
+   "objective_evaluations": 17,
+   "cpu_time": 0.017726
+  },
+  {
+   "problem": "hs084",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -5280335.0,
+   "iterations": 20,
+   "objective_evaluations": 22,
+   "cpu_time": 0.02186
+  },
+  {
+   "problem": "hs085",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -1.905155,
+   "iterations": 39,
+   "objective_evaluations": 40,
+   "cpu_time": 0.033501
+  },
+  {
+   "problem": "hs086",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -32.34868,
+   "iterations": 12,
+   "objective_evaluations": 13,
+   "cpu_time": 0.00079
+  },
+  {
+   "problem": "hs087",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 8827.598,
+   "iterations": 17,
+   "objective_evaluations": 18,
+   "cpu_time": 0.004468
+  },
+  {
+   "problem": "hs088",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.362646,
+   "iterations": 17,
+   "objective_evaluations": 25,
+   "cpu_time": 0.068632
+  },
+  {
+   "problem": "hs089",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.362646,
+   "iterations": 14,
+   "objective_evaluations": 17,
+   "cpu_time": 0.038113
+  },
+  {
+   "problem": "hs090",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.362646,
+   "iterations": 21,
+   "objective_evaluations": 29,
+   "cpu_time": 0.039978
+  },
+  {
+   "problem": "hs091",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.362646,
+   "iterations": 26,
+   "objective_evaluations": 33,
+   "cpu_time": 0.017819
+  },
+  {
+   "problem": "hs092",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.362646,
+   "iterations": 22,
+   "objective_evaluations": 37,
+   "cpu_time": 0.098079
+  },
+  {
+   "problem": "hs093",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 193.8604,
+   "iterations": 22,
+   "objective_evaluations": 67,
+   "cpu_time": 0.050123
+  },
+  {
+   "problem": "hs095",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.01561773,
+   "iterations": 19,
+   "objective_evaluations": 23,
+   "cpu_time": 0.00322
+  },
+  {
+   "problem": "hs096",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.01561773,
+   "iterations": 18,
+   "objective_evaluations": 19,
+   "cpu_time": 0.037497
+  },
+  {
+   "problem": "hs097",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 4.071241,
+   "iterations": 19,
+   "objective_evaluations": 20,
+   "cpu_time": 0.048624
+  },
+  {
+   "problem": "hs098",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 3.135806,
+   "iterations": 29,
+   "objective_evaluations": 34,
+   "cpu_time": 0.027729
+  },
+  {
+   "problem": "hs099",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -831079900.0,
+   "iterations": 7,
+   "objective_evaluations": 8,
+   "cpu_time": 0.024987
+  },
+  {
+   "problem": "hs100",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 680.6301,
+   "iterations": 12,
+   "objective_evaluations": 32,
+   "cpu_time": 0.006978
+  },
+  {
+   "problem": "hs100lnp",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 680.6301,
+   "iterations": 17,
+   "objective_evaluations": 25,
+   "cpu_time": 0.001833
+  },
+  {
+   "problem": "hs100mod",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 678.7547,
+   "iterations": 13,
+   "objective_evaluations": 26,
+   "cpu_time": 0.016806
+  },
+  {
+   "problem": "hs101",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1809.765,
+   "iterations": 109,
+   "objective_evaluations": 371,
+   "cpu_time": 0.217478
+  },
+  {
+   "problem": "hs102",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 911.8805,
+   "iterations": 31,
+   "objective_evaluations": 51,
+   "cpu_time": 0.054354
+  },
+  {
+   "problem": "hs103",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 543.6679,
+   "iterations": 49,
+   "objective_evaluations": 70,
+   "cpu_time": 0.074654
+  },
+  {
+   "problem": "hs104",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 3.951163,
+   "iterations": 9,
+   "objective_evaluations": 10,
+   "cpu_time": 0.003302
+  },
+  {
+   "problem": "hs105",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1136.361,
+   "iterations": 19,
+   "objective_evaluations": 21,
+   "cpu_time": 0.175055
+  },
+  {
+   "problem": "hs106",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 7049.248,
+   "iterations": 16,
+   "objective_evaluations": 17,
+   "cpu_time": 0.007569
+  },
+  {
+   "problem": "hs107",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 5055.012,
+   "iterations": 12,
+   "objective_evaluations": 13,
+   "cpu_time": 0.004023
+  },
+  {
+   "problem": "hs108",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -0.6749814,
+   "iterations": 22,
+   "objective_evaluations": 23,
+   "cpu_time": 0.025919
+  },
+  {
+   "problem": "hs109",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 5326.851,
+   "iterations": 26,
+   "objective_evaluations": 57,
+   "cpu_time": 0.013561
+  },
+  {
+   "problem": "hs110",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -45.77847,
+   "iterations": 6,
+   "objective_evaluations": 7,
+   "cpu_time": 0.030225
+  },
+  {
+   "problem": "hs111",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -47.76109,
+   "iterations": 22,
+   "objective_evaluations": 23,
+   "cpu_time": 0.017835
+  },
+  {
+   "problem": "hs111lnp",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -47.76109,
+   "iterations": 23,
+   "objective_evaluations": 24,
+   "cpu_time": 0.016435
+  },
+  {
+   "problem": "hs112",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -47.76109,
+   "iterations": 17,
+   "objective_evaluations": 18,
+   "cpu_time": 0.02801
+  },
+  {
+   "problem": "hs113",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 24.30621,
+   "iterations": 11,
+   "objective_evaluations": 12,
+   "cpu_time": 0.049245
+  },
+  {
+   "problem": "hs114",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -1768.807,
+   "iterations": 19,
+   "objective_evaluations": 20,
+   "cpu_time": 0.099198
+  },
+  {
+   "problem": "hs116",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 97.58747,
+   "iterations": 25,
+   "objective_evaluations": 27,
+   "cpu_time": 0.016308
+  },
+  {
+   "problem": "hs117",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 32.34868,
+   "iterations": 18,
+   "objective_evaluations": 19,
+   "cpu_time": 0.032041
+  },
+  {
+   "problem": "hs118",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 664.8204,
+   "iterations": 11,
+   "objective_evaluations": 12,
+   "cpu_time": 0.018125
+  },
+  {
+   "problem": "hs119",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 244.8997,
+   "iterations": 16,
+   "objective_evaluations": 17,
+   "cpu_time": 0.046792
+  },
+  {
+   "problem": "hs21mod",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -95.96,
+   "iterations": 15,
+   "objective_evaluations": 16,
+   "cpu_time": 0.001969
+  },
+  {
+   "problem": "hs268",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 2.002707e-09,
+   "iterations": 18,
+   "objective_evaluations": 19,
+   "cpu_time": 0.029519
+  },
+  {
+   "problem": "hs35mod",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.25,
+   "iterations": 15,
+   "objective_evaluations": 16,
+   "cpu_time": 0.003702
+  },
+  {
+   "problem": "hs3mod",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -7.494096e-09,
+   "iterations": 5,
+   "objective_evaluations": 6,
+   "cpu_time": 0.009041
+  },
+  {
+   "problem": "hs44new",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -15.0,
+   "iterations": 13,
+   "objective_evaluations": 14,
+   "cpu_time": 0.018735
+  },
+  {
+   "problem": "hs99exp",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -1008063000.0,
+   "iterations": 24,
+   "objective_evaluations": 28,
+   "cpu_time": 0.055258
+  }
+ ]
+}

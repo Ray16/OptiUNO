@@ -1,0 +1,1277 @@
+{
+ "config_hash": "7ab600c96523",
+ "rep": 0,
+ "label": "evolve",
+ "options": {
+  "constraint_relaxation_strategy": "feasibility_restoration",
+  "inequality_handling_method": "inequality_constrained",
+  "hessian_model": "exact",
+  "inertia_correction_strategy": "primal_dual",
+  "globalization_mechanism": "LS",
+  "globalization_strategy": "waechter_filter_method"
+ },
+ "time_limit": 20.0,
+ "n_problems": 123,
+ "n_solved": 20,
+ "reliability": 0.16260162601626016,
+ "cum_cpu_time": 1.0201370000000003,
+ "n_rewritten": 11,
+ "status_counts": {
+  "solved": 20,
+  "unsolved": 103
+ },
+ "per_problem": [
+  {
+   "problem": "genhs28",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.9271737,
+   "iterations": 1,
+   "objective_evaluations": 2,
+   "cpu_time": 0.000665
+  },
+  {
+   "problem": "hs001",
+   "category": "unsolved",
+   "rewritten": [
+    "globalization_strategy"
+   ],
+   "detail": "Suboptimal point",
+   "objective": 909.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.005664
+  },
+  {
+   "problem": "hs002",
+   "category": "unsolved",
+   "rewritten": [
+    "globalization_strategy"
+   ],
+   "detail": "Suboptimal point",
+   "objective": 634.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000327
+  },
+  {
+   "problem": "hs003",
+   "category": "unsolved",
+   "rewritten": [
+    "globalization_strategy"
+   ],
+   "detail": "Suboptimal point",
+   "objective": 1.00081,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.004091
+  },
+  {
+   "problem": "hs004",
+   "category": "unsolved",
+   "rewritten": [
+    "globalization_strategy"
+   ],
+   "detail": "Suboptimal point",
+   "objective": 3.323568,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000511
+  },
+  {
+   "problem": "hs005",
+   "category": "unsolved",
+   "rewritten": [
+    "globalization_strategy"
+   ],
+   "detail": "Suboptimal point",
+   "objective": 1.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000646
+  },
+  {
+   "problem": "hs006",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.0,
+   "iterations": 2,
+   "objective_evaluations": 3,
+   "cpu_time": 0.042705
+  },
+  {
+   "problem": "hs007",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -1.732051,
+   "iterations": 9,
+   "objective_evaluations": 18,
+   "cpu_time": 0.047256
+  },
+  {
+   "problem": "hs008",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -1.0,
+   "iterations": 5,
+   "objective_evaluations": 6,
+   "cpu_time": 0.005696
+  },
+  {
+   "problem": "hs009",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -0.5,
+   "iterations": 3,
+   "objective_evaluations": 5,
+   "cpu_time": 0.004511
+  },
+  {
+   "problem": "hs010",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -20.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000335
+  },
+  {
+   "problem": "hs011",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -24.98,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.004138
+  },
+  {
+   "problem": "hs012",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.025172
+  },
+  {
+   "problem": "hs013",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 4.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000351
+  },
+  {
+   "problem": "hs014",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 1.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.015218
+  },
+  {
+   "problem": "hs015",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 909.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.00054
+  },
+  {
+   "problem": "hs016",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 58.5,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000366
+  },
+  {
+   "problem": "hs017",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 58.5,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.00045
+  },
+  {
+   "problem": "hs018",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 4.04,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000359
+  },
+  {
+   "problem": "hs019",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -1808.858,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.040192
+  },
+  {
+   "problem": "hs020",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 58.5,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.001335
+  },
+  {
+   "problem": "hs021",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -98.96,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000335
+  },
+  {
+   "problem": "hs022",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 1.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.016462
+  },
+  {
+   "problem": "hs023",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 10.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.00767
+  },
+  {
+   "problem": "hs024",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -0.01336459,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.01296
+  },
+  {
+   "problem": "hs025",
+   "category": "unsolved",
+   "rewritten": [
+    "globalization_strategy"
+   ],
+   "detail": "Suboptimal point",
+   "objective": 32.835,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.002475
+  },
+  {
+   "problem": "hs026",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.265914e-12,
+   "iterations": 18,
+   "objective_evaluations": 21,
+   "cpu_time": 0.005739
+  },
+  {
+   "problem": "hs027",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.007590816,
+   "iterations": 5,
+   "objective_evaluations": 61,
+   "cpu_time": 0.013709
+  },
+  {
+   "problem": "hs028",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.676329e-30,
+   "iterations": 1,
+   "objective_evaluations": 2,
+   "cpu_time": 0.007616
+  },
+  {
+   "problem": "hs029",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -1.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.005387
+  },
+  {
+   "problem": "hs030",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 3.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.007316
+  },
+  {
+   "problem": "hs031",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 19.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000544
+  },
+  {
+   "problem": "hs032",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 7.2,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000405
+  },
+  {
+   "problem": "hs033",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -3.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.00034
+  },
+  {
+   "problem": "hs034",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.00037
+  },
+  {
+   "problem": "hs035",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 2.25,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000355
+  },
+  {
+   "problem": "hs036",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -1000.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000567
+  },
+  {
+   "problem": "hs037",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -1000.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000808
+  },
+  {
+   "problem": "hs038",
+   "category": "unsolved",
+   "rewritten": [
+    "globalization_strategy"
+   ],
+   "detail": "Suboptimal point",
+   "objective": 19192.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000913
+  },
+  {
+   "problem": "hs039",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -4.857894,
+   "iterations": 5,
+   "objective_evaluations": 87,
+   "cpu_time": 0.025151
+  },
+  {
+   "problem": "hs040",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -0.25,
+   "iterations": 4,
+   "objective_evaluations": 5,
+   "cpu_time": 0.061117
+  },
+  {
+   "problem": "hs041",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 1.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.001377
+  },
+  {
+   "problem": "hs042",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 15.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000604
+  },
+  {
+   "problem": "hs043",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.019243
+  },
+  {
+   "problem": "hs044",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000314
+  },
+  {
+   "problem": "hs045",
+   "category": "unsolved",
+   "rewritten": [
+    "globalization_strategy"
+   ],
+   "detail": "Suboptimal point",
+   "objective": 2.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000341
+  },
+  {
+   "problem": "hs046",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 4.07924e-12,
+   "iterations": 18,
+   "objective_evaluations": 19,
+   "cpu_time": 0.002977
+  },
+  {
+   "problem": "hs047",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 3.149815e-11,
+   "iterations": 17,
+   "objective_evaluations": 19,
+   "cpu_time": 0.047221
+  },
+  {
+   "problem": "hs048",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 2.761013e-30,
+   "iterations": 1,
+   "objective_evaluations": 2,
+   "cpu_time": 0.006227
+  },
+  {
+   "problem": "hs049",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.375306e-09,
+   "iterations": 16,
+   "objective_evaluations": 17,
+   "cpu_time": 0.010944
+  },
+  {
+   "problem": "hs050",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 1.232595e-31,
+   "iterations": 9,
+   "objective_evaluations": 10,
+   "cpu_time": 0.002905
+  },
+  {
+   "problem": "hs051",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 2,
+   "cpu_time": 0.002485
+  },
+  {
+   "problem": "hs052",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 5.326648,
+   "iterations": 1,
+   "objective_evaluations": 2,
+   "cpu_time": 0.001406
+  },
+  {
+   "problem": "hs053",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 6.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.003346
+  },
+  {
+   "problem": "hs054",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.5354993,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.018464
+  },
+  {
+   "problem": "hs055",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 6.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.006904
+  },
+  {
+   "problem": "hs056",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -1.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.006001
+  },
+  {
+   "problem": "hs057",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0307986,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000527
+  },
+  {
+   "problem": "hs059",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 64.9087,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000869
+  },
+  {
+   "problem": "hs060",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 1.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.006503
+  },
+  {
+   "problem": "hs061",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.024693
+  },
+  {
+   "problem": "hs062",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -25698.3,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.002645
+  },
+  {
+   "problem": "hs063",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 976.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.012985
+  },
+  {
+   "problem": "hs064",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 266035.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.019385
+  },
+  {
+   "problem": "hs065",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 117.1111,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.003745
+  },
+  {
+   "problem": "hs066",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.58,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.003914
+  },
+  {
+   "problem": "hs067",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -868.7269,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.005514
+  },
+  {
+   "problem": "hs070",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.9878588,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.008827
+  },
+  {
+   "problem": "hs071",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 16.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.014561
+  },
+  {
+   "problem": "hs072",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 5.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.005437
+  },
+  {
+   "problem": "hs073",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 130.8,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000423
+  },
+  {
+   "problem": "hs074",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000769
+  },
+  {
+   "problem": "hs075",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.010529
+  },
+  {
+   "problem": "hs076",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -1.25,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.003378
+  },
+  {
+   "problem": "hs077",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.2415051,
+   "iterations": 9,
+   "objective_evaluations": 11,
+   "cpu_time": 0.015153
+  },
+  {
+   "problem": "hs078",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -2.9197,
+   "iterations": 4,
+   "objective_evaluations": 5,
+   "cpu_time": 0.005588
+  },
+  {
+   "problem": "hs079",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 0.07877682,
+   "iterations": 4,
+   "objective_evaluations": 5,
+   "cpu_time": 0.000688
+  },
+  {
+   "problem": "hs080",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0003354626,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000509
+  },
+  {
+   "problem": "hs081",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -0.4996645,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.00042
+  },
+  {
+   "problem": "hs083",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -32217.43,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.004291
+  },
+  {
+   "problem": "hs084",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -2351243.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.007598
+  },
+  {
+   "problem": "hs085",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -0.9393969,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000415
+  },
+  {
+   "problem": "hs086",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 20.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.006386
+  },
+  {
+   "problem": "hs087",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.004212
+  },
+  {
+   "problem": "hs088",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.5,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.023165
+  },
+  {
+   "problem": "hs089",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.75,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.006462
+  },
+  {
+   "problem": "hs090",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 1.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.019712
+  },
+  {
+   "problem": "hs091",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 1.25,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000582
+  },
+  {
+   "problem": "hs092",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 1.5,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.00043
+  },
+  {
+   "problem": "hs093",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 137.0664,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.0111
+  },
+  {
+   "problem": "hs095",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000406
+  },
+  {
+   "problem": "hs096",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.003196
+  },
+  {
+   "problem": "hs097",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.00829
+  },
+  {
+   "problem": "hs098",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.004727
+  },
+  {
+   "problem": "hs099",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -776360500.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.012544
+  },
+  {
+   "problem": "hs100",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 714.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.016757
+  },
+  {
+   "problem": "hs100lnp",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": 680.6301,
+   "iterations": 16,
+   "objective_evaluations": 24,
+   "cpu_time": 0.011491
+  },
+  {
+   "problem": "hs100mod",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 714.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.002504
+  },
+  {
+   "problem": "hs101",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 2205.868,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.003965
+  },
+  {
+   "problem": "hs102",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 2206.889,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.004681
+  },
+  {
+   "problem": "hs103",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 2208.886,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000358
+  },
+  {
+   "problem": "hs104",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 3.657366,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.028562
+  },
+  {
+   "problem": "hs105",
+   "category": "unsolved",
+   "rewritten": [
+    "globalization_strategy"
+   ],
+   "detail": "Suboptimal point",
+   "objective": 1282.588,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.006086
+  },
+  {
+   "problem": "hs106",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 15000.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000914
+  },
+  {
+   "problem": "hs107",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 4853.334,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.001327
+  },
+  {
+   "problem": "hs108",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.001277
+  },
+  {
+   "problem": "hs109",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.01332
+  },
+  {
+   "problem": "hs110",
+   "category": "unsolved",
+   "rewritten": [
+    "globalization_strategy"
+   ],
+   "detail": "Suboptimal point",
+   "objective": -43.13434,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.003471
+  },
+  {
+   "problem": "hs111",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -21.01454,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.007043
+  },
+  {
+   "problem": "hs111lnp",
+   "category": "solved",
+   "rewritten": [],
+   "detail": "Feasible KKT point",
+   "objective": -47.76109,
+   "iterations": 22,
+   "objective_evaluations": 23,
+   "cpu_time": 0.055587
+  },
+  {
+   "problem": "hs112",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -20.96029,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.029514
+  },
+  {
+   "problem": "hs113",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 753.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000357
+  },
+  {
+   "problem": "hs114",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -872.3872,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000352
+  },
+  {
+   "problem": "hs116",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 450.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000457
+  },
+  {
+   "problem": "hs117",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 2400.105,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.003502
+  },
+  {
+   "problem": "hs118",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 942.7162,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.004195
+  },
+  {
+   "problem": "hs119",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 44206.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.000371
+  },
+  {
+   "problem": "hs21mod",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -94.96,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.00333
+  },
+  {
+   "problem": "hs268",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 12048.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.008802
+  },
+  {
+   "problem": "hs35mod",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 2.25,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.028421
+  },
+  {
+   "problem": "hs3mod",
+   "category": "unsolved",
+   "rewritten": [
+    "globalization_strategy"
+   ],
+   "detail": "Suboptimal point",
+   "objective": 82.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.006263
+  },
+  {
+   "problem": "hs44new",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": -1.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.003251
+  },
+  {
+   "problem": "hs99exp",
+   "category": "unsolved",
+   "rewritten": [],
+   "detail": "Suboptimal point",
+   "objective": 0.0,
+   "iterations": 1,
+   "objective_evaluations": 1,
+   "cpu_time": 0.011875
+  }
+ ]
+}
