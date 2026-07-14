@@ -12,3 +12,8 @@ Append-only history of changes and actions. Newest entries at the bottom. Never 
   3. Never modify the user's environment; only check for installed packages and suggest fixes.
   4. Stay within the `OptiUNO/` directory and subfolders; do not explore parent/sibling folders.
   5. Session logging: read `LOGBOOK.md` + `STATUS.md` at start; update both at end (LOGBOOK append-only, STATUS overwritten).
+- Ran a planning session (`/plan`) to sketch the initial project pipeline.
+- Researched the toolchain (read-only web/docs, no installs): confirmed `unopy` is a pip package that solves models via **Python callbacks** (`unopy.Model` + `UnoSolver.set_option`/`set_preset` → `optimize`); identified the strategy option keys/values that form the search space; and extracted how the presets (filtersqp, ipopt, funnelsqp, filterslp) map to consistent option combinations.
+- Confirmed design decisions with the user: (a) start with a hand-coded Hock-Schittkowski subset (CUTEst bridge later), (b) two independent drivers — enumeration + openEvolve — sharing one core runner, with enumeration validating openEvolve, (c) metric = robustness then speed (lexicographic).
+- Designed `run_case` as the atomic unit (one problem × one config) and a **two-layer feasibility tracking** scheme: a priori predicate rules (with reason strings, preset-validated) + a persisted empirical `results/infeasible.json` ledger (conservative 100%-fail exclusion).
+- Saved the plan document to `plan/optiuno-initial-plan.md`. **No code implemented** — further planning to come before implementation.
