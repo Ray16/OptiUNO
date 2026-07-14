@@ -273,3 +273,56 @@ is one level up, the two live path assignments were repointed to
   `problems/HS_model/` entry). Config-hash cache is unaffected (keyed by options, not paths).
 - Verified: `NL_DIR` resolves to `problems/HS_model` and finds 121 problems; a full preset sweep
   reproduces filtersqp 117/121 (0.967); both edited files byte-compile.
+
+## 2026-07-14 — UNO option catalogues + decoupled black-box evaluator (`optiuno.objective`)
+
+Added two machine-readable option catalogues and a reusable, search-driver-agnostic objective
+function so optimizers other than openEvolve (Bayesian optimization, GA, enumeration) can score
+UNO configs.
+
+### Option catalogues (`optiuno/*.json`)
+- `optiuno/uno_config_options.json` — full catalogue of **all 89 options** (6 preset-only
+  ingredients + 85 from `--dump-options`), built by probing the bundled `external/uno` binary
+  (`--strategies` + `--dump-options`), cross-checked vs `results/quickRun/uno-options.md`.
+  Groups: ingredients, search_space (incl. `known_invalid_combinations` / `silent_rewrites`),
+  solvers (this build: QP/LP BQPD+HiGHS, linear MUMPS+SSIDS — no HSL), presets,
+  categorical/boolean/numeric options. Coverage + defaults verified against the binary.
+- `optiuno/uno_search_space.json` — just the six searchable ingredients → legal values (flat
+  dict; byte-identical to `quickRun/evolve/evaluator.py:ALLOWED`).
+- **Finding:** `uno_ampl --strategies` prints the Hessian model as `LFBGS`, but that is a
+  display typo — the parser accepts `LBFGS` (banner "with L-BFGS Hessian") and rejects `LFBGS`
+  ("Hessian model LFBGS does not exist"). Catalogues use the accepted spelling `LBFGS`; the
+  repo's existing `ALLOWED`/`initial_program.py` were already correct.
+
+### Black-box evaluator (`optiuno/objective.py`)
+- `evaluate(config, problem_set) -> (reliability, cum_cpu_time)` — solves one UNO config over a
+  problem set and returns the two OptiUNO objectives. **reliability** = fraction in [0,1] that
+  reached optimum (strict `Success` + `Feasible KKT point`, matching
+  `quickRun/harness/classify.py` but reimplemented so `optiuno` keeps its one-way dependency —
+  it does **not** import `quickRun`). **cum_cpu_time** = sum of per-problem UNO CPU seconds;
+  a timeout charges the full `time_limit` (mirrors `benchmark.py:70-74`). Runs problems in a
+  ThreadPool (default 8 workers); parallelism does not affect the CPU-sum metric.
+- Also: `evaluate_detailed()` (rich dict), `load_problem_set()` (JSON path / list / object with
+  `base_dir`+`problems`, fail-fast on missing files), `is_solved()`, `make_objective()` factory
+  (resolves the set once, returns `config -> (rel, cpu)` for an optimizer loop), and a CLI
+  (`python -m optiuno.objective --problems SET.json --option k=v ...`).
+- Config is validated against `uno_search_space.json` (unknown key / illegal value → ValueError);
+  bad *combinations* of legal values (interior_point+TR, the primal_dual×inequality_constrained
+  dead region) are NOT rejected — they run and surface as low reliability, which the optimizer
+  should see.
+- **Naming gotcha:** first drafted as `optiuno/evaluate.py`, but a submodule whose name equals a
+  re-exported function name breaks the lazy `__init__` re-export (`from optiuno import evaluate`
+  returned the module). Renamed the module to `optiuno/objective.py`; the function stays
+  `evaluate`. Added `evaluate`/`evaluate_detailed`/`load_problem_set`/`make_objective` to
+  `optiuno/__init__.py` `_LAZY`.
+- New data file `problems/sets/hs_model_all.json` (all 121 HS stems) as the example/default set.
+
+### Verification
+- CLI over the 121-set with filtersqp ingredients → **reliability 0.9669 (117/121)**, exact
+  match to the recorded baseline; `cum_cpu_time` ≈ 2–3.5 s (run-to-run CPU noise).
+- Cross-checked vs `quickRun.harness.benchmark.evaluate_config` on the same set (fresh, no
+  cache): **reliability identical**, `cum_cpu_time` within noise (3.25 vs 3.45 s).
+- Fail-fast paths (missing file, unknown key, illegal value, stem without base_dir) all raise;
+  dead-region config runs to `(0.0, …)` without raising; `make_objective` returns a callable.
+- `CLAUDE.md` (root) was also refreshed this session to document the current architecture
+  (shared `optiuno` library, the two corpora, the search-pipeline input layering).

@@ -1,0 +1,271 @@
+{
+  "uno_version": "2.8.0",
+  "description": "Machine-readable catalogue of UNO run-time options: the search space for OptiUNO plus every tunable option, its type, default, and (where finite) legal value set. Companion to results/quickRun/uno-options.md; keep the two in sync.",
+  "source": {
+    "binary": "external/uno/bin/uno_ampl (bundled, self-contained v2.8.0)",
+    "probed_with": ["uno_ampl --strategies", "uno_ampl --dump-options"],
+    "manual": "https://unosolver.readthedocs.io/en/latest/options/",
+    "cross_checked_with": "results/quickRun/uno-options.md",
+    "retrieved": "2026-07-14",
+    "authority": "The bundled binary is ground truth. Enum value sets and available solvers are BUILD-DEPENDENT; re-probe with --strategies/--dump-options after swapping the UNO build."
+  },
+  "notes": [
+    "Enum value sets for the ingredients and the QP/LP/linear solvers come from `--strategies`; every option's default comes from `--dump-options`.",
+    "`--strategies` prints the Hessian model as 'LFBGS', but that is a display typo: the parser accepts 'LBFGS' (banner reads 'with L-BFGS Hessian') and rejects 'LFBGS' with 'Hessian model LFBGS does not exist'. This file uses the accepted spelling, LBFGS.",
+    "This build exposes linear solvers MUMPS and SSIDS only (no MA27/MA57/MA86); the HSL options (libhsl_path) are absent because it was not built with -DHSL_RUNTIME_LOADING=ON.",
+    "The four preset-driven ingredients (constraint_relaxation_strategy, inequality_handling_method, globalization_mechanism, globalization_strategy) have no standalone default in --dump-options; hessian_model and inertia_correction_strategy do (exact, primal).",
+    "Options are grouped as: ingredients (6) + solvers (3) + categorical_options (8) = the 17 finite-value options; boolean_options and numeric_options are the continuous/integer/bool hyperparameters."
+  ],
+
+  "ingredients": {
+    "constraint_relaxation_strategy": {
+      "values": ["feasibility_restoration"],
+      "default_source": "preset",
+      "description": "How subproblem constraints are relaxed to guarantee a well-defined, feasible subproblem. The paper (UNO.pdf §4.2) also describes an l1-relaxation strategy, but this build exposes only feasibility_restoration."
+    },
+    "inequality_handling_method": {
+      "values": ["inequality_constrained", "interior_point"],
+      "default_source": "preset",
+      "description": "How the combinatorics induced by inequality constraints are handled (active-set SQP vs. interior-point barrier)."
+    },
+    "hessian_model": {
+      "values": ["exact", "LBFGS", "LSR1", "identity", "zero"],
+      "default_source": "preset",
+      "raw_default": "exact",
+      "description": "Approximation of the Lagrangian Hessian. NOTE: 'exact' silently degrades to 'zero' (with a warning) when the AMPL model supplies no Hessian (UNO.pdf §5.3.5)."
+    },
+    "inertia_correction_strategy": {
+      "values": ["primal", "primal_dual", "none"],
+      "default_source": "preset",
+      "raw_default": "primal",
+      "description": "How the inertia of the Lagrangian Hessian / KKT matrix is corrected."
+    },
+    "globalization_mechanism": {
+      "values": ["TR", "LS"],
+      "default_source": "preset",
+      "description": "Trust region (TR) or line search (LS): controls step length and the recourse when a trial iterate is rejected."
+    },
+    "globalization_strategy": {
+      "values": ["merit_function", "fletcher_filter_method", "waechter_filter_method", "funnel_method"],
+      "default_source": "preset",
+      "description": "Decides whether a trial iterate makes sufficient progress, and accepts or rejects it."
+    }
+  },
+
+  "search_space": {
+    "ingredient_options": [
+      "constraint_relaxation_strategy",
+      "inequality_handling_method",
+      "hessian_model",
+      "inertia_correction_strategy",
+      "globalization_mechanism",
+      "globalization_strategy"
+    ],
+    "nominal_combinations": 240,
+    "nominal_combinations_formula": "1 * 2 * 5 * 3 * 2 * 4 = 240 (Cartesian product of the six ingredient value sets)",
+    "runnable_combinations": 240,
+    "runnable_note": "All 240 nominal combinations instantiate in UNO 2.8.0 and are treated as runnable; invalid/failed/rewritten configs are caught at run time by the harness (harness/classify.py), not by refusing to run. The paper's 'at least 186' figure refers to UNO 2.2.0.",
+    "known_invalid_combinations": [
+      {
+        "combination": {"inequality_handling_method": "interior_point", "globalization_mechanism": "TR"},
+        "status": "documented_invalid_in_2.2.0_but_runs_in_2.8.0",
+        "detail": "Paper (UNO.pdf §5.2) records interior_point + TR as prohibited. UNO 2.8.0 instantiates it ('TR ... primal-dual interior-point method') and fails ALGORITHMICALLY on many problems (e.g. hs015) rather than rejecting it up front. Add a version caveat before excluding it from a search."
+      }
+    ],
+    "known_problematic_combinations": [
+      {
+        "combination": {"inertia_correction_strategy": "primal_dual", "inequality_handling_method": "inequality_constrained"},
+        "status": "dead_region",
+        "detail": "Raises 'Algorithmic error' on essentially every problem. Fails fast; contributes little CPU time but zero reliability."
+      }
+    ],
+    "silent_rewrites": [
+      "A filter/funnel globalization_strategy on unconstrained / bound-only problems is rewritten to 'LS merit_function' (UNO.pdf §5.3.5) — the run succeeds but tests a DIFFERENT config than requested. Detect via the composed-method banner (UnoResult.banner); the quickRun harness counts these as n_rewritten.",
+      "hessian_model='exact' is rewritten to 'zero' when the model provides no Hessian.",
+      "The QP subproblem solver is swapped for an LP solver when the subproblem has no curvature."
+    ]
+  },
+
+  "solvers": {
+    "_note": "Build-dependent. Values below are what THIS bundled binary reports via --strategies; re-probe after changing the UNO build.",
+    "QP_solver": {
+      "values": ["BQPD", "HiGHS"],
+      "default": "BQPD",
+      "description": "Quadratic-programming subproblem solver."
+    },
+    "LP_solver": {
+      "values": ["BQPD", "HiGHS"],
+      "default": "BQPD",
+      "description": "Linear-programming subproblem solver."
+    },
+    "linear_solver": {
+      "values": ["MUMPS", "SSIDS"],
+      "default": "MUMPS",
+      "description": "Direct solver for sparse symmetric indefinite linear systems. Manual also lists MA27/MA57/MA86 (HSL) but they are unavailable in this build."
+    }
+  },
+
+  "presets": {
+    "_note": "The baselines to beat. Each preset fixes a full option bundle; the six-ingredient view is given here (see uno-options.md for the ~30 non-ingredient options each also sets).",
+    "auto": {
+      "default": true,
+      "selection_rule": "Picks 'ipopt' if (n + m >= 2000) OR (nnz(grad c) + nnz(hess L) >= 50000); otherwise 'filtersqp'."
+    },
+    "filtersqp": {
+      "constraint_relaxation_strategy": "feasibility_restoration",
+      "inequality_handling_method": "inequality_constrained",
+      "hessian_model": "exact",
+      "inertia_correction_strategy": "none",
+      "globalization_mechanism": "TR",
+      "globalization_strategy": "fletcher_filter_method"
+    },
+    "ipopt": {
+      "constraint_relaxation_strategy": "feasibility_restoration",
+      "inequality_handling_method": "interior_point",
+      "hessian_model": "exact",
+      "inertia_correction_strategy": "primal_dual",
+      "globalization_mechanism": "LS",
+      "globalization_strategy": "waechter_filter_method"
+    }
+  },
+
+  "categorical_options": {
+    "_note": "Finite-value options that are NOT ingredients or solvers.",
+    "preset": {
+      "values": ["filtersqp", "ipopt", "auto"],
+      "default": "auto",
+      "description": "UNO preset (fixes a full option bundle)."
+    },
+    "logger": {
+      "values": ["SILENT", "DISCRETE", "WARNING", "INFO", "DEBUG", "DEBUG2", "DEBUG3"],
+      "default": "INFO",
+      "description": "Verbosity level of the logger."
+    },
+    "progress_norm": {
+      "values": ["L1", "L2", "INF"],
+      "default": "L1",
+      "description": "Norm used for the progress measures."
+    },
+    "residual_norm": {
+      "values": ["L1", "L2", "INF"],
+      "default": "INF",
+      "description": "Norm used for the residuals."
+    },
+    "filter_type": {
+      "values": ["standard"],
+      "default": "standard",
+      "applies_when": {"globalization_strategy": ["fletcher_filter_method", "waechter_filter_method"]},
+      "description": "Type of the filter data structure."
+    },
+    "barrier_function": {
+      "values": ["log"],
+      "default": "log",
+      "applies_when": {"inequality_handling_method": ["interior_point"]},
+      "description": "Type of the barrier function."
+    },
+    "funnel_update_strategy": {
+      "values": ["1", "2", "3"],
+      "default": "1",
+      "applies_when": {"globalization_strategy": ["funnel_method"]},
+      "description": "Rule for the funnel update."
+    },
+    "BQPD_kmax_heuristic": {
+      "values": ["filtersqp", "minotaur"],
+      "default": "filtersqp",
+      "applies_when": {"QP_solver_or_LP_solver": ["BQPD"]},
+      "description": "Heuristic for the upper bound on the nullspace size (kmax)."
+    }
+  },
+
+  "boolean_options": {
+    "protect_actual_reduction_against_roundoff": {"default": false, "category": "main"},
+    "print_subproblem": {"default": false, "category": "main"},
+    "print_solution": {"default": false, "category": "termination"},
+    "write_solution_to_file": {"default": false, "category": "main"},
+    "LS_scale_duals_with_step_length": {"default": true, "category": "line_search", "applies_when": {"globalization_mechanism": ["LS"]}},
+    "funnel_require_acceptance_wrt_current_iterate": {"default": false, "category": "funnel", "applies_when": {"globalization_strategy": ["funnel_method"]}},
+    "switch_to_optimality_requires_linearized_feasibility": {"default": true, "category": "feasibility_restoration", "applies_when": {"constraint_relaxation_strategy": ["feasibility_restoration"]}}
+  },
+
+  "numeric_options": {
+    "_note": "Continuous (double) and integer hyperparameters: default + type + category (+ applies_when where the option only takes effect for a given ingredient). See uno-options.md for prose descriptions.",
+
+    "primal_tolerance": {"type": "double", "default": 1e-8, "category": "termination"},
+    "dual_tolerance": {"type": "double", "default": 1e-8, "category": "termination"},
+    "loose_primal_tolerance": {"type": "double", "default": 1e-6, "category": "termination"},
+    "loose_dual_tolerance": {"type": "double", "default": 1e-6, "category": "termination"},
+    "loose_tolerance_iteration_threshold": {"type": "integer", "default": 15, "category": "termination"},
+    "max_iterations": {"type": "integer", "default": 2000, "category": "termination"},
+    "time_limit": {"type": "double", "default": "inf", "category": "termination"},
+    "unbounded_objective_threshold": {"type": "double", "default": -1e20, "category": "termination"},
+
+    "residual_scaling_threshold": {"type": "double", "default": 100, "category": "main"},
+    "protected_actual_reduction_macheps_coefficient": {"type": "double", "default": 10, "category": "main"},
+
+    "armijo_decrease_fraction": {"type": "double", "default": 1e-4, "category": "globalization_armijo"},
+    "armijo_tolerance": {"type": "double", "default": 1e-9, "category": "globalization_armijo"},
+
+    "switching_delta": {"type": "double", "default": 0.999, "category": "switching_method"},
+    "switching_infeasibility_exponent": {"type": "double", "default": 2, "category": "switching_method"},
+
+    "sufficient_infeasibility_decrease_ratio": {"type": "double", "default": 0.9, "category": "merit_function", "applies_when": {"globalization_strategy": ["merit_function"]}},
+
+    "filter_beta": {"type": "double", "default": 0.999, "category": "filter_method", "applies_when": {"globalization_strategy": ["fletcher_filter_method", "waechter_filter_method"]}},
+    "filter_gamma": {"type": "double", "default": 0.001, "category": "filter_method", "applies_when": {"globalization_strategy": ["fletcher_filter_method", "waechter_filter_method"]}},
+    "filter_ubd": {"type": "double", "default": 100, "category": "filter_method", "applies_when": {"globalization_strategy": ["fletcher_filter_method", "waechter_filter_method"]}},
+    "filter_fact": {"type": "double", "default": 1.25, "category": "filter_method", "applies_when": {"globalization_strategy": ["fletcher_filter_method", "waechter_filter_method"]}},
+    "filter_capacity": {"type": "integer", "default": 50, "category": "filter_method", "applies_when": {"globalization_strategy": ["fletcher_filter_method", "waechter_filter_method"]}},
+    "filter_sufficient_infeasibility_decrease_factor": {"type": "double", "default": 0.9, "category": "filter_method", "applies_when": {"globalization_strategy": ["fletcher_filter_method", "waechter_filter_method"]}},
+
+    "funnel_kappa": {"type": "double", "default": 0.5, "category": "funnel", "applies_when": {"globalization_strategy": ["funnel_method"]}},
+    "funnel_beta": {"type": "double", "default": 0.9999, "category": "funnel", "applies_when": {"globalization_strategy": ["funnel_method"]}},
+    "funnel_gamma": {"type": "double", "default": 0.001, "category": "funnel", "applies_when": {"globalization_strategy": ["funnel_method"]}},
+    "funnel_ubd": {"type": "double", "default": 1, "category": "funnel", "applies_when": {"globalization_strategy": ["funnel_method"]}},
+    "funnel_fact": {"type": "double", "default": 1.5, "category": "funnel", "applies_when": {"globalization_strategy": ["funnel_method"]}},
+
+    "LS_backtracking_ratio": {"type": "double", "default": 0.5, "category": "line_search", "applies_when": {"globalization_mechanism": ["LS"]}},
+    "LS_min_step_length": {"type": "double", "default": 1e-12, "category": "line_search", "applies_when": {"globalization_mechanism": ["LS"]}},
+
+    "TR_radius": {"type": "double", "default": 10, "category": "trust_region", "applies_when": {"globalization_mechanism": ["TR"]}},
+    "TR_increase_factor": {"type": "double", "default": 2, "category": "trust_region", "applies_when": {"globalization_mechanism": ["TR"]}},
+    "TR_decrease_factor": {"type": "double", "default": 2, "category": "trust_region", "applies_when": {"globalization_mechanism": ["TR"]}},
+    "TR_aggressive_decrease_factor": {"type": "double", "default": 4, "category": "trust_region", "applies_when": {"globalization_mechanism": ["TR"]}},
+    "TR_activity_tolerance": {"type": "double", "default": 1e-6, "category": "trust_region", "applies_when": {"globalization_mechanism": ["TR"]}},
+    "TR_min_radius": {"type": "double", "default": 1e-12, "category": "trust_region", "applies_when": {"globalization_mechanism": ["TR"]}},
+    "TR_radius_reset_threshold": {"type": "double", "default": 1e-4, "category": "trust_region", "applies_when": {"globalization_mechanism": ["TR"]}},
+
+    "regularization_failure_threshold": {"type": "double", "default": 1e20, "category": "inertia_correction"},
+    "primal_regularization_initial_factor": {"type": "double", "default": 1e-4, "category": "inertia_correction"},
+    "regularization_increase_factor": {"type": "double", "default": 2, "category": "inertia_correction"},
+    "dual_regularization_fraction": {"type": "double", "default": 1e-8, "category": "inertia_correction"},
+    "primal_regularization_lb": {"type": "double", "default": 1e-20, "category": "inertia_correction"},
+    "primal_regularization_decrease_factor": {"type": "double", "default": 3.0, "category": "inertia_correction"},
+    "primal_regularization_fast_increase_factor": {"type": "double", "default": 100.0, "category": "inertia_correction"},
+    "primal_regularization_slow_increase_factor": {"type": "double", "default": 8.0, "category": "inertia_correction"},
+    "threshold_unsuccessful_attempts": {"type": "integer", "default": 8, "category": "inertia_correction"},
+
+    "quasi_newton_memory_size": {"type": "integer", "default": 6, "category": "quasi_newton", "applies_when": {"hessian_model": ["LBFGS", "LSR1"]}},
+    "quasi_newton_delta_lower_bound": {"type": "double", "default": 1e-8, "category": "quasi_newton", "applies_when": {"hessian_model": ["LBFGS", "LSR1"]}},
+    "quasi_newton_delta_upper_bound": {"type": "double", "default": 1e8, "category": "quasi_newton", "applies_when": {"hessian_model": ["LBFGS", "LSR1"]}},
+    "LBFGS_max_skips_before_reset": {"type": "integer", "default": 2, "category": "quasi_newton", "applies_when": {"hessian_model": ["LBFGS"]}},
+    "LSR1_pivot_max_magnitude": {"type": "double", "default": 1e-7, "category": "quasi_newton", "applies_when": {"hessian_model": ["LSR1"]}},
+
+    "l1_constraint_violation_coefficient": {"type": "double", "default": 1, "category": "feasibility_restoration", "applies_when": {"constraint_relaxation_strategy": ["feasibility_restoration"]}},
+
+    "barrier_initial_parameter": {"type": "double", "default": 0.1, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "barrier_default_multiplier": {"type": "double", "default": 1, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "barrier_tau_min": {"type": "double", "default": 0.99, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "barrier_k_sigma": {"type": "double", "default": 1e10, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "barrier_k_mu": {"type": "double", "default": 0.2, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "barrier_theta_mu": {"type": "double", "default": 1.5, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "barrier_k_epsilon": {"type": "double", "default": 10, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "barrier_update_fraction": {"type": "double", "default": 10, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "barrier_regularization_exponent": {"type": "double", "default": 0.25, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "barrier_small_direction_factor": {"type": "double", "default": 10.0, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "barrier_push_variable_to_interior_k1": {"type": "double", "default": 1e-2, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "barrier_push_variable_to_interior_k2": {"type": "double", "default": 1e-2, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "barrier_damping_factor": {"type": "double", "default": 1e-5, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "barrier_small_infeasibility_factor": {"type": "double", "default": 1e-4, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}},
+    "least_square_multiplier_max_norm": {"type": "double", "default": 1e3, "category": "barrier_subproblem", "applies_when": {"inequality_handling_method": ["interior_point"]}}
+  }
+}

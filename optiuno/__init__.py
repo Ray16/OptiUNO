@@ -12,6 +12,10 @@ _LAZY = {
     "DEFAULT_TIME_LIMIT": "uno_runner",
     "select_uno_bin": "utils",
     "bundled_uno_bin": "utils",
+    "evaluate": "objective",
+    "evaluate_detailed": "objective",
+    "load_problem_set": "objective",
+    "make_objective": "objective",
 }
 
 __all__ = list(_LAZY)

@@ -1,0 +1,10 @@
+[
+ {
+  "constraint_relaxation_strategy": "feasibility_restoration",
+  "inequality_handling_method": "inequality_constrained",
+  "hessian_model": "exact",
+  "inertia_correction_strategy": "none",
+  "globalization_mechanism": "TR",
+  "globalization_strategy": "fletcher_filter_method"
+ }
+]

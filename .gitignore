@@ -13,3 +13,5 @@ scripts/__pycache__/scrape_cute.cpython-312.pyc
 scripts/__pycache__/uno_runner.cpython-312.pyc
 scripts/__pycache__/
 optiuno/__pycache__
+quickRun/harness/__pycache__
+quickRun/harness/cache
