@@ -2,12 +2,22 @@
 """Convert CUTE AMPL .mod models into UNO-ready .nl files.
 
 For every problem folder problems/CUTE/<name>/ that has a <name>.mod, this
-script writes a <name>.nl (AMPL "g"-format / ASCII nl) into the SAME folder,
-using the AMPL processor via amplpy. It then:
-  * updates that problem's metadata.json (adds nl_file_available, a files["nl"]
-    entry, and an nl_conversion status/reason), and
-  * refreshes problems/CUTE/summary.csv with an nl_file_available (and
-    nl_conversion_status) column.
+script writes an AMPL "g"-format / ASCII .nl into the SAME folder, using the
+AMPL processor via amplpy.
+
+Two variants, selected by --presolve (AMPL's presolver rewrites the model:
+fixes/eliminates variables, drops redundant constraints, tightens bounds):
+  * default (presolve OFF, `option presolve 0`) -> <name>.nl -- the faithful,
+    unsimplified problem exactly as written in the .mod. This is the primary
+    file for benchmarking UNO.
+  * --presolve (presolve ON, `option presolve 10`) -> <name>_presolve.nl -- the
+    AMPL-presolved (reduced) problem.
+
+It then:
+  * updates that problem's metadata.json (nl_file_available /
+    nl_presolve_file_available flags, files["nl"] / files["nl_presolve"]
+    entries, nl_conversion / nl_presolve_conversion status/reason), and
+  * refreshes problems/CUTE/summary.csv with the nl_* columns.
 
 The .mod files ship as full AMPL scripts (they end in `solve;` and carry
 `display`/`printf` lines). Those *command* statements are stripped before the
@@ -15,12 +25,13 @@ model is handed to AMPL so nothing is actually solved; model/data statements
 (`param`, `var`, `minimize`, `subject to`, `data`, `let`, ...) are kept so the
 emitted .nl carries the problem and its starting point.
 
-This script is resumable (existing non-empty <name>.nl is skipped unless
+This script is resumable (an existing non-empty target .nl is skipped unless
 --force) and installs nothing. It requires `amplpy`; if that import fails it
 prints install instructions and exits without a traceback.
 
 Run it with the Python that has amplpy installed, e.g.:
-    python scripts/problem_parser.py --only hs071
+    python scripts/problem_parser.py --only hs071            # faithful <name>.nl
+    python scripts/problem_parser.py --only hs071 --presolve # <name>_presolve.nl
 """
 from __future__ import annotations
 
@@ -42,7 +53,7 @@ COMMAND_KEYWORDS = frozenset({
 })
 # Suffix (no dots) for the throwaway stub/model AMPL writes, renamed on success.
 TMP_SUFFIX = "__optiuno_tmp"
-# summary.csv column order produced by scrape_cute.py; the two nl columns are
+# summary.csv column order produced by scrape_cute.py; the nl columns are
 # inserted right after res_file_available.
 BASE_SUMMARY_COLUMNS = [
     "number", "name", "classification", "N", "M", "Nnl", "Mnl", "Nz",
@@ -50,7 +61,38 @@ BASE_SUMMARY_COLUMNS = [
     "mod_file_available", "gms_file_available", "dag_file_available",
     "res_file_available", "other_files", "detail_page",
 ]
-NL_COLUMNS = ["nl_file_available", "nl_conversion_status"]
+NL_COLUMNS = [
+    "nl_file_available", "nl_presolve_file_available",
+    "nl_conversion_status", "nl_presolve_conversion_status",
+]
+
+
+# --------------------------------------------------------------------------- #
+# Presolve variants
+# --------------------------------------------------------------------------- #
+def variant_spec(presolve: bool) -> dict:
+    """Filenames + metadata/summary keys for the presolve-off / -on variant.
+
+    off (default): faithful model  -> <name>.nl
+    on (--presolve): AMPL-presolved -> <name>_presolve.nl
+    """
+    if presolve:
+        return {
+            "presolve_passes": 10,          # AMPL's default number of passes
+            "suffix": "_presolve",          # <name>_presolve.nl
+            "avail_key": "nl_presolve_file_available",
+            "files_key": "nl_presolve",
+            "conv_key": "nl_presolve_conversion",
+            "label": "on ",
+        }
+    return {
+        "presolve_passes": 0,               # fully disable AMPL presolve
+        "suffix": "",                       # <name>.nl
+        "avail_key": "nl_file_available",
+        "files_key": "nl",
+        "conv_key": "nl_conversion",
+        "label": "off",
+    }
 
 INSTALL_HINT = """\
 amplpy is not available in this Python environment.
@@ -153,12 +195,14 @@ def _first_line(msg: str) -> str:
     return lines[0][:200] if lines else ""
 
 
-def convert_one(ampl, name: str, mod_path: Path, nl_path: Path):
-    """Convert mod_path -> nl_path. Returns (status, reason, nbytes).
+def convert_one(ampl, name: str, mod_path: Path, nl_path: Path, presolve: int):
+    """Convert mod_path -> nl_path with the given AMPL presolve level.
 
-    status: "converted" | "failed". Assumes `ampl` was just reset (fresh).
-    The caller handles the skip-if-exists case. AMPL errors (parse errors, demo
-    size-limit, ...) are caught and reported as ("failed", <message>, 0).
+    Returns (status, reason, nbytes). status: "converted" | "failed". Assumes
+    `ampl` was just reset (fresh). The caller handles the skip-if-exists case.
+    `presolve` is the AMPL `option presolve` value (0 = off, 10 = default on).
+    AMPL errors (parse errors, size-limit, ...) are caught and reported as
+    ("failed", <message>, 0).
     """
     pdir = nl_path.parent
     tmp_mod = pdir / f"{name}{TMP_SUFFIX}.mod"     # cleaned model AMPL will read
@@ -172,6 +216,7 @@ def convert_one(ampl, name: str, mod_path: Path, nl_path: Path):
     try:
         tmp_mod.write_text(cleaned)
         ampl.cd(str(pdir))
+        ampl.eval(f"option presolve {presolve};")  # control model simplification
         ampl.read(str(tmp_mod))                    # run model+data, no solve
         ampl.eval(f'write "g{tmp_stub}";')         # emit ASCII nl
     except Exception as exc:                        # amplpy raises varied types
@@ -197,8 +242,15 @@ def convert_one(ampl, name: str, mod_path: Path, nl_path: Path):
 # --------------------------------------------------------------------------- #
 # metadata / summary
 # --------------------------------------------------------------------------- #
-def update_metadata(pdir: Path, name: str, status: str, reason: str, nbytes: int):
-    """Merge nl_* fields into the problem's metadata.json (if present)."""
+def update_metadata(pdir: Path, name: str, conv_key: str, status: str, reason: str):
+    """Merge nl_* fields into the problem's metadata.json (if present).
+
+    Both availability flags and both files[] entries are derived from what is
+    actually on disk (self-healing), so a single run keeps the other variant's
+    flags correct too. Only `conv_key` (the variant just run) gets this run's
+    status/reason; the other variant's conversion dict is set to "present" if
+    its file exists and it has none yet.
+    """
     meta_path = pdir / "metadata.json"
     if not meta_path.exists():
         return
@@ -207,15 +259,25 @@ def update_metadata(pdir: Path, name: str, status: str, reason: str, nbytes: int
     except (json.JSONDecodeError, OSError):
         return
 
-    available = status in ("converted", "skipped")
-    meta["nl_file_available"] = available
-    meta["nl_conversion"] = {"status": status, "reason": reason}
-
     files = meta.get("files") or {}
-    if available:
-        files["nl"] = {"filename": f"{name}.nl", "bytes": nbytes}
-    else:
-        files.pop("nl", None)
+    # variant -> (filename, availability key, files key, conversion key)
+    variants = [
+        (f"{name}.nl", "nl_file_available", "nl", "nl_conversion"),
+        (f"{name}_presolve.nl", "nl_presolve_file_available",
+         "nl_presolve", "nl_presolve_conversion"),
+    ]
+    for fname, avail_key, files_key, ckey in variants:
+        fpath = pdir / fname
+        exists = fpath.exists() and fpath.stat().st_size > 0
+        meta[avail_key] = exists
+        if exists:
+            files[files_key] = {"filename": fname, "bytes": fpath.stat().st_size}
+        else:
+            files.pop(files_key, None)
+        if ckey == conv_key:
+            meta[ckey] = {"status": status, "reason": reason}
+        elif exists and ckey not in meta:
+            meta[ckey] = {"status": "present", "reason": ""}
     meta["files"] = files
 
     meta_path.write_text(json.dumps(meta, indent=2))
@@ -231,15 +293,14 @@ def _reorder_summary(df):
 
 
 def update_summary_csv(corpus_dir: Path):
-    """Refresh summary.csv's nl_file_available / nl_conversion_status columns.
-
-    Reads nl_* fields back from each metadata.json (source of truth) and merges
-    them into the existing summary.csv by problem name. If summary.csv is
-    missing, rebuilds it from every metadata.json. Returns (df, csv_path).
+    """Refresh summary.csv's nl_* columns from each metadata.json (source of
+    truth): nl_file_available, nl_presolve_file_available, and the two
+    conversion-status columns. If summary.csv is missing, rebuilds the base
+    table from metadata.json first. Returns (df, csv_path).
     """
     import pandas as pd
 
-    nl_avail, nl_status = {}, {}
+    off_avail, on_avail, off_status, on_status = {}, {}, {}, {}
     meta_rows = []
     for meta_path in sorted(corpus_dir.glob("*/metadata.json")):
         try:
@@ -249,8 +310,10 @@ def update_summary_csv(corpus_dir: Path):
         nm = m.get("name")
         if nm is None:
             continue
-        nl_avail[nm] = bool(m.get("nl_file_available", False))
-        nl_status[nm] = (m.get("nl_conversion") or {}).get("status")
+        off_avail[nm] = bool(m.get("nl_file_available", False))
+        on_avail[nm] = bool(m.get("nl_presolve_file_available", False))
+        off_status[nm] = (m.get("nl_conversion") or {}).get("status")
+        on_status[nm] = (m.get("nl_presolve_conversion") or {}).get("status")
         meta_rows.append(m)
 
     csv_path = corpus_dir / "summary.csv"
@@ -267,23 +330,27 @@ def update_summary_csv(corpus_dir: Path):
         if "number" in df:
             df = df.sort_values("number", na_position="last")
 
-    df["nl_file_available"] = df["name"].map(nl_avail).fillna(False).astype(bool)
-    df["nl_conversion_status"] = df["name"].map(nl_status)
+    df["nl_file_available"] = df["name"].map(off_avail).fillna(False).astype(bool)
+    df["nl_presolve_file_available"] = df["name"].map(on_avail).fillna(False).astype(bool)
+    df["nl_conversion_status"] = df["name"].map(off_status)
+    df["nl_presolve_conversion_status"] = df["name"].map(on_status)
     df = _reorder_summary(df)
     df.to_csv(csv_path, index=False)
     return df, csv_path
 
 
-def write_report(corpus_dir: Path, results):
+def write_report(corpus_dir: Path, results, presolve: bool):
     import pandas as pd
 
     rows = [{
-        "name": r["name"], "status": r["status"], "reason": r["reason"],
-        "nl_bytes": r["nbytes"], "in_uno_429_subset": r["in_subset"],
+        "name": r["name"], "presolve": presolve, "status": r["status"],
+        "reason": r["reason"], "nl_bytes": r["nbytes"],
+        "in_uno_429_subset": r["in_subset"],
     } for r in results]
     path = corpus_dir / "nl_conversion_report.csv"
-    pd.DataFrame(rows, columns=["name", "status", "reason", "nl_bytes",
-                                "in_uno_429_subset"]).to_csv(path, index=False)
+    pd.DataFrame(rows, columns=["name", "presolve", "status", "reason",
+                                "nl_bytes", "in_uno_429_subset"]).to_csv(
+        path, index=False)
     return path
 
 
@@ -335,13 +402,18 @@ def main(argv=None):
                     help="only convert the first N problems")
     ap.add_argument("--subset-only", action="store_true",
                     help="only convert problems flagged in_uno_429_subset")
+    ap.add_argument("--presolve", action="store_true",
+                    help="enable AMPL presolve (default off); writes the reduced "
+                         "<name>_presolve.nl instead of the faithful <name>.nl")
     ap.add_argument("--force", action="store_true",
-                    help="re-convert even if <name>.nl already exists")
+                    help="re-convert even if the target .nl already exists")
     ap.add_argument("--no-summary", action="store_true",
                     help="skip refreshing summary.csv")
     ap.add_argument("--report", action="store_true",
                     help="also write nl_conversion_report.csv")
     args = ap.parse_args(argv)
+
+    variant = variant_spec(args.presolve)
 
     repo_root = Path(__file__).resolve().parent.parent
     corpus_dir = Path(args.corpus_dir) if args.corpus_dir else repo_root / "problems" / "CUTE"
@@ -369,19 +441,21 @@ def main(argv=None):
         print(INSTALL_HINT, file=sys.stderr)
         return 2
 
-    print(f"Converting {len(selected)} problem(s) in {corpus_dir}")
+    print(f"Converting {len(selected)} problem(s) in {corpus_dir} "
+          f"(presolve {variant['label'].strip()} -> <name>{variant['suffix']}.nl)")
     results = []
     converted = skipped = failed = 0
     try:
         for i, (name, pdir, mod) in enumerate(selected, 1):
-            nl_path = pdir / f"{name}.nl"
+            nl_path = pdir / f"{name}{variant['suffix']}.nl"
             if nl_path.exists() and nl_path.stat().st_size > 0 and not args.force:
                 status, reason, nbytes = "skipped", "exists", nl_path.stat().st_size
             else:
                 ampl = _fresh_ampl(ampl, AMPL)
-                status, reason, nbytes = convert_one(ampl, name, mod, nl_path)
+                status, reason, nbytes = convert_one(
+                    ampl, name, mod, nl_path, variant["presolve_passes"])
 
-            update_metadata(pdir, name, status, reason, nbytes)
+            update_metadata(pdir, name, variant["conv_key"], status, reason)
             in_subset = _in_subset(pdir)
             results.append({"name": name, "status": status, "reason": reason,
                             "nbytes": nbytes, "in_subset": in_subset})
@@ -411,14 +485,16 @@ def main(argv=None):
     if not args.no_summary:
         try:
             df, csv_path = update_summary_csv(corpus_dir)
-            n_nl = int(df["nl_file_available"].sum())
-            print(f"\nUpdated {csv_path} — nl_file_available=True for {n_nl}/{len(df)}")
+            n_off = int(df["nl_file_available"].sum())
+            n_on = int(df["nl_presolve_file_available"].sum())
+            print(f"\nUpdated {csv_path} — nl_file_available={n_off}/{len(df)}, "
+                  f"nl_presolve_file_available={n_on}/{len(df)}")
         except Exception as exc:
             print(f"! could not update summary.csv: {exc}", file=sys.stderr)
 
     if args.report:
         try:
-            path = write_report(corpus_dir, results)
+            path = write_report(corpus_dir, results, args.presolve)
             print(f"Wrote {path}")
         except Exception as exc:
             print(f"! could not write report: {exc}", file=sys.stderr)
@@ -435,7 +511,7 @@ def main(argv=None):
     if size_fails:
         names = ", ".join(r["name"] for r in size_fails[:20])
         more = " ..." if len(size_fails) > 20 else ""
-        print(f"  size-limit failures ({len(size_fails)}) — activate AMPL CE to fix:")
+        print(f"  size-limit failures ({len(size_fails)}) — use a full/academic AMPL license to fix:")
         print(f"    {names}{more}")
     if other_fails:
         print(f"  other failures ({len(other_fails)}):")
