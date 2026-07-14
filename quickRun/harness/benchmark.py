@@ -22,15 +22,18 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from optiuno.uno_runner import DEFAULT_TIME_LIMIT, run_uno  # noqa: E402
+from optiuno.utils import bundled_uno_bin  # noqa: E402
 
 from .classify import classify
 
 ROOT = Path(__file__).resolve().parent.parent
-NL_DIR = ROOT / "models" / "nl"
+NL_DIR = ROOT.parent / "problems" / "HS_model"   # HS test set at the repo root
 CACHE_DIR = ROOT / "harness" / "cache"
 LOG_ROOT = ROOT / "results" / "logs"
 EVAL_CSV = ROOT / "results" / "evaluations.csv"
-UNO_BIN = ROOT / "external" / "uno" / "bin" / "uno_ampl"  # bundled self-contained build
+# Pinned to the bundled self-contained build (now at the repo root, external/uno)
+# for reproducible benchmark results, sourced from the single UNO-location helper.
+UNO_BIN = bundled_uno_bin()
 
 DEFAULT_WORKERS = 8
 
@@ -51,7 +54,7 @@ def evaluate_config(options: dict, time_limit: float = DEFAULT_TIME_LIMIT,
     """Run `options` on every test problem; return metrics + per-problem rows."""
     problems = test_problems()
     if not problems:
-        raise RuntimeError(f"no .nl files under {NL_DIR} — run scripts/translate_models.py")
+        raise RuntimeError(f"no .nl files under {NL_DIR}")
 
     chash = config_hash(options, time_limit)
     cache_key = f"{chash}_r{rep}"

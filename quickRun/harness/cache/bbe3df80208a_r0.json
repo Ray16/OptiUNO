@@ -11,85 +11,65 @@
   "globalization_strategy": "waechter_filter_method"
  },
  "time_limit": 20.0,
- "n_problems": 123,
- "n_solved": 114,
- "reliability": 0.926829268292683,
- "cum_cpu_time": 5.064574999999998,
- "n_rewritten": 11,
+ "n_problems": 121,
+ "n_solved": 111,
+ "reliability": 0.9173553719008265,
+ "cum_cpu_time": 11.114803,
+ "n_rewritten": 3,
  "status_counts": {
-  "solved": 114,
-  "unsolved": 9
+  "solved": 111,
+  "unsolved": 10
  },
  "per_problem": [
   {
-   "problem": "genhs28",
-   "category": "solved",
-   "rewritten": [],
-   "detail": "Feasible KKT point",
-   "objective": 0.9271737,
-   "iterations": 1,
-   "objective_evaluations": 2,
-   "cpu_time": 0.028054
-  },
-  {
    "problem": "hs001",
    "category": "solved",
-   "rewritten": [
-    "globalization_strategy"
-   ],
+   "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": 1.60393e-15,
    "iterations": 26,
    "objective_evaluations": 34,
-   "cpu_time": 0.036386
+   "cpu_time": 0.007886
   },
   {
    "problem": "hs002",
    "category": "solved",
-   "rewritten": [
-    "globalization_strategy"
-   ],
+   "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": 4.941227,
-   "iterations": 11,
+   "iterations": 12,
    "objective_evaluations": 14,
-   "cpu_time": 0.001725
+   "cpu_time": 0.016012
   },
   {
    "problem": "hs003",
    "category": "solved",
-   "rewritten": [
-    "globalization_strategy"
-   ],
+   "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": -9e-07,
    "iterations": 5,
    "objective_evaluations": 6,
-   "cpu_time": 0.007455
+   "cpu_time": 0.01047
   },
   {
    "problem": "hs004",
    "category": "solved",
-   "rewritten": [
-    "globalization_strategy"
-   ],
+   "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": 2.666662,
-   "iterations": 5,
-   "objective_evaluations": 6,
-   "cpu_time": 0.034741
+   "iterations": 6,
+   "objective_evaluations": 7,
+   "cpu_time": 0.058389
   },
   {
    "problem": "hs005",
    "category": "solved",
-   "rewritten": [
-    "globalization_strategy"
-   ],
+   "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": -1.913223,
    "iterations": 8,
-   "objective_evaluations": 9,
-   "cpu_time": 0.001672
+   "objective_evaluations": 10,
+   "cpu_time": 0.089935
   },
   {
    "problem": "hs006",
@@ -99,7 +79,7 @@
    "objective": 0.0,
    "iterations": 2,
    "objective_evaluations": 3,
-   "cpu_time": 0.000556
+   "cpu_time": 0.090033
   },
   {
    "problem": "hs007",
@@ -109,7 +89,7 @@
    "objective": -1.732051,
    "iterations": 9,
    "objective_evaluations": 18,
-   "cpu_time": 0.000754
+   "cpu_time": 0.041053
   },
   {
    "problem": "hs008",
@@ -119,7 +99,7 @@
    "objective": -1.0,
    "iterations": 5,
    "objective_evaluations": 6,
-   "cpu_time": 0.032647
+   "cpu_time": 0.096211
   },
   {
    "problem": "hs009",
@@ -129,7 +109,7 @@
    "objective": -0.5,
    "iterations": 3,
    "objective_evaluations": 5,
-   "cpu_time": 0.005339
+   "cpu_time": 0.003109
   },
   {
    "problem": "hs010",
@@ -139,7 +119,7 @@
    "objective": -0.2200158,
    "iterations": 2000,
    "objective_evaluations": 2061,
-   "cpu_time": 0.634778
+   "cpu_time": 1.339838
   },
   {
    "problem": "hs011",
@@ -149,7 +129,7 @@
    "objective": -8.498467,
    "iterations": 8,
    "objective_evaluations": 9,
-   "cpu_time": 0.006523
+   "cpu_time": 0.084372
   },
   {
    "problem": "hs012",
@@ -159,7 +139,7 @@
    "objective": -30.00001,
    "iterations": 8,
    "objective_evaluations": 12,
-   "cpu_time": 0.003295
+   "cpu_time": 0.008622
   },
   {
    "problem": "hs013",
@@ -169,7 +149,7 @@
    "objective": 0.9749605,
    "iterations": 31,
    "objective_evaluations": 50,
-   "cpu_time": 0.001211
+   "cpu_time": 0.111345
   },
   {
    "problem": "hs014",
@@ -179,17 +159,17 @@
    "objective": 1.393463,
    "iterations": 7,
    "objective_evaluations": 8,
-   "cpu_time": 0.002645
+   "cpu_time": 0.008292
   },
   {
    "problem": "hs015",
    "category": "unsolved",
    "rewritten": [],
    "detail": "Suboptimal point",
-   "objective": 23.91793,
-   "iterations": 17,
-   "objective_evaluations": 216,
-   "cpu_time": 0.026328
+   "objective": 23.4797,
+   "iterations": 25,
+   "objective_evaluations": 338,
+   "cpu_time": 0.053805
   },
   {
    "problem": "hs016",
@@ -197,19 +177,19 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": 23.14457,
-   "iterations": 9,
-   "objective_evaluations": 10,
-   "cpu_time": 0.000731
+   "iterations": 11,
+   "objective_evaluations": 12,
+   "cpu_time": 0.009758
   },
   {
    "problem": "hs017",
    "category": "solved",
    "rewritten": [],
    "detail": "Feasible KKT point",
-   "objective": 0.9999983,
-   "iterations": 15,
-   "objective_evaluations": 16,
-   "cpu_time": 0.063174
+   "objective": 0.9999985,
+   "iterations": 19,
+   "objective_evaluations": 22,
+   "cpu_time": 0.123392
   },
   {
    "problem": "hs018",
@@ -218,8 +198,8 @@
    "detail": "Feasible KKT point",
    "objective": 4.999995,
    "iterations": 12,
-   "objective_evaluations": 15,
-   "cpu_time": 0.00353
+   "objective_evaluations": 14,
+   "cpu_time": 0.010185
   },
   {
    "problem": "hs019",
@@ -227,9 +207,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": -6962.025,
-   "iterations": 14,
-   "objective_evaluations": 15,
-   "cpu_time": 0.002985
+   "iterations": 13,
+   "objective_evaluations": 14,
+   "cpu_time": 0.007259
   },
   {
    "problem": "hs020",
@@ -237,9 +217,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": 40.19847,
-   "iterations": 9,
-   "objective_evaluations": 10,
-   "cpu_time": 0.000681
+   "iterations": 12,
+   "objective_evaluations": 13,
+   "cpu_time": 0.004772
   },
   {
    "problem": "hs021",
@@ -247,9 +227,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": -99.96,
-   "iterations": 6,
-   "objective_evaluations": 7,
-   "cpu_time": 0.001689
+   "iterations": 9,
+   "objective_evaluations": 10,
+   "cpu_time": 0.156489
   },
   {
    "problem": "hs022",
@@ -259,7 +239,7 @@
    "objective": 0.9999982,
    "iterations": 7,
    "objective_evaluations": 8,
-   "cpu_time": 0.03138
+   "cpu_time": 0.050248
   },
   {
    "problem": "hs023",
@@ -269,7 +249,7 @@
    "objective": 1.999996,
    "iterations": 10,
    "objective_evaluations": 11,
-   "cpu_time": 0.011012
+   "cpu_time": 0.002949
   },
   {
    "problem": "hs024",
@@ -278,20 +258,18 @@
    "detail": "Feasible KKT point",
    "objective": -1.000004,
    "iterations": 10,
-   "objective_evaluations": 11,
-   "cpu_time": 0.002993
+   "objective_evaluations": 14,
+   "cpu_time": 0.001742
   },
   {
    "problem": "hs025",
    "category": "solved",
-   "rewritten": [
-    "globalization_strategy"
-   ],
+   "rewritten": [],
    "detail": "Feasible KKT point",
-   "objective": 1.38181e-12,
-   "iterations": 34,
-   "objective_evaluations": 36,
-   "cpu_time": 0.022814
+   "objective": 1.381948e-12,
+   "iterations": 36,
+   "objective_evaluations": 44,
+   "cpu_time": 0.209319
   },
   {
    "problem": "hs026",
@@ -301,7 +279,7 @@
    "objective": 1.265914e-12,
    "iterations": 18,
    "objective_evaluations": 21,
-   "cpu_time": 0.001898
+   "cpu_time": 0.022508
   },
   {
    "problem": "hs027",
@@ -311,7 +289,7 @@
    "objective": 0.04,
    "iterations": 23,
    "objective_evaluations": 93,
-   "cpu_time": 0.011331
+   "cpu_time": 0.03135
   },
   {
    "problem": "hs028",
@@ -321,7 +299,7 @@
    "objective": 1.676329e-30,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.00358
+   "cpu_time": 0.000546
   },
   {
    "problem": "hs029",
@@ -331,7 +309,7 @@
    "objective": -22.62745,
    "iterations": 11,
    "objective_evaluations": 12,
-   "cpu_time": 0.018045
+   "cpu_time": 0.073935
   },
   {
    "problem": "hs030",
@@ -341,7 +319,7 @@
    "objective": 0.9999981,
    "iterations": 19,
    "objective_evaluations": 22,
-   "cpu_time": 0.086972
+   "cpu_time": 0.017784
   },
   {
    "problem": "hs031",
@@ -351,7 +329,7 @@
    "objective": 5.999994,
    "iterations": 7,
    "objective_evaluations": 8,
-   "cpu_time": 0.002717
+   "cpu_time": 0.015242
   },
   {
    "problem": "hs032",
@@ -361,7 +339,7 @@
    "objective": 0.9999964,
    "iterations": 11,
    "objective_evaluations": 12,
-   "cpu_time": 0.022621
+   "cpu_time": 0.00067
   },
   {
    "problem": "hs033",
@@ -371,7 +349,7 @@
    "objective": -4.585798,
    "iterations": 11,
    "objective_evaluations": 12,
-   "cpu_time": 0.003276
+   "cpu_time": 0.008736
   },
   {
    "problem": "hs034",
@@ -381,7 +359,7 @@
    "objective": -0.8340331,
    "iterations": 9,
    "objective_evaluations": 10,
-   "cpu_time": 0.010341
+   "cpu_time": 0.004065
   },
   {
    "problem": "hs035",
@@ -391,7 +369,7 @@
    "objective": 0.1111105,
    "iterations": 7,
    "objective_evaluations": 8,
-   "cpu_time": 0.015294
+   "cpu_time": 0.035861
   },
   {
    "problem": "hs036",
@@ -399,9 +377,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": -3300.01,
-   "iterations": 12,
-   "objective_evaluations": 13,
-   "cpu_time": 0.006866
+   "iterations": 13,
+   "objective_evaluations": 14,
+   "cpu_time": 0.051754
   },
   {
    "problem": "hs037",
@@ -411,7 +389,7 @@
    "objective": -3456.01,
    "iterations": 12,
    "objective_evaluations": 13,
-   "cpu_time": 0.004947
+   "cpu_time": 0.033617
   },
   {
    "problem": "hs038",
@@ -423,7 +401,7 @@
    "objective": 2.317139e-19,
    "iterations": 40,
    "objective_evaluations": 57,
-   "cpu_time": 0.021933
+   "cpu_time": 0.005428
   },
   {
    "problem": "hs039",
@@ -433,7 +411,7 @@
    "objective": -1.0,
    "iterations": 25,
    "objective_evaluations": 111,
-   "cpu_time": 0.064981
+   "cpu_time": 0.012345
   },
   {
    "problem": "hs040",
@@ -443,7 +421,7 @@
    "objective": -0.25,
    "iterations": 4,
    "objective_evaluations": 5,
-   "cpu_time": 0.00162
+   "cpu_time": 0.00055
   },
   {
    "problem": "hs041",
@@ -451,9 +429,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": 1.925926,
-   "iterations": 9,
-   "objective_evaluations": 11,
-   "cpu_time": 0.039032
+   "iterations": 10,
+   "objective_evaluations": 12,
+   "cpu_time": 0.016501
   },
   {
    "problem": "hs042",
@@ -463,7 +441,7 @@
    "objective": 13.85786,
    "iterations": 6,
    "objective_evaluations": 7,
-   "cpu_time": 0.000635
+   "cpu_time": 0.017871
   },
   {
    "problem": "hs043",
@@ -473,7 +451,7 @@
    "objective": -44.00002,
    "iterations": 9,
    "objective_evaluations": 11,
-   "cpu_time": 0.067036
+   "cpu_time": 0.006674
   },
   {
    "problem": "hs044",
@@ -483,7 +461,7 @@
    "objective": -13.00003,
    "iterations": 18,
    "objective_evaluations": 20,
-   "cpu_time": 0.003103
+   "cpu_time": 0.071776
   },
   {
    "problem": "hs045",
@@ -495,7 +473,7 @@
    "objective": 0.9999955,
    "iterations": 15,
    "objective_evaluations": 63,
-   "cpu_time": 0.003799
+   "cpu_time": 0.008702
   },
   {
    "problem": "hs046",
@@ -505,7 +483,7 @@
    "objective": 4.07924e-12,
    "iterations": 18,
    "objective_evaluations": 19,
-   "cpu_time": 0.023473
+   "cpu_time": 0.03727
   },
   {
    "problem": "hs047",
@@ -515,7 +493,7 @@
    "objective": 3.149815e-11,
    "iterations": 17,
    "objective_evaluations": 19,
-   "cpu_time": 0.009202
+   "cpu_time": 0.036182
   },
   {
    "problem": "hs048",
@@ -525,7 +503,7 @@
    "objective": 2.761013e-30,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.002501
+   "cpu_time": 0.082584
   },
   {
    "problem": "hs049",
@@ -535,7 +513,7 @@
    "objective": 1.375306e-09,
    "iterations": 16,
    "objective_evaluations": 17,
-   "cpu_time": 0.013891
+   "cpu_time": 0.016499
   },
   {
    "problem": "hs050",
@@ -545,7 +523,7 @@
    "objective": 1.232595e-31,
    "iterations": 9,
    "objective_evaluations": 10,
-   "cpu_time": 0.00363
+   "cpu_time": 0.000603
   },
   {
    "problem": "hs051",
@@ -555,7 +533,7 @@
    "objective": 0.0,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.003246
+   "cpu_time": 0.092559
   },
   {
    "problem": "hs052",
@@ -565,7 +543,7 @@
    "objective": 5.326648,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.004446
+   "cpu_time": 0.001323
   },
   {
    "problem": "hs053",
@@ -575,7 +553,7 @@
    "objective": 4.093023,
    "iterations": 6,
    "objective_evaluations": 7,
-   "cpu_time": 0.018689
+   "cpu_time": 0.001014
   },
   {
    "problem": "hs054",
@@ -585,7 +563,7 @@
    "objective": 0.1928571,
    "iterations": 7,
    "objective_evaluations": 8,
-   "cpu_time": 0.017955
+   "cpu_time": 0.007786
   },
   {
    "problem": "hs055",
@@ -595,7 +573,7 @@
    "objective": 6.70776,
    "iterations": 46,
    "objective_evaluations": 237,
-   "cpu_time": 0.102494
+   "cpu_time": 0.317374
   },
   {
    "problem": "hs056",
@@ -605,17 +583,17 @@
    "objective": -3.456,
    "iterations": 13,
    "objective_evaluations": 15,
-   "cpu_time": 0.02112
+   "cpu_time": 0.010805
   },
   {
    "problem": "hs057",
-   "category": "unsolved",
+   "category": "solved",
    "rewritten": [],
-   "detail": "Suboptimal point",
-   "objective": 0.0307838,
-   "iterations": 2000,
-   "objective_evaluations": 27823,
-   "cpu_time": 0.736571
+   "detail": "Feasible KKT point",
+   "objective": 0.03064762,
+   "iterations": 1901,
+   "objective_evaluations": 21589,
+   "cpu_time": 1.587429
   },
   {
    "problem": "hs059",
@@ -625,7 +603,7 @@
    "objective": -7.802797,
    "iterations": 22,
    "objective_evaluations": 38,
-   "cpu_time": 0.002281
+   "cpu_time": 0.220209
   },
   {
    "problem": "hs060",
@@ -635,7 +613,7 @@
    "objective": 0.0325682,
    "iterations": 6,
    "objective_evaluations": 7,
-   "cpu_time": 0.004482
+   "cpu_time": 0.05009
   },
   {
    "problem": "hs061",
@@ -645,7 +623,7 @@
    "objective": -57.70593,
    "iterations": 2,
    "objective_evaluations": 43,
-   "cpu_time": 0.004027
+   "cpu_time": 0.083721
   },
   {
    "problem": "hs062",
@@ -655,7 +633,7 @@
    "objective": -26272.51,
    "iterations": 9,
    "objective_evaluations": 14,
-   "cpu_time": 0.003103
+   "cpu_time": 0.000622
   },
   {
    "problem": "hs063",
@@ -665,7 +643,7 @@
    "objective": 961.7152,
    "iterations": 7,
    "objective_evaluations": 8,
-   "cpu_time": 0.005583
+   "cpu_time": 0.069214
   },
   {
    "problem": "hs064",
@@ -675,7 +653,7 @@
    "objective": 6299.84,
    "iterations": 17,
    "objective_evaluations": 18,
-   "cpu_time": 0.031229
+   "cpu_time": 0.04613
   },
   {
    "problem": "hs065",
@@ -683,9 +661,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": 0.953525,
-   "iterations": 12,
-   "objective_evaluations": 13,
-   "cpu_time": 0.006473
+   "iterations": 10,
+   "objective_evaluations": 11,
+   "cpu_time": 0.003762
   },
   {
    "problem": "hs066",
@@ -695,17 +673,7 @@
    "objective": 0.5181626,
    "iterations": 6,
    "objective_evaluations": 7,
-   "cpu_time": 0.024849
-  },
-  {
-   "problem": "hs067",
-   "category": "solved",
-   "rewritten": [],
-   "detail": "Feasible KKT point",
-   "objective": -1162.028,
-   "iterations": 12,
-   "objective_evaluations": 13,
-   "cpu_time": 0.030108
+   "cpu_time": 0.004843
   },
   {
    "problem": "hs070",
@@ -715,7 +683,7 @@
    "objective": 0.009401973,
    "iterations": 18,
    "objective_evaluations": 24,
-   "cpu_time": 0.014545
+   "cpu_time": 0.01918
   },
   {
    "problem": "hs071",
@@ -725,7 +693,7 @@
    "objective": 17.014,
    "iterations": 8,
    "objective_evaluations": 9,
-   "cpu_time": 0.011738
+   "cpu_time": 0.005328
   },
   {
    "problem": "hs072",
@@ -735,7 +703,7 @@
    "objective": 727.6302,
    "iterations": 16,
    "objective_evaluations": 17,
-   "cpu_time": 0.010758
+   "cpu_time": 0.002859
   },
   {
    "problem": "hs073",
@@ -745,7 +713,7 @@
    "objective": 29.89437,
    "iterations": 9,
    "objective_evaluations": 10,
-   "cpu_time": 0.026892
+   "cpu_time": 0.05479
   },
   {
    "problem": "hs074",
@@ -755,7 +723,7 @@
    "objective": 5126.498,
    "iterations": 9,
    "objective_evaluations": 10,
-   "cpu_time": 0.005791
+   "cpu_time": 0.055818
   },
   {
    "problem": "hs075",
@@ -765,7 +733,7 @@
    "objective": 5174.41,
    "iterations": 9,
    "objective_evaluations": 10,
-   "cpu_time": 0.005233
+   "cpu_time": 0.006651
   },
   {
    "problem": "hs076",
@@ -775,7 +743,7 @@
    "objective": -4.681822,
    "iterations": 7,
    "objective_evaluations": 8,
-   "cpu_time": 0.001317
+   "cpu_time": 0.004736
   },
   {
    "problem": "hs077",
@@ -785,7 +753,7 @@
    "objective": 0.2415051,
    "iterations": 9,
    "objective_evaluations": 11,
-   "cpu_time": 0.004626
+   "cpu_time": 0.000639
   },
   {
    "problem": "hs078",
@@ -795,7 +763,7 @@
    "objective": -2.9197,
    "iterations": 4,
    "objective_evaluations": 5,
-   "cpu_time": 0.027574
+   "cpu_time": 0.014359
   },
   {
    "problem": "hs079",
@@ -805,7 +773,7 @@
    "objective": 0.07877682,
    "iterations": 4,
    "objective_evaluations": 5,
-   "cpu_time": 0.005061
+   "cpu_time": 0.011124
   },
   {
    "problem": "hs080",
@@ -815,7 +783,7 @@
    "objective": 0.05394985,
    "iterations": 6,
    "objective_evaluations": 7,
-   "cpu_time": 0.000629
+   "cpu_time": 0.009707
   },
   {
    "problem": "hs081",
@@ -825,7 +793,7 @@
    "objective": 0.05394985,
    "iterations": 9,
    "objective_evaluations": 10,
-   "cpu_time": 0.035755
+   "cpu_time": 0.019451
   },
   {
    "problem": "hs083",
@@ -835,7 +803,7 @@
    "objective": -30665.56,
    "iterations": 16,
    "objective_evaluations": 17,
-   "cpu_time": 0.036924
+   "cpu_time": 0.061704
   },
   {
    "problem": "hs084",
@@ -845,17 +813,17 @@
    "objective": -5280352.0,
    "iterations": 119,
    "objective_evaluations": 770,
-   "cpu_time": 0.099872
+   "cpu_time": 0.219844
   },
   {
    "problem": "hs085",
-   "category": "solved",
+   "category": "unsolved",
    "rewritten": [],
-   "detail": "Feasible KKT point",
-   "objective": -1.905167,
-   "iterations": 63,
-   "objective_evaluations": 171,
-   "cpu_time": 0.091264
+   "detail": "Suboptimal point",
+   "objective": -1.663325,
+   "iterations": 36,
+   "objective_evaluations": 560,
+   "cpu_time": 0.301264
   },
   {
    "problem": "hs086",
@@ -865,7 +833,7 @@
    "objective": -32.34871,
    "iterations": 12,
    "objective_evaluations": 13,
-   "cpu_time": 0.040892
+   "cpu_time": 0.079371
   },
   {
    "problem": "hs087",
@@ -875,7 +843,7 @@
    "objective": 8827.597,
    "iterations": 17,
    "objective_evaluations": 18,
-   "cpu_time": 0.029466
+   "cpu_time": 0.031935
   },
   {
    "problem": "hs088",
@@ -885,7 +853,7 @@
    "objective": 1.361603,
    "iterations": 24,
    "objective_evaluations": 32,
-   "cpu_time": 0.082111
+   "cpu_time": 0.202224
   },
   {
    "problem": "hs089",
@@ -895,7 +863,7 @@
    "objective": 1.361603,
    "iterations": 17,
    "objective_evaluations": 21,
-   "cpu_time": 0.051198
+   "cpu_time": 0.135934
   },
   {
    "problem": "hs090",
@@ -905,7 +873,7 @@
    "objective": 1.361601,
    "iterations": 22,
    "objective_evaluations": 31,
-   "cpu_time": 0.03943
+   "cpu_time": 0.036529
   },
   {
    "problem": "hs091",
@@ -915,7 +883,7 @@
    "objective": 1.361603,
    "iterations": 21,
    "objective_evaluations": 26,
-   "cpu_time": 0.026966
+   "cpu_time": 0.126942
   },
   {
    "problem": "hs092",
@@ -925,7 +893,7 @@
    "objective": 1.361601,
    "iterations": 23,
    "objective_evaluations": 28,
-   "cpu_time": 0.132102
+   "cpu_time": 0.082873
   },
   {
    "problem": "hs093",
@@ -935,7 +903,7 @@
    "objective": 66.14771,
    "iterations": 28,
    "objective_evaluations": 114,
-   "cpu_time": 0.013448
+   "cpu_time": 0.008896
   },
   {
    "problem": "hs095",
@@ -945,7 +913,7 @@
    "objective": 0.0154394,
    "iterations": 19,
    "objective_evaluations": 23,
-   "cpu_time": 0.026459
+   "cpu_time": 0.008147
   },
   {
    "problem": "hs096",
@@ -955,7 +923,7 @@
    "objective": 0.0154394,
    "iterations": 18,
    "objective_evaluations": 19,
-   "cpu_time": 0.042768
+   "cpu_time": 0.220853
   },
   {
    "problem": "hs097",
@@ -965,7 +933,7 @@
    "objective": 4.070682,
    "iterations": 19,
    "objective_evaluations": 20,
-   "cpu_time": 0.017783
+   "cpu_time": 0.034388
   },
   {
    "problem": "hs098",
@@ -975,7 +943,7 @@
    "objective": 3.135472,
    "iterations": 29,
    "objective_evaluations": 35,
-   "cpu_time": 0.046388
+   "cpu_time": 0.102379
   },
   {
    "problem": "hs099",
@@ -984,8 +952,8 @@
    "detail": "Feasible KKT point",
    "objective": -831079900.0,
    "iterations": 7,
-   "objective_evaluations": 13,
-   "cpu_time": 0.009887
+   "objective_evaluations": 8,
+   "cpu_time": 0.037423
   },
   {
    "problem": "hs100",
@@ -995,7 +963,7 @@
    "objective": 680.6299,
    "iterations": 12,
    "objective_evaluations": 33,
-   "cpu_time": 0.00944
+   "cpu_time": 0.047311
   },
   {
    "problem": "hs100lnp",
@@ -1005,7 +973,7 @@
    "objective": 680.6301,
    "iterations": 16,
    "objective_evaluations": 24,
-   "cpu_time": 0.005121
+   "cpu_time": 0.073729
   },
   {
    "problem": "hs100mod",
@@ -1015,7 +983,7 @@
    "objective": 678.7546,
    "iterations": 13,
    "objective_evaluations": 26,
-   "cpu_time": 0.024165
+   "cpu_time": 0.002853
   },
   {
    "problem": "hs101",
@@ -1025,7 +993,7 @@
    "objective": 2233.799,
    "iterations": 215,
    "objective_evaluations": 1084,
-   "cpu_time": 0.403924
+   "cpu_time": 0.636031
   },
   {
    "problem": "hs102",
@@ -1035,7 +1003,7 @@
    "objective": 2087.112,
    "iterations": 131,
    "objective_evaluations": 877,
-   "cpu_time": 0.151825
+   "cpu_time": 0.987176
   },
   {
    "problem": "hs103",
@@ -1045,7 +1013,7 @@
    "objective": 1685.105,
    "iterations": 182,
    "objective_evaluations": 1584,
-   "cpu_time": 0.389355
+   "cpu_time": 0.267201
   },
   {
    "problem": "hs104",
@@ -1055,19 +1023,17 @@
    "objective": 3.951154,
    "iterations": 10,
    "objective_evaluations": 11,
-   "cpu_time": 0.027952
+   "cpu_time": 0.05262
   },
   {
    "problem": "hs105",
    "category": "solved",
-   "rewritten": [
-    "globalization_strategy"
-   ],
+   "rewritten": [],
    "detail": "Feasible KKT point",
-   "objective": 1136.361,
-   "iterations": 19,
-   "objective_evaluations": 22,
-   "cpu_time": 0.248532
+   "objective": 1136.307,
+   "iterations": 21,
+   "objective_evaluations": 24,
+   "cpu_time": 0.500891
   },
   {
    "problem": "hs106",
@@ -1077,17 +1043,17 @@
    "objective": 7049.223,
    "iterations": 16,
    "objective_evaluations": 21,
-   "cpu_time": 0.004713
+   "cpu_time": 0.09677
   },
   {
    "problem": "hs107",
-   "category": "solved",
+   "category": "unsolved",
    "rewritten": [],
-   "detail": "Feasible KKT point",
-   "objective": 5055.011,
-   "iterations": 12,
-   "objective_evaluations": 13,
-   "cpu_time": 0.05607
+   "detail": "Suboptimal point",
+   "objective": 5429.968,
+   "iterations": 8,
+   "objective_evaluations": 91,
+   "cpu_time": 0.083513
   },
   {
    "problem": "hs108",
@@ -1097,7 +1063,7 @@
    "objective": -0.6749815,
    "iterations": 22,
    "objective_evaluations": 23,
-   "cpu_time": 0.023813
+   "cpu_time": 0.110124
   },
   {
    "problem": "hs109",
@@ -1107,7 +1073,7 @@
    "objective": 5326.849,
    "iterations": 26,
    "objective_evaluations": 57,
-   "cpu_time": 0.012205
+   "cpu_time": 0.037466
   },
   {
    "problem": "hs110",
@@ -1119,7 +1085,7 @@
    "objective": -45.77847,
    "iterations": 6,
    "objective_evaluations": 7,
-   "cpu_time": 0.013616
+   "cpu_time": 0.006591
   },
   {
    "problem": "hs111",
@@ -1129,7 +1095,7 @@
    "objective": -47.76109,
    "iterations": 22,
    "objective_evaluations": 23,
-   "cpu_time": 0.050351
+   "cpu_time": 0.006451
   },
   {
    "problem": "hs111lnp",
@@ -1139,7 +1105,7 @@
    "objective": -47.76109,
    "iterations": 22,
    "objective_evaluations": 23,
-   "cpu_time": 0.015772
+   "cpu_time": 0.017942
   },
   {
    "problem": "hs112",
@@ -1149,7 +1115,7 @@
    "objective": -47.76109,
    "iterations": 17,
    "objective_evaluations": 18,
-   "cpu_time": 0.004769
+   "cpu_time": 0.010005
   },
   {
    "problem": "hs113",
@@ -1159,7 +1125,7 @@
    "objective": 24.306,
    "iterations": 11,
    "objective_evaluations": 12,
-   "cpu_time": 0.043757
+   "cpu_time": 0.022778
   },
   {
    "problem": "hs114",
@@ -1169,7 +1135,7 @@
    "objective": -1768.859,
    "iterations": 19,
    "objective_evaluations": 20,
-   "cpu_time": 0.037893
+   "cpu_time": 0.14968
   },
   {
    "problem": "hs116",
@@ -1177,9 +1143,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": 97.58387,
-   "iterations": 25,
-   "objective_evaluations": 27,
-   "cpu_time": 0.030975
+   "iterations": 26,
+   "objective_evaluations": 28,
+   "cpu_time": 0.071614
   },
   {
    "problem": "hs117",
@@ -1189,7 +1155,7 @@
    "objective": 32.3485,
    "iterations": 18,
    "objective_evaluations": 19,
-   "cpu_time": 0.02007
+   "cpu_time": 0.102052
   },
   {
    "problem": "hs118",
@@ -1199,7 +1165,7 @@
    "objective": 664.8197,
    "iterations": 12,
    "objective_evaluations": 13,
-   "cpu_time": 0.019432
+   "cpu_time": 0.006543
   },
   {
    "problem": "hs119",
@@ -1209,7 +1175,7 @@
    "objective": 244.8995,
    "iterations": 16,
    "objective_evaluations": 17,
-   "cpu_time": 0.010267
+   "cpu_time": 0.015944
   },
   {
    "problem": "hs21mod",
@@ -1219,7 +1185,7 @@
    "objective": -95.96001,
    "iterations": 13,
    "objective_evaluations": 14,
-   "cpu_time": 0.003098
+   "cpu_time": 0.009718
   },
   {
    "problem": "hs268",
@@ -1229,7 +1195,7 @@
    "objective": 4.219715e-07,
    "iterations": 14,
    "objective_evaluations": 15,
-   "cpu_time": 0.035869
+   "cpu_time": 0.000862
   },
   {
    "problem": "hs35mod",
@@ -1239,19 +1205,17 @@
    "objective": 0.2500004,
    "iterations": 11,
    "objective_evaluations": 12,
-   "cpu_time": 0.018932
+   "cpu_time": 0.033396
   },
   {
    "problem": "hs3mod",
    "category": "solved",
-   "rewritten": [
-    "globalization_strategy"
-   ],
+   "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": -9e-07,
    "iterations": 5,
    "objective_evaluations": 6,
-   "cpu_time": 0.000695
+   "cpu_time": 0.087103
   },
   {
    "problem": "hs44new",
@@ -1261,7 +1225,7 @@
    "objective": -15.00004,
    "iterations": 13,
    "objective_evaluations": 14,
-   "cpu_time": 0.005116
+   "cpu_time": 0.050419
   },
   {
    "problem": "hs99exp",
@@ -1269,9 +1233,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": -1008062000.0,
-   "iterations": 32,
-   "objective_evaluations": 61,
-   "cpu_time": 0.035493
+   "iterations": 19,
+   "objective_evaluations": 21,
+   "cpu_time": 0.031253
   }
  ]
 }

@@ -1,0 +1,340 @@
+2026-07-14 11:40:35,445 - openevolve.controller - INFO - Logging to /home/sdinh/sandbox/OptiUNO/quickRun/results/openevolve_output/logs/openevolve_20260714_114035.log
+2026-07-14 11:40:35,445 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-07-14 11:40:35,445 - openevolve.llm.claude_code - INFO - Initialized ClaudeCodeLLM with model: sonnet
+2026-07-14 11:40:35,445 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: sonnet (weight: 1.00)
+2026-07-14 11:40:35,445 - openevolve.llm.claude_code - INFO - Initialized ClaudeCodeLLM with model: sonnet
+2026-07-14 11:40:35,445 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-07-14 11:40:35,446 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-07-14 11:40:35,446 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-07-14 11:40:35,447 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/sdinh/sandbox/OptiUNO/quickRun/evolve/evaluator.py
+2026-07-14 11:40:35,448 - openevolve.evaluator - INFO - Initialized evaluator with /home/sdinh/sandbox/OptiUNO/quickRun/evolve/evaluator.py
+2026-07-14 11:40:35,448 - openevolve.controller - INFO - Initialized OpenEvolve with /home/sdinh/sandbox/OptiUNO/quickRun/evolve/initial_program.py
+2026-07-14 11:40:35,448 - openevolve.controller - INFO - Adding initial program to database
+2026-07-14 11:40:35,450 - openevolve.evaluator - INFO - Evaluated program ab8659bf-75c8-4280-a5b2-47c527d6e897 in 0.00s: combined_score=1.0600, reliability=0.9669, cum_cpu_time=4.1372
+2026-07-14 11:40:35,450 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'reliability': 6, 'cum_cpu_time': 6}
+2026-07-14 11:40:35,450 - openevolve.controller - INFO - Stored artifacts for initial program
+2026-07-14 11:40:35,450 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2026-07-14 11:40:35,450 - openevolve.process_parallel - INFO - Set max None tasks per child
+2026-07-14 11:40:35,450 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-07-14 11:40:35,450 - openevolve.controller - INFO - Using island-based evolution with 3 islands
+2026-07-14 11:40:35,450 - openevolve.database - INFO - Island Status:
+2026-07-14 11:40:35,450 - openevolve.database - INFO -  * Island 0: 1 programs, best=1.0600, avg=1.0600, diversity=0.00, gen=0 (best: ab8659bf-75c8-4280-a5b2-47c527d6e897)
+2026-07-14 11:40:35,450 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-07-14 11:40:35,450 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-07-14 11:40:35,450 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 150 iterations (total: 151)
+2026-07-14 11:40:35,454 - openevolve.process_parallel - INFO - Early stopping disabled
+2026-07-14 11:40:35,455 - openevolve.llm.claude_code - INFO - Initialized ClaudeCodeLLM with model: sonnet
+2026-07-14 11:40:35,455 - openevolve.llm.claude_code - INFO - Initialized ClaudeCodeLLM with model: sonnet
+2026-07-14 11:40:35,456 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-07-14 11:40:35,456 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/sdinh/sandbox/OptiUNO/quickRun/evolve/evaluator.py
+2026-07-14 11:40:35,456 - openevolve.evaluator - INFO - Initialized evaluator with /home/sdinh/sandbox/OptiUNO/quickRun/evolve/evaluator.py
+2026-07-14 11:40:35,458 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:36,032 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:36,041 - openevolve.process_parallel - WARNING - Iteration 1 error: No valid diffs found in response
+2026-07-14 11:40:36,653 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:36,657 - openevolve.process_parallel - WARNING - Iteration 2 error: No valid diffs found in response
+2026-07-14 11:40:37,225 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:37,232 - openevolve.process_parallel - WARNING - Iteration 3 error: No valid diffs found in response
+2026-07-14 11:40:37,821 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:37,830 - openevolve.process_parallel - WARNING - Iteration 4 error: No valid diffs found in response
+2026-07-14 11:40:38,482 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:38,487 - openevolve.process_parallel - WARNING - Iteration 5 error: No valid diffs found in response
+2026-07-14 11:40:39,032 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:39,033 - openevolve.process_parallel - WARNING - Iteration 6 error: No valid diffs found in response
+2026-07-14 11:40:39,589 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:39,599 - openevolve.process_parallel - WARNING - Iteration 7 error: No valid diffs found in response
+2026-07-14 11:40:40,223 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:40,225 - openevolve.process_parallel - WARNING - Iteration 8 error: No valid diffs found in response
+2026-07-14 11:40:40,793 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:40,802 - openevolve.process_parallel - WARNING - Iteration 9 error: No valid diffs found in response
+2026-07-14 11:40:41,384 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:41,389 - openevolve.process_parallel - WARNING - Iteration 10 error: No valid diffs found in response
+2026-07-14 11:40:41,969 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:41,976 - openevolve.process_parallel - WARNING - Iteration 11 error: No valid diffs found in response
+2026-07-14 11:40:42,555 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:42,563 - openevolve.process_parallel - WARNING - Iteration 12 error: No valid diffs found in response
+2026-07-14 11:40:43,144 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:43,151 - openevolve.process_parallel - WARNING - Iteration 13 error: No valid diffs found in response
+2026-07-14 11:40:43,726 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:43,728 - openevolve.process_parallel - WARNING - Iteration 14 error: No valid diffs found in response
+2026-07-14 11:40:44,296 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:44,304 - openevolve.process_parallel - WARNING - Iteration 15 error: No valid diffs found in response
+2026-07-14 11:40:44,889 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:44,890 - openevolve.process_parallel - WARNING - Iteration 16 error: No valid diffs found in response
+2026-07-14 11:40:45,441 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:45,447 - openevolve.process_parallel - WARNING - Iteration 17 error: No valid diffs found in response
+2026-07-14 11:40:46,206 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:46,214 - openevolve.process_parallel - WARNING - Iteration 18 error: No valid diffs found in response
+2026-07-14 11:40:46,939 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:46,940 - openevolve.process_parallel - WARNING - Iteration 19 error: No valid diffs found in response
+2026-07-14 11:40:47,530 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:47,535 - openevolve.process_parallel - WARNING - Iteration 20 error: No valid diffs found in response
+2026-07-14 11:40:48,182 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:48,183 - openevolve.process_parallel - WARNING - Iteration 21 error: No valid diffs found in response
+2026-07-14 11:40:48,766 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:48,769 - openevolve.process_parallel - WARNING - Iteration 22 error: No valid diffs found in response
+2026-07-14 11:40:49,347 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:49,355 - openevolve.process_parallel - WARNING - Iteration 23 error: No valid diffs found in response
+2026-07-14 11:40:49,924 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:49,932 - openevolve.process_parallel - WARNING - Iteration 24 error: No valid diffs found in response
+2026-07-14 11:40:50,520 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:50,528 - openevolve.process_parallel - WARNING - Iteration 25 error: No valid diffs found in response
+2026-07-14 11:40:51,086 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:51,093 - openevolve.process_parallel - WARNING - Iteration 26 error: No valid diffs found in response
+2026-07-14 11:40:51,649 - openevolve.process_parallel - WARNING - Iteration 27 error: No valid diffs found in response
+2026-07-14 11:40:51,649 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:52,222 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:52,225 - openevolve.process_parallel - WARNING - Iteration 28 error: No valid diffs found in response
+2026-07-14 11:40:52,969 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:52,973 - openevolve.process_parallel - WARNING - Iteration 29 error: No valid diffs found in response
+2026-07-14 11:40:53,709 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:53,710 - openevolve.process_parallel - WARNING - Iteration 30 error: No valid diffs found in response
+2026-07-14 11:40:54,302 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:54,307 - openevolve.process_parallel - WARNING - Iteration 31 error: No valid diffs found in response
+2026-07-14 11:40:54,923 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:54,933 - openevolve.process_parallel - WARNING - Iteration 32 error: No valid diffs found in response
+2026-07-14 11:40:55,579 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:55,589 - openevolve.process_parallel - WARNING - Iteration 33 error: No valid diffs found in response
+2026-07-14 11:40:56,176 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:56,177 - openevolve.process_parallel - WARNING - Iteration 34 error: No valid diffs found in response
+2026-07-14 11:40:56,749 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:56,755 - openevolve.process_parallel - WARNING - Iteration 35 error: No valid diffs found in response
+2026-07-14 11:40:57,388 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:57,393 - openevolve.process_parallel - WARNING - Iteration 36 error: No valid diffs found in response
+2026-07-14 11:40:57,957 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:57,962 - openevolve.process_parallel - WARNING - Iteration 37 error: No valid diffs found in response
+2026-07-14 11:40:58,559 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:58,569 - openevolve.process_parallel - WARNING - Iteration 38 error: No valid diffs found in response
+2026-07-14 11:40:59,131 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:59,136 - openevolve.process_parallel - WARNING - Iteration 39 error: No valid diffs found in response
+2026-07-14 11:40:59,711 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:40:59,713 - openevolve.process_parallel - WARNING - Iteration 40 error: No valid diffs found in response
+2026-07-14 11:41:00,347 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:00,353 - openevolve.process_parallel - WARNING - Iteration 41 error: No valid diffs found in response
+2026-07-14 11:41:00,908 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:00,912 - openevolve.process_parallel - WARNING - Iteration 42 error: No valid diffs found in response
+2026-07-14 11:41:01,448 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:01,457 - openevolve.process_parallel - WARNING - Iteration 43 error: No valid diffs found in response
+2026-07-14 11:41:02,024 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:02,025 - openevolve.process_parallel - WARNING - Iteration 44 error: No valid diffs found in response
+2026-07-14 11:41:02,629 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:02,631 - openevolve.process_parallel - WARNING - Iteration 45 error: No valid diffs found in response
+2026-07-14 11:41:03,204 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:03,209 - openevolve.process_parallel - WARNING - Iteration 46 error: No valid diffs found in response
+2026-07-14 11:41:03,770 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:03,776 - openevolve.process_parallel - WARNING - Iteration 47 error: No valid diffs found in response
+2026-07-14 11:41:04,346 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:04,352 - openevolve.process_parallel - WARNING - Iteration 48 error: No valid diffs found in response
+2026-07-14 11:41:04,921 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:04,928 - openevolve.process_parallel - WARNING - Iteration 49 error: No valid diffs found in response
+2026-07-14 11:41:05,485 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:05,494 - openevolve.process_parallel - WARNING - Iteration 50 error: No valid diffs found in response
+2026-07-14 11:41:06,145 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:06,150 - openevolve.process_parallel - WARNING - Iteration 51 error: No valid diffs found in response
+2026-07-14 11:41:06,748 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:06,756 - openevolve.process_parallel - WARNING - Iteration 52 error: No valid diffs found in response
+2026-07-14 11:41:07,341 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:07,342 - openevolve.process_parallel - WARNING - Iteration 53 error: No valid diffs found in response
+2026-07-14 11:41:08,086 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:08,091 - openevolve.process_parallel - WARNING - Iteration 54 error: No valid diffs found in response
+2026-07-14 11:41:08,751 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:08,752 - openevolve.process_parallel - WARNING - Iteration 55 error: No valid diffs found in response
+2026-07-14 11:41:09,324 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:09,330 - openevolve.process_parallel - WARNING - Iteration 56 error: No valid diffs found in response
+2026-07-14 11:41:09,901 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:09,905 - openevolve.process_parallel - WARNING - Iteration 57 error: No valid diffs found in response
+2026-07-14 11:41:10,478 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:10,482 - openevolve.process_parallel - WARNING - Iteration 58 error: No valid diffs found in response
+2026-07-14 11:41:11,086 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:11,089 - openevolve.process_parallel - WARNING - Iteration 59 error: No valid diffs found in response
+2026-07-14 11:41:11,683 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:11,685 - openevolve.process_parallel - WARNING - Iteration 60 error: No valid diffs found in response
+2026-07-14 11:41:12,226 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:12,230 - openevolve.process_parallel - WARNING - Iteration 61 error: No valid diffs found in response
+2026-07-14 11:41:12,803 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:12,807 - openevolve.process_parallel - WARNING - Iteration 62 error: No valid diffs found in response
+2026-07-14 11:41:13,381 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:13,383 - openevolve.process_parallel - WARNING - Iteration 63 error: No valid diffs found in response
+2026-07-14 11:41:13,948 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:13,949 - openevolve.process_parallel - WARNING - Iteration 64 error: No valid diffs found in response
+2026-07-14 11:41:14,523 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:14,530 - openevolve.process_parallel - WARNING - Iteration 65 error: No valid diffs found in response
+2026-07-14 11:41:15,094 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:15,098 - openevolve.process_parallel - WARNING - Iteration 66 error: No valid diffs found in response
+2026-07-14 11:41:15,671 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:15,679 - openevolve.process_parallel - WARNING - Iteration 67 error: No valid diffs found in response
+2026-07-14 11:41:16,341 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:16,348 - openevolve.process_parallel - WARNING - Iteration 68 error: No valid diffs found in response
+2026-07-14 11:41:16,904 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:16,914 - openevolve.process_parallel - WARNING - Iteration 69 error: No valid diffs found in response
+2026-07-14 11:41:18,515 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:18,521 - openevolve.process_parallel - WARNING - Iteration 70 error: No valid diffs found in response
+2026-07-14 11:41:19,103 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:19,108 - openevolve.process_parallel - WARNING - Iteration 71 error: No valid diffs found in response
+2026-07-14 11:41:19,707 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:19,714 - openevolve.process_parallel - WARNING - Iteration 72 error: No valid diffs found in response
+2026-07-14 11:41:20,302 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:20,309 - openevolve.process_parallel - WARNING - Iteration 73 error: No valid diffs found in response
+2026-07-14 11:41:20,912 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:20,918 - openevolve.process_parallel - WARNING - Iteration 74 error: No valid diffs found in response
+2026-07-14 11:41:21,498 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:21,505 - openevolve.process_parallel - WARNING - Iteration 75 error: No valid diffs found in response
+2026-07-14 11:41:22,111 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:22,111 - openevolve.process_parallel - WARNING - Iteration 76 error: No valid diffs found in response
+2026-07-14 11:41:22,949 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:22,950 - openevolve.process_parallel - WARNING - Iteration 77 error: No valid diffs found in response
+2026-07-14 11:41:23,547 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:23,547 - openevolve.process_parallel - WARNING - Iteration 78 error: No valid diffs found in response
+2026-07-14 11:41:24,170 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:24,177 - openevolve.process_parallel - WARNING - Iteration 79 error: No valid diffs found in response
+2026-07-14 11:41:24,812 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:24,817 - openevolve.process_parallel - WARNING - Iteration 80 error: No valid diffs found in response
+2026-07-14 11:41:25,432 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:25,433 - openevolve.process_parallel - WARNING - Iteration 81 error: No valid diffs found in response
+2026-07-14 11:41:26,043 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:26,053 - openevolve.process_parallel - WARNING - Iteration 82 error: No valid diffs found in response
+2026-07-14 11:41:26,816 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:26,823 - openevolve.process_parallel - WARNING - Iteration 83 error: No valid diffs found in response
+2026-07-14 11:41:27,382 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:27,390 - openevolve.process_parallel - WARNING - Iteration 84 error: No valid diffs found in response
+2026-07-14 11:41:27,979 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:27,987 - openevolve.process_parallel - WARNING - Iteration 85 error: No valid diffs found in response
+2026-07-14 11:41:28,532 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:28,536 - openevolve.process_parallel - WARNING - Iteration 86 error: No valid diffs found in response
+2026-07-14 11:41:29,222 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:29,227 - openevolve.process_parallel - WARNING - Iteration 87 error: No valid diffs found in response
+2026-07-14 11:41:29,812 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:29,815 - openevolve.process_parallel - WARNING - Iteration 88 error: No valid diffs found in response
+2026-07-14 11:41:30,380 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:30,383 - openevolve.process_parallel - WARNING - Iteration 89 error: No valid diffs found in response
+2026-07-14 11:41:30,955 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:30,960 - openevolve.process_parallel - WARNING - Iteration 90 error: No valid diffs found in response
+2026-07-14 11:41:31,544 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:31,549 - openevolve.process_parallel - WARNING - Iteration 91 error: No valid diffs found in response
+2026-07-14 11:41:32,143 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:32,146 - openevolve.process_parallel - WARNING - Iteration 92 error: No valid diffs found in response
+2026-07-14 11:41:32,711 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:32,712 - openevolve.process_parallel - WARNING - Iteration 93 error: No valid diffs found in response
+2026-07-14 11:41:33,283 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:33,288 - openevolve.process_parallel - WARNING - Iteration 94 error: No valid diffs found in response
+2026-07-14 11:41:33,921 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:33,927 - openevolve.process_parallel - WARNING - Iteration 95 error: No valid diffs found in response
+2026-07-14 11:41:34,516 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:34,526 - openevolve.process_parallel - WARNING - Iteration 96 error: No valid diffs found in response
+2026-07-14 11:41:35,107 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:35,112 - openevolve.process_parallel - WARNING - Iteration 97 error: No valid diffs found in response
+2026-07-14 11:41:35,724 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:35,729 - openevolve.process_parallel - WARNING - Iteration 98 error: No valid diffs found in response
+2026-07-14 11:41:36,326 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:36,334 - openevolve.process_parallel - WARNING - Iteration 99 error: No valid diffs found in response
+2026-07-14 11:41:36,901 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:36,909 - openevolve.process_parallel - WARNING - Iteration 100 error: No valid diffs found in response
+2026-07-14 11:41:37,488 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:37,494 - openevolve.process_parallel - WARNING - Iteration 101 error: No valid diffs found in response
+2026-07-14 11:41:38,086 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:38,091 - openevolve.process_parallel - WARNING - Iteration 102 error: No valid diffs found in response
+2026-07-14 11:41:38,862 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:38,870 - openevolve.process_parallel - WARNING - Iteration 103 error: No valid diffs found in response
+2026-07-14 11:41:39,463 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:39,466 - openevolve.process_parallel - WARNING - Iteration 104 error: No valid diffs found in response
+2026-07-14 11:41:40,028 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:40,031 - openevolve.process_parallel - WARNING - Iteration 105 error: No valid diffs found in response
+2026-07-14 11:41:40,644 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:40,647 - openevolve.process_parallel - WARNING - Iteration 106 error: No valid diffs found in response
+2026-07-14 11:41:41,226 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:41,234 - openevolve.process_parallel - WARNING - Iteration 107 error: No valid diffs found in response
+2026-07-14 11:41:41,809 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:41,812 - openevolve.process_parallel - WARNING - Iteration 108 error: No valid diffs found in response
+2026-07-14 11:41:42,398 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:42,401 - openevolve.process_parallel - WARNING - Iteration 109 error: No valid diffs found in response
+2026-07-14 11:41:42,951 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:42,957 - openevolve.process_parallel - WARNING - Iteration 110 error: No valid diffs found in response
+2026-07-14 11:41:43,796 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:43,800 - openevolve.process_parallel - WARNING - Iteration 111 error: No valid diffs found in response
+2026-07-14 11:41:45,432 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:45,438 - openevolve.process_parallel - WARNING - Iteration 112 error: No valid diffs found in response
+2026-07-14 11:41:46,045 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:46,047 - openevolve.process_parallel - WARNING - Iteration 113 error: No valid diffs found in response
+2026-07-14 11:41:46,632 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:46,634 - openevolve.process_parallel - WARNING - Iteration 114 error: No valid diffs found in response
+2026-07-14 11:41:47,243 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:47,252 - openevolve.process_parallel - WARNING - Iteration 115 error: No valid diffs found in response
+2026-07-14 11:41:47,831 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:47,837 - openevolve.process_parallel - WARNING - Iteration 116 error: No valid diffs found in response
+2026-07-14 11:41:48,423 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:48,425 - openevolve.process_parallel - WARNING - Iteration 117 error: No valid diffs found in response
+2026-07-14 11:41:49,009 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:49,012 - openevolve.process_parallel - WARNING - Iteration 118 error: No valid diffs found in response
+2026-07-14 11:41:49,569 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:49,570 - openevolve.process_parallel - WARNING - Iteration 119 error: No valid diffs found in response
+2026-07-14 11:41:50,158 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:50,166 - openevolve.process_parallel - WARNING - Iteration 120 error: No valid diffs found in response
+2026-07-14 11:41:50,747 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:50,753 - openevolve.process_parallel - WARNING - Iteration 121 error: No valid diffs found in response
+2026-07-14 11:41:51,307 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:51,314 - openevolve.process_parallel - WARNING - Iteration 122 error: No valid diffs found in response
+2026-07-14 11:41:51,978 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:51,982 - openevolve.process_parallel - WARNING - Iteration 123 error: No valid diffs found in response
+2026-07-14 11:41:52,831 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:52,831 - openevolve.process_parallel - WARNING - Iteration 124 error: No valid diffs found in response
+2026-07-14 11:41:53,495 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:53,499 - openevolve.process_parallel - WARNING - Iteration 125 error: No valid diffs found in response
+2026-07-14 11:41:54,105 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:54,105 - openevolve.process_parallel - WARNING - Iteration 126 error: No valid diffs found in response
+2026-07-14 11:41:54,670 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:54,672 - openevolve.process_parallel - WARNING - Iteration 127 error: No valid diffs found in response
+2026-07-14 11:41:55,256 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:55,260 - openevolve.process_parallel - WARNING - Iteration 128 error: No valid diffs found in response
+2026-07-14 11:41:55,804 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:55,807 - openevolve.process_parallel - WARNING - Iteration 129 error: No valid diffs found in response
+2026-07-14 11:41:56,378 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:56,385 - openevolve.process_parallel - WARNING - Iteration 130 error: No valid diffs found in response
+2026-07-14 11:41:56,958 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:56,961 - openevolve.process_parallel - WARNING - Iteration 131 error: No valid diffs found in response
+2026-07-14 11:41:57,524 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:57,529 - openevolve.process_parallel - WARNING - Iteration 132 error: No valid diffs found in response
+2026-07-14 11:41:58,076 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:58,085 - openevolve.process_parallel - WARNING - Iteration 133 error: No valid diffs found in response
+2026-07-14 11:41:58,726 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:58,733 - openevolve.process_parallel - WARNING - Iteration 134 error: No valid diffs found in response
+2026-07-14 11:41:59,336 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:59,339 - openevolve.process_parallel - WARNING - Iteration 135 error: No valid diffs found in response
+2026-07-14 11:41:59,933 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:41:59,937 - openevolve.process_parallel - WARNING - Iteration 136 error: No valid diffs found in response
+2026-07-14 11:42:00,509 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:42:00,516 - openevolve.process_parallel - WARNING - Iteration 137 error: No valid diffs found in response
+2026-07-14 11:42:01,093 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:42:01,094 - openevolve.process_parallel - WARNING - Iteration 138 error: No valid diffs found in response
+2026-07-14 11:42:01,675 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:42:01,682 - openevolve.process_parallel - WARNING - Iteration 139 error: No valid diffs found in response
+2026-07-14 11:42:08,011 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:42:08,012 - openevolve.process_parallel - WARNING - Iteration 140 error: No valid diffs found in response
+2026-07-14 11:42:08,573 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:42:08,580 - openevolve.process_parallel - WARNING - Iteration 141 error: No valid diffs found in response
+2026-07-14 11:42:09,135 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:42:09,138 - openevolve.process_parallel - WARNING - Iteration 142 error: No valid diffs found in response
+2026-07-14 11:42:09,762 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:42:09,765 - openevolve.process_parallel - WARNING - Iteration 143 error: No valid diffs found in response
+2026-07-14 11:42:10,348 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:42:10,351 - openevolve.process_parallel - WARNING - Iteration 144 error: No valid diffs found in response
+2026-07-14 11:42:11,033 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:42:11,040 - openevolve.process_parallel - WARNING - Iteration 145 error: No valid diffs found in response
+2026-07-14 11:42:11,652 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:42:11,657 - openevolve.process_parallel - WARNING - Iteration 146 error: No valid diffs found in response
+2026-07-14 11:42:12,223 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:42:12,225 - openevolve.process_parallel - WARNING - Iteration 147 error: No valid diffs found in response
+2026-07-14 11:42:12,831 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:42:12,835 - openevolve.process_parallel - WARNING - Iteration 148 error: No valid diffs found in response
+2026-07-14 11:42:13,401 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:42:13,404 - openevolve.process_parallel - WARNING - Iteration 149 error: No valid diffs found in response
+2026-07-14 11:42:14,012 - openevolve.process_parallel - WARNING - Iteration 150 error: No valid diffs found in response
+2026-07-14 11:42:14,012 - openevolve.process_parallel - INFO - ✅ Evolution completed - Maximum iterations reached
+2026-07-14 11:42:14,012 - openevolve.database - INFO - Saved database with 1 programs to /home/sdinh/sandbox/OptiUNO/quickRun/results/openevolve_output/checkpoints/checkpoint_150
+2026-07-14 11:42:14,012 - openevolve.controller - INFO - Saved best program at checkpoint 150 with metrics: combined_score=1.0600, reliability=0.9669, cum_cpu_time=4.1372
+2026-07-14 11:42:14,013 - openevolve.controller - INFO - Saved checkpoint at iteration 150 to /home/sdinh/sandbox/OptiUNO/quickRun/results/openevolve_output/checkpoints/checkpoint_150
+2026-07-14 11:42:14,013 - openevolve.controller - INFO - Received signal 15, initiating graceful shutdown...
+2026-07-14 11:42:14,013 - openevolve.process_parallel - INFO - Graceful shutdown requested...
+2026-07-14 11:42:14,017 - openevolve.process_parallel - INFO - Stopped process pool
+2026-07-14 11:42:14,017 - openevolve.controller - INFO - Using tracked best program: ab8659bf-75c8-4280-a5b2-47c527d6e897
+2026-07-14 11:42:14,017 - openevolve.controller - INFO - Evolution complete. Best program has metrics: combined_score=1.0600, reliability=0.9669, cum_cpu_time=4.1372
+2026-07-14 11:42:14,017 - openevolve.controller - INFO - Saved best program to /home/sdinh/sandbox/OptiUNO/quickRun/results/openevolve_output/best/best_program.py with program info to /home/sdinh/sandbox/OptiUNO/quickRun/results/openevolve_output/best/best_program_info.json

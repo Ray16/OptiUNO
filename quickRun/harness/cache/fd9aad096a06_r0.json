@@ -1,31 +1,21 @@
 {
  "config_hash": "fd9aad096a06",
  "rep": 0,
- "label": "preset-filtersqp",
+ "label": "smoke-filtersqp",
  "options": {
   "preset": "filtersqp"
  },
  "time_limit": 20.0,
- "n_problems": 123,
- "n_solved": 120,
- "reliability": 0.975609756097561,
- "cum_cpu_time": 1.2905000000000002,
+ "n_problems": 121,
+ "n_solved": 117,
+ "reliability": 0.9669421487603306,
+ "cum_cpu_time": 3.129582,
  "n_rewritten": 0,
  "status_counts": {
-  "solved": 120,
-  "unsolved": 3
+  "solved": 117,
+  "unsolved": 4
  },
  "per_problem": [
-  {
-   "problem": "genhs28",
-   "category": "solved",
-   "rewritten": [],
-   "detail": "Feasible KKT point",
-   "objective": 0.9271737,
-   "iterations": 1,
-   "objective_evaluations": 2,
-   "cpu_time": 0.000254
-  },
   {
    "problem": "hs001",
    "category": "solved",
@@ -34,7 +24,7 @@
    "objective": 6.53676e-27,
    "iterations": 25,
    "objective_evaluations": 33,
-   "cpu_time": 0.008955
+   "cpu_time": 0.000516
   },
   {
    "problem": "hs002",
@@ -44,7 +34,7 @@
    "objective": 4.941229,
    "iterations": 7,
    "objective_evaluations": 9,
-   "cpu_time": 0.016887
+   "cpu_time": 0.000179
   },
   {
    "problem": "hs003",
@@ -54,7 +44,7 @@
    "objective": 0.0,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 8.8e-05
+   "cpu_time": 0.000113
   },
   {
    "problem": "hs004",
@@ -64,7 +54,7 @@
    "objective": 2.666667,
    "iterations": 2,
    "objective_evaluations": 4,
-   "cpu_time": 0.039613
+   "cpu_time": 0.000139
   },
   {
    "problem": "hs005",
@@ -74,7 +64,7 @@
    "objective": -1.913223,
    "iterations": 5,
    "objective_evaluations": 8,
-   "cpu_time": 0.000127
+   "cpu_time": 0.00254
   },
   {
    "problem": "hs006",
@@ -84,7 +74,7 @@
    "objective": 0.0,
    "iterations": 2,
    "objective_evaluations": 3,
-   "cpu_time": 0.002136
+   "cpu_time": 0.000128
   },
   {
    "problem": "hs007",
@@ -94,7 +84,7 @@
    "objective": -1.732051,
    "iterations": 8,
    "objective_evaluations": 12,
-   "cpu_time": 0.000157
+   "cpu_time": 0.000293
   },
   {
    "problem": "hs008",
@@ -104,7 +94,7 @@
    "objective": -1.0,
    "iterations": 5,
    "objective_evaluations": 6,
-   "cpu_time": 0.003994
+   "cpu_time": 0.000147
   },
   {
    "problem": "hs009",
@@ -114,7 +104,7 @@
    "objective": -0.5,
    "iterations": 3,
    "objective_evaluations": 5,
-   "cpu_time": 0.000138
+   "cpu_time": 0.006998
   },
   {
    "problem": "hs010",
@@ -124,7 +114,7 @@
    "objective": -1.0,
    "iterations": 9,
    "objective_evaluations": 10,
-   "cpu_time": 0.000836
+   "cpu_time": 0.007327
   },
   {
    "problem": "hs011",
@@ -134,7 +124,7 @@
    "objective": -8.498464,
    "iterations": 5,
    "objective_evaluations": 6,
-   "cpu_time": 0.000874
+   "cpu_time": 0.00066
   },
   {
    "problem": "hs012",
@@ -144,7 +134,7 @@
    "objective": -30.0,
    "iterations": 5,
    "objective_evaluations": 8,
-   "cpu_time": 0.002843
+   "cpu_time": 0.000229
   },
   {
    "problem": "hs013",
@@ -154,7 +144,7 @@
    "objective": 1.000119,
    "iterations": 24,
    "objective_evaluations": 25,
-   "cpu_time": 0.000173
+   "cpu_time": 0.000221
   },
   {
    "problem": "hs014",
@@ -164,7 +154,7 @@
    "objective": 1.393465,
    "iterations": 5,
    "objective_evaluations": 6,
-   "cpu_time": 0.000308
+   "cpu_time": 0.007718
   },
   {
    "problem": "hs015",
@@ -172,9 +162,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": 306.5,
-   "iterations": 5,
-   "objective_evaluations": 8,
-   "cpu_time": 0.000606
+   "iterations": 7,
+   "objective_evaluations": 11,
+   "cpu_time": 0.000421
   },
   {
    "problem": "hs016",
@@ -182,9 +172,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": 23.14466,
-   "iterations": 4,
-   "objective_evaluations": 5,
-   "cpu_time": 0.00021
+   "iterations": 6,
+   "objective_evaluations": 7,
+   "cpu_time": 0.000187
   },
   {
    "problem": "hs017",
@@ -192,9 +182,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": 1.0,
-   "iterations": 6,
-   "objective_evaluations": 8,
-   "cpu_time": 0.002799
+   "iterations": 13,
+   "objective_evaluations": 15,
+   "cpu_time": 0.002783
   },
   {
    "problem": "hs018",
@@ -204,7 +194,7 @@
    "objective": 5.0,
    "iterations": 6,
    "objective_evaluations": 7,
-   "cpu_time": 0.00019
+   "cpu_time": 0.000172
   },
   {
    "problem": "hs019",
@@ -214,7 +204,7 @@
    "objective": -6961.814,
    "iterations": 6,
    "objective_evaluations": 7,
-   "cpu_time": 0.009808
+   "cpu_time": 0.000378
   },
   {
    "problem": "hs020",
@@ -222,9 +212,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": 40.19873,
-   "iterations": 4,
-   "objective_evaluations": 5,
-   "cpu_time": 0.000143
+   "iterations": 6,
+   "objective_evaluations": 7,
+   "cpu_time": 0.081802
   },
   {
    "problem": "hs021",
@@ -234,7 +224,7 @@
    "objective": -99.96,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.001031
+   "cpu_time": 0.000125
   },
   {
    "problem": "hs022",
@@ -244,7 +234,7 @@
    "objective": 1.0,
    "iterations": 4,
    "objective_evaluations": 5,
-   "cpu_time": 0.000138
+   "cpu_time": 0.000145
   },
   {
    "problem": "hs023",
@@ -254,7 +244,7 @@
    "objective": 2.0,
    "iterations": 6,
    "objective_evaluations": 7,
-   "cpu_time": 0.000141
+   "cpu_time": 0.000122
   },
   {
    "problem": "hs024",
@@ -264,7 +254,7 @@
    "objective": -1.0,
    "iterations": 2,
    "objective_evaluations": 4,
-   "cpu_time": 0.000347
+   "cpu_time": 0.000228
   },
   {
    "problem": "hs025",
@@ -274,7 +264,7 @@
    "objective": 3.256901e-20,
    "iterations": 20,
    "objective_evaluations": 31,
-   "cpu_time": 0.006505
+   "cpu_time": 0.013858
   },
   {
    "problem": "hs026",
@@ -284,7 +274,7 @@
    "objective": 2.150494e-12,
    "iterations": 18,
    "objective_evaluations": 20,
-   "cpu_time": 0.000211
+   "cpu_time": 0.002037
   },
   {
    "problem": "hs027",
@@ -294,7 +284,7 @@
    "objective": 0.04,
    "iterations": 18,
    "objective_evaluations": 25,
-   "cpu_time": 0.001388
+   "cpu_time": 0.000301
   },
   {
    "problem": "hs028",
@@ -304,7 +294,7 @@
    "objective": 6.409495e-31,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.000124
+   "cpu_time": 0.069002
   },
   {
    "problem": "hs029",
@@ -314,7 +304,7 @@
    "objective": -22.62742,
    "iterations": 6,
    "objective_evaluations": 8,
-   "cpu_time": 0.000148
+   "cpu_time": 0.00641
   },
   {
    "problem": "hs030",
@@ -324,7 +314,7 @@
    "objective": 1.0,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 9.7e-05
+   "cpu_time": 0.004859
   },
   {
    "problem": "hs031",
@@ -334,7 +324,7 @@
    "objective": 6.0,
    "iterations": 5,
    "objective_evaluations": 6,
-   "cpu_time": 0.000111
+   "cpu_time": 0.000166
   },
   {
    "problem": "hs032",
@@ -344,7 +334,7 @@
    "objective": 1.0,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.001032
+   "cpu_time": 0.009427
   },
   {
    "problem": "hs033",
@@ -354,7 +344,7 @@
    "objective": -4.0,
    "iterations": 4,
    "objective_evaluations": 5,
-   "cpu_time": 0.002444
+   "cpu_time": 0.000134
   },
   {
    "problem": "hs034",
@@ -364,7 +354,7 @@
    "objective": -0.8340324,
    "iterations": 7,
    "objective_evaluations": 8,
-   "cpu_time": 0.000178
+   "cpu_time": 0.000232
   },
   {
    "problem": "hs035",
@@ -374,7 +364,7 @@
    "objective": 0.1111111,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.003354
+   "cpu_time": 0.000118
   },
   {
    "problem": "hs036",
@@ -384,7 +374,7 @@
    "objective": -3300.0,
    "iterations": 2,
    "objective_evaluations": 4,
-   "cpu_time": 0.003126
+   "cpu_time": 0.000176
   },
   {
    "problem": "hs037",
@@ -394,7 +384,7 @@
    "objective": -3456.0,
    "iterations": 5,
    "objective_evaluations": 6,
-   "cpu_time": 0.005706
+   "cpu_time": 0.00012
   },
   {
    "problem": "hs038",
@@ -404,7 +394,7 @@
    "objective": 2.143729e-20,
    "iterations": 38,
    "objective_evaluations": 53,
-   "cpu_time": 0.000275
+   "cpu_time": 0.000456
   },
   {
    "problem": "hs039",
@@ -414,7 +404,7 @@
    "objective": -1.0,
    "iterations": 17,
    "objective_evaluations": 25,
-   "cpu_time": 0.002284
+   "cpu_time": 0.00053
   },
   {
    "problem": "hs040",
@@ -424,7 +414,7 @@
    "objective": -0.25,
    "iterations": 4,
    "objective_evaluations": 5,
-   "cpu_time": 0.000153
+   "cpu_time": 0.000167
   },
   {
    "problem": "hs041",
@@ -434,7 +424,7 @@
    "objective": 2.0,
    "iterations": 2,
    "objective_evaluations": 4,
-   "cpu_time": 0.000151
+   "cpu_time": 0.002897
   },
   {
    "problem": "hs042",
@@ -444,7 +434,7 @@
    "objective": 13.85786,
    "iterations": 5,
    "objective_evaluations": 6,
-   "cpu_time": 0.000179
+   "cpu_time": 0.025761
   },
   {
    "problem": "hs043",
@@ -454,7 +444,7 @@
    "objective": -44.0,
    "iterations": 7,
    "objective_evaluations": 9,
-   "cpu_time": 0.000186
+   "cpu_time": 0.000231
   },
   {
    "problem": "hs044",
@@ -464,7 +454,7 @@
    "objective": -13.0,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.000156
+   "cpu_time": 0.000393
   },
   {
    "problem": "hs045",
@@ -474,7 +464,7 @@
    "objective": 2.0,
    "iterations": 1,
    "objective_evaluations": 3,
-   "cpu_time": 0.000106
+   "cpu_time": 0.000102
   },
   {
    "problem": "hs046",
@@ -484,7 +474,7 @@
    "objective": 4.07924e-12,
    "iterations": 18,
    "objective_evaluations": 19,
-   "cpu_time": 0.000454
+   "cpu_time": 0.035801
   },
   {
    "problem": "hs047",
@@ -494,7 +484,7 @@
    "objective": 5.627465e-11,
    "iterations": 17,
    "objective_evaluations": 21,
-   "cpu_time": 0.013227
+   "cpu_time": 0.000327
   },
   {
    "problem": "hs048",
@@ -504,7 +494,7 @@
    "objective": 2.169367e-30,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.00011
+   "cpu_time": 0.000124
   },
   {
    "problem": "hs049",
@@ -514,7 +504,7 @@
    "objective": 1.375306e-09,
    "iterations": 16,
    "objective_evaluations": 17,
-   "cpu_time": 0.005678
+   "cpu_time": 0.000197
   },
   {
    "problem": "hs050",
@@ -524,7 +514,7 @@
    "objective": 1.078143e-19,
    "iterations": 8,
    "objective_evaluations": 9,
-   "cpu_time": 0.001259
+   "cpu_time": 0.000154
   },
   {
    "problem": "hs051",
@@ -534,7 +524,7 @@
    "objective": 0.0,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.000113
+   "cpu_time": 0.000118
   },
   {
    "problem": "hs052",
@@ -544,7 +534,7 @@
    "objective": 5.326648,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.000154
+   "cpu_time": 0.000142
   },
   {
    "problem": "hs053",
@@ -554,7 +544,7 @@
    "objective": 4.093023,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.000122
+   "cpu_time": 0.005087
   },
   {
    "problem": "hs054",
@@ -564,7 +554,7 @@
    "objective": 0.1928571,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.000119
+   "cpu_time": 0.000101
   },
   {
    "problem": "hs055",
@@ -574,7 +564,7 @@
    "objective": 6.666667,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.000107
+   "cpu_time": 0.000109
   },
   {
    "problem": "hs056",
@@ -584,7 +574,7 @@
    "objective": 0.0,
    "iterations": 15,
    "objective_evaluations": 16,
-   "cpu_time": 0.005228
+   "cpu_time": 0.000298
   },
   {
    "problem": "hs057",
@@ -594,7 +584,7 @@
    "objective": 0.02845967,
    "iterations": 4,
    "objective_evaluations": 5,
-   "cpu_time": 0.000151
+   "cpu_time": 0.000341
   },
   {
    "problem": "hs059",
@@ -604,7 +594,7 @@
    "objective": -6.749505,
    "iterations": 9,
    "objective_evaluations": 12,
-   "cpu_time": 0.000207
+   "cpu_time": 0.000953
   },
   {
    "problem": "hs060",
@@ -614,7 +604,7 @@
    "objective": 0.0325682,
    "iterations": 6,
    "objective_evaluations": 7,
-   "cpu_time": 0.003084
+   "cpu_time": 0.039501
   },
   {
    "problem": "hs061",
@@ -624,7 +614,7 @@
    "objective": -60.5,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.000166
+   "cpu_time": 0.000125
   },
   {
    "problem": "hs062",
@@ -634,7 +624,7 @@
    "objective": -26272.51,
    "iterations": 6,
    "objective_evaluations": 8,
-   "cpu_time": 0.00014
+   "cpu_time": 0.000176
   },
   {
    "problem": "hs063",
@@ -644,7 +634,7 @@
    "objective": 961.7152,
    "iterations": 7,
    "objective_evaluations": 10,
-   "cpu_time": 0.001061
+   "cpu_time": 0.003164
   },
   {
    "problem": "hs064",
@@ -654,7 +644,7 @@
    "objective": 6299.842,
    "iterations": 16,
    "objective_evaluations": 17,
-   "cpu_time": 0.0002
+   "cpu_time": 0.03158
   },
   {
    "problem": "hs065",
@@ -664,7 +654,7 @@
    "objective": 0.9535288,
    "iterations": 4,
    "objective_evaluations": 5,
-   "cpu_time": 0.000133
+   "cpu_time": 0.000162
   },
   {
    "problem": "hs066",
@@ -674,17 +664,7 @@
    "objective": 0.5181633,
    "iterations": 8,
    "objective_evaluations": 9,
-   "cpu_time": 0.000142
-  },
-  {
-   "problem": "hs067",
-   "category": "solved",
-   "rewritten": [],
-   "detail": "Feasible KKT point",
-   "objective": -1162.027,
-   "iterations": 11,
-   "objective_evaluations": 12,
-   "cpu_time": 0.000297
+   "cpu_time": 0.0201
   },
   {
    "problem": "hs070",
@@ -694,7 +674,7 @@
    "objective": 0.009401973,
    "iterations": 27,
    "objective_evaluations": 40,
-   "cpu_time": 0.006807
+   "cpu_time": 0.037651
   },
   {
    "problem": "hs071",
@@ -714,7 +694,7 @@
    "objective": 727.6794,
    "iterations": 15,
    "objective_evaluations": 18,
-   "cpu_time": 0.014098
+   "cpu_time": 0.000327
   },
   {
    "problem": "hs073",
@@ -724,7 +704,7 @@
    "objective": 29.89438,
    "iterations": 3,
    "objective_evaluations": 4,
-   "cpu_time": 0.000123
+   "cpu_time": 0.000177
   },
   {
    "problem": "hs074",
@@ -734,7 +714,7 @@
    "objective": 5126.498,
    "iterations": 18,
    "objective_evaluations": 26,
-   "cpu_time": 0.001393
+   "cpu_time": 0.010362
   },
   {
    "problem": "hs075",
@@ -744,7 +724,7 @@
    "objective": 5174.413,
    "iterations": 17,
    "objective_evaluations": 25,
-   "cpu_time": 0.038888
+   "cpu_time": 0.054641
   },
   {
    "problem": "hs076",
@@ -754,7 +734,7 @@
    "objective": -4.681818,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.000102
+   "cpu_time": 0.000123
   },
   {
    "problem": "hs077",
@@ -764,7 +744,7 @@
    "objective": 0.2415051,
    "iterations": 9,
    "objective_evaluations": 11,
-   "cpu_time": 0.034063
+   "cpu_time": 0.000177
   },
   {
    "problem": "hs078",
@@ -774,7 +754,7 @@
    "objective": -2.9197,
    "iterations": 4,
    "objective_evaluations": 5,
-   "cpu_time": 0.008694
+   "cpu_time": 0.016349
   },
   {
    "problem": "hs079",
@@ -784,7 +764,7 @@
    "objective": 0.07877682,
    "iterations": 4,
    "objective_evaluations": 5,
-   "cpu_time": 0.011015
+   "cpu_time": 0.000159
   },
   {
    "problem": "hs080",
@@ -794,7 +774,7 @@
    "objective": 0.05394985,
    "iterations": 7,
    "objective_evaluations": 8,
-   "cpu_time": 0.002075
+   "cpu_time": 0.136837
   },
   {
    "problem": "hs081",
@@ -804,7 +784,7 @@
    "objective": 0.05394985,
    "iterations": 17,
    "objective_evaluations": 29,
-   "cpu_time": 0.000344
+   "cpu_time": 0.002112
   },
   {
    "problem": "hs083",
@@ -814,7 +794,7 @@
    "objective": -30665.54,
    "iterations": 4,
    "objective_evaluations": 5,
-   "cpu_time": 0.01789
+   "cpu_time": 0.000174
   },
   {
    "problem": "hs084",
@@ -824,7 +804,7 @@
    "objective": -5280335.0,
    "iterations": 6,
    "objective_evaluations": 10,
-   "cpu_time": 0.000191
+   "cpu_time": 0.000205
   },
   {
    "problem": "hs085",
@@ -832,9 +812,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": -1.905155,
-   "iterations": 7,
-   "objective_evaluations": 8,
-   "cpu_time": 0.007147
+   "iterations": 11,
+   "objective_evaluations": 13,
+   "cpu_time": 0.078715
   },
   {
    "problem": "hs086",
@@ -844,7 +824,7 @@
    "objective": -32.34868,
    "iterations": 4,
    "objective_evaluations": 5,
-   "cpu_time": 0.004113
+   "cpu_time": 0.000217
   },
   {
    "problem": "hs087",
@@ -854,7 +834,7 @@
    "objective": 8827.598,
    "iterations": 9,
    "objective_evaluations": 10,
-   "cpu_time": 0.00878
+   "cpu_time": 0.001112
   },
   {
    "problem": "hs088",
@@ -864,7 +844,7 @@
    "objective": 1.362657,
    "iterations": 24,
    "objective_evaluations": 31,
-   "cpu_time": 0.009402
+   "cpu_time": 0.01522
   },
   {
    "problem": "hs089",
@@ -874,7 +854,7 @@
    "objective": 1.362657,
    "iterations": 16,
    "objective_evaluations": 27,
-   "cpu_time": 0.009591
+   "cpu_time": 0.04989
   },
   {
    "problem": "hs090",
@@ -884,7 +864,7 @@
    "objective": 1.362657,
    "iterations": 42,
    "objective_evaluations": 81,
-   "cpu_time": 0.075682
+   "cpu_time": 0.163607
   },
   {
    "problem": "hs091",
@@ -894,7 +874,7 @@
    "objective": 1.362657,
    "iterations": 63,
    "objective_evaluations": 111,
-   "cpu_time": 0.209888
+   "cpu_time": 0.195502
   },
   {
    "problem": "hs092",
@@ -904,7 +884,7 @@
    "objective": 1.362657,
    "iterations": 39,
    "objective_evaluations": 89,
-   "cpu_time": 0.134631
+   "cpu_time": 0.354654
   },
   {
    "problem": "hs093",
@@ -914,7 +894,7 @@
    "objective": 13.2875,
    "iterations": 2,
    "objective_evaluations": 4,
-   "cpu_time": 0.007153
+   "cpu_time": 0.003013
   },
   {
    "problem": "hs095",
@@ -924,7 +904,7 @@
    "objective": 0.01561953,
    "iterations": 2,
    "objective_evaluations": 4,
-   "cpu_time": 0.000139
+   "cpu_time": 0.00013
   },
   {
    "problem": "hs096",
@@ -934,7 +914,7 @@
    "objective": 0.01561953,
    "iterations": 2,
    "objective_evaluations": 4,
-   "cpu_time": 0.000722
+   "cpu_time": 0.000124
   },
   {
    "problem": "hs097",
@@ -944,7 +924,7 @@
    "objective": 4.071246,
    "iterations": 6,
    "objective_evaluations": 8,
-   "cpu_time": 0.001432
+   "cpu_time": 0.000145
   },
   {
    "problem": "hs098",
@@ -954,7 +934,7 @@
    "objective": 4.071246,
    "iterations": 6,
    "objective_evaluations": 8,
-   "cpu_time": 0.000159
+   "cpu_time": 0.000197
   },
   {
    "problem": "hs099",
@@ -962,9 +942,9 @@
    "rewritten": [],
    "detail": "Suboptimal point",
    "objective": -831079900.0,
-   "iterations": 38,
-   "objective_evaluations": 62,
-   "cpu_time": 0.073072
+   "iterations": 23,
+   "objective_evaluations": 27,
+   "cpu_time": 0.0761
   },
   {
    "problem": "hs100",
@@ -974,7 +954,7 @@
    "objective": 680.6301,
    "iterations": 8,
    "objective_evaluations": 12,
-   "cpu_time": 0.001221
+   "cpu_time": 0.000219
   },
   {
    "problem": "hs100lnp",
@@ -984,7 +964,7 @@
    "objective": 680.6301,
    "iterations": 8,
    "objective_evaluations": 12,
-   "cpu_time": 0.000205
+   "cpu_time": 0.000261
   },
   {
    "problem": "hs100mod",
@@ -994,7 +974,7 @@
    "objective": 678.7547,
    "iterations": 8,
    "objective_evaluations": 12,
-   "cpu_time": 0.000289
+   "cpu_time": 0.000659
   },
   {
    "problem": "hs101",
@@ -1004,7 +984,7 @@
    "objective": 1809.765,
    "iterations": 13,
    "objective_evaluations": 21,
-   "cpu_time": 0.023482
+   "cpu_time": 0.000583
   },
   {
    "problem": "hs102",
@@ -1014,7 +994,7 @@
    "objective": 911.8806,
    "iterations": 14,
    "objective_evaluations": 18,
-   "cpu_time": 0.005482
+   "cpu_time": 0.008687
   },
   {
    "problem": "hs103",
@@ -1024,7 +1004,7 @@
    "objective": 543.668,
    "iterations": 838,
    "objective_evaluations": 1671,
-   "cpu_time": 0.309384
+   "cpu_time": 0.861906
   },
   {
    "problem": "hs104",
@@ -1034,7 +1014,7 @@
    "objective": 3.951163,
    "iterations": 15,
    "objective_evaluations": 25,
-   "cpu_time": 0.004861
+   "cpu_time": 0.00813
   },
   {
    "problem": "hs105",
@@ -1042,9 +1022,9 @@
    "rewritten": [],
    "detail": "Feasible KKT point",
    "objective": 1151.396,
-   "iterations": 7,
-   "objective_evaluations": 9,
-   "cpu_time": 0.031585
+   "iterations": 9,
+   "objective_evaluations": 12,
+   "cpu_time": 0.2431
   },
   {
    "problem": "hs106",
@@ -1054,17 +1034,17 @@
    "objective": 7049.248,
    "iterations": 14,
    "objective_evaluations": 16,
-   "cpu_time": 0.000203
+   "cpu_time": 0.000361
   },
   {
    "problem": "hs107",
-   "category": "solved",
+   "category": "unsolved",
    "rewritten": [],
-   "detail": "Feasible KKT point",
-   "objective": 5055.012,
-   "iterations": 5,
-   "objective_evaluations": 6,
-   "cpu_time": 0.000187
+   "detail": "Infeasible stationary point",
+   "objective": 7431.368,
+   "iterations": 13,
+   "objective_evaluations": 25,
+   "cpu_time": 0.05134
   },
   {
    "problem": "hs108",
@@ -1074,7 +1054,7 @@
    "objective": -0.8660257,
    "iterations": 18,
    "objective_evaluations": 25,
-   "cpu_time": 0.003541
+   "cpu_time": 0.000724
   },
   {
    "problem": "hs109",
@@ -1084,7 +1064,7 @@
    "objective": 5326.851,
    "iterations": 17,
    "objective_evaluations": 24,
-   "cpu_time": 0.007257
+   "cpu_time": 0.004653
   },
   {
    "problem": "hs110",
@@ -1094,7 +1074,7 @@
    "objective": -45.77847,
    "iterations": 3,
    "objective_evaluations": 5,
-   "cpu_time": 0.001749
+   "cpu_time": 0.000165
   },
   {
    "problem": "hs111",
@@ -1104,7 +1084,7 @@
    "objective": -47.76109,
    "iterations": 24,
    "objective_evaluations": 40,
-   "cpu_time": 0.002812
+   "cpu_time": 0.11884
   },
   {
    "problem": "hs111lnp",
@@ -1114,7 +1094,7 @@
    "objective": -47.76109,
    "iterations": 24,
    "objective_evaluations": 40,
-   "cpu_time": 0.017241
+   "cpu_time": 0.007871
   },
   {
    "problem": "hs112",
@@ -1124,7 +1104,7 @@
    "objective": -47.76109,
    "iterations": 12,
    "objective_evaluations": 13,
-   "cpu_time": 0.015119
+   "cpu_time": 0.027718
   },
   {
    "problem": "hs113",
@@ -1134,7 +1114,7 @@
    "objective": 24.30621,
    "iterations": 5,
    "objective_evaluations": 6,
-   "cpu_time": 0.004455
+   "cpu_time": 0.000215
   },
   {
    "problem": "hs114",
@@ -1144,7 +1124,7 @@
    "objective": -1768.807,
    "iterations": 12,
    "objective_evaluations": 13,
-   "cpu_time": 0.001067
+   "cpu_time": 0.00033
   },
   {
    "problem": "hs116",
@@ -1154,7 +1134,7 @@
    "objective": 97.58751,
    "iterations": 13,
    "objective_evaluations": 14,
-   "cpu_time": 0.001432
+   "cpu_time": 0.00059
   },
   {
    "problem": "hs117",
@@ -1164,7 +1144,7 @@
    "objective": 32.34868,
    "iterations": 5,
    "objective_evaluations": 6,
-   "cpu_time": 0.000194
+   "cpu_time": 0.000253
   },
   {
    "problem": "hs118",
@@ -1174,7 +1154,7 @@
    "objective": 664.8204,
    "iterations": 2,
    "objective_evaluations": 3,
-   "cpu_time": 0.000149
+   "cpu_time": 0.000837
   },
   {
    "problem": "hs119",
@@ -1184,7 +1164,7 @@
    "objective": 244.8997,
    "iterations": 7,
    "objective_evaluations": 8,
-   "cpu_time": 0.000288
+   "cpu_time": 0.000383
   },
   {
    "problem": "hs21mod",
@@ -1194,7 +1174,7 @@
    "objective": -95.96,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.000114
+   "cpu_time": 0.000133
   },
   {
    "problem": "hs268",
@@ -1204,7 +1184,7 @@
    "objective": 4.092726e-12,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.000122
+   "cpu_time": 0.000126
   },
   {
    "problem": "hs35mod",
@@ -1214,7 +1194,7 @@
    "objective": 0.25,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.000141
+   "cpu_time": 0.000297
   },
   {
    "problem": "hs3mod",
@@ -1224,7 +1204,7 @@
    "objective": 0.0,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.000146
+   "cpu_time": 0.006311
   },
   {
    "problem": "hs44new",
@@ -1234,7 +1214,7 @@
    "objective": -13.0,
    "iterations": 1,
    "objective_evaluations": 2,
-   "cpu_time": 0.002136
+   "cpu_time": 0.001352
   },
   {
    "problem": "hs99exp",
@@ -1244,7 +1224,7 @@
    "objective": -1008062000.0,
    "iterations": 32,
    "objective_evaluations": 44,
-   "cpu_time": 0.025038
+   "cpu_time": 0.195966
   }
  ]
 }

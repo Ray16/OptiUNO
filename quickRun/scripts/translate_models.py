@@ -6,7 +6,11 @@ the first standalone `solve;` on is dropped, then the model is loaded into
 AMPL (demo module) and written as an ASCII .nl file.
 
 Models that fail to translate are removed from the test set and reported in
-models/untranslatable.md with the failure reason.
+problems/HS_model/untranslatable.md with the failure reason.
+
+Note: the .mod source dir (MOD_DIR) stays under quickRun/models/mod, but the
+translated .nl test set is written to the repo-root problems/HS_model/ (so the
+input and output dirs are no longer siblings).
 """
 import re
 import sys
@@ -15,9 +19,9 @@ from pathlib import Path
 from amplpy import AMPL, modules
 
 ROOT = Path(__file__).resolve().parent.parent
-MOD_DIR = ROOT / "models" / "mod"
-NL_DIR = ROOT / "models" / "nl"
-REPORT = ROOT / "models" / "untranslatable.md"
+MOD_DIR = ROOT / "models" / "mod"                       # .mod source (input)
+NL_DIR = ROOT.parent / "problems" / "HS_model"          # .nl test set (output), at repo root
+REPORT = NL_DIR / "untranslatable.md"
 
 # hs35i/hs76i: dead links on the Vanderbei index, absent from cute.tar.gz
 UNAVAILABLE = {

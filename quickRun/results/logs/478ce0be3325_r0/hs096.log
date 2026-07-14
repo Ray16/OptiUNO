@@ -1,0 +1,40 @@
+$ /home/sdinh/sandbox/OptiUNO/quickRun/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs096.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=exact inertia_correction_strategy=none globalization_mechanism=TR globalization_strategy=fletcher_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs096.nl
+6 variables, 4 constraints (0 equality, 4 inequality)
+Problem type: NLP
+
+Non-default options:
+QP_solver = BQPD
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         1.00e+01  OPT   -         0.000e+00  4.97e+00  1.00e+02  0.00e+00  initial point 
+ 1      1      -         1.00e+01  OPT   3.32e-03  1.562e-02  0.00e+00  3.19e-01  0.00e+00  ✔ (h-type)    
+ 2      1      -         1.00e+01  OPT   0.00e+00  1.562e-02  0.00e+00  0.00e+00  0.00e+00  0 primal step 
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR Fletcher-filter restoration inequality-constrained SQP method with exact Hessian and no inertia correction)
+Tue Jul 14 11:39:24 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			0.01561953
+Primal feasibility:			0
+┌ Stationarity residual:		0
+│ Primal feasibility:			0
+└ Complementarity residual:		0
+CPU time:				0.000137s
+Iterations:				2
+Objective evaluations:			4
+Constraints evaluations:		3
+Objective gradient evaluations:		3
+Jacobian evaluations:			3
+Hessian evaluations:			2
+Number of subproblems solved:		2

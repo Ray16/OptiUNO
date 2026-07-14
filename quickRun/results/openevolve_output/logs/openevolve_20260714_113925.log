@@ -1,0 +1,47 @@
+2026-07-14 11:39:25,711 - openevolve.controller - INFO - Logging to /home/sdinh/sandbox/OptiUNO/quickRun/results/openevolve_output/logs/openevolve_20260714_113925.log
+2026-07-14 11:39:25,711 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-07-14 11:39:25,712 - openevolve.llm.claude_code - INFO - Initialized ClaudeCodeLLM with model: sonnet
+2026-07-14 11:39:25,712 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: sonnet (weight: 1.00)
+2026-07-14 11:39:25,712 - openevolve.llm.claude_code - INFO - Initialized ClaudeCodeLLM with model: sonnet
+2026-07-14 11:39:25,712 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-07-14 11:39:25,712 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-07-14 11:39:25,712 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-07-14 11:39:25,714 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/sdinh/sandbox/OptiUNO/quickRun/evolve/evaluator.py
+2026-07-14 11:39:25,715 - openevolve.evaluator - INFO - Initialized evaluator with /home/sdinh/sandbox/OptiUNO/quickRun/evolve/evaluator.py
+2026-07-14 11:39:25,715 - openevolve.controller - INFO - Initialized OpenEvolve with /home/sdinh/sandbox/OptiUNO/quickRun/evolve/initial_program.py
+2026-07-14 11:39:25,715 - openevolve.controller - INFO - Adding initial program to database
+2026-07-14 11:39:25,717 - openevolve.evaluator - INFO - Evaluated program 92ecc59b-1bbe-459e-863b-e42811d95da9 in 0.00s: combined_score=1.0600, reliability=0.9669, cum_cpu_time=4.1372
+2026-07-14 11:39:25,717 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'reliability': 6, 'cum_cpu_time': 6}
+2026-07-14 11:39:25,717 - openevolve.controller - INFO - Stored artifacts for initial program
+2026-07-14 11:39:25,721 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2026-07-14 11:39:25,721 - openevolve.process_parallel - INFO - Set max None tasks per child
+2026-07-14 11:39:25,722 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-07-14 11:39:25,722 - openevolve.controller - INFO - Using island-based evolution with 3 islands
+2026-07-14 11:39:25,722 - openevolve.database - INFO - Island Status:
+2026-07-14 11:39:25,722 - openevolve.database - INFO -  * Island 0: 1 programs, best=1.0600, avg=1.0600, diversity=0.00, gen=0 (best: 92ecc59b-1bbe-459e-863b-e42811d95da9)
+2026-07-14 11:39:25,722 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-07-14 11:39:25,722 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-07-14 11:39:25,722 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 5 iterations (total: 6)
+2026-07-14 11:39:25,727 - openevolve.process_parallel - INFO - Early stopping disabled
+2026-07-14 11:39:25,727 - openevolve.llm.claude_code - INFO - Initialized ClaudeCodeLLM with model: sonnet
+2026-07-14 11:39:25,728 - openevolve.llm.claude_code - INFO - Initialized ClaudeCodeLLM with model: sonnet
+2026-07-14 11:39:25,729 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-07-14 11:39:25,729 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/sdinh/sandbox/OptiUNO/quickRun/evolve/evaluator.py
+2026-07-14 11:39:25,729 - openevolve.evaluator - INFO - Initialized evaluator with /home/sdinh/sandbox/OptiUNO/quickRun/evolve/evaluator.py
+2026-07-14 11:39:25,731 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:39:26,422 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:39:26,428 - openevolve.process_parallel - WARNING - Iteration 1 error: No valid diffs found in response
+2026-07-14 11:39:27,209 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:39:27,210 - openevolve.process_parallel - WARNING - Iteration 2 error: No valid diffs found in response
+2026-07-14 11:39:27,849 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:39:27,858 - openevolve.process_parallel - WARNING - Iteration 3 error: No valid diffs found in response
+2026-07-14 11:39:28,400 - openevolve.llm.ensemble - INFO - Sampled model: sonnet
+2026-07-14 11:39:28,406 - openevolve.process_parallel - WARNING - Iteration 4 error: No valid diffs found in response
+2026-07-14 11:39:28,967 - openevolve.process_parallel - WARNING - Iteration 5 error: No valid diffs found in response
+2026-07-14 11:39:28,967 - openevolve.process_parallel - INFO - ✅ Evolution completed - Maximum iterations reached
+2026-07-14 11:39:28,968 - openevolve.controller - INFO - Received signal 15, initiating graceful shutdown...
+2026-07-14 11:39:28,968 - openevolve.process_parallel - INFO - Graceful shutdown requested...
+2026-07-14 11:39:28,972 - openevolve.process_parallel - INFO - Stopped process pool
+2026-07-14 11:39:28,972 - openevolve.controller - INFO - Using tracked best program: 92ecc59b-1bbe-459e-863b-e42811d95da9
+2026-07-14 11:39:28,972 - openevolve.controller - INFO - Evolution complete. Best program has metrics: combined_score=1.0600, reliability=0.9669, cum_cpu_time=4.1372
+2026-07-14 11:39:28,972 - openevolve.controller - INFO - Saved best program to /home/sdinh/sandbox/OptiUNO/quickRun/results/openevolve_output/best/best_program.py with program info to /home/sdinh/sandbox/OptiUNO/quickRun/results/openevolve_output/best/best_program_info.json

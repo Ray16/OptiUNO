@@ -1,0 +1,62 @@
+$ /home/sdinh/sandbox/OptiUNO/quickRun/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs039.nl preset=filtersqp time_limit=20.0
+
+Original model /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs039.nl
+4 variables, 2 constraints (2 equality, 0 inequality)
+Problem type: NLP
+
+Non-default options:
+QP_solver = BQPD
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         1.00e+01  OPT   -         -2.000e+00 1.20e+01  1.00e+00  0.00e+00  initial point 
+ 1      1      -         1.00e+01  OPT   1.00e+01  -5.333e+00 2.15e+02  -         -         ✘ (filter)    
+ -      2      -         5.00e+00  OPT   5.00e+00  -3.250e+00 3.76e+01  1.72e+00  0.00e+00  ✔ (h-type)    
+ 2      1      -         1.00e+01  OPT   1.00e+01  -2.794e+00 2.07e+01  3.13e-01  0.00e+00  ✔ (h-type)    
+ 3      1      -         2.00e+01  OPT   2.00e+01  -3.427e+00 4.65e+01  3.74e-01  0.00e+00  ✔ (h-type)    
+ 4      1      -         4.00e+01  OPT   4.00e+01  -4.483e+00 9.34e+01  5.30e-02  0.00e+00  ✔ (h-type)    
+ 5      1      -         8.00e+01  OPT   8.00e+01  -5.593e+00 2.59e+02  -         -         ✘ (filter)    
+ -      2      -         4.00e+01  OPT   4.00e+01  -4.929e+00 1.47e+02  -         -         ✘ (filter)    
+ -      3      -         2.00e+01  OPT   2.00e+01  -4.598e+00 1.06e+02  -         -         ✘ (filter)    
+ -      4      -         1.00e+01  OPT   1.00e+01  -4.432e+00 8.81e+01  1.70e-02  0.00e+00  ✔ (h-type)    
+ 6      1      -         2.00e+01  OPT   2.00e+01  -4.770e+00 1.35e+02  -         -         ✘ (filter)    
+ -      2      -         1.00e+01  OPT   1.00e+01  -4.490e+00 1.00e+02  -         -         ✘ (filter)    
+ -      3      -         5.00e+00  OPT   -         -          -         -         -         infeasible    
+ -      3      0.00e+00  5.00e+00  FEAS  5.00e+00  -4.346e+00 8.84e+01  -         -         ✘ (Armijo)    
+ -      4      0.00e+00  2.50e+00  FEAS  2.50e+00  -4.389e+00 7.57e+01  4.26e+00  0.00e+00  ✔ (Armijo)    
+ 7      1      0.00e+00  5.00e+00  FEAS  5.00e+00  -4.411e+00 6.64e+01  8.49e-01  0.00e+00  ✔ (Armijo)    
+ 8      1      0.00e+00  1.00e+01  FEAS  1.00e+01  -4.131e+00 5.34e+01  8.40e-01  0.00e+00  ✔ (Armijo)    
+ 9      1      0.00e+00  2.00e+01  FEAS  2.00e+01  -3.721e+00 3.77e+01  8.26e-01  0.00e+00  ✔ (Armijo)    
+ 10     1      0.00e+00  4.00e+01  FEAS  4.00e+01  -2.709e+00 1.25e+01  8.81e-01  0.00e+00  ✔ (Armijo)    
+ 11     1      0.00e+00  8.00e+01  FEAS  6.25e+00  -1.954e+00 4.78e+00  4.21e-01  0.00e+00  ✔ (Armijo)    
+ 12     1      -         8.00e+01  OPT   1.31e+00  -1.471e+00 1.49e+00  3.60e-01  0.00e+00  ✔ (h-type)    
+ 13     1      -         8.00e+01  OPT   6.12e-01  -1.184e+00 4.23e-01  3.00e-01  0.00e+00  ✔ (h-type)    
+ 14     1      -         8.00e+01  OPT   2.50e-01  -1.044e+00 8.69e-02  1.82e-01  0.00e+00  ✔ (h-type)    
+ 15     1      -         8.00e+01  OPT   6.43e-02  -1.003e+00 6.62e-03  3.91e-02  0.00e+00  ✔ (h-type)    
+ 16     1      -         8.00e+01  OPT   5.08e-03  -1.000e+00 4.47e-05  6.54e-04  0.00e+00  ✔ (h-type)    
+ 17     1      -         8.00e+01  OPT   3.36e-05  -1.000e+00 2.00e-09  6.50e-08  0.00e+00  ✔ (h-type)    
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR Fletcher-filter restoration inequality-constrained SQP method with exact Hessian and no inertia correction)
+Tue Jul 14 11:38:52 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			-1
+Primal feasibility:			2.001922e-09
+┌ Stationarity residual:		6.4977e-08
+│ Primal feasibility:			2.001922e-09
+└ Complementarity residual:		0
+CPU time:				0.00053s
+Iterations:				17
+Objective evaluations:			25
+Constraints evaluations:		25
+Objective gradient evaluations:		24
+Jacobian evaluations:			25
+Hessian evaluations:			18
+Number of subproblems solved:		25

@@ -1,0 +1,45 @@
+$ /home/sdinh/sandbox/OptiUNO/quickRun/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs002.nl preset=filtersqp time_limit=20.0
+
+Original model /home/sdinh/sandbox/OptiUNO/quickRun/models/nl/hs002.nl
+2 variables, 1 constraints (0 equality, 1 inequality)
+Problem type: NLP
+
+Non-default options:
+QP_solver = BQPD
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         1.00e+01  OPT   -         9.090e+02  5.00e-01  2.48e+03  0.00e+00  initial point 
+ 1      1      -         1.00e+01  OPT   2.98e+00  8.970e+00  0.00e+00  6.01e+00  0.00e+00  ✔ (f-type)    
+ 2      1      -         1.00e+01  OPT   2.48e+00  2.024e+01  0.00e+00  -         -         ✘ (f-type)    
+ -      2      -         1.24e+00  OPT   1.24e+00  8.023e+00  0.00e+00  6.90e+01  0.00e+00  ✔ (f-type)    
+ 3      1      -         2.48e+00  OPT   3.80e-01  6.504e+00  0.00e+00  1.76e+01  0.00e+00  ✔ (f-type)    
+ 4      1      -         2.48e+00  OPT   8.60e-01  5.705e+00  0.00e+00  4.68e+01  0.00e+00  ✔ (f-type)    
+ 5      1      -         2.48e+00  OPT   3.39e-02  4.942e+00  0.00e+00  1.73e+00  0.00e+00  ✔ (f-type)    
+ 6      1      -         2.48e+00  OPT   1.43e-03  4.941e+00  0.00e+00  3.04e-03  0.00e+00  ✔ (f-type)    
+ 7      1      -         2.48e+00  OPT   2.53e-06  4.941e+00  0.00e+00  9.44e-09  0.00e+00  ✔ (f-type)    
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR Fletcher-filter restoration inequality-constrained SQP method with exact Hessian and no inertia correction)
+Tue Jul 14 11:38:52 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			4.941229
+Primal feasibility:			0
+┌ Stationarity residual:		9.444436e-09
+│ Primal feasibility:			0
+└ Complementarity residual:		0
+CPU time:				0.000179s
+Iterations:				7
+Objective evaluations:			9
+Constraints evaluations:		9
+Objective gradient evaluations:		9
+Jacobian evaluations:			9
+Hessian evaluations:			7
+Number of subproblems solved:		8

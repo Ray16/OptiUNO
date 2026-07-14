@@ -27,9 +27,11 @@ The pipeline is layered; each layer only knows the one below it:
    iterations and the **composed-method banner**, returns a typed `UnoResult`. Stdlib-only.
    Never raises on a solver failure. This is the single merged driver (the old
    `harness/uno_runner.py` and `scripts/uno_runner.py` were merged into it); it resolves
-   the binary via `uno_bin`/`$UNO_AMPL_BIN`/PATH and auto-adds the bundled `lib`/`deps` to
-   `LD_LIBRARY_PATH` when it sees the `external/uno` release layout. `benchmark.py` imports
-   it (adding the repo root to `sys.path`) and passes `uno_bin=external/uno/bin/uno_ampl`.
+   the binary via `optiuno/utils.py:select_uno_bin` (`uno_bin`/`$UNO_AMPL_BIN`/PATH, then the
+   bundled build as a fallback) and auto-adds the bundled `lib`/`deps` to `LD_LIBRARY_PATH`
+   when it sees the `external/uno` release layout. `benchmark.py` imports it (adding the repo
+   root to `sys.path`) and pins the bundled build via `bundled_uno_bin()` (repo-root
+   `../external/uno/bin/uno_ampl`) for reproducibility.
 2. `harness/classify.py` — turns one result into `{category, rewritten, detail}`.
    Categories: `solved` / `unsolved` / `timeout` / `invalid` / `crash`.
    **Key idea:** `uno_ampl` exits 0 even on failed solves, so classification keys
@@ -63,10 +65,15 @@ The six ingredients and their legal values (also in `results/quickRun/uno-option
 ## Path convention & what is / isn't committed
 
 Every script sets `ROOT = <quickRun>/` and reads/writes **relative to it**:
-`models/nl/*.nl`, `results/`, `harness/cache/`, `references/`.
+`results/`, `harness/cache/`, `references/`. **One exception:** the HS test set
+lives at the repo root, `../problems/HS_model/*.nl` (referenced as
+`ROOT.parent / "problems" / "HS_model"`), not under `quickRun/`.
 
 Committed: `evolve/`, `harness/*.py`, `harness/cache/` (75 cached evaluations),
-`scripts/`, and `external/uno/` (the entire self-contained v2.8.0 binary + libs).
+and `scripts/`. The bundled UNO build (`external/uno/`, the entire self-contained
+v2.8.0 binary + libs) now lives at the **repo root** (`../external/uno/`), shared
+project-wide rather than under `quickRun/`; `benchmark.py` reaches it via
+`optiuno.utils.bundled_uno_bin()`.
 
 **NOT committed — must be recreated before a run:**
 - `.venv/` — no `setup.sh` is committed; create a venv and install
@@ -74,9 +81,12 @@ Committed: `evolve/`, `harness/*.py`, `harness/cache/` (75 cached evaluations),
   the AMPL `base` engine module and a license that permits `write` (**AMPL for
   Academics**, not Community Edition — CE blocks `write`). *Suggest* these to the
   user; do not install them yourself (parent rule).
-- `models/mod/*.mod` + `models/nl/*.nl` — the HS test set. Source `.mod` files come
-  from Vanderbei (many index links are dead; recovered via the bulk `cute.tar.gz`,
-  zero-padded names). `scripts/translate_models.py` produces `models/nl/`.
+- `../problems/HS_model/*.nl` — the HS test set (at the repo root, alongside
+  `problems/CUTE/`). Source `.mod` files come from Vanderbei (many index links are
+  dead; recovered via the bulk `cute.tar.gz`, zero-padded names) and, when present,
+  live under `quickRun/models/mod/`; `scripts/translate_models.py` reads them and
+  writes the `.nl` set to `../problems/HS_model/`. (The current set was populated by
+  copying the `hs*` `.nl` files from `../problems/CUTE/`.)
 - `references/arxiv-2406.13454/…/statistics_table.tex` — needed only by
   `validate_presets.py`.
 - `results/` — the code writes here, but the **finished outputs are checked in one
@@ -90,7 +100,7 @@ All scripts assume the venv Python and are run from `quickRun/`:
 
 ```bash
 # 0. (one-time) translate Vanderbei .mod -> .nl  (needs models/mod + amplpy)
-.venv/bin/python scripts/translate_models.py      # -> models/nl/, models/untranslatable.md
+.venv/bin/python scripts/translate_models.py      # -> ../problems/HS_model/, ../problems/HS_model/untranslatable.md
 
 # 1. sanity-check the harness against the published paper (arXiv:2406.13454)
 .venv/bin/python scripts/validate_presets.py      # -> results/preset_validation.md

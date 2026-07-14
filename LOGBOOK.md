@@ -115,3 +115,161 @@ Append-only history of changes and actions. Newest entries at the bottom. Never 
   building blocks (→budget without preset tuning); invalid value (→error, rc 0); nonexistent model (→failed);
   malformed .nl (→failed, rc 1, captured `jacdim` error); `--write-solution` (.sol written, path recorded);
   timeout on 50k-var mccormck (→timeout); and programmatic `from uno_runner import run_uno`.
+
+## 2026-07-14
+
+### Session 4 — Crucible: ingest OpenEvolve sources + AlphaEvolve GA note
+
+- Answered conceptual questions on AlphaEvolve vs. Bayesian optimization vs. genetic algorithms,
+  and on the AlphaEvolve/OpenEvolve setup requirements, grounded in the existing crucible wiki.
+  Correction learned this session: **AlphaEvolve went generally available on 2026-07-09** as a
+  hosted API on Google Cloud's Gemini Enterprise Agent Platform (client-side loop: query API for
+  mutated candidates → score with your local evaluator → submit scores back). Supersedes the prior
+  "not publicly available" understanding (was true as of the Jan 2026 knowledge cutoff).
+- **Ingested 4 OpenEvolve web sources** into crucible (`crucible ingest`, stored under
+  `.crucible/sources/external/web/`): the GitHub README (`sharma2026`), and three Hugging Face
+  blog posts — the intro/announcement (`sharma2025`), GPU-kernel discovery (`sharma2025`), and the
+  AlgoTune study "Towards Open Evolutionary Agents" (`andthattoo2025`). Fetched via `curl`
+  (web_search is blocked by GCP org policy on this project; `pandoc` not installed, so blog HTML was
+  converted to text with the already-present `bs4`). No packages installed.
+- **Cite-key limitation found:** crucible *derives* cite keys as firstauthor+year and does not store
+  or disambiguate them, so both Sharma-2025 blogs collide on `citep:sharma2025` (one bib entry). The
+  `--bibtex` flag does not override the derived key. Article→source linking is unaffected because it
+  uses `SOURCE_KEYS` filename tokens (`oe_readme`/`oe_blog_intro`/`oe_blog_gpu`/`oe_blog_agents`),
+  which were verified per-article with `crucible sources`. Cosmetic bibliography collision only.
+- **Distilled 5 new wiki articles + 1 update:** concepts `openevolve.org` (anchor: architecture,
+  config, LLM options, setup, OptiUNO mapping) and `openevolve-empirical-findings.org` (parallelism
+  essential, diff-vs-rewrite by model strength, temp ≈0.4, artifacts +17%, more iterations help,
+  ensembles underperform, cascade eval saves ~70%); summaries `sharma-2025-openevolve.org`,
+  `sharma-2025-openevolve-gpu-kernels.org`, `andthattoo-2025-open-evolutionary-agents.org`; and a
+  cross-link section added to existing `alphaevolve.org`.
+- **Maintenance:** `crucible sync` + `manifest` + `index` + `lint`. Wiki grew 17→22 articles,
+  17→21 concepts, 2→6 sources, 93→130 links; new topics `openevolve`, `benchmarking`, `algotune`,
+  `gpu-optimization`. Lint clean of citation/link errors (remaining items are the auto-generated
+  `index.org` frontmatter warnings and two optional "no dedicated article" info hints); no orphans.
+  Fixed a mid-editing snag where a delete/re-ingest cycle left the GPU blog as an orphan file with no
+  DB row (re-ingested cleanly). Per rules: nothing committed.
+
+---
+
+## 2026-07-14 — Merged the two `uno_runner.py` into `optiuno/uno_runner.py`
+
+The repo had two divergent UNO drivers: `scripts/uno_runner.py` (typed `UnoResult`, binary
+resolution, full field/residual parsing, CLI — but never imported by any code) and
+`quickRun/harness/uno_runner.py` (plain-dict return, hard-wired bundled binary +
+`LD_LIBRARY_PATH`, banner parsing, `DEFAULT_TIME_LIMIT`/watchdog, `log_path` — imported only
+by `quickRun/harness/benchmark.py`). Merged them into a single **`optiuno/uno_runner.py`**
+(built on the richer `scripts/` version) and deleted both originals.
+
+- Folded the quickRun-only features into the `UnoResult` design: added `banner` (composed-method
+  string), `problem`, `wall_time`; added `DEFAULT_TIME_LIMIT = 20.0`, a `time_limit=` option
+  (also drives the default `time_limit+10` watchdog), a `log_path` writer, and automatic
+  `LD_LIBRARY_PATH` wiring when the resolved binary is a self-contained release (detected by a
+  `deps/` sibling of `lib/`, so it never mis-fires for system installs — no path baked into
+  `optiuno`). Signature made backward-compatible with both old call styles:
+  `run_uno(nl_path, options=None, *, preset=None, uno_bin=None, time_limit=None, timeout=None, ...)`.
+- Callers: `quickRun/harness/benchmark.py` now imports `from optiuno.uno_runner import ...`
+  (adds the repo root to `sys.path`), passes `uno_bin=external/uno/bin/uno_ampl`, and reads the
+  `UnoResult` by attribute (kept the emitted per-problem key `objective_evaluations` so the
+  cache/CSV schema and existing `harness/cache/*.json` stay valid). `quickRun/harness/classify.py`
+  switched from dict `.get()` to `UnoResult` attributes. The four scripts that import
+  `harness.benchmark` (evaluator, run_evolution, validate_presets, variance_runs) needed no
+  changes. `optiuno/__init__.py` re-exports `run_uno`/`UnoResult`/`DEFAULT_TIME_LIMIT` lazily
+  (PEP 562) so `python -m optiuno.uno_runner` runs without a runpy double-import warning.
+- CLI moved from `python scripts/uno_runner.py ...` to `python -m optiuno.uno_runner ...`
+  (also runnable as `python optiuno/uno_runner.py ...`).
+- Verified: py_compile of all changed files; `from optiuno import run_uno, UnoResult,
+  DEFAULT_TIME_LIMIT`; the `harness.benchmark`/`harness.classify` import chain resolves
+  `optiuno`; a live solve of `hs110`/`rosenbr` against the bundled binary returns
+  `outcome=solved` with `banner`/`wall_time`/`problem` populated and `classify()` →
+  `solved / Feasible KKT point`; and the CLI (`-m`, script-path, `--json`, `--time-limit`)
+  works with correct exit codes. (The full `benchmark`/`validate_presets` sweep still needs the
+  uncommitted HS `.nl` set under `quickRun/models/`.)
+
+---
+
+## 2026-07-14 — Moved bundled UNO to the repo root + system-first UNO selector
+
+Promoted the self-contained UNO v2.8.0 build from a `quickRun/`-only resource to a
+project-wide one, and centralized "which uno_ampl do we run?" in a single helper.
+
+- **Moved `quickRun/external/` → `external/`** at the repo root via `git mv` (579 files,
+  ~99 MB; staged as renames so history is preserved — **not committed**, per rule). New
+  bundled binary path: `external/uno/bin/uno_ampl` (with sibling `lib/` + `deps/`). No
+  `.gitignore` rule shadows the new location; `quickRun/external` is fully gone from the
+  index.
+- **New module `optiuno/utils.py`** — the single UNO-location authority (stdlib-only):
+  - `select_uno_bin(explicit=None)` — **system-first** selection: `explicit` → `$UNO_AMPL_BIN`
+    → `uno_ampl` on `PATH` → bundled `external/uno/bin/uno_ampl` fallback. Returns an
+    absolute path; raises `FileNotFoundError` (with guidance) only if even the bundled build
+    is missing. Usability check matches the old resolver (`is_file()` + `os.access(X_OK)`).
+  - `bundled_uno_bin()` / `BUNDLED_UNO_BIN` — the one place the bundled path is written
+    (computed from the package location: `Path(__file__).resolve().parents[1]/external/uno/...`).
+- **`optiuno/uno_runner.py`** now routes through the helper: `resolve_uno_bin()` is a thin
+  wrapper over `select_uno_bin()` (keeps the public name/signature; `run_uno` and the
+  `--uno-bin` CLI gain the bundled fallback for free). Dropped the now-unused `shutil` import
+  and `DEFAULT_BIN_NAME` constant; `_bundled_env()` (LD_LIBRARY_PATH wiring) is unchanged —
+  it derives paths from the binary's own layout, so it works at the new location. Docstrings
+  and CLI help updated to state the new precedence.
+- **`quickRun/harness/benchmark.py`** keeps its **bundled pin** for reproducibility (user's
+  choice), but now sources it from the helper: `UNO_BIN = bundled_uno_bin()` instead of the
+  hard-coded `ROOT/"external"/...`. The `run_uno(..., uno_bin=UNO_BIN)` call is unchanged, so
+  cache keying is preserved.
+- **`optiuno/__init__.py`** lazily re-exports `select_uno_bin`/`bundled_uno_bin` (routed to the
+  right submodule via a name→module map) alongside the existing `run_uno`/`UnoResult`/
+  `DEFAULT_TIME_LIMIT`; still no eager import (no runpy warning under `python -m`).
+  `quickRun/CLAUDE.md` updated to note the repo-root bundle + `select_uno_bin`/`bundled_uno_bin`.
+- **Verified:** py_compile of all four Python files; bundled fallback (env unset, empty PATH →
+  `select_uno_bin()` returns the root bundle); system-first precedence (a fake `$UNO_AMPL_BIN`
+  binary wins over bundled); a live solve of `problems/HS_model/hs071.nl --preset ipopt`
+  against the bundled binary → `outcome=solved`, obj 17.01402, `cmd[0]` = root bundle (proves
+  LD_LIBRARY_PATH wiring at the new location); `harness.benchmark.UNO_BIN` resolves to the root
+  bundle; `grep` finds no stale `quickRun/external` refs; all lazy re-exports import and
+  `python -m optiuno.uno_runner --help` runs with no RuntimeWarning. Nothing committed.
+
+---
+
+## 2026-07-14 — Provisioned the HS test set and moved it to `problems/HS_model/`
+
+Context: the `quickRun/` openEvolve run failed because (a) `run_evolution.py` hard-coded
+`.venv/bin/openevolve-run` but openEvolve is installed in the `sequential_OED` conda env, and
+(b) `quickRun/models/nl/` was empty (the Vanderbei `.mod` sources were never committed, so
+`translate_models.py` couldn't regenerate them).
+
+- **`run_evolution.py`:** made the Claude Code CLI (subscription) the **default** backend and
+  added `--api` to opt into the Anthropic API (kept `--claude-code` as a deprecated no-op).
+  Replaced the hard-coded `.venv/bin/openevolve-run` with `_find_openevolve_run()`, which
+  prefers the `openevolve-run` next to the running interpreter (so
+  `conda run -n sequential_OED python scripts/run_evolution.py` works), then a project `.venv`,
+  then PATH.
+- **Test set:** populated the set by copying the 121 faithful `hs*` `.nl` files from
+  `problems/CUTE/` (a COCONUT/Neumaier translation — a different provenance than the original
+  Vanderbei set, so not directly comparable to the archived `results/quickRun/` numbers). Moved
+  the 75 stale Vanderbei-based cache files to `quickRun/harness/cache/_vanderbei_backup/`
+  (preserved, not deleted).
+- **Verified the pipeline end-to-end:** baselines evaluate on the 121-problem set
+  (filtersqp 0.967 / 4.14 s, ipopt 0.917 / 11.11 s) and `run_evolution.py --smoke` runs to
+  completion via the Claude Code backend (exit 0). Known issue: openEvolve reported
+  "No valid diffs found in response" on every smoke iteration, so no mutation occurred — the
+  plumbing works but the diff-format/LLM layer needs a follow-up.
+
+### Relocated the test set: `quickRun/models/nl/` → `problems/HS_model/`
+
+Moved the 121-problem HS `.nl` set up to the repo root (alongside `problems/CUTE/`) and removed
+the now-empty `quickRun/models/`. Because quickRun scripts set `ROOT = quickRun/` but the target
+is one level up, the two live path assignments were repointed to
+`ROOT.parent / "problems" / "HS_model"` (not a string swap, which would give
+`quickRun/problems/...`):
+
+- `quickRun/harness/benchmark.py` — `NL_DIR` (the sole consumer; `test_problems()` and the
+  no-`.nl` RuntimeError follow via the variable). The four scripts that import
+  `harness.benchmark` (evaluator, run_evolution, validate_presets, variance_runs) inherit the
+  new path — no edits.
+- `quickRun/scripts/translate_models.py` — `NL_DIR` and `REPORT` (`untranslatable.md`, now
+  inside the test-set dir); `MANIFEST.csv` already writes inside `NL_DIR` so it travels
+  automatically. Left `MOD_DIR` (`quickRun/models/mod`, the `.mod` source) unchanged — input
+  and output are no longer siblings; noted in the docstring.
+- Docs updated: `quickRun/CLAUDE.md` (path-convention + commands), `STATUS.md` (new
+  `problems/HS_model/` entry). Config-hash cache is unaffected (keyed by options, not paths).
+- Verified: `NL_DIR` resolves to `problems/HS_model` and finds 121 problems; a full preset sweep
+  reproduces filtersqp 117/121 (0.967); both edited files byte-compile.
