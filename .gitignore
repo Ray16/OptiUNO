@@ -10,5 +10,8 @@
 .gitignore
 
 
-*/__pycache__/*
+*__pycache__*
 results/logs/*
+quickRun/harness/cache*
+quickRun/results/openevolve_output/logs/*.log
+quickRun/typescript
