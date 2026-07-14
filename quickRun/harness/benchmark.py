@@ -14,17 +14,23 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import sys
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+# The merged UNO driver lives in the top-level `optiuno` package (OptiUNO root).
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
+from optiuno.uno_runner import DEFAULT_TIME_LIMIT, run_uno  # noqa: E402
+
 from .classify import classify
-from .uno_runner import DEFAULT_TIME_LIMIT, run_uno
 
 ROOT = Path(__file__).resolve().parent.parent
 NL_DIR = ROOT / "models" / "nl"
 CACHE_DIR = ROOT / "harness" / "cache"
 LOG_ROOT = ROOT / "results" / "logs"
 EVAL_CSV = ROOT / "results" / "evaluations.csv"
+UNO_BIN = ROOT / "external" / "uno" / "bin" / "uno_ampl"  # bundled self-contained build
 
 DEFAULT_WORKERS = 8
 
@@ -56,21 +62,21 @@ def evaluate_config(options: dict, time_limit: float = DEFAULT_TIME_LIMIT,
     log_dir = LOG_ROOT / cache_key
 
     def one(nl: Path) -> dict:
-        res = run_uno(nl, options, time_limit=time_limit,
+        res = run_uno(nl, options=options, uno_bin=UNO_BIN, time_limit=time_limit,
                       log_path=log_dir / f"{nl.stem}.log")
         cls = classify(res)
-        cpu = res["cpu_time"]
+        cpu = res.cpu_time
         if cls["category"] == "timeout" or cpu is None:
             cpu = time_limit if cls["category"] == "timeout" else min(
-                res["wall_time"] or time_limit, time_limit)
+                res.wall_time or time_limit, time_limit)
         return {
-            "problem": res["problem"],
+            "problem": res.problem,
             "category": cls["category"],
             "rewritten": cls["rewritten"],
             "detail": cls["detail"],
-            "objective": res["objective"],
-            "iterations": res["iterations"],
-            "objective_evaluations": res["objective_evaluations"],
+            "objective": res.objective,
+            "iterations": res.iterations,
+            "objective_evaluations": res.objective_evals,
             "cpu_time": float(cpu),
         }
 

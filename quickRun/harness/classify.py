@@ -72,15 +72,15 @@ def rewritten_ingredients(requested: dict, banner: str) -> list[str]:
     )
 
 
-def classify(result: dict) -> dict:
+def classify(result: "UnoResult") -> dict:
     """Return {category, rewritten, detail} for one uno_runner result."""
-    banner = result.get("banner") or ""
-    opt_status = result.get("optimization_status") or ""
-    sol_status = result.get("solution_status") or ""
+    banner = result.banner or ""
+    opt_status = result.optimization_status or ""
+    sol_status = result.solution_status or ""
 
     if banner == "strategy combination not initialized":
         category = INVALID
-    elif result.get("timed_out"):
+    elif result.timed_out:
         category = TIMEOUT
     elif opt_status == "" and sol_status == "":
         category = CRASH
@@ -93,7 +93,7 @@ def classify(result: dict) -> dict:
 
     rewritten = []
     if category in (SOLVED, UNSOLVED, TIMEOUT) and banner:
-        rewritten = rewritten_ingredients(result.get("options", {}), banner)
+        rewritten = rewritten_ingredients(result.options, banner)
 
     return {
         "category": category,
