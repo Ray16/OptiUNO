@@ -1,0 +1,42 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs085.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=interior_point hessian_model=exact inertia_correction_strategy=none globalization_mechanism=TR globalization_strategy=fletcher_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs085.nl
+5 variables, 48 constraints (0 equality, 48 inequality)
+Problem type: NLP
+Reformulated model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs085.nl -> no fixed bounds -> equality constrained -> bounds relaxed
+53 variables, 48 constraints (48 equality, 0 inequality)
+
+Non-default options:
+QP_solver = BQPD
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         -         -         1.00e+01  OPT   -         -9.394e-01 5.94e+05  6.93e+00  8.74e+06  initial point 
+ 1      1      -         1.00e-01  -         1.00e+01  OPT   -         -          -         -         -         infeasible    
+ -      -      -         -         -         -         -     -         -          -         -         -         Barrier subproblem: the bounds are in the wrong order in the lower bound multiplier reset
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR Fletcher-filter restoration primal-dual interior-point method with exact Hessian and no inertia correction)
+Tue Jul 14 13:52:35 2026
+────────────────────────────────────────
+Optimization status:			Algorithmic error
+Solution status:			Suboptimal point
+Objective value:			-0.9393969
+Primal feasibility:			593836.3
+┌ Stationarity residual:		6.928273
+│ Primal feasibility:			593836.3
+└ Complementarity residual:		8740302
+CPU time:				0.021037s
+Iterations:				1
+Objective evaluations:			1
+Constraints evaluations:		2
+Objective gradient evaluations:		1
+Jacobian evaluations:			1
+Hessian evaluations:			2
+Number of subproblems solved:		2

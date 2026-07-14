@@ -1,0 +1,49 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs110.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=LBFGS inertia_correction_strategy=primal globalization_mechanism=LS globalization_strategy=waechter_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs110.nl
+10 variables, 0 constraints (0 equality, 0 inequality)
+Problem type: NLP
+The model is unconstrained, picking no relaxation
+
+Non-default options:
+QP_solver = BQPD
+linear_solver = MUMPS
+libhsl_path = 
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Steplength Regulariz |BFGS|  ||Step||  Objective  Statio    Compl     Status        
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         -          -         0       -         -4.313e+01 3.93e+00  0.00e+00  initial point 
+ 1      1      1.00e+00  1.00e+00   -         -       9.99e-01  4.204e+02  -         -         ✘ (Armijo)    
+ -      2      1.00e+00  5.00e-01   -         1       5.00e-01  -4.485e+01 5.21e+00  3.87e-01  ✔ (Armijo)    
+ 2      1      1.00e+00  1.00e+00   -         2       2.65e-01  -4.540e+01 1.90e+00  0.00e+00  ✔ (Armijo)    
+ 3      1      1.00e+00  1.00e+00   -         3       7.94e-02  -4.574e+01 6.94e-01  0.00e+00  ✔ (Armijo)    
+ 4      1      1.00e+00  1.00e+00   -         4       4.57e-02  -4.578e+01 2.00e-01  0.00e+00  ✔ (Armijo)    
+ 5      1      1.00e+00  1.00e+00   -         5       1.02e-02  -4.578e+01 1.54e-02  0.00e+00  ✔ (Armijo)    
+ 6      1      1.00e+00  1.00e+00   -         6       7.30e-04  -4.578e+01 3.14e-04  0.00e+00  ✔ (Armijo)    
+ 7      1      1.00e+00  1.00e+00   -         6       1.52e-05  -4.578e+01 5.04e-07  0.00e+00  ✔ (Armijo)    
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Steplength Regulariz |BFGS|  ||Step||  Objective  Statio    Compl     Status        
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (LS merit inequality-constrained SQP method with L-BFGS Hessian and primal inertia correction)
+Tue Jul 14 13:55:02 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			-45.77847
+Primal feasibility:			0
+┌ Stationarity residual:		5.039982e-07
+│ Primal feasibility:			0
+└ Complementarity residual:		0
+CPU time:				0.002259s
+Iterations:				7
+Objective evaluations:			9
+Constraints evaluations:		0
+Objective gradient evaluations:		9
+Jacobian evaluations:			0
+Hessian evaluations:			0
+Number of subproblems solved:		0

@@ -1,0 +1,96 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs038.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=LBFGS inertia_correction_strategy=primal globalization_mechanism=LS globalization_strategy=waechter_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs038.nl
+4 variables, 0 constraints (0 equality, 0 inequality)
+Problem type: NLP
+The model is unconstrained, picking no relaxation
+
+Non-default options:
+QP_solver = BQPD
+linear_solver = MUMPS
+libhsl_path = 
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Steplength Regulariz |BFGS|  ||Step||  Objective  Statio    Compl     Status        
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         -          -         0       -         1.919e+04  1.64e+04  0.00e+00  initial point 
+ 1      1      1.00e+00  1.00e+00   -         -       1.30e+01  1.542e+06  -         -         ✘ (Armijo)    
+ -      2      1.00e+00  5.00e-01   -         1       6.50e+00  1.191e+04  3.08e+04  1.06e+05  ✔ (Armijo)    
+ 2      1      1.00e+00  1.00e+00   -         2       2.75e+00  1.941e+03  1.56e+03  0.00e+00  ✔ (Armijo)    
+ 3      1      1.00e+00  1.00e+00   -         3       2.79e-01  1.420e+03  1.45e+03  0.00e+00  ✔ (Armijo)    
+ 4      1      1.00e+00  1.00e+00   -         -       2.56e+00  1.507e+04  -         -         ✘ (Armijo)    
+ -      2      1.00e+00  5.00e-01   -         4       1.28e+00  7.330e+02  2.18e+03  0.00e+00  ✔ (Armijo)    
+ 5      1      1.00e+00  1.00e+00   -         5       9.25e-01  2.610e+02  7.09e+02  0.00e+00  ✔ (Armijo)    
+ 6      1      1.00e+00  1.00e+00   -         6       2.11e-01  1.016e+02  3.05e+02  0.00e+00  ✔ (Armijo)    
+ 7      1      1.00e+00  1.00e+00   -         6       2.27e-01  7.149e+01  2.20e+02  0.00e+00  ✔ (Armijo)    
+ 8      1      1.00e+00  1.00e+00   -         6       8.45e-02  5.895e+01  9.34e+01  0.00e+00  ✔ (Armijo)    
+ 9      1      1.00e+00  1.00e+00   -         6       8.99e-02  4.998e+01  7.76e+01  0.00e+00  ✔ (Armijo)    
+ 10     1      1.00e+00  1.00e+00   -         -       1.62e+00  1.577e+02  -         -         ✘ (Armijo)    
+ -      2      1.00e+00  5.00e-01   -         6       8.08e-01  4.452e+01  3.53e+02  0.00e+00  ✔ (Armijo)    
+ 11     1      1.00e+00  1.00e+00   -         6       7.26e-01  7.006e+00  7.54e+01  0.00e+00  ✔ (Armijo)    
+ 12     1      1.00e+00  1.00e+00   -         6       4.62e-01  1.973e+00  5.74e+01  0.00e+00  ✔ (Armijo)    
+ 13     1      1.00e+00  1.00e+00   -         6       1.35e-01  4.264e-02  8.21e+00  0.00e+00  ✔ (Armijo)    
+ 14     1      1.00e+00  1.00e+00   -         6       7.20e-03  7.005e-03  2.34e+00  0.00e+00  ✔ (Armijo)    
+ 15     1      1.00e+00  1.00e+00   -         6       7.63e-03  7.840e-04  3.20e-01  0.00e+00  ✔ (Armijo)    
+ 16     1      1.00e+00  1.00e+00   -         6       2.56e-03  4.608e-04  4.23e-02  0.00e+00  ✔ (Armijo)    
+ 17     1      1.00e+00  1.00e+00   -         -       8.06e-04  4.744e-04  -         -         ✘ (Armijo)    
+ -      2      1.00e+00  5.00e-01   -         6       4.03e-04  4.570e-04  1.03e-01  0.00e+00  ✔ (Armijo)    
+ 18     1      1.00e+00  1.00e+00   -         6       6.11e-04  4.334e-04  6.78e-02  0.00e+00  ✔ (Armijo)    
+ 19     1      1.00e+00  1.00e+00   -         6       1.10e-02  2.270e-04  3.58e-01  0.00e+00  ✔ (Armijo)    
+ 20     1      1.00e+00  1.00e+00   -         6       1.40e-02  3.048e-05  2.20e-01  0.00e+00  ✔ (Armijo)    
+ 21     1      1.00e+00  1.00e+00   -         -       2.01e-02  9.883e-03  -         -         ✘ (Armijo)    
+ -      2      1.00e+00  5.00e-01   -         -       1.01e-02  2.327e-03  -         -         ✘ (Armijo)    
+ -      3      1.00e+00  2.50e-01   -         -       5.03e-03  5.239e-04  -         -         ✘ (Armijo)    
+ -      4      1.00e+00  1.25e-01   -         -       2.51e-03  1.138e-04  -         -         ✘ (Armijo)    
+ -      5      1.00e+00  6.25e-02   -         -       1.26e-03  3.134e-05  -         -         ✘ (Armijo)    
+ -      6      1.00e+00  3.12e-02   -         6       6.28e-04  2.072e-05  1.71e-01  0.00e+00  ✔ (Armijo)    
+ 22     1      1.00e+00  1.00e+00   -         6       1.82e-03  1.436e-07  1.43e-02  0.00e+00  ✔ (Armijo)    
+ 23     1      1.00e+00  1.00e+00   -         6       1.80e-04  9.614e-10  1.18e-03  0.00e+00  ✔ (Armijo)    
+ 24     1      1.00e+00  1.00e+00   -         -       9.08e-05  7.251e-09  -         -         ✘ (Armijo)    
+ -      2      1.00e+00  5.00e-01   -         -       4.54e-05  9.666e-10  -         -         ✘ (Armijo)    
+ -      3      1.00e+00  2.50e-01   -         6       2.27e-05  1.792e-10  4.04e-04  0.00e+00  ✔ (Armijo)    
+ 25     1      1.00e+00  1.00e+00   -         -       6.93e-05  6.346e-09  -         -         ✘ (Armijo)    
+ -      2      1.00e+00  5.00e-01   -         -       3.46e-05  1.101e-09  -         -         ✘ (Armijo)    
+ -      3      1.00e+00  2.50e-01   -         6       1.73e-05  9.941e-11  3.16e-04  0.00e+00  ✔ (Armijo)    
+ 26     1      1.00e+00  1.00e+00   -         -       1.50e-05  2.516e-08  -         -         ✘ (Armijo)    
+ -      2      1.00e+00  5.00e-01   -         -       7.50e-06  6.229e-09  -         -         ✘ (Armijo)    
+ -      3      1.00e+00  2.50e-01   -         -       3.75e-06  1.563e-09  -         -         ✘ (Armijo)    
+ -      4      1.00e+00  1.25e-01   -         -       1.88e-06  4.311e-10  -         -         ✘ (Armijo)    
+ -      5      1.00e+00  6.25e-02   -         -       9.38e-07  1.652e-10  -         -         ✘ (Armijo)    
+ -      6      1.00e+00  3.12e-02   -         -       4.69e-07  1.073e-10  -         -         ✘ (Armijo)    
+ -      7      1.00e+00  1.56e-02   -         6       2.34e-07  9.710e-11  2.92e-04  0.00e+00  ✔ (Armijo)    
+ 27     1      1.00e+00  1.00e+00   -         6       7.48e-06  5.247e-15  2.50e-06  0.00e+00  ✔ (Armijo)    
+ 28     1      1.00e+00  1.00e+00   -         -       1.48e-06  3.935e-11  -         -         ✘ (Armijo)    
+ -      2      1.00e+00  5.00e-01   -         -       7.39e-07  9.729e-12  -         -         ✘ (Armijo)    
+ -      3      1.00e+00  2.50e-01   -         -       3.70e-07  2.380e-12  -         -         ✘ (Armijo)    
+ -      4      1.00e+00  1.25e-01   -         -       1.85e-07  5.709e-13  -         -         ✘ (Armijo)    
+ -      5      1.00e+00  6.25e-02   -         -       9.24e-08  1.327e-13  -         -         ✘ (Armijo)    
+ -      6      1.00e+00  3.12e-02   -         -       4.62e-08  3.009e-14  -         -         ✘ (Armijo)    
+ -      7      1.00e+00  1.56e-02   -         -       2.31e-08  7.953e-15  -         -         ✘ (Armijo)    
+ -      8      1.00e+00  7.81e-03   -         6       1.16e-08  4.171e-15  1.72e-06  0.00e+00  ✔ (Armijo)    
+ 29     1      1.00e+00  1.00e+00   -         6       4.81e-08  3.093e-21  1.61e-09  0.00e+00  ✔ (Armijo)    
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Steplength Regulariz |BFGS|  ||Step||  Objective  Statio    Compl     Status        
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (LS merit inequality-constrained SQP method with L-BFGS Hessian and primal inertia correction)
+Tue Jul 14 13:55:02 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			3.092552e-21
+Primal feasibility:			0
+┌ Stationarity residual:		1.613628e-09
+│ Primal feasibility:			0
+└ Complementarity residual:		0
+CPU time:				0.004954s
+Iterations:				29
+Objective evaluations:			56
+Constraints evaluations:		0
+Objective gradient evaluations:		56
+Jacobian evaluations:			0
+Hessian evaluations:			0
+Number of subproblems solved:		0

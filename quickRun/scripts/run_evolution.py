@@ -7,9 +7,11 @@ Usage (from the project root, inside the venv or via ./.venv/bin/python):
 Model precedence: --model > $OPTIUNO_EVOLVE_MODEL > default.
 Two LLM backends:
   * default   the Claude Code CLI's OAuth session (subscription, no API key);
-              default model "sonnet". A set-but-invalid ANTHROPIC_API_KEY is
-              stripped from the child environment, since the CLI would give it
-              precedence over the login.
+              default model "claude-sonnet-4-5" (the bare "sonnet" alias now
+              resolves to claude-sonnet-5, which many subscriptions cannot
+              serve). A set-but-invalid ANTHROPIC_API_KEY is stripped from the
+              child environment, since the CLI would give it precedence over
+              the login.
   * --api     the Anthropic API (requires ANTHROPIC_API_KEY); default model
               claude-sonnet-5.
 
@@ -99,7 +101,7 @@ def main() -> None:
                      "to run on the Claude Code CLI subscription).")
     else:
         config_file = ROOT / "evolve" / "config-claude-code.yaml"
-        model = args.model or "sonnet"
+        model = args.model or "claude-sonnet-4-5"
         # the CLI prefers ANTHROPIC_API_KEY over the OAuth login; drop it so
         # the subscription session is used
         env.pop("ANTHROPIC_API_KEY", None)

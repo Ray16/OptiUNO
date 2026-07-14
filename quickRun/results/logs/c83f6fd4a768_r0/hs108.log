@@ -1,0 +1,48 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs108.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=interior_point hessian_model=exact inertia_correction_strategy=none globalization_mechanism=TR globalization_strategy=fletcher_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs108.nl
+9 variables, 14 constraints (0 equality, 14 inequality)
+Problem type: NLP
+Reformulated model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs108.nl -> no fixed bounds -> equality constrained -> bounds relaxed
+23 variables, 14 constraints (14 equality, 0 inequality)
+
+Non-default options:
+QP_solver = BQPD
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         -         -         1.00e+01  OPT   -         0.000e+00  3.10e+00  3.94e+00  2.44e+00  initial point 
+ 1      1      -         1.00e-01  -         1.00e+01  OPT   1.00e+01  -2.532e+01 5.76e+02  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         5.00e+00  OPT   5.00e+00  -6.228e+00 1.70e+02  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         2.50e+00  OPT   2.50e+00  -1.367e+00 6.08e+01  2.70e+00  3.74e-11  ✔ (h-type)    
+ 2      1      -         1.00e-01  -         5.00e+00  OPT   5.00e+00  -7.612e+00 1.68e+02  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         2.50e+00  OPT   2.50e+00  -1.229e+00 3.52e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  -1.157e+00 2.44e+01  -         -         ✘ (filter)    
+ -      4      -         1.00e-01  -         6.25e-01  OPT   -         -          -         -         -         infeasible    
+ -      -      -         -         -         -         -     -         -          -         -         -         Barrier subproblem: the bounds are in the wrong order in the lower bound multiplier reset
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR Fletcher-filter restoration primal-dual interior-point method with exact Hessian and no inertia correction)
+Tue Jul 14 13:52:35 2026
+────────────────────────────────────────
+Optimization status:			Algorithmic error
+Solution status:			Suboptimal point
+Objective value:			-1.367451
+Primal feasibility:			60.78647
+┌ Stationarity residual:		2.699258
+│ Primal feasibility:			60.78647
+└ Complementarity residual:		3.741657e-11
+CPU time:				0.019846s
+Iterations:				2
+Objective evaluations:			7
+Constraints evaluations:		8
+Objective gradient evaluations:		7
+Jacobian evaluations:			7
+Hessian evaluations:			3
+Number of subproblems solved:		8

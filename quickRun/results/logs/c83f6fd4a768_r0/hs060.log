@@ -1,0 +1,45 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs060.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=interior_point hessian_model=exact inertia_correction_strategy=none globalization_mechanism=TR globalization_strategy=fletcher_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs060.nl
+3 variables, 1 constraints (1 equality, 0 inequality)
+Problem type: NLP
+Reformulated model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs060.nl -> no fixed bounds -> equality constrained -> bounds relaxed
+3 variables, 1 constraints (1 equality, 0 inequality)
+
+Non-default options:
+QP_solver = BQPD
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         -         -         1.00e+01  OPT   -         1.000e+00  1.78e+01  2.00e+00  2.08e+01  initial point 
+ 1      1      -         1.00e-01  -         1.00e+01  OPT   8.45e-01  1.156e-01  4.47e+00  8.42e-01  1.73e-11  ✔ (h-type)    
+ 2      1      -         1.00e-01  -         1.00e+01  OPT   1.88e-01  4.259e-02  6.29e-01  1.95e-01  1.73e-11  ✔ (h-type)    
+ 3      1      -         2.00e-02  -         1.00e+01  OPT   4.33e-02  3.294e-02  2.82e-02  2.46e-02  3.46e-12  ✔ (h-type)    
+ 4      1      -         1.50e-04  -         1.00e+01  OPT   5.39e-03  3.257e-02  2.40e-04  4.93e-04  2.61e-14  ✔ (h-type)    
+ 5      1      -         1.84e-06  -         1.00e+01  OPT   1.30e-04  3.257e-02  8.03e-08  2.09e-07  3.20e-16  ✔ (f-type)    
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR Fletcher-filter restoration primal-dual interior-point method with exact Hessian and no inertia correction)
+Tue Jul 14 13:52:34 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			0.0325682
+Primal feasibility:			8.033447e-08
+┌ Stationarity residual:		2.09038e-07
+│ Primal feasibility:			8.033447e-08
+└ Complementarity residual:		3.195486e-16
+CPU time:				0.000164s
+Iterations:				5
+Objective evaluations:			6
+Constraints evaluations:		6
+Objective gradient evaluations:		6
+Jacobian evaluations:			6
+Hessian evaluations:			5
+Number of subproblems solved:		5

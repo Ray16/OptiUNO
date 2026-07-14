@@ -1,0 +1,70 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs098.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=interior_point hessian_model=exact inertia_correction_strategy=none globalization_mechanism=TR globalization_strategy=fletcher_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs098.nl
+6 variables, 4 constraints (0 equality, 4 inequality)
+Problem type: NLP
+Reformulated model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs098.nl -> no fixed bounds -> equality constrained -> bounds relaxed
+10 variables, 4 constraints (4 equality, 0 inequality)
+
+Non-default options:
+QP_solver = BQPD
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         -         -         1.00e+01  OPT   -         9.726e-02  5.75e+01  1.00e+02  2.14e+02  initial point 
+ 1      1      -         1.00e-01  -         1.00e+01  OPT   1.00e+01  6.227e+00  2.02e+01  7.09e+02  3.16e-11  ✔ (h-type)    
+ 2      1      -         1.00e-01  -         2.00e+01  OPT   2.00e+01  5.824e+00  2.42e+01  nan       2.65e-11  ✔ (h-type)    
+ 3      1      -         1.00e-01  -         4.00e+01  OPT   4.00e+01  1.526e+00  4.31e+01  nan       2.45e-11  ✔ (h-type)    
+ 4      1      -         1.00e-01  -         8.00e+01  OPT   8.00e+01  5.784e+00  1.08e+02  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         4.00e+01  OPT   4.00e+01  5.799e+00  6.60e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         2.00e+01  OPT   2.00e+01  5.807e+00  4.49e+01  nan       2.65e-11  ✔ (h-type)    
+ 5      1      -         1.00e-01  -         4.00e+01  OPT   4.00e+01  7.264e-01  1.15e+02  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         2.00e+01  OPT   2.00e+01  7.264e-01  1.15e+02  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         1.00e+01  OPT   1.00e+01  7.264e-01  1.15e+02  -         -         ✘ (filter)    
+ -      4      -         1.00e-01  -         5.00e+00  OPT   5.00e+00  1.224e+00  1.04e+02  -         -         ✘ (filter)    
+ -      5      -         1.00e-01  -         2.50e+00  OPT   2.50e+00  1.364e+00  7.33e+01  -         -         ✘ (filter)    
+ -      6      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  2.815e+00  5.66e+01  nan       2.45e-11  ✔ (h-type)    
+ 6      1      -         1.00e-01  -         2.50e+00  OPT   2.50e+00  5.806e+00  4.75e+01  nan       2.65e-11  ✔ (h-type)    
+ 7      1      -         1.00e-01  -         5.00e+00  OPT   5.00e+00  1.077e+00  1.10e+02  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         2.50e+00  OPT   2.50e+00  1.417e+00  8.12e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  2.778e+00  5.93e+01  -         -         ✘ (filter)    
+ -      4      -         1.00e-01  -         6.25e-01  OPT   6.25e-01  4.961e+00  4.98e+01  nan       2.45e-11  ✔ (h-type)    
+ 8      1      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  5.805e+00  4.89e+01  nan       2.65e-11  ✔ (h-type)    
+ 9      1      -         1.00e-01  -         2.50e+00  OPT   2.50e+00  1.444e+00  8.52e+01  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  2.760e+00  6.06e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         6.25e-01  OPT   6.25e-01  4.977e+00  5.11e+01  nan       2.45e-11  ✔ (h-type)    
+ 10     1      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  5.805e+00  5.02e+01  nan       2.65e-11  ✔ (h-type)    
+ 11     1      -         1.00e-01  -         2.50e+00  OPT   2.50e+00  1.471e+00  8.92e+01  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  2.741e+00  6.19e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         6.25e-01  OPT   6.25e-01  4.992e+00  5.23e+01  nan       2.45e-11  ✔ (h-type)    
+ 12     1      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  5.804e+00  5.15e+01  nan       2.65e-11  ✔ (h-type)    
+ 13     1      -         1.00e-01  -         2.50e+00  OPT   2.50e+00  1.498e+00  9.32e+01  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  2.722e+00  6.33e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         6.25e-01  OPT   6.25e-01  5.008e+00  5.35e+01  nan       2.45e-11  ✔ (h-type)    
+ 14     1      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  5.804e+00  5.28e+01  nan       2.65e-11  ✔ (h-type)    
+ 15     1      -         1.00e-01  -         2.50e+00  OPT   2.50e+00  1.526e+00  9.72e+01  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  2.703e+00  6.46e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         6.25e-01  OPT   6.25e-01  5.024e+00  5.48e+01  nan       2.45e-11  ✔ (h-type)    
+ 16     1      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  5.803e+00  5.42e+01  nan       2.65e-11  ✔ (h-type)    
+ 17     1      -         1.00e-01  -         2.50e+00  OPT   2.50e+00  1.553e+00  1.01e+02  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  2.684e+00  6.59e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         6.25e-01  OPT   6.25e-01  5.040e+00  5.60e+01  nan       2.45e-11  ✔ (h-type)    
+ 18     1      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  5.803e+00  5.55e+01  nan       2.65e-11  ✔ (h-type)    
+ 19     1      -         1.00e-01  -         2.50e+00  OPT   2.50e+00  1.581e+00  1.05e+02  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  2.664e+00  6.73e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         6.25e-01  OPT   6.25e-01  5.056e+00  5.73e+01  nan       2.45e-11  ✔ (h-type)    
+ 20     1      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  5.802e+00  5.68e+01  nan       2.65e-11  ✔ (h-type)    
+ 21     1      -         1.00e-01  -         2.50e+00  OPT   2.50e+00  1.576e+00  1.08e+02  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         1.25e+00  OPT   1.25e+00  2.645e+00  6.86e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         6.25e-01  OPT   6.25e-01  5.072e+00  5.86e+01  -         -         ✘ (filter)    
+ -      4      -         1.00e-01  -         3.12e-01  OPT   3.12e-01  5.830e+00  6.24e+01  -         -         ✘ (filter)    
+ -      5      -         1.00e-01  -         1.56e-01  OPT   1.56e-01  5.830e+00  6.24e+01  -         -         ✘ (filter)    
+ -      6      -         1.00e-01  -         7.81e-02  OPT   7.81e-02  5.825e+00  5.67e+01  nan       2.45e-11  ✔ (h-type)    
+ 22     1      -         1.00e-01  -         1.56e-01  OPT   1.56e-01  3.967e+00  6.23e+01  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         7.81e-02  OPT   7.81e-02  5.287e+00  5.64e+01  nan       2.45e-11  ✔ (h-type)    
+ 23     1      -         1.00e-01  -         1.56e-01  OPT   1.56e-01  6.073e+00  5.99e+01  -         -         ✘ (filter)    
+ -      2      -         1.00e-01  -         7.81e-02  OPT   7.81e-02  6.072e+00  5.98e+01  -         -         ✘ (filter)    
+ -      3      -         1.00e-01  -         

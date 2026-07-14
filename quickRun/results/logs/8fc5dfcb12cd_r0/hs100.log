@@ -1,0 +1,49 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs100.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=exact inertia_correction_strategy=none globalization_mechanism=TR globalization_strategy=waechter_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs100.nl
+7 variables, 4 constraints (0 equality, 4 inequality)
+Problem type: NLP
+
+Non-default options:
+QP_solver = BQPD
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         1.00e+01  OPT   -         7.140e+02  0.00e+00  1.10e+02  0.00e+00  initial point 
+ 1      1      -         1.00e+01  OPT   1.00e+01  1.001e+07  1.27e+03  -         -         ✘ (filter)    
+ -      2      -         5.00e+00  OPT   5.00e+00  1.575e+05  2.37e+02  -         -         ✘ (filter)    
+ -      3      -         2.50e+00  OPT   2.50e+00  3.130e+03  5.65e+01  -         -         ✘ (f-type)    
+ -      4      -         1.25e+00  OPT   1.25e+00  7.106e+02  1.53e+01  1.82e+02  1.46e+01  ✔ (f-type)    
+ 2      1      -         2.50e+00  OPT   7.91e-01  6.810e+02  7.33e+00  5.72e+01  7.52e+00  ✔ (h-type)    
+ 3      1      -         2.50e+00  OPT   2.22e-01  6.817e+02  3.40e-01  1.72e+01  2.73e-01  ✔ (h-type)    
+ 4      1      -         2.50e+00  OPT   1.24e-01  6.808e+02  1.45e-02  4.43e+00  5.21e-03  ✔ (h-type)    
+ 5      1      -         2.50e+00  OPT   6.12e-02  6.806e+02  3.84e-04  7.08e-01  2.81e-04  ✔ (h-type)    
+ 6      1      -         2.50e+00  OPT   1.41e-02  6.806e+02  1.19e-05  3.04e-02  1.35e-05  ✔ (h-type)    
+ 7      1      -         2.50e+00  OPT   6.61e-04  6.806e+02  2.64e-08  6.39e-05  2.96e-08  ✔ (h-type)    
+ 8      1      -         2.50e+00  OPT   1.40e-06  6.806e+02  9.95e-14  2.84e-10  1.13e-13  ✔ (h-type)    
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR Waechter-filter restoration inequality-constrained SQP method with exact Hessian and no inertia correction)
+Tue Jul 14 13:54:05 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			680.6301
+Primal feasibility:			9.947598e-14
+┌ Stationarity residual:		2.8448e-10
+│ Primal feasibility:			9.947598e-14
+└ Complementarity residual:		1.133748e-13
+CPU time:				0.000227s
+Iterations:				8
+Objective evaluations:			12
+Constraints evaluations:		12
+Objective gradient evaluations:		12
+Jacobian evaluations:			12
+Hessian evaluations:			8
+Number of subproblems solved:		11

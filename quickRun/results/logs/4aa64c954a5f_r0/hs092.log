@@ -1,0 +1,73 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs092.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=exact inertia_correction_strategy=none globalization_mechanism=TR globalization_strategy=funnel_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs092.nl
+6 variables, 1 constraints (0 equality, 1 inequality)
+Problem type: NLP
+
+Non-default options:
+QP_solver = BQPD
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase Funnel    ||Step||  Objective  Infeas    Statio    Compl     Status        
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         1.00e+01  OPT   1.00e+00  -         1.500e+00  1.68e-01  2.45e+00  0.00e+00  initial point 
+ 1      1      -         1.00e+01  OPT   1.00e+00  5.08e-01  1.968e-04  1.33e-01  2.81e-02  4.00e-03  ✔ (f-type)    
+ 2      1      -         1.00e+01  OPT   -         -         -          -         -         -         infeasible    
+ 2      1      0.00e+00  1.00e+01  FEAS  -         1.00e+01  5.999e+02  1.80e+00  -         -         ✘ (Armijo)    
+ -      2      0.00e+00  5.00e+00  FEAS  -         5.00e+00  1.500e+02  1.80e+00  -         -         ✘ (Armijo)    
+ -      3      0.00e+00  2.50e+00  FEAS  -         2.50e+00  3.748e+01  1.75e+00  -         -         ✘ (Armijo)    
+ -      4      0.00e+00  1.25e+00  FEAS  -         1.25e+00  9.364e+00  7.32e-01  -         -         ✘ (Armijo)    
+ -      5      0.00e+00  6.25e-01  FEAS  -         6.25e-01  2.338e+00  2.02e-01  -         -         ✘ (Armijo)    
+ -      6      0.00e+00  3.12e-01  FEAS  -         3.12e-01  5.832e-01  1.24e-01  6.14e-01  8.86e-03  ✔ (Armijo)    
+ 3      1      0.00e+00  6.25e-01  FEAS  -         6.25e-01  2.220e+00  2.05e-02  3.00e+00  1.04e-02  ✔ (Armijo)    
+ 4      1      -         1.25e+00  OPT   5.62e-01  9.59e-01  7.887e-03  1.34e-01  1.78e-01  0.00e+00  ✔ (f-type)    
+ 5      1      -         1.25e+00  OPT   -         -         -          -         -         -         infeasible    
+ 5      1      0.00e+00  1.25e+00  FEAS  -         1.25e+00  4.883e+00  2.37e-01  -         -         ✘ (Armijo)    
+ -      2      0.00e+00  6.25e-01  FEAS  -         6.25e-01  1.253e+00  6.49e-02  4.50e-01  6.14e-02  ✔ (Armijo)    
+ 6      1      0.00e+00  1.25e+00  FEAS  -         1.25e+00  1.057e+01  9.95e-01  -         -         ✘ (Armijo)    
+ -      2      0.00e+00  6.25e-01  FEAS  -         6.25e-01  4.369e+00  1.31e-01  -         -         ✘ (Armijo)    
+ -      3      -         3.12e-01  OPT   3.13e-01  3.12e-01  3.184e-01  6.98e-02  1.13e+00  0.00e+00  ✔ (f-type)    
+ 7      1      -         6.25e-01  OPT   3.13e-01  2.43e-01  9.557e-01  7.53e-02  4.50e+00  8.72e-01  ✔ (h-type)    
+ 8      1      -         6.25e-01  OPT   3.13e-01  2.01e-01  4.029e-01  5.94e-02  3.32e-02  6.35e-01  ✔ (h-type)    
+ 9      1      -         6.25e-01  OPT   3.13e-01  6.25e-01  1.994e+00  2.26e-01  2.38e+01  1.19e+01  ✔ (h-type)    
+ 10     1      -         1.25e+00  OPT   3.13e-01  1.25e+00  1.307e-01  1.08e-01  7.23e-01  0.00e+00  ✔ (f-type)    
+ 11     1      -         2.50e+00  OPT   3.13e-01  4.45e-01  9.877e-01  7.90e-02  4.72e+00  9.22e-01  ✔ (h-type)    
+ 12     1      -         2.50e+00  OPT   3.13e-01  2.37e-01  4.310e-01  5.69e-02  3.57e-01  5.24e-01  ✔ (h-type)    
+ 13     1      -         2.50e+00  OPT   3.13e-01  3.85e-01  1.451e+00  1.44e-01  2.64e+01  9.39e+00  ✔ (h-type)    
+ 14     1      -         2.50e+00  OPT   3.13e-01  2.75e-01  6.619e-01  5.25e-02  2.78e+00  1.14e+00  ✔ (h-type)    
+ 15     1      -         2.50e+00  OPT   3.13e-01  6.94e-01  3.029e-02  1.29e-01  2.58e+01  5.66e+01  ✔ (h-type)    
+ 16     1      -         2.50e+00  OPT   3.13e-01  2.50e+00  2.012e+01  4.67e-01  -         -         ✘ (funnel)    
+ -      2      -         1.25e+00  OPT   -         -         -          -         -         -         infeasible    
+ -      2      0.00e+00  1.25e+00  FEAS  -         1.25e+00  5.387e+00  4.43e-01  -         -         ✘ (Armijo)    
+ -      3      0.00e+00  6.25e-01  FEAS  -         6.25e-01  1.537e+00  1.58e-01  -         -         ✘ (Armijo)    
+ -      4      0.00e+00  3.12e-01  FEAS  -         3.12e-01  4.906e-01  5.32e-02  6.37e-02  4.75e-02  ✔ (Armijo)    
+ 17     1      0.00e+00  6.25e-01  FEAS  -         6.25e-01  1.446e+00  1.44e-01  -         -         ✘ (Armijo)    
+ -      2      0.00e+00  3.12e-01  FEAS  -         3.12e-01  8.606e-01  6.55e-02  -         -         ✘ (Armijo)    
+ -      3      0.00e+00  1.56e-01  FEAS  -         1.56e-01  6.693e-01  5.28e-02  5.81e-02  4.34e-03  ✔ (Armijo)    
+ 18     1      0.00e+00  3.12e-01  FEAS  -         3.93e-02  5.834e-01  5.12e-02  3.49e-04  1.57e-03  ✔ (Armijo)    
+ 19     1      0.00e+00  3.12e-01  FEAS  -         2.40e-04  5.828e-01  5.12e-02  4.43e-08  5.80e-08  ✔ (Armijo)    
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Radius    Phase Funnel    ||Step||  Objective  Infeas    Statio    Compl     Status        
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR funnel restoration inequality-constrained SQP method with exact Hessian and no inertia correction)
+Tue Jul 14 13:54:03 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Infeasible stationary point
+Objective value:			0.5828438
+Primal feasibility:			0.05121519
+┌ Stationarity residual:		4.430916e-08
+│ Primal feasibility:			0.05121519
+└ Complementarity residual:		5.802482e-08
+CPU time:				0.086461s
+Iterations:				19
+Objective evaluations:			33
+Constraints evaluations:		33
+Objective gradient evaluations:		22
+Jacobian evaluations:			33
+Hessian evaluations:			23
+Number of subproblems solved:		35

@@ -3,7 +3,9 @@
 # backend via its OAuth session. No API key required.
 #
 # Select it with: scripts/run_evolution.py --claude-code [--model NAME]
-# Model names are CLI aliases/IDs ("sonnet" = Claude Sonnet, the default).
+# Model names are CLI aliases/IDs. Default is "claude-sonnet-4-5"; avoid the
+# bare "sonnet" alias, which now resolves to claude-sonnet-5 and 400s on
+# subscriptions without access to it.
 
 max_iterations: 150
 checkpoint_interval: 10
@@ -14,7 +16,7 @@ diff_based_evolution: true
 llm:
   provider: "claude_code"
   models:
-    - name: "sonnet"
+    - name: "claude-sonnet-4-5"
       weight: 1.0
       # must be set explicitly: openEvolve otherwise passes the literal
       # string "None" to `claude --max-budget-usd`, which the CLI rejects

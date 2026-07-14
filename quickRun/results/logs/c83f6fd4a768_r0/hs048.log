@@ -1,0 +1,39 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs048.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=interior_point hessian_model=exact inertia_correction_strategy=none globalization_mechanism=TR globalization_strategy=fletcher_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs048.nl
+5 variables, 2 constraints (2 equality, 0 inequality)
+Problem type: NLP
+
+Non-default options:
+QP_solver = BQPD
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         -         -         1.00e+01  OPT   -         8.400e+01  0.00e+00  2.56e+01  0.00e+00  initial point 
+ 1      1      -         1.00e-01  -         1.00e+01  OPT   4.00e+00  2.169e-30  8.88e-16  4.07e-15  0.00e+00  ✔ (f-type)    
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Barrier   Barrier   Radius    Phase ||Step||  Objective  Infeas    Statio    Compl     Status        
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (TR Fletcher-filter restoration primal-dual interior-point method with exact Hessian and no inertia correction)
+Tue Jul 14 13:52:34 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			2.169367e-30
+Primal feasibility:			8.881784e-16
+┌ Stationarity residual:		4.070145e-15
+│ Primal feasibility:			8.881784e-16
+└ Complementarity residual:		0
+CPU time:				0.000126s
+Iterations:				1
+Objective evaluations:			2
+Constraints evaluations:		2
+Objective gradient evaluations:		2
+Jacobian evaluations:			2
+Hessian evaluations:			1
+Number of subproblems solved:		1

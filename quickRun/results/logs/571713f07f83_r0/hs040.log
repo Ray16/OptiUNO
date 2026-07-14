@@ -1,0 +1,48 @@
+$ /home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs040.nl constraint_relaxation_strategy=feasibility_restoration inequality_handling_method=inequality_constrained hessian_model=LBFGS inertia_correction_strategy=primal globalization_mechanism=LS globalization_strategy=waechter_filter_method time_limit=20.0
+
+Automatically picked the filtersqp preset
+Original model /home/sdinh/sandbox/OptiUNO/problems/HS_model/hs040.nl
+4 variables, 3 constraints (3 equality, 0 inequality)
+Problem type: NLP
+The problem has no inequalities, picking a pure SQP method
+
+Non-default options:
+QP_solver = BQPD
+linear_solver = MUMPS
+libhsl_path = 
+
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Steplength Phase Regulariz Regulariz |BFGS|  |BFGS|  ||Step||  Objective  Infeas    Statio    Compl     Status        
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 0      -      -         -          OPT   -         -         0       -       -         -4.096e-01 6.00e-01  1.02e+00  0.00e+00  initial point 
+ 1      1      -         1.00e+00   OPT   -         -         1       -       2.51e-01  -2.554e-01 1.46e-02  4.07e-01  0.00e+00  ✔ (h-type)    
+ 2      1      -         1.00e+00   OPT   -         -         1       -       7.77e-03  -2.493e-01 1.23e-04  4.90e-01  0.00e+00  ✔ (h-type)    
+ 3      1      -         1.00e+00   OPT   -         -         2       -       2.46e-02  -2.508e-01 1.71e-03  3.84e-01  0.00e+00  ✔ (h-type)    
+ 4      1      -         1.00e+00   OPT   -         -         3       -       4.65e-03  -2.500e-01 5.51e-05  2.26e-02  0.00e+00  ✔ (h-type)    
+ 5      1      -         1.00e+00   OPT   -         -         4       -       5.46e-04  -2.500e-01 8.42e-07  2.52e-03  0.00e+00  ✔ (h-type)    
+ 6      1      -         1.00e+00   OPT   -         -         5       -       9.70e-05  -2.500e-01 2.74e-08  1.34e-04  0.00e+00  ✔ (h-type)    
+ 7      1      -         1.00e+00   OPT   -         -         6       -       1.14e-06  -2.500e-01 3.77e-12  2.75e-07  0.00e+00  ✔ (h-type)    
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Iterations
+ Major  Minor  Penalty   Steplength Phase Regulariz Regulariz |BFGS|  |BFGS|  ||Step||  Objective  Infeas    Statio    Compl     Status        
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Uno 2.8.0 (LS Waechter-filter restoration pure SQP method with L-BFGS Hessian and primal inertia correction)
+Tue Jul 14 13:55:02 2026
+────────────────────────────────────────
+Optimization status:			Success
+Solution status:			Feasible KKT point
+Objective value:			-0.25
+Primal feasibility:			3.77498e-12
+┌ Stationarity residual:		2.745255e-07
+│ Primal feasibility:			3.77498e-12
+└ Complementarity residual:		0
+CPU time:				0.066461s
+Iterations:				7
+Objective evaluations:			8
+Constraints evaluations:		8
+Objective gradient evaluations:		8
+Jacobian evaluations:			8
+Hessian evaluations:			0
+Number of subproblems solved:		7
