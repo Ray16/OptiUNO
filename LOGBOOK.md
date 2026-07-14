@@ -273,3 +273,28 @@ is one level up, the two live path assignments were repointed to
   `problems/HS_model/` entry). Config-hash cache is unaffected (keyed by options, not paths).
 - Verified: `NL_DIR` resolves to `problems/HS_model` and finds 121 problems; a full preset sweep
   reproduces filtersqp 117/121 (0.967); both edited files byte-compile.
+
+---
+
+## 2026-07-14 — Reviewed `quickRun/` and drafted an architecture figure
+
+- Walked the `quickRun/` implementation and mapped its modules and data/call flow:
+  - `harness/` (core): `uno_runner.py` (`run_uno` — one `uno_ampl` subprocess, regex-parses
+    banner/status/objective/cpu), `classify.py` (`classify` → solved/unsolved/timeout/invalid/crash
+    + silent-rewrite detection by comparing the composed-method banner against requested
+    ingredients), `benchmark.py` (`evaluate_config` — ThreadPool sweep over the `.nl` set, per-config
+    JSON cache in `harness/cache/`, appends `results/evaluations.csv`).
+  - `scripts/`: `translate_models.py` (`.mod` → AMPL `.nl`), `run_evolution.py` (baselines +
+    `openevolve-run`), `validate_presets.py` (filtersqp/ipopt vs. the paper table), `variance_runs.py`
+    (CPU-time noise over R reps), `plot_pareto.py` (Pareto-front figures).
+  - `evolve/`: `initial_program.py` (`UNO_CONFIG` — six evolvable ingredients), `evaluator.py`
+    (validate → `evaluate_config` → `combined_score`, appends `results/evolution_history.csv`),
+    `config.yaml` / `config-claude-code.yaml` (openEvolve + LLM backend).
+- Wrote `quickRun/docs/architecture.py` — a matplotlib helper that renders a graph-like figure of
+  these modules and their edges (inputs → preprocessing → core harness → drivers → outputs, with the
+  bundled `external/uno` dependency) to `quickRun/docs/architecture.png`. Documentation only; not
+  part of the experiment pipeline. **Script written but not yet run** (render step was interrupted),
+  so `architecture.png` is not generated yet.
+- Per rules: read-only inspection; used the **system** Python 3.12 (matplotlib 3.10.3; no graphviz)
+  at the user's request rather than `quickRun/.venv`. No installs or environment changes; nothing
+  committed.
