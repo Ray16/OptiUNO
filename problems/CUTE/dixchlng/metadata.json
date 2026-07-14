@@ -36,9 +36,18 @@
       "filename": "dixchlng.res",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/dixchlng.res",
       "bytes": 135
+    },
+    "nl": {
+      "filename": "dixchlng.nl",
+      "bytes": 2226
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dixchlng.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

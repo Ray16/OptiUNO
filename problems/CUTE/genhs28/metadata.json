@@ -36,9 +36,18 @@
       "filename": "genhs28.res",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/genhs28.res",
       "bytes": 200
+    },
+    "nl": {
+      "filename": "genhs28.nl",
+      "bytes": 1003
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/genhs28.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

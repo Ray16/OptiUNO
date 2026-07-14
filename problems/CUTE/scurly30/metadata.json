@@ -21,9 +21,18 @@
       "filename": "scurly30.mod",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/scurly30.mod",
       "bytes": 916
+    },
+    "nl": {
+      "filename": "scurly30.nl",
+      "bytes": 8216887
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/scurly30.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

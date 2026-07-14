@@ -21,9 +21,18 @@
       "filename": "brainpc4.mod",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/brainpc4.mod",
       "bytes": 105957
+    },
+    "nl": {
+      "filename": "brainpc4.nl",
+      "bytes": 841706
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/brainpc4.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

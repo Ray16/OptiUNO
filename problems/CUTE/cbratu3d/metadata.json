@@ -21,9 +21,18 @@
       "filename": "cbratu3d.mod",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cbratu3d.mod",
       "bytes": 1894
+    },
+    "nl": {
+      "filename": "cbratu3d.nl",
+      "bytes": 130991
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/cbratu3d.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

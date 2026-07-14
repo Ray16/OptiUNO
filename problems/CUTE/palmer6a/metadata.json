@@ -36,9 +36,18 @@
       "filename": "palmer6a.res",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/palmer6a.res",
       "bytes": 274
+    },
+    "nl": {
+      "filename": "palmer6a.nl",
+      "bytes": 2257
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/palmer6a.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

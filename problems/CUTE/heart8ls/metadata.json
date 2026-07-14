@@ -36,9 +36,18 @@
       "filename": "heart8ls.res",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/heart8ls.res",
       "bytes": 286
+    },
+    "nl": {
+      "filename": "heart8ls.nl",
+      "bytes": 2078
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/heart8ls.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

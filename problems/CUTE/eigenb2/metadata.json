@@ -36,9 +36,18 @@
       "filename": "eigenb2.res",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/eigenb2.res",
       "bytes": 2846
+    },
+    "nl": {
+      "filename": "eigenb2.nl",
+      "bytes": 30885
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigenb2.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

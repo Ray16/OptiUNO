@@ -36,9 +36,18 @@
       "filename": "eigmaxc.res",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/eigmaxc.res",
       "bytes": 635
+    },
+    "nl": {
+      "filename": "eigmaxc.nl",
+      "bytes": 2424
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/eigmaxc.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

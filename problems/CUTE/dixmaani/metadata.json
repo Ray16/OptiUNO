@@ -21,9 +21,18 @@
       "filename": "dixmaani.mod",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dixmaani.mod",
       "bytes": 1219
+    },
+    "nl": {
+      "filename": "dixmaani.nl",
+      "bytes": 272311
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dixmaani.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

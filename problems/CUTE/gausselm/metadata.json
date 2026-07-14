@@ -21,9 +21,18 @@
       "filename": "gausselm.mod",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gausselm.mod",
       "bytes": 1333
+    },
+    "nl": {
+      "filename": "gausselm.nl",
+      "bytes": 186049
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/gausselm.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

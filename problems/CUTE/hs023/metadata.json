@@ -36,9 +36,18 @@
       "filename": "hs023.res",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hs023.res",
       "bytes": 50
+    },
+    "nl": {
+      "filename": "hs023.nl",
+      "bytes": 743
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs023.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

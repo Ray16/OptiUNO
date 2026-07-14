@@ -36,9 +36,18 @@
       "filename": "vanderm4.res",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/vanderm4.res",
       "bytes": 310
+    },
+    "nl": {
+      "filename": "vanderm4.nl",
+      "bytes": 2350
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/vanderm4.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

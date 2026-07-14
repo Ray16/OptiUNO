@@ -36,9 +36,18 @@
       "filename": "hs066.res",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/hs066.res",
       "bytes": 80
+    },
+    "nl": {
+      "filename": "hs066.nl",
+      "bytes": 687
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs066.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

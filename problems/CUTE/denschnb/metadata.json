@@ -36,9 +36,18 @@
       "filename": "denschnb.res",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/denschnb.res",
       "bytes": 55
+    },
+    "nl": {
+      "filename": "denschnb.nl",
+      "bytes": 617
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/denschnb.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

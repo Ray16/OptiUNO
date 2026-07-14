@@ -36,9 +36,18 @@
       "filename": "heart6ls.res",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/heart6ls.res",
       "bytes": 238
+    },
+    "nl": {
+      "filename": "heart6ls.nl",
+      "bytes": 1463
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/heart6ls.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

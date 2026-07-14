@@ -21,9 +21,18 @@
       "filename": "orthrgdm.mod",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/orthrgdm.mod",
       "bytes": 1415
+    },
+    "nl": {
+      "filename": "orthrgdm.nl",
+      "bytes": 1657830
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/orthrgdm.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

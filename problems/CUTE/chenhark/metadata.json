@@ -21,9 +21,18 @@
       "filename": "chenhark.mod",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/chenhark.mod",
       "bytes": 1108
+    },
+    "nl": {
+      "filename": "chenhark.nl",
+      "bytes": 62012
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/chenhark.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

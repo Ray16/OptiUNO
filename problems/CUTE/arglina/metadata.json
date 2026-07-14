@@ -36,9 +36,18 @@
       "filename": "arglina.res",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/arglina.res",
       "bytes": 2586
+    },
+    "nl": {
+      "filename": "arglina.nl",
+      "bytes": 284036
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/arglina.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

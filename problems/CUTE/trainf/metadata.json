@@ -21,9 +21,18 @@
       "filename": "trainf.mod",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/trainf.mod",
       "bytes": 3197073
+    },
+    "nl": {
+      "filename": "trainf.nl",
+      "bytes": 2668950
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/trainf.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }

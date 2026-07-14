@@ -36,9 +36,18 @@
       "filename": "genrose.res",
       "url": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/RES/genrose.res",
       "bytes": 12986
+    },
+    "nl": {
+      "filename": "genrose.nl",
+      "bytes": 42938
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/genrose.htm",
   "source_index": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html",
-  "_all_available_downloaded": true
+  "_all_available_downloaded": true,
+  "nl_file_available": true,
+  "nl_conversion": {
+    "status": "converted",
+    "reason": ""
+  }
 }
