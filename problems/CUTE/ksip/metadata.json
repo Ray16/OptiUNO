@@ -40,6 +40,10 @@
     "nl": {
       "filename": "ksip.nl",
       "bytes": 464461
+    },
+    "nl_presolve": {
+      "filename": "ksip_presolve.nl",
+      "bytes": 464461
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/ksip.htm",
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

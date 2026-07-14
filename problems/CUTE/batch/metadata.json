@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "batch.nl",
+      "bytes": 5147
+    },
+    "nl_presolve": {
+      "filename": "batch_presolve.nl",
       "bytes": 4985
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "heart8ls.nl",
+      "bytes": 2053
+    },
+    "nl_presolve": {
+      "filename": "heart8ls_presolve.nl",
       "bytes": 2078
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

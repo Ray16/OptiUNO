@@ -24,6 +24,10 @@
     },
     "nl": {
       "filename": "drcavty3.nl",
+      "bytes": 3698776
+    },
+    "nl_presolve": {
+      "filename": "drcavty3_presolve.nl",
       "bytes": 3577622
     }
   },
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

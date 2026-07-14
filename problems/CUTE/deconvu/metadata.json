@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "deconvu.nl",
+      "bytes": 12495
+    },
+    "nl_presolve": {
+      "filename": "deconvu_presolve.nl",
       "bytes": 11601
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

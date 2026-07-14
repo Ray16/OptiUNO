@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "gouldqp3.nl",
+      "bytes": 91045
+    },
+    "nl_presolve": {
+      "filename": "gouldqp3_presolve.nl",
       "bytes": 91394
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

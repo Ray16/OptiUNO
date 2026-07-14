@@ -24,6 +24,10 @@
     },
     "nl": {
       "filename": "gausselm.nl",
+      "bytes": 192856
+    },
+    "nl_presolve": {
+      "filename": "gausselm_presolve.nl",
       "bytes": 186049
     }
   },
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

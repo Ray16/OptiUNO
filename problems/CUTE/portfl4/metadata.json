@@ -40,6 +40,10 @@
     "nl": {
       "filename": "portfl4.nl",
       "bytes": 16155
+    },
+    "nl_presolve": {
+      "filename": "portfl4_presolve.nl",
+      "bytes": 16155
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/portfl4.htm",
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

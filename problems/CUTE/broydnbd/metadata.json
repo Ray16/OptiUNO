@@ -24,6 +24,10 @@
     },
     "nl": {
       "filename": "broydnbd.nl",
+      "bytes": 1256859
+    },
+    "nl_presolve": {
+      "filename": "broydnbd_presolve.nl",
       "bytes": 1256883
     }
   },
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

@@ -24,6 +24,10 @@
     },
     "nl": {
       "filename": "biggsb1.nl",
+      "bytes": 59756
+    },
+    "nl_presolve": {
+      "filename": "biggsb1_presolve.nl",
       "bytes": 35212
     }
   },
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

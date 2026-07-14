@@ -24,6 +24,10 @@
     },
     "nl": {
       "filename": "dtoc4.nl",
+      "bytes": 1267652
+    },
+    "nl_presolve": {
+      "filename": "dtoc4_presolve.nl",
       "bytes": 1267551
     }
   },
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

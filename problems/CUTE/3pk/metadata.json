@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "3pk.nl",
+      "bytes": 8117
+    },
+    "nl_presolve": {
+      "filename": "3pk_presolve.nl",
       "bytes": 8171
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "gridneti.nl",
+      "bytes": 7365
+    },
+    "nl_presolve": {
+      "filename": "gridneti_presolve.nl",
       "bytes": 7387
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

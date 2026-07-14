@@ -68,4 +68,50 @@ Append-only history of changes and actions. Newest entries at the bottom. Never 
   bqp1var→~0, denschna→~0 (all "Success").
 - Generated `.nl` corpus is **209.5 MB** across 727 files (largest: `sensors.nl` 44.4 MB, `scurly30.nl` 7.8 MB).
   These are regenerable artifacts (from `.mod` via the script); left untracked pending the user's git decision
-  (track vs. `.gitignore`).
+  (track vs. `.gitignore`). [Superseded below: these were the presolve-ON files, since renamed to `_presolve.nl`.]
+
+### Session 3 (cont.) — AMPL presolve discovery + dual-variant `.nl`
+
+- Genericized `scripts/problem_parser.py`: removed all machine-specific paths/env names
+  (`/home/sdinh/anaconda3/envs/sequential_OED/bin/python`, `sequential_OED`) from the docstring and INSTALL_HINT;
+  commands now use plain `python -m ...`. Also corrected the INSTALL_HINT license guidance (CE blocks `write`; use
+  a full/academic license). `git add`ed the 727 `.nl` (staging only; no commit).
+- **Found that AMPL presolve was silently active.** `write` runs AMPL's presolver by default
+  (`option presolve 10`), which rewrites the model (fixes/eliminates vars, drops constraints). Proven on
+  `aircrftb`: presolve-on → 5 vars/0 cons vs presolve-off → 8 vars/3 cons. Across the corpus, **65 of 727** models
+  actually differ between the two. For a faithful UNO benchmark we want the unsimplified model.
+- Renamed the existing (presolve-on) files `<name>.nl` → `<name>_presolve.nl` for all 727 via `git mv` (staged).
+- Added a **`--presolve` flag** (default OFF) to `problem_parser.py`. A `variant_spec()` maps the flag to the
+  AMPL `option presolve` value (0 off / 10 on), the output filename (`<name>.nl` / `<name>_presolve.nl`), and the
+  metadata/summary keys. `convert_one` now emits `option presolve N;` before `write`. `update_metadata` derives
+  **both** availability flags + `files[]` entries from disk (self-healing) and records per-variant conversion
+  status (`nl_conversion` / `nl_presolve_conversion`). `summary.csv` gained four nl columns
+  (`nl_file_available`, `nl_presolve_file_available`, `nl_conversion_status`, `nl_presolve_conversion_status`)
+  after `res_file_available`; the report gained a `presolve` column.
+- **Regenerated the faithful presolve-OFF `<name>.nl` for all 727** (`--force --report`): 727 converted, 0 failed.
+  Now every folder has both `<name>.nl` (faithful) and `<name>_presolve.nl` (reduced). summary.csv shows
+  nl_file_available=727 and nl_presolve_file_available=727; no stray temp files; re-run without `--force` skips.
+- End-to-end in UNO on faithful files: hs071→17.014, aircrftb (8-var full)→Success, allinit (4/3 full)→16.706.
+
+### Session 3 (cont.) — UNO Python driver module
+
+- Built `scripts/uno_runner.py`: a stdlib-only Python driver that runs `uno_ampl` via `subprocess` and returns a
+  structured `UnoResult`. Supports a **preset and/or custom run-time-options** together (custom options are placed
+  after `preset=` so they override it, matching UNO's parse order). Mirrors the existing scripts' conventions.
+- API: `run_uno(nl_path, *, preset=None, options=None, uno_bin=None, timeout=None, write_solution=False,
+  capture_stdout=False, extra_args=None) -> UnoResult`. `UnoResult` carries optimization/solution status,
+  objective, residuals, cpu_time, iterations, all evaluation counts, returncode, solution_file, the options used,
+  and `.ok`/`.to_dict()`. Plus a CLI: `uno_runner.py <nl> --preset P --option k=v ... [--options k=v,..]
+  [--uno-bin] [--timeout] [--write-solution] [--print-stdout] [--json]`.
+- Binary resolution avoids machine-specific paths: `uno_bin` arg → `$UNO_AMPL_BIN` → `shutil.which("uno_ampl")`
+  → clear FileNotFoundError.
+- Classifier derived from UNO source (via Explore): `uno_ampl` returns exit code 0 even on failed solves and 1
+  only on setup/parse errors (printing `uno_ampl failed with the following error:` to stdout), so outcome is keyed
+  on the printed `Optimization status:`. Five outcomes: **solved** (Success), **budget** (Iteration/Time limit,
+  User termination), **error** (Evaluation/Algorithmic error, Unknown), **failed** (exit≠0 or no summary), and
+  **timeout**. Parser tolerates the box-drawing prefixes on the residual lines and the duplicated
+  `Primal feasibility:` line.
+- Verified all 9 cases: compile/help; preset solve (hs071→solved, 17.014); preset+custom override; custom-only
+  building blocks (→budget without preset tuning); invalid value (→error, rc 0); nonexistent model (→failed);
+  malformed .nl (→failed, rc 1, captured `jacdim` error); `--write-solution` (.sol written, path recorded);
+  timeout on 50k-var mccormck (→timeout); and programmatic `from uno_runner import run_uno`.

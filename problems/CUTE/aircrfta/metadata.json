@@ -40,6 +40,10 @@
     "nl": {
       "filename": "aircrfta.nl",
       "bytes": 985
+    },
+    "nl_presolve": {
+      "filename": "aircrfta_presolve.nl",
+      "bytes": 985
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/aircrfta.htm",
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

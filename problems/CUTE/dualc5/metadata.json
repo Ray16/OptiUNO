@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "dualc5.nl",
+      "bytes": 21878
+    },
+    "nl_presolve": {
+      "filename": "dualc5_presolve.nl",
       "bytes": 1486
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

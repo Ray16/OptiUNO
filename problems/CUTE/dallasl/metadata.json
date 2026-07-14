@@ -24,6 +24,10 @@
     },
     "nl": {
       "filename": "dallasl.nl",
+      "bytes": 113985
+    },
+    "nl_presolve": {
+      "filename": "dallasl_presolve.nl",
       "bytes": 105271
     }
   },
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

@@ -40,6 +40,10 @@
     "nl": {
       "filename": "hs092.nl",
       "bytes": 46763
+    },
+    "nl_presolve": {
+      "filename": "hs092_presolve.nl",
+      "bytes": 46763
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/hs092.htm",
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

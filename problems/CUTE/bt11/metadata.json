@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "bt11.nl",
+      "bytes": 792
+    },
+    "nl_presolve": {
+      "filename": "bt11_presolve.nl",
       "bytes": 793
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

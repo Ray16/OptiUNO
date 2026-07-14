@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "byrdsphr.nl",
+      "bytes": 688
+    },
+    "nl_presolve": {
+      "filename": "byrdsphr_presolve.nl",
       "bytes": 689
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

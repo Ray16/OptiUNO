@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "aircrftb.nl",
+      "bytes": 1239
+    },
+    "nl_presolve": {
+      "filename": "aircrftb_presolve.nl",
       "bytes": 1133
     }
   },
@@ -47,7 +51,12 @@
   "_all_available_downloaded": true,
   "nl_file_available": true,
   "nl_conversion": {
-    "status": "converted",
+    "status": "skipped",
+    "reason": "exists"
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

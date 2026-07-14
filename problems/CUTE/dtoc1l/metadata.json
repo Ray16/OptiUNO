@@ -25,6 +25,10 @@
     "nl": {
       "filename": "dtoc1l.nl",
       "bytes": 2048486
+    },
+    "nl_presolve": {
+      "filename": "dtoc1l_presolve.nl",
+      "bytes": 2048486
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/dtoc1l.htm",
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

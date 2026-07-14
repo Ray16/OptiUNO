@@ -25,6 +25,10 @@
     "nl": {
       "filename": "artif.nl",
       "bytes": 422390
+    },
+    "nl_presolve": {
+      "filename": "artif_presolve.nl",
+      "bytes": 422390
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/artif.htm",
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

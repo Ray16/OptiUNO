@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "eigena.nl",
+      "bytes": 19307
+    },
+    "nl_presolve": {
+      "filename": "eigena_presolve.nl",
       "bytes": 19327
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

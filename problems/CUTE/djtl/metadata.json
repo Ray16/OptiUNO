@@ -29,6 +29,10 @@
     },
     "nl": {
       "filename": "djtl.nl",
+      "bytes": 1573
+    },
+    "nl_presolve": {
+      "filename": "djtl_presolve.nl",
       "bytes": 1568
     }
   },
@@ -38,6 +42,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

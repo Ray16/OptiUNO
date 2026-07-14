@@ -40,6 +40,10 @@
     "nl": {
       "filename": "qrtquad.nl",
       "bytes": 8101
+    },
+    "nl_presolve": {
+      "filename": "qrtquad_presolve.nl",
+      "bytes": 8101
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/qrtquad.htm",
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

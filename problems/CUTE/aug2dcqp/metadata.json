@@ -24,6 +24,10 @@
     },
     "nl": {
       "filename": "aug2dcqp.nl",
+      "bytes": 1413140
+    },
+    "nl_presolve": {
+      "filename": "aug2dcqp_presolve.nl",
       "bytes": 1427289
     }
   },
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

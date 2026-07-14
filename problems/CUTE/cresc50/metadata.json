@@ -29,6 +29,10 @@
     },
     "nl": {
       "filename": "cresc50.nl",
+      "bytes": 13347
+    },
+    "nl_presolve": {
+      "filename": "cresc50_presolve.nl",
       "bytes": 13547
     }
   },
@@ -38,6 +42,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

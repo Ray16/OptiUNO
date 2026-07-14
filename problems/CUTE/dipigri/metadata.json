@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "dipigri.nl",
+      "bytes": 1033
+    },
+    "nl_presolve": {
+      "filename": "dipigri_presolve.nl",
       "bytes": 1036
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

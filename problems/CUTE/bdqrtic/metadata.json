@@ -24,6 +24,10 @@
     },
     "nl": {
       "filename": "bdqrtic.nl",
+      "bytes": 130320
+    },
+    "nl_presolve": {
+      "filename": "bdqrtic_presolve.nl",
       "bytes": 130341
     }
   },
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

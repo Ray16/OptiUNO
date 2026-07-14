@@ -24,6 +24,10 @@
     },
     "nl": {
       "filename": "gilbert.nl",
+      "bytes": 86302
+    },
+    "nl_presolve": {
+      "filename": "gilbert_presolve.nl",
       "bytes": 80323
     }
   },
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

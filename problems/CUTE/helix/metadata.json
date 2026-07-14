@@ -29,6 +29,10 @@
     },
     "nl": {
       "filename": "helix.nl",
+      "bytes": 728
+    },
+    "nl_presolve": {
+      "filename": "helix_presolve.nl",
       "bytes": 750
     }
   },
@@ -38,6 +42,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

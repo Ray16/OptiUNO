@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "arglina.nl",
+      "bytes": 383878
+    },
+    "nl_presolve": {
+      "filename": "arglina_presolve.nl",
       "bytes": 284036
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

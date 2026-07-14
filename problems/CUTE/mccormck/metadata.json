@@ -25,6 +25,10 @@
     "nl": {
       "filename": "mccormck.nl",
       "bytes": 3094966
+    },
+    "nl_presolve": {
+      "filename": "mccormck_presolve.nl",
+      "bytes": 3094966
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/mccormck.htm",
@@ -32,7 +36,12 @@
   "_all_available_downloaded": true,
   "nl_file_available": true,
   "nl_conversion": {
-    "status": "skipped",
-    "reason": "exists"
+    "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
+    "reason": ""
   }
 }

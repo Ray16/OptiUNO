@@ -10,3 +10,4 @@
 scripts/__pycache__/problem_parser.cpython-312.pyc
 .gitignore
 scripts/__pycache__/scrape_cute.cpython-312.pyc
+scripts/__pycache__/uno_runner.cpython-312.pyc

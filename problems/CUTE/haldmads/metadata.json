@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "haldmads.nl",
+      "bytes": 7037
+    },
+    "nl_presolve": {
+      "filename": "haldmads_presolve.nl",
       "bytes": 7032
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "eigenals.nl",
+      "bytes": 35567
+    },
+    "nl_presolve": {
+      "filename": "eigenals_presolve.nl",
       "bytes": 35607
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

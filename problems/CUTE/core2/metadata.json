@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "core2.nl",
+      "bytes": 10431
+    },
+    "nl_presolve": {
+      "filename": "core2_presolve.nl",
       "bytes": 10131
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

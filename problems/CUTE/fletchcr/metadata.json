@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "fletchcr.nl",
+      "bytes": 6238
+    },
+    "nl_presolve": {
+      "filename": "fletchcr_presolve.nl",
       "bytes": 6259
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

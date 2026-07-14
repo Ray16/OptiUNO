@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "denschnb.nl",
+      "bytes": 594
+    },
+    "nl_presolve": {
+      "filename": "denschnb_presolve.nl",
       "bytes": 617
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

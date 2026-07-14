@@ -40,6 +40,10 @@
     "nl": {
       "filename": "pfit4.nl",
       "bytes": 881
+    },
+    "nl_presolve": {
+      "filename": "pfit4_presolve.nl",
+      "bytes": 881
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/pfit4.htm",
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

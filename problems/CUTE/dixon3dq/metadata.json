@@ -39,6 +39,10 @@
     },
     "nl": {
       "filename": "dixon3dq.nl",
+      "bytes": 805
+    },
+    "nl_presolve": {
+      "filename": "dixon3dq_presolve.nl",
       "bytes": 807
     }
   },
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

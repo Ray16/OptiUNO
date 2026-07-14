@@ -25,6 +25,10 @@
     "nl": {
       "filename": "orthregc.nl",
       "bytes": 1754144
+    },
+    "nl_presolve": {
+      "filename": "orthregc_presolve.nl",
+      "bytes": 1754144
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/orthregc.htm",
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

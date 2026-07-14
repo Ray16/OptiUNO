@@ -40,6 +40,10 @@
     "nl": {
       "filename": "palmer5c.nl",
       "bytes": 2430
+    },
+    "nl_presolve": {
+      "filename": "palmer5c_presolve.nl",
+      "bytes": 2430
     }
   },
   "detail_page": "https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2/palmer5c.htm",
@@ -48,6 +52,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

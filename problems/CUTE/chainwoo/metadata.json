@@ -24,6 +24,10 @@
     },
     "nl": {
       "filename": "chainwoo.nl",
+      "bytes": 95624
+    },
+    "nl_presolve": {
+      "filename": "chainwoo_presolve.nl",
       "bytes": 96123
     }
   },
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }

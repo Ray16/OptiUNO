@@ -24,6 +24,10 @@
     },
     "nl": {
       "filename": "brainpc3.nl",
+      "bytes": 841942
+    },
+    "nl_presolve": {
+      "filename": "brainpc3_presolve.nl",
       "bytes": 841710
     }
   },
@@ -33,6 +37,11 @@
   "nl_file_available": true,
   "nl_conversion": {
     "status": "converted",
+    "reason": ""
+  },
+  "nl_presolve_file_available": true,
+  "nl_presolve_conversion": {
+    "status": "present",
     "reason": ""
   }
 }
