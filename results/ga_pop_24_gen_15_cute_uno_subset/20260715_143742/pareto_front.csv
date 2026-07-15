@@ -1,0 +1,13 @@
+preset,constraint_relaxation_strategy,inequality_handling_method,hessian_model,inertia_correction_strategy,globalization_mechanism,globalization_strategy,reliability,cum_cpu_time,combined_score
+custom,feasibility_restoration,inequality_constrained,zero,primal_dual,TR,funnel_method,0.000000,10.4405,0.082599
+custom,feasibility_restoration,inequality_constrained,LSR1,primal,TR,fletcher_filter_method,0.032941,10.4862,0.115464
+custom,feasibility_restoration,inequality_constrained,zero,primal_dual,LS,waechter_filter_method,0.056471,15.8317,0.130084
+custom,feasibility_restoration,inequality_constrained,zero,primal_dual,LS,funnel_method,0.061176,16.3939,0.133853
+custom,feasibility_restoration,inequality_constrained,exact,primal_dual,LS,waechter_filter_method,0.308235,16.4017,0.380899
+custom,feasibility_restoration,inequality_constrained,exact,primal_dual,LS,funnel_method,0.320000,18.0034,0.389994
+custom,feasibility_restoration,inequality_constrained,exact,none,LS,waechter_filter_method,0.675294,22.4131,0.737939
+custom,feasibility_restoration,inequality_constrained,exact,none,LS,funnel_method,0.677647,23.8279,0.737934
+ipopt,feasibility_restoration,interior_point,exact,primal_dual,LS,waechter_filter_method,0.849412,34.6027,0.891741
+custom,feasibility_restoration,interior_point,exact,primal_dual,LS,funnel_method,0.894118,34.7348,0.936226
+custom,feasibility_restoration,interior_point,exact,primal,LS,funnel_method,0.898824,42.5512,0.927905
+filtersqp,feasibility_restoration,inequality_constrained,exact,none,TR,fletcher_filter_method,0.945882,45.6932,0.969727

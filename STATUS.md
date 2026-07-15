@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: 2026-07-14_
+_Last updated: 2026-07-15 (all four UNO presets as GA baselines + `preset` column in every results CSV; CUTE sets; GA tic-toc timing + overhead; live per-member output; selectable HSL/MA27 binary)_
 
 ## Current state
 
@@ -24,8 +24,13 @@ wiring a search driver (Bayesian optimization / GA / enumeration) on top of it.
 - `problems/CUTE/nl_conversion_report.csv` — last conversion run's per-problem result.
 - `problems/HS_model/` — the **121-problem HS test set** (`.nl` files) used by the `quickRun`
   experiment and by the new evaluator's example set.
-- `problems/sets/hs_model_all.json` — **NEW.** Example/default **problem-set JSON** (all 121 HS
-  stems, `base_dir: problems/HS_model`) — the input format the black-box evaluator reads.
+- `problems/sets/` — **problem-set JSON files** (the input format the black-box evaluator reads):
+  - `hs_model_all.json` — all 121 HS stems (`base_dir: problems/HS_model`, flat layout).
+  - `cute_uno_subset.json` — **NEW.** UNO's benchmark subset present in CUTE: **425** problems
+    (the 429 `small_instances` minus 4 absent from Library2). Full nested `.nl` paths.
+  - `cute_all.json` — **NEW.** All **727** CUTE problems. Full nested `.nl` paths.
+  - CUTE sets use full `problems/CUTE/<name>/<name>.nl` paths (no `base_dir`) because the CUTE
+    corpus is one-folder-per-problem, not the flat layout `base_dir`+stem assumes.
 
 ## `optiuno/` package (the shared, stdlib-only library)
 
@@ -37,20 +42,26 @@ Imported by everything; depends on nothing in `quickRun/` (the dependency arrow 
   banner; never raises on a solver failure. Also a CLI (`python -m optiuno.uno_runner`).
 - `optiuno/utils.py` — `select_uno_bin` (system-first: explicit → `$UNO_AMPL_BIN` → PATH →
   bundled), `bundled_uno_bin` (pins `external/uno/bin/uno_ampl`), and `REPO_ROOT`.
-- **`optiuno/objective.py`** — **NEW.** The black-box objective for external optimizers:
-  - `evaluate(config, problem_set, *, time_limit=20, workers=8, uno_bin=None, validate=True)`
-    → `(reliability, cum_cpu_time)`. **reliability** = fraction in [0,1] solved (strict:
-    `Optimization status: Success` **and** `Solution status: Feasible KKT point`).
-    **cum_cpu_time** = sum of UNO-reported CPU seconds; a timeout charges the full `time_limit`.
-    Solves in a ThreadPool (parallelism does not affect the CPU-sum metric). Binary defaults to
-    the bundled build for reproducibility.
-  - `evaluate_detailed()` (rich dict incl. `status_counts` + per-problem rows),
-    `load_problem_set()` (JSON path / list / `{base_dir, problems}` object; fail-fast on missing
-    files), `is_solved()`, and `make_objective(problem_set) -> (config -> (rel, cpu))` for
-    optimizer loops.
+- **`optiuno/objective.py`** — the black-box objective for external optimizers:
+  - `evaluate(config, problem_set, *, time_limit=20, workers=8, uno_bin=None, validate=True,
+    time_source="cpu")` → `(reliability, cum_cpu_time)`. **reliability** = fraction in [0,1]
+    solved (strict: `Optimization status: Success` **and** `Solution status: Feasible KKT
+    point`). **cum_cpu_time** = sum of per-problem times; a timeout charges the full
+    `time_limit`. **`time_source`** picks the time metric: `"cpu"` (UNO-reported CPU seconds,
+    default — parallelism-invariant) or `"wall"` (real tic-toc `perf_counter` around each
+    solve; keep `workers=1` so the sum reflects serial elapsed time). Binary defaults to the
+    bundled build for reproducibility.
+  - `evaluate_detailed()` (rich dict; also returns `cum_wall_time` = raw tic-toc sum,
+    `time_source`, and per-problem `wall_time`), `load_problem_set()` (JSON path / list /
+    `{base_dir, problems}` object; fail-fast on missing files), `is_solved()`, and
+    `make_objective(problem_set, *, time_source=...) -> (config -> (rel, time))`.
+  - **`extra_options`** kwarg (all of `evaluate`/`evaluate_detailed`/`make_objective`; CLI
+    `--extra-option KEY=VALUE`): fixed UNO options merged into every solve, **outside the
+    search space and unvalidated** (UNO checks them) — e.g. `linear_solver=MA27`. Combine
+    with `uno_bin=`/`--uno-bin` to run an HSL-enabled UNO build.
   - Config is validated against `uno_search_space.json` (unknown key / illegal value → ValueError);
     bad *combinations* of legal values are NOT rejected — they run and show as low reliability.
-  - CLI: `python -m optiuno.objective --problems SET.json --option k=v ... [--json]`.
+  - CLI: `python -m optiuno.objective --problems SET.json --option k=v ... [--time-source wall] [--json]`.
 - **`optiuno/uno_config_options.json`** / **`optiuno/uno_search_space.json`** — **NEW.**
   Machine-readable option catalogues built by probing the bundled binary. The first documents all
   89 options (types, defaults, solvers, presets, invalid-combo caveats); the second is just the
@@ -63,6 +74,28 @@ Imported by everything; depends on nothing in `quickRun/` (the dependency arrow 
 - `scrape_cute.py` — the corpus scraper (polite + resumable).
 - `problem_parser.py` — the `.mod`→`.nl` converter via `amplpy`. `--presolve` flag (default OFF)
   selects the faithful vs. reduced variant. Updates `metadata.json` + `summary.csv`.
+- `ga_search.py` — NSGA-II (pymoo) bi-objective search over the six ingredients, scoring configs
+  with `optiuno.objective`. Objectives: reliability (max) vs. cumulative UNO time (min). Time is
+  the real **tic-toc wall clock** by default (`--time-source wall`; `cpu` for UNO-reported CPU),
+  and solves run **serially by default** (`--workers 1`, no parallel pool) so the run can report
+  **GA overhead = run wall clock − time spent inside UNO** (written to `timing.json` + a RESULTS
+  section; only meaningful at `workers=1`). **Baselines:** evaluates **all four** UNO built-in
+  presets — `filtersqp`, `ipopt`, `funnelsqp`, `filterslp` (as six-ingredient configs;
+  `PRESET_INGREDIENTS` mirrors `Uno/uno/options/Presets.cpp`) — so every plot / RESULTS table has
+  the full preset reference set. **`preset` column:** every results CSV (`evaluations.csv`,
+  `ga_history.csv`, `pareto_front.csv`) now leads with a `preset` column via `match_preset()` —
+  the built-in preset whose six ingredients the config matches, or `custom` (so a GA-*discovered*
+  config equal to a preset bundle is labelled with that preset's name). **Streams one line per
+  population member live** as each config finishes (reliability, time, `solved=n/N`, per-config
+  `eval_wall`, config; cache hits tagged `(cached)`), with a summary line at each generation's
+  end; `--no-population` = summary only, `--quiet` = silent (all off by default). Writes
+  timestamped artifacts
+  (evaluations/history CSVs, Pareto front, plots, `timing.json`, `RESULTS.md`) to
+  `results/ga_pop_<pop_size>_gen_<generations>_<set>/<timestamp>/` (override with `--out`). Needs
+  an interpreter with pymoo + numpy + matplotlib. **Binary:** `--uno-bin` (default system-first
+  via `select_uno_bin`: `$UNO_AMPL_BIN` → PATH → bundled); **fixed options:** `--option
+  KEY=VALUE` (repeatable, e.g. `--option linear_solver=MA27`), with a preflight that fails fast
+  if the requested `linear_solver` isn't advertised by the chosen binary.
 - The UNO driver lives in `optiuno/uno_runner.py` (see above), not in `scripts/`.
 
 ## Environment / conventions
@@ -76,6 +109,16 @@ Imported by everything; depends on nothing in `quickRun/` (the dependency arrow 
   `lib/` + `deps/`, ~99 MB). Used automatically as the fallback and pinned by
   `quickRun/harness/benchmark.py` and `optiuno.objective.evaluate` for reproducibility.
   `run_uno` auto-wires `LD_LIBRARY_PATH` from the binary's own `lib/`+`deps/`.
+- **Linear solvers / HSL:** the bundled build advertises only **MUMPS, SSIDS** — its
+  `deps/libhsl.so` is a non-functional 18 KB Julia HSL_jll **stub**, so `linear_solver=MA27`
+  fails ("unknown"). The user's own build at **`/home/sdinh/sandbox/Uno/build/uno_ampl`** is
+  compiled with real HSL (`.../Uno/dependencies/lib/libcoinhsl.so`) and advertises
+  **MA57, MA27, MUMPS, SSIDS**. Select it with `--uno-bin` / `$UNO_AMPL_BIN` and pass
+  `--option linear_solver=MA27` (ga_search) or `--extra-option linear_solver=MA27` (objective).
+- **Threading:** UNO has no thread option; it multithreads via OpenMP (libgomp) + OpenBLAS,
+  defaulting to **all cores** unless `OMP_NUM_THREADS` / `OPENBLAS_NUM_THREADS` are set
+  (OpenMP is the dominant lever). So UNO-reported **CPU time ≫ wall time** on threaded solves;
+  the GA's `--time-source wall` measures honest elapsed time.
 - UNO strategy building blocks / valid option values: `uno_ampl --strategies`; all options:
   `uno_ampl --dump-options`. (Or read the JSON catalogues in `optiuno/`.)
 

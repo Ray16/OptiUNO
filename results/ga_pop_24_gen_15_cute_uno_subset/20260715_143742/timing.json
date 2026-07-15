@@ -1,0 +1,13 @@
+{
+  "time_source": "wall",
+  "workers": 8,
+  "uno_bin": "/home/sdinh/sandbox/OptiUNO/external/uno/bin/uno_ampl",
+  "extra_options": {},
+  "run_wall_s": 5242.2728,
+  "uno_wall_s": 28853.27,
+  "ga_overhead_s": -23610.9972,
+  "ga_overhead_fraction": -4.504,
+  "uno_calls": 188,
+  "n_evaluations": 358,
+  "n_distinct_configs": 188
+}

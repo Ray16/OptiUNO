@@ -1,0 +1,79 @@
+# GA (NSGA-II) search results — hs_model_all
+
+_Generated 20260714_184528 by `scripts/ga_search.py` (pymoo 0.6.2)._
+
+## Setup
+
+- **Search space:** the six UNO ingredients from `optiuno/uno_search_space.json`
+  (240 nominal combinations).
+- **Problem set:** `hs_model_all` — 121 HS `.nl` problems.
+- **Objective (bi-objective):** maximize reliability (fraction reaching a Feasible
+  KKT point), minimize cumulative real (tic-toc) wall-clock time (`time_source=wall`). Scalar
+  tiebreak `combined_score = reliability + 0.1·max(0, 1 − cum_time/60)`.
+- **Optimizer:** pymoo NSGA-II (`MixedVariableGA` + `RankAndCrowdingSurvival`),
+  pop_size=24, generations=15, seed=1.
+- **Per-problem budget:** time_limit=20.0s. **Solves per config:**
+  workers=16.
+- **UNO binary:** `/home/sdinh/sandbox/Uno/build/uno_ampl`. **Fixed options (every solve):**
+  {'linear_solver': 'MA27'}.
+
+## Timing (GA overhead)
+
+**GA overhead = run wall clock − time spent inside UNO.** The UNO time is the sum of
+the real tic-toc wall clock measured around each `uno_ampl` subprocess, over every
+cache miss (a re-proposed config is served from cache and runs no UNO). This is
+directly comparable to the run's wall clock only when `workers=1` (serial).
+
+| metric | seconds |
+|---|---|
+| run wall clock | 1370.74 |
+| UNO time (sum of tic-toc) | 13137.45 |
+| **GA overhead** | **-11766.71** |
+
+- GA overhead is -858.4% of the run wall
+  clock. Distinct configs solved (UNO calls): 187; total GA
+  evaluations (incl. cache hits): 358.
+- Full breakdown in `timing.json`.
+
+## Preset baselines
+
+| preset | reliability | cum_cpu_time (s) | combined_score |
+|---|---|---|---|
+| filtersqp | 0.9669 | 24.583 | 1.0260 |
+| ipopt | 0.9256 | 8.873 | 1.0108 |
+
+## Best configuration found (max combined_score)
+
+| constraint_relaxation_strategy | inequality_handling_method | hessian_model | inertia_correction_strategy | globalization_mechanism | globalization_strategy | reliability | cum_cpu_time | combined_score |
+|---|---|---|---|---|---|---|---|---|
+| feasibility_restoration | interior_point | exact | primal_dual | LS | funnel_method | 0.9669 | 8.875 | 1.0522 |
+
+- vs **filtersqp**: reliability 0.9669 vs 0.9669  ·  time 8.875s vs 24.583s  ·  score 1.0522 vs 1.0260
+- vs **ipopt**: reliability 0.9669 vs 0.9256  ·  time 8.875s vs 8.873s  ·  score 1.0522 vs 1.0108
+
+## Pareto front (2 non-dominated configs)
+
+| constraint_relaxation_strategy | inequality_handling_method | hessian_model | inertia_correction_strategy | globalization_mechanism | globalization_strategy | reliability | cum_cpu_time | combined_score |
+|---|---|---|---|---|---|---|---|---|
+| feasibility_restoration | interior_point | exact | primal | LS | funnel_method | 0.9587 | 8.521 | 1.0445 |
+| feasibility_restoration | interior_point | exact | primal_dual | LS | funnel_method | 0.9669 | 8.875 | 1.0522 |
+
+Full front configs also in `front_configs.json` / `pareto_front.csv`; plots in
+`pareto_final.png` (vs. presets, log time axis) and `pareto_evolution.png`.
+
+## Search coverage
+
+- Distinct configs evaluated: **187** of 240 nominal
+  (the config cache makes re-proposed configs free).
+- Generations: 15, population 24.
+
+## Notes
+
+- Time carries run-to-run noise (wall-clock more so than CPU: it also picks up
+  process spawn, I/O and machine load); reliability is noise-free. Front points
+  within a fraction of a second are statistically indistinguishable.
+- Silent-rewrite detection (UNO running a different config than requested on
+  unconstrained/bound-only problems) is a quickRun-harness feature and is **not**
+  tracked by the decoupled `optiuno.objective` evaluator used here.
+- The space is small (240 points); a complete enumeration + non-dominated
+  filter is a feasible exact alternative / ground-truth check.

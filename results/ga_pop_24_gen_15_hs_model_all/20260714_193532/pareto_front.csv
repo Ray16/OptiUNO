@@ -1,0 +1,2 @@
+preset,constraint_relaxation_strategy,inequality_handling_method,hessian_model,inertia_correction_strategy,globalization_mechanism,globalization_strategy,reliability,cum_cpu_time,combined_score
+custom,feasibility_restoration,interior_point,exact,primal_dual,LS,funnel_method,0.966942,2.9528,1.062021

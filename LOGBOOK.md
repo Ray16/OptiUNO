@@ -326,3 +326,251 @@ UNO configs.
   dead-region config runs to `(0.0, …)` without raising; `make_objective` returns a callable.
 - `CLAUDE.md` (root) was also refreshed this session to document the current architecture
   (shared `optiuno` library, the two corpora, the search-pipeline input layering).
+
+## 2026-07-14 — CUTE problem-set JSONs + GA output-path scheme
+
+### Added CUTE problem-set JSONs
+Created two more problem-set JSONs under `problems/sets/`, in the same format read by
+`optiuno.objective.load_problem_set`, generated from `problems/CUTE/summary.csv`:
+
+- `cute_uno_subset.json` — the **"400s" UNO test set**: UNO's nonconvex-solver-comparison
+  benchmark subset (`in_uno_429_subset`), **425** of the original 429 `small_instances`
+  (4 absent from Library2: `hs067`, `methanb8`, `methanl8`, `nuffield_continuum`).
+- `cute_all.json` — **all 727** CUTE problems.
+
+Both list **full nested `.nl` paths** (`problems/CUTE/<name>/<name>.nl`) with **no `base_dir`**,
+because CUTE is one-folder-per-problem — the flat `base_dir`+stem convention `hs_model_all.json`
+uses (`base_dir/<stem>.nl`) does not fit. `_resolve_entry` treats any entry ending in `.nl` as a
+path (resolved against the repo root), so this loads unchanged. Faithful presolve-OFF `.nl`
+variant only. Entries sorted alphabetically.
+
+- Verified: the generator confirmed every referenced `.nl` exists on disk (0 missing for both
+  sets); `load_problem_set` resolves all three sets — cute_all → 727, cute_uno_subset → 425,
+  hs_model_all → 121 — with every path present.
+
+### GA output-path scheme
+- Changed `scripts/ga_search.py` default output folder from
+  `results/ga_<set>/<timestamp>/` to
+  `results/ga_pop_<pop_size>_gen_<generations>_<set>/<timestamp>/`, so the population and
+  generation count are visible in the group folder name; the run timestamp stays as the
+  subfolder (existing convention). Only the default path changed — an explicit `--out` still
+  overrides. Updated the module docstring and `--out` help text to match.
+- Verified: `py_compile` OK; path construction previews e.g.
+  `results/ga_pop_24_gen_15_hs_model_all/<timestamp>/` and
+  `results/ga_pop_40_gen_30_cute_uno_subset/<timestamp>/`. The prior
+  `results/ga_hs_model_all/20260714_163339/` run folder is left untouched.
+
+Nothing committed (per rule).
+
+## 2026-07-14 — GA timing: tic-toc UNO time, serial default, GA-overhead metric
+
+Reworked how `scripts/ga_search.py` accounts time so it can report **GA overhead =
+real run wall clock − time spent inside UNO**, with UNO time measured by tic-toc.
+
+**Clarified first (user question):** the time the GA minimizes was UNO's *self-reported
+CPU seconds* (parsed from the `CPU time:` line UNO prints — `optiuno/uno_runner.py`),
+NOT a tic-toc around the call. `run_uno` also records `UnoResult.wall_time` (a
+`time.perf_counter()` measured around the `subprocess.run`), previously used only as a
+crash fallback.
+
+**`optiuno/objective.py` (shared library, backward-compatible):**
+- Renamed `_charged_cpu` → `_charged_time(res, time_limit, time_source)`. New
+  `time_source="wall"` charges the real tic-toc `res.wall_time` (no cap; it is the
+  time genuinely spent); `time_source="cpu"` (default) keeps the old UNO-CPU logic.
+- `evaluate_detailed` / `evaluate` / `make_objective` gained a `time_source="cpu"`
+  kwarg (default preserves all existing behavior/numbers). Per-problem rows now always
+  carry raw `wall_time`; the result dict gained `cum_wall_time` (always the tic-toc
+  sum) and `time_source`. Invalid `time_source` → ValueError.
+- CLI: added `--time-source {cpu,wall}`; prints `cum_time` (labelled with its source)
+  and `cum_wall_time`.
+
+**`scripts/ga_search.py`:**
+- **Default `--workers` 8 → 1** (serial, no parallel pool) so the summed UNO tic-toc
+  time is comparable to the run wall clock. New `--time-source {wall,cpu}` (default
+  **wall**) — the GA now optimizes real wall-clock UNO time by default.
+- `Evaluator` accumulates `total_uno_time` (sum of `cum_wall_time`) and `n_uno_calls`
+  over cache **misses only** (a cache hit runs no UNO), and passes `time_source`
+  through.
+- `main` times the whole run with `perf_counter` and writes a new **`timing.json`**
+  (`run_wall_s`, `uno_wall_s`, `ga_overhead_s`, `ga_overhead_fraction`, `uno_calls`,
+  `n_evaluations`, `n_distinct_configs`). A Timing section was added to `RESULTS.md`
+  and a timing block to the console summary. If `workers != 1`, both warn that the
+  overhead is not directly meaningful (overlapping wall clocks). `n_evaluations` is
+  read from `result.algorithm.evaluator` (pymoo runs on an internal copy, so the local
+  `algorithm` has n_eval=0). Plot axis labels / prose changed "CPU time" → "UNO time".
+- Note: `uno_wall_s` always uses the real tic-toc `cum_wall_time` even under
+  `--time-source cpu`, so the overhead subtraction stays honest regardless of the
+  objective's time metric.
+
+- Verified (`python3`, pymoo 0.6.2): `py_compile` of both files; `evaluate_detailed`
+  on 3 HS problems shows `cpu` vs `wall` differ and `wall` makes `cpu_time==wall_time`;
+  bad `time_source` raises. End-to-end GA smoke (pop 4 × gen 2, serial, 4-problem temp
+  set) wrote `timing.json` with run 2.84s − UNO 2.31s = overhead 0.53s (18.8%),
+  `n_evaluations=8`. A `--workers 2 --time-source cpu` run correctly showed negative
+  overhead + the overlap warning. All smoke artifacts (temp set + run folders) removed;
+  pre-existing `results/ga_hs_model_all/` untouched. Nothing committed (per rule).
+
+### Per-generation, per-population console output
+Extended `scripts/ga_search.py` so each generation prints one line **per population
+member**, not just a one-line summary. In `FrontSnapshot.notify` (fires at the end of
+each generation, so the generation number from `algorithm.n_gen` is exact), it iterates
+the surviving population `algorithm.pop` and prints, per member: reliability, the time
+objective, `solved=n/N`, `eval_wall` (measured wall to evaluate that config), and the
+full config (via `_fmt_config` + a `SHORT_KEYS` abbreviation map). A `-> gen N summary`
+line follows (evals / distinct / front size / best). `Evaluator.evaluate` now records
+`eval_wall` and `cum_wall_time` on each cache-miss rec so the callback can show per-member
+wall time (cache hits reuse the original config's recorded `eval_wall`).
+- New flag `--no-population` (summary line only); `--quiet` still suppresses everything.
+- Verified: smoke run prints the per-member block for both generations with correct
+  values; `--no-population` shows only the two summary lines; `--quiet` emits no
+  per-generation output. Smoke artifacts removed. Nothing committed (per rule).
+
+### Switched per-population output to LIVE streaming
+Follow-up (user: quiet is off by default — confirmed it already was; the real ask was to
+see members as they finish, not batched at the generation boundary). Moved the per-member
+printing out of `FrontSnapshot.notify` (which fires only at a generation's end) into
+`Evaluator._print_member`, called from `Evaluator.evaluate` right after each GA config is
+scored — so on a long serial run the lines appear one at a time instead of after the whole
+generation. Details:
+- Generation numbering: while a generation is being evaluated, `Evaluator.gen` (bumped by
+  the callback at each generation's *end*) lags by one, so the gen currently being evaluated
+  is `self.gen + 1` (initial population → gen 1). `_print_member` prints a `generation N:`
+  header when that value changes and resets the per-gen `pop` index. Verified correct on a
+  pop 4 × gen 3 smoke run (headers 1/2/3, indices 0..3).
+- Only GA members stream (label == "ga"); baselines are still printed by `main()`. Cache
+  hits are tagged `(cached)` (the config's original `eval_wall` is shown). `FrontSnapshot`
+  now only records the front + prints the end-of-generation summary line.
+- `Evaluator` gained `verbose`/`per_individual` flags (from `--quiet` / `--no-population`);
+  `FrontSnapshot` lost its `per_individual` param. All flags default to full live output.
+- Verified: live per-member streaming with correct gen numbers and n_eval (4/8/12);
+  `--no-population` → summary lines only; `--quiet` → no per-generation output. Smoke
+  artifacts removed; real run dirs untouched. Nothing committed (per rule).
+
+## 2026-07-14 — UNO threading finding + selectable HSL/MA27 binary in the GA
+
+### Threading (answering "how many threads does UNO use?")
+- The bundled `external/uno/bin/uno_ampl` links **libgomp (OpenMP)** and pulls in
+  **MUMPS + OpenBLAS** from `external/uno/deps`. UNO exposes **no** thread run-time-option;
+  threading is governed entirely by the libraries' defaults, which use **all available
+  cores** when `OMP_NUM_THREADS` / `OPENBLAS_NUM_THREADS` are unset (28 cores here).
+- Measured on `problems/CUTE/broydn7d` (`preset=ipopt`) with `/usr/bin/time -v`:
+  default → **~1900–2600% CPU** (≈19–26 threads), wall ≈0.09s but **user CPU ≈2.5–3.5s**;
+  `OMP_NUM_THREADS=1` → 97% CPU, user 0.07s; `OPENBLAS_NUM_THREADS=1` → 100% CPU. So the
+  parallelism is **OpenMP-driven** (OMP is the lever; OpenBLAS alone made little difference
+  here). Notably, pinning to 1 thread was *faster in wall clock* for this small problem
+  (0.06–0.08s vs 0.18s) — the parallel overhead exceeds the benefit at small sizes.
+- Implication for our timing work: `time_source="cpu"` (UNO-reported CPU) sums across
+  threads, so it runs ~1 order of magnitude above wall on threaded regions; the tic-toc
+  `wall` source is the honest per-solve elapsed time. Even at GA `--workers 1`, each UNO
+  solve still uses many cores internally.
+
+### Bundled UNO has only a STUB HSL (no real MA27)
+- `external/uno/deps/libhsl.so` exists and the binary is linked to it, and the binary even
+  has MA27/MA57 wrapper code compiled in — BUT the bundled libhsl is an **18 KB Julia
+  HSL_jll stub** (each `ma27ad_`/`ma57ad_` is a 1-byte no-op; `LIBHSL_isfunctional` returns
+  false), so UNO advertises only **MUMPS, SSIDS** and `linear_solver=MA27` → "The linear
+  solver MA27 is unknown". This build also lacks runtime HSL loading (no `libhsl_path`
+  option; not built with `-DHSL_RUNTIME_LOADING=ON`).
+
+### User's own UNO build has real MA27 — made it selectable from `ga_search.py`
+- The user's checkout `/home/sdinh/sandbox/Uno/build/uno_ampl` is built with real HSL
+  (`.../Uno/dependencies/lib/libcoinhsl.so`) and advertises **MA57, MA27, MUMPS, SSIDS**;
+  verified it solves hs071 with `linear_solver=MA27` (obj 17.01402, Success), including
+  through `optiuno.run_uno` (option passed as `preset=ipopt linear_solver=MA27`).
+- **`optiuno/objective.py`:** added `extra_options` kwarg to `evaluate_detailed` / `evaluate`
+  / `make_objective` — a dict of **fixed, non-searched, unvalidated** UNO options merged into
+  every solve (`run_options = {**config, **extra_options}`). CLI gained `--extra-option
+  KEY=VALUE` (repeatable). `uno_bin` was already supported. Defaults unchanged (bundled
+  binary, no extra options) so existing behavior/numbers are preserved.
+- **`scripts/ga_search.py`:** added `--uno-bin` (default **system-first** via
+  `optiuno.uno_runner.resolve_uno_bin`: `$UNO_AMPL_BIN` → PATH → bundled) and `--option
+  KEY=VALUE` (repeatable, the fixed extra options). `Evaluator` forwards both to
+  `evaluate_detailed`. A **preflight** parses `<bin> --strategies` and, if a requested
+  `linear_solver` isn't advertised, exits 2 with a clear message **before** creating any
+  output dir (prevents silently scoring every problem unsolved on a non-HSL binary). The
+  resolved binary + fixed options are printed at startup and recorded in `timing.json`
+  (`uno_bin`, `extra_options`) and the RESULTS "Setup" section (which no longer hard-codes
+  "bundled").
+- Usage: `python scripts/ga_search.py --uno-bin /home/sdinh/sandbox/Uno/build/uno_ampl
+  --option linear_solver=MA27 ...` (or `export UNO_AMPL_BIN=.../Uno/build/uno_ampl` and drop
+  `--uno-bin`).
+- Verified (`py_compile` both files): MA27 run on the user binary solves and streams
+  per-member output with `uno binary`/`fixed options` echoed and provenance in `timing.json`;
+  MA27 on the bundled binary is rejected (exit 2, no output dir left); the objective CLI
+  `--extra-option linear_solver=MA27 --uno-bin <user>` → 4/4 solved. Smoke artifacts removed;
+  real run dirs (`ga_hs_model_all`, `ga_pop_24_gen_15_hs_model_all`) untouched. Bundled UNO
+  and the user's UNO were **not** modified (read-only). Nothing committed (per rule).
+
+### Worker-count sweep (16/8/4/1) with the user's MA27 binary — 4 sequential GA runs
+Ran `ga_search.py` four times, identical settings except `--workers` (16, 8, 4, 1), all with
+`--uno-bin /home/sdinh/sandbox/Uno/build/uno_ampl --option linear_solver=MA27
+--problems problems/sets/hs_model_all.json` (defaults: pop 24, gen 15, seed 1, time_source=wall,
+time_limit 20s). Outputs in `results/ga_pop_24_gen_15_hs_model_all/{20260714_184528 (w16),
+_190819 (w8), _193532 (w4), _202336 (w1)}`.
+
+| workers | run_wall (s) | best reliability | best config | wall-obj of best (s) | distinct | evals |
+|--------:|-------------:|:----------------:|-------------|---------------------:|---------:|------:|
+| 16 | 1370.7 | 0.9669 (117/121) | fr·IP·exact·primal_dual·LS·funnel | 8.87 | 187 | 358 |
+|  8 | 1632.1 | 0.9669 (117/121) | fr·IP·exact·primal_dual·LS·funnel | 4.91 | 189 | 358 |
+|  4 | 2883.5 | 0.9669 (117/121) | fr·IP·exact·primal_dual·LS·funnel | 2.95 | 195 | 358 |
+|  1 | 7252.2 | 0.9669 (117/121) | fr·IP·exact·primal_dual·LS·funnel | 1.48 | 193 | 358 |
+
+**Finding: the optimization OUTCOME is invariant to worker count** — same best reliability
+(0.9669 = 117/121) and the *same* winning config in all four; baselines identical too
+(filtersqp 0.9669, ipopt 0.9256 everywhere); 358 evals each; distinct configs 187–195 (±2%,
+minor trajectory jitter from the noisy time tiebreaker). **What changes is only the time
+numbers, and that's a threading artifact:** each UNO solve already uses ~all cores (OpenMP), so
+N concurrent workers oversubscribe the 28-core box and inflate per-solve wall. The wall-time
+objective of the *same* config spanned ~6× (8.87→4.91→2.95→1.48s as workers 16→8→4→1); the
+filtersqp baseline time spanned ~7.7× (24.6→19.2→10.6→3.2s). Total run wall grew ~5.3× as
+workers dropped (16→1) because less parallelism. GA overhead is only meaningful at workers=1:
+**61.8 s = 0.9%** of the 7252 s run (UNO dominates; pymoo/caching/plot/I/O negligible).
+Conclusion: absolute `cum_time` is NOT comparable across worker counts — use **workers=1** for
+trustworthy time values (slow, ~2 h), higher workers only for faster search where you care about
+reliability/relative ranking. Scratch console logs removed; the 4 result dirs kept. Read-only;
+nothing committed.
+
+## 2026-07-15 — All four UNO presets as baselines + `preset` column in every results CSV
+
+Discovered UNO defines **four** built-in presets in `Uno/uno/options/Presets.cpp`, not two:
+`ipopt`, `filtersqp`, and additionally **`funnelsqp`** (= filtersqp but funnel_method
+globalization) and **`filterslp`** (= filtersqp but hessian_model=zero → SLP). `auto` (default)
+is availability-based selection, not a fixed bundle. All four presets' six ingredients are
+present in `optiuno/uno_search_space.json`, so they validate as baselines *and* are reachable by
+the GA.
+
+Changes to `scripts/ga_search.py` (per user request "run all presets and add to the result;
+add a first column 'preset' to all CSVs, matching config→preset, else 'custom'"):
+- `PRESET_INGREDIENTS` extended from 2→4 presets (added `funnelsqp`, `filterslp`) with the
+  six-ingredient bundles from Presets.cpp; `PRESET_STYLE` given markers/colors for the two new
+  ones (plots + RESULTS.md baseline table now show all four).
+- New module-level `match_preset(options)`: returns the preset whose six ingredients equal the
+  config (compared over the six search-space keys), else `"custom"`.
+- Added a **leading `preset` column** to all three results CSVs — `evaluations.csv`,
+  `ga_history.csv`, `pareto_front.csv` — populated via `match_preset`. So a GA-*discovered*
+  config that happens to equal a preset bundle is labelled with that preset's name (not custom).
+  Note: presets are matched/evaluated as six-ingredient configs (UNO-default numerics), the
+  existing framework convention — a GA config with the same six ingredients is genuinely the
+  same run, which is what makes the label accurate.
+- Docstring updated to document the `preset` column and the four baselines.
+
+Verified with a fast smoke run (bundled binary, pop 6 × gen 1, 3-problem set): all four
+baselines evaluated; CSVs lead with `preset`; baselines labelled correctly; a GA-found config
+matching funnelsqp's bundle was correctly labelled `funnelsqp` on the Pareto front; other GA
+configs `custom`. Temp smoke artifacts removed. Read-only re UNO; nothing committed.
+
+## 2026-07-15 — Back-fill `preset` column into the existing worker-sweep CSVs
+
+Migrated the 12 pre-existing CSVs under `results/ga_pop_24_gen_15_hs_model_all/{20260714_184528,
+_190819, _193532, _202336}` to the new format: inserted a leading `preset` column populated by
+the *same* `scripts/ga_search.py:match_preset` (imported, not re-implemented) so labels are
+identical to freshly-generated files. `evaluations.csv` matches on `options_json`,
+`ga_history.csv` on `config_json`, `pareto_front.csv` on its six ingredient columns. In-place
+rewrite, idempotent (skips a file whose first column is already `preset`). Row counts unchanged
+(evaluations 187/189/195/193; ga_history 360 each = 2 old baselines + 358 GA calls;
+pareto_front 2/1/1/3). Spot-check: baselines labelled `filtersqp`/`ipopt`, the GA-discovered
+funnelsqp bundle labelled `funnelsqp`, the ipopt bundle on a front labelled `ipopt`, everything
+else `custom` — matching by ingredients, as designed. **Note:** these runs predate the
+four-preset change, so their `RESULTS.md` baseline tables still show only `filtersqp`/`ipopt`
+(only two baselines were actually run then); I did not fabricate funnelsqp/filterslp baseline
+numbers for them — only the CSV format was updated. Nothing committed.

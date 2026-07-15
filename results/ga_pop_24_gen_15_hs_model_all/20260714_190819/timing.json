@@ -1,0 +1,15 @@
+{
+  "time_source": "wall",
+  "workers": 8,
+  "uno_bin": "/home/sdinh/sandbox/Uno/build/uno_ampl",
+  "extra_options": {
+    "linear_solver": "MA27"
+  },
+  "run_wall_s": 1632.0682,
+  "uno_wall_s": 9779.3836,
+  "ga_overhead_s": -8147.3154,
+  "ga_overhead_fraction": -4.992,
+  "uno_calls": 189,
+  "n_evaluations": 358,
+  "n_distinct_configs": 189
+}

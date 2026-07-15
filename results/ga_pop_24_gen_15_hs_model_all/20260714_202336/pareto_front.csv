@@ -1,0 +1,4 @@
+preset,constraint_relaxation_strategy,inequality_handling_method,hessian_model,inertia_correction_strategy,globalization_mechanism,globalization_strategy,reliability,cum_cpu_time,combined_score
+ipopt,feasibility_restoration,interior_point,exact,primal_dual,LS,waechter_filter_method,0.925620,1.2135,1.023597
+custom,feasibility_restoration,interior_point,exact,primal,LS,funnel_method,0.958678,1.2181,1.056647
+custom,feasibility_restoration,interior_point,exact,primal_dual,LS,funnel_method,0.966942,1.4790,1.064477

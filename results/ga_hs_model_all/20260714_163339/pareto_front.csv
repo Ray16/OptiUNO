@@ -1,0 +1,4 @@
+constraint_relaxation_strategy,inequality_handling_method,hessian_model,inertia_correction_strategy,globalization_mechanism,globalization_strategy,reliability,cum_cpu_time,combined_score
+feasibility_restoration,interior_point,LSR1,primal,TR,fletcher_filter_method,0.000000,1.5788,0.097369
+feasibility_restoration,inequality_constrained,exact,primal_dual,LS,fletcher_filter_method,0.157025,3.2246,0.251651
+feasibility_restoration,inequality_constrained,exact,none,TR,fletcher_filter_method,0.966942,4.8769,1.058814

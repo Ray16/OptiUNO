@@ -184,12 +184,21 @@ def _category(res) -> str:
     return "unsolved"
 
 
-def _charged_cpu(res, time_limit: float) -> float:
-    """Per-problem CPU time to charge (mirrors quickRun benchmark.py:70-74).
+def _charged_time(res, time_limit: float, time_source: str = "cpu") -> float:
+    """Per-problem time to charge, from one of two sources.
 
-    Normal case: UNO-reported CPU seconds. A timeout charges the full time_limit; a
-    crash / unparseable run charges its wall time, capped at time_limit.
+    time_source="cpu" (default): UNO's own reported CPU seconds (mirrors quickRun
+        benchmark.py:70-74). A timeout charges the full time_limit; a crash /
+        unparseable run charges its wall time, capped at time_limit.
+    time_source="wall": the real "tic-toc" wall-clock seconds measured with
+        ``time.perf_counter()`` around the ``uno_ampl`` subprocess
+        (``UnoResult.wall_time``) -- i.e. the actual elapsed time UNO took,
+        including process spawn, I/O and stdout parsing. This is always populated
+        by ``run_uno`` (even on timeout); it falls back to time_limit only if
+        somehow missing. No capping: it reports the time genuinely spent.
     """
+    if time_source == "wall":
+        return float(res.wall_time if res.wall_time is not None else time_limit)
     cpu = res.cpu_time
     if _is_timeout(res):
         return float(time_limit)
@@ -203,27 +212,40 @@ def _charged_cpu(res, time_limit: float) -> float:
 # --------------------------------------------------------------------------- #
 def evaluate_detailed(config: dict, problem_set, *,
                       time_limit: float = DEFAULT_TIME_LIMIT, workers: int = 8,
-                      uno_bin=None, validate: bool = True) -> dict:
+                      uno_bin=None, validate: bool = True,
+                      time_source: str = "cpu", extra_options=None) -> dict:
     """Solve `config` over `problem_set`; return metrics + per-problem rows.
 
-    See :func:`evaluate` for the argument meanings. Returns a dict with keys:
-    ``reliability``, ``cum_cpu_time``, ``n_problems``, ``n_solved``, ``config``,
-    ``time_limit``, ``status_counts``, ``per_problem``.
+    See :func:`evaluate` for the argument meanings. ``time_source`` selects what the
+    charged ``cpu_time`` / ``cum_cpu_time`` measures: ``"cpu"`` (UNO-reported CPU
+    seconds, the default) or ``"wall"`` (real tic-toc wall-clock around each solve).
+    ``extra_options`` is a dict of fixed UNO run-time-options (e.g.
+    ``{"linear_solver": "MA27"}``) merged into every solve; unlike ``config`` these
+    are NOT part of the search space and are NOT validated -- UNO checks them.
+    Returns a dict with keys: ``reliability``, ``cum_cpu_time`` (per ``time_source``),
+    ``cum_wall_time`` (always the raw tic-toc sum), ``time_source``, ``n_problems``,
+    ``n_solved``, ``config``, ``time_limit``, ``status_counts``, ``per_problem``.
     """
+    if time_source not in ("cpu", "wall"):
+        raise ValueError(f"time_source must be 'cpu' or 'wall', got {time_source!r}")
     config = dict(config or {})
     if validate:
         validate_config(config)
+    # Fixed, non-searched options (linear_solver, tolerances, ...) applied to every
+    # solve. Merged last so they override any same-named searched key.
+    run_options = {**config, **dict(extra_options or {})}
 
     problems = load_problem_set(problem_set)
     binary = str(uno_bin) if uno_bin is not None else str(bundled_uno_bin())
 
     def one(nl: Path) -> dict:
-        res = run_uno(nl, options=config, uno_bin=binary, time_limit=time_limit)
+        res = run_uno(nl, options=run_options, uno_bin=binary, time_limit=time_limit)
         return {
             "problem": res.problem,
             "category": _category(res),
             "solved": is_solved(res),
-            "cpu_time": _charged_cpu(res, time_limit),
+            "cpu_time": _charged_time(res, time_limit, time_source),
+            "wall_time": float(res.wall_time) if res.wall_time is not None else None,
             "objective": res.objective,
             "iterations": res.iterations,
             "optimization_status": res.optimization_status,
@@ -242,17 +264,20 @@ def evaluate_detailed(config: dict, problem_set, *,
     return {
         "config": config,
         "time_limit": time_limit,
+        "time_source": time_source,
         "n_problems": n,
         "n_solved": n_solved,
         "reliability": n_solved / n if n else 0.0,
         "cum_cpu_time": sum(r["cpu_time"] for r in rows),
+        "cum_wall_time": sum(r["wall_time"] or 0.0 for r in rows),
         "status_counts": status_counts,
         "per_problem": rows,
     }
 
 
 def evaluate(config: dict, problem_set, *, time_limit: float = DEFAULT_TIME_LIMIT,
-             workers: int = 8, uno_bin=None, validate: bool = True) -> tuple[float, float]:
+             workers: int = 8, uno_bin=None, validate: bool = True,
+             time_source: str = "cpu", extra_options=None) -> tuple[float, float]:
     """Score one UNO config over a problem set -> ``(reliability, cum_cpu_time)``.
 
     config       dict of ingredient options (a subset of uno_search_space.json);
@@ -261,21 +286,27 @@ def evaluate(config: dict, problem_set, *, time_limit: float = DEFAULT_TIME_LIMI
                  :func:`load_problem_set`).
     time_limit   per-problem UNO time budget in seconds (default 20). A problem that
                  hits it is unsolved and charged the full budget.
-    workers      concurrent solves (default 8). Does not affect the returned numbers --
-                 cum_cpu_time is a sum of per-problem CPU times, not wall-clock.
+    workers      concurrent solves (default 8). With ``time_source="cpu"`` this does
+                 not affect the returned time (a sum of per-problem CPU seconds); with
+                 ``time_source="wall"`` keep it at 1 so the tic-toc sum reflects real
+                 serial elapsed time (parallel workers overlap wall clocks).
     uno_bin      path to uno_ampl; defaults to the bundled build for reproducibility.
     validate     if True, reject unknown keys / illegal values (ValueError).
+    time_source  "cpu" (UNO-reported CPU seconds, default) or "wall" (real tic-toc
+                 wall-clock around each solve).
 
     Returns
-        (reliability in [0, 1], cumulative UNO CPU seconds).
+        (reliability in [0, 1], cumulative time in seconds per ``time_source``).
     """
     out = evaluate_detailed(config, problem_set, time_limit=time_limit,
-                            workers=workers, uno_bin=uno_bin, validate=validate)
+                            workers=workers, uno_bin=uno_bin, validate=validate,
+                            time_source=time_source, extra_options=extra_options)
     return out["reliability"], out["cum_cpu_time"]
 
 
 def make_objective(problem_set, *, time_limit: float = DEFAULT_TIME_LIMIT,
-                   workers: int = 8, uno_bin=None, validate: bool = True):
+                   workers: int = 8, uno_bin=None, validate: bool = True,
+                   time_source: str = "cpu", extra_options=None):
     """Build a black-box objective ``config -> (reliability, cum_cpu_time)``.
 
     The problem set is resolved once, up front, so the returned callable only pays for
@@ -284,14 +315,16 @@ def make_objective(problem_set, *, time_limit: float = DEFAULT_TIME_LIMIT,
         f = make_objective("problems/sets/hs_model_all.json", time_limit=20)
         reliability, cpu = f({"globalization_mechanism": "LS"})
 
-    Scalarization (how to trade reliability against CPU time) is left to the caller,
+    ``time_source`` selects the time metric ("cpu" default, or "wall" tic-toc).
+    Scalarization (how to trade reliability against time) is left to the caller,
     since the objective is genuinely bi-objective.
     """
     problems = load_problem_set(problem_set)   # resolve + existence-check once
 
     def objective(config: dict) -> tuple[float, float]:
         return evaluate(config, problems, time_limit=time_limit, workers=workers,
-                        uno_bin=uno_bin, validate=validate)
+                        uno_bin=uno_bin, validate=validate, time_source=time_source,
+                        extra_options=extra_options)
 
     return objective
 
@@ -326,9 +359,14 @@ def main(argv=None) -> int:
     ap.add_argument("--time-limit", type=float, default=DEFAULT_TIME_LIMIT,
                     help=f"per-problem UNO time budget in seconds (default {DEFAULT_TIME_LIMIT})")
     ap.add_argument("--workers", type=int, default=8,
-                    help="concurrent solves (default 8; does not affect the metrics)")
+                    help="concurrent solves (default 8; use 1 with --time-source wall)")
+    ap.add_argument("--time-source", choices=("cpu", "wall"), default="cpu",
+                    help="time metric: 'cpu' (UNO-reported, default) or 'wall' (tic-toc)")
     ap.add_argument("--uno-bin", default=None,
                     help="path to uno_ampl (default: the bundled build)")
+    ap.add_argument("--extra-option", action="append", metavar="KEY=VALUE", default=[],
+                    help="fixed UNO option applied to every solve, outside the search "
+                         "space and unvalidated (repeatable), e.g. linear_solver=MA27")
     ap.add_argument("--no-validate", action="store_true",
                     help="skip config validation against the search space")
     ap.add_argument("--json", action="store_true", help="print the result as JSON")
@@ -336,9 +374,11 @@ def main(argv=None) -> int:
 
     try:
         config = _parse_options(args.option, args.options)
+        extra_options = _parse_options(args.extra_option, None)
         out = evaluate_detailed(
             config, args.problems, time_limit=args.time_limit, workers=args.workers,
-            uno_bin=args.uno_bin, validate=not args.no_validate)
+            uno_bin=args.uno_bin, validate=not args.no_validate,
+            time_source=args.time_source, extra_options=extra_options)
     except (ValueError, FileNotFoundError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
@@ -349,9 +389,12 @@ def main(argv=None) -> int:
     else:
         print(f"problems     : {out['n_problems']} (from {args.problems})")
         print(f"config       : {config if config else '(UNO defaults)'}")
+        if extra_options:
+            print(f"extra_options: {extra_options}")
         print(f"reliability  : {out['reliability']:.4f}  "
               f"({out['n_solved']}/{out['n_problems']} solved)")
-        print(f"cum_cpu_time : {out['cum_cpu_time']:.4f} s")
+        print(f"cum_time     : {out['cum_cpu_time']:.4f} s  (source: {out['time_source']})")
+        print(f"cum_wall_time: {out['cum_wall_time']:.4f} s")
         print(f"status_counts: {out['status_counts']}")
     return 0
 
