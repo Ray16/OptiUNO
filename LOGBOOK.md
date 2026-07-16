@@ -574,3 +574,30 @@ else `custom` — matching by ingredients, as designed. **Note:** these runs pre
 four-preset change, so their `RESULTS.md` baseline tables still show only `filtersqp`/`ipopt`
 (only two baselines were actually run then); I did not fabricate funnelsqp/filterslp baseline
 numbers for them — only the CSV format was updated. Nothing committed.
+
+## 2026-07-16 — Funnel method: investigation, figures, and crucible ingest
+
+Investigated the `funnel_method` globalization strategy (arising from the four-preset work).
+Read UNO source (`Uno/uno/ingredients/globalization_strategies/switching_methods/funnel_methods/`):
+funnel = a single scalar `width` = monotonically-decreasing upper bound on infeasibility;
+`acceptable(h): h<=width`; f-type/h-type switching. Established the origin paper is **Gould &
+Toint, "Nonlinear programming without a penalty function or a filter," Math. Program. 122(1):
+155-196, 2010** (DOI 10.1007/s10107-008-0244-7), confirmed via Crossref. Key finding: the
+**Vanaret & Leyffer 2026 UNO paper does NOT mention funnel** — verified by reading its §4.1
+(only merit + filter classes; 0 "funnel" hits across a faithful pdftotext extraction).
+
+- Created two explanatory figures under `figures/`: `funnel_vs_waechter_filter.png` (side-by-side
+  acceptance regions in the (eta,f) plane) and `funnel_vs_filter_overlap.png` (the four
+  agree/disagree regions — shows neither acceptance region contains the other; funnel is a hard
+  eta-cap indifferent to objective, filter trades objective vs infeasibility).
+- User uploaded the Gould & Toint PDF to `References/`; read it and confirmed 1:1 correspondence
+  with UNO's `Funnel` class (theta_k^max = width; f/c-iterations = f-type/h-type; "memory via the
+  decreasing {theta_k^max}" vs a stored filter set). Caveat: paper is trust-region +
+  equality-constrained; UNO generalizes funnel to pair with LS too.
+- **Ingested it into the Crucible wiki** (`crucible ingest`, source ID 8, cite key `gould2010`):
+  wrote summary `.crucible/wiki/summaries/gould-toint-2010-trust-funnel.org`; added a **Funnel
+  methods** section to `.crucible/wiki/concepts/globalization-strategy.org` (previously merit +
+  filter only) with cross-links; fixed the auto-added `references.bib` entry (proper
+  journal/vol/pages/DOI). Ran `crucible sync` + `index`; `lint` clean (0 errors; only
+  pre-existing index.org notes). `funnel` now returns both articles in search.
+- Saved memory `funnel-method-reference.md`. Read-only re UNO; nothing committed.
