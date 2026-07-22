@@ -1,3 +1,8 @@
+# Python: local virtual environments and bytecode caches (never track)
+.venv/
+__pycache__/
+*.pyc
+
 # Crucible: entire knowledge base (local-only, not shared)
 .crucible/
 

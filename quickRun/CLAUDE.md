@@ -75,12 +75,15 @@ v2.8.0 binary + libs) now lives at the **repo root** (`../external/uno/`), share
 project-wide rather than under `quickRun/`; `benchmark.py` reaches it via
 `optiuno.utils.bundled_uno_bin()`.
 
-**NOT committed — must be recreated before a run:**
-- `.venv/` — no `setup.sh` is committed; create a venv and install
-  `openevolve` (0.3.1), `amplpy`, `numpy`, `matplotlib`, `pyyaml`. `amplpy` needs
-  the AMPL `base` engine module and a license that permits `write` (**AMPL for
-  Academics**, not Community Edition — CE blocks `write`). *Suggest* these to the
-  user; do not install them yourself (parent rule).
+**NOT committed — provided by your environment:**
+- **Python environment** — no venv or `setup.sh` is committed (there is no in-repo
+  `.venv/`). Scripts run under whatever Python you invoke them with; the dev
+  environment is the conda env `sequential_OED`, which has `openevolve` (0.3.1),
+  `amplpy`, `numpy`, `matplotlib`, `pyyaml`. Other users should create their own
+  env with these packages — **detailed install instructions are future work**.
+  `amplpy` needs the AMPL `base` engine module and a license that permits `write`
+  (**AMPL for Academics**, not Community Edition — CE blocks `write`). *Suggest*
+  these to the user; do not install them yourself (parent rule).
 - `../problems/HS_model/*.nl` — the HS test set (at the repo root, alongside
   `problems/CUTE/`). Source `.mod` files come from Vanderbei (many index links are
   dead; recovered via the bulk `cute.tar.gz`, zero-padded names) and, when present,
@@ -96,34 +99,36 @@ project-wide rather than under `quickRun/`; `benchmark.py` reaches it via
 
 ## Commands
 
-All scripts assume the venv Python and are run from `quickRun/`:
+All scripts run under the conda env `sequential_OED` (substitute your own env) and
+are run from `quickRun/`:
 
 ```bash
 # 0. (one-time) translate Vanderbei .mod -> .nl  (needs models/mod + amplpy)
-.venv/bin/python scripts/translate_models.py      # -> ../problems/HS_model/, ../problems/HS_model/untranslatable.md
+conda run -n sequential_OED python scripts/translate_models.py      # -> ../problems/HS_model/, ../problems/HS_model/untranslatable.md
 
 # 1. sanity-check the harness against the published paper (arXiv:2406.13454)
-.venv/bin/python scripts/validate_presets.py      # -> results/preset_validation.md
+conda run -n sequential_OED python scripts/validate_presets.py      # -> results/preset_validation.md
 
 # 2. run the evolutionary search (two LLM backends)
 #    a) Anthropic API  (needs $ANTHROPIC_API_KEY)   default model claude-sonnet-5
-.venv/bin/python scripts/run_evolution.py [--model NAME] [--iterations N] [--smoke]
+conda run -n sequential_OED python scripts/run_evolution.py [--model NAME] [--iterations N] [--smoke]
 #    b) Claude Code CLI subscription (no API key; OAuth)   default model "sonnet"
-.venv/bin/python scripts/run_evolution.py --claude-code
+conda run -n sequential_OED python scripts/run_evolution.py --claude-code
 #    --smoke = 5-iteration end-to-end test. Baselines (both presets) are always
 #    evaluated first so every plot has reference points.
 
 # 3. plots + variance
-.venv/bin/python scripts/plot_pareto.py           # -> results/pareto_*.png, front_configs.json
-.venv/bin/python scripts/variance_runs.py --reps 10 [--fronts results/front_configs.json]
+conda run -n sequential_OED python scripts/plot_pareto.py           # -> results/pareto_*.png, front_configs.json
+conda run -n sequential_OED python scripts/variance_runs.py --reps 10 [--fronts results/front_configs.json]
 
 # run one config manually (library or CLI)
-.venv/bin/python -c "from harness.benchmark import evaluate_config; print(evaluate_config({'preset':'ipopt'}))"
+conda run -n sequential_OED python -c "from harness.benchmark import evaluate_config; print(evaluate_config({'preset':'ipopt'}))"
 ```
 
 `run_evolution.py` writes an *effective* config (`results/openevolve_effective_config.yaml`)
-with the chosen model substituted, then invokes `.venv/bin/openevolve-run` — it does
-**not** use openEvolve's `--primary-model` flag (that path drops per-model fields like
+with the chosen model substituted, then invokes the `openevolve-run` from the active
+environment (`_find_openevolve_run`: the one next to the running interpreter, else on
+PATH) — it does **not** use openEvolve's `--primary-model` flag (that path drops per-model fields like
 `max_budget_usd`, which the `claude` CLI then rejects as the literal string "None").
 
 ## Gotchas established by prior runs (see ../results/quickRun/ + ../LOGBOOK.md)

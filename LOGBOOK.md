@@ -601,3 +601,27 @@ Toint, "Nonlinear programming without a penalty function or a filter," Math. Pro
   journal/vol/pages/DOI). Ran `crucible sync` + `index`; `lint` clean (0 errors; only
   pre-existing index.org notes). `funnel` now returns both articles in search.
 - Saved memory `funnel-method-reference.md`. Read-only re UNO; nothing committed.
+
+## 2026-07-22 — Removed the committed `quickRun/.venv/`; standardized on the `sequential_OED` conda env
+
+Removed the broken, checked-in `quickRun/.venv/` (4111 tracked `.pyc` files, ~70 MB, no `bin/` or
+interpreter — the `.venv/bin/python` used throughout the docs never resolved). Runs now use the
+developer's conda env `sequential_OED`; other users create their own env, with per-user install
+instructions left as future work.
+
+- **Code:** `quickRun/scripts/run_evolution.py` — dropped the dead `ROOT/.venv/bin/openevolve-run`
+  fallback in `_find_openevolve_run()` (kept the `sys.executable`-adjacent → PATH resolution, which
+  already finds the env's `openevolve-run`); updated its usage/resolution docstrings.
+  `scripts/ga_search.py` — replaced the `/home/sdinh/anaconda3/bin/python` example with
+  `conda run -n sequential_OED python`.
+- **Docs:** `quickRun/CLAUDE.md`, root `CLAUDE.md`, `STATUS.md` — swapped every `.venv/bin/python`
+  for `conda run -n sequential_OED python`, rewrote the "`.venv/` not committed" bullet as a
+  "Python environment" note (dev env = `sequential_OED`; future-user install = TODO), and refreshed
+  STATUS.md's stale Git section.
+- **Git/ignore:** `git rm -r quickRun/.venv` (untracked 4111 files + deleted the dir); added
+  `.venv/`, `__pycache__/`, `*.pyc` to the tracked `.gitignore`. The removal is **staged, not
+  committed** (project rule — the user commits).
+- **Validation:** no `.venv` remains in live `.py` or living docs; `run_evolution.py` /
+  `ga_search.py` / `optiuno.uno_runner` `--help` all exit 0 under `sequential_OED`; `openevolve-run`
+  resolves next to the env python and on PATH (so the removed fallback was safe); the new ignore
+  rules match venv/cache paths. Nothing committed.

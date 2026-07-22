@@ -90,8 +90,8 @@ The README specifies these are installed in the workspace, *not* committed here:
 
 ## Commands
 
-Run from the repo root. `optiuno` and `scripts/` are stdlib/`amplpy`; `quickRun` needs its
-own venv (see `quickRun/CLAUDE.md`).
+Run from the repo root. `optiuno` and `scripts/` are stdlib/`amplpy`; `quickRun` runs under
+your Python environment (dev: conda env `sequential_OED`; see `quickRun/CLAUDE.md`).
 
 ```bash
 # Solve one problem with a config (CLI). --json for machine-readable UnoResult.
@@ -110,9 +110,9 @@ python scripts/scrape_cute.py
 python scripts/problem_parser.py --only hs071 [--presolve] [--force]
 
 # Evolutionary search + preset sanity-check — see quickRun/CLAUDE.md for the full pipeline,
-# run from quickRun/ with its venv, e.g.:
-#   .venv/bin/python scripts/validate_presets.py     # sanity-check harness vs. published paper
-#   .venv/bin/python scripts/run_evolution.py [--smoke]
+# run from quickRun/ under the conda env sequential_OED, e.g.:
+#   conda run -n sequential_OED python scripts/validate_presets.py     # sanity-check harness vs. published paper
+#   conda run -n sequential_OED python scripts/run_evolution.py [--smoke]
 ```
 
 ## Key references

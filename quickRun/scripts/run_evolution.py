@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Drive the openEvolve search over UNO's six ingredient options.
 
-Usage (from the project root, inside the venv or via ./.venv/bin/python):
-    scripts/run_evolution.py [--model NAME] [--iterations N] [--smoke] [--api]
+Usage (run from quickRun/, in an environment that has openEvolve installed --
+the dev environment is the conda env `sequential_OED`):
+    conda run -n sequential_OED python scripts/run_evolution.py [--model NAME] [--iterations N] [--smoke] [--api]
 
 Model precedence: --model > $OPTIUNO_EVOLVE_MODEL > default.
 Two LLM backends:
@@ -58,11 +59,10 @@ def _find_openevolve_run() -> str:
 
     Prefer the one installed alongside the interpreter running this script (so
     `conda run -n <env> python scripts/run_evolution.py` uses that env's
-    openEvolve), then a project-local .venv, then PATH.
+    openEvolve), then PATH.
     """
     candidates = [
         Path(sys.executable).parent / "openevolve-run",   # same env as this Python
-        ROOT / ".venv" / "bin" / "openevolve-run",         # project-local venv
     ]
     for cand in candidates:
         if cand.is_file() and os.access(cand, os.X_OK):

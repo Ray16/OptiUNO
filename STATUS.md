@@ -92,7 +92,7 @@ Imported by everything; depends on nothing in `quickRun/` (the dependency arrow 
   timestamped artifacts
   (evaluations/history CSVs, Pareto front, plots, `timing.json`, `RESULTS.md`) to
   `results/ga_pop_<pop_size>_gen_<generations>_<set>/<timestamp>/` (override with `--out`). Needs
-  an interpreter with pymoo + numpy + matplotlib. **Binary:** `--uno-bin` (default system-first
+  an interpreter with pymoo + numpy + matplotlib (dev: conda env `sequential_OED`). **Binary:** `--uno-bin` (default system-first
   via `select_uno_bin`: `$UNO_AMPL_BIN` → PATH → bundled); **fixed options:** `--option
   KEY=VALUE` (repeatable, e.g. `--option linear_solver=MA27`), with a preflight that fails fast
   if the requested `linear_solver` isn't advertised by the chosen binary.
@@ -100,6 +100,11 @@ Imported by everything; depends on nothing in `quickRun/` (the dependency arrow 
 
 ## Environment / conventions
 
+- **Python environment:** no venv is committed (the old broken `quickRun/.venv/` was removed).
+  Scripts run under whatever Python you invoke them with; the dev environment is the conda env
+  `sequential_OED` (holds `openevolve`, `amplpy`, `numpy`, `matplotlib`, `pyyaml`, `pymoo`,
+  `requests`, `bs4`, `pandas`). Other users create their own env with the packages each script
+  needs — detailed install instructions are future work.
 - `amplpy` 0.17.0 + AMPL `base` engine, licensed with **AMPL for Academics** (allows `write`, no
   size cap). Do NOT switch to AMPL **Community Edition** — it blocks `write`.
 - **UNO binary selection** (`optiuno/utils.py:select_uno_bin`): **system-first** — `explicit`/
@@ -144,8 +149,8 @@ Imported by everything; depends on nothing in `quickRun/` (the dependency arrow 
 
 ## Git
 
-- Nothing committed (per rule). Working-tree additions this session: `optiuno/objective.py`,
-  `optiuno/uno_config_options.json`, `optiuno/uno_search_space.json`,
-  `problems/sets/hs_model_all.json`, edits to `optiuno/__init__.py`, `CLAUDE.md`, `LOGBOOK.md`,
-  `STATUS.md`. Still to decide: git tracking for the ~210 MB × 2 `.nl` corpus (regenerates from
-  `.mod`).
+- The old broken `quickRun/.venv/` (4111 tracked `.pyc`, ~70 MB, no interpreter) was removed
+  from git and disk; the tracked `.gitignore` now ignores `.venv/`, `__pycache__/`, `*.pyc` so a
+  local env is never re-tracked. That removal is **staged, not committed** — commit it manually
+  (project rule: only the user commits).
+- Still to decide: git tracking for the large `.nl` corpus (regenerates from `.mod`).

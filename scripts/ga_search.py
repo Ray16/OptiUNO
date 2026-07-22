@@ -13,9 +13,10 @@ seconds instead). The GA is **not** hand-coded: it uses
 `MixedVariableGA` + `RankAndCrowdingSurvival`), which returns a Pareto front
 directly.
 
-Solves run **serially by default** (``--workers 1``) so the summed UNO tic-toc time
-is comparable to the run's wall clock; this lets the run report the **GA overhead**
-= run wall clock − time spent inside UNO (see ``timing.json`` / RESULTS.md).
+Solves run **in parallel by default** (``--workers 8``). The reported **GA overhead**
+= run wall clock − time spent inside UNO (see ``timing.json`` / RESULTS.md) is only
+meaningful with ``--workers 1``: run serially, the summed UNO tic-toc time is
+comparable to the run's wall clock, whereas parallel workers overlap those wall clocks.
 
 Outputs mimic the openEvolve ``results/quickRun/`` artifacts, written to a
 timestamped folder
@@ -35,9 +36,10 @@ presets are also evaluated as baselines (as six-ingredient configs).
   timing.json         run wall clock, summed UNO time, and the GA overhead
   RESULTS.md          narrative summary: baselines, front, best config, timing
 
-Run it with an interpreter that has pymoo + numpy + matplotlib, e.g.::
+Run it with an interpreter that has pymoo + numpy + matplotlib (the dev
+environment is the conda env ``sequential_OED``), e.g.::
 
-    /home/sdinh/anaconda3/bin/python scripts/ga_search.py [--generations N] ...
+    conda run -n sequential_OED python scripts/ga_search.py [--generations N] ...
 
 The UNO solver is invoked only through the shared ``optiuno`` library, read-only;
 nothing in UNO is modified. The binary is chosen system-first (``--uno-bin`` ->
@@ -284,8 +286,13 @@ class Evaluator:
                 json.dumps(rec["status_counts"])])
             self._eval_fh.flush()
 
+        # Tag the row with the generation currently being evaluated. self.gen lags
+        # by one (FrontSnapshot bumps it at each generation's END), so the live GA
+        # generation is self.gen + 1 -- matching _print_member. Baselines (evaluated
+        # before the GA, label != "ga") are logged as generation 0.
+        generation = self.gen + 1 if label == "ga" else 0
         self._hist.writerow([
-            match_preset(config), f"{time.time():.3f}", self.gen,
+            match_preset(config), f"{time.time():.3f}", generation,
             json.dumps(config, sort_keys=True), 1,
             f"{rec['reliability']:.6f}", f"{rec['cum_cpu_time']:.4f}",
             f"{rec['combined_score']:.6f}", rec["n_solved"],
