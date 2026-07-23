@@ -96,7 +96,7 @@ from optiuno.uno_runner import (  # noqa: E402
 DEFAULT_SEARCH_SPACE = REPO_ROOT / "optiuno" / "uno_search_space.json"
 DEFAULT_PROBLEM_SET = REPO_ROOT / "problems" / "sets" / "hs_model_all.json"
 
-TIME_SCALE = 60.0  # CPU-time normalization for the scalar score (as in quickRun)
+TIME_SCALE = 60.0  # CPU-time normalization for the scalar score (as in the openEvolve harness)
 
 # All four UNO built-in presets, as explicit six-ingredient configs, used as
 # reference points AND as the vocabulary for the "preset" column (see
@@ -105,7 +105,7 @@ TIME_SCALE = 60.0  # CPU-time normalization for the scalar score (as in quickRun
 # numerics (tolerances, filter/funnel params, TR radius) that this six-ingredient
 # view intentionally leaves at UNO defaults -- so a GA config with identical
 # ingredients is genuinely the same run and is labelled with the preset name.
-# (`filtersqp`/`ipopt` match quickRun/scripts/run_evolution.py:PRESET_INGREDIENTS;
+# (`filtersqp`/`ipopt` match scripts/run_evolution.py:PRESET_INGREDIENTS;
 # `funnelsqp`/`filterslp` are the two additional built-ins.)
 PRESET_INGREDIENTS = {
     "filtersqp": {
@@ -160,7 +160,7 @@ def match_preset(options: dict) -> str:
 
 
 # --------------------------------------------------------------------------- #
-# Scoring / hashing (kept identical to the quickRun definitions)
+# Scoring / hashing (kept identical to the openEvolve harness definitions)
 # --------------------------------------------------------------------------- #
 def combined_score(reliability: float, cum_cpu_time: float) -> float:
     """Reliability dominates; faster cumulative CPU time breaks ties."""
@@ -207,7 +207,7 @@ class Evaluator:
 
     * `evaluations.csv` gets one row per DISTINCT config (on a cache miss).
     * `ga_history.csv` gets one row per call (hit or miss), tagged by generation.
-    Mirrors the quickRun split (distinct configs vs. every evaluation).
+    Mirrors the openEvolve harness split (distinct configs vs. every evaluation).
     """
 
     def __init__(self, problems, time_limit, workers, out_dir, time_source="wall",
@@ -389,7 +389,7 @@ class FrontSnapshot(Callback):
 
 
 # --------------------------------------------------------------------------- #
-# Plots (styled to match quickRun/scripts/plot_pareto.py)
+# Plots (styled to match scripts/plot_pareto.py)
 # --------------------------------------------------------------------------- #
 def _add_presets(ax, presets: dict):
     for name, rec in presets.items():
@@ -546,7 +546,7 @@ Full front configs also in `front_configs.json` / `pareto_front.csv`; plots in
   process spawn, I/O and machine load); reliability is noise-free. Front points
   within a fraction of a second are statistically indistinguishable.
 - Silent-rewrite detection (UNO running a different config than requested on
-  unconstrained/bound-only problems) is a quickRun-harness feature and is **not**
+  unconstrained/bound-only problems) is an openEvolve-harness feature and is **not**
   tracked by the decoupled `optiuno.objective` evaluator used here.
 - The space is small ({space_size} points); a complete enumeration + non-dominated
   filter is a feasible exact alternative / ground-truth check.

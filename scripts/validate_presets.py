@@ -11,13 +11,14 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT))
+REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT))
 
-from harness.benchmark import evaluate_config, test_problems  # noqa: E402
+from optiuno.harness.benchmark import evaluate_config, test_problems  # noqa: E402
 
-TEX = ROOT / "references" / "arxiv-2406.13454" / "sections" / "statistics_table.tex"
-OUT = ROOT / "results" / "preset_validation.md"
+RUN_DIR = REPO_ROOT / "results" / "quickRun" / "openevolve_run"
+TEX = REPO_ROOT / "References" / "arxiv-2406.13454" / "sections" / "statistics_table.tex"
+OUT = RUN_DIR / "preset_validation.md"
 
 ROW_RE = re.compile(r"^\s*([A-Za-z0-9_\-]+)\s*&(.+)\\\\\s*$")
 

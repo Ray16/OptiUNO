@@ -22,10 +22,11 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent.parent
-HISTORY = ROOT / "results" / "evolution_history.csv"
-VARIANCE = ROOT / "results" / "variance.json"
-FRONT_JSON = ROOT / "results" / "front_configs.json"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+RUN_DIR = REPO_ROOT / "results" / "quickRun" / "openevolve_run"
+HISTORY = RUN_DIR / "evolution_history.csv"
+VARIANCE = RUN_DIR / "variance.json"
+FRONT_JSON = RUN_DIR / "front_configs.json"
 
 
 def load_history() -> list[dict]:
@@ -95,8 +96,8 @@ def plot_evolution(rows: list[dict]) -> None:
     ax.legend(loc="lower right", fontsize=8)
     ax.grid(alpha=0.3)
     fig.tight_layout()
-    fig.savefig(ROOT / "results" / "pareto_evolution.png", dpi=150)
-    print("wrote results/pareto_evolution.png")
+    fig.savefig(RUN_DIR / "pareto_evolution.png", dpi=150)
+    print(f"wrote {RUN_DIR / 'pareto_evolution.png'}")
 
 
 def plot_final(rows: list[dict]) -> None:
@@ -116,8 +117,8 @@ def plot_final(rows: list[dict]) -> None:
     ax.legend(loc="lower right", fontsize=8)
     ax.grid(alpha=0.3)
     fig.tight_layout()
-    fig.savefig(ROOT / "results" / "pareto_final.png", dpi=150)
-    print("wrote results/pareto_final.png")
+    fig.savefig(RUN_DIR / "pareto_final.png", dpi=150)
+    print(f"wrote {RUN_DIR / 'pareto_final.png'}")
 
     FRONT_JSON.write_text(json.dumps([p["config"] for p in front], indent=1))
     print(f"wrote {FRONT_JSON} ({len(front)} configs)")

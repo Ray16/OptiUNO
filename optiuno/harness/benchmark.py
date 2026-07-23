@@ -14,23 +14,22 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
-import sys
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-# The merged UNO driver lives in the top-level `optiuno` package (OptiUNO root).
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-
-from optiuno.uno_runner import DEFAULT_TIME_LIMIT, run_uno  # noqa: E402
-from optiuno.utils import bundled_uno_bin  # noqa: E402
+# This module is a submodule of the top-level `optiuno` package (never run
+# standalone), so it reaches the UNO driver and its siblings via relative imports.
+from ..uno_runner import DEFAULT_TIME_LIMIT, run_uno
+from ..utils import bundled_uno_bin
 
 from .classify import classify
 
-ROOT = Path(__file__).resolve().parent.parent
-NL_DIR = ROOT.parent / "problems" / "HS_model"   # HS test set at the repo root
-CACHE_DIR = ROOT / "harness" / "cache"
-LOG_ROOT = ROOT / "results" / "logs"
-EVAL_CSV = ROOT / "results" / "evaluations.csv"
+# optiuno/harness/benchmark.py -> parents[2] == repo root
+REPO_ROOT = Path(__file__).resolve().parents[2]
+NL_DIR = REPO_ROOT / "problems" / "HS_model"                       # HS test set at the repo root
+CACHE_DIR = REPO_ROOT / "results" / "quickRun" / "cache"
+LOG_ROOT = REPO_ROOT / "results" / "quickRun" / "openevolve_run" / "logs"
+EVAL_CSV = REPO_ROOT / "results" / "quickRun" / "openevolve_run" / "evaluations.csv"
 # Pinned to the bundled self-contained build (now at the repo root, external/uno)
 # for reproducible benchmark results, sourced from the single UNO-location helper.
 UNO_BIN = bundled_uno_bin()

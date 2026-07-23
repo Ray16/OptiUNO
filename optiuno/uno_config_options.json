@@ -80,7 +80,7 @@
       }
     ],
     "silent_rewrites": [
-      "A filter/funnel globalization_strategy on unconstrained / bound-only problems is rewritten to 'LS merit_function' (UNO.pdf §5.3.5) — the run succeeds but tests a DIFFERENT config than requested. Detect via the composed-method banner (UnoResult.banner); the quickRun harness counts these as n_rewritten.",
+      "A filter/funnel globalization_strategy on unconstrained / bound-only problems is rewritten to 'LS merit_function' (UNO.pdf §5.3.5) — the run succeeds but tests a DIFFERENT config than requested. Detect via the composed-method banner (UnoResult.banner); the openEvolve harness (optiuno/harness) counts these as n_rewritten.",
       "hessian_model='exact' is rewritten to 'zero' when the model provides no Hessian.",
       "The QP subproblem solver is swapped for an LP solver when the subproblem has no curvature."
     ]

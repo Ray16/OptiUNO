@@ -27,29 +27,41 @@ Note: **not every combination of `run-time-options` is valid** — some fail out
 ## Repository layout
 
 Python, no build system and no dependency manifest (deps are installed into ad-hoc
-venvs/conda envs and documented in `STATUS.md` + `quickRun/CLAUDE.md`, not pinned in a
-file). There is no automated test suite; correctness is checked by sanity scripts (below).
+venvs/conda envs and documented in `STATUS.md`, not pinned in a file). There is no
+automated test suite; correctness is checked by sanity scripts (below).
 
-- `optiuno/` — the **shared library** (stdlib-only), imported by everything else:
+- `optiuno/` — the **shared library**, imported by everything else:
   - `uno_runner.py` — `run_uno(nl, options=..., preset=..., time_limit=...)` drives one
     `uno_ampl` subprocess and returns a typed `UnoResult`. Also a CLI (`python -m
-    optiuno.uno_runner`). This is the single merged UNO driver.
+    optiuno.uno_runner`). This is the single merged UNO driver. (stdlib-only)
   - `utils.py` — `select_uno_bin()` / `bundled_uno_bin()`, the **one authority** for where
-    the UNO binary lives.
-- `scripts/` — the **CUTE corpus pipeline** (uses `requests`/`bs4`/`amplpy`):
-  `scrape_cute.py` downloads the COCONUT Library2 CUTE set; `problem_parser.py` converts
-  `.mod`→`.nl` via AMPL.
+    the UNO binary lives. (stdlib-only)
+  - `objective.py` — the search-driver-agnostic black-box objective
+    `evaluate(config, problem_set) -> (reliability, cum_cpu_time)`. (stdlib-only)
+  - `harness/` — the **openEvolve evaluation core**: `benchmark.evaluate_config(options)`
+    sweeps one config over the whole HS `.nl` set (ThreadPool) and aggregates
+    `reliability`/`cum_cpu_time`/`n_rewritten` with a config-hash cache; `classify.py` turns
+    one `UnoResult` into solved/unsolved/timeout/invalid/crash and detects silent rewrites.
+  - `evolve/` — the **openEvolve search space + entry points**: `initial_program.py` (the
+    six-key `UNO_CONFIG` that is the *only* thing mutated), `evaluator.py` (validate + score),
+    and `config.yaml` / `config-claude-code.yaml` (LLM + search-algorithm settings only).
+- `scripts/` — standalone CLI tooling (run from the repo root):
+  - **CUTE corpus pipeline** (`requests`/`bs4`/`amplpy`): `scrape_cute.py` downloads the
+    COCONUT Library2 CUTE set; `problem_parser.py` converts `.mod`→`.nl` via AMPL.
+  - **searches over the objective**: `ga_search.py` (NSGA-II via pymoo) and the openEvolve
+    driver `run_evolution.py`, plus `plot_pareto.py`, `validate_presets.py`, `variance_runs.py`,
+    and the one-time `translate_models.py`.
 - `problems/` — the two benchmark corpora (see `STATUS.md` for exact counts):
   `CUTE/` (full 727-problem COCONUT set, one folder per problem) and `HS_model/` (the
-  Hock–Schittkowski `.nl` subset the `quickRun` search runs on).
-- `quickRun/` — the **evolutionary-search subproject** (openEvolve over UNO's six
-  "ingredient" options). **It has its own detailed `quickRun/CLAUDE.md` — read that before
-  working there.**
+  Hock–Schittkowski `.nl` subset the openEvolve/GA search runs on).
 - `external/uno/` — a bundled self-contained UNO v2.8.0 build (binary + `lib/` + `deps/`),
-  used repo-wide as the fallback binary and pinned by the `quickRun` benchmark for
-  reproducibility.
-- `results/quickRun/` — checked-in **finished outputs** from prior runs (RESULTS.md,
-  pareto plots, preset validation). Read these for prior findings.
+  used repo-wide as the fallback binary and pinned by the openEvolve benchmark
+  (`optiuno/harness/benchmark.py`) for reproducibility.
+- `results/quickRun/` — the openEvolve search outputs: checked-in **finished outputs**
+  (RESULTS.md, pareto plots, preset validation) at the top level, plus `cache/` (the
+  config-hash eval cache, makes re-runs free) and `openevolve_run/` (the live-write target
+  for fresh runs — evaluations/history CSVs, `best/`, a checkpoint, per-problem logs). Other
+  GA-search outputs live in sibling `results/ga_*` dirs. Read these for prior findings.
 - `References/` — the source PDFs. `plan/` — design docs.
 
 ## Architecture (how the pieces fit)
@@ -62,7 +74,7 @@ helper. Key facts that are non-obvious from any single file:
   `preset=` on the command line so they override the preset (UNO's own parse order).
 - **`uno_ampl` exits 0 even when a solve fails.** Outcome is therefore classified from the
   printed `Optimization status:` line, *not* the exit code — in `optiuno.uno_runner.classify`
-  (solved/budget/error/failed/timeout) and, for the search, in `quickRun/harness/classify.py`.
+  (solved/budget/error/failed/timeout) and, for the search, in `optiuno/harness/classify.py`.
   Never treat return code as success.
 - **Binary selection is system-first**: explicit `uno_bin=`/`--uno-bin` → `$UNO_AMPL_BIN` →
   `uno_ampl` on `PATH` → bundled `external/uno/`. When the resolved binary is a self-contained
@@ -70,17 +82,29 @@ helper. Key facts that are non-obvious from any single file:
   build can be selected with `export UNO_AMPL_BIN=/path/to/uno_ampl`.
 - **Invalid/silently-rewritten configs** are a first-class concern: UNO echoes the actually
   composed method as a banner (captured in `UnoResult.banner`), so callers can detect when a
-  run tested a *different* config than requested. The `quickRun` harness surfaces this as
-  `n_rewritten`.
-- **The search pipeline's inputs live in code, not the openEvolve YAML.** `run_evolution.py`
-  hands `openevolve-run` two files: `evolve/initial_program.py` (the six-key `UNO_CONFIG` in
-  the `EVOLVE-BLOCK` — the *only* thing mutated, i.e. the search space) and `evolve/evaluator.py`
-  (legal values in `ALLOWED` + the `combined_score` scoring). The `.nl` **test set** is the
-  hard-coded `NL_DIR` in `harness/benchmark.py` (`problems/HS_model/`). `evolve/config.yaml` /
-  `config-claude-code.yaml` hold **only** LLM + search-algorithm settings — they do *not* select
-  the test set or the search space. The layered evaluation core is
-  `run_uno` (one solve) → `benchmark.evaluate_config` (one config over the whole set, cached) →
-  `evaluator.evaluate` (validate + score for openEvolve). See `quickRun/CLAUDE.md` for details.
+  run tested a *different* config than requested. The openEvolve harness surfaces this as
+  `n_rewritten` (see the paper's §5.3.5): requesting a filter/funnel strategy on the ~11
+  unconstrained/bound-only HS problems is silently rewritten to `LS merit_function`, so
+  strategy comparisons are effectively over the ~112 constrained problems.
+- **The search pipeline's inputs live in code, not the openEvolve YAML.** `scripts/run_evolution.py`
+  hands `openevolve-run` two files: `optiuno/evolve/initial_program.py` (the six-key `UNO_CONFIG`
+  in the `EVOLVE-BLOCK` — the *only* thing mutated, i.e. the search space) and
+  `optiuno/evolve/evaluator.py` (legal values in `ALLOWED` + the `combined_score` scoring,
+  `= reliability + 0.1·max(0, 1 − cum_cpu_time/60)`: reliability dominates, CPU time breaks
+  ties). The `.nl` **test set** is the hard-coded `NL_DIR` in `optiuno/harness/benchmark.py`
+  (`problems/HS_model/`). `optiuno/evolve/config.yaml` / `config-claude-code.yaml` hold **only**
+  LLM + search-algorithm settings — they do *not* select the test set or the search space. The
+  layered evaluation core is `run_uno` (one solve) → `harness.benchmark.evaluate_config` (one
+  config over the whole set, cached by config hash under `results/quickRun/cache/`) →
+  `evolve.evaluator.evaluate` (validate + score for openEvolve).
+- **Gotchas from prior runs** (see `results/quickRun/` + `LOGBOOK.md`): UNO 2.8.0 accepts all
+  240 nominal ingredient combinations (the 2.2.0 paper prohibited `interior_point`+`TR`), so
+  invalid/rewritten/failed configs are caught by the harness, not by refusing to run. The
+  `inertia_correction_strategy=primal_dual × inequality_constrained` region fails fast
+  ("Algorithmic error") on nearly every problem. The six-ingredient search is a **lower bound**:
+  the `ipopt` *preset* (0.984 reliability) beats its bare ingredients (0.927) because ~30
+  non-ingredient options carry it, and those are outside the search space. CPU-time noise is
+  5–15% relative sd; reliability is noise-free.
 
 ## External dependencies (installed outside this repo)
 
@@ -90,8 +114,9 @@ The README specifies these are installed in the workspace, *not* committed here:
 
 ## Commands
 
-Run from the repo root. `optiuno` and `scripts/` are stdlib/`amplpy`; `quickRun` runs under
-your Python environment (dev: conda env `sequential_OED`; see `quickRun/CLAUDE.md`).
+Run from the repo root. The UNO driver + corpus pipeline are stdlib/`amplpy`; the openEvolve
+and GA searches run under your Python environment (dev: conda env `sequential_OED`, which has
+`openevolve`, `amplpy`, `numpy`, `matplotlib`, `pyyaml`, `pymoo`).
 
 ```bash
 # Solve one problem with a config (CLI). --json for machine-readable UnoResult.
@@ -109,10 +134,13 @@ uno_ampl --dump-options    # every option
 python scripts/scrape_cute.py
 python scripts/problem_parser.py --only hs071 [--presolve] [--force]
 
-# Evolutionary search + preset sanity-check — see quickRun/CLAUDE.md for the full pipeline,
-# run from quickRun/ under the conda env sequential_OED, e.g.:
-#   conda run -n sequential_OED python scripts/validate_presets.py     # sanity-check harness vs. published paper
-#   conda run -n sequential_OED python scripts/run_evolution.py [--smoke]
+# Evolutionary / GA search + preset sanity-check — run from the repo root under the conda
+# env sequential_OED, e.g.:
+#   conda run -n sequential_OED python scripts/validate_presets.py       # sanity-check harness vs. published paper
+#   conda run -n sequential_OED python scripts/run_evolution.py [--smoke]  # openEvolve search
+#   conda run -n sequential_OED python scripts/ga_search.py [--generations N]  # NSGA-II search
+# Run one config directly through the harness:
+#   conda run -n sequential_OED python -c "from optiuno.harness.benchmark import evaluate_config; print(evaluate_config({'preset':'ipopt'}))"
 ```
 
 ## Key references

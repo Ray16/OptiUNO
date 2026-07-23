@@ -15,16 +15,15 @@ import statistics
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT))
+REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT))
 
-from harness.benchmark import evaluate_config  # noqa: E402
-from run_evolution import PRESET_INGREDIENTS  # noqa: E402
+from optiuno.harness.benchmark import evaluate_config  # noqa: E402
+from run_evolution import PRESET_INGREDIENTS  # noqa: E402  (sibling in scripts/)
 
-sys.path.insert(0, str(ROOT / "scripts"))
-
-OUT = ROOT / "results" / "variance.md"
-OUT_JSON = ROOT / "results" / "variance.json"
+RUN_DIR = REPO_ROOT / "results" / "quickRun" / "openevolve_run"
+OUT = RUN_DIR / "variance.md"
+OUT_JSON = RUN_DIR / "variance.json"
 
 
 def reference_configs(fronts_file: str | None) -> dict:

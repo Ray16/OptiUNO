@@ -1,6 +1,6 @@
 {
   "name": "hs_model_all",
-  "description": "All Hock-Schittkowski .nl problems under problems/HS_model (the quickRun test set).",
+  "description": "All Hock-Schittkowski .nl problems under problems/HS_model (the HS/openEvolve test set).",
   "base_dir": "problems/HS_model",
   "problems": [
     "hs001",

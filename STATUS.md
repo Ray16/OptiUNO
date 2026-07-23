@@ -1,14 +1,18 @@
 # Status
 
-_Last updated: 2026-07-15 (all four UNO presets as GA baselines + `preset` column in every results CSV; CUTE sets; GA tic-toc timing + overhead; live per-member output; selectable HSL/MA27 binary)_
+_Last updated: 2026-07-23 (dissolved the `quickRun/` subproject into the existing top-level
+dirs: the openEvolve harness + engine now live under `optiuno/harness/` + `optiuno/evolve/`,
+its 5 scripts under `scripts/`, and its data under `results/quickRun/{cache,openevolve_run}/`)_
 
 ## Current state
 
 The CUTE benchmark is fully prepared (scraped + converted to `.nl` in two variants), the **UNO
-Python driver** exists, and a **reusable, search-driver-agnostic black-box evaluator** now exists
-too: `optiuno.objective.evaluate(config, problem_set) -> (reliability, cum_cpu_time)`. This is the
-core building block the batch/search harness needs — the remaining milestone is choosing and
-wiring a search driver (Bayesian optimization / GA / enumeration) on top of it.
+Python driver** exists, and a **reusable, search-driver-agnostic black-box evaluator** exists
+too: `optiuno.objective.evaluate(config, problem_set) -> (reliability, cum_cpu_time)`. Two
+search drivers run on top of the objective/harness: an **NSGA-II GA** (`scripts/ga_search.py`)
+and the **openEvolve** LLM-driven search (`scripts/run_evolution.py` over `optiuno/evolve/` +
+`optiuno/harness/`). Complete enumeration over the ~240-point ingredient space remains the
+ground-truth fallback.
 
 - `problems/CUTE/` — **727** COCONUT Library2 CUTE problems, one folder per problem. Each folder
   has: `.mod` (always), `.gms`/`.dag`/`.res` (when available), a `metadata.json`, and **two
@@ -22,124 +26,105 @@ wiring a search driver (Bayesian optimization / GA / enumeration) on top of it.
 - `problems/CUTE/summary.csv` — per-problem metadata + feasibility + subset flag + per-file
   availability.
 - `problems/CUTE/nl_conversion_report.csv` — last conversion run's per-problem result.
-- `problems/HS_model/` — the **121-problem HS test set** (`.nl` files) used by the `quickRun`
-  experiment and by the new evaluator's example set.
+- `problems/HS_model/` — the **121-problem HS test set** (`.nl` files) used by the openEvolve/GA
+  search and by the evaluator's example set. (`translate_models.py` regenerates it from
+  user-provided Vanderbei `.mod` sources expected at `problems/HS_model/mod/`.)
 - `problems/sets/` — **problem-set JSON files** (the input format the black-box evaluator reads):
   - `hs_model_all.json` — all 121 HS stems (`base_dir: problems/HS_model`, flat layout).
-  - `cute_uno_subset.json` — **NEW.** UNO's benchmark subset present in CUTE: **425** problems
-    (the 429 `small_instances` minus 4 absent from Library2). Full nested `.nl` paths.
-  - `cute_all.json` — **NEW.** All **727** CUTE problems. Full nested `.nl` paths.
-  - CUTE sets use full `problems/CUTE/<name>/<name>.nl` paths (no `base_dir`) because the CUTE
-    corpus is one-folder-per-problem, not the flat layout `base_dir`+stem assumes.
+  - `cute_uno_subset.json` — UNO's benchmark subset present in CUTE: **425** problems.
+  - `cute_all.json` — all **727** CUTE problems (full nested `.nl` paths).
 
-## `optiuno/` package (the shared, stdlib-only library)
+## `optiuno/` package (the shared library)
 
-Imported by everything; depends on nothing in `quickRun/` (the dependency arrow is one-way,
-`quickRun → optiuno`).
+Imported by everything. `uno_runner.py`, `utils.py`, and `objective.py` are stdlib-only; the
+`harness/` + `evolve/` subpackages add the openEvolve dependencies. The old cross-project
+dependency arrow (`quickRun → optiuno`) is now internal: `harness`/`evolve` depend on
+`uno_runner`/`utils`; `objective.py` stays deliberately import-light and does **not** import the
+harness.
 
 - `optiuno/uno_runner.py` — `run_uno(nl, options=, preset=, uno_bin=, time_limit=) -> UnoResult`.
-  One `uno_ampl` subprocess call; regex-parses status/objective/CPU/iterations + the composed
-  banner; never raises on a solver failure. Also a CLI (`python -m optiuno.uno_runner`).
-- `optiuno/utils.py` — `select_uno_bin` (system-first: explicit → `$UNO_AMPL_BIN` → PATH →
-  bundled), `bundled_uno_bin` (pins `external/uno/bin/uno_ampl`), and `REPO_ROOT`.
-- **`optiuno/objective.py`** — the black-box objective for external optimizers:
-  - `evaluate(config, problem_set, *, time_limit=20, workers=8, uno_bin=None, validate=True,
-    time_source="cpu")` → `(reliability, cum_cpu_time)`. **reliability** = fraction in [0,1]
-    solved (strict: `Optimization status: Success` **and** `Solution status: Feasible KKT
-    point`). **cum_cpu_time** = sum of per-problem times; a timeout charges the full
-    `time_limit`. **`time_source`** picks the time metric: `"cpu"` (UNO-reported CPU seconds,
-    default — parallelism-invariant) or `"wall"` (real tic-toc `perf_counter` around each
-    solve; keep `workers=1` so the sum reflects serial elapsed time). Binary defaults to the
-    bundled build for reproducibility.
-  - `evaluate_detailed()` (rich dict; also returns `cum_wall_time` = raw tic-toc sum,
-    `time_source`, and per-problem `wall_time`), `load_problem_set()` (JSON path / list /
-    `{base_dir, problems}` object; fail-fast on missing files), `is_solved()`, and
-    `make_objective(problem_set, *, time_source=...) -> (config -> (rel, time))`.
-  - **`extra_options`** kwarg (all of `evaluate`/`evaluate_detailed`/`make_objective`; CLI
-    `--extra-option KEY=VALUE`): fixed UNO options merged into every solve, **outside the
-    search space and unvalidated** (UNO checks them) — e.g. `linear_solver=MA27`. Combine
-    with `uno_bin=`/`--uno-bin` to run an HSL-enabled UNO build.
-  - Config is validated against `uno_search_space.json` (unknown key / illegal value → ValueError);
-    bad *combinations* of legal values are NOT rejected — they run and show as low reliability.
-  - CLI: `python -m optiuno.objective --problems SET.json --option k=v ... [--time-source wall] [--json]`.
-- **`optiuno/uno_config_options.json`** / **`optiuno/uno_search_space.json`** — **NEW.**
-  Machine-readable option catalogues built by probing the bundled binary. The first documents all
-  89 options (types, defaults, solvers, presets, invalid-combo caveats); the second is just the
-  six searchable ingredients → legal values (matches `quickRun/evolve/evaluator.py:ALLOWED`).
-  Note: `--strategies` misprints the Hessian model as `LFBGS`; the parser accepts `LBFGS` (the
-  catalogues use the accepted spelling).
+  One `uno_ampl` subprocess; regex-parses status/objective/CPU/iterations + the composed banner;
+  never raises on a solver failure. Also a CLI (`python -m optiuno.uno_runner`).
+- `optiuno/utils.py` — `select_uno_bin` (system-first), `bundled_uno_bin` (pins
+  `external/uno/bin/uno_ampl`), and `REPO_ROOT`.
+- `optiuno/objective.py` — the black-box objective for external optimizers:
+  `evaluate(config, problem_set, *, time_limit=20, workers=8, uno_bin=None, ...)` →
+  `(reliability, cum_cpu_time)`, plus `evaluate_detailed()`, `load_problem_set()`, `is_solved()`,
+  `make_objective()`. Config is validated against `uno_search_space.json`. `extra_options` kwarg
+  injects fixed unvalidated UNO options (e.g. `linear_solver=MA27`). CLI:
+  `python -m optiuno.objective --problems SET.json --option k=v ...`.
+- **`optiuno/harness/`** — the **openEvolve evaluation core** (moved from `quickRun/harness/`):
+  - `benchmark.py` — `evaluate_config(options)` sweeps one config over all HS `.nl` problems
+    (ThreadPool, 8 workers) via `run_uno`, aggregating `reliability`/`cum_cpu_time`/`n_rewritten`
+    + per-problem rows. **Config-hash cache** at `results/quickRun/cache/*.json` (keyed by
+    `sha1(options+time_limit)[:12]` + `_r<rep>`) so evolution/enumeration/variance share evals.
+    Reads the test set from the repo-root `problems/HS_model/`; pins the bundled UNO build.
+  - `classify.py` — turns one `UnoResult` into `solved`/`unsolved`/`timeout`/`invalid`/`crash`
+    (keying off the printed status, not the exit code) and flags silently-rewritten configs from
+    the composed-method banner.
+- **`optiuno/evolve/`** — the **openEvolve search space + entry points** (moved from
+  `quickRun/evolve/`): `initial_program.py` (the six-key `UNO_CONFIG` in the `EVOLVE-BLOCK`, the
+  only thing mutated), `evaluator.py` (validates against `ALLOWED`, calls `evaluate_config`,
+  returns `combined_score = reliability + 0.1·max(0, 1 − cum_cpu_time/60)` + artifacts, appends
+  to `results/quickRun/openevolve_run/evolution_history.csv`), and `config.yaml` /
+  `config-claude-code.yaml` (LLM + search-algorithm settings only — no paths, no search space).
+  openEvolve loads `evaluator.py`/`initial_program.py` **by file path**, so `evaluator.py` puts
+  the repo root on `sys.path` and imports `optiuno.harness.benchmark` absolutely.
+- **`optiuno/uno_config_options.json`** / **`optiuno/uno_search_space.json`** — machine-readable
+  option catalogues (all 89 options; the six searchable ingredients → legal values, matching
+  `optiuno/evolve/evaluator.py:ALLOWED`).
 
-## Tooling (`scripts/`)
+## Tooling (`scripts/`) — standalone CLIs, run from the repo root
 
 - `scrape_cute.py` — the corpus scraper (polite + resumable).
-- `problem_parser.py` — the `.mod`→`.nl` converter via `amplpy`. `--presolve` flag (default OFF)
-  selects the faithful vs. reduced variant. Updates `metadata.json` + `summary.csv`.
+- `problem_parser.py` — the CUTE `.mod`→`.nl` converter via `amplpy` (`--presolve` flag).
 - `ga_search.py` — NSGA-II (pymoo) bi-objective search over the six ingredients, scoring configs
-  with `optiuno.objective`. Objectives: reliability (max) vs. cumulative UNO time (min). Time is
-  the real **tic-toc wall clock** by default (`--time-source wall`; `cpu` for UNO-reported CPU),
-  and solves run **serially by default** (`--workers 1`, no parallel pool) so the run can report
-  **GA overhead = run wall clock − time spent inside UNO** (written to `timing.json` + a RESULTS
-  section; only meaningful at `workers=1`). **Baselines:** evaluates **all four** UNO built-in
-  presets — `filtersqp`, `ipopt`, `funnelsqp`, `filterslp` (as six-ingredient configs;
-  `PRESET_INGREDIENTS` mirrors `Uno/uno/options/Presets.cpp`) — so every plot / RESULTS table has
-  the full preset reference set. **`preset` column:** every results CSV (`evaluations.csv`,
-  `ga_history.csv`, `pareto_front.csv`) now leads with a `preset` column via `match_preset()` —
-  the built-in preset whose six ingredients the config matches, or `custom` (so a GA-*discovered*
-  config equal to a preset bundle is labelled with that preset's name). **Streams one line per
-  population member live** as each config finishes (reliability, time, `solved=n/N`, per-config
-  `eval_wall`, config; cache hits tagged `(cached)`), with a summary line at each generation's
-  end; `--no-population` = summary only, `--quiet` = silent (all off by default). Writes
-  timestamped artifacts
-  (evaluations/history CSVs, Pareto front, plots, `timing.json`, `RESULTS.md`) to
-  `results/ga_pop_<pop_size>_gen_<generations>_<set>/<timestamp>/` (override with `--out`). Needs
-  an interpreter with pymoo + numpy + matplotlib (dev: conda env `sequential_OED`). **Binary:** `--uno-bin` (default system-first
-  via `select_uno_bin`: `$UNO_AMPL_BIN` → PATH → bundled); **fixed options:** `--option
-  KEY=VALUE` (repeatable, e.g. `--option linear_solver=MA27`), with a preflight that fails fast
-  if the requested `linear_solver` isn't advertised by the chosen binary.
-- The UNO driver lives in `optiuno/uno_runner.py` (see above), not in `scripts/`.
+  with `optiuno.objective`. Objectives: reliability (max) vs. cumulative UNO time (min). Evaluates
+  all four UNO presets as baselines; every results CSV leads with a `preset` column; streams one
+  line per population member; writes timestamped artifacts to
+  `results/ga_<...>/<timestamp>/`. Needs pymoo + numpy + matplotlib (dev: conda env
+  `sequential_OED`). `--uno-bin` / `--option KEY=VALUE` for HSL builds.
+- **openEvolve pipeline** (moved from `quickRun/scripts/`):
+  - `run_evolution.py` — drives `openevolve-run` over `optiuno/evolve/` (two LLM backends: the
+    Claude Code CLI subscription by default, `--api` for the Anthropic API). Evaluates the preset
+    baselines first; writes an effective config + all outputs under
+    `results/quickRun/openevolve_run/`.
+  - `plot_pareto.py` — Pareto-front figures + `front_configs.json` from the evolution history.
+  - `validate_presets.py` — harness sanity-check vs. the published paper tables (reads
+    `References/arxiv-2406.13454/sections/statistics_table.tex`, user-provided).
+  - `variance_runs.py` — repeated sweeps to estimate CPU-time noise.
+  - `translate_models.py` — one-time Vanderbei `.mod`→`.nl` (`problems/HS_model/mod/` →
+    `problems/HS_model/`).
 
 ## Environment / conventions
 
-- **Python environment:** no venv is committed (the old broken `quickRun/.venv/` was removed).
-  Scripts run under whatever Python you invoke them with; the dev environment is the conda env
-  `sequential_OED` (holds `openevolve`, `amplpy`, `numpy`, `matplotlib`, `pyyaml`, `pymoo`,
-  `requests`, `bs4`, `pandas`). Other users create their own env with the packages each script
-  needs — detailed install instructions are future work.
-- `amplpy` 0.17.0 + AMPL `base` engine, licensed with **AMPL for Academics** (allows `write`, no
-  size cap). Do NOT switch to AMPL **Community Edition** — it blocks `write`.
+- **Python environment:** no venv is committed. Scripts run under whatever Python you invoke them
+  with; the dev environment is the conda env `sequential_OED` (holds `openevolve`, `amplpy`,
+  `numpy`, `matplotlib`, `pyyaml`, `pymoo`, `requests`, `bs4`, `pandas`). Other users create their
+  own env — detailed install instructions are future work.
+- `amplpy` 0.17.0 + AMPL `base` engine, licensed with **AMPL for Academics** (allows `write`).
+  Do NOT switch to AMPL **Community Edition** — it blocks `write`.
 - **UNO binary selection** (`optiuno/utils.py:select_uno_bin`): **system-first** — `explicit`/
-  `--uno-bin` → `$UNO_AMPL_BIN` → `uno_ampl` on PATH → the **bundled** build as a fallback. A
-  locally built binary can be selected with `export UNO_AMPL_BIN=/path/to/uno_ampl`.
-- **Bundled UNO v2.8.0** at the repo root, `external/uno/bin/uno_ampl` (self-contained binary +
-  `lib/` + `deps/`, ~99 MB). Used automatically as the fallback and pinned by
-  `quickRun/harness/benchmark.py` and `optiuno.objective.evaluate` for reproducibility.
-  `run_uno` auto-wires `LD_LIBRARY_PATH` from the binary's own `lib/`+`deps/`.
-- **Linear solvers / HSL:** the bundled build advertises only **MUMPS, SSIDS** — its
-  `deps/libhsl.so` is a non-functional 18 KB Julia HSL_jll **stub**, so `linear_solver=MA27`
-  fails ("unknown"). The user's own build at **`/home/sdinh/sandbox/Uno/build/uno_ampl`** is
-  compiled with real HSL (`.../Uno/dependencies/lib/libcoinhsl.so`) and advertises
-  **MA57, MA27, MUMPS, SSIDS**. Select it with `--uno-bin` / `$UNO_AMPL_BIN` and pass
-  `--option linear_solver=MA27` (ga_search) or `--extra-option linear_solver=MA27` (objective).
-- **Threading:** UNO has no thread option; it multithreads via OpenMP (libgomp) + OpenBLAS,
-  defaulting to **all cores** unless `OMP_NUM_THREADS` / `OPENBLAS_NUM_THREADS` are set
-  (OpenMP is the dominant lever). So UNO-reported **CPU time ≫ wall time** on threaded solves;
-  the GA's `--time-source wall` measures honest elapsed time.
-- UNO strategy building blocks / valid option values: `uno_ampl --strategies`; all options:
-  `uno_ampl --dump-options`. (Or read the JSON catalogues in `optiuno/`.)
+  `--uno-bin` → `$UNO_AMPL_BIN` → `uno_ampl` on PATH → the **bundled** build as a fallback.
+- **Bundled UNO v2.8.0** at `external/uno/bin/uno_ampl` (self-contained, ~99 MB). Used as the
+  fallback and pinned by `optiuno/harness/benchmark.py` + `optiuno.objective.evaluate` for
+  reproducibility. `run_uno` auto-wires `LD_LIBRARY_PATH` from the binary's `lib/`+`deps/`.
+- **Linear solvers / HSL:** the bundled build advertises only **MUMPS, SSIDS** (its `libhsl.so`
+  is a stub). The user's build at **`/home/sdinh/sandbox/Uno/build/uno_ampl`** has real HSL
+  (MA57, MA27, MUMPS, SSIDS). Select it with `--uno-bin` / `$UNO_AMPL_BIN` + `linear_solver=MA27`.
+- **Threading:** UNO multithreads via OpenMP + OpenBLAS, defaulting to all cores; CPU time ≫ wall
+  time on threaded solves. `ga_search`'s `--time-source wall` measures honest elapsed time.
+- UNO strategy blocks / option values: `uno_ampl --strategies`; all options: `uno_ampl
+  --dump-options`. (Or read the JSON catalogues in `optiuno/`.)
 
 ## Next steps
 
-- **Search driver over the black box.** `optiuno.objective.make_objective(problem_set)` gives a
-  clean `config -> (reliability, cum_cpu_time)` callable. Remaining work: pick the search method
-  (Bayesian optimization / GA / random search, with complete enumeration over the ~240-point
-  ingredient space as the ground-truth fallback) and how to handle the bi-objective (scalarize,
-  Pareto, or constrained). An optional evaluation cache would make enumeration/duplicate-heavy
-  search cheap (the openEvolve harness already caches by config hash under
-  `quickRun/harness/cache/`).
-- **openEvolve path** (`quickRun/`) remains available; see `quickRun/CLAUDE.md`. Known open issue:
-  openEvolve reported "No valid diffs found in response" on smoke iterations (LLM/diff-format
-  layer needs a follow-up).
-- **Optional refactor:** have `quickRun/harness/benchmark.py:evaluate_config` delegate to
+- **Search driver over the black box.** GA (`ga_search.py`) and openEvolve (`run_evolution.py`)
+  both run; remaining work is comparing them against complete enumeration (~240-point space) and
+  settling the bi-objective handling (scalarize / Pareto / constrained).
+- **openEvolve known open issue:** openEvolve reported "No valid diffs found in response" on some
+  smoke iterations (LLM/diff-format layer needs a follow-up).
+- **Optional refactor:** have `optiuno/harness/benchmark.py:evaluate_config` delegate to
   `optiuno.objective` so there is a single evaluation core (deferred; not required).
 
 ## Knowledge base (`.crucible/`)
@@ -149,8 +134,11 @@ Imported by everything; depends on nothing in `quickRun/` (the dependency arrow 
 
 ## Git
 
-- The old broken `quickRun/.venv/` (4111 tracked `.pyc`, ~70 MB, no interpreter) was removed
-  from git and disk; the tracked `.gitignore` now ignores `.venv/`, `__pycache__/`, `*.pyc` so a
-  local env is never re-tracked. That removal is **staged, not committed** — commit it manually
-  (project rule: only the user commits).
+- The `quickRun/` subproject was dissolved into the existing dirs (code → `optiuno/harness`,
+  `optiuno/evolve`, `scripts/`; data → `results/quickRun/{cache,openevolve_run}/`); paths/imports
+  repointed; `.gitignore` cleaned (the ~2049 stale `quickRun/` entries removed, replaced with
+  three rules for the new live-write locations). The moves are **staged, not committed** — commit
+  manually (project rule: only the user commits).
+- The old broken `quickRun/.venv/` was removed in a prior commit; `.venv/`/`__pycache__/`/`*.pyc`
+  stay ignored.
 - Still to decide: git tracking for the large `.nl` corpus (regenerates from `.mod`).

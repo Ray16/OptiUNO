@@ -22,10 +22,10 @@ random search, complete enumeration, ...) calls this as a black box::
     f = make_objective("problems/sets/hs_model_all.json")
     reliability, cpu_time = f({"globalization_mechanism": "LS", "hessian_model": "LBFGS"})
 
-It is built only on :func:`optiuno.run_uno` and the stdlib, and has **no dependency on
-``quickRun/``** -- the ``quickRun`` openEvolve harness is a separate, coupled sibling.
+It is built only on :func:`optiuno.run_uno` and the stdlib, and has **no dependency on the
+openEvolve harness** (``optiuno.harness``) -- it stays a light, self-contained objective.
 The "solved" criterion is reimplemented here (a two-field check) so it matches the
-project-wide definition in ``quickRun/harness/classify.py`` without importing it.
+project-wide definition in ``optiuno/harness/classify.py`` without importing it.
 
 CLI:
     python -m optiuno.objective --problems SET.json \\
@@ -147,8 +147,8 @@ def load_problem_set(spec) -> list[Path]:
 
 
 # --------------------------------------------------------------------------- #
-# "Solved" / status classification (matches quickRun/harness/classify.py without
-# importing it -- optiuno must not depend on quickRun).
+# "Solved" / status classification (matches optiuno/harness/classify.py without
+# importing it -- this objective stays import-light).
 # --------------------------------------------------------------------------- #
 def is_solved(res) -> bool:
     """True iff UNO reached an optimal solution on this problem.
@@ -187,8 +187,8 @@ def _category(res) -> str:
 def _charged_time(res, time_limit: float, time_source: str = "cpu") -> float:
     """Per-problem time to charge, from one of two sources.
 
-    time_source="cpu" (default): UNO's own reported CPU seconds (mirrors quickRun
-        benchmark.py:70-74). A timeout charges the full time_limit; a crash /
+    time_source="cpu" (default): UNO's own reported CPU seconds (mirrors
+        optiuno/harness/benchmark.py). A timeout charges the full time_limit; a crash /
         unparseable run charges its wall time, capped at time_limit.
     time_source="wall": the real "tic-toc" wall-clock seconds measured with
         ``time.perf_counter()`` around the ``uno_ampl`` subprocess

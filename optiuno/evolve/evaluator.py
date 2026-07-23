@@ -17,14 +17,17 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT))
+# openEvolve loads this file by path (module name "evaluator"), not as
+# optiuno.evolve.evaluator, so reach the harness via an absolute import with the
+# repo root on sys.path. optiuno/evolve/evaluator.py -> parents[2] == repo root.
+REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT))
 
 from openevolve.evaluation_result import EvaluationResult  # noqa: E402
 
-from harness.benchmark import evaluate_config  # noqa: E402
+from optiuno.harness.benchmark import evaluate_config  # noqa: E402
 
-HISTORY = ROOT / "results" / "evolution_history.csv"
+HISTORY = REPO_ROOT / "results" / "quickRun" / "openevolve_run" / "evolution_history.csv"
 
 ALLOWED = {
     "constraint_relaxation_strategy": ["feasibility_restoration"],

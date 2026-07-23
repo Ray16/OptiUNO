@@ -625,3 +625,49 @@ instructions left as future work.
   `ga_search.py` / `optiuno.uno_runner` `--help` all exit 0 under `sequential_OED`; `openevolve-run`
   resolves next to the env python and on PATH (so the removed fallback was safe); the new ignore
   rules match venv/cache paths. Nothing committed.
+
+## 2026-07-23 — Dissolved the `quickRun/` subproject into the top-level dirs
+
+- **Why:** `quickRun/` was documented as a separate subproject but was never independent (its
+  harness imports `optiuno`, its test set is the repo-root `problems/HS_model/`, and shared pieces
+  had already migrated up into `optiuno/` + `external/`). Consolidating leaves one library, one
+  scripts dir, and one results tree. User decisions: harness + engine go **under `optiuno/`**; the
+  5 scripts go to `scripts/`; all committed data consolidates under `results/quickRun/`.
+- **Code moves (`git mv`, history preserved):** `quickRun/harness/{benchmark,classify,__init__}.py`
+  → `optiuno/harness/`; `quickRun/evolve/{evaluator,initial_program}.py` + the two `config*.yaml`
+  → `optiuno/evolve/` (added an empty `optiuno/evolve/__init__.py`); the 5 scripts
+  (`run_evolution`, `plot_pareto`, `validate_presets`, `variance_runs`, `translate_models`) →
+  `scripts/` (no name clash with the 3 existing).
+- **Data moves:** `quickRun/harness/cache/` → `results/quickRun/cache/` (83 tracked + 16 untracked
+  JSONs preserved); the committed `quickRun/results/` subset → `results/quickRun/openevolve_run/`
+  (2 CSVs, effective yaml, `best/`, `checkpoint_150/`, the 8 committed per-problem log dirs =
+  968 logs, `openevolve_output/logs/`). Nested under `openevolve_run/` to avoid the
+  `evaluations.csv`/`evolution_history.csv` name clash with the finished outputs already at
+  `results/quickRun/`.
+- **Path/import repointing:** `optiuno/harness/benchmark.py` now uses **relative imports**
+  (`from ..uno_runner`, `from ..utils`, `from .classify`) and `REPO_ROOT = parents[2]`; cache →
+  `results/quickRun/cache/`, logs/eval → `results/quickRun/openevolve_run/`. `optiuno/evolve/
+  evaluator.py` (loaded standalone by openEvolve) puts the repo root on `sys.path` and imports
+  `optiuno.harness.benchmark` absolutely. The 5 scripts adopt the `ga_search.py` pattern
+  (`REPO_ROOT = parent.parent`, `sys.path.insert(0, REPO_ROOT)`, a `RUN_DIR` constant); config
+  files resolve to `optiuno/evolve/`; `validate_presets` reads `References/arxiv-2406.13454/...`;
+  `translate_models` reads `problems/HS_model/mod/`.
+- **`.gitignore`:** removed the ~2049 dead `quickRun/` entries; added three rules for the new
+  live-write locations (`results/quickRun/cache/`, `.../openevolve_run/logs/`,
+  `.../openevolve_run/openevolve_output/`). Already-tracked committed files stay tracked.
+- **Docs:** merged `quickRun/CLAUDE.md` into the root `CLAUDE.md` (layout, architecture, gotchas,
+  commands) then `git rm`'d it; overwrote `STATUS.md` for the new structure; refreshed stale path
+  comments in `optiuno/objective.py`, `scripts/ga_search.py`, `optiuno/uno_config_options.json`,
+  `problems/sets/hs_model_all.json`. Then `rm -rf quickRun/` (only regenerable/gitignored
+  artifacts remained).
+- **Validation (under `sequential_OED`, no solves):** all moved/edited `.py` `py_compile`;
+  `from optiuno.harness.benchmark import ...` resolves with 121 HS problems found and `CACHE_DIR`
+  pointing at `results/quickRun/cache/` (24 top-level + 75 backup JSONs); `evaluator.py` loads
+  standalone (openEvolve-style) with `HISTORY` at the new path; `variance_runs` sibling import of
+  `run_evolution.PRESET_INGREDIENTS` works; a committed cache config hashes back to its filename
+  and `evaluate_config` returns from cache (rel 0.942, no solve); `run_evolution`/`ga_search`/
+  `uno_runner` `--help` exit 0; `plot_pareto`/`translate_models` (no argparse) run end-to-end at
+  the new paths (their incidental outputs were deleted to keep the commit pure). `validate_presets`
+  correctly stops at the absent user-provided paper TEX. `git status`: 1080 renames + 1 deletion
+  (`quickRun/CLAUDE.md`), 0 tracked left under `quickRun/`, new file `optiuno/evolve/__init__.py`.
+  **All moves/edits are staged/on-disk but NOT committed** (project rule — the user commits).

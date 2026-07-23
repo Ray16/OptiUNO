@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Drive the openEvolve search over UNO's six ingredient options.
 
-Usage (run from quickRun/, in an environment that has openEvolve installed --
+Usage (run from the repo root, in an environment that has openEvolve installed --
 the dev environment is the conda env `sequential_OED`):
     conda run -n sequential_OED python scripts/run_evolution.py [--model NAME] [--iterations N] [--smoke] [--api]
 
@@ -26,10 +26,13 @@ import subprocess
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT))
+REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT))
 
-from harness.benchmark import evaluate_config  # noqa: E402
+from optiuno.harness.benchmark import evaluate_config  # noqa: E402
+
+EVOLVE_DIR = REPO_ROOT / "optiuno" / "evolve"
+RUN_DIR = REPO_ROOT / "results" / "quickRun" / "openevolve_run"
 
 DEFAULT_MODEL = "claude-sonnet-5"
 
@@ -94,13 +97,13 @@ def main() -> None:
 
     env = dict(os.environ)
     if args.api:
-        config_file = ROOT / "evolve" / "config.yaml"
+        config_file = EVOLVE_DIR / "config.yaml"
         model = args.model or DEFAULT_MODEL
         if not env.get("ANTHROPIC_API_KEY"):
             sys.exit("ANTHROPIC_API_KEY is not set - export it (or drop --api "
                      "to run on the Claude Code CLI subscription).")
     else:
-        config_file = ROOT / "evolve" / "config-claude-code.yaml"
+        config_file = EVOLVE_DIR / "config-claude-code.yaml"
         model = args.model or "claude-sonnet-4-5"
         # the CLI prefers ANTHROPIC_API_KEY over the OAuth login; drop it so
         # the subscription session is used
@@ -121,23 +124,23 @@ def main() -> None:
     import yaml
     cfg = yaml.safe_load(config_file.read_text())
     cfg["llm"]["models"][0]["name"] = model
-    effective = ROOT / "results" / "openevolve_effective_config.yaml"
+    effective = RUN_DIR / "openevolve_effective_config.yaml"
     effective.parent.mkdir(parents=True, exist_ok=True)
     effective.write_text(yaml.safe_dump(cfg, sort_keys=False))
 
     cmd = [
         _find_openevolve_run(),
-        str(ROOT / "evolve" / "initial_program.py"),
-        str(ROOT / "evolve" / "evaluator.py"),
+        str(EVOLVE_DIR / "initial_program.py"),
+        str(EVOLVE_DIR / "evaluator.py"),
         "--config", str(effective),
-        "--output", str(ROOT / "results" / "openevolve_output"),
+        "--output", str(RUN_DIR / "openevolve_output"),
     ]
     iters = 5 if args.smoke else args.iterations
     if iters is not None:
         cmd += ["--iterations", str(iters)]
 
     print("$", " ".join(cmd))
-    raise SystemExit(subprocess.run(cmd, cwd=ROOT, env=env).returncode)
+    raise SystemExit(subprocess.run(cmd, cwd=REPO_ROOT, env=env).returncode)
 
 
 if __name__ == "__main__":
